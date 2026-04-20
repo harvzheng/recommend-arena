@@ -1,0 +1,182 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8348,
+    "ndcg_10": 0.8624,
+    "mrr": 0.5,
+    "attribute_precision": 0.126,
+    "attribute_recall": 0.175,
+    "attribute_f1": 0.1465,
+    "explanation_score": 4.2,
+    "latency_ms": 719.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 1.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"A fun-oriented freeride ski that doesn't take itself too seriously. More playful than the Enforcer or Mindbender, less s...\"",
+      "matched_attributes": {
+        "stability": 0.8067,
+        "speed": 0.8638,
+        "playfulness": 0.8061,
+        "float": 0.7872,
+        "grip": 0.7483
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.8831,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Downhill in powder is pure bliss. Edge grip on firm snow is minimal....\"",
+      "matched_attributes": {
+        "stiffness": 0.6466,
+        "grip": 0.6901,
+        "float": 0.67,
+        "weight": 0.717,
+        "playfulness": 0.6735,
+        "forgiveness": 0.63
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.8728,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The Atris is a powder dream. At 108mm with generous rocker, it floats effortlessly. The poplar and fiberglass constructi...\"",
+      "matched_attributes": {
+        "weight": 0.5917,
+        "speed": 0.6795,
+        "float": 0.6492,
+        "stability": 0.7673,
+        "playfulness": 0.7673,
+        "dampness": 0.5887
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.8382,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Not a ski for powder or ice but fine for regular resort conditions....\"",
+      "matched_attributes": {
+        "float": 0.7239,
+        "weight": 0.6641,
+        "grip": 0.6641,
+        "turn_quality": 0.7107,
+        "stiffness": 0.6175,
+        "dampness": 0.6175,
+        "forgiveness": 0.6175
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8305,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Edge grip is fine for linking turns on harder snow between powder stashes....\"",
+      "matched_attributes": {
+        "grip": 0.6185,
+        "float": 0.6541,
+        "turn_quality": 0.6185,
+        "dampness": 0.691,
+        "playfulness": 0.691,
+        "comfort": 0.6898
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8205,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Great for laps in the park, fun for exploring off-piste with tricks. Edge grip is sacrificed for playfulness and that's ...\"",
+      "matched_attributes": {
+        "grip": 0.7183,
+        "playfulness": 0.7249,
+        "float": 0.7124,
+        "stiffness": 0.6873,
+        "speed": 0.6873,
+        "forgiveness": 0.6873,
+        "turn_quality": 0.6873
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8054,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Great ski for intermediate-to-advanced riders who want to explore the whole mountain. Forgiving enough to learn on but c...\"",
+      "matched_attributes": {
+        "stiffness": 0.7227,
+        "forgiveness": 0.7227,
+        "stability": 0.6252,
+        "grip": 0.6252,
+        "playfulness": 0.6713,
+        "float": 0.6713
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7989,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Really fun freeride ski. Not as floaty as a dedicated powder board but much better on mixed conditions. The Moment quali...\"",
+      "matched_attributes": {
+        "speed": 0.84,
+        "playfulness": 0.7527,
+        "float": 0.8016,
+        "stiffness": 0.6548
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7965,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turni...\"",
+      "matched_attributes": {
+        "stiffness": 0.635,
+        "weight": 0.635,
+        "turn_quality": 0.635,
+        "forgiveness": 0.6591
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7479,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Solid freeride option from Dynastar. The M-Free 108 is well-balanced between float and grip. Titanal construction gives ...\"",
+      "matched_attributes": {
+        "dampness": 0.622,
+        "grip": 0.6593,
+        "float": 0.6593,
+        "weight": 0.7852,
+        "versatility": 0.7852
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

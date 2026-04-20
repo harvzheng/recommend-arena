@@ -1,0 +1,166 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2559,
+    "ndcg_10": 0.2559,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 15.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.17 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.1111,
+        "playfulness": 0.1667,
+        "dampness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.9786,
+      "explanation": "Recommended because P(stiff) = 0.12 (from 0/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews), P(high) = 0.17 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125,
+        "terrain": 0.1111,
+        "playfulness": 0.6667,
+        "dampness": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8138,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.44 (from 3/3 reviews), P(high) = 0.67 (from 3/3 reviews), P(high) = 0.17 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.4444,
+        "playfulness": 0.6667,
+        "dampness": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7687,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.17 (from 0/0 reviews), P(high) = 0.17 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.1667,
+        "playfulness": 0.1667,
+        "dampness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7574,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.17 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.1111,
+        "playfulness": 0.1667,
+        "dampness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7574,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.17 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.1111,
+        "playfulness": 0.1667,
+        "dampness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7574,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.17 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.1111,
+        "playfulness": 0.1667,
+        "dampness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7574,
+      "explanation": "Recommended because P(stiff) = 0.12 (from 0/3 reviews), P(freeride) = 0.44 (from 3/3 reviews), P(high) = 0.67 (from 3/3 reviews), P(high) = 0.17 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125,
+        "terrain": 0.4444,
+        "playfulness": 0.6667,
+        "dampness": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.736,
+      "explanation": "Recommended because P(stiff) = 0.12 (from 0/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.67 (from 3/3 reviews), P(high) = 0.17 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125,
+        "terrain": 0.1111,
+        "playfulness": 0.6667,
+        "dampness": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.736,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews), P(freeride) = 0.11 (from 0/3 reviews), P(high) = 0.17 (from 0/3 reviews), P(high) = 0.17 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.1111,
+        "playfulness": 0.1667,
+        "dampness": 0.1667
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

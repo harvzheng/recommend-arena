@@ -1,0 +1,182 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4053,
+    "ndcg_10": 0.5214,
+    "mrr": 0.0,
+    "attribute_precision": 0.18,
+    "attribute_recall": 0.2,
+    "attribute_f1": 0.1895,
+    "explanation_score": 4.9,
+    "latency_ms": 97662.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8,
+      "explanation": "The Faction Dictator 3.0 is a good match for the user's query as it matches well on performance type (all-mountain freeride), width at the waist (106mm suitable for freeride), playfulness and powder floatation (good). However, its edge grip quality and stiffness may not fully align with the user\u2019s preference.",
+      "matched_attributes": {
+        "performance_type": 1.0,
+        "width_at_the_waist": 1.0,
+        "flexibility": 0.8,
+        "floatation_in_powder": 1.0,
+        "edge_performance": 0.4,
+        "suitability_for_off_piste": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8,
+      "explanation": "The Salomon QST 106 is a good fit for the user's query as it offers lightweight characteristics (at least according to its consensus summary), excellent powder floatability (up to 106mm, matching the user\u2019s requirement of 'lightweight freeride ski'), and a playful feel. However, it may not be the lightest option available, which is an important factor for some users.",
+      "matched_attributes": {
+        "Floatability in Powder": 1.0,
+        "Versatility": 0.9,
+        "Playfulness vs Stability": 0.8,
+        "Weight": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8,
+      "explanation": "The Moment Wildcat 108 matches the user's preferences well by offering excellent powder floatability and good playfulness for freeride conditions. However, it is more suited to mixed terrain rather than pure freestyle or extreme terrain like switch airs.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain suitability": 0.30000000000000004,
+        "width appropriateness": 0.6,
+        "skill level alignment": 0.7,
+        "weight": 0.5,
+        "dampness": 0.4,
+        "edge grip": 0.8,
+        "playfulness vs stability": 1.0,
+        "freestyle playfulness": 0.19999999999999996,
+        "edge grip for carving": 0.09999999999999998
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8,
+      "explanation": "The Dynastar M-Free 108 matches well with the user's query as it is a lightweight freeride ski that offers good playfulness and powder floatation. However, it falls slightly short in terms of overall stability compared to what the user is looking for.",
+      "matched_attributes": {
+        "freeride_ability": 1.0,
+        "floatation": 1.0,
+        "playfulness": 1.0,
+        "weight": 0.9,
+        "stability_in_variable_conditions": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7,
+      "explanation": "The K2 Disruption 78C is lightweight and forgiving, which aligns well with the user's query for a lightweight freeride ski with good playfulness. However, it lacks powder float, as indicated in the 'composite_cap_construction' attribute, which is not present or explicitly mentioned in the consensus summary.",
+      "matched_attributes": {
+        "lightweight": 1.0,
+        "forgiving": 1.0,
+        "playfulness": 0.8,
+        "powder_float": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris matches well with the user's preferences for a lightweight freeride ski with good playfulness and powder floatability due to its positive attributes in these areas. However, it does not align as closely with weight preference (as indicated by lack of 'Weight' attribute) and has stability issues at higher speeds which are important considerations based on the user query.",
+      "matched_attributes": {
+        "Playfulness": 1.0,
+        "Powder Floatability": 1.0,
+        "Weight": 0.5,
+        "Stability at Speed": 0.09999999999999998
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 is suitable for the user's query as it provides good playfulness and powder float characteristics that align well with the request. However, its flexibility (medium-soft) may not provide the best weight reduction or edge grip compared to more lightweight options.",
+      "matched_attributes": {
+        "playfulness": 0.9,
+        "powder_float": 0.85,
+        "stability": 0.6,
+        "weight": 0.8,
+        "flex/stiffness match": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7,
+      "explanation": "The Head Easy Joy SLR is a good match for the user's query as it offers lightweight construction and soft flex, which contribute to playfulness suitable for powder conditions. However, its ease of turning may not fully align with the user\u2019s preference for freeride performance, especially on more challenging terrain or faster speeds. The lack of edge grip could be seen as a gap.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "weight": 0.9,
+        "playfulness": 0.7,
+        "terrain_suitability": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7,
+      "explanation": "The Armada ARV 106 is a playful and versatile freeride ski that matches well with the user's preferences for light weight and good powder float. However, it may not be as forgiving in tight turns or hard snow conditions as desired. The flex/stiffness aligns with playfulness but may not fully match the stiffness required for lightweight performance.",
+      "matched_attributes": {
+        "weight": 0.9,
+        "floatability": 0.85,
+        "playfulness": 0.75,
+        "stiffness": 0.4,
+        "terrain suitability": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7,
+      "explanation": "The Elan Ripstick 96 matches the user's preferences for a lightweight freeride ski due to its carbon construction and 96mm width which suggests it may be relatively lightweight, though weight is not explicitly mentioned. It also has good playfulness and versatility as per the consensus summary and reviews.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.7,
+        "Terrain Suitability": 0.8,
+        "Width Appropriateness": 0.6,
+        "Skill Level Alignment": 0.5,
+        "Weight": 0.8,
+        "Dampness": 0.4,
+        "Edge Grip": 0.6,
+        "Playfulness vs Stability": 1.0,
+        "Stability at High Speeds": 0.30000000000000004
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

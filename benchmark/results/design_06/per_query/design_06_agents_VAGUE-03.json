@@ -1,0 +1,74 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4826,
+    "ndcg_10": 0.4826,
+    "mrr": 0.5,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 3389.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.3863,
+      "explanation": "Strong match on stiffness (100%), damp (100%), stability at speed (100%), playfulness (100%). Potential concern: powder float (50% penalty), forgiveness (30% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "stability_at_speed": 1.0,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.967
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.341,
+      "explanation": "Strong match on stiffness (100%), damp (100%), stability at speed (100%), playfulness (100%). Potential concern: powder float (60% penalty), forgiveness (40% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "stability_at_speed": 1.0,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.9
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

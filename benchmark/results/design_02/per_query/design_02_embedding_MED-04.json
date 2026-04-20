@@ -1,0 +1,182 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6109,
+    "ndcg_10": 0.8034,
+    "mrr": 0.5,
+    "attribute_precision": 0.1335,
+    "attribute_recall": 0.2333,
+    "attribute_f1": 0.1698,
+    "explanation_score": 3.8,
+    "latency_ms": 690.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 1.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The 98mm waist, titanal construction, and rocker-camber-rocker profile add up to a very versatile ski. Damp enough for c...\"",
+      "matched_attributes": {
+        "dampness": 0.7628,
+        "versatility": 0.7405,
+        "float": 0.7264,
+        "grip": 0.7992,
+        "forgiveness": 0.6958
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.9665,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Incredibly versatile. I took these from groomed morning corduroy to afternoon powder stashes and they handled everything...\"",
+      "matched_attributes": {
+        "stiffness": 0.6529,
+        "versatility": 0.5994,
+        "float": 0.5994,
+        "stability": 0.7064,
+        "forgiveness": 0.7064,
+        "grip": 0.6493
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8421,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"The 96mm waist is a versatile width....\"",
+      "matched_attributes": {
+        "versatility": 0.6274,
+        "dampness": 0.654,
+        "grip": 0.654
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7218,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"At 108mm it floats well in powder but the real story is how it handles high-speed crud and chop. Incredibly stable. If y...\"",
+      "matched_attributes": {
+        "stability": 0.6301,
+        "speed": 0.6163,
+        "float": 0.6163,
+        "stiffness": 0.6432,
+        "weight": 0.6432,
+        "dampness": 0.6308,
+        "grip": 0.6308
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6546,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"More chargy than the Atris but more playful than the Mindbender. A great middle ground for freeride skiing. Float is gre...\"",
+      "matched_attributes": {
+        "stability": 0.5805,
+        "dampness": 0.5805,
+        "playfulness": 0.597,
+        "float": 0.597,
+        "speed": 0.559
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6034,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The double titanal layers make it the most damp all-mountain ski available. Edge grip is outstanding for a 96mm waist sk...\"",
+      "matched_attributes": {
+        "dampness": 0.6732,
+        "grip": 0.6475,
+        "versatility": 0.6384,
+        "weight": 0.6035,
+        "stability": 0.6218,
+        "speed": 0.6218
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.5803,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Good option for freeride skiing with a playful emphasis. Not as stable or damp as heavier options but more fun in tight ...\"",
+      "matched_attributes": {
+        "weight": 0.5824,
+        "stability": 0.603,
+        "dampness": 0.603,
+        "speed": 0.603,
+        "playfulness": 0.5923,
+        "grip": 0.612,
+        "float": 0.612,
+        "versatility": 0.5619
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5729,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"I can ski all over the mountain and have a blast. Not the ski for icy days or pure carving, but everywhere else it shine...\"",
+      "matched_attributes": {
+        "grip": 0.5902,
+        "turn_quality": 0.5743,
+        "playfulness": 0.5923,
+        "float": 0.5923
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5563,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Damp and stable, doesn't chatter on hardpack. The 90mm waist adds just enough versatility beyond a pure carving ski. My ...\"",
+      "matched_attributes": {
+        "stability": 0.6561,
+        "dampness": 0.6561,
+        "turn_quality": 0.6868,
+        "grip": 0.6254,
+        "playfulness": 0.6283,
+        "versatility": 0.6283,
+        "precision": 0.6283
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5379,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Good all-around freeride ski. Floats well at 108mm, decent edge grip, stable in variable conditions. Not outstanding in ...\"",
+      "matched_attributes": {
+        "stability": 0.6261,
+        "grip": 0.6261,
+        "float": 0.5752,
+        "weight": 0.613,
+        "versatility": 0.613
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

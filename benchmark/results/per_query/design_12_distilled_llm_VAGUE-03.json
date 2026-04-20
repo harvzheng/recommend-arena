@@ -1,0 +1,153 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1762,
+    "ndcg_10": 0.1762,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.8,
+    "latency_ms": 133348.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i excels in providing exceptional edge grip and stability on hardpack and ice surfaces, which aligns well with the user's desire for confidence-inspiring performance. However, its limitations include not performing well in less technical conditions and lighter snow coverage.",
+      "matched_attributes": {
+        "Edge Grip": 1.0,
+        "Stability on Hardpack/Ice": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is designed for aggressive on-piste skiing and has a stiff construction suitable for hardpack terrain. While it excels in these areas, it does not align as well with the user's preference for a 'confidence-inspiring' ski due to its technical nature.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Rocker Profile": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a good fit for someone who skis fast but wants to feel safe due to its forgiving performance and easy turn initiation with a waist width of 78mm. However, it may not be ideal for very high-speed conditions or extreme turns.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.9,
+        "Rocker Profile": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 offers good edge grip and dampness suitable for fast skiing, which aligns with the user's preference for confidence-inspiring performance. However, its lack of off-piste capability might be seen as a drawback.",
+      "matched_attributes": {
+        "Edge Grip": 0.9,
+        "Dampness": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that excels in varied conditions and terrain types, which aligns with the user's desire for a 'confidence-inspiring' ski. However, it lacks specific features like stiffness, dampness, or edge grip that might be more emphasized by users seeking safety.",
+      "matched_attributes": {
+        "stiffness_and_dampness": 0.4,
+        "edge_grip_for_powder": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 excels in providing a playful and forgiving ride for intermediate-to-advanced riders who enjoy skiing fast on various terrain types. Its high-speed performance and suitable construction make it ideal for challenging conditions like blizzards. However, it may not be as stable or stiff as what the user desires.",
+      "matched_attributes": {
+        "Playful Ride": 1.0,
+        "Comfortable Experience": 0.8,
+        "Stability at Higher Speeds": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a strong candidate for the user's query due to its exceptional dampness and smooth performance in powder conditions, which aligns with their desire for safety when skiing fast. However, it may not be as stable at higher speeds or on heavy chop.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "turn_radius_m": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a strong candidate for the user\u2019s query due to its stiffness and dampness which provide excellent performance for challenging terrain like big-mountain skiing. However, its weight and lack of versatility make it unsuitable for intermediate skiers.",
+      "matched_attributes": {
+        "Stiffness_and_Dampness": 0.8,
+        "Performance_for_Challenging_Terrain": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile and playful freeride ski that excels in stability and floatation for off-piste terrain. However, it may not provide the exact level of confidence-inspiring performance as requested by the user.",
+      "matched_attributes": {
+        "Lengths Cm": 0.6,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.3,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.8,
+        "Construction": 0.9,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile powder ski that excels in soft snow conditions and offers a playful yet stable performance profile suitable for someone who skis fast but also wants to feel safe on challenging terrain like tree jumps and deep powder. However, it lacks edge grip on hardpack and may not be ideal for all types of snow conditions.",
+      "matched_attributes": {
+        "Rocker Profile": 0.8,
+        "Construction": 0.6,
+        "Weight G Per Ski": 0.3
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

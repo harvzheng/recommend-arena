@@ -1,0 +1,156 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7542,
+    "ndcg_10": 0.8158,
+    "mrr": 0.5,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.3333,
+    "explanation_score": 5.0,
+    "latency_ms": 2242.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.9875,
+      "explanation": "  Score: 0.988\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  1.00\n  Sentiment:      0.92\n  Weighted total: 0.50*1.00 + 0.35*1.00 + 0.15*0.92 = 0.988",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.8711335966349943,
+      "explanation": "  Score: 0.871\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.69\n  Sentiment:      0.88\n  Weighted total: 0.50*1.00 + 0.35*0.69 + 0.15*0.88 = 0.871",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.826046391454204,
+      "explanation": "  Score: 0.826\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.59\n  Sentiment:      0.80\n  Weighted total: 0.50*1.00 + 0.35*0.59 + 0.15*0.80 = 0.826",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8202801096990253,
+      "explanation": "  Score: 0.820\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  0.89  [NEAR-MISS: target=lte7 penalty=-0.11]\n    terrain    1.00  (exact match)\n  FTS relevance:  0.56\n  Sentiment:      0.96\n  Weighted total: 0.50*0.96 + 0.35*0.56 + 0.15*0.96 = 0.820",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 0.8888888888888888,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7859358117193146,
+      "explanation": "  Score: 0.786\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.43\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.43 + 0.15*0.90 = 0.786",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7755658870617841,
+      "explanation": "  Score: 0.776\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.42\n  Sentiment:      0.85\n  Weighted total: 0.50*1.00 + 0.35*0.42 + 0.15*0.85 = 0.776",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6841013562623668,
+      "explanation": "  Score: 0.684\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  0.67  [NEAR-MISS: target=lte7 penalty=-0.33]\n    terrain    0.00  (no match)\n  FTS relevance:  0.80\n  Sentiment:      0.85\n  Weighted total: 0.50*0.56 + 0.35*0.80 + 0.15*0.85 = 0.684",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 0.6666666666666667,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6786132857057805,
+      "explanation": "  Score: 0.679\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.12\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.12 + 0.15*0.90 = 0.679",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6690686575430622,
+      "explanation": "  Score: 0.669\n  Attribute breakdown:\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.12\n  Sentiment:      0.85\n  Weighted total: 0.50*1.00 + 0.35*0.12 + 0.15*0.85 = 0.669",
+      "matched_attributes": {
+        "damp": 1.0,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6536677545865799,
+      "explanation": "  Score: 0.654\n  Attribute breakdown:\n    damp       0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.13\n  Sentiment:      0.85\n  Weighted total: 0.50*0.96 + 0.35*0.13 + 0.15*0.85 = 0.654",
+      "matched_attributes": {
+        "damp": 0.8888888888888888,
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

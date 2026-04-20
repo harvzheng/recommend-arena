@@ -1,0 +1,154 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1727,
+    "ndcg_10": 0.3615,
+    "mrr": 0.1429,
+    "attribute_precision": 0.3667,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.3492,
+    "explanation_score": 4.6,
+    "latency_ms": 2188.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.226,
+      "explanation": "Matched on terrain:carving (high match, +2.43), stiffness (high match, +0.60), weight (high match, +0.32).",
+      "matched_attributes": {
+        "weight": 0.3212,
+        "terrain:carving": 2.4271,
+        "stiffness": 0.6049
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.2201,
+      "explanation": "Matched on binding_system:integrated (high match, +3.12), stiffness (moderate match, +0.26), weight (slight match, +0.13).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "binding_system:integrated": 3.1203,
+        "stiffness": 0.2593
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.2145,
+      "explanation": "Matched on binding_system:integrated (high match, +3.12), stiffness (moderate match, +0.17), weight (slight match, +0.13).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "binding_system:integrated": 3.1203,
+        "stiffness": 0.1728
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.2015,
+      "explanation": "Matched on binding_system:integrated (high match, +3.12), stiffness (slight match, +0.09).",
+      "matched_attributes": {
+        "binding_system:integrated": 3.1203,
+        "stiffness": 0.0864
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1928,
+      "explanation": "Matched on terrain:carving (high match, +2.43), stiffness (high match, +0.52), weight (high match, +0.39).",
+      "matched_attributes": {
+        "weight": 0.3855,
+        "terrain:carving": 2.4271,
+        "stiffness": 0.5185
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.1914,
+      "explanation": "Matched on terrain:carving (high match, +2.43), stiffness (high match, +0.52), weight (high match, +0.32).",
+      "matched_attributes": {
+        "weight": 0.3212,
+        "terrain:carving": 2.4271,
+        "stiffness": 0.5185
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.1913,
+      "explanation": "Matched on terrain:carving (high match, +2.43), stiffness (high match, +0.60), weight (high match, +0.32).",
+      "matched_attributes": {
+        "weight": 0.3212,
+        "terrain:carving": 2.4271,
+        "stiffness": 0.6049
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.1856,
+      "explanation": "Matched on terrain:carving (high match, +2.43), stiffness (high match, +0.52), weight (moderate match, +0.26).",
+      "matched_attributes": {
+        "weight": 0.257,
+        "terrain:carving": 2.4271,
+        "stiffness": 0.5185
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.1647,
+      "explanation": "Matched on terrain:carving (high match, +2.43), stiffness (high match, +0.52), weight (moderate match, +0.19).",
+      "matched_attributes": {
+        "weight": 0.1927,
+        "terrain:carving": 2.4271,
+        "stiffness": 0.5185
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0653,
+      "explanation": "Matched on stiffness (high match, +0.60), weight (high match, +0.45).",
+      "matched_attributes": {
+        "weight": 0.4497,
+        "stiffness": 0.6049
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

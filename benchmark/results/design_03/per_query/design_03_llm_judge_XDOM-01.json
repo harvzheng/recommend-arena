@@ -1,0 +1,167 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "XDOM-01",
+  "query_text": "cushioned long-distance running shoe for marathon training",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.9305,
+    "ndcg_10": 0.9548,
+    "mrr": 1.0,
+    "attribute_precision": 0.165,
+    "attribute_recall": 0.2333,
+    "attribute_f1": 0.1933,
+    "explanation_score": 4.0,
+    "latency_ms": 43580.8
+  },
+  "results": [
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.8,
+      "explanation": "The Nike Vomero 18 is a well-suited choice for long-distance running and marathon training as it excels in cushioning and durability, which are key attributes according to the user's query. However, its responsiveness for speed work and lightweight nature may not fully align with the user's preferences.",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "durability": 1.0,
+        "responsiveness_for_speed_work": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.8,
+      "explanation": "The Brooks Ghost 16 matches well with the user's query for a 'cushioned long-distance running shoe for marathon training' as it is highly reliable and durable, providing adequate cushioning suitable for long distance runs like marathons. The product aligns with the user\u2019s preference in terms of cushion level, responsiveness (considered under cushioning), stability, and durability.",
+      "matched_attributes": {
+        "cushioning": 0.9,
+        "durability": 0.8,
+        "stability": 1.0,
+        "reliability": 0.5,
+        "speed": 0.30000000000000004,
+        "appearance": 0.4
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.8,
+      "explanation": "The ASICS Gel-Nimbus 26 is a highly praised shoe for long-distance running due to its cushioning and stability features which are crucial for marathon training. The product meets the user's query about a 'cushioned long-distance running shoe' as it fits both criteria well, aligning with their preference.",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "comfort": 1.0,
+        "response_speed": 0.19999999999999996,
+        "stability": 0.8
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.8,
+      "explanation": "The Hoka Speedgoat 6 matches well with the user's preferences for a long-distance running shoe suitable for marathon training due to its excellent cushioning and responsiveness. However, it lacks specific details about drop height and intended pace which are important for marathon training.",
+      "matched_attributes": {
+        "Cushioning": 1.0,
+        "Grip": 0.8,
+        "Response": 0.7,
+        "Drop height": 0.4,
+        "Intended pace (tempo runs)": 0.5
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.7,
+      "explanation": "The ASICS Novablast 4 matches the user's query well as it provides cushioned support suitable for long-distance running and marathon training due to its excellent bounce and comfort attributes. However, it lacks stability features which might be considered a gap for users preferring more specific features like these.",
+      "matched_attributes": {
+        "cushion level": 0.8,
+        "responsiveness": 0.7,
+        "stability": 0.8
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.7,
+      "explanation": "The Nike Vaporfly 3 is a responsive and lightweight shoe suitable for long-distance running, which matches the user's query of a cushioned long-distance running shoe for marathon training. However, it lacks durability, a key attribute as per the user's requirements (intended pace, weight, durability). This gap reduces its overall match score.",
+      "matched_attributes": {
+        "responsiveness": 1.0,
+        "cushion_level": 0.9,
+        "durability": 0.4
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.6,
+      "explanation": "The New Balance Fresh Foam 1080v14 is a comfortable and durable shoe, but its cushion level may not match the user's preference for a 'cushioned' long-distance running shoe, especially since it has generous cushioning which might be too much for marathon training. Additionally, its lack of responsiveness (due to a 6mm drop) could affect performance during speed work, thus impacting the overall suitability.",
+      "matched_attributes": {
+        "comfort": 0.8,
+        "durability": 0.9,
+        "cushion_level_match": 0.5,
+        "responsiveness_for_speed_work": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.5,
+      "explanation": "The Nike Pegasus Trail 5 is a versatile shoe that can handle mixed surfaces and offers adequate cushioning suitable for general running needs including marathon training. However, its moderate grip and standard cushioning may not fully meet the user's preference for a 'cushioned long-distance running shoe for marathon training,' especially since it lacks specialized trail features or high levels of cushioning designed for such intensive use.",
+      "matched_attributes": {
+        "handling": 0.8,
+        "weight": 0.7,
+        "grip": 0.4,
+        "cushioning": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.4,
+      "explanation": "The Saucony Kinvara 15 is responsive and lightweight, which are good qualities for marathon training, but it lacks sufficient cushioning for long-distance runs and may not be the best choice given its low cushion level.",
+      "matched_attributes": {
+        "responsiveness": 0.8,
+        "breathability": 0.7,
+        "cushioning": 0.0,
+        "durability": 0.09999999999999998,
+        "weight": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.4,
+      "explanation": "The Salomon Speedcross 6 is praised for its exceptional grip and stability suitable for technical trails, which aligns well with the user's interest in a long-distance running shoe for marathon training. However, it lacks cushioning, which is crucial for marathon runners. The product's responsiveness to foot strike, plate presence (stability), drop height, intended pace (technical performance), weight, and durability are all within expected ranges.",
+      "matched_attributes": {
+        "grip": 1.0,
+        "stability": 1.0,
+        "technical_performance": 1.0,
+        "cushioning": 0.5
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "Max cushion marathon trainer"
+    },
+    {
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "High cushion distance shoe"
+    },
+    {
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Moderate cushion, good for distance"
+    },
+    {
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "Cushioned but more for daily training"
+    },
+    {
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "Some cushion but not primary purpose"
+    }
+  ]
+}

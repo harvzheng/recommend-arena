@@ -1,0 +1,180 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.023,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.9,
+    "latency_ms": 2314.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.3171,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.52), playfulness (high match, +0.31), turn_radius (slight match, +0.15), weight (slight match, +0.13).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "playfulness": 0.3084,
+        "turn_radius": 0.1481,
+        "damp": 0.5185,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.2761,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.60), playfulness (moderate match, +0.23), turn_radius (moderate match, +0.20), weight (slight match, +0.10).",
+      "matched_attributes": {
+        "weight": 0.1028,
+        "playfulness": 0.2313,
+        "turn_radius": 0.1975,
+        "damp": 0.6049,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.2703,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.69), playfulness (moderate match, +0.15), turn_radius (slight match, +0.15), weight (slight match, +0.13).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "playfulness": 0.1542,
+        "turn_radius": 0.1481,
+        "damp": 0.6914,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.2207,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.60), turn_radius (moderate match, +0.30), weight (slight match, +0.13).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "turn_radius": 0.2963,
+        "damp": 0.6049,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.2005,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.52), weight (slight match, +0.10), playfulness (slight match, +0.08), turn_radius (slight match, +0.05).",
+      "matched_attributes": {
+        "weight": 0.1028,
+        "playfulness": 0.0771,
+        "turn_radius": 0.0494,
+        "damp": 0.5185,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.1965,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.60), playfulness (high match, +0.39), turn_radius (moderate match, +0.30), weight (moderate match, +0.18). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "playfulness": 0.3855,
+        "turn_radius": 0.2963,
+        "damp": 0.6049,
+        "rocker": -1.2231,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.188,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.69), turn_radius (moderate match, +0.30), playfulness (moderate match, +0.23), weight (moderate match, +0.18). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "playfulness": 0.2313,
+        "turn_radius": 0.2963,
+        "damp": 0.6914,
+        "rocker": -1.2231,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.1787,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), playfulness (high match, +0.46), damp (high match, +0.43), turn_radius (moderate match, +0.25), weight (slight match, +0.10). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "weight": 0.1028,
+        "playfulness": 0.4626,
+        "turn_radius": 0.2469,
+        "damp": 0.4321,
+        "rocker": -1.2231,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.1765,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.52), playfulness (high match, +0.39), turn_radius (moderate match, +0.20), weight (slight match, +0.13). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "playfulness": 0.3855,
+        "turn_radius": 0.1975,
+        "damp": 0.5185,
+        "rocker": -1.2231,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1589,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.60), turn_radius (moderate match, +0.25), playfulness (moderate match, +0.23), weight (moderate match, +0.15). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "weight": 0.1542,
+        "playfulness": 0.2313,
+        "turn_radius": 0.2469,
+        "damp": 0.6049,
+        "rocker": -1.2231,
+        "terrain:on-piste": 1.5108
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2818,
+    "ndcg_10": 0.3566,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 2276.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.2366,
+      "explanation": "Strong match on stiffness (100%), damp (90%), playfulness (90%). Potential concern: playfulness (70% penalty), stiffness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.9,
+        "playfulness": 0.9,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2207,
+      "explanation": "Strong match on stiffness (100%), damp (100%), playfulness (72%). Potential concern: stiffness (70% penalty), playfulness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "playfulness": 0.725,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.2059,
+      "explanation": "Strong match on stiffness (100%), damp (90%). Moderate fit for playfulness. Potential concern: stiffness (60% penalty), playfulness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.9,
+        "playfulness": 0.688,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.2051,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), damp (84%). Potential concern: playfulness (80% penalty), stiffness (70% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.84,
+        "playfulness": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.1912,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), damp (71%). Potential concern: playfulness (80% penalty), stiffness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.712,
+        "playfulness": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.1884,
+      "explanation": "Strong match on stiffness (100%), playfulness (86%), damp (84%). Potential concern: stiffness (70% penalty), playfulness (70% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.84,
+        "playfulness": 0.855,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.1811,
+      "explanation": "Strong match on stiffness (100%), damp (98%). Moderate fit for playfulness. Potential concern: stiffness (70% penalty), playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.98,
+        "playfulness": 0.42,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.1806,
+      "explanation": "Strong match on stiffness (100%), playfulness (87%), damp (71%). Potential concern: playfulness (70% penalty), stiffness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.712,
+        "playfulness": 0.87,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.1789,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%). Moderate fit for damp. Potential concern: playfulness (80% penalty), stiffness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.663,
+        "playfulness": 1.0,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1774,
+      "explanation": "Strong match on stiffness (100%), damp (100%). Potential concern: stiffness (70% penalty), playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "playfulness": 0.375,
+        "review_quality": 0.933
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

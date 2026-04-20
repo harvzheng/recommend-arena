@@ -1,0 +1,120 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1028,
+    "ndcg_10": 0.333,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.1,
+    "latency_ms": 161.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6440650016069412,
+      "explanation": "Attribute matches:\n  matched: forgiveness (1.00)\nSignals: vector similarity 0.55, attribute match 0.50, sentiment strength 1.00",
+      "matched_attributes": {
+        "forgiveness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.4492041230201721,
+      "explanation": "Attribute matches:\n  matched: turn entry (0.25)\nSignals: vector similarity 0.53, attribute match 0.50, sentiment strength 0.25",
+      "matched_attributes": {
+        "turn_entry": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.3506149142980576,
+      "explanation": "Signals: vector similarity 0.64, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.3409550428390503,
+      "explanation": "Signals: vector similarity 0.62, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.3409550428390503,
+      "explanation": "Signals: vector similarity 0.62, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.33208040297031405,
+      "explanation": "Signals: vector similarity 0.59, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.33083880245685576,
+      "explanation": "Signals: vector similarity 0.59, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.32472196519374846,
+      "explanation": "Signals: vector similarity 0.57, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.32088432312011717,
+      "explanation": "Signals: vector similarity 0.56, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.3196049839258194,
+      "explanation": "Signals: vector similarity 0.56, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.9405,
+    "ndcg_10": 0.9875,
+    "mrr": 1.0,
+    "attribute_precision": 0.1429,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.2,
+    "explanation_score": 5.0,
+    "latency_ms": 28.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 1.0,
+      "explanation": "Strong match on forgiveness (17%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.17,
+        "playfulness": 0.153,
+        "powder_float": 0.146,
+        "stability_at_speed": 0.135,
+        "damp": 0.134,
+        "stiffness": 0.132,
+        "edge_grip": 0.131
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.9463,
+      "explanation": "Strong match on forgiveness (18%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.175,
+        "playfulness": 0.156,
+        "powder_float": 0.147,
+        "stability_at_speed": 0.134,
+        "damp": 0.131,
+        "stiffness": 0.129,
+        "edge_grip": 0.128
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7577,
+      "explanation": "Strong match on forgiveness (17%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.167,
+        "playfulness": 0.153,
+        "powder_float": 0.146,
+        "stability_at_speed": 0.136,
+        "damp": 0.134,
+        "stiffness": 0.132,
+        "edge_grip": 0.132
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6349,
+      "explanation": "Strong match on forgiveness (16%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.164,
+        "playfulness": 0.157,
+        "powder_float": 0.151,
+        "stability_at_speed": 0.135,
+        "damp": 0.133,
+        "stiffness": 0.13,
+        "edge_grip": 0.129
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6081,
+      "explanation": "Strong match on forgiveness (16%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.16,
+        "playfulness": 0.156,
+        "powder_float": 0.151,
+        "stability_at_speed": 0.137,
+        "damp": 0.134,
+        "stiffness": 0.132,
+        "edge_grip": 0.131
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.5789,
+      "explanation": "Strong match on forgiveness (16%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.163,
+        "playfulness": 0.158,
+        "powder_float": 0.152,
+        "stability_at_speed": 0.135,
+        "damp": 0.133,
+        "stiffness": 0.13,
+        "edge_grip": 0.129
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.541,
+      "explanation": "Strong match on forgiveness (16%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.164,
+        "playfulness": 0.159,
+        "powder_float": 0.154,
+        "stability_at_speed": 0.134,
+        "damp": 0.132,
+        "stiffness": 0.129,
+        "edge_grip": 0.128
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5269,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.158,
+        "playfulness": 0.152,
+        "powder_float": 0.148,
+        "stability_at_speed": 0.138,
+        "damp": 0.136,
+        "stiffness": 0.134,
+        "edge_grip": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.4959,
+      "explanation": "Strong match on forgiveness (16%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.16,
+        "playfulness": 0.156,
+        "powder_float": 0.152,
+        "stability_at_speed": 0.136,
+        "damp": 0.134,
+        "stiffness": 0.132,
+        "edge_grip": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.4849,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.16,
+        "playfulness": 0.151,
+        "powder_float": 0.146,
+        "stability_at_speed": 0.138,
+        "damp": 0.136,
+        "stiffness": 0.134,
+        "edge_grip": 0.134
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

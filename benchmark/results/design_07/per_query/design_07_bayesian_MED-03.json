@@ -1,0 +1,156 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6588,
+    "ndcg_10": 0.7203,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 3905.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 1.0,
+      "explanation": "Recommended because P(very_stiff) = 0.33 (from 3/7 reviews), P(on-piste) = 0.14 (from 1/8 reviews), P(ultralight) = 0.17 (from 0/2 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3333,
+        "terrain": 0.1429,
+        "weight_feel": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.982,
+      "explanation": "Recommended because P(very_stiff) = 0.50 (from 6/9 reviews), P(on-piste) = 0.07 (from 0/9 reviews), P(ultralight) = 0.17 (from 0/2 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "terrain": 0.0667,
+        "weight_feel": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.9659,
+      "explanation": "Recommended because P(very_stiff) = 0.22 (from 1/4 reviews), P(on-piste) = 0.07 (from 0/8 reviews), P(ultralight) = 0.25 (from 0/0 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.2222,
+        "terrain": 0.0714,
+        "weight_feel": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.9658,
+      "explanation": "Recommended because P(very_stiff) = 0.36 (from 3/6 reviews), P(on-piste) = 0.57 (from 7/8 reviews), P(ultralight) = 0.40 (from 1/1 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3636,
+        "terrain": 0.5714,
+        "weight_feel": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.9488,
+      "explanation": "Recommended because P(very_stiff) = 0.12 (from 0/3 reviews), P(on-piste) = 0.07 (from 0/9 reviews), P(ultralight) = 0.25 (from 0/0 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125,
+        "terrain": 0.0667,
+        "weight_feel": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.9478,
+      "explanation": "Recommended because P(very_stiff) = 0.11 (from 0/4 reviews), P(on-piste) = 0.07 (from 0/8 reviews), P(ultralight) = 0.25 (from 0/0 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1111,
+        "terrain": 0.0714,
+        "weight_feel": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.9464,
+      "explanation": "Recommended because P(very_stiff) = 0.12 (from 0/3 reviews), P(on-piste) = 0.07 (from 0/8 reviews), P(ultralight) = 0.20 (from 0/1 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125,
+        "terrain": 0.0714,
+        "weight_feel": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.9464,
+      "explanation": "Recommended because P(very_stiff) = 0.12 (from 0/3 reviews), P(on-piste) = 0.07 (from 0/8 reviews), P(ultralight) = 0.20 (from 0/1 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125,
+        "terrain": 0.0714,
+        "weight_feel": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.9448,
+      "explanation": "Recommended because P(very_stiff) = 0.10 (from 0/5 reviews), P(on-piste) = 0.07 (from 0/9 reviews), P(ultralight) = 0.25 (from 0/0 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1,
+        "terrain": 0.0667,
+        "weight_feel": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.8379,
+      "explanation": "Recommended because P(very_stiff) = 0.38 (from 4/8 reviews), P(on-piste) = 0.60 (from 8/9 reviews), P(ultralight) = 0.25 (from 0/0 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3846,
+        "terrain": 0.6,
+        "weight_feel": 0.25
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

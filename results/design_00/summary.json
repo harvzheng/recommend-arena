@@ -1,0 +1,217 @@
+[
+  {
+    "name": "design_00_sota",
+    "mean_ndcg_5": 0.5347,
+    "mean_ndcg_10": 0.5529,
+    "mean_mrr": 0.6833,
+    "mean_attr_f1": 0.3095,
+    "coverage": 0.9,
+    "mean_explanation_quality": 4.43,
+    "ingestion_latency_ms": 606705.3,
+    "latency_p50_ms": 3832.6,
+    "latency_p95_ms": 6552.2,
+    "latency_p99_ms": 6552.2,
+    "per_query": [
+      {
+        "query_id": "EASY-01",
+        "difficulty": "easy",
+        "ndcg_5": 0.427,
+        "ndcg_10": 0.427,
+        "mrr": 0.5,
+        "attr_f1": 0.5,
+        "explanation_score": 4.5,
+        "latency_ms": 2886.3
+      },
+      {
+        "query_id": "EASY-02",
+        "difficulty": "easy",
+        "ndcg_5": 0.5097,
+        "ndcg_10": 0.6347,
+        "mrr": 1.0,
+        "attr_f1": 0.0,
+        "explanation_score": 4.8,
+        "latency_ms": 2597.3
+      },
+      {
+        "query_id": "EASY-03",
+        "difficulty": "easy",
+        "ndcg_5": 0.8404,
+        "ndcg_10": 0.8404,
+        "mrr": 1.0,
+        "attr_f1": 0.6667,
+        "explanation_score": 5.0,
+        "latency_ms": 2796.5
+      },
+      {
+        "query_id": "EASY-04",
+        "difficulty": "easy",
+        "ndcg_5": 0.918,
+        "ndcg_10": 0.9498,
+        "mrr": 1.0,
+        "attr_f1": 0.5,
+        "explanation_score": 4.7,
+        "latency_ms": 2647.2
+      },
+      {
+        "query_id": "EASY-05",
+        "difficulty": "easy",
+        "ndcg_5": 0.5786,
+        "ndcg_10": 0.5786,
+        "mrr": 1.0,
+        "attr_f1": 0.8,
+        "explanation_score": 5.0,
+        "latency_ms": 3832.6
+      },
+      {
+        "query_id": "MED-01",
+        "difficulty": "medium",
+        "ndcg_5": 0.5591,
+        "ndcg_10": 0.5591,
+        "mrr": 1.0,
+        "attr_f1": 0.6667,
+        "explanation_score": 5.0,
+        "latency_ms": 4769.5
+      },
+      {
+        "query_id": "MED-02",
+        "difficulty": "medium",
+        "ndcg_5": 0.4053,
+        "ndcg_10": 0.4053,
+        "mrr": 0.0,
+        "attr_f1": 0.6667,
+        "explanation_score": 5.0,
+        "latency_ms": 3148.6
+      },
+      {
+        "query_id": "MED-03",
+        "difficulty": "medium",
+        "ndcg_5": 0.9479,
+        "ndcg_10": 0.9479,
+        "mrr": 1.0,
+        "attr_f1": 0.4,
+        "explanation_score": 5.0,
+        "latency_ms": 4029.4
+      },
+      {
+        "query_id": "MED-04",
+        "difficulty": "medium",
+        "ndcg_5": 0.7121,
+        "ndcg_10": 0.7121,
+        "mrr": 1.0,
+        "attr_f1": 0.0,
+        "explanation_score": 5.0,
+        "latency_ms": 6552.2
+      },
+      {
+        "query_id": "MED-05",
+        "difficulty": "medium",
+        "ndcg_5": 0.5786,
+        "ndcg_10": 0.5786,
+        "mrr": 1.0,
+        "attr_f1": 0.0,
+        "explanation_score": 4.0,
+        "latency_ms": 3464.8
+      },
+      {
+        "query_id": "HARD-01",
+        "difficulty": "hard",
+        "ndcg_5": 0.0,
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "attr_f1": 0.0,
+        "explanation_score": 2.0,
+        "latency_ms": 3968.4
+      },
+      {
+        "query_id": "HARD-02",
+        "difficulty": "hard",
+        "ndcg_5": 0.6839,
+        "ndcg_10": 0.6839,
+        "mrr": 1.0,
+        "attr_f1": 0.0,
+        "explanation_score": 5.0,
+        "latency_ms": 5330.7
+      },
+      {
+        "query_id": "HARD-03",
+        "difficulty": "hard",
+        "ndcg_5": 0.5228,
+        "ndcg_10": 0.5228,
+        "mrr": 1.0,
+        "attr_f1": 0.0,
+        "explanation_score": 3.67,
+        "latency_ms": 5777.2
+      },
+      {
+        "query_id": "HARD-04",
+        "difficulty": "hard",
+        "ndcg_5": 0.1817,
+        "ndcg_10": 0.1817,
+        "mrr": 0.0,
+        "attr_f1": 0.2857,
+        "explanation_score": 5.0,
+        "latency_ms": 4926.9
+      },
+      {
+        "query_id": "HARD-05",
+        "difficulty": "hard",
+        "ndcg_5": 0.8063,
+        "ndcg_10": 0.8063,
+        "mrr": 1.0,
+        "attr_f1": 0.0,
+        "explanation_score": 2.0,
+        "latency_ms": 2905.4
+      },
+      {
+        "query_id": "VAGUE-01",
+        "difficulty": "vague",
+        "ndcg_5": 0.3131,
+        "ndcg_10": 0.5197,
+        "mrr": 0.1667,
+        "attr_f1": 0.0,
+        "explanation_score": 4.7,
+        "latency_ms": 2358.4
+      },
+      {
+        "query_id": "VAGUE-02",
+        "difficulty": "vague",
+        "ndcg_5": 0.0,
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "attr_f1": 0.5714,
+        "explanation_score": 5.0,
+        "latency_ms": 4525.9
+      },
+      {
+        "query_id": "VAGUE-03",
+        "difficulty": "vague",
+        "ndcg_5": 0.1952,
+        "ndcg_10": 0.1952,
+        "mrr": 0.0,
+        "attr_f1": 0.4,
+        "explanation_score": 5.0,
+        "latency_ms": 3668.1
+      },
+      {
+        "query_id": "XDOM-01",
+        "difficulty": "cross_domain",
+        "ndcg_5": 0.8677,
+        "ndcg_10": 0.8677,
+        "mrr": 1.0,
+        "attr_f1": 0.4,
+        "explanation_score": 4.33,
+        "latency_ms": 4110.3
+      },
+      {
+        "query_id": "XDOM-02",
+        "difficulty": "cross_domain",
+        "ndcg_5": 0.6475,
+        "ndcg_10": 0.6475,
+        "mrr": 1.0,
+        "attr_f1": 0.3333,
+        "explanation_score": 4.0,
+        "latency_ms": 3327.1
+      }
+    ]
+  }
+]

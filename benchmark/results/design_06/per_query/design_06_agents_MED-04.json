@@ -1,0 +1,195 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6862,
+    "ndcg_10": 0.7456,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3656.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6467,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 1.0,
+        "spec_match": 0.5,
+        "review_quality": 0.967
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6455,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 1.0,
+        "spec_match": 0.5,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.624,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (50% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 1.0,
+        "spec_match": 0.5,
+        "review_quality": 0.96
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6188,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 1.0,
+        "spec_match": 0.75,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6146,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 0.75,
+        "spec_match": 0.5,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5894,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (86%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 0.857,
+        "powder_float": 0.78,
+        "spec_match": 0.5,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.587,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (10% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "spec_match": 0.5,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.582,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Moderate fit for powder float. Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 0.5,
+        "spec_match": 0.5,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.5746,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), stability at speed (100%). Potential concern: playfulness (30% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 1.0,
+        "powder_float": 0.25,
+        "spec_match": 0.5,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5719,
+      "explanation": "Strong match on stiffness (100%), damp (100%), edge grip (100%), powder float (100%). Potential concern: playfulness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "edge_grip": 1.0,
+        "stability_at_speed": 0.857,
+        "powder_float": 1.0,
+        "spec_match": 0.5,
+        "review_quality": 0.92
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

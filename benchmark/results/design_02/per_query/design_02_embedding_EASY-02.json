@@ -1,0 +1,176 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7528,
+    "ndcg_10": 0.8536,
+    "mrr": 1.0,
+    "attribute_precision": 0.0728,
+    "attribute_recall": 0.1333,
+    "attribute_f1": 0.0942,
+    "explanation_score": 3.2,
+    "latency_ms": 695.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 1.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Not a long-term ski \u2014 you'll outgrow them \u2014 but for getting started they're unbeatable....\"",
+      "matched_attributes": {
+        "stiffness": 0.6185,
+        "weight": 0.6185,
+        "forgiveness": 0.6185,
+        "turn_quality": 0.6185,
+        "speed": 0.5929,
+        "versatility": 0.5929
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.9215,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Float in powder is a bonus \u2014 many park skis sink....\"",
+      "matched_attributes": {
+        "float": 0.5362,
+        "grip": 0.5213,
+        "playfulness": 0.5213,
+        "dampness": 0.579
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.8032,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Love this ski....\"",
+      "matched_attributes": {
+        "stiffness": 0.6095,
+        "float": 0.6095,
+        "forgiveness": 0.6095,
+        "grip": 0.6071,
+        "playfulness": 0.6071
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7019,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"The tip rocker helps in soft snow but it's really a piste ski....\"",
+      "matched_attributes": {
+        "stiffness": 0.6539,
+        "weight": 0.5946,
+        "float": 0.5946,
+        "playfulness": 0.567
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6983,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Great value beginner ski. Very soft flex is easy to handle. Edge grip is acceptable on groomed but struggles on hard sno...\"",
+      "matched_attributes": {
+        "stiffness": 0.7434,
+        "grip": 0.8411,
+        "weight": 0.6532,
+        "forgiveness": 0.6458
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6895,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"Not a ski for powder or ice but fine for regular resort conditions....\"",
+      "matched_attributes": {
+        "float": 0.6372,
+        "speed": 0.4832
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.659,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Extremely playful and surfy in powder. Very light weight for the width. On hard snow it's like skiing on butter \u2014 no edg...\"",
+      "matched_attributes": {
+        "weight": 0.5613,
+        "grip": 0.5886,
+        "playfulness": 0.6154,
+        "float": 0.5882
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5756,
+      "explanation": "Matched on 9 attribute(s) from 5 review passage(s). Top evidence: \"Moved from beginner skis to the Ripstick 96 and it's a great progression ski. Forgiving enough that I'm not scared but c...\"",
+      "matched_attributes": {
+        "stiffness": 0.6824,
+        "weight": 0.5893,
+        "grip": 0.6193,
+        "float": 0.6058,
+        "forgiveness": 0.6824,
+        "playfulness": 0.5562,
+        "speed": 0.5292,
+        "versatility": 0.5292,
+        "turn_quality": 0.5292
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.5626,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Very playful \u2014 great for butters, natural features, and creative skiing. At 106mm it floats well in powder. Edge grip is...\"",
+      "matched_attributes": {
+        "grip": 0.5466,
+        "playfulness": 0.509,
+        "float": 0.5554,
+        "stability": 0.5642,
+        "weight": 0.4714,
+        "versatility": 0.4714
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5497,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The Wildcat just feels alive underfoot. There's a springy energy to the maple core that makes every turn engaging. Great...\"",
+      "matched_attributes": {
+        "grip": 0.5516,
+        "float": 0.5618,
+        "turn_quality": 0.5516,
+        "stiffness": 0.5114,
+        "playfulness": 0.5417,
+        "speed": 0.5721
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

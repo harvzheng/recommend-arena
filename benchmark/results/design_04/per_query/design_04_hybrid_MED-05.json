@@ -1,0 +1,124 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4555,
+    "ndcg_10": 0.5142,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.8,
+    "latency_ms": 67.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.5828110243876774,
+      "explanation": "Attribute matches:\n  matched: dampness (0.99)\nSignals: vector similarity 0.58, attribute match 0.33, sentiment strength 0.99",
+      "matched_attributes": {
+        "dampness": 0.99
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5811432888110478,
+      "explanation": "Attribute matches:\n  matched: dampness (1.00)\nSignals: vector similarity 0.57, attribute match 0.33, sentiment strength 1.00",
+      "matched_attributes": {
+        "dampness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.5808704783519109,
+      "explanation": "Attribute matches:\n  matched: dampness (0.97)\nSignals: vector similarity 0.58, attribute match 0.33, sentiment strength 0.97",
+      "matched_attributes": {
+        "dampness": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.41644024153550463,
+      "explanation": "Attribute matches:\n  matched: dampness (0.38)\nSignals: vector similarity 0.54, attribute match 0.33, sentiment strength 0.38",
+      "matched_attributes": {
+        "dampness": 0.375
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.3510672569274902,
+      "explanation": "Signals: vector similarity 0.65, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.3510672569274902,
+      "explanation": "Signals: vector similarity 0.65, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.34631378948688507,
+      "explanation": "Signals: vector similarity 0.63, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.34497764408588405,
+      "explanation": "Signals: vector similarity 0.63, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.31980552673339846,
+      "explanation": "Signals: vector similarity 0.56, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.31843735873699186,
+      "explanation": "Signals: vector similarity 0.55, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

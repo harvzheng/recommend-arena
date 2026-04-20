@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.8,
+    "latency_ms": 12.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6499993693420182,
+      "explanation": "Line Blade. The Line Blade is a hidden gem. Maple and metal construction gives it a unique combo of liveliness and dampness. Edge grip is outstanding ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.649999208705552,
+      "explanation": "K2 Mindbender 108Ti. The Mindbender 108Ti is a charging machine. The titanal makes it stiff and damp \u2014 this is not a playful noodle. At 108mm it float",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6499991953276262,
+      "explanation": "Black Crows Atris. The Atris is a powder dream. At 108mm with generous rocker, it floats effortlessly. The poplar and fiberglass construction is light",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6499991922196906,
+      "explanation": "Atomic Redster G9. Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full camber profil",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6499991889122224,
+      "explanation": "DPS Pagoda Tour 112 RP. The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The carbon",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6499991823930058,
+      "explanation": "Armada ARV 106. The ARV 106 is the ultimate park-to-powder ski. Twin-tip design for switch riding, soft enough for jibbing but stiff enough for landin",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6499990508848468,
+      "explanation": "Blizzard Rustler 10. The Rustler 10 is the most fun ski I've ever ridden. Incredibly playful \u2014 you can butter, spin, and smear with ease. The rocker p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6499990450270989,
+      "explanation": "Rossignol Black Ops Sender Ti. The Black Ops Sender Ti is a big-mountain beast. Rossignol loaded it with titanal and the result is maximum dampness an",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6499990374387591,
+      "explanation": "Rossignol Experience 78 Ca. My first pair of skis and they're perfect for learning! Very forgiving when I make mistakes. Light enough that my legs don",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.649999005615161,
+      "explanation": "Moment Wildcat 108. Moment makes incredible skis and the Wildcat 108 is their masterpiece. The maple/triax construction gives it a unique blend of pow",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

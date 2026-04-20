@@ -1,0 +1,162 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7317,
+    "ndcg_10": 0.7317,
+    "mrr": 1.0,
+    "attribute_precision": 0.2,
+    "attribute_recall": 0.1333,
+    "attribute_f1": 0.16,
+    "explanation_score": 4.7,
+    "latency_ms": 99641.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is designed for aggressive carving on hardpack and icy trails, which aligns closely with the user's preference for 'stiff carving' ski. However, it lacks the versatility needed for softer snow conditions or lighter snow cover.",
+      "matched_attributes": {
+        "Stiffness": 0.8,
+        "Carving Ability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is designed for aggressive on-piste skiing and has a stiffer construction suitable for hardpack terrain. While it excels in these areas, it does not meet the user's preference for a 'stiff carving' ski as it lacks the necessary rocker profile.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Rocker Profile": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is designed for stiffer carving skis and has a rocker-camber profile, which aligns well with the user's preference for stiffness. However, it may not be ideal for all users who prefer more playful or forgiving skiing experiences.",
+      "matched_attributes": {
+        "Stiffness": 0.9,
+        "Carving Ability": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 has good stiffness and stability for carving, which aligns with the user's preference for 'stiff' skiing. However, its lack of off-piste playfulness might be seen as a weakness by those who prefer more versatile skis.",
+      "matched_attributes": {
+        "Stiffness": 0.9,
+        "Carving Ability": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is designed for versatility and stability in various conditions, which aligns well with the user's preference for a 'stiff carving' ski. However, it lacks the specific attributes such as stiffness and weight mentioned by the user.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.4,
+        "Weight G Per Ski": 0.3,
+        "Rocker Profile": 0.5,
+        "Construction": 0.6,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a versatile freeride ski with good dampness and stability, which aligns well with the user's preference for a 'stiff carving' ski. However, its primary focus on powder performance may not fully meet their need for stiffness in all conditions.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Rocker Profile": 0.7,
+        "Weight": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is designed for aggressive skiers in challenging terrain and has stiff performance suitable for carving. However, it may not be as suitable for stiffer or more forgiving snow conditions where lighter options might be preferred.",
+      "matched_attributes": {
+        "Stiffness": 0.8,
+        "Carving Ability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile and playful freeride ski that excels in stability and edge grip, which aligns well with the user's preference for 'stiff carving'. However, its weight of 1980g per ski may not be ideal for very high-speed conditions where stiffer construction might be more appropriate.",
+      "matched_attributes": {
+        "Lengths Cm": 0.6,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.3,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.8,
+        "Construction": 0.9,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile ski that excels in powder conditions due to its excellent floatation and playful feel. However, it lacks stiffness and edge grip specifically designed for carving stiffer terrain like steeled skis.",
+      "matched_attributes": {
+        "Lengths Cm": 0.6,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.3,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.8,
+        "Construction": 0.9,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7,
+      "explanation": "The Moment Wildcat 108 has a stiffer construction than what the user desires (stiff carving), which aligns with their request for 'stiff carving'. However, its overall performance in powder and mixed terrain remains strong due to its excellent Maple/Triax construction, which excels in handling steep conditions.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Weight G Per Ski": 0.3
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

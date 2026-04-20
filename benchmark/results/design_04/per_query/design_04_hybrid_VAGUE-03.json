@@ -1,0 +1,126 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.118,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 181.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.830814990401268,
+      "explanation": "Attribute matches:\n  matched: playfulness (1.00)\nSignals: vector similarity 0.52, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8299732238054276,
+      "explanation": "Attribute matches:\n  matched: playfulness (1.00)\nSignals: vector similarity 0.51, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.826129698753357,
+      "explanation": "Attribute matches:\n  matched: playfulness (1.00)\nSignals: vector similarity 0.50, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8195575058460236,
+      "explanation": "Attribute matches:\n  matched: playfulness (0.93)\nSignals: vector similarity 0.54, attribute match 1.00, sentiment strength 0.93",
+      "matched_attributes": {
+        "playfulness": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6906147330999375,
+      "explanation": "Attribute matches:\n  matched: playfulness (0.44)\nSignals: vector similarity 0.52, attribute match 1.00, sentiment strength 0.44",
+      "matched_attributes": {
+        "playfulness": 0.4375
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.3507774263620377,
+      "explanation": "Signals: vector similarity 0.65, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.3507774263620377,
+      "explanation": "Signals: vector similarity 0.65, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.3398735970258713,
+      "explanation": "Signals: vector similarity 0.61, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.3348016560077667,
+      "explanation": "Signals: vector similarity 0.60, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.3075532019138336,
+      "explanation": "Signals: vector similarity 0.52, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

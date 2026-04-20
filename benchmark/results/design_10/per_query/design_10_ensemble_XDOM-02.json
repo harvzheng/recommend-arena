@@ -1,0 +1,145 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "XDOM-02",
+  "query_text": "lightweight responsive trail running shoe with good grip",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.4379,
+    "ndcg_10": 0.6367,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 29.0
+  },
+  "results": [
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.791607141494751,
+      "explanation": "Ranked here because: vector similarity (+1.28), avg rating (+0.58), attribute coverage (-0.26), BM25 relevance (-0.17)",
+      "matched_attributes": {
+        "vector similarity": 1.2826907634735107,
+        "avg rating": 0.5840694904327393
+      }
+    },
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.6290767788887024,
+      "explanation": "Ranked here because: vector similarity (+0.39), attribute coverage (+0.38), avg rating (-0.17), BM25 relevance (+0.12)",
+      "matched_attributes": {
+        "vector similarity": 0.3877645432949066,
+        "attribute coverage": 0.3758544921875,
+        "BM25 relevance": 0.11939670890569687
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.6084637641906738,
+      "explanation": "Ranked here because: attribute coverage (+0.62), vector similarity (+0.31), BM25 relevance (-0.23), avg rating (-0.14)",
+      "matched_attributes": {
+        "attribute coverage": 0.6215039491653442,
+        "vector similarity": 0.3050025999546051
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.6023764610290527,
+      "explanation": "Ranked here because: vector similarity (+1.54), attribute sentiment (-0.37), attribute coverage (-0.37), BM25 relevance (-0.22)",
+      "matched_attributes": {
+        "vector similarity": 1.5390959978103638
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.5643412470817566,
+      "explanation": "Ranked here because: attribute coverage (+0.51), vector similarity (+0.28), attribute sentiment (-0.25), avg rating (-0.14)",
+      "matched_attributes": {
+        "attribute coverage": 0.513154923915863,
+        "vector similarity": 0.2793280780315399
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.5609958171844482,
+      "explanation": "Ranked here because: attribute coverage (+1.34), vector similarity (-0.68), avg rating (-0.18), BM25 relevance (-0.11)",
+      "matched_attributes": {
+        "attribute coverage": 1.3351444005966187,
+        "attribute match rate": 0.027422219514846802
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.46732816100120544,
+      "explanation": "Ranked here because: BM25 relevance (+0.31), attribute coverage (-0.27), vector similarity (+0.14), attribute sentiment (-0.13)",
+      "matched_attributes": {
+        "BM25 relevance": 0.3127773106098175,
+        "vector similarity": 0.14312507212162018
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.2866094410419464,
+      "explanation": "Ranked here because: vector similarity (-0.69), attribute sentiment (+0.35), BM25 relevance (-0.27), avg rating (-0.16)",
+      "matched_attributes": {
+        "attribute sentiment": 0.34685924649238586
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.2372996211051941,
+      "explanation": "Ranked here because: BM25 relevance (-0.50), attribute coverage (-0.44), attribute sentiment (-0.22), vector similarity (+0.21)",
+      "matched_attributes": {
+        "vector similarity": 0.21216978132724762
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.19727158546447754,
+      "explanation": "Ranked here because: attribute coverage (-1.25), attribute sentiment (-0.33), BM25 relevance (+0.22), vector similarity (+0.16)",
+      "matched_attributes": {
+        "BM25 relevance": 0.21806444227695465,
+        "vector similarity": 0.16348585486412048,
+        "attribute match rate": 0.019222207367420197
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-006",
+      "relevance": 3,
+      "reason": "Trail-specific, lightweight, aggressive grip"
+    },
+    {
+      "product_id": "SHOE-008",
+      "relevance": 3,
+      "reason": "Trail runner, responsive, good traction"
+    },
+    {
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Trail capable, light, moderate grip"
+    },
+    {
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "Lightweight but road-focused"
+    },
+    {
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "Responsive but minimal trail capability"
+    }
+  ]
+}

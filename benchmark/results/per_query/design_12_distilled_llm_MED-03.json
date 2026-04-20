@@ -1,0 +1,147 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1762,
+    "ndcg_10": 0.2457,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.4,
+    "latency_ms": 88898.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i has a titanium construction and edge grip suitable for hardpack terrain, which aligns well with the user's preference of a 'titanal' construction ski. However, its waist width of 66mm does not meet the requirement of at least 95mm, and it lacks edge grip specifically designed for hardpack conditions.",
+      "matched_attributes": {
+        "Construction": 1.0,
+        "Edge Grip": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca has a suitable length range of 78-106mm and a waist width of 78mm, which aligns well with the user's preference for a titanium construction ski. However, it lacks edge grip specifically designed for hardpack conditions and does not have an at least 95mm waist.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Edge Grip": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7,
+      "explanation": "The Head Supershape e-Speed is a strong candidate for the user's query as it offers excellent edge grip suitable for hardpack terrain and has a waist width of at least 95mm, which aligns with the user's preference. However, it may not be ideal for off-piste use due to its focus on carving on hardpack.",
+      "matched_attributes": {
+        "Construction": 1.0,
+        "Edge Grip": 1.0,
+        "Waist Width": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 has a good edge grip and suitable length for hardpack conditions, which aligns with the user's preference of a titanium construction ski with edge grip. However, its weight (around 1580g per ski) might not be as forgiving for those who prefer lighter skis.",
+      "matched_attributes": {
+        "Edge Grip": 0.8,
+        "Construction": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 has a titanal construction which aligns with the user's preference for titanium construction, but it lacks edge grip specifically designed for hardpack conditions like the user mentions. The ski's overall versatility makes it suitable for various terrains including hardpack and powder, though its lack of edge grip might be a drawback.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Edge Grip": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti has a titanium construction and edge grip suitable for hardpack conditions, which aligns well with the user's preference for a 'titanal construction ski'. However, its weight (2050g per ski) may not be ideal for intermediate skiers who prefer lighter options.",
+      "matched_attributes": {
+        "Construction": 1.0,
+        "Edge Grip": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 has a titanal construction which aligns with the user's preference for titanium construction, but it lacks edge grip specifically designed for hardpack conditions like at least 95mm waist width.",
+      "matched_attributes": {
+        "Construction": 0.6,
+        "Edge Grip": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7,
+      "explanation": "The Moment Wildcat 108 has a well-balanced construction suitable for hardpack and at least 95mm waist width, which aligns with the user's preferences. However, it lacks titanium construction and edge grip specifically designed for hardpack conditions.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Edge Grip": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7,
+      "explanation": "The K2 Disruption 78C has a suitable waist width of 78mm which aligns with the user's preference for at least 95mm waist. However, its construction type (titanal) does not match the user's request for titanium construction. Additionally, the ski lacks edge grip specifically designed for hardpack conditions.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "construction_type": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7,
+      "explanation": "The Armada ARV 106 has a titanium construction which aligns with the user's preference for titanium-based materials. However, its waist width is only 106mm, which does not meet the requirement of at least 95mm. Additionally, the ski lacks edge grip suitable for hardpack surfaces.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Waist Width": 0.3
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

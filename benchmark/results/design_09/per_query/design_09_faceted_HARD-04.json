@@ -1,0 +1,176 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1762,
+    "ndcg_10": 0.3133,
+    "mrr": 0.2,
+    "attribute_precision": 0.4,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.4444,
+    "explanation_score": 5.0,
+    "latency_ms": 4629.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.8299992820142591,
+      "explanation": "stiffness=0.90 (match: 100%); edge_grip=1.00 (match: 100%); stability=0.90 (match: 100%); playfulness=0.20 (match: 100%); terrain=on-piste, race (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8299991963133768,
+      "explanation": "stiffness=0.80 (match: 100%); edge_grip=0.80 (match: 100%); stability=0.90 (match: 100%); playfulness=0.40 (match: 100%); terrain=all-mountain, off-piste, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.8299991684863086,
+      "explanation": "stiffness=0.80 (match: 100%); edge_grip=0.90 (match: 100%); stability=0.90 (match: 100%); playfulness=0.30 (match: 100%); terrain=carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.8299991080426182,
+      "explanation": "stiffness=0.80 (match: 100%); edge_grip=0.70 (match: 100%); stability=0.90 (match: 100%); playfulness=0.40 (match: 100%); terrain=big-mountain, freeride, off-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8299990466986684,
+      "explanation": "stiffness=0.70 (match: 100%); edge_grip=0.80 (match: 100%); stability=0.80 (match: 100%); playfulness=0.40 (match: 100%); terrain=carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.8059992070336227,
+      "explanation": "stiffness=0.80 (match: 100%); edge_grip=0.70 (match: 100%); stability=0.80 (match: 100%); playfulness=0.50 (match: 80%); terrain=big-mountain, freeride, off-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 0.8,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.7944669968328879,
+      "explanation": "stiffness=0.70 (match: 100%); edge_grip=0.80 (match: 100%); stability=0.70 (match: 100%); playfulness=0.40 (match: 100%); terrain=all-mountain, carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7931260855910756,
+      "explanation": "stiffness=1.00 (match: 100%); edge_grip=1.00 (match: 100%); stability=1.00 (match: 100%); playfulness=0.10 (match: 100%); terrain=on-piste, race (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7599548734754985,
+      "explanation": "stiffness=0.70 (match: 100%); edge_grip=0.80 (match: 100%); stability=0.70 (match: 100%); playfulness=0.40 (match: 100%); terrain=all-mountain, carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "stability": 1.0,
+        "playfulness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7442848858815141,
+      "explanation": "stability=0.70 (match: 100%); stiffness=0.60 (match: 86%); edge_grip=0.60 (match: 86%); playfulness=0.70 (match: 57%); terrain=all-mountain, freeride, off-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 0.8571428571428572,
+        "edge_grip": 0.8571428571428572,
+        "stability": 1.0,
+        "playfulness": 0.5714285714285715,
+        "terrain": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

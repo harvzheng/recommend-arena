@@ -1,0 +1,156 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "XDOM-02",
+  "query_text": "lightweight responsive trail running shoe with good grip",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.899,
+    "ndcg_10": 0.9768,
+    "mrr": 1.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2857,
+    "explanation_score": 3.8,
+    "latency_ms": 1743.7
+  },
+  "results": [
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.8322,
+      "explanation": "Strong match on grip (100%). Moderate fit for responsiveness. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.656,
+        "grip": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.8216,
+      "explanation": "Strong match on grip (100%). Moderate fit for responsiveness. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.633,
+        "grip": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.7613,
+      "explanation": "Strong match on responsiveness (100%). Moderate fit for grip. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 1.0,
+        "grip": 0.507,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.698,
+      "explanation": "Strong match on responsiveness (93%). Moderate fit for grip. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.933,
+        "grip": 0.444,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.698,
+      "explanation": "Strong match on responsiveness (93%). Moderate fit for grip. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.933,
+        "grip": 0.444,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.6646,
+      "explanation": "Strong match on grip (76%). Moderate fit for responsiveness. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.556,
+        "grip": 0.76,
+        "review_quality": 0.8
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.5551,
+      "explanation": "Moderate fit for responsiveness, grip. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.633,
+        "grip": 0.444,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.4671,
+      "explanation": "Moderate fit for responsiveness, grip. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.444,
+        "grip": 0.444,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.4142,
+      "explanation": "Moderate fit for grip. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.333,
+        "grip": 0.444,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.4123,
+      "explanation": "Moderate fit for responsiveness. Highly rated by reviewers.",
+      "matched_attributes": {
+        "responsiveness": 0.444,
+        "grip": 0.333,
+        "review_quality": 0.88
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-006",
+      "relevance": 3,
+      "reason": "Trail-specific, lightweight, aggressive grip"
+    },
+    {
+      "product_id": "SHOE-008",
+      "relevance": 3,
+      "reason": "Trail runner, responsive, good traction"
+    },
+    {
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Trail capable, light, moderate grip"
+    },
+    {
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "Lightweight but road-focused"
+    },
+    {
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "Responsive but minimal trail capability"
+    }
+  ]
+}

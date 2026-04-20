@@ -1,0 +1,156 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1685,
+    "mrr": 0.1,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 4396.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 1.0,
+      "explanation": "Armada ARV 106 strongly matches on: playfulness. Moderate match on: stiffness, powder_float. Review: \"most playful ski I've ever been on \u2014 butters, spins, everything feels easy.\" Review: \"Playful factor is off the charts\" Review: \"floats in powder\"",
+      "matched_attributes": {
+        "stiffness": 0.5277777777777778,
+        "playfulness": 0.8733333333333333,
+        "powder_float": 0.572475
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8951,
+      "explanation": "Blizzard Rustler 10 strongly matches on: playfulness. Moderate match on: stiffness, powder_float. Review: \"Incredibly playful \u2014 you can butter, spin, and smear with ease\" Review: \"Pop off everything, spin easily, land softly\" Review: \"The rocker profile floats well in powder\"",
+      "matched_attributes": {
+        "stiffness": 0.4722222222222222,
+        "playfulness": 0.8466666666666667,
+        "powder_float": 0.5534
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8752,
+      "explanation": "Faction Dictator 3.0 strongly matches on: playfulness. Moderate match on: stiffness, powder_float. Review: \"great for butters, natural features, and creative skiing\" Review: \"the playfulness is addictive\" Review: \"floats well in powder\"",
+      "matched_attributes": {
+        "stiffness": 0.4722222222222222,
+        "playfulness": 0.8382666666666667,
+        "powder_float": 0.5499
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.749,
+      "explanation": "Moment Wildcat 108 strongly matches on: playfulness. Moderate match on: stiffness, powder_float. Review: \"stiff enough to charge\" Review: \"chargy than the Atris\" Review: \"playful enough to throw tricks\"",
+      "matched_attributes": {
+        "stiffness": 0.313125,
+        "playfulness": 0.8214666666666666,
+        "powder_float": 0.5752916666666666
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6031,
+      "explanation": "Elan Ripstick 96 strongly matches on: playfulness. Moderate match on: stiffness, powder_float. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\" Review: \"Decent playfulness and edge grip\"",
+      "matched_attributes": {
+        "stiffness": 0.42604166666666665,
+        "playfulness": 0.8025,
+        "powder_float": 0.5006916666666666
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5606,
+      "explanation": "Salomon QST 106 strongly matches on: playfulness. Moderate match on: stiffness, powder_float. Review: \"not as stable as heavier chargers\" Review: \"Handles variable snow conditions with ease\" Review: \"Playful enough for drops and airs\"",
+      "matched_attributes": {
+        "stiffness": 0.38666666666666666,
+        "playfulness": 0.7686666666666666,
+        "powder_float": 0.5565666666666667
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.4843,
+      "explanation": "Moderate match on: stiffness, playfulness, powder_float. Review: \"incredibly stiff\" Review: \"Not as stiff but more playful\" Review: \"Not outstanding in any single category but competent everywhere off-piste, playfulness is nice\"",
+      "matched_attributes": {
+        "stiffness": 0.32625000000000004,
+        "playfulness": 0.659,
+        "powder_float": 0.5600666666666667
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2708,
+      "explanation": "Moderate match on: stiffness, playfulness, powder_float. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"good playfulness for an all-mountain ski\"",
+      "matched_attributes": {
+        "stiffness": 0.3175,
+        "playfulness": 0.6346666666666667,
+        "powder_float": 0.5325
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.0183,
+      "explanation": "Moderate match on: stiffness, powder_float. Weak match on: playfulness. Review: \"incredibly stiff and powerful\" Review: \"Stiff and damp from the titanal construction\" Review: \"Not playful, very precise\"",
+      "matched_attributes": {
+        "stiffness": 0.30000000000000004,
+        "playfulness": 0.292,
+        "powder_float": 0.50575
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.0,
+      "explanation": "Moderate match on: stiffness, playfulness, powder_float. Review: \"Stable at speed, doesn't wander.\" Review: \"Wide enough for off-piste\" Review: \"struggles only in deep powder\"",
+      "matched_attributes": {
+        "stiffness": 0.3175,
+        "playfulness": 0.3666666666666667,
+        "powder_float": 0.457625
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

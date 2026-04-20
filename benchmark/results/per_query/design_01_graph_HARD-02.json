@@ -1,0 +1,166 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3489,
+    "ndcg_10": 0.5447,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 5048.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 1.0,
+      "explanation": "Nordica Enforcer 100 strongly matches on: stability_at_speed. Moderate match on: playfulness, powder_float. Weak match on: stiffness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"good playfulness for an all-mountain ski\"",
+      "matched_attributes": {
+        "stiffness": 0.13500000000000006,
+        "playfulness": 0.33166666666666667,
+        "stability_at_speed": 0.9088333333333334,
+        "powder_float": 0.3375
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8637,
+      "explanation": "Volkl Mantra M6 strongly matches on: playfulness, stability_at_speed. Weak match on: stiffness, powder_float. Review: \"incredibly stiff\" Review: \"incredibly stiff and powerful\" Review: \"Playfulness is low \u2014 it's a serious tool for serious skiers\"",
+      "matched_attributes": {
+        "stiffness": 0.06666666666666671,
+        "playfulness": 0.82125,
+        "stability_at_speed": 0.96375,
+        "powder_float": 0.1841666666666667
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.8489,
+      "explanation": "Rossignol Black Ops Sender Ti strongly matches on: stability_at_speed. Moderate match on: playfulness. Weak match on: stiffness, powder_float. Review: \"incredibly stiff and powerful\" Review: \"Built for steep terrain; the Sender Ti is one of the stiffest freeride skis available\" Review: \"powers through anything but not very playful\"",
+      "matched_attributes": {
+        "stiffness": 0.08416666666666678,
+        "playfulness": 0.55875,
+        "stability_at_speed": 0.9666666666666667,
+        "powder_float": 0.10000000000000003
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8317,
+      "explanation": "Dynastar M-Free 108 strongly matches on: stability_at_speed. Moderate match on: playfulness. Weak match on: stiffness, powder_float. Review: \"incredibly stiff\" Review: \"Not as stiff but more playful\" Review: \"Not outstanding in any single category but competent everywhere off-piste, playfulness is nice\"",
+      "matched_attributes": {
+        "stiffness": 0.15250000000000002,
+        "playfulness": 0.30125,
+        "stability_at_speed": 0.8544999999999999,
+        "powder_float": 0.19966666666666671
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6385,
+      "explanation": "Elan Ripstick 96 strongly matches on: stability_at_speed. Moderate match on: stiffness, powder_float. Weak match on: playfulness. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\" Review: \"Decent playfulness and edge grip\"",
+      "matched_attributes": {
+        "stiffness": 0.35208333333333336,
+        "playfulness": 0.12187500000000001,
+        "stability_at_speed": 0.7966666666666666,
+        "powder_float": 0.49654166666666666
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5923,
+      "explanation": "Salomon QST 106 strongly matches on: stability_at_speed. Weak match on: stiffness, playfulness, powder_float. Review: \"not as stable as heavier chargers\" Review: \"Handles variable snow conditions with ease\" Review: \"Playful enough for drops and airs\"",
+      "matched_attributes": {
+        "stiffness": 0.2733333333333333,
+        "playfulness": 0.16416666666666668,
+        "stability_at_speed": 0.865,
+        "powder_float": 0.21716666666666667
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.3895,
+      "explanation": "K2 Mindbender 108Ti strongly matches on: stability_at_speed. Moderate match on: playfulness. Weak match on: stiffness, powder_float. Review: \"charging machine, stiff and damp\" Review: \"Stiff, damp, incredibly stable\" Review: \"Decent playfulness for a charger\"",
+      "matched_attributes": {
+        "stiffness": 0.06666666666666671,
+        "playfulness": 0.30666666666666664,
+        "stability_at_speed": 0.9333333333333333,
+        "powder_float": 0.1191666666666667
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.2057,
+      "explanation": "Moderate match on: stiffness, stability_at_speed. Weak match on: playfulness, powder_float. Review: \"Incredibly playful \u2014 you can butter, spin, and smear with ease\" Review: \"Pop off everything, spin easily, land softly\" Review: \"Not a charger \u2014 gets unstable above moderate speeds\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "playfulness": 0.06666666666666671,
+        "stability_at_speed": 0.5237499999999999,
+        "powder_float": 0.23300000000000004
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.0316,
+      "explanation": "Moderate match on: stiffness. Weak match on: playfulness, stability_at_speed, powder_float. Review: \"Downhill in powder is pure bliss\" Review: \"Handles beautifully in open bowls\" Review: \"in Uphill efficiency is great.\"",
+      "matched_attributes": {
+        "stiffness": 0.5555555555555556,
+        "playfulness": 0.0797916666666667,
+        "stability_at_speed": 0.22666666666666668,
+        "powder_float": 0.010500000000000065
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.0,
+      "explanation": "Moderate match on: stiffness, stability_at_speed. Weak match on: playfulness, powder_float. Review: \"More playful than heavy titanal powder skis\" Review: \"playful enough to navigate tight trees\" Review: \"wish it had a bit more stability at speed\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "playfulness": 0.08416666666666672,
+        "stability_at_speed": 0.3504166666666667,
+        "powder_float": 0.04383333333333339
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

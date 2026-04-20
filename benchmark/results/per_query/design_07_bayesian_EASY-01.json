@@ -1,0 +1,136 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.512,
+    "ndcg_10": 0.5696,
+    "mrr": 1.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.5,
+    "explanation_score": 3.0,
+    "latency_ms": 13.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7234,
+      "explanation": "Recommended because P(stiff) = 0.12 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7234,
+      "explanation": "Recommended because P(stiff) = 0.12 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.125
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

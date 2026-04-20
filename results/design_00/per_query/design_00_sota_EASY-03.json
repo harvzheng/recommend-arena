@@ -1,0 +1,73 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8404,
+    "ndcg_10": 0.8404,
+    "mrr": 1.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.6667,
+    "explanation_score": 5.0,
+    "latency_ms": 2796.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 1.0,
+      "explanation": "Black Crows Atris excels in: powder_float. Review: \"The Atris is a powder dream. At 108mm with generous rocker, it floats effortlessly.\" Review: \"Incredible float in the deep stuff, playful enough to navigate tight trees, light enough for long powder days.\"",
+      "matched_attributes": {
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.9403,
+      "explanation": "DPS Pagoda Tour 112 RP excels in: powder_float. Review: \"At 112mm waist with full rocker, the float is unmatched.\" Review: \"incredible float but not much grip on hard traverses.\"",
+      "matched_attributes": {
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.0,
+      "explanation": "Moment Wildcat 108 excels in: powder_float. Review: \"Float is excellent at 108mm with rocker.\" Review: \"Great float in powder, good edge grip for a freeride ski, and enough pop for cliff drops.\"",
+      "matched_attributes": {
+        "powder_float": 0.755
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

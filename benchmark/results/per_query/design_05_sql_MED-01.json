@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6093,
+    "ndcg_10": 0.6939,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 14.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.4875,
+      "explanation": "  Score: 0.487\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.92 = 0.487",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.47650514175640896,
+      "explanation": "  Score: 0.477\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.98\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.98 + 0.15*0.90 = 0.477",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.4052875116074566,
+      "explanation": "  Score: 0.405\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.75\n  Sentiment:      0.96\n  Weighted total: 0.50*0.00 + 0.35*0.75 + 0.15*0.96 = 0.405",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.392449315965641,
+      "explanation": "  Score: 0.392\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.74\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.74 + 0.15*0.90 = 0.392",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.3646751132818336,
+      "explanation": "  Score: 0.365\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.70\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.70 + 0.15*0.80 = 0.365",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.3413617179367354,
+      "explanation": "  Score: 0.341\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.61\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.61 + 0.15*0.85 = 0.341",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.3385132184950783,
+      "explanation": "  Score: 0.339\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.60\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.60 + 0.15*0.85 = 0.339",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.3187926757170697,
+      "explanation": "  Score: 0.319\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.55\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.55 + 0.15*0.85 = 0.319",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.3033931766622425,
+      "explanation": "  Score: 0.303\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.48\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.48 + 0.15*0.90 = 0.303",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.29494406253006605,
+      "explanation": "  Score: 0.295\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.45\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.45 + 0.15*0.92 = 0.295",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

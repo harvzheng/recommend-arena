@@ -1,0 +1,148 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 113765.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a strong candidate for the user's query as it has no rocker profile and meets the waist width requirement of under 90mm. However, it may not be ideal for users who prefer more forgiving or lighter conditions.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "rocker_profile": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a close match for the user's query regarding an all-mountain ski without any rocker and under 90mm waist width. It has a similar length range and rocker profile, but falls short in terms of waist width.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Rocker Profile": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile all-mountain ski that excels in stability and playfulness for users seeking an intermediate-to-advanced freeride setup. However, it does not have any rocker profile which aligns with the user's preference of 'no rocker'. The ski\u2019s waist width of 108mm falls within the range expected for an all-mountain ski.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Rocker Profile": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 is a versatile all-mountain ski with good performance across various terrains, including powder and groomers. However, it does not have any rocker profile, which aligns with the user's preference of 'no rocker'. Additionally, its 98mm waist width may be too wide for some users looking for more specific fit.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.7,
+        "Rocker Profile": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7,
+      "explanation": "The Faction Dictator 3.0 is a close match for the user's query due to its all-mountain nature and playful feel, which aligns well with their preference for lighter and more engaging skis. However, it lacks the specific 'no rocker' attribute mentioned by the user.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Rocker Profile": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.5,
+      "explanation": "The Head Supershape e-Speed is designed for on-piste use and does not meet the user's preference for an all-mountain ski without rocker and under 90mm waist width.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.5,
+        "Rocker Profile": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.5,
+      "explanation": "The K2 Mindbender 108Ti has a rocker-camber-rocker profile which aligns with the user's preference for an all-mountain ski without any rocker. However, its weight of 2050g per ski makes it heavier than what the user desires, especially given their request for 'under 90mm waist'. The ski also lacks a true carving profile suitable for all conditions.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.4,
+        "Rocker Profile": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5,
+      "explanation": "The Head Easy Joy SLR is designed for beginners and has a soft flex profile suitable for easy turn initiation on groomed terrain. However, it lacks rocker to ensure smooth performance regardless of whether it's under 90mm waist width or not.",
+      "matched_attributes": {
+        "waist_width_mm": 0.5,
+        "length_cm": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.5,
+      "explanation": "The Armada ARV 106 is close to meeting the user's query regarding an all-mountain ski without rocker and under 90mm waist width. However, it has some limitations such as a rocker profile and does not have a true no-rocker feature.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.7,
+        "Rocker Profile": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3,
+      "explanation": "The Nordica Enforcer 100 does not meet the user's query of an all-mountain ski with no rocker and under 90mm waist width. The product has a waist width of 100mm which falls within the acceptable range but lacks rocker.",
+      "matched_attributes": {
+        "Lengths Cm": 0.4,
+        "Waist Width Mm": 0.3,
+        "Rocker Profile": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

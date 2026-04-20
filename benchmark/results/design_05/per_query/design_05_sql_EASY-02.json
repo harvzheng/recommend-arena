@@ -1,0 +1,146 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 2706.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.64375,
+      "explanation": "  Score: 0.644\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.96\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.96 = 0.644",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6375,
+      "explanation": "  Score: 0.637\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.92\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.92 = 0.637",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.635,
+      "explanation": "  Score: 0.635\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.90 = 0.635",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.635,
+      "explanation": "  Score: 0.635\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.90 = 0.635",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.635,
+      "explanation": "  Score: 0.635\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.90 = 0.635",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.63125,
+      "explanation": "  Score: 0.631\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.88\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.88 = 0.631",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6275,
+      "explanation": "  Score: 0.627\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.85\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.85 = 0.627",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6275,
+      "explanation": "  Score: 0.627\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.85\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.85 = 0.627",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.62,
+      "explanation": "  Score: 0.620\n  Attribute breakdown:\n    damp     1.00  (exact match)\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.80\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.80 = 0.620",
+      "matched_attributes": {
+        "damp": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6034722222222222,
+      "explanation": "  Score: 0.603\n  Attribute breakdown:\n    damp     0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.88\n  Weighted total: 0.50*0.94 + 0.35*0.00 + 0.15*0.88 = 0.603",
+      "matched_attributes": {
+        "damp": 0.8888888888888888,
+        "terrain": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

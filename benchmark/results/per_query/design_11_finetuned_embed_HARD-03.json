@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2055,
+    "ndcg_10": 0.4184,
+    "mrr": 0.1111,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 30.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 1.0,
+      "explanation": "Strong match on forgiveness (15%), playfulness (15%), powder_float (14%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.148,
+        "playfulness": 0.147,
+        "powder_float": 0.143,
+        "stability_at_speed": 0.142,
+        "damp": 0.141,
+        "edge_grip": 0.14,
+        "stiffness": 0.139
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.8419,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (14%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.155,
+        "playfulness": 0.149,
+        "powder_float": 0.143,
+        "stability_at_speed": 0.14,
+        "damp": 0.139,
+        "edge_grip": 0.137,
+        "stiffness": 0.136
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8251,
+      "explanation": "Strong match on playfulness (15%), forgiveness (15%), powder_float (14%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.148,
+        "forgiveness": 0.147,
+        "powder_float": 0.145,
+        "stability_at_speed": 0.142,
+        "damp": 0.141,
+        "stiffness": 0.139,
+        "edge_grip": 0.138
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8149,
+      "explanation": "Strong match on stability_at_speed (14%), damp (14%), playfulness (14%). Also relevant: forgiveness, edge_grip, powder_float, stiffness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.144,
+        "damp": 0.144,
+        "playfulness": 0.144,
+        "forgiveness": 0.143,
+        "edge_grip": 0.143,
+        "powder_float": 0.142,
+        "stiffness": 0.141
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7443,
+      "explanation": "Strong match on forgiveness (15%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.153,
+        "playfulness": 0.152,
+        "powder_float": 0.148,
+        "stability_at_speed": 0.139,
+        "damp": 0.138,
+        "edge_grip": 0.135,
+        "stiffness": 0.135
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.726,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (14%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.157,
+        "playfulness": 0.149,
+        "powder_float": 0.143,
+        "stability_at_speed": 0.14,
+        "damp": 0.138,
+        "edge_grip": 0.137,
+        "stiffness": 0.136
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6861,
+      "explanation": "Strong match on stability_at_speed (15%), damp (14%), edge_grip (14%). Also relevant: stiffness, playfulness, powder_float, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.146,
+        "damp": 0.145,
+        "edge_grip": 0.144,
+        "stiffness": 0.144,
+        "playfulness": 0.141,
+        "powder_float": 0.14,
+        "forgiveness": 0.14
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6299,
+      "explanation": "Strong match on playfulness (15%), powder_float (15%), forgiveness (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.152,
+        "powder_float": 0.149,
+        "forgiveness": 0.148,
+        "stability_at_speed": 0.14,
+        "damp": 0.139,
+        "stiffness": 0.136,
+        "edge_grip": 0.136
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6252,
+      "explanation": "Strong match on stability_at_speed (15%), damp (14%), edge_grip (14%). Also relevant: stiffness, forgiveness, playfulness, powder_float.",
+      "matched_attributes": {
+        "stability_at_speed": 0.146,
+        "damp": 0.145,
+        "edge_grip": 0.145,
+        "stiffness": 0.144,
+        "forgiveness": 0.141,
+        "playfulness": 0.14,
+        "powder_float": 0.139
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6124,
+      "explanation": "Strong match on stability_at_speed (15%), damp (14%), edge_grip (14%). Also relevant: stiffness, playfulness, powder_float, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.146,
+        "damp": 0.145,
+        "edge_grip": 0.145,
+        "stiffness": 0.144,
+        "playfulness": 0.141,
+        "powder_float": 0.14,
+        "forgiveness": 0.14
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

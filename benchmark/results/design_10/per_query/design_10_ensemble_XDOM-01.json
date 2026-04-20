@@ -1,0 +1,150 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "XDOM-01",
+  "query_text": "cushioned long-distance running shoe for marathon training",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.9522,
+    "ndcg_10": 0.9781,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 22.0
+  },
+  "results": [
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.963891863822937,
+      "explanation": "Ranked here because: vector similarity (+1.32), attribute coverage (+0.98), attribute sentiment (+0.96), BM25 relevance (+0.09)",
+      "matched_attributes": {
+        "vector similarity": 1.3179538249969482,
+        "attribute coverage": 0.9765792489051819,
+        "attribute sentiment": 0.962857723236084,
+        "BM25 relevance": 0.0856236144900322,
+        "avg rating": 0.018297823145985603
+      }
+    },
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.8888994455337524,
+      "explanation": "Ranked here because: vector similarity (+1.60), attribute sentiment (+0.59), attribute coverage (+0.31), avg rating (-0.23)",
+      "matched_attributes": {
+        "vector similarity": 1.599345326423645,
+        "attribute sentiment": 0.5894056558609009,
+        "attribute coverage": 0.3144776523113251
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.709292471408844,
+      "explanation": "Ranked here because: attribute sentiment (+0.64), attribute coverage (+0.26), vector similarity (+0.17), avg rating (-0.07)",
+      "matched_attributes": {
+        "attribute sentiment": 0.6419338583946228,
+        "attribute coverage": 0.25578340888023376,
+        "vector similarity": 0.17197741568088531,
+        "attribute match rate": 0.01951865293085575
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.6960288286209106,
+      "explanation": "Ranked here because: avg rating (+0.81), BM25 relevance (+0.30), attribute coverage (-0.17), attribute sentiment (-0.10)",
+      "matched_attributes": {
+        "avg rating": 0.8079071640968323,
+        "BM25 relevance": 0.30275049805641174,
+        "vector similarity": 0.05551990494132042
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.5873422622680664,
+      "explanation": "Ranked here because: attribute coverage (+0.55), vector similarity (+0.29), attribute sentiment (-0.26), avg rating (-0.14)",
+      "matched_attributes": {
+        "attribute coverage": 0.5543431043624878,
+        "vector similarity": 0.2944925129413605,
+        "attribute match rate": 0.015480970963835716
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.5869712829589844,
+      "explanation": "Ranked here because: attribute coverage (+0.51), vector similarity (+0.28), attribute sentiment (-0.25), avg rating (-0.14)",
+      "matched_attributes": {
+        "attribute coverage": 0.508688747882843,
+        "vector similarity": 0.28393030166625977,
+        "attribute match rate": 0.015480970963835716
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.19465376436710358,
+      "explanation": "Ranked here because: BM25 relevance (-0.69), attribute coverage (-0.46), attribute sentiment (-0.21), vector similarity (+0.16)",
+      "matched_attributes": {
+        "vector similarity": 0.15835486352443695
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.15961088240146637,
+      "explanation": "Ranked here because: BM25 relevance (-0.70), attribute coverage (-0.48), attribute sentiment (-0.40), avg rating (-0.15)",
+      "matched_attributes": {
+        "vector similarity": 0.1414434313774109
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.14357531070709229,
+      "explanation": "Ranked here because: attribute coverage (-1.33), attribute sentiment (-0.34), vector similarity (+0.17), avg rating (-0.17)",
+      "matched_attributes": {
+        "vector similarity": 0.17352230846881866,
+        "attribute match rate": 0.019222207367420197
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.1175161600112915,
+      "explanation": "Ranked here because: vector similarity (-0.61), BM25 relevance (-0.48), attribute sentiment (-0.34), attribute coverage (-0.33)",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "Max cushion marathon trainer"
+    },
+    {
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "High cushion distance shoe"
+    },
+    {
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Moderate cushion, good for distance"
+    },
+    {
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "Cushioned but more for daily training"
+    },
+    {
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "Some cushion but not primary purpose"
+    }
+  ]
+}

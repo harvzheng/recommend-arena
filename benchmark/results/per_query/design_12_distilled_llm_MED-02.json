@@ -1,0 +1,149 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1842,
+    "mrr": 0.0,
+    "attribute_precision": 0.15,
+    "attribute_recall": 0.1,
+    "attribute_f1": 0.12,
+    "explanation_score": 4.9,
+    "latency_ms": 98083.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a strong candidate for the user's request as it offers excellent performance in powder conditions and has a forgiving flex profile suitable for light weight and playful skiing. However, it may not be ideal for very low powder content or heavy snow conditions.",
+      "matched_attributes": {
+        "lightweight_freeride_ski": 0.8,
+        "good_playfulness_and_powder_float": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is a strong candidate for the user's request as it offers lightweight construction suitable for freeride skiing and has excellent powder floatation, which aligns well with the user's preference for playful and versatile snow conditions. However, its stiffness and lack of powder float make it unsuitable for general resort use.",
+      "matched_attributes": {
+        "lightweight_freeride_ski": 0.8,
+        "good_playfulness_and_powder_float": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a good fit for the user's request as it offers lightweight construction suitable for freeride skiing and has good turn radius for powder conditions. However, it may not be ideal for very fast or high-speed conditions where stability might be crucial.",
+      "matched_attributes": {
+        "lightweight_freeride_ski": 0.9,
+        "good_playfulness_and_powder_float": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a strong candidate for the user's request as it offers good weight and playfulness attributes, which aligns with their preference for lightweight freeride skiing. However, it lacks powder float capabilities that might be preferred by those who enjoy off-piste skiing.",
+      "matched_attributes": {
+        "weight": 0.9,
+        "playfulness": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that excels in various terrains including groomed and off-piste conditions. However, it does not specifically cater to lightweight freeride skiing or have good powder floatation like what the user desires.",
+      "matched_attributes": {
+        "Lightweight": 0.3,
+        "Freeride_Skiing": 0.4,
+        "Powder_Float": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 is a strong candidate for the user's request due to its playful and forgiving nature which aligns well with their preference for freeride skiing. However, it lacks the stiffness needed for powder conditions and may sacrifice stability at high speeds.",
+      "matched_attributes": {
+        "lightweight_freeride_ski": 0.8,
+        "good_playfulness_and_powder_float": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a strong candidate for the user's request due to its lightweight construction and impressive turn radius of 20 meters, which aligns well with their preference for being playful and forgiving in powder conditions. However, it may not provide the same level of stability at higher speeds or on harder snow conditions.",
+      "matched_attributes": {
+        "lightweight_freeride_ski": 0.8,
+        "good_playfulness_and_powder_float": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a strong candidate for the user's request given its stiffness and dampness for big-mountain terrain, which aligns with their preference for 'lightweight' and 'good playfulness'. However, it may not be as playful or forgiving for less technical runs or softer snow conditions.",
+      "matched_attributes": {
+        "Weight G Per Ski": 0.8,
+        "Rocker Profile": 0.7,
+        "Construction": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that excels in stability and floatation for various terrains including off-piste skiing. However, it may not have the same level of playfulness compared to some other options due to its more balanced design.",
+      "matched_attributes": {
+        "lightweight": 0.6,
+        "freeride": 0.7,
+        "powder_float": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile powder ski with excellent rocker profile and playful feel suitable for freeride skiing in soft snow conditions. However, it lacks the specific attributes like weight and playfulness mentioned by the user.",
+      "matched_attributes": {
+        "Weight_G_Per_Ski": 0.6,
+        "Rocker_Profile": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

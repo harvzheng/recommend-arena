@@ -1,0 +1,136 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2485,
+    "ndcg_10": 0.2485,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.4,
+    "latency_ms": 1677.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 1.0,
+      "explanation": "Blizzard Rustler 10 strongly matches on: playfulness. Review: \"Incredibly playful \u2014 you can butter, spin, and smear with ease\" Review: \"Pop off everything, spin easily, land softly\"",
+      "matched_attributes": {
+        "playfulness": 0.9333333333333333
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.9617,
+      "explanation": "Black Crows Atris strongly matches on: playfulness. Review: \"More playful than heavy titanal powder skis\" Review: \"playful enough to navigate tight trees\"",
+      "matched_attributes": {
+        "playfulness": 0.9158333333333333
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7873,
+      "explanation": "DPS Pagoda Tour 112 RP strongly matches on: playfulness. Review: \"Downhill in powder is pure bliss\" Review: \"Handles beautifully in open bowls\"",
+      "matched_attributes": {
+        "playfulness": 0.9202083333333333
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7136,
+      "explanation": "Elan Ripstick 96 strongly matches on: playfulness. Review: \"Decent playfulness and edge grip\" Review: \"Light and fun to ski\"",
+      "matched_attributes": {
+        "playfulness": 0.878125
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.4925,
+      "explanation": "Salomon QST 106 strongly matches on: playfulness. Review: \"Handles variable snow conditions with ease\" Review: \"Playful enough for drops and airs\"",
+      "matched_attributes": {
+        "playfulness": 0.8358333333333333
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.3995,
+      "explanation": "Moderate match on: playfulness. Review: \"Not as stiff but more playful\" Review: \"Not outstanding in any single category but competent everywhere off-piste, playfulness is nice\"",
+      "matched_attributes": {
+        "playfulness": 0.69875
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2725,
+      "explanation": "Moderate match on: playfulness. Review: \"good playfulness for an all-mountain ski\" Review: \"friendly in soft snow\"",
+      "matched_attributes": {
+        "playfulness": 0.6683333333333333
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.1361,
+      "explanation": "Moderate match on: playfulness. Review: \"Decent playfulness for a charger\"",
+      "matched_attributes": {
+        "playfulness": 0.6933333333333334
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.1093,
+      "explanation": "Moderate match on: playfulness. Review: \"Playfulness is moderate\"",
+      "matched_attributes": {
+        "playfulness": 0.6321666666666667
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.0,
+      "explanation": "Moderate match on: playfulness. Review: \"powers through anything but not very playful\" Review: \"not playful, demanding technique\"",
+      "matched_attributes": {
+        "playfulness": 0.44125
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

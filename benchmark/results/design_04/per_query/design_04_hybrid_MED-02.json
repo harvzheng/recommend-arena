@@ -1,0 +1,137 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3008,
+    "ndcg_10": 0.3726,
+    "mrr": 0.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.2,
+    "attribute_f1": 0.2857,
+    "explanation_score": 3.3,
+    "latency_ms": 19.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7369306365648906,
+      "explanation": "Attribute matches:\n  matched: playfulness (1.00)\n  matched: powder float (1.00)\nSignals: vector similarity 0.63, attribute match 0.67, sentiment strength 1.00",
+      "matched_attributes": {
+        "playfulness": 1.0,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7170880685249965,
+      "explanation": "Attribute matches:\n  matched: playfulness (1.00)\n  matched: powder float (0.97)\nSignals: vector similarity 0.58, attribute match 0.67, sentiment strength 0.99",
+      "matched_attributes": {
+        "playfulness": 1.0,
+        "powder_float": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7161200443903605,
+      "explanation": "Attribute matches:\n  matched: powder float (1.00)\n  matched: playfulness (0.93)\nSignals: vector similarity 0.60, attribute match 0.67, sentiment strength 0.96",
+      "matched_attributes": {
+        "playfulness": 0.925,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5551417549451192,
+      "explanation": "Attribute matches:\n  matched: weight (1.00)\nSignals: vector similarity 0.49, attribute match 0.33, sentiment strength 1.00",
+      "matched_attributes": {
+        "weight": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.5521531601746876,
+      "explanation": "Attribute matches:\n  matched: playfulness (1.00)\nSignals: vector similarity 0.48, attribute match 0.33, sentiment strength 1.00",
+      "matched_attributes": {
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.5184228589137395,
+      "explanation": "Attribute matches:\n  matched: weight (0.88)\nSignals: vector similarity 0.48, attribute match 0.33, sentiment strength 0.88",
+      "matched_attributes": {
+        "weight": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.5025944968064626,
+      "explanation": "Attribute matches:\n  matched: weight (0.88)\nSignals: vector similarity 0.43, attribute match 0.33, sentiment strength 0.88",
+      "matched_attributes": {
+        "weight": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.46407582064469655,
+      "explanation": "Attribute matches:\n  matched: weight (0.61)\nSignals: vector similarity 0.51, attribute match 0.33, sentiment strength 0.61",
+      "matched_attributes": {
+        "weight": 0.6125
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.41990760763486223,
+      "explanation": "Attribute matches:\n  matched: playfulness (0.44)\nSignals: vector similarity 0.51, attribute match 0.33, sentiment strength 0.44",
+      "matched_attributes": {
+        "playfulness": 0.4375
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.359939831495285,
+      "explanation": "Signals: vector similarity 0.67, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

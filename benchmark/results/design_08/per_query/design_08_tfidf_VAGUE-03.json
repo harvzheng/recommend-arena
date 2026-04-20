@@ -1,0 +1,174 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2938,
+    "ndcg_10": 0.3588,
+    "mrr": 0.25,
+    "attribute_precision": 0.4067,
+    "attribute_recall": 0.475,
+    "attribute_f1": 0.4382,
+    "explanation_score": 5.0,
+    "latency_ms": 1762.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.2923,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), forgiveness (high match, +0.58), damp (high match, +0.43), stiffness (high match, +0.31). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "forgiveness": 0.5782,
+        "damp": 0.4321,
+        "terrain:off-piste": 1.5798,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231,
+        "stiffness": 0.3086
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.2888,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), damp (high match, +0.52), forgiveness (high match, +0.46), stiffness (high match, +0.31). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "forgiveness": 0.4626,
+        "damp": 0.5185,
+        "terrain:off-piste": 1.5798,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231,
+        "stiffness": 0.3086
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.2825,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), damp (high match, +0.69), stiffness (high match, +0.43), forgiveness (moderate match, +0.23). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "forgiveness": 0.2313,
+        "damp": 0.6914,
+        "terrain:off-piste": 1.5798,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231,
+        "stiffness": 0.4321
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2809,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), damp (high match, +0.60), stiffness (high match, +0.37), forgiveness (high match, +0.35). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "forgiveness": 0.3469,
+        "damp": 0.6049,
+        "terrain:off-piste": 1.5798,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231,
+        "stiffness": 0.3704
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.2569,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.52), stiffness (high match, +0.43), forgiveness (moderate match, +0.23).",
+      "matched_attributes": {
+        "forgiveness": 0.2313,
+        "damp": 0.5185,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.4321
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.2324,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.60), stiffness (high match, +0.37), forgiveness (high match, +0.35).",
+      "matched_attributes": {
+        "forgiveness": 0.3469,
+        "damp": 0.6049,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.3704
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.2314,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.69), stiffness (high match, +0.43), forgiveness (moderate match, +0.23).",
+      "matched_attributes": {
+        "forgiveness": 0.2313,
+        "damp": 0.6914,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.4321
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.1842,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.52), stiffness (high match, +0.49), forgiveness (slight match, +0.12).",
+      "matched_attributes": {
+        "forgiveness": 0.1156,
+        "damp": 0.5185,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.4938
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.1825,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.60), stiffness (high match, +0.56).",
+      "matched_attributes": {
+        "damp": 0.6049,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.5556
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.1581,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), damp (high match, +0.52), forgiveness (high match, +0.46), stiffness (high match, +0.37). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "forgiveness": 0.4626,
+        "damp": 0.5185,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231,
+        "stiffness": 0.3704
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

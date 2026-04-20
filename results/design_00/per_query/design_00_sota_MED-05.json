@@ -1,0 +1,64 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5786,
+    "ndcg_10": 0.5786,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 3464.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 1.0,
+      "explanation": "Head Supershape e-Speed excels in: damp. Review: \"Incredibly damp \u2014 the smoothest ride on hardpack I've found.\" Review: \"the dampness is extraordinary.\"",
+      "matched_attributes": {
+        "damp": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.0,
+      "explanation": "Line Blade excels in: damp. Review: \"unique combo of liveliness and dampness.\" Review: \"damp enough to smooth out imperfections.\"",
+      "matched_attributes": {
+        "damp": 0.7
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

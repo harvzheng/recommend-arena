@@ -1,0 +1,156 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4158,
+    "ndcg_10": 0.4158,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3648.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8929865345981611,
+      "explanation": "  Score: 0.893\n  Attribute breakdown:\n    stiffness       1.00  (exact match)\n    waist_width_mm  0.84  [NEAR-MISS: target=lte100 penalty=-0.16]\n    terrain         1.00  (exact match)\n  FTS relevance:  0.81\n  Sentiment:      0.90\n  Weighted total: 0.50*0.95 + 0.35*0.81 + 0.15*0.90 = 0.893",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "waist_width_mm": 0.84,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7998148148148148,
+      "explanation": "  Score: 0.800\n  Attribute breakdown:\n    stiffness       0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    waist_width_mm  1.00  (exact match)\n    terrain         0.00  (no match)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.63 + 0.35*1.00 + 0.15*0.90 = 0.800",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "waist_width_mm": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.7614027078810746,
+      "explanation": "  Score: 0.761\n  Attribute breakdown:\n    stiffness       1.00  (exact match)\n    waist_width_mm  1.00  (exact match)\n    terrain         0.00  (no match)\n  FTS relevance:  0.83\n  Sentiment:      0.92\n  Weighted total: 0.50*0.67 + 0.35*0.83 + 0.15*0.92 = 0.761",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "waist_width_mm": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7566928423454483,
+      "explanation": "  Score: 0.757\n  Attribute breakdown:\n    stiffness       1.00  (exact match)\n    waist_width_mm  1.00  (exact match)\n    terrain         0.00  (no match)\n  FTS relevance:  0.83\n  Sentiment:      0.88\n  Weighted total: 0.50*0.67 + 0.35*0.83 + 0.15*0.88 = 0.757",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "waist_width_mm": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7228303931042297,
+      "explanation": "  Score: 0.723\n  Attribute breakdown:\n    stiffness       0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    waist_width_mm  1.00  (exact match)\n    terrain         0.00  (no match)\n  FTS relevance:  0.80\n  Sentiment:      0.85\n  Weighted total: 0.50*0.63 + 0.35*0.80 + 0.15*0.85 = 0.723",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "waist_width_mm": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.5898148148148148,
+      "explanation": "  Score: 0.590\n  Attribute breakdown:\n    stiffness       0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    waist_width_mm  0.84  [NEAR-MISS: target=lte100 penalty=-0.16]\n    terrain         1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.91 + 0.35*0.00 + 0.15*0.90 = 0.590",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "waist_width_mm": 0.84,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.557962962962963,
+      "explanation": "  Score: 0.558\n  Attribute breakdown:\n    stiffness       0.78  [NEAR-MISS: target=gte7 penalty=-0.22]\n    waist_width_mm  0.76  [NEAR-MISS: target=lte100 penalty=-0.24]\n    terrain         1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.85 + 0.35*0.00 + 0.15*0.90 = 0.558",
+      "matched_attributes": {
+        "stiffness": 0.7777777777777778,
+        "waist_width_mm": 0.76,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5472851895275355,
+      "explanation": "  Score: 0.547\n  Attribute breakdown:\n    stiffness       1.00  (exact match)\n    waist_width_mm  1.00  (exact match)\n    terrain         0.00  (no match)\n  FTS relevance:  0.23\n  Sentiment:      0.90\n  Weighted total: 0.50*0.67 + 0.35*0.23 + 0.15*0.90 = 0.547",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "waist_width_mm": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.5310016379057736,
+      "explanation": "  Score: 0.531\n  Attribute breakdown:\n    stiffness       1.00  (exact match)\n    waist_width_mm  1.00  (exact match)\n    terrain         0.00  (no match)\n  FTS relevance:  0.20\n  Sentiment:      0.85\n  Weighted total: 0.50*0.67 + 0.35*0.20 + 0.15*0.85 = 0.531",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "waist_width_mm": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.506088060669318,
+      "explanation": "  Score: 0.506\n  Attribute breakdown:\n    stiffness       0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    waist_width_mm  0.88  [NEAR-MISS: target=lte100 penalty=-0.12]\n    terrain         0.00  (no match)\n  FTS relevance:  0.24\n  Sentiment:      0.85\n  Weighted total: 0.50*0.59 + 0.35*0.24 + 0.15*0.85 = 0.506",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "waist_width_mm": 0.88,
+        "terrain": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

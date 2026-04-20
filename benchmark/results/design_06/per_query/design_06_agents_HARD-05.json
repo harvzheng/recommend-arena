@@ -1,0 +1,166 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1762,
+    "ndcg_10": 0.235,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 2390.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.4228,
+      "explanation": "Strong match on stability at speed (100%), powder float (93%), damp (93%). Potential concern: stiffness (80% penalty), playfulness (50% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.933,
+        "damp": 0.933,
+        "stability_at_speed": 1.0,
+        "review_quality": 0.96
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.4071,
+      "explanation": "Strong match on damp (100%), stability at speed (100%), powder float (72%). Potential concern: stiffness (80% penalty), playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.72,
+        "damp": 1.0,
+        "stability_at_speed": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.349,
+      "explanation": "Strong match on powder float (93%), stability at speed (81%), damp (80%). Potential concern: playfulness (70% penalty), stiffness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.933,
+        "damp": 0.8,
+        "stability_at_speed": 0.81,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.3469,
+      "explanation": "Strong match on damp (100%), stability at speed (100%). Moderate fit for powder float. Potential concern: stiffness (80% penalty), playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.444,
+        "damp": 1.0,
+        "stability_at_speed": 1.0,
+        "review_quality": 0.967
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3348,
+      "explanation": "Strong match on stability at speed (100%), damp (93%). Moderate fit for powder float. Potential concern: stiffness (70% penalty), playfulness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.556,
+        "damp": 0.933,
+        "stability_at_speed": 0.997,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.3222,
+      "explanation": "Strong match on stability at speed (100%), damp (93%). Potential concern: stiffness (70% penalty), playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.333,
+        "damp": 0.933,
+        "stability_at_speed": 1.0,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.2927,
+      "explanation": "Strong match on powder float (93%), stability at speed (75%), damp (75%). Potential concern: playfulness (80% penalty), stiffness (70% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.933,
+        "damp": 0.747,
+        "stability_at_speed": 0.75,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.2899,
+      "explanation": "Strong match on damp (100%), stability at speed (100%). Potential concern: stiffness (80% penalty), playfulness (30% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.111,
+        "damp": 1.0,
+        "stability_at_speed": 1.0,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.2845,
+      "explanation": "Strong match on powder float (82%), stability at speed (75%), damp (75%). Potential concern: stiffness (70% penalty), playfulness (70% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 0.824,
+        "damp": 0.747,
+        "stability_at_speed": 0.75,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.278,
+      "explanation": "Strong match on powder float (100%), stability at speed (71%). Moderate fit for damp. Potential concern: playfulness (80% penalty), stiffness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "powder_float": 1.0,
+        "damp": 0.578,
+        "stability_at_speed": 0.712,
+        "review_quality": 0.92
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5799,
+    "ndcg_10": 0.5799,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.7,
+    "latency_ms": 699.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The Wildcat just feels alive underfoot. There's a springy energy to the maple core that makes every turn engaging. Great...\"",
+      "matched_attributes": {
+        "grip": 0.7736,
+        "float": 0.7158,
+        "turn_quality": 0.7736,
+        "stability": 0.6907,
+        "dampness": 0.6907,
+        "playfulness": 0.687
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Love this ski....\"",
+      "matched_attributes": {
+        "weight": 0.704,
+        "speed": 0.6997,
+        "playfulness": 0.6997,
+        "float": 0.6997,
+        "stability": 0.6954
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Very precise carving ski. Not quite as damp as the Supershape but more lively feeling. Edge grip is strong on groomers....\"",
+      "matched_attributes": {
+        "dampness": 0.7248,
+        "grip": 0.6944,
+        "playfulness": 0.7461,
+        "precision": 0.7248,
+        "turn_quality": 0.7461,
+        "stability": 0.7036,
+        "stiffness": 0.6337,
+        "speed": 0.6337
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The Mantra M6 is legendary for a reason. This ski is an absolute tank \u2014 stiff, damp, and incredibly stable at any speed....\"",
+      "matched_attributes": {
+        "stiffness": 0.7349,
+        "stability": 0.7182,
+        "dampness": 0.7153,
+        "speed": 0.7349,
+        "versatility": 0.7153,
+        "grip": 0.7055
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.0,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"The titanal construction gives excellent dampness for chattery conditions. Not the lightest ski but the weight adds stab...\"",
+      "matched_attributes": {
+        "weight": 0.7221,
+        "stability": 0.6936,
+        "dampness": 0.7221,
+        "playfulness": 0.7221,
+        "stiffness": 0.6817,
+        "versatility": 0.6983,
+        "forgiveness": 0.665
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Titanal construction makes it damp and stable. Edge grip is very strong. Not as playful as wider all-mountain skis but m...\"",
+      "matched_attributes": {
+        "stability": 0.7209,
+        "dampness": 0.7,
+        "grip": 0.7209,
+        "playfulness": 0.6829,
+        "versatility": 0.6829,
+        "precision": 0.6829,
+        "stiffness": 0.6792,
+        "turn_quality": 0.6792
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Not a fun playful ski \u2014 it's a work tool....\"",
+      "matched_attributes": {
+        "playfulness": 0.7108,
+        "weight": 0.7122,
+        "float": 0.7122,
+        "forgiveness": 0.7122,
+        "stiffness": 0.7064,
+        "stability": 0.7064,
+        "dampness": 0.7064,
+        "grip": 0.7064
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The titanal construction gives it surprising dampness and edge grip for a lighter all-mountain ski. Stability is good, p...\"",
+      "matched_attributes": {
+        "stability": 0.7125,
+        "dampness": 0.6947,
+        "grip": 0.7117,
+        "versatility": 0.7001,
+        "float": 0.6939
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Not a ski for powder or ice but fine for regular resort conditions....\"",
+      "matched_attributes": {
+        "float": 0.6833,
+        "dampness": 0.6717,
+        "weight": 0.663,
+        "grip": 0.663,
+        "turn_quality": 0.663
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The tip rocker helps in soft snow but it's really a piste ski....\"",
+      "matched_attributes": {
+        "stiffness": 0.6966,
+        "dampness": 0.6854,
+        "grip": 0.6854,
+        "stability": 0.6763,
+        "turn_quality": 0.6763
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

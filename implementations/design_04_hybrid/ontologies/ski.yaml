@@ -1,0 +1,159 @@
+domain: ski
+
+attributes:
+  flex:
+    type: ordinal
+    scale: [soft, medium, stiff, very_stiff]
+    synonyms:
+      - stiffness
+      - rigidity
+      - firmness
+      - flex pattern
+      - flex profile
+
+  edge_grip:
+    type: sentiment
+    synonyms:
+      - edge hold
+      - grip on ice
+      - ice performance
+      - hold on hardpack
+      - grip on hardpack
+      - edge grip on hardpack
+      - edge control
+      - grip
+
+  turn_entry:
+    type: sentiment
+    synonyms:
+      - turn initiation
+      - engagement
+      - how it starts turns
+      - turn-in
+      - initiating turns
+      - turn engagement
+
+  dampness:
+    type: sentiment
+    synonyms:
+      - damp
+      - vibration absorption
+      - vibration dampening
+      - chatter
+      - smoothness
+      - smooth ride
+      - vibration
+
+  stability:
+    type: sentiment
+    synonyms:
+      - stability at speed
+      - high speed stability
+      - stable at speed
+      - confident at speed
+      - composure
+      - stable
+
+  playfulness:
+    type: sentiment
+    synonyms:
+      - playful
+      - fun
+      - lively
+      - fun factor
+      - surfy
+      - buttery
+      - smearable
+      - poppy
+      - springy
+
+  powder_float:
+    type: sentiment
+    synonyms:
+      - float
+      - float in powder
+      - powder performance
+      - flotation
+      - deep snow performance
+
+  forgiveness:
+    type: sentiment
+    synonyms:
+      - forgiving
+      - easy
+      - friendly
+      - beginner friendly
+      - user friendly
+      - manageable
+      - tolerant
+
+  weight:
+    type: sentiment
+    synonyms:
+      - light
+      - lightweight
+      - heavy
+      - heft
+      - mass
+
+  construction:
+    type: categorical
+    synonyms:
+      - build
+      - layup
+      - core
+      - materials
+
+  rocker:
+    type: categorical
+    synonyms:
+      - rocker profile
+      - tip rocker
+      - tail rocker
+      - full rocker
+      - camber
+      - rocker camber
+      - rocker camber rocker
+
+  waist_width:
+    type: numeric
+    unit: mm
+    synonyms:
+      - waist
+      - width
+      - underfoot
+
+  length:
+    type: numeric
+    unit: cm
+    synonyms:
+      - size
+      - ski length
+
+  plate:
+    type: categorical
+    synonyms:
+      - binding system
+      - plate binding
+      - binding plate
+      - race plate
+
+categories:
+  terrain:
+    - on-piste
+    - off-piste
+    - all-mountain
+    - park
+    - touring
+    - powder
+    - freeride
+    - big-mountain
+    - backcountry
+    - groomed
+    - race
+    - carving
+
+ranking_weights:
+  vector: 0.35
+  attribute: 0.40
+  sentiment: 0.25

@@ -1,0 +1,171 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1371,
+    "mrr": 0.1111,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 28.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7303730845451355,
+      "explanation": "Ranked here because: vector similarity (+0.40), avg rating (+0.19), attribute match rate (+0.18), BM25 relevance (+0.13)",
+      "matched_attributes": {
+        "vector similarity": 0.396370530128479,
+        "avg rating": 0.19442053139209747,
+        "attribute match rate": 0.18409861624240875,
+        "BM25 relevance": 0.1296013742685318,
+        "review count": 0.07472939789295197,
+        "attribute coverage": 0.02341095171868801
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7138298153877258,
+      "explanation": "Ranked here because: vector similarity (+0.29), BM25 relevance (+0.28), attribute match rate (+0.20), review count (+0.08)",
+      "matched_attributes": {
+        "vector similarity": 0.2889465391635895,
+        "BM25 relevance": 0.2763126492500305,
+        "attribute match rate": 0.20464496314525604,
+        "review count": 0.08119294792413712,
+        "avg rating": 0.05045289546251297,
+        "attribute coverage": 0.029397303238511086
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6246327757835388,
+      "explanation": "Ranked here because: BM25 relevance (+0.23), vector similarity (+0.13), attribute match rate (+0.10), review count (+0.07)",
+      "matched_attributes": {
+        "BM25 relevance": 0.2299908548593521,
+        "vector similarity": 0.13028711080551147,
+        "attribute match rate": 0.09729185700416565,
+        "review count": 0.0714053362607956,
+        "avg rating": 0.06973882019519806
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.5765734910964966,
+      "explanation": "Ranked here because: vector similarity (+0.17), avg rating (+0.14), attribute sentiment (-0.06), attribute match rate (+0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.1653447449207306,
+        "avg rating": 0.13653583824634552,
+        "attribute match rate": 0.06058112159371376,
+        "review count": 0.03010595217347145
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.5399085879325867,
+      "explanation": "Ranked here because: attribute match rate (+0.14), attribute sentiment (-0.07), avg rating (+0.06), BM25 relevance (-0.05)",
+      "matched_attributes": {
+        "attribute match rate": 0.13553190231323242,
+        "avg rating": 0.05625230818986893,
+        "review count": 0.04008196294307709,
+        "attribute coverage": 0.0282750241458416,
+        "vector similarity": 0.015696723014116287
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.5324150323867798,
+      "explanation": "Ranked here because: vector similarity (-0.20), attribute match rate (+0.13), BM25 relevance (+0.07), review count (+0.07)",
+      "matched_attributes": {
+        "attribute match rate": 0.12858229875564575,
+        "BM25 relevance": 0.07483294606208801,
+        "review count": 0.07092172652482986,
+        "avg rating": 0.048857204616069794,
+        "attribute coverage": 0.036818064749240875
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5179335474967957,
+      "explanation": "Ranked here because: avg rating (+0.16), attribute sentiment (-0.11), BM25 relevance (-0.09), vector similarity (+0.05)",
+      "matched_attributes": {
+        "avg rating": 0.1570768654346466,
+        "vector similarity": 0.046387627720832825,
+        "attribute match rate": 0.04324455186724663,
+        "attribute coverage": 0.023831289261579514
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.5169711709022522,
+      "explanation": "Ranked here because: BM25 relevance (-0.21), vector similarity (+0.19), avg rating (+0.10), attribute sentiment (-0.09)",
+      "matched_attributes": {
+        "vector similarity": 0.19457636773586273,
+        "avg rating": 0.10270560532808304,
+        "attribute match rate": 0.07228557020425797
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5095677375793457,
+      "explanation": "Ranked here because: vector similarity (+0.28), BM25 relevance (-0.24), review count (-0.12), attribute match rate (+0.10)",
+      "matched_attributes": {
+        "vector similarity": 0.27750512957572937,
+        "attribute match rate": 0.10478325188159943,
+        "avg rating": 0.0772143080830574,
+        "attribute coverage": 0.012502717785537243
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.48703715205192566,
+      "explanation": "Ranked here because: attribute match rate (+0.14), attribute sentiment (-0.08), vector similarity (-0.08), BM25 relevance (-0.08)",
+      "matched_attributes": {
+        "attribute match rate": 0.14248953759670258,
+        "review count": 0.05932125449180603,
+        "avg rating": 0.023414991796016693
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

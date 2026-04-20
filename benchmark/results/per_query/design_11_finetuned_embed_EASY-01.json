@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5864,
+    "ndcg_10": 0.8571,
+    "mrr": 1.0,
+    "attribute_precision": 0.2857,
+    "attribute_recall": 0.6667,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 41.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 1.0,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.16,
+        "edge_grip": 0.159,
+        "damp": 0.157,
+        "stability_at_speed": 0.156,
+        "powder_float": 0.129,
+        "playfulness": 0.122,
+        "forgiveness": 0.116
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.9851,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.158,
+        "edge_grip": 0.157,
+        "damp": 0.156,
+        "stability_at_speed": 0.155,
+        "powder_float": 0.131,
+        "playfulness": 0.125,
+        "forgiveness": 0.119
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.9089,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.156,
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "powder_float": 0.131,
+        "playfulness": 0.126,
+        "forgiveness": 0.121
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7692,
+      "explanation": "Strong match on edge_grip (16%), stiffness (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.159,
+        "stiffness": 0.159,
+        "damp": 0.157,
+        "stability_at_speed": 0.155,
+        "powder_float": 0.129,
+        "playfulness": 0.123,
+        "forgiveness": 0.118
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.7634,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.159,
+        "edge_grip": 0.159,
+        "damp": 0.157,
+        "stability_at_speed": 0.156,
+        "powder_float": 0.13,
+        "playfulness": 0.122,
+        "forgiveness": 0.116
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7614,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.157,
+        "edge_grip": 0.157,
+        "damp": 0.156,
+        "stability_at_speed": 0.154,
+        "powder_float": 0.13,
+        "playfulness": 0.124,
+        "forgiveness": 0.121
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.7487,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.156,
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "powder_float": 0.132,
+        "playfulness": 0.126,
+        "forgiveness": 0.121
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7383,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.157,
+        "edge_grip": 0.157,
+        "damp": 0.156,
+        "stability_at_speed": 0.154,
+        "powder_float": 0.13,
+        "playfulness": 0.124,
+        "forgiveness": 0.12
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6714,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.156,
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "powder_float": 0.132,
+        "playfulness": 0.126,
+        "forgiveness": 0.12
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6668,
+      "explanation": "Strong match on stiffness (16%), edge_grip (16%), damp (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.157,
+        "edge_grip": 0.157,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "powder_float": 0.133,
+        "playfulness": 0.125,
+        "forgiveness": 0.118
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

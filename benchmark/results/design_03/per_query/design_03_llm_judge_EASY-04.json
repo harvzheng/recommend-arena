@@ -1,0 +1,168 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8317,
+    "ndcg_10": 0.9467,
+    "mrr": 1.0,
+    "attribute_precision": 0.1517,
+    "attribute_recall": 0.2,
+    "attribute_f1": 0.1725,
+    "explanation_score": 5.0,
+    "latency_ms": 87831.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8,
+      "explanation": "The Armada ARV 106 is a playful and versatile ski suitable for freestyle park use. It matches well in terms of its forgiving flex and excellent pop for landings and airs, which are key characteristics for the 'playful freestyle' query. However, it may not be the best choice if the user prefers harder skiing or carving.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "popularity": 0.9,
+        "terrain_suitability": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8,
+      "explanation": "The Faction Dictator 3.0 is a playful all-mountain freestyle ski that matches well with the user's query for a 'playful freestyle ski for the park'. It has a playful flexibility and good floatation suitable for park conditions, making it highly relevant to the user\u2019s requirements.",
+      "matched_attributes": {
+        "flexibility": 0.9,
+        "terrain suitability": 0.85,
+        "width appropriateness": 0.7,
+        "skill level alignment": 0.8,
+        "edge grip quality": 0.09999999999999998,
+        "stability at speed compared to other models": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8,
+      "explanation": "The Salomon QST 106 matches the user's query well as it is a playful freestyle ski suitable for park terrain due to its damp feel and good versatility across various snow conditions. However, its weight could be a concern.",
+      "matched_attributes": {
+        "Playfulness": 0.9,
+        "Versatility": 0.85,
+        "Edge Grip": 0.7,
+        "Flex/Stiffness": 0.6,
+        "Weight": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8,
+      "explanation": "The Moment Wildcat 108 matches the user's query well as a playful freestyle ski for the park because it offers high playfulness (as indicated by its rocker profile and excellent switch airs ability) and moderate stiffness suitable for park skiing. The product's material, production location, and review sentiment align with the user's preference for a versatile yet playful ski.",
+      "matched_attributes": {
+        "playfulness": 0.9,
+        "flex/stiffness match": 0.8,
+        "freeride_capabilities": 0.7,
+        "terrain suitability": 0.9,
+        "freestyle features": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8,
+      "explanation": "The Dynastar M-Free 108 matches well with the user's query for a playful freestyle ski suitable for park use. It is noted as having good playfulness and floatation, which are crucial attributes for park skiing. The product also has adequate stiffness and grip performance to handle variable conditions common in parks.",
+      "matched_attributes": {
+        "playfulness": 0.9,
+        "flex/stiffness": 0.8,
+        "floatation": 0.75,
+        "skill_level_alignment": 0.9,
+        "stability_in_variable_conditions": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8,
+      "explanation": "The Elan Ripstick 96 is a playful and versatile ski that aligns well with the user's request for a 'playful freestyle ski for the park.' Its playfulness attribute matches strongly with the user's preference, as it falls into the category of being versatile and playful. Despite some slight disagreements on stability at high speeds in reviews, the overall consensus is positive, indicating good grip and suitability across various terrain types. The width (96mm) is appropriate for freestyle and park use.",
+      "matched_attributes": {
+        "Playfulness": 0.9,
+        "Terrain Suitability": 0.85,
+        "Flex/Stiffness Match": 0.7,
+        "Stability at High Speeds": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8,
+      "explanation": "The Blizzard Rustler 10 is playful and suitable for freestyle park skiing as it matches well in terms of playfulness and powder floatation. However, its lack of stability at higher speeds might not be ideal for the user's expectations.",
+      "matched_attributes": {
+        "playfulness": 0.8,
+        "powder_float": 0.75,
+        "stability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7,
+      "explanation": "The K2 Disruption 78C is described as forgiving and lightweight with decent edge grip, suitable for playful freestyle skiing in the park. However, it lacks composite cap construction which could be a gap since this feature often adds to playfulness without sacrificing stability. It aligns well with playful freestyle but may not offer the same level of playfulness compared to other products.",
+      "matched_attributes": {
+        "playful_freestyle": 0.9,
+        "terrain_suitability_on_groomed_terrain": 1.0,
+        "flexibility_stiffness": 0.8,
+        "composite_cap_construction": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti matches well with the user's playful freestyle skis for park use due to its stiff flex and decent playfulness, which could be suitable for intermediate to advanced skiers. However, it has poor floatability in powder, a feature that does not match the user preference.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain_comfort": 0.7,
+        "width": 1.0,
+        "floatability in powder": 0.050000000000000044
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is playful and suitable for freestyle park skiing as it matches the user's query regarding playfulness. However, its stability issues at higher speeds are a gap since the user prefers a ski for the park.",
+      "matched_attributes": {
+        "Playfulness": 1.0,
+        "Terrain Suitability - Freestyle Park": 0.8,
+        "Stability at Speed": 0.8
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

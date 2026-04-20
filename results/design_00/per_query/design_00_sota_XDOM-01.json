@@ -1,0 +1,76 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "XDOM-01",
+  "query_text": "cushioned long-distance running shoe for marathon training",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.8677,
+    "ndcg_10": 0.8677,
+    "mrr": 1.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 4.33,
+    "latency_ms": 4110.3
+  },
+  "results": [
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 1.0,
+      "explanation": "Nike Vomero 18 excels in: cushioning, durability. Review: \"Incredible cushioning for long runs.\" Review: \"The cushioning absorbs everything.\" Review: \"Durable enough for 400+ miles.\"",
+      "matched_attributes": {
+        "cushioning": 0.95,
+        "durability": 0.82
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.7507,
+      "explanation": "ASICS Gel-Nimbus 26 excels in: cushioning, durability. Review: \"The most cushioned shoe I've ever worn. Pure cloud-like feel.\" Review: \"Maximum cushion and shock absorption.\" Review: \"Durable \u2014 I get 500 miles easily.\"",
+      "matched_attributes": {
+        "cushioning": 0.95,
+        "durability": 0.8
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.0,
+      "explanation": "New Balance Fresh Foam 1080v14 excels in: cushioning, durability. Review: \"The Fresh Foam is incredibly soft underfoot.\" Review: \"The cushioning is generous without being unstable.\" Review: \"Plush ride, good breathability, durable construction.\"",
+      "matched_attributes": {
+        "cushioning": 0.95,
+        "durability": 0.77
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "Max cushion marathon trainer"
+    },
+    {
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "High cushion distance shoe"
+    },
+    {
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Moderate cushion, good for distance"
+    },
+    {
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "Cushioned but more for daily training"
+    },
+    {
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "Some cushion but not primary purpose"
+    }
+  ]
+}

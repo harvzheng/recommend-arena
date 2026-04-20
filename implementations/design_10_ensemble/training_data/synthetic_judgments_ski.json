@@ -1,0 +1,1809 @@
+{
+  "corpus_hash": "bdbc1d4ca493",
+  "domain": "ski",
+  "query_count": 20,
+  "products_per_query": 15,
+  "total_judgments": 300,
+  "judgments": [
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-002",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-001",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-018",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-019",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-017",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff carving ski for advanced skiers",
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-017",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-003",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-016",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-018",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-001",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-020",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "forgiving beginner ski for groomed runs",
+      "product_id": "SKI-011",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-016",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-005",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-017",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-003",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "all-mountain ski that handles everything",
+      "product_id": "SKI-018",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-017",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-001",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-003",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-002",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-019",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-006",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "lightweight powder ski with good float",
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-003",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-018",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-009",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-004",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-002",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stable high-speed frontside ski",
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-021",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-010",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-014",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-016",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-002",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-003",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful freestyle ski for park and trees",
+      "product_id": "SKI-001",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-004",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-025",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-015",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "damp ski for icy East Coast conditions",
+      "product_id": "SKI-022",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-005",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-003",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-001",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-009",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-016",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-002",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-023",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-022",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "wide freeride ski for off-piste",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-012",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-001",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-002",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "race ski with maximum edge grip",
+      "product_id": "SKI-016",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-017",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-009",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-016",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-020",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-007",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-012",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-002",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "versatile one-ski quiver",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-015",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-009",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-001",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-016",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-023",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-003",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-012",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "stiff GS race ski 180cm+",
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-002",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-017",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-013",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-023",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-024",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-008",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-022",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "soft forgiving ski for learning",
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-023",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-025",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-006",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-002",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-022",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-017",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "powder ski with rocker for deep snow",
+      "product_id": "SKI-013",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-001",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-010",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-003",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-023",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-016",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-017",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-020",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-019",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "carving ski with good dampness",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-015",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-012",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-020",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-004",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-002",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-024",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "touring ski that is lightweight",
+      "product_id": "SKI-017",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-017",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-002",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-007",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-011",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-021",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "freeride charger for variable conditions",
+      "product_id": "SKI-012",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-015",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-007",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-008",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-022",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-012",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-019",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-004",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-025",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-017",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "playful all-mountain ski not too stiff",
+      "product_id": "SKI-001",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-008",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-013",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-007",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-021",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-014",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "precise on-piste ski with strong edge hold",
+      "product_id": "SKI-023",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-002",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-014",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-004",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-009",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-007",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "beginner friendly ski with easy turn initiation",
+      "product_id": "SKI-003",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-009",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-017",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-003",
+      "relevance": 0,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-001",
+      "relevance": 1,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "test"
+    },
+    {
+      "query": "expert ski for steep terrain and big mountains",
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "test"
+    }
+  ]
+}

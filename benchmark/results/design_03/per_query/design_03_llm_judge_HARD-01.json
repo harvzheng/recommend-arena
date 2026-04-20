@@ -1,0 +1,169 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2466,
+    "ndcg_10": 0.4424,
+    "mrr": 0.1429,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.5,
+    "latency_ms": 105938.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.8,
+      "explanation": "The Fischer RC One 82 GT matches well to the user's query as it has a waist width of 82mm suitable for all-mountain conditions and is described as suitable for hard-pack and piste terrain, which aligns with no rocker and under 90mm waist preferences. However, while the ski is stiff and versatile (all terrain including groomers), its playfulness level may be higher than what the user desires.",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "flex/stiffness": 0.85,
+        "playfulness_level": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.8,
+      "explanation": "The Head Supershape e-Speed is an expert-level carving performance ski with a stiff enough flex for aggressive skiing, which aligns well with the user's preference for a no-rocker all-mountain ski. Its pure carving design and 72mm waist suggest it would be suitable on mixed terrain. However, its narrow width of only 72mm may not fully match the broader range of terrain that users under 90mm might seek.",
+      "matched_attributes": {
+        "performanceLevel": 0.8,
+        "shapeAndDesign": 0.9,
+        "flexibility": 0.75,
+        "terrainSuitability": 0.4,
+        "widthAppropriateness": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 matches the user's query well in terms of width (98mm) and terrain suitability for all-mountain use, but it lacks rocker which would provide more floatation in powder. The product is too stiff and lacks playfulness compared to what the user is looking for.",
+      "matched_attributes": {
+        "width": 1.0,
+        "terrain_suitability": 0.85,
+        "rocker": 0.30000000000000004,
+        "playfulness": 0.09999999999999998
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7,
+      "explanation": "The Elan Ripstick 96 matches the user's query by having a width of 96mm, which is appropriate for their search criteria. However, it does not have any rocker and may offer less stability than what the user expects from an all-mountain ski with no rocker.",
+      "matched_attributes": {
+        "Width": 1.0,
+        "Rocker Type": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is an all-mountain ski that matches the user's query for stiffness and terrain suitability (stability, dampness, edge grip) aligning with their preference of not having a rocker profile. However, it lacks playfulness as indicated by its low playfulness score, which could be seen as a gap for those preferring more forgiving skis.",
+      "matched_attributes": {
+        "flex/stiffness": 0.9,
+        "terrain_suitability": 0.8,
+        "width_appropriateness": 0.7,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a stable and precise ski suitable for groomers, which aligns well with the user's preference for an all-mountain ski without rocker and under 90mm waist. However, its width may be on the wider side (113mm waist) and might not fully meet the 'under 90mm' requirement.",
+      "matched_attributes": {
+        "Stability": 1.0,
+        "Flex/Stiffness": 0.8,
+        "Terrain Suitability": 0.7,
+        "Weight Distribution": 0.6,
+        "Width (Waist)": 0.09999999999999998,
+        "Rocker Type (Tip)": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6,
+      "explanation": "The Salomon Stance 90 has a waist width of 90mm which matches the user's preference for under 90mm waist. However, it does not have any rocker profile and is cambered, meaning it may feel less playful but more suitable in groomed conditions. The flex/stiffness aligns with the all-mountain ski category.",
+      "matched_attributes": {
+        "waist_width": 1.0,
+        "camber_type": 0.8,
+        "rocker_profile": 0.0,
+        "terrain_suitability": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6,
+      "explanation": "The K2 Disruption 78C is a forgiving ski suitable for intermediate to advanced skiers and performs well on groomed snow. However, it lacks rocker which makes it unsuitable for all-terrain use as specified in the user's query. The product does not match the user's preference of no rocker.",
+      "matched_attributes": {
+        "forgiving": 0.8,
+        "value_for_money": 0.9,
+        "reliability_on_groomed_terrain": 1.0,
+        "rocker": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6,
+      "explanation": "The K2 Mindbender 108Ti is a high-performance freeride ski with stiff flexibility and a width of 108mm, which aligns well with the user's query for an all-mountain ski under 90mm waist. However, it does not have rocker which would make it unsuitable for powder skiing as mentioned in the user\u2019s query.",
+      "matched_attributes": {
+        "flex/stiffness": 1.0,
+        "width": 0.67,
+        "rocker": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6,
+      "explanation": "The Head Easy Joy SLR is a soft flex ski suitable for beginners and has good reliability on groomed runs, which aligns with the user's preference for an easy-maintained all-terrain option. However, it lacks rocker technology to handle various terrains and does not offer edge grip for icy conditions, indicating gaps in suitability.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain suitability": 0.7,
+        "width appropriateness": 0.6,
+        "skill level alignment": 0.7,
+        "weight": 0.8,
+        "dampness": 0.9,
+        "terrain suitability - lack of rocker": 0.5,
+        "terrain suitability - no edge grip on ice": 0.30000000000000004
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

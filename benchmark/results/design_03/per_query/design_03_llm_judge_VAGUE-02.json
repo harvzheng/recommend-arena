@@ -1,0 +1,167 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2543,
+    "ndcg_10": 0.3158,
+    "mrr": 0.5,
+    "attribute_precision": 0.025,
+    "attribute_recall": 0.025,
+    "attribute_f1": 0.025,
+    "explanation_score": 4.5,
+    "latency_ms": 94195.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7,
+      "explanation": "The Head Easy Joy SLR is a good fit for beginners looking for a comfortable ski that handles easily on groomed runs and has light weight and soft flex. However, it lacks edge grip on ice which may be a concern in the icy coast environment.",
+      "matched_attributes": {
+        "user_friendly_for_beginners": 1.0,
+        "reliability_on_groomed_runs": 1.0,
+        "edge_grasp_on_ice_cloth": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is a high-performance all-mountain ski that prioritizes stability and dampness for expert-level skiers. While it does not match the user's preference for playfulness, its attributes align well with their query for good skiing on an ice coast where a reliable performance-oriented ski would be most beneficial.",
+      "matched_attributes": {
+        "stability": 0.9,
+        "damping": 0.9,
+        "terrain_suitability": 0.8,
+        "flex/stiffness_match": 0.7,
+        "playfulness": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6,
+      "explanation": "The K2 Disruption 78C is a forgiving and lightweight ski suitable for the ice coast terrain, which matches the user's query well given its good value for money and reliability on groomed conditions. However, it lacks specific features like edge grip that might be more critical in icy or less groomed conditions.",
+      "matched_attributes": {
+        "forgiving": 1.0,
+        "value_for_money": 1.0,
+        "reliability_on_groomed_terrain": 1.0,
+        "edge_grip": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6,
+      "explanation": "The Fischer RC One 82 GT is designed for all terrain including hard-pack and piste conditions, which aligns well with the user's query about ice coast skiing. However, it does not specifically cater to soft snow or powder conditions typical of an ice coast, thus its suitability might be moderate.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain": 0.75,
+        "user_friendly": 0.6,
+        "snow_conditions": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6,
+      "explanation": "The K2 Mindbender 108Ti is designed for challenging conditions and freeride terrain, which might not be ideal for the ice coast where it likely experiences icy or frozen surfaces that do not match its intended use. Its stiff flex and poor floatability in powder are more suitable for hardpack and other groomed trails rather than ice.",
+      "matched_attributes": {
+        "flex/stiffness": 0.30000000000000004,
+        "terrain_comfort": 0.3,
+        "width": 0.5,
+        "terrain_compatibility": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6,
+      "explanation": "The Volkl Deacon 76 is well-suited for groomers and piste-focused skiing, which aligns with the ice coast terrain where good edge grip is crucial. However, it lacks characteristics like soft snow handling, comfort for bumps, and weight distribution sensitivity that might be important for a diverse range of conditions on an ice coast.",
+      "matched_attributes": {
+        "Stability": 1.0,
+        "Edge Grip": 1.0,
+        "Terrain Suitability": 0.9,
+        "Soft Snow Handling": 0.19999999999999996,
+        "Comfortable for Bumps": 0.30000000000000004,
+        "Weight Distribution Sensitivity": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6,
+      "explanation": "The Rossignol Experience 78 Ca is recommended for beginners and has adequate turning ability suitable for the ice coast's often smooth conditions. However, its soft flex may not handle harsh or icy conditions well.",
+      "matched_attributes": {
+        "terrain_coverage": 0.9,
+        "flexibility": 0.7,
+        "chatteriness": 0.8,
+        "terrain_coverage in icy conditions": 0.6,
+        "weight for ice coast travel": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6,
+      "explanation": "The Armada ARV 106 is a versatile and playful ski suitable for park riding on the ice coast, where it excels in airs and pop. However, its suitability for carving or speed may be lacking, which could be a gap for users looking exclusively for an ice coast ski.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "popularity": 1.0,
+        "width": 0.6,
+        "terrain_suitability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6,
+      "explanation": "The Salomon QST 106 is suitable for the ice coast due to its good edge grip and playfulness, which are important for traverses and hardpack sections in icy conditions. However, it may not fully match the user's query as the product emphasizes powder floatability rather than suitability on ice or snow with ice.",
+      "matched_attributes": {
+        "Edge Grip": 0.8,
+        "Playfulness": 0.9,
+        "Terrain Suitability for Ice Coaster": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6,
+      "explanation": "The Elan Ripstick 96 is a versatile all-mountain ski that offers good grip and playfulness in different snow conditions. However, its stability at high speeds may not align well with the ice coast terrain where speed control is crucial for safety and performance. The user's query focuses on a good ski for an ice coast environment, which might require more stability.",
+      "matched_attributes": {
+        "Width": 1.0,
+        "Material": 0.8,
+        "Stability": 0.30000000000000004
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8313,
+    "ndcg_10": 0.8532,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 13.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.485,
+      "explanation": "  Score: 0.485\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.90 = 0.485",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.47881061053727625,
+      "explanation": "  Score: 0.479\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.96\n  Sentiment:      0.95\n  Weighted total: 0.50*0.00 + 0.35*0.96 + 0.15*0.95 = 0.479",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.45838304114641476,
+      "explanation": "  Score: 0.458\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.95\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.95 + 0.15*0.85 = 0.458",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.4547775662406725,
+      "explanation": "  Score: 0.455\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.91\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.91 + 0.15*0.92 = 0.455",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.4359634148002173,
+      "explanation": "  Score: 0.436\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.86\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.86 + 0.15*0.90 = 0.436",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4320169494357714,
+      "explanation": "  Score: 0.432\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.86\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.86 + 0.15*0.88 = 0.432",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.42780474686949477,
+      "explanation": "  Score: 0.428\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.88\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.88 + 0.15*0.80 = 0.428",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.4168027615705819,
+      "explanation": "  Score: 0.417\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.78\n  Sentiment:      0.96\n  Weighted total: 0.50*0.00 + 0.35*0.78 + 0.15*0.96 = 0.417",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.40167196903328933,
+      "explanation": "  Score: 0.402\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.76\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.76 + 0.15*0.90 = 0.402",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.3978077788758438,
+      "explanation": "  Score: 0.398\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.77\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.77 + 0.15*0.85 = 0.398",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

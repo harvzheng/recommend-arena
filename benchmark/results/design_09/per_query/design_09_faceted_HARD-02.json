@@ -1,0 +1,146 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3380.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7999994081478571,
+      "explanation": "stiffness=0.40 (match: 100%); playfulness=0.60 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7999991970673352,
+      "explanation": "playfulness=0.30 (match: 100%); stiffness=0.80 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7999991851697157,
+      "explanation": "stiffness=0.30 (match: 100%); playfulness=0.60 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7833326977138116,
+      "explanation": "playfulness=0.20 (match: 100%); stiffness=0.90 (match: 44%)",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444445,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7785708464795973,
+      "explanation": "stiffness=0.20 (match: 100%); playfulness=0.70 (match: 43%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.4285714285714286
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7699992696038831,
+      "explanation": "playfulness=0.10 (match: 100%); stiffness=1.00 (match: 40%)",
+      "matched_attributes": {
+        "stiffness": 0.4,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7464277422366725,
+      "explanation": "playfulness=0.40 (match: 75%); stiffness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.5714285714285715,
+        "playfulness": 0.7499999999999999
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7464277204583407,
+      "explanation": "playfulness=0.40 (match: 75%); stiffness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.5714285714285715,
+        "playfulness": 0.7499999999999999
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.7464277103343613,
+      "explanation": "playfulness=0.40 (match: 75%); stiffness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.5714285714285715,
+        "playfulness": 0.7499999999999999
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.7464276786613027,
+      "explanation": "playfulness=0.40 (match: 75%); stiffness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.5714285714285715,
+        "playfulness": 0.7499999999999999
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

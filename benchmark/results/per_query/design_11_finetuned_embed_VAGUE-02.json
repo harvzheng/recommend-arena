@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.2857,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.3636,
+    "explanation_score": 5.0,
+    "latency_ms": 14.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 1.0,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.162,
+        "playfulness": 0.153,
+        "powder_float": 0.147,
+        "stability_at_speed": 0.137,
+        "damp": 0.135,
+        "edge_grip": 0.133,
+        "stiffness": 0.132
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.8469,
+      "explanation": "Strong match on forgiveness (17%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.17,
+        "playfulness": 0.156,
+        "powder_float": 0.147,
+        "stability_at_speed": 0.135,
+        "damp": 0.133,
+        "stiffness": 0.13,
+        "edge_grip": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.837,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.164,
+        "playfulness": 0.154,
+        "powder_float": 0.147,
+        "stability_at_speed": 0.137,
+        "damp": 0.135,
+        "stiffness": 0.132,
+        "edge_grip": 0.132
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7834,
+      "explanation": "Strong match on playfulness (16%), forgiveness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.156,
+        "forgiveness": 0.155,
+        "powder_float": 0.152,
+        "stability_at_speed": 0.138,
+        "damp": 0.135,
+        "stiffness": 0.132,
+        "edge_grip": 0.132
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7781,
+      "explanation": "Strong match on forgiveness (16%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.155,
+        "playfulness": 0.152,
+        "powder_float": 0.147,
+        "stability_at_speed": 0.139,
+        "damp": 0.137,
+        "edge_grip": 0.135,
+        "stiffness": 0.135
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7146,
+      "explanation": "Strong match on playfulness (16%), forgiveness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.158,
+        "forgiveness": 0.158,
+        "powder_float": 0.153,
+        "stability_at_speed": 0.136,
+        "damp": 0.134,
+        "stiffness": 0.131,
+        "edge_grip": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6555,
+      "explanation": "Strong match on forgiveness (16%), playfulness (16%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.159,
+        "playfulness": 0.157,
+        "powder_float": 0.152,
+        "stability_at_speed": 0.136,
+        "damp": 0.134,
+        "stiffness": 0.131,
+        "edge_grip": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.6362,
+      "explanation": "Strong match on forgiveness (15%), playfulness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.153,
+        "playfulness": 0.153,
+        "powder_float": 0.149,
+        "stability_at_speed": 0.139,
+        "damp": 0.137,
+        "stiffness": 0.135,
+        "edge_grip": 0.134
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6016,
+      "explanation": "Strong match on playfulness (16%), forgiveness (15%), powder_float (15%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.155,
+        "forgiveness": 0.153,
+        "powder_float": 0.151,
+        "stability_at_speed": 0.139,
+        "damp": 0.136,
+        "stiffness": 0.133,
+        "edge_grip": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.584,
+      "explanation": "Strong match on forgiveness (15%), playfulness (15%), powder_float (14%). Also relevant: stability_at_speed, damp, edge_grip, stiffness.",
+      "matched_attributes": {
+        "forgiveness": 0.149,
+        "playfulness": 0.148,
+        "powder_float": 0.145,
+        "stability_at_speed": 0.142,
+        "damp": 0.14,
+        "edge_grip": 0.138,
+        "stiffness": 0.137
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

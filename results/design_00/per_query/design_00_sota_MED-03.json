@@ -1,0 +1,136 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.9479,
+    "ndcg_10": 0.9479,
+    "mrr": 1.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 4029.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Volkl Mantra M6 excels in: edge_grip. Review: \"Edge grip is outstanding for a 96mm waist ski.\" Review: \"Edge grip on hardpack is nearly carving-ski level.\"",
+      "matched_attributes": {
+        "edge_grip": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6077,
+      "explanation": "Rossignol Black Ops Sender Ti excels in: edge_grip. Review: \"Edge grip is strong for the width.\" Review: \"Edge grip on firm traverses is excellent.\"",
+      "matched_attributes": {
+        "edge_grip": 0.82
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5674,
+      "explanation": "Nordica Santa Ana 98 excels in: edge_grip. Review: \"The titanal construction gives it... edge grip for a lighter all-mountain ski.\" Review: \"Edge grip is good, playfulness is moderate.\"",
+      "matched_attributes": {
+        "edge_grip": 0.79
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3513,
+      "explanation": "Nordica Enforcer 100 excels in: edge_grip. Review: \"Handles crud and chop like a champ.\" Review: \"Edge grip on hardpack is surprisingly good for 100mm.\"",
+      "matched_attributes": {
+        "edge_grip": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.3368,
+      "explanation": "K2 Mindbender 108Ti excels in: edge_grip. Review: \"grips on hardpack traverses.\" Review: \"Edge grip is strong for a 108mm ski.\"",
+      "matched_attributes": {
+        "edge_grip": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.1846,
+      "explanation": "Solid on: edge_grip. Review: \"Decent playfulness and edge grip.\" Review: \"Edge grip is good but not outstanding.\"",
+      "matched_attributes": {
+        "edge_grip": 0.66
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.1192,
+      "explanation": "Solid on: edge_grip. Review: \"Good float in powder, decent edge grip for traverses and hardpack sections.\" Review: \"Edge grip is fine for linking turns on harder snow between powder stashes.\"",
+      "matched_attributes": {
+        "edge_grip": 0.635
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0877,
+      "explanation": "Solid on: edge_grip. Review: \"The M-Free 108 is well-balanced between float and grip.\" Review: \"decent edge grip, stable in variable conditions.\"",
+      "matched_attributes": {
+        "edge_grip": 0.64
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.0574,
+      "explanation": "Solid on: edge_grip. Review: \"Great float in powder, good edge grip for a freeride ski, and enough pop for cliff drops.\" Review: \"Edge grip is decent \u2014 not a carving ski but holds on traverses.\"",
+      "matched_attributes": {
+        "edge_grip": 0.64
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.0,
+      "explanation": "Solid on: edge_grip. Review: \"Edge grip is acceptable.\" Review: \"Edge grip is adequate.\"",
+      "matched_attributes": {
+        "edge_grip": 0.6
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

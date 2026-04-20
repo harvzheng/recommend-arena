@@ -1,0 +1,176 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0459,
+    "ndcg_10": 0.2699,
+    "mrr": 0.125,
+    "attribute_precision": 0.0967,
+    "attribute_recall": 0.1,
+    "attribute_f1": 0.0983,
+    "explanation_score": 4.1,
+    "latency_ms": 663.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 1.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The playfulness encourages you to try new things. Not the most damp \u2014 you feel the bumps. But the fun factor is off the ...\"",
+      "matched_attributes": {
+        "dampness": 0.6193,
+        "playfulness": 0.6737,
+        "weight": 0.6272,
+        "float": 0.7009,
+        "turn_quality": 0.6272
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.947,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"Love how playful this ski is while still having backbone. You can throw switch airs and butters but it doesn't fold when...\"",
+      "matched_attributes": {
+        "playfulness": 0.7269,
+        "float": 0.722,
+        "stiffness": 0.6864
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8774,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Very playful \u2014 great for butters, natural features, and creative skiing. At 106mm it floats well in powder. Edge grip is...\"",
+      "matched_attributes": {
+        "grip": 0.7678,
+        "playfulness": 0.6938,
+        "float": 0.7121,
+        "stability": 0.7488,
+        "stiffness": 0.6198
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7977,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The 112mm waist with full rocker provides effortless float. Very playful and forgiving in powder. On anything firm, prep...\"",
+      "matched_attributes": {
+        "stiffness": 0.6906,
+        "playfulness": 0.7023,
+        "float": 0.7115,
+        "forgiveness": 0.6906,
+        "weight": 0.722,
+        "grip": 0.7141
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6896,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Not playful \u2014 this is a serious skiing tool....\"",
+      "matched_attributes": {
+        "playfulness": 0.7181,
+        "turn_quality": 0.6754,
+        "weight": 0.669,
+        "float": 0.669
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6667,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Many of my advanced junior skiers ride the ARV. It's playful, forgiving for landings, and wide enough for all conditions...\"",
+      "matched_attributes": {
+        "stiffness": 0.7613,
+        "playfulness": 0.7491,
+        "forgiveness": 0.7613,
+        "turn_quality": 0.7613,
+        "float": 0.7431,
+        "grip": 0.7004
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.666,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The poplar and fiberglass construction is light and snappy. More playful than heavy titanal powder skis. You can surf, s...\"",
+      "matched_attributes": {
+        "weight": 0.7652,
+        "speed": 0.7561,
+        "playfulness": 0.7561,
+        "float": 0.7561,
+        "stability": 0.7469
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6184,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Not a fun playful ski \u2014 it's a work tool....\"",
+      "matched_attributes": {
+        "playfulness": 0.7266,
+        "dampness": 0.7086,
+        "grip": 0.7086,
+        "comfort": 0.6389,
+        "stiffness": 0.7782,
+        "stability": 0.7782
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.5269,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Not playful at all, this is a serious carving tool. The 184cm is available for taller skiers....\"",
+      "matched_attributes": {
+        "playfulness": 0.7219,
+        "turn_quality": 0.719,
+        "stability": 0.7148,
+        "speed": 0.7148,
+        "grip": 0.7133
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5071,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Titanal construction gives good dampness. Not as stiff as the Mindbender but more playful. Good for the skier who wants ...\"",
+      "matched_attributes": {
+        "stiffness": 0.7446,
+        "dampness": 0.6839,
+        "playfulness": 0.7618,
+        "stability": 0.7791,
+        "speed": 0.7791
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

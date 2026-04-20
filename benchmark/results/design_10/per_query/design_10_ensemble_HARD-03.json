@@ -1,0 +1,169 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3495,
+    "ndcg_10": 0.3495,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 27.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7047834396362305,
+      "explanation": "Ranked here because: vector similarity (+0.41), avg rating (+0.22), BM25 relevance (+0.17), review count (+0.08)",
+      "matched_attributes": {
+        "vector similarity": 0.4095785617828369,
+        "avg rating": 0.22376948595046997,
+        "BM25 relevance": 0.16903771460056305,
+        "review count": 0.07504191994667053,
+        "attribute sentiment": 0.029467470943927765
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6550980806350708,
+      "explanation": "Ranked here because: attribute sentiment (+0.27), vector similarity (+0.18), avg rating (+0.17), review count (+0.11)",
+      "matched_attributes": {
+        "attribute sentiment": 0.2677944600582123,
+        "vector similarity": 0.18255718052387238,
+        "avg rating": 0.17192339897155762,
+        "review count": 0.10938709229230881,
+        "attribute coverage": 0.013709113933146
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6414017677307129,
+      "explanation": "Ranked here because: vector similarity (+0.33), avg rating (+0.10), attribute sentiment (+0.09), attribute match rate (+0.03)",
+      "matched_attributes": {
+        "vector similarity": 0.3257848918437958,
+        "avg rating": 0.09924233704805374,
+        "attribute sentiment": 0.08792278915643692,
+        "attribute match rate": 0.028870198875665665,
+        "review count": 0.0280507430434227,
+        "BM25 relevance": 0.017361542209982872
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6410840749740601,
+      "explanation": "Ranked here because: attribute sentiment (+0.26), vector similarity (+0.23), review count (+0.07), BM25 relevance (+0.06)",
+      "matched_attributes": {
+        "attribute sentiment": 0.2607089579105377,
+        "vector similarity": 0.23016969859600067,
+        "review count": 0.07219970226287842,
+        "BM25 relevance": 0.05940502882003784
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6016455888748169,
+      "explanation": "Ranked here because: vector similarity (+0.28), avg rating (+0.15), review count (+0.06), attribute sentiment (-0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.2816028296947479,
+        "avg rating": 0.15075190365314484,
+        "review count": 0.0643688440322876
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.5988038182258606,
+      "explanation": "Ranked here because: BM25 relevance (+0.13), vector similarity (+0.11), attribute sentiment (+0.08), review count (+0.06)",
+      "matched_attributes": {
+        "BM25 relevance": 0.1317863017320633,
+        "vector similarity": 0.11407900601625443,
+        "attribute sentiment": 0.0826931893825531,
+        "review count": 0.06159501150250435,
+        "attribute coverage": 0.02961367554962635
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5889042019844055,
+      "explanation": "Ranked here because: avg rating (+0.14), vector similarity (+0.12), review count (+0.07), BM25 relevance (+0.02)",
+      "matched_attributes": {
+        "avg rating": 0.14280183613300323,
+        "vector similarity": 0.11926349997520447,
+        "review count": 0.07293711602687836,
+        "BM25 relevance": 0.020236540585756302
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5663207769393921,
+      "explanation": "Ranked here because: vector similarity (+0.16), BM25 relevance (+0.07), review count (+0.06), avg rating (+0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.16106484830379486,
+        "BM25 relevance": 0.07229463011026382,
+        "review count": 0.061344631016254425,
+        "avg rating": 0.04653983935713768
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.5535450577735901,
+      "explanation": "Ranked here because: vector similarity (+0.15), attribute sentiment (+0.13), avg rating (-0.03), attribute match rate (-0.02)",
+      "matched_attributes": {
+        "vector similarity": 0.1470421999692917,
+        "attribute sentiment": 0.13029202818870544
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5496597290039062,
+      "explanation": "Ranked here because: vector similarity (+0.09), review count (+0.06), BM25 relevance (-0.06), attribute coverage (+0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.08783687651157379,
+        "review count": 0.06460365653038025,
+        "attribute coverage": 0.05772752687335014,
+        "attribute match rate": 0.03546518832445145,
+        "avg rating": 0.026187743991613388
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.3837,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3658.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 1.0,
+      "explanation": "Atomic Redster S9i strongly matches on: playfulness. Moderate match on: forgiveness. Review: \"Turn initiation is very demanding \u2014 you need to commit fully\" Review: \"not forgiving at all if you get in the backseat\" Review: \"You feel every bump and ridge, which is exactly what you want in a race\"",
+      "matched_attributes": {
+        "forgiveness": 0.6878333333333333,
+        "playfulness": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7813,
+      "explanation": "Head Easy Joy SLR strongly matches on: forgiveness. Weak match on: playfulness. Review: \"very forgiving \u2014 even when I lean back they don't punish me\" Review: \"very forgiving\" Review: \"super soft flex\"",
+      "matched_attributes": {
+        "forgiveness": 0.9883333333333333,
+        "playfulness": 0.21550000000000002
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.4723,
+      "explanation": "Atomic Redster G9 strongly matches on: playfulness. Weak match on: forgiveness. Review: \"Only for strong, aggressive skiers\"",
+      "matched_attributes": {
+        "forgiveness": 0.07000000000000006,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.3081,
+      "explanation": "K2 Disruption 78C strongly matches on: forgiveness. Weak match on: playfulness. Review: \"forgiving enough for my mistakes\" Review: \"Forgiving flex\" Review: \"Lightweight, not tiring\"",
+      "matched_attributes": {
+        "forgiveness": 0.9070833333333332,
+        "playfulness": 0.2295833333333333
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.291,
+      "explanation": "Nordica Santa Ana 98 strongly matches on: forgiveness. Moderate match on: playfulness. Review: \"Not as powerful but more maneuverable\" Review: \"Playfulness is moderate\"",
+      "matched_attributes": {
+        "forgiveness": 0.7283333333333333,
+        "playfulness": 0.36783333333333335
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.1749,
+      "explanation": "Fischer RC One 82 GT strongly matches on: playfulness. Moderate match on: forgiveness. Review: \"Not a powder ski but handles light snow fine\" Review: \"Not as edgy as a pure carver but forgiving for intermediates to experts\" Review: \"Not tiring like a race ski but still performs at a high level.\"",
+      "matched_attributes": {
+        "forgiveness": 0.43666666666666665,
+        "playfulness": 0.8825
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.1512,
+      "explanation": "Salomon Stance 90 strongly matches on: playfulness. Moderate match on: forgiveness. Review: \"Not playful, very precise\"",
+      "matched_attributes": {
+        "forgiveness": 0.4444444444444444,
+        "playfulness": 0.76
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.0899,
+      "explanation": "Rossignol Experience 78 Ca strongly matches on: forgiveness. Weak match on: playfulness. Review: \"Very forgiving when I make mistakes.\" Review: \"Soft enough to be forgiving but not floppy\" Review: \"Light enough that my legs don't get tired.\"",
+      "matched_attributes": {
+        "forgiveness": 0.9666666666666667,
+        "playfulness": 0.17533333333333334
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.0668,
+      "explanation": "Moderate match on: playfulness. Weak match on: forgiveness. Review: \"Not playful but very competent\"",
+      "matched_attributes": {
+        "forgiveness": 0.18750000000000006,
+        "playfulness": 0.6666666666666666
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.0,
+      "explanation": "Moderate match on: forgiveness, playfulness. Review: \"about 10% more forgiveness than a race ski\" Review: \"no versatility but pure carving\" Review: \"connected to the snow but protected from chatter\"",
+      "matched_attributes": {
+        "forgiveness": 0.41083333333333333,
+        "playfulness": 0.6183333333333333
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

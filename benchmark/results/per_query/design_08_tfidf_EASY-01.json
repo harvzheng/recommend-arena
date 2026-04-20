@@ -1,0 +1,116 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8977,
+    "ndcg_10": 0.8977,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 14.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

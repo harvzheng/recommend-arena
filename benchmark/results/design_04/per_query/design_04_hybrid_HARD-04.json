@@ -1,0 +1,142 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1952,
+    "ndcg_10": 0.3269,
+    "mrr": 0.1,
+    "attribute_precision": 0.8167,
+    "attribute_recall": 0.325,
+    "attribute_f1": 0.465,
+    "explanation_score": 4.1,
+    "latency_ms": 65.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6917818844318391,
+      "explanation": "Attribute matches:\n  matched: weight (0.88)\n  matched: edge grip (0.80)\n  matched: stability (0.72)\nSignals: vector similarity 0.55, attribute match 0.75, sentiment strength 0.80",
+      "matched_attributes": {
+        "weight": 0.875,
+        "edge_grip": 0.8,
+        "stability": 0.725
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6498053163290024,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\n  matched: stability (0.97)\nSignals: vector similarity 0.58, attribute match 0.50, sentiment strength 0.99",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stability": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6430277109146119,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\n  matched: stability (0.94)\nSignals: vector similarity 0.57, attribute match 0.50, sentiment strength 0.97",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stability": 0.9375
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6105024880170822,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.99)\n  matched: weight (0.61)\nSignals: vector similarity 0.60, attribute match 0.50, sentiment strength 0.80",
+      "matched_attributes": {
+        "weight": 0.6125,
+        "edge_grip": 0.9924999999999999
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5995404982566834,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.92)\n  matched: stability (0.69)\nSignals: vector similarity 0.57, attribute match 0.50, sentiment strength 0.80",
+      "matched_attributes": {
+        "edge_grip": 0.916875,
+        "stability": 0.6875
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5454502522945404,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.97)\nSignals: vector similarity 0.58, attribute match 0.25, sentiment strength 0.97",
+      "matched_attributes": {
+        "edge_grip": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.5381107956171036,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.95)\nSignals: vector similarity 0.57, attribute match 0.25, sentiment strength 0.95",
+      "matched_attributes": {
+        "edge_grip": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5311364471912384,
+      "explanation": "Attribute matches:\n  matched: stability (1.00)\nSignals: vector similarity 0.52, attribute match 0.25, sentiment strength 1.00",
+      "matched_attributes": {
+        "stability": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5238272428512574,
+      "explanation": "Attribute matches:\n  matched: weight (1.00)\nSignals: vector similarity 0.50, attribute match 0.25, sentiment strength 1.00",
+      "matched_attributes": {
+        "weight": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.52040356695652,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.90)\nSignals: vector similarity 0.56, attribute match 0.25, sentiment strength 0.90",
+      "matched_attributes": {
+        "edge_grip": 0.9
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5675,
+    "ndcg_10": 0.689,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 112882.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.8,
+      "explanation": "The Line Blade matches the user's query well in terms of carving performance (excellent edge grip and lively flex), width appropriateness for expert skiers (72mm waist width), and stiffness (stiff flex). However, it does not fully align with the user's preference for 'expert carving ski with dampness above 7' as the product focuses more on stability at speed. The level of dampness is acceptable but not explicitly stated.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain_suitability": 0.7,
+        "width_appropriateness": 1.0,
+        "skill_level_alignment": 0.6,
+        "weight": 0.8,
+        "dampness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.8,
+      "explanation": "The Rossignol Black Ops Sender Ti is stiff and suitable for expert-level terrain (big-mountain, steep terrain), aligns with the user's preference for an expert carving ski. It has exceptional dampness above 7 and a full camber profile which matches the user\u2019s request. However, it is described as heavy, not playful at all, and not ideal for everyday use, thus indicating potential gaps in playfulness vs stability.",
+      "matched_attributes": {
+        "flex/stiffness": 0.9,
+        "terrain_type": 0.8,
+        "dampness": 0.7,
+        "skill_level_alignment": 0.8,
+        "playfulness vs stability": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8,
+      "explanation": "The Volkl Mantra M6 matches the user's preferences well as an expert-level carving ski with dampness above 7 and full camber profile due to its high stability, dampness, and suitable power for expert skiers. However, it does not have edge grip which is a drawback.",
+      "matched_attributes": {
+        "stability": 1.0,
+        "damping": 1.0,
+        "full camber profile": 1.0,
+        "edge grip": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.8,
+      "explanation": "The Atomic Redster G9 is a good match for the user's query as it aligns well with expert carving ski preferences including full camber profile and stiffness which are beneficial for carving on hardpack snow. However, its heavy weight and lack of playfulness could be seen as gaps compared to the user's preference.",
+      "matched_attributes": {
+        "flex/stiffness": 1.0,
+        "terrain suitability": 0.8,
+        "width appropriateness": 0.5,
+        "skill level alignment": 1.0,
+        "weight": 0.4,
+        "dampness": 0.2,
+        "playfulness vs stability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.8,
+      "explanation": "The Head Supershape e-Speed matches well with the user's preferences as it offers expert-level carving performance and full camber profile. The product\u2019s graphene construction ensures dampness above 7, aligning with the user's criteria. However, there are slight gaps in terms of edge grip and playfulness vs stability compared to a ski that is specifically noted for not quite race-level demanding.",
+      "matched_attributes": {
+        "performanceLevel": 0.9,
+        "terrainSuitability": 0.8,
+        "widthAppropriateness": 0.7,
+        "skillLevelAlignment": 1.0,
+        "weight": 0.95,
+        "dampness": 0.85,
+        "edgeGrip": 0.6,
+        "playfulnessVsStability": 0.85,
+        "flexibility": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.7,
+      "explanation": "The Salomon Stance 90 matches the user's preferences for an expert carving ski with dampness above 7 and full camber profile. It aligns well in terms of width (90mm), stiffness, and terrain suitability. However, it lacks the precise playfulness that some users might prefer due to its more focused nature on edge grip and performance.",
+      "matched_attributes": {
+        "waist_width": 1.0,
+        "camber_type": 0.9,
+        "dampness_above_7": 0.8,
+        "full_camber_profile": 0.9,
+        "playfulness_vs_stability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a suitable expert carving ski as it matches the user's preference for dampness above 7 and full camber profile well. However, it lacks edge grip for soft snow handling, which might be considered a gap.",
+      "matched_attributes": {
+        "Precision": 1.0,
+        "Stability": 1.0,
+        "Groomer Performance": 1.0,
+        "Soft Snow Handling": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 matches the user's query well by providing dampness above 7 and a full camber profile, which aligns with expert carving ski preferences. However, it lacks extreme playfulness for very experienced skiers and does not perfectly match the variable groomers terrain condition.",
+      "matched_attributes": {
+        "stability": 0.8,
+        "dampness": 1.0,
+        "profile": 0.75,
+        "flexibility/stiffness": 0.6,
+        "playfulness": 0.6,
+        "terrain suitability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6,
+      "explanation": "The Fischer RC One 82 GT is a stiff ski suitable for expert-level skiers, has dampness and good edge grip, and can handle various terrain including hard-pack and piste conditions. However, it does not explicitly match the user's query on its specific dampness level (above 7) and full camber profile.",
+      "matched_attributes": {
+        "flex/stiffness": 1.0,
+        "terrain suitability": 1.0,
+        "width appropriateness": 0.8,
+        "dampness above 7": 0.5,
+        "full camber profile": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6,
+      "explanation": "The Atomic Redster S9i matches the user's preferences in terms of being a 'expert carving ski' (race_ability), stiffness (stiffness), and precision (precision). However, it does not provide dampness above 7 (dampness) which is crucial for full camber profile snow conditions. The product lacks edge hold match (edge_hold) for expert use as well.",
+      "matched_attributes": {
+        "race_ability": 1.0,
+        "stiffness": 1.0,
+        "precision": 1.0,
+        "dampness_above_7": 0.19999999999999996,
+        "full_camber_profile": 0.09999999999999998
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

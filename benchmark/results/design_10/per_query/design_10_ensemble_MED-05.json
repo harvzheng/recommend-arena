@@ -1,0 +1,168 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0616,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 25.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.719776451587677,
+      "explanation": "Ranked here because: vector similarity (+0.35), avg rating (+0.32), BM25 relevance (+0.24), attribute sentiment (+0.04)",
+      "matched_attributes": {
+        "vector similarity": 0.34621697664260864,
+        "avg rating": 0.3215263783931732,
+        "BM25 relevance": 0.2378741353750229,
+        "attribute sentiment": 0.03988071531057358,
+        "attribute coverage": 0.012991094961762428
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7142977118492126,
+      "explanation": "Ranked here because: vector similarity (+0.30), avg rating (+0.29), BM25 relevance (+0.28), attribute sentiment (+0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.2979447543621063,
+        "avg rating": 0.28850921988487244,
+        "BM25 relevance": 0.28056076169013977,
+        "attribute sentiment": 0.05610731989145279
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6940772533416748,
+      "explanation": "Ranked here because: BM25 relevance (+0.33), vector similarity (+0.21), avg rating (+0.20), attribute sentiment (+0.04)",
+      "matched_attributes": {
+        "BM25 relevance": 0.32925406098365784,
+        "vector similarity": 0.21105743944644928,
+        "avg rating": 0.2047789841890335,
+        "attribute sentiment": 0.0442853681743145,
+        "attribute coverage": 0.01983274146914482
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6619440913200378,
+      "explanation": "Ranked here because: BM25 relevance (+0.35), vector similarity (+0.26), avg rating (+0.08), attribute sentiment (+0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.34917736053466797,
+        "vector similarity": 0.26376670598983765,
+        "avg rating": 0.08364368975162506,
+        "attribute sentiment": 0.053631968796253204
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6356169581413269,
+      "explanation": "Ranked here because: BM25 relevance (+0.26), avg rating (+0.21), vector similarity (+0.16), attribute sentiment (-0.11)",
+      "matched_attributes": {
+        "BM25 relevance": 0.26391997933387756,
+        "avg rating": 0.2133246809244156,
+        "vector similarity": 0.1586609035730362,
+        "attribute coverage": 0.052877992391586304
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6142571568489075,
+      "explanation": "Ranked here because: BM25 relevance (+0.28), vector similarity (+0.15), attribute sentiment (-0.08), review count (+0.07)",
+      "matched_attributes": {
+        "BM25 relevance": 0.27842819690704346,
+        "vector similarity": 0.146694615483284,
+        "review count": 0.07146314531564713,
+        "avg rating": 0.04392227530479431,
+        "attribute match rate": 0.02362634986639023
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6129335165023804,
+      "explanation": "Ranked here because: avg rating (+0.23), vector similarity (+0.12), BM25 relevance (+0.11), attribute match rate (-0.02)",
+      "matched_attributes": {
+        "avg rating": 0.2341858297586441,
+        "vector similarity": 0.11642592400312424,
+        "BM25 relevance": 0.10570412874221802,
+        "attribute sentiment": 0.017083855345845222,
+        "attribute coverage": 0.01706777513027191
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6095989346504211,
+      "explanation": "Ranked here because: vector similarity (+0.32), BM25 relevance (+0.13), review count (+0.08), avg rating (-0.03)",
+      "matched_attributes": {
+        "vector similarity": 0.3151456117630005,
+        "BM25 relevance": 0.13496661186218262,
+        "review count": 0.07614297419786453
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6069602370262146,
+      "explanation": "Ranked here because: avg rating (+0.21), BM25 relevance (+0.20), vector similarity (-0.08), attribute sentiment (+0.06)",
+      "matched_attributes": {
+        "avg rating": 0.2130422592163086,
+        "BM25 relevance": 0.2006067931652069,
+        "attribute sentiment": 0.057007696479558945,
+        "attribute coverage": 0.049263011664152145
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6034721732139587,
+      "explanation": "Ranked here because: attribute sentiment (+0.28), vector similarity (+0.21), avg rating (-0.07), BM25 relevance (+0.03)",
+      "matched_attributes": {
+        "attribute sentiment": 0.2769656181335449,
+        "vector similarity": 0.21382354199886322,
+        "BM25 relevance": 0.0262612197548151
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

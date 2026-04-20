@@ -1,0 +1,156 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2277,
+    "ndcg_10": 0.4344,
+    "mrr": 0.3333,
+    "attribute_precision": 0.6667,
+    "attribute_recall": 0.6667,
+    "attribute_f1": 0.6667,
+    "explanation_score": 5.0,
+    "latency_ms": 2411.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6262,
+      "explanation": "Strong match on stability at speed (100%), damp (100%). Potential concern: playfulness (30% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6187,
+      "explanation": "Strong match on stability at speed (100%), damp (82%). Potential concern: playfulness (10% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 0.824,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5988,
+      "explanation": "Strong match on stability at speed (100%), damp (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.967
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.5971,
+      "explanation": "Strong match on stability at speed (100%), damp (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.5829,
+      "explanation": "Strong match on stability at speed (100%), damp (80%). Potential concern: playfulness (20% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 0.8,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.5738,
+      "explanation": "Strong match on stability at speed (100%), damp (93%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 0.933,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.5483,
+      "explanation": "Strong match on stability at speed (100%), damp (87%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 0.871,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.5462,
+      "explanation": "Strong match on stability at speed (100%), damp (93%). Potential concern: playfulness (50% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "damp": 0.933,
+        "review_quality": 0.96
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5147,
+      "explanation": "Strong match on stability at speed (100%), damp (93%). Potential concern: playfulness (60% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 0.997,
+        "damp": 0.933,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.4778,
+      "explanation": "Strong match on stability at speed (88%), damp (78%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stability_at_speed": 0.877,
+        "damp": 0.78,
+        "review_quality": 0.88
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

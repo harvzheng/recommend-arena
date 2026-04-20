@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5531,
+    "ndcg_10": 0.7744,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 11.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 1.0,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.148,
+        "damp": 0.148,
+        "stiffness": 0.147,
+        "edge_grip": 0.147,
+        "powder_float": 0.142,
+        "playfulness": 0.138,
+        "forgiveness": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.9467,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), forgiveness (14%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "powder_float": 0.15,
+        "playfulness": 0.149,
+        "forgiveness": 0.143,
+        "stability_at_speed": 0.142,
+        "damp": 0.14,
+        "stiffness": 0.138,
+        "edge_grip": 0.138
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8937,
+      "explanation": "Strong match on powder_float (15%), playfulness (14%), stability_at_speed (14%). Also relevant: damp, stiffness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.147,
+        "playfulness": 0.145,
+        "stability_at_speed": 0.144,
+        "damp": 0.144,
+        "stiffness": 0.142,
+        "edge_grip": 0.141,
+        "forgiveness": 0.137
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.8782,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.148,
+        "damp": 0.148,
+        "stiffness": 0.147,
+        "edge_grip": 0.147,
+        "powder_float": 0.141,
+        "playfulness": 0.137,
+        "forgiveness": 0.131
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.8489,
+      "explanation": "Strong match on damp (15%), stability_at_speed (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "damp": 0.148,
+        "stability_at_speed": 0.148,
+        "stiffness": 0.147,
+        "edge_grip": 0.147,
+        "powder_float": 0.142,
+        "playfulness": 0.138,
+        "forgiveness": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8259,
+      "explanation": "Strong match on powder_float (14%), stability_at_speed (14%), playfulness (14%). Also relevant: damp, edge_grip, stiffness, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.145,
+        "stability_at_speed": 0.144,
+        "playfulness": 0.144,
+        "damp": 0.144,
+        "edge_grip": 0.143,
+        "stiffness": 0.142,
+        "forgiveness": 0.138
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7984,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), edge_grip (14%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.147,
+        "damp": 0.146,
+        "edge_grip": 0.145,
+        "stiffness": 0.145,
+        "powder_float": 0.143,
+        "playfulness": 0.141,
+        "forgiveness": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.759,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.148,
+        "damp": 0.148,
+        "stiffness": 0.148,
+        "edge_grip": 0.147,
+        "powder_float": 0.144,
+        "playfulness": 0.138,
+        "forgiveness": 0.127
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7574,
+      "explanation": "Strong match on damp (15%), stiffness (15%), edge_grip (15%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "damp": 0.15,
+        "stiffness": 0.15,
+        "edge_grip": 0.15,
+        "stability_at_speed": 0.15,
+        "powder_float": 0.14,
+        "playfulness": 0.135,
+        "forgiveness": 0.127
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7572,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), stability_at_speed (14%). Also relevant: damp, stiffness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.149,
+        "playfulness": 0.147,
+        "stability_at_speed": 0.144,
+        "damp": 0.143,
+        "stiffness": 0.141,
+        "edge_grip": 0.14,
+        "forgiveness": 0.137
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

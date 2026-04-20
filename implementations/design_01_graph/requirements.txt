@@ -1,0 +1,3 @@
+# Additional dependencies for Design #1: Graph-Based Knowledge Graph
+# (beyond shared requirements: httpx)
+networkx>=3.0

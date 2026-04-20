@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3772,
+    "ndcg_10": 0.5705,
+    "mrr": 0.1429,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 12.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.485,
+      "explanation": "  Score: 0.485\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.90 = 0.485",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.4620286085795277,
+      "explanation": "  Score: 0.462\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.96\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.96 + 0.15*0.85 = 0.462",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.45659404401604786,
+      "explanation": "  Score: 0.457\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.92\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.92 + 0.15*0.90 = 0.457",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.4552224309173246,
+      "explanation": "  Score: 0.455\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.89\n  Sentiment:      0.95\n  Weighted total: 0.50*0.00 + 0.35*0.89 + 0.15*0.95 = 0.455",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.4385193959724803,
+      "explanation": "  Score: 0.439\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.89\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.89 + 0.15*0.85 = 0.439",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.43409358451521335,
+      "explanation": "  Score: 0.434\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.90\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.90 + 0.15*0.80 = 0.434",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.40595936889643564,
+      "explanation": "  Score: 0.406\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.77\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.77 + 0.15*0.90 = 0.406",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.40340366988136056,
+      "explanation": "  Score: 0.403\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.78\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.78 + 0.15*0.88 = 0.403",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.39968383399337926,
+      "explanation": "  Score: 0.400\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.77\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.77 + 0.15*0.88 = 0.400",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.38394343813292725,
+      "explanation": "  Score: 0.384\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.71\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.71 + 0.15*0.90 = 0.384",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

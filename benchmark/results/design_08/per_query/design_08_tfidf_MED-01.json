@@ -1,0 +1,156 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4121,
+    "ndcg_10": 0.5736,
+    "mrr": 0.25,
+    "attribute_precision": 0.6667,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.5714,
+    "explanation_score": 5.0,
+    "latency_ms": 1385.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.3918,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), stiffness (high match, +0.78), damp (high match, +0.67).",
+      "matched_attributes": {
+        "damp": 0.6667,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.7778
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.3872,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.89), stiffness (high match, +0.78).",
+      "matched_attributes": {
+        "damp": 0.8889,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.7778
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3617,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.78), stiffness (high match, +0.67).",
+      "matched_attributes": {
+        "damp": 0.7778,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.3565,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.89), stiffness (high match, +0.78).",
+      "matched_attributes": {
+        "damp": 0.8889,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.7778
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.3474,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.67), stiffness (high match, +0.56).",
+      "matched_attributes": {
+        "damp": 0.6667,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.5556
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.3369,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.78), stiffness (high match, +0.67).",
+      "matched_attributes": {
+        "damp": 0.7778,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.3365,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.78), stiffness (high match, +0.67).",
+      "matched_attributes": {
+        "damp": 0.7778,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.3342,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.56), stiffness (high match, +0.56).",
+      "matched_attributes": {
+        "damp": 0.5556,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.5556
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.3278,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), damp (high match, +0.67), stiffness (high match, +0.67).",
+      "matched_attributes": {
+        "damp": 0.6667,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.3122,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), stiffness (high match, +1.00), damp (high match, +0.78).",
+      "matched_attributes": {
+        "damp": 0.7778,
+        "terrain:on-piste": 1.5108,
+        "stiffness": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

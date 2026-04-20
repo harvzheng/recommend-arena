@@ -1,0 +1,136 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.531,
+    "ndcg_10": 0.6501,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 4010.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6514009584713816,
+      "explanation": "  Score: 0.651\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n  FTS relevance:  0.03\n  Sentiment:      0.95\n  Weighted total: 0.50*1.00 + 0.35*0.03 + 0.15*0.95 = 0.651",
+      "matched_attributes": {
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.635,
+      "explanation": "  Score: 0.635\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.00 + 0.15*0.90 = 0.635",
+      "matched_attributes": {
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.4875,
+      "explanation": "  Score: 0.487\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  1.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.92 = 0.487",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.3379352841081543,
+      "explanation": "  Score: 0.338\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.57\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.57 + 0.15*0.92 = 0.338",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.33123955410347317,
+      "explanation": "  Score: 0.331\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.54\n  Sentiment:      0.96\n  Weighted total: 0.50*0.00 + 0.35*0.54 + 0.15*0.96 = 0.331",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.3285011703463413,
+      "explanation": "  Score: 0.329\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.55\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.55 + 0.15*0.90 = 0.329",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.2957080191105375,
+      "explanation": "  Score: 0.296\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.50\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.50 + 0.15*0.80 = 0.296",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.2588930737281876,
+      "explanation": "  Score: 0.259\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.38\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.38 + 0.15*0.85 = 0.259",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.21741386535600135,
+      "explanation": "  Score: 0.217\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.24\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.24 + 0.15*0.90 = 0.217",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.20409309599989336,
+      "explanation": "  Score: 0.204\n  Attribute breakdown:\n    terrain  0.00  (no match)\n  FTS relevance:  0.21\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.21 + 0.15*0.88 = 0.204",
+      "matched_attributes": {
+        "terrain": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

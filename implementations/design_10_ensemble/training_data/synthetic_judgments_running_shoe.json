@@ -1,0 +1,609 @@
+{
+  "corpus_hash": "79fb1faa4712",
+  "domain": "running_shoe",
+  "query_count": 10,
+  "products_per_query": 10,
+  "total_judgments": 100,
+  "judgments": [
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-001",
+      "relevance": 2,
+      "reason": "The Nike Vomero 18 matches the query as it is a cushioned daily trainer suitable for long runs, though its stiffness score is negative and comfort could be improved."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-002",
+      "relevance": 2,
+      "reason": "The Nike Vaporfly 3 has good dampness and responsiveness which are relevant to cushioned daily training for long runs."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-003",
+      "relevance": 2,
+      "reason": "ASICS Gel-Nimbus 26 is a top choice in max_cushion_daily category and has high comfort and stability ratings, matching the cushioned daily trainer for long runs query."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The Kinvara 15 has low scores in responsiveness and ride quality, which are crucial for cushioned running support. It also has a negative score for weight, suggesting it is not lightweight as required."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Brooks Ghost 16 offers good stability and support which are key for long runs, though its stiffness is slightly negative."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "Salomon Speedcross 6 has low edge_grip and high powder_float scores which do not align well with cushioned daily trainer for long runs query."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-007",
+      "relevance": 2,
+      "reason": "The New Balance Fresh Foam 1080v14 is a good match as it provides high comfort and stability, which are relevant to cushioned training shoes for long runs."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 is a trail running shoe and not specifically designed for daily training or long runs on paved surfaces."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-009",
+      "relevance": 2,
+      "reason": "ASICS Novablast 4 has a high playfulness score and is bouncy, which might appeal to long run enthusiasts seeking cushioning, though dampness is low."
+    },
+    {
+      "query": "cushioned daily trainer for long runs",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "The Nike Pegasus Trail 5 has good versatility and dampness ratings, which are relevant attributes for cushioned shoes used in long runs on trails."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-001",
+      "relevance": 1,
+      "reason": "The Nike Vomero 18 has average comfort and cushioning scores but is not particularly relevant as it does not match the specific query of a lightweight racing flat for a 5K event."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-002",
+      "relevance": 2,
+      "reason": "Nike Vaporfly 3 is relevant as it matches the category and top attributes of responsiveness and dampness, which are positive aspects mentioned in reviews. However, its durability and stiffness ratings are negative, indicating potential issues."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-003",
+      "relevance": 2,
+      "reason": "ASICS Gel-Nimbus 26 has good comfort and durability ratings which align well with the user's interest in a lightweight racing shoe for a 5K event."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-004",
+      "relevance": 2,
+      "reason": "The Saucony Kinvara 15 is lightweight and suitable for daily use, but its stiffness and dampness are quite low as indicated by negative sentiment scores in reviews."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-005",
+      "relevance": 1,
+      "reason": "The Brooks Ghost 16 is not a racing flat suitable for a 5K, it's more suited to daily training."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "Salomon Speedcross 6 is categorized as trail_aggressive which does not perfectly align with the lightweight racing flat query for a 5K race."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "The product is from a different brand and category, which does not perfectly match the query about New Balance Fresh Foam 1080v14 for a lightweight racing flat shoe for a 5K race."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 does not directly relate to a lightweight racing flat designed for a specific distance like the 5K race."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-009",
+      "relevance": 2,
+      "reason": "ASICS Novablast 4 has high playfulness and powder_float scores which align well with the user's interest in a lightweight racing flat for a 5K run."
+    },
+    {
+      "query": "lightweight racing flat for 5K",
+      "product_id": "SHOE-010",
+      "relevance": 1,
+      "reason": "The Nike Pegasus Trail 5 is a trail-specific shoe and does not meet the lightweight criteria specified in the query."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-001",
+      "relevance": 2,
+      "reason": "The Nike Vomero 18 is a good running shoe and has decent cushioning, which aligns well with the user's query for a trail running shoe with good grip."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-002",
+      "relevance": 2,
+      "reason": "The Nike Vaporfly 3 has good grip as per the query, but its durability and stiffness aspects are negative which slightly affects the relevance."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-003",
+      "relevance": 2,
+      "reason": "The ASICS Gel-Nimbus 26 has good cushioning and stability which aligns well with the search query focusing on grip but lacks information about traction or grip specifically."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The product has average ratings across multiple attributes and does not seem to prioritize grip as a key feature."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "The Brooks Ghost 16 has good stability and support, which are relevant to the grip aspect of a trail running shoe. However, it lacks mentions of durability and stiffness in reviews."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-006",
+      "relevance": 3,
+      "reason": "Salomon Speedcross 6 has the highest edge grip rating among all attributes, which is crucial for a trail running shoe with good grip."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-007",
+      "relevance": 2,
+      "reason": "The New Balance Fresh Foam 1080v14 has good durability and stability ratings from reviews, which aligns well with the 'good grip' query despite lacking information on comfort and stiffness."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-008",
+      "relevance": 2,
+      "reason": "The Hoka Speedgoat 6 has a strong edge_grip rating which matches the user's query for a shoe with good grip."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-009",
+      "relevance": 2,
+      "reason": "ASICS Novablast 4 has good grip as indicated by its powder_float score of 0.70 and positive sentiment in other attributes."
+    },
+    {
+      "query": "trail running shoe with good grip",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "The Nike Pegasus Trail 5 has good versatility and edge grip, which are key aspects of a trail running shoe as per the query."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-001",
+      "relevance": 2,
+      "reason": "The Nike Vomero 18 offers good cushioning and dampness but has average comfort and durability ratings, which might not fully address the query for stability in overpronation."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "The Nike Vaporfly 3 is a racing shoe and does not directly address overpronation or stability issues."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "ASICS Gel-Nimbus 26 has a high stability rating and is from the ASICS brand, making it an excellent match for someone looking for a stable shoe for overpronation."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-004",
+      "relevance": 2,
+      "reason": "The Saucony Kinvara 15 has good responsiveness and ride quality which are relevant to overpronation issues."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Brooks Ghost 16 has high stability and support ratings, which are important for overpronation, but it lacks positive mentions of comfort."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "The Salomon Speedcross 6 has negative sentiment scores for key attributes like stiffness and edge_grip which are crucial for overpronation issues."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-007",
+      "relevance": 2,
+      "reason": "The New Balance Fresh Foam 1080v14 is relevant as it provides stability which matches the user query about a shoe for overpronation."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-008",
+      "relevance": 2,
+      "reason": "The Hoka Speedgoat 6 is a trail_cushion shoe that provides some stability, which aligns with the user's query for a stability shoe for overpronation."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-009",
+      "relevance": 2,
+      "reason": "ASICS Novablast 4 has a high playfulness score and is associated with cushioning, which are relevant to addressing overpronation concerns."
+    },
+    {
+      "query": "stability shoe for overpronation",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "The Nike Pegasus Trail 5 is versatile and has good dampness, which are relevant aspects to overpronation issues."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-001",
+      "relevance": 2,
+      "reason": "The Nike Vomero 18 has high comfort and cushioning scores, which are important aspects for a recovery shoe, though it also has negative stiffness ratings."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "The Nike Vaporfly 3 is not a recovery shoe as indicated by the negative sentiment on durability and stiffness, which are crucial for comfort during recovery."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-003",
+      "relevance": 2,
+      "reason": "ASICS Gel-Nimbus 26 has high scores in comfort and durability, key aspects for a recovery shoe, though it has low stiffness which might not be ideal."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The product has poor weight and stiffness ratings, which are key factors for a recovery shoe as indicated by the query."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "The Brooks Ghost 16 has high comfort and support ratings which align well with the user's search query for a comfortable recovery shoe."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "The Salomon Speedcross 6 is a trail/aggressive shoe and does not explicitly address comfort or recovery, which are key aspects of the search query 'comfortable recovery shoe'."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-007",
+      "relevance": 2,
+      "reason": "The New Balance Fresh Foam 1080v14 is comfortable and has good stability, which aligns well with the user's search query for a comfortable recovery shoe."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 is a trail running shoe and does not specifically address comfort or recovery, focusing more on dampness and edge grip."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "ASICS Novablast 4 has a high playfulness score but low dampness and forgiveness scores, suggesting it may not be the most comfortable for recovery."
+    },
+    {
+      "query": "comfortable recovery shoe",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "The Nike Pegasus Trail 5 has good versatility and dampness scores which are relevant to a comfortable recovery shoe query."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-001",
+      "relevance": 1,
+      "reason": "The Nike Vomero 18 has good cushioning and dampness which are relevant to the user's search for a responsive shoe, but lacks in comfort, stiffness, and is not explicitly related to max_cushion_daily category."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-002",
+      "relevance": 2,
+      "reason": "Nike Vaporfly 3 has a high responsiveness score and good dampness, which are relevant to the search query of 'responsive tempo shoe', despite its low durability and stiffness."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-003",
+      "relevance": 1,
+      "reason": "The ASICS Gel-Nimbus 26 is not a shoe but a running sneaker, and the search query 'responsive tempo shoe' seems to be looking for a different type of footwear or apparel."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The product has a high responsiveness score but poor weight and stiffness attributes which are important aspects of a responsive shoe."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-005",
+      "relevance": 1,
+      "reason": "The Brooks Ghost 16 is a stable and durable running shoe, but lacks key aspects like comfort and stiffness that are highlighted in the search query 'responsive tempo shoe'."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "The Salomon Speedcross 6 does not align well with the query 'responsive tempo shoe' as it is a trail/aggressive category product rather than a responsive or casual style."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "The product is from a different category and has average sentiment scores in top attributes which do not perfectly match the query 'responsive tempo shoe'."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 is a trail shoe and not specifically designed for responsiveness or city use as implied by the query 'responsive tempo shoe'."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "ASICS Novablast 4 has high playfulness and powder_float ratings which match the 'responsive' aspect of the query, but lacks information on dampness, forgiveness, and weight."
+    },
+    {
+      "query": "responsive tempo shoe",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "The Nike Pegasus Trail 5 is versatile and has good dampness, which matches the top attributes from reviews but lacks edge grip and stiffness."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "The Nike Vomero 18 has a high durability rating and good cushioning, making it an excellent match for the query of durable shoe for high mileage."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "The product has poor durability as per the reviews, which is a key aspect of a durable shoe, and stiffness is also negatively rated."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "The ASICS Gel-Nimbus 26 is a durable shoe known for its high mileage performance and is the best match for a durable shoe suitable for high-mileage use."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The Saucony Kinvara 15 has poor weight and stiffness ratings which are crucial for high-mileage shoes."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "The Brooks Ghost 16 has high durability and stability, which align well with the user's query for a durable shoe suitable for high mileage."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-006",
+      "relevance": 2,
+      "reason": "Salomon Speedcross 6 has good edge grip but lower scores in other attributes which might not fully meet the 'durable shoe for high mileage' query."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-007",
+      "relevance": 2,
+      "reason": "The New Balance Fresh Foam 1080v14 has good durability according to reviews but is negatively perceived in terms of stiffness and matches partially with comfort and stability aspects."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-008",
+      "relevance": 2,
+      "reason": "The Hoka Speedgoat 6 has good edge grip and durability which aligns well with the high mileage aspect of the query."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-009",
+      "relevance": 2,
+      "reason": "ASICS Novablast 4 has a high playfulness score and good powder_float, which could be relevant to someone looking for a durable shoe suitable for high mileage due to its comfort and bouncy feel."
+    },
+    {
+      "query": "durable shoe for high mileage",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Nike Pegasus Trail 5 has good versatility and dampness ratings which align well with the user's query about a durable shoe for high mileage."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-001",
+      "relevance": 2,
+      "reason": "The Nike Vomero 18 has good cushioning and dampness, which are relevant to the query of a waterproof trail shoe."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "The Nike Vaporfly 3 has high dampness and responsiveness ratings which are relevant to the 'waterproof' aspect of the query, but it lacks durability and stiffness, which are important for a waterproof trail shoe."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-003",
+      "relevance": 1,
+      "reason": "ASICS Gel-Nimbus 26 is a high-end running shoe and not specifically designed for trail or waterproofing which are key aspects of the query 'waterproof trail shoe'."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The Saucony Kinvara 15 has low scores in responsiveness and ride quality, which are important aspects for waterproof shoes."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Brooks Ghost 16 has high stability and support ratings which are relevant to the durability and comfort aspects mentioned in the query for a waterproof trail shoe."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-006",
+      "relevance": 2,
+      "reason": "The Salomon Speedcross 6 has good edge grip, which is an important aspect for a waterproof trail shoe."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "The product is a shoe from New Balance and falls under the max_cushion_daily category but lacks key attributes like comfort and stability as rated in reviews."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 has a high 'edge_grip' rating but lacks other key attributes like dampness and stability that are important for waterproof trail shoes."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-009",
+      "relevance": 2,
+      "reason": "ASICS Novablast 4 has good playfulness and powder float attributes which are relevant to the 'waterproof trail shoe' query."
+    },
+    {
+      "query": "waterproof trail shoe",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Nike Pegasus Trail 5 has good versatility and dampness ratings which align well with the user's interest in waterproofing a trail shoe."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-001",
+      "relevance": 1,
+      "reason": "The Nike Vomero 18 has good cushioning and dampness but lacks the minimalist design and low drop aspect relevant to the search query."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "The Nike Vaporfly 3 is not minimalist and does not have a low drop, which do not match the query 'minimalist shoe with low drop'."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-003",
+      "relevance": 1,
+      "reason": "The ASICS Gel-Nimbus 26 does not meet the criteria of being minimalist as it is part of a max_cushion_daily category and has high comfort ratings which do not align with the low drop expectation for minimalism."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The Saucony Kinvara 15 does not align well with the minimalist shoe and low drop criteria based on the top attributes from reviews."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-005",
+      "relevance": 1,
+      "reason": "The Brooks Ghost 16 is a minimalist shoe but has low drop and stiffness issues which do not match the query of 'minimalist shoe with low drop'."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "The Salomon Speedcross 6 does not align well with the minimalist shoe and low drop criteria as indicated by the negative values for edge_grip and stiffness."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "The New Balance Fresh Foam 1080v14 is not minimalist and does not have a low drop profile."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 does not match the query of a minimalist shoe with low drop as it is categorized under trail_cushion and has high dampness and stability ratings which do not align with the minimalist requirements."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "ASICS Novablast 4 is a running shoe and not specifically minimalist or having low drop as per the given search query."
+    },
+    {
+      "query": "minimalist shoe with low drop",
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Nike Pegasus Trail 5 is a versatile trail shoe that does not specifically address the low drop and minimalist aspects mentioned in the query."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-001",
+      "relevance": 1,
+      "reason": "The product is from Nike and in the max_cushion_daily category but lacks key attributes like comfort and cushioning as mentioned in the query."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "The product is related to racing shoes but the attributes do not align well with 'carbon plated' as mentioned in the query."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-003",
+      "relevance": 1,
+      "reason": "ASICS Gel-Nimbus 26 is a running shoe and not directly related to carbon plated race shoes as the query suggests something more specialized for racing."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "The Saucony Kinvara 15 does not meet the criteria of being a carbon plated race shoe and has low scores in responsiveness and stiffness."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-005",
+      "relevance": 1,
+      "reason": "The Brooks Ghost 16 is a daily trainer and not specifically designed as a race shoe, lacking the key attributes like stiffness that would make it relevant to a carbon plated race shoe query."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-006",
+      "relevance": 1,
+      "reason": "Salomon Speedcross 6 is a trail_aggressive shoe and its carbon plated feature does not align well with the search query 'carbon plated race shoe' which appears to be more relevant for a high-speed racing shoe."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "The product is a running shoe and not directly related to carbon plated race shoes as it does not mention any carbon plating or racing focus."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-008",
+      "relevance": 1,
+      "reason": "The Hoka Speedgoat 6 is a trail shoe and not specifically designed or known for carbon plating on race shoes."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "ASICS Novablast 4 is not directly related to 'carbon plated race shoe' as it does not mention carbon or being a racing shoe in its attributes and category."
+    },
+    {
+      "query": "carbon plated race shoe",
+      "product_id": "SHOE-010",
+      "relevance": 1,
+      "reason": "The Nike Pegasus Trail 5 does not perfectly match the search query as it is a shoe rather than plated carbon, and the attributes provided do not align with what might be expected for a 'carbon plated race shoe'."
+    }
+  ]
+}

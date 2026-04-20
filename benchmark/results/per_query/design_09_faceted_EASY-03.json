@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0651,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 12.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5630347260047788,
+      "explanation": "Line Blade. The Line Blade is a hidden gem. Maple and metal construction gives it a unique combo of liveliness and dampness. Edge grip is outstanding ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.534252420760134,
+      "explanation": "Rossignol Experience 78 Ca. My first pair of skis and they're perfect for learning! Very forgiving when I make mistakes. Light enough that my legs don",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.5118484009017523,
+      "explanation": "Atomic Redster S9i. Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very stiff, no",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.4994442864910958,
+      "explanation": "Head Supershape e-Speed. The Supershape line is the gold standard for expert carving. The e-Speed takes it up a notch with the electronic dampening. I",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.4991071916888418,
+      "explanation": "Head Easy Joy SLR. Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turning almost a",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.49838783353994853,
+      "explanation": "Volkl Mantra M6. The Mantra M6 is legendary for a reason. This ski is an absolute tank \u2014 stiff, damp, and incredibly stable at any speed. The double t",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.4969644411167196,
+      "explanation": "K2 Mindbender 108Ti. The Mindbender 108Ti is a charging machine. The titanal makes it stiff and damp \u2014 this is not a playful noodle. At 108mm it float",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.4938372360470969,
+      "explanation": "Volkl Deacon 76. Solid frontside ski with that Volkl precision. The titanal layers give it real dampness and stability. Edge grip on hardpack is excel",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.49041525744151054,
+      "explanation": "Blizzard Brahma 88. The Brahma 88 is Blizzard's best-kept secret. At 88mm with titanal construction, it carves groomers with authority while having en",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.46826365808666776,
+      "explanation": "Atomic Redster G9. Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full camber profil",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1855,
+    "ndcg_10": 0.2099,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3343.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.9499999231739675,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=106.00 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.9394736284055138,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=90.00 (match: 95%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "waist_width_mm": 0.9473684210526315
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.922631523666788,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=82.00 (match: 86%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "waist_width_mm": 0.8631578947368421
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.9099999446326998,
+      "explanation": "stiffness=0.80 (match: 100%); waist_width_mm=108.00 (match: 100%); playfulness=0.50 (match: 80%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.8,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.893514605614785,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=96.00 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8214285183909068,
+      "explanation": "waist_width_mm=102.00 (match: 100%); stiffness=0.60 (match: 86%); playfulness=0.80 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 0.8571428571428572,
+        "playfulness": 0.5,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.8025865190374153,
+      "explanation": "stiffness=1.00 (match: 100%); playfulness=0.10 (match: 100%); waist_width_mm=68.00 (match: 72%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "waist_width_mm": 0.7157894736842105
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8010787658608978,
+      "explanation": "stiffness=0.70 (match: 100%); waist_width_mm=108.00 (match: 100%); playfulness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.5714285714285715,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7928570869637562,
+      "explanation": "waist_width_mm=112.00 (match: 100%); stiffness=0.50 (match: 71%); playfulness=0.80 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 0.7142857142857143,
+        "playfulness": 0.5,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7817459791038976,
+      "explanation": "waist_width_mm=106.00 (match: 100%); stiffness=0.50 (match: 71%); playfulness=0.90 (match: 44%)",
+      "matched_attributes": {
+        "stiffness": 0.7142857142857143,
+        "playfulness": 0.4444444444444445,
+        "waist_width_mm": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

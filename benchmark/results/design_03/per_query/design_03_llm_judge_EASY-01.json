@@ -1,0 +1,169 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3773,
+    "ndcg_10": 0.4986,
+    "mrr": 0.3333,
+    "attribute_precision": 0.05,
+    "attribute_recall": 0.0667,
+    "attribute_f1": 0.0571,
+    "explanation_score": 4.8,
+    "latency_ms": 94010.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.9,
+      "explanation": "The Fischer RC One 82 GT matches the user's query of a 'stiff carving ski' well as it is described as having good edge grip and suitable for hard-pack and piste conditions (terrain suitability). It also aligns with the stiffness aspect of the user\u2019s preference. However, there are some areas that do not perfectly match: the product description mentions versatility on all terrain including groomers and hard snow but does not specify if it's particularly playful or forgiving like a carving ski would typically be.",
+      "matched_attributes": {
+        "flexibility": 0.9,
+        "terrain suitability": 0.8,
+        "width appropriateness": 0.7,
+        "playfulness vs stability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.8,
+      "explanation": "The Line Blade matches well with the user's query for a 'stiff carving ski' as it has a stiff flex profile and is described in consensus summary and review as ideal for carving. However, its overall width (72mm) might be too wide for some users who prefer more narrow skis.",
+      "matched_attributes": {
+        "flexibility": 1.0,
+        "carving_performance": 1.0,
+        "width": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.8,
+      "explanation": "The Atomic Redster S9i matches the user's query for 'stiff carving ski' well, as it has high stiffness and edge hold attributes that are crucial for a stiff carving ski. However, its suitability is more suited to serious racing rather than casual use or soft snow conditions.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_hold": 1.0,
+        "terrain_suitability": 0.25,
+        "skill_level_alignment": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.8,
+      "explanation": "The K2 Mindbender 108Ti matches the user's query 'stiff carving ski' well due to its stiff flex and suitable width for carving on hardpack traverses, aligning with the user's preference. However, it is less suited for intermediates as indicated by its terrain comfort description.",
+      "matched_attributes": {
+        "flexibility": 1.0,
+        "width": 0.8,
+        "terrain_comfort": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8,
+      "explanation": "The Volkl Deacon 76 is a precise and stable ski suitable for groomers, which aligns well with the user's query for 'stiff carving ski'. However, it does not have any rocker in the tip, which may affect its performance on soft snow or bumps compared to what the user specifically requested.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.9,
+        "Precision": 1.0,
+        "Stability": 1.0,
+        "Soft Snow Handling": 0.4,
+        "Rocker Type (Tip)": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8,
+      "explanation": "The Volkl Mantra M6 is described as an incredibly stable and damp all-mountain ski suitable for expert-level skiers. The product matches the user's query 'stiff carving ski' well because it emphasizes stability, stiffness, and performance on various snow conditions, which aligns with a stiff carving ski's requirements.",
+      "matched_attributes": {
+        "stability": 0.9,
+        "damping": 0.8,
+        "flexibility/stiffness": 1.0,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.7,
+      "explanation": "The Salomon Stance 90 is a stiff ski that matches the user's query for 'stiff carving ski'. However, there are slight mismatches in terms of terrain suitability and playfulness vs stability as it excels in groomed conditions but may not be ideal for off-piste skiing. The ski\u2019s stiffness aligns with the user's preference.",
+      "matched_attributes": {
+        "flex/stiffness": 1.0,
+        "terrain suitability": 0.4,
+        "width appropriateness": 0.9,
+        "skill level alignment": 1.0,
+        "weight": 0.8,
+        "dampness": 0.7,
+        "edge grip": 0.9,
+        "playfulness vs stability": 0.4,
+        "terrain suitability for off-piste skiing": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7,
+      "explanation": "The Rossignol Black Ops Sender Ti matches the user's query 'stiff carving ski' as it is stiff in flex and suitable for big-mountain terrain where carving is essential. However, its heavy weight (a mismatch to many users' preferences) and dampness might reduce its playfulness compared to what some skiers expect from a carving ski.",
+      "matched_attributes": {
+        "flex/stiffness": 1.0,
+        "terrain_type": 0.8,
+        "weight": 0.5,
+        "playfulness": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is a highly stiff ski suitable for carving on hard-packed snow, which aligns well with the user's query of 'stiff carving ski'. However, it is not ideal for all terrains and may be too heavy or stiff for users seeking playfulness along with stability.",
+      "matched_attributes": {
+        "flexibility": 1.0,
+        "terrain_applicability": 0.7,
+        "playfulness vs stability": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 has a stiff construction suitable for carving but its versatility and dampness make it more appropriate for variable groomers rather than pure stiffer terrain like hard packed snow or ice trails meant for carving. The width of 98mm is well-suited to the user's query, aligning with the stiffness level. However, the product's moderate playfulness might not fully match the high energy required for stiff carving.",
+      "matched_attributes": {
+        "stiffness": 0.8,
+        "width": 1.0,
+        "terrain_suitability": 0.4,
+        "playfulness_stability_tradeoff": 0.30000000000000004
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

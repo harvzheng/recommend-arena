@@ -1,0 +1,176 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2543,
+    "ndcg_10": 0.2543,
+    "mrr": 0.5,
+    "attribute_precision": 0.4,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.4444,
+    "explanation_score": 5.0,
+    "latency_ms": 1523.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.416,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.56), playfulness (high match, +0.46), damp (high match, +0.44), stiffness (moderate match, +0.25).",
+      "matched_attributes": {
+        "damp": 0.4444,
+        "playfulness": 0.4626,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.5556,
+        "stiffness": 0.2469
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.4139,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.78), damp (high match, +0.59), stiffness (high match, +0.35), playfulness (moderate match, +0.23).",
+      "matched_attributes": {
+        "damp": 0.5926,
+        "playfulness": 0.2313,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.7778,
+        "stiffness": 0.3457
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.4134,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.56), playfulness (high match, +0.46), damp (high match, +0.44), stiffness (moderate match, +0.30).",
+      "matched_attributes": {
+        "damp": 0.4444,
+        "playfulness": 0.4626,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.5556,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.4083,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.67), playfulness (high match, +0.46), damp (high match, +0.37), stiffness (moderate match, +0.25).",
+      "matched_attributes": {
+        "damp": 0.3704,
+        "playfulness": 0.4626,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "stiffness": 0.2469
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.4067,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.67), damp (high match, +0.44), playfulness (high match, +0.39), stiffness (moderate match, +0.25).",
+      "matched_attributes": {
+        "damp": 0.4444,
+        "playfulness": 0.3855,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "stiffness": 0.2469
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4062,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.67), damp (high match, +0.52), playfulness (high match, +0.39), stiffness (moderate match, +0.30).",
+      "matched_attributes": {
+        "damp": 0.5185,
+        "playfulness": 0.3855,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.3255,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.56), playfulness (high match, +0.54), damp (high match, +0.44), stiffness (moderate match, +0.30).",
+      "matched_attributes": {
+        "damp": 0.4444,
+        "playfulness": 0.5397,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.5556,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.3243,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.67), damp (high match, +0.52), stiffness (high match, +0.35), playfulness (high match, +0.31).",
+      "matched_attributes": {
+        "damp": 0.5185,
+        "playfulness": 0.3084,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "stiffness": 0.3457
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.3231,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.67), damp (high match, +0.59), stiffness (high match, +0.35), playfulness (moderate match, +0.23).",
+      "matched_attributes": {
+        "damp": 0.5926,
+        "playfulness": 0.2313,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "stiffness": 0.3457
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.3209,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), edge_grip (high match, +0.56), playfulness (high match, +0.54), damp (high match, +0.37), stiffness (moderate match, +0.25).",
+      "matched_attributes": {
+        "damp": 0.3704,
+        "playfulness": 0.5397,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.5556,
+        "stiffness": 0.2469
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6191,
+    "ndcg_10": 0.6191,
+    "mrr": 0.3333,
+    "attribute_precision": 0.2883,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2678,
+    "explanation_score": 5.0,
+    "latency_ms": 1559.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.2845,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), edge_grip (high match, +0.67), waist_width_mm (high match, +0.48). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "waist_width_mm": 0.4751,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.2825,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), edge_grip (high match, +0.67), waist_width_mm (high match, +0.45). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "waist_width_mm": 0.4454,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.2801,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), edge_grip (high match, +0.78), waist_width_mm (high match, +0.45). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "waist_width_mm": 0.4454,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.7778,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2767,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), terrain:on-piste (high match, +1.51), edge_grip (high match, +0.67), waist_width_mm (high match, +0.50). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "waist_width_mm": 0.5048,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.6667,
+        "terrain:on-piste": 1.5108,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.2454,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), edge_grip (high match, +0.89), waist_width_mm (slight match, +0.09).",
+      "matched_attributes": {
+        "waist_width_mm": 0.0891,
+        "edge_grip": 0.8889,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.2077,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), edge_grip (high match, +0.89), waist_width_mm (slight match, +0.09).",
+      "matched_attributes": {
+        "waist_width_mm": 0.0891,
+        "edge_grip": 0.8889,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.2067,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), edge_grip (high match, +0.78), waist_width_mm (slight match, +0.15).",
+      "matched_attributes": {
+        "waist_width_mm": 0.1485,
+        "edge_grip": 0.7778,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.1812,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), edge_grip (high match, +1.00).",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.1794,
+      "explanation": "Matched on terrain:on-piste (high match, +1.51), edge_grip (high match, +1.00), waist_width_mm (slight match, +0.03).",
+      "matched_attributes": {
+        "waist_width_mm": 0.0297,
+        "edge_grip": 1.0,
+        "terrain:on-piste": 1.5108
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.1472,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), waist_width_mm (high match, +0.59), edge_grip (high match, +0.56). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "waist_width_mm": 0.5939,
+        "terrain:off-piste": 1.5798,
+        "edge_grip": 0.5556,
+        "rocker": -1.2231
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

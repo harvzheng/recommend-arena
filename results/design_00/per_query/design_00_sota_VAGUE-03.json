@@ -1,0 +1,82 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1952,
+    "ndcg_10": 0.1952,
+    "mrr": 0.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 3668.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Volkl Mantra M6 excels in: stability_at_speed. Review: \"incredibly stable at any speed.\" Review: \"Incredibly stable in chop, crud, wind-blown garbage \u2014 it just plows through everything.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6238,
+      "explanation": "K2 Mindbender 108Ti excels in: stability_at_speed. Review: \"Incredibly stable.\" Review: \"and incredibly stable at speed.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.145,
+      "explanation": "Dynastar M-Free 108 excels in: stability_at_speed. Review: \"stable in variable conditions.\" Review: \"Stable enough for speed, playful enough for tight spots.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.745
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0,
+      "explanation": "Solid on: stability_at_speed. Review: \"Not as stable as heavier chargers in high-speed chop.\" Review: \"Versatile freeride ski that handles most conditions well.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.63
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

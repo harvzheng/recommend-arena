@@ -1,0 +1,136 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1952,
+    "ndcg_10": 0.2516,
+    "mrr": 0.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.6667,
+    "explanation_score": 2.0,
+    "latency_ms": 1262.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 1.0,
+      "explanation": "Recommended because P(good) = 0.55 (from 5/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.5455
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.8003,
+      "explanation": "Recommended because P(good) = 0.25 (from 1/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7806,
+      "explanation": "Recommended because P(good) = 0.22 (from 1/5 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.2222
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7227,
+      "explanation": "Recommended because P(good) = 0.14 (from 0/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.1429
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7227,
+      "explanation": "Recommended because P(good) = 0.14 (from 0/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.1429
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.4166,
+      "explanation": "Recommended because P(good) = 0.70 (from 6/6 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.3953,
+      "explanation": "Recommended because P(good) = 0.67 (from 5/5 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3685,
+      "explanation": "Recommended because P(good) = 0.62 (from 4/4 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.625
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.2871,
+      "explanation": "Recommended because P(good) = 0.50 (from 3/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.2871,
+      "explanation": "Recommended because P(good) = 0.50 (from 4/6 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "powder_float": 0.5
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

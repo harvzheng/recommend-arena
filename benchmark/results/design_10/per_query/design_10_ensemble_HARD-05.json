@@ -1,0 +1,166 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1232,
+    "ndcg_10": 0.4171,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 24.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.651771605014801,
+      "explanation": "Ranked here because: BM25 relevance (+0.33), avg rating (+0.19), attribute sentiment (+0.08), vector similarity (+0.01)",
+      "matched_attributes": {
+        "BM25 relevance": 0.3273727297782898,
+        "avg rating": 0.18976370990276337,
+        "attribute sentiment": 0.07887239009141922,
+        "vector similarity": 0.014426054432988167
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6398669481277466,
+      "explanation": "Ranked here because: attribute sentiment (+0.36), avg rating (+0.16), review count (+0.06), attribute coverage (+0.03)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3622237741947174,
+        "avg rating": 0.1618231236934662,
+        "review count": 0.064931221306324,
+        "attribute coverage": 0.028202306479215622
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6061957478523254,
+      "explanation": "Ranked here because: vector similarity (+0.33), BM25 relevance (-0.30), avg rating (+0.21), attribute sentiment (+0.18)",
+      "matched_attributes": {
+        "vector similarity": 0.33338624238967896,
+        "avg rating": 0.20524998009204865,
+        "attribute sentiment": 0.1760389655828476,
+        "attribute match rate": 0.015518072061240673
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6040058135986328,
+      "explanation": "Ranked here because: vector similarity (+0.28), avg rating (+0.14), BM25 relevance (-0.11), attribute sentiment (+0.09)",
+      "matched_attributes": {
+        "vector similarity": 0.27876731753349304,
+        "avg rating": 0.13722747564315796,
+        "attribute sentiment": 0.08770702034235,
+        "review count": 0.061488986015319824
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.5868996381759644,
+      "explanation": "Ranked here because: attribute sentiment (+0.34), BM25 relevance (-0.17), review count (+0.12), avg rating (+0.06)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3378026485443115,
+        "review count": 0.11860809475183487,
+        "avg rating": 0.05631759390234947,
+        "vector similarity": 0.030336560681462288
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5666961669921875,
+      "explanation": "Ranked here because: vector similarity (+0.22), review count (+0.07), avg rating (-0.03), BM25 relevance (+0.02)",
+      "matched_attributes": {
+        "vector similarity": 0.2160073071718216,
+        "review count": 0.06610119342803955,
+        "BM25 relevance": 0.0222279392182827,
+        "attribute sentiment": 0.019512031227350235
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.5401445031166077,
+      "explanation": "Ranked here because: BM25 relevance (-0.31), attribute sentiment (+0.29), vector similarity (+0.14), review count (+0.04)",
+      "matched_attributes": {
+        "attribute sentiment": 0.28864336013793945,
+        "vector similarity": 0.14043296873569489,
+        "review count": 0.0405401885509491,
+        "attribute coverage": 0.015855154022574425
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.5373815298080444,
+      "explanation": "Ranked here because: BM25 relevance (+0.16), attribute sentiment (-0.15), vector similarity (+0.08), review count (+0.07)",
+      "matched_attributes": {
+        "BM25 relevance": 0.16496865451335907,
+        "vector similarity": 0.07645715028047562,
+        "review count": 0.07215125113725662,
+        "avg rating": 0.019314337521791458
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5342510938644409,
+      "explanation": "Ranked here because: BM25 relevance (-0.18), vector similarity (+0.14), attribute sentiment (+0.12), review count (+0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.13998070359230042,
+        "attribute sentiment": 0.11556696891784668,
+        "review count": 0.04628776013851166,
+        "attribute coverage": 0.017444344237446785
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5292677283287048,
+      "explanation": "Ranked here because: vector similarity (+0.17), avg rating (+0.16), BM25 relevance (-0.15), review count (-0.14)",
+      "matched_attributes": {
+        "vector similarity": 0.16530464589595795,
+        "avg rating": 0.15637686848640442,
+        "attribute sentiment": 0.0594753734767437,
+        "attribute coverage": 0.03887888789176941
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

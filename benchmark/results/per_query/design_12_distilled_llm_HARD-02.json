@@ -1,0 +1,145 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.304,
+    "ndcg_10": 0.304,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 116988.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i aligns well with the user's preferences regarding stiffness and stability but falls short in terms of playfulness and versatility compared to what might be preferred by freeride users who prioritize comfort and ease-of-use.",
+      "matched_attributes": {
+        "stiffness_and_stability": 0.8,
+        "waist_width_over_105mm": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is close to matching the user's preferences for stiffness and stability but falls short in terms of being playful or having a wide waist width.",
+      "matched_attributes": {
+        "stiffness_and_stability": 0.9,
+        "waist_width": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a close match to the user's preferences as it offers stiffness and high stability suitable for freeride skiing, but its waist width of 76mm does not align with their desire for something not playful or stiff.",
+      "matched_attributes": {
+        "stiffness_and_high_stability": 0.9,
+        "waist_width_over_105mm": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a strong candidate for the user's request given its stiffness and high stability, which align closely with their preference for 'freeride' skiing without being playful or unstable. However, it does not meet the requirement of having a waist width over 105mm, which is important for freeride use.",
+      "matched_attributes": {
+        "stiffness_and_high_stability": 1.0,
+        "waist_width_over_105mm": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that excels in stability and playfulness, which aligns closely with the user's preferences of being 'NOT playful' and having high stability over 105mm waist width. However, it does not meet the requirement of stiffness and has a slightly wider waist than what the user desires.",
+      "matched_attributes": {
+        "stiffness": 0.3,
+        "waist_width": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7,
+      "explanation": "The K2 Disruption 78C has a waist width of 78mm which aligns with the user's preference for a waist width over 105mm. However, its stiffness and playfulness might not fully meet their need for high stability and versatility across various snow conditions.",
+      "matched_attributes": {
+        "waist_width_mm": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7,
+      "explanation": "The Faction Dictator 3.0 is a versatile all-mountain freeride ski that excels in playful and addictive behavior, which aligns closely with the user's preference of being 'NOT playful' and having high stability over 105mm waist width. However, it lacks stiffness and weight, which are crucial attributes for freeride skis designed for challenging conditions like deep powder.",
+      "matched_attributes": {
+        "playful_behavior": 0.8,
+        "stability_over_105mm_waist_width": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.5,
+      "explanation": "The Head Supershape e-Speed is designed for on-piste use and does not meet the user's preference for a freeride ski that is NOT playful and stiff with high stability over 105mm waist.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.5,
+        "Stiffness Level": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3,
+      "explanation": "The Nordica Enforcer 100 is designed for versatility and stability across different terrains but does not meet the specific requirements of being 'freeride' and 'not playful'. Its stiff construction and high stability make it suitable for varied conditions rather than pure freeride performance.",
+      "matched_attributes": {
+        "waist_width_mm": 0.4,
+        "stiffness": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.3,
+      "explanation": "The Blizzard Rustler 10 is designed for intermediate to advanced riders who enjoy all-mountain skiing and has a stiff construction that may not be ideal for someone looking for a freeride ski without playfulness or stiffness.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.3,
+        "Stiffness Level": 0.2
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

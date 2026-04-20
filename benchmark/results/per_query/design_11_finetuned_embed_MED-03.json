@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2938,
+    "ndcg_10": 0.456,
+    "mrr": 0.25,
+    "attribute_precision": 0.1429,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.1818,
+    "explanation_score": 5.0,
+    "latency_ms": 30.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 1.0,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.151,
+        "damp": 0.15,
+        "stability_at_speed": 0.15,
+        "stiffness": 0.149,
+        "powder_float": 0.136,
+        "playfulness": 0.134,
+        "forgiveness": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.9057,
+      "explanation": "Strong match on edge_grip (15%), stability_at_speed (15%), damp (15%). Also relevant: stiffness, playfulness, powder_float, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.146,
+        "stability_at_speed": 0.146,
+        "damp": 0.146,
+        "stiffness": 0.144,
+        "playfulness": 0.14,
+        "powder_float": 0.14,
+        "forgiveness": 0.138
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.875,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.149,
+        "damp": 0.148,
+        "stability_at_speed": 0.148,
+        "stiffness": 0.146,
+        "powder_float": 0.138,
+        "playfulness": 0.137,
+        "forgiveness": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7883,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.151,
+        "damp": 0.15,
+        "stability_at_speed": 0.15,
+        "stiffness": 0.149,
+        "powder_float": 0.136,
+        "playfulness": 0.134,
+        "forgiveness": 0.13
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7557,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.151,
+        "damp": 0.15,
+        "stability_at_speed": 0.15,
+        "stiffness": 0.149,
+        "powder_float": 0.136,
+        "playfulness": 0.134,
+        "forgiveness": 0.131
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6647,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stiffness (15%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.153,
+        "damp": 0.152,
+        "stiffness": 0.151,
+        "stability_at_speed": 0.151,
+        "powder_float": 0.135,
+        "playfulness": 0.131,
+        "forgiveness": 0.127
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6456,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stiffness (15%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.154,
+        "damp": 0.152,
+        "stiffness": 0.152,
+        "stability_at_speed": 0.152,
+        "powder_float": 0.134,
+        "playfulness": 0.13,
+        "forgiveness": 0.126
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6363,
+      "explanation": "Strong match on forgiveness (14%), stability_at_speed (14%), damp (14%). Also relevant: edge_grip, stiffness, playfulness, powder_float.",
+      "matched_attributes": {
+        "forgiveness": 0.145,
+        "stability_at_speed": 0.144,
+        "damp": 0.144,
+        "edge_grip": 0.143,
+        "stiffness": 0.142,
+        "playfulness": 0.142,
+        "powder_float": 0.14
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6312,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stiffness (15%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.154,
+        "damp": 0.152,
+        "stiffness": 0.152,
+        "stability_at_speed": 0.151,
+        "powder_float": 0.134,
+        "playfulness": 0.131,
+        "forgiveness": 0.128
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.6135,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), edge_grip (14%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.146,
+        "damp": 0.146,
+        "edge_grip": 0.145,
+        "stiffness": 0.144,
+        "powder_float": 0.142,
+        "playfulness": 0.141,
+        "forgiveness": 0.137
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "XDOM-02",
+  "query_text": "lightweight responsive trail running shoe with good grip",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.0646,
+    "ndcg_10": 0.4701,
+    "mrr": 0.1667,
+    "attribute_precision": 0.25,
+    "attribute_recall": 0.2,
+    "attribute_f1": 0.2222,
+    "explanation_score": 3.5,
+    "latency_ms": 42422.9
+  },
+  "results": [
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.8,
+      "explanation": "The Brooks Ghost 16 is a strong candidate for the user's request due to its reliable performance across various terrains and level of comfort, which aligns well with their preference for 'lightweight' and 'responsive'. However, it lacks the specific attribute of being 'lighter', which could be seen as a trade-off.",
+      "matched_attributes": {
+        "Weight G": 0.9,
+        "Heel Drop Mm": 0.8,
+        "Stack Height Mm": 0.7,
+        "Surface": 0.6
+      }
+    },
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.7,
+      "explanation": "The Nike Vomero 18 is a strong candidate for the user's request as it offers lightweight and responsive performance on hardpack surfaces like trails, which aligns with their preference for 'lightweight responsive'. However, it lacks the stiffness needed for high-speed conditions, which could be seen as a trade-off.",
+      "matched_attributes": {
+        "Weight G": 0.9,
+        "Heel Drop Mm": 0.6,
+        "Stack Height Mm": 0.8,
+        "Surface": 0.7
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.7,
+      "explanation": "The Nike Vaporfly 3 is a strong candidate for the user's request due to its exceptional performance in race conditions and lightweight construction, but there are areas where it falls short compared to what they are looking for.",
+      "matched_attributes": {
+        "lightweight": 1.0,
+        "responsive": 1.0,
+        "trail_running_shoe": 1.0,
+        "good_grip": 0.5
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.7,
+      "explanation": "The ASICS Gel-Nimbus 26 is a strong candidate for the user's request due to its exceptional cushioning and stability on hardpack surfaces, which aligns well with their preference for 'lightweight' and 'responsive'. However, it falls short in terms of being an actual speed-based option and may lack the stiffness needed for quick transitions.",
+      "matched_attributes": {
+        "Weight G": 0.8,
+        "Heel Drop Mm": 0.7,
+        "Stack Height Mm": 0.6,
+        "Surface": 0.5
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.7,
+      "explanation": "The Saucony Kinvara 15 is a strong candidate for the user's request as it offers lightweight and responsive performance suitable for trail running on hardpack surfaces like roads. However, it lacks the stiffness needed for very long runs or high-speed conditions which aligns with the user\u2019s preference for 'lightweight' and 'responsive'. Additionally, its weight of 215g might be too light for some users who prioritize comfort.",
+      "matched_attributes": {
+        "lightweight": 0.8,
+        "responsive": 0.6,
+        "grip": 0.3
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.7,
+      "explanation": "The Salomon Speedcross 6 is a strong candidate for the user's request due to its excellent performance in soft/technical terrains and aggressive treads that handle various conditions well. However, it lacks the lightness and responsiveness required by the user, which are crucial attributes.",
+      "matched_attributes": {
+        "lightweight": 0.8,
+        "responsive": 0.9,
+        "grip": 0.7
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.7,
+      "explanation": "The New Balance Fresh Foam 1080v14 is a strong candidate for the user's request as it provides lightweight and responsive performance, which aligns with their 'lightweight' attribute. However, its stability at high speeds might not fully meet their need for 'good grip', as they require more dampening to prevent chatter.",
+      "matched_attributes": {
+        "Weight G": 0.8,
+        "Heel Drop Mm": 0.7,
+        "Stack Height Mm": 0.6,
+        "Surface": 0.5
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.7,
+      "explanation": "The Hoka Speedgoat 6 is a strong candidate for the user's request due to its excellent grip and responsive performance on various terrains including trail conditions. However, it falls short in terms of being specifically designed for lightweight and responsive trail runs.",
+      "matched_attributes": {
+        "Weight G": 1.0,
+        "Heel Drop Mm": 1.0,
+        "Stack Height Mm": 1.0,
+        "Surface": 1.0
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.7,
+      "explanation": "The ASICS Novablast 4 is a strong candidate for the user's request due to its lightweight construction and good grip, which aligns with their preference for 'lightweight' and 'good grip'. However, it may not be the most versatile or stable option for longer runs compared to other options like the K2 Mindbender or the Recluse.",
+      "matched_attributes": {
+        "Weight G": 1.0,
+        "Heel Drop Mm": 1.0,
+        "Stack Height Mm": 1.0,
+        "Surface": 0.5
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.7,
+      "explanation": "The Nike Pegasus Trail 5 is a versatile and suitable option for users looking for a lightweight and responsive running shoe with good grip on various terrains including trails. However, it may not be the best choice for users who prioritize specialized features or have high-performance needs.",
+      "matched_attributes": {
+        "weight": 1.0,
+        "heel_drop_mm": 0.9,
+        "stack_height_mm": 1.0,
+        "surface_type": 0.6
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-006",
+      "relevance": 3,
+      "reason": "Trail-specific, lightweight, aggressive grip"
+    },
+    {
+      "product_id": "SHOE-008",
+      "relevance": 3,
+      "reason": "Trail runner, responsive, good traction"
+    },
+    {
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Trail capable, light, moderate grip"
+    },
+    {
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "Lightweight but road-focused"
+    },
+    {
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "Responsive but minimal trail capability"
+    }
+  ]
+}

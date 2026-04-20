@@ -1,0 +1,124 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5786,
+    "ndcg_10": 0.6437,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.8,
+    "latency_ms": 18.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8336855292320251,
+      "explanation": "Attribute matches:\n  matched: dampness (1.00)\nSignals: vector similarity 0.52, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "dampness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.8177438855171204,
+      "explanation": "Attribute matches:\n  matched: dampness (0.97)\nSignals: vector similarity 0.50, attribute match 1.00, sentiment strength 0.97",
+      "matched_attributes": {
+        "dampness": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.8065910702943802,
+      "explanation": "Attribute matches:\n  matched: dampness (0.99)\nSignals: vector similarity 0.45, attribute match 1.00, sentiment strength 0.99",
+      "matched_attributes": {
+        "dampness": 0.99
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6666892468929291,
+      "explanation": "Attribute matches:\n  matched: dampness (0.38)\nSignals: vector similarity 0.49, attribute match 1.00, sentiment strength 0.38",
+      "matched_attributes": {
+        "dampness": 0.375
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.34452275633811946,
+      "explanation": "Signals: vector similarity 0.63, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.34452275633811946,
+      "explanation": "Signals: vector similarity 0.63, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.33393427133560183,
+      "explanation": "Signals: vector similarity 0.60, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.32691295742988585,
+      "explanation": "Signals: vector similarity 0.58, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.2908064484596252,
+      "explanation": "Signals: vector similarity 0.47, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.28472286462783813,
+      "explanation": "Signals: vector similarity 0.46, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

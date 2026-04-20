@@ -1,0 +1,79 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2928,
+    "ndcg_10": 0.2928,
+    "mrr": 0.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2857,
+    "explanation_score": 5.0,
+    "latency_ms": 3790.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 1.0,
+      "explanation": "K2 Disruption 78C strongly matches on: edge_grip. Moderate match on: stiffness, stability_at_speed. Review: \"has enough edge grip for confident turns\" Review: \"good enough edge grip for basic carving\" Review: \"not tiring\"",
+      "matched_attributes": {
+        "stiffness": 0.6666666666666666,
+        "edge_grip": 0.8041666666666667,
+        "stability_at_speed": 0.585625
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.4501,
+      "explanation": "Head Easy Joy SLR strongly matches on: stiffness. Moderate match on: edge_grip, stability_at_speed. Review: \"on smooth groomed runs they're wonderful\" Review: \"Limited to groomed terrain at slow speeds \u2014 that's exactly right for beginners.\"",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "edge_grip": 0.33333333333333337,
+        "stability_at_speed": 0.39208333333333334
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.0,
+      "explanation": "Moderate match on: stiffness, edge_grip, stability_at_speed. Review: \"Soft flex makes it easy to control at slow speeds.\" Review: \"forgiving flex pattern\" Review: \"Edge grip is acceptable on groomed but struggles on hard snow.\"",
+      "matched_attributes": {
+        "stiffness": 0.30333333333333334,
+        "edge_grip": 0.3433333333333334,
+        "stability_at_speed": 0.4499166666666667
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

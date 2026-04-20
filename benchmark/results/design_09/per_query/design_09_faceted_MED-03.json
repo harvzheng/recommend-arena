@@ -1,0 +1,90 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2857,
+    "explanation_score": 5.0,
+    "latency_ms": 4015.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7381294387342362,
+      "explanation": "stiffness=1.00 (match: 100%); edge_grip=1.00 (match: 100%); playfulness=0.10 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6811233968840532,
+      "explanation": "stiffness=0.80 (match: 100%); edge_grip=0.90 (match: 100%); playfulness=0.50 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6517526192127002,
+      "explanation": "stiffness=0.90 (match: 100%); edge_grip=1.00 (match: 100%); playfulness=0.20 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.65,
+      "explanation": "stiffness=0.80 (match: 100%); edge_grip=0.90 (match: 100%); playfulness=0.30 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 1.0,
+        "playfulness": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

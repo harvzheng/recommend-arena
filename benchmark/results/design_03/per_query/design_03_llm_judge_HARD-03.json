@@ -1,0 +1,183 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3291,
+    "ndcg_10": 0.4023,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 106202.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.8,
+      "explanation": "The Head Supershape e-Speed matches well with the user's query as it is designed for advanced intermediate skiers and has a stiff enough flex to handle aggressive skiing. Its 72mm waist is within the specified 80-95mm range, providing sufficient width without being too broad for carving. The ski's expert-level carving performance and phenomenal edge grip align with the user's preference for a forgiving yet stable ski.",
+      "matched_attributes": {
+        "flex/stiffness": 0.9,
+        "terrain suitability": 0.85,
+        "width appropriateness": 0.75,
+        "skill level alignment": 0.9,
+        "weight": 0.8,
+        "dampness": 0.7,
+        "playfulness vs stability": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7,
+      "explanation": "The Fischer RC One 82 GT is stiff and suitable for advanced intermediate skiers, matching the user's requirement of not being a beginner ski but also forgiving enough. Its waist width matches the 80-95mm range specified by the user, and it can handle multiple snow conditions as described in the profile. However, its stiffness does not fully align with what an \u2018advanced\u2019 level skier might prefer for more playful skiing.",
+      "matched_attributes": {
+        "waist_width": 0.8,
+        "terrain_suitability": 0.7,
+        "flexibility_stiffness_match": 0.6,
+        "playfulness_vs_stability": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 is a versatile ski suitable for advanced intermediate skiers, fitting the 80-95mm waist criteria well and matching the user's need for not being too forgiving or for beginners. However, its playfulness and dampness levels are moderate to acceptable rather than the specified 'forgiving'. The stiffness match is appropriate but does not perfectly align with the user\u2019s preference for a ski that feels forgiving.",
+      "matched_attributes": {
+        "width": 0.9,
+        "terrain suitability": 0.8,
+        "flexibility/stiffness": 0.7,
+        "playfulness vs stability": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a high-performance race ski that aligns well with the user's query for an advanced intermediate ski with good edge grip and turn speed. However, it does not match the preference for forgivingness or appropriate width (80-95mm). The stiffness and responsiveness are suitable for advanced users, but its primary focus on racing may not be ideal for those looking for a versatile all-mountain ski.",
+      "matched_attributes": {
+        "race_ability": 1.0,
+        "stiffness": 0.7,
+        "edge_hold": 1.0,
+        "turn_speed": 0.8,
+        "forgivingness": 0.8,
+        "width": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is an advanced intermediate ski that matches the user's preference for a forgiving yet stable option. However, it does not offer significant dampness or edge grip suitable for softer snow and bumps, which are key features users often look for in their skis.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.8,
+        "Terrain Suitability": 0.7,
+        "Width Appropriateness": 0.6,
+        "Skill Level Alignment": 1.0,
+        "Weight": 0.4,
+        "Dampness for Soft Snow": 0.19999999999999996,
+        "Edge Grip": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7,
+      "explanation": "The Elan Ripstick 96 has a width appropriate for intermediate to advanced skiers (80-95mm waist), and its versatility, good grip, and playful nature align well with the user's preferences. However, its stability at high speeds might not meet the user's expectations as they are looking for a ski that is forgiving but not beginner-friendly.",
+      "matched_attributes": {
+        "Width": 0.9,
+        "Flex/Stiffness": 0.8,
+        "Terrain Suitability": 0.75,
+        "Skill Level Alignment": 0.85,
+        "Stability at Speed": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7,
+      "explanation": "The Armada ARV 106 appears to be suitable for the user's query as it offers forgiving flex and a True twin shape which aligns with the advanced intermediate rider seeking playfulness in the park but not too much stiffness. However, its suitability in powder is less clear given the specific preference of 80-95mm waist width. It also lacks details on edge grip and weight distribution for carving, which are important factors for a dedicated off-piste or mixed terrain skier.",
+      "matched_attributes": {
+        "flex/stiffness": 0.7,
+        "terrain suitability": 0.6,
+        "width appropriateness": 0.8,
+        "skill level alignment": 0.9,
+        "weight": 0.4,
+        "popularity for carving or hard turns": 0.0,
+        "specific waist width preference": 0.19999999999999996,
+        "edge grip quality for off-piste use": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a versatile freeride ski suitable for advanced intermediate skiers, which aligns well with the user's query. However, it does not specifically emphasize forgiveness or have an appropriate waist width (80-95mm) that would make it particularly forgiving for those who prefer less rigid and more playful skiing.",
+      "matched_attributes": {
+        "terrain suitability": 0.7,
+        "flex/stiffness match": 0.6,
+        "skill level alignment": 1.0,
+        "waist width": 0.6,
+        "playfulness vs stability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 is suitable for advanced intermediate riders who prefer a forgiving and playful ski. Its medium-soft flex provides an appropriate level of playfulness but without being too soft for stability issues above moderate speeds, aligning well with the user's preferences. However, it does not fully meet the criteria as its stability at mach speed is not super stable, which could be considered a gap.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain suitability": 0.75,
+        "width appropriateness": 0.6,
+        "skill level alignment": 0.9,
+        "playfulness vs stability": 0.6,
+        "stability above moderate speeds": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6,
+      "explanation": "The K2 Disruption 78C is described as forgiving and suitable for advanced intermediates but may not be ideal for more challenging conditions. The product has a waist width of 80-95mm, which aligns well with the user's query. However, its stiffness (not specified) could potentially affect its playfulness versus stability, especially compared to what an advanced intermediate skier might expect. It does offer decent edge grip and value for money.",
+      "matched_attributes": {
+        "terrain suitability": 0.8,
+        "width appropriateness": 1.0,
+        "skill level alignment": 0.7,
+        "stiffness": 0.6,
+        "playfulness vs stability balance": 0.4
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

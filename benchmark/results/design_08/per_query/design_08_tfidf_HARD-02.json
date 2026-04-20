@@ -1,0 +1,150 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.4423,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 1483.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.1343,
+      "explanation": "Matched on stability_at_speed (high match, +0.78), waist_width_mm (slight match, +0.12).",
+      "matched_attributes": {
+        "stability_at_speed": 0.7778,
+        "waist_width_mm": 0.1229
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.1277,
+      "explanation": "Matched on stability_at_speed (high match, +0.89), waist_width_mm (slight match, +0.12).",
+      "matched_attributes": {
+        "stability_at_speed": 0.8889,
+        "waist_width_mm": 0.1229
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.126,
+      "explanation": "Matched on stability_at_speed (high match, +0.78), waist_width_mm (moderate match, +0.20).",
+      "matched_attributes": {
+        "stability_at_speed": 0.7778,
+        "waist_width_mm": 0.2048
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.1112,
+      "explanation": "Matched on stability_at_speed (high match, +1.00), waist_width_mm (slight match, +0.04).",
+      "matched_attributes": {
+        "stability_at_speed": 1.0,
+        "waist_width_mm": 0.041
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.097,
+      "explanation": "Matched on stability_at_speed (high match, +0.89).",
+      "matched_attributes": {
+        "stability_at_speed": 0.8889
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.0536,
+      "explanation": "Matched on stability_at_speed (high match, +0.89), waist_width_mm (high match, +0.82). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "stability_at_speed": 0.8889,
+        "rocker": -1.2231,
+        "waist_width_mm": 0.8192
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.046,
+      "explanation": "Matched on waist_width_mm (high match, +0.86), stability_at_speed (high match, +0.78). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "stability_at_speed": 0.7778,
+        "rocker": -1.2231,
+        "waist_width_mm": 0.8602
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0439,
+      "explanation": "Matched on waist_width_mm (high match, +0.86), stability_at_speed (high match, +0.67). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "stability_at_speed": 0.6667,
+        "rocker": -1.2231,
+        "waist_width_mm": 0.8602
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0388,
+      "explanation": "Matched on waist_width_mm (high match, +0.82), stability_at_speed (high match, +0.67). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "stability_at_speed": 0.6667,
+        "rocker": -1.2231,
+        "waist_width_mm": 0.8192
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0384,
+      "explanation": "Matched on stability_at_speed (high match, +0.89), waist_width_mm (high match, +0.61). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "stability_at_speed": 0.8889,
+        "rocker": -1.2231,
+        "waist_width_mm": 0.6144
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1376,
+    "ndcg_10": 0.4225,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 86921.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.8,
+      "explanation": "The Atomic Redster S9i excels in providing a responsive and lively underfoot feel due to its high stiffness and good edge grip, which aligns well with the user's preference for a ski that feels 'alive.' However, it lacks playfulness or appropriate weight, which could affect overall enjoyment.",
+      "matched_attributes": {
+        "response_underfoot": 1.0,
+        "stiffness": 1.0,
+        "flexibility": 0.19999999999999996,
+        "light_weight": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8,
+      "explanation": "The Volkl Deacon 76 is precise and stable for groomers, which aligns well with the user's preference of a 'ski that feels alive underfoot'. However, it lacks attributes like rocker tip, soft snow handling, and comfortable bumps, which could make it feel less playful or lively.",
+      "matched_attributes": {
+        "Precision": 1.0,
+        "Stability": 1.0,
+        "Rocker Type (Tip)": 0.25,
+        "Soft Snow Handling": 0.19999999999999996,
+        "Comfortable for Bumps": 0.09999999999999998
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8,
+      "explanation": "The Faction Dictator 3.0 is described as having playful and fun-oriented flex/stiffness that aligns well with the user's preference for a ski 'that feels alive underfoot'. Its good floatation in powder, acceptable to moderate edge performance, and suitability for switch and off-piste terrain also contribute to its alignment with the user query.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "suitability_for": 0.75,
+        "edge_performance vs stability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8,
+      "explanation": "The Salomon QST 106 is a versatile ski that beautifully floats in powder and has a playful feel underfoot, which aligns well with the user's query about a 'ski that feels alive underfoot'. However, its weight might be a concern for some users.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.8,
+        "Terrain Suitability": 1.0,
+        "Width Appropriateness": 0.7,
+        "Skill Level Alignment": 1.0,
+        "Dampness/Edge Grip": 0.8,
+        "Playfulness vs Stability": 1.0,
+        "Weight": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8,
+      "explanation": "The Armada ARV 106 matches the user's preference of a ski that feels 'alive underfoot' because it emphasizes playfulness and pop for landings in the park with its forgiving flex and incredible pop. However, it may not be suitable for all types of terrain or carving.",
+      "matched_attributes": {
+        "popularity": 1.0,
+        "flexibility": 0.8,
+        "terrain suitability": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8,
+      "explanation": "The Moment Wildcat 108 matches the user's preference for a ski that feels alive underfoot by providing good playfulness and stability, especially considering its playful enough for switch airs and butters characteristic combined with moderate stiffness. The flex/stiffness match is suitable given the product\u2019s playful nature.",
+      "matched_attributes": {
+        "playfulness vs stability": 0.9,
+        "flex/stiffness match": 0.85,
+        "terrain suitability": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is highly praised for its playfulness and floatability in soft snow conditions, which aligns well with the user's preference of a ski that feels alive underfoot. However, it has stability issues at higher speeds which could be considered a gap as the user specifically mentioned feeling alive underfoot.",
+      "matched_attributes": {
+        "Playfulness": 0.9,
+        "Floatability in soft snow conditions": 0.85,
+        "Stability at higher speeds": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.7,
+      "explanation": "The Line Blade offers lively carving performance and excellent edge grip, which aligns well with the user's preference for a ski that feels alive underfoot. However, its stiffness and high flexibility may not be suitable for all skiers, potentially creating a gap in appeal.",
+      "matched_attributes": {
+        "carving_performance": 0.9,
+        "edge_grip_quality": 0.8,
+        "flexibility": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7,
+      "explanation": "The Head Easy Joy SLR matches the user's preference for a ski that feels alive underfoot by providing soft flex and easy turning ability, which are key attributes for a playful, responsive ski suitable for beginners. However, it lacks edge grip on ice, which could be considered a gap in its playfulness vs stability aspect.",
+      "matched_attributes": {
+        "flexibility": 0.9,
+        "turning_ability": 1.0,
+        "user_friendly_for_beginners": 1.0,
+        "edge_grasp_on_ice": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7,
+      "explanation": "The Elan Ripstick 96 is described as versatile and playful, which aligns well with the user's preference for a ski that feels 'alive underfoot.' The product\u2019s playfulness suggests it can provide an engaging and dynamic feel despite not being fully stable at high speeds. However, its lack of stability could be seen as a gap in this regard.",
+      "matched_attributes": {
+        "Playfulness": 0.9,
+        "Width": 0.7,
+        "Stability at speed": 0.19999999999999996
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

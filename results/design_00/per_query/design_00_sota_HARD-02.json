@@ -1,0 +1,76 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6839,
+    "ndcg_10": 0.6839,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 5330.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 1.0,
+      "explanation": "K2 Mindbender 108Ti excels in: stability_at_speed, stiffness. Review: \"Incredibly stable.\" Review: \"and incredibly stable at speed.\" Review: \"The titanal makes it stiff and damp\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.9,
+        "stiffness": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.1405,
+      "explanation": "Dynastar M-Free 108 excels in: stability_at_speed. Solid on: stiffness. Review: \"stable in variable conditions.\" Review: \"Stable enough for speed, playful enough for tight spots.\" Review: \"Not as stiff as the Mindbender but more playful.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.745,
+        "stiffness": 0.655
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0,
+      "explanation": "Solid on: stability_at_speed, stiffness. Review: \"Not as stable as heavier chargers in high-speed chop.\" Review: \"Versatile freeride ski that handles most conditions well.\" Review: \"The carbon construction keeps weight down\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.63,
+        "stiffness": 0.68
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

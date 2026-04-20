@@ -1,0 +1,62 @@
+domain: running_shoe
+collection: running_shoes
+facets:
+  cushioning:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Amount of cushioning and impact protection"
+    synonyms: ["cushion", "cushy", "plush", "soft", "protective"]
+  responsiveness:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Energy return and snappy feel"
+    synonyms: ["responsive", "bouncy", "springy", "fast", "snappy"]
+  stability:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "How stable and supportive the shoe feels"
+    synonyms: ["stable", "supportive", "secure"]
+  grip:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Traction on various surfaces"
+    synonyms: ["traction", "grip", "outsole"]
+  breathability:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Airflow and ventilation"
+    synonyms: ["breathable", "airy", "ventilated"]
+  durability:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "How long the shoe lasts"
+    synonyms: ["durable", "long-lasting", "mileage"]
+  weight_feel:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Perceived lightness (1.0 = very light)"
+    synonyms: ["light", "lightweight", "heavy"]
+  surface:
+    type: categorical
+    values: ["road", "trail", "track", "mixed"]
+    synonyms: ["road", "trail", "track", "pavement", "gravel"]
+  weight_g:
+    type: spec_numeric
+    unit: g
+    description: "Weight in grams"
+  heel_drop_mm:
+    type: spec_numeric
+    unit: mm
+    description: "Heel-to-toe drop"
+  stack_height_mm:
+    type: spec_numeric
+    unit: mm
+    description: "Stack height / foam thickness"
+  has_carbon_plate:
+    type: boolean
+    description: "Whether the shoe has a carbon plate"
+    synonyms: ["carbon plate", "plated"]
+
+ranking_defaults:
+  sort_by: "_text_match:desc,popularity:desc"
+  primary_facets: ["cushioning", "responsiveness", "surface"]

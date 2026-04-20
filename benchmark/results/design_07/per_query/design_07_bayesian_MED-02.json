@@ -1,0 +1,166 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5397,
+    "ndcg_10": 0.6145,
+    "mrr": 0.25,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.5,
+    "explanation_score": 2.0,
+    "latency_ms": 3534.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 1.0,
+      "explanation": "Recommended because P(soft) = 0.11 (from 0/4 reviews), P(freeride) = 0.43 (from 5/8 reviews), P(high) = 0.44 (from 3/6 reviews), P(good) = 0.55 (from 5/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1111,
+        "terrain": 0.4286,
+        "playfulness": 0.4444,
+        "powder_float": 0.5455
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.9577,
+      "explanation": "Recommended because P(soft) = 0.20 (from 1/5 reviews), P(freeride) = 0.07 (from 0/9 reviews), P(high) = 0.83 (from 9/9 reviews), P(good) = 0.50 (from 3/4 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.2,
+        "terrain": 0.0667,
+        "playfulness": 0.8333,
+        "powder_float": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.9501,
+      "explanation": "Recommended because P(soft) = 0.11 (from 0/4 reviews), P(freeride) = 0.07 (from 0/9 reviews), P(high) = 0.83 (from 9/9 reviews), P(good) = 0.67 (from 5/5 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1111,
+        "terrain": 0.0667,
+        "playfulness": 0.8333,
+        "powder_float": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.9267,
+      "explanation": "Recommended because P(soft) = 0.20 (from 1/5 reviews), P(freeride) = 0.08 (from 0/7 reviews), P(high) = 0.78 (from 6/6 reviews), P(good) = 0.09 (from 0/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.2,
+        "terrain": 0.0769,
+        "playfulness": 0.7778,
+        "powder_float": 0.0909
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.9244,
+      "explanation": "Recommended because P(soft) = 0.09 (from 0/6 reviews), P(freeride) = 0.07 (from 0/8 reviews), P(high) = 0.44 (from 3/6 reviews), P(good) = 0.25 (from 1/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "terrain": 0.0714,
+        "playfulness": 0.4444,
+        "powder_float": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.9221,
+      "explanation": "Recommended because P(soft) = 0.08 (from 0/8 reviews), P(freeride) = 0.07 (from 0/9 reviews), P(high) = 0.40 (from 3/7 reviews), P(good) = 0.22 (from 1/5 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0769,
+        "terrain": 0.0667,
+        "playfulness": 0.4,
+        "powder_float": 0.2222
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.9201,
+      "explanation": "Recommended because P(soft) = 0.09 (from 0/6 reviews), P(freeride) = 0.08 (from 0/7 reviews), P(high) = 0.25 (from 1/5 reviews), P(good) = 0.14 (from 0/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "terrain": 0.0769,
+        "playfulness": 0.25,
+        "powder_float": 0.1429
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.9201,
+      "explanation": "Recommended because P(soft) = 0.09 (from 0/6 reviews), P(freeride) = 0.08 (from 0/7 reviews), P(high) = 0.25 (from 1/5 reviews), P(good) = 0.14 (from 0/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "terrain": 0.0769,
+        "playfulness": 0.25,
+        "powder_float": 0.1429
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.1777,
+      "explanation": "Recommended because P(soft) = 0.11 (from 0/4 reviews), P(freeride) = 0.43 (from 5/8 reviews), P(high) = 0.82 (from 8/8 reviews), P(good) = 0.70 (from 6/6 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1111,
+        "terrain": 0.4286,
+        "playfulness": 0.8182,
+        "powder_float": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.1506,
+      "explanation": "Recommended because P(soft) = 0.11 (from 0/4 reviews), P(freeride) = 0.50 (from 6/8 reviews), P(high) = 0.82 (from 8/8 reviews), P(good) = 0.50 (from 4/6 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1111,
+        "terrain": 0.5,
+        "playfulness": 0.8182,
+        "powder_float": 0.5
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

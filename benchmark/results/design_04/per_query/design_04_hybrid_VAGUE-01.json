@@ -1,0 +1,132 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1568,
+    "ndcg_10": 0.1568,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 22.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.8229706251621246,
+      "explanation": "Attribute matches:\n  matched: waist width (0.98)\nSignals: vector similarity 0.50, attribute match 1.00, sentiment strength 0.98",
+      "matched_attributes": {
+        "waist_width": 0.985
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8164548277854919,
+      "explanation": "Attribute matches:\n  matched: waist width (1.00)\nSignals: vector similarity 0.48, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "waist_width": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.8125752502679825,
+      "explanation": "Attribute matches:\n  matched: waist width (0.94)\nSignals: vector similarity 0.51, attribute match 1.00, sentiment strength 0.94",
+      "matched_attributes": {
+        "waist_width": 0.935
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7915259957313537,
+      "explanation": "Attribute matches:\n  matched: waist width (0.97)\nSignals: vector similarity 0.42, attribute match 1.00, sentiment strength 0.97",
+      "matched_attributes": {
+        "waist_width": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7897349745035172,
+      "explanation": "Attribute matches:\n  matched: waist width (0.90)\nSignals: vector similarity 0.47, attribute match 1.00, sentiment strength 0.90",
+      "matched_attributes": {
+        "waist_width": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7838289648294449,
+      "explanation": "Attribute matches:\n  matched: waist width (0.81)\nSignals: vector similarity 0.52, attribute match 1.00, sentiment strength 0.81",
+      "matched_attributes": {
+        "waist_width": 0.8125
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.754727590084076,
+      "explanation": "Attribute matches:\n  matched: waist width (0.80)\nSignals: vector similarity 0.44, attribute match 1.00, sentiment strength 0.80",
+      "matched_attributes": {
+        "waist_width": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7485836058855057,
+      "explanation": "Attribute matches:\n  matched: waist width (0.75)\nSignals: vector similarity 0.46, attribute match 1.00, sentiment strength 0.75",
+      "matched_attributes": {
+        "waist_width": 0.75
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.36669136285781856,
+      "explanation": "Signals: vector similarity 0.69, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.36669136285781856,
+      "explanation": "Signals: vector similarity 0.69, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

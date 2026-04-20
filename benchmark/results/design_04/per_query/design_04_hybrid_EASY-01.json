@@ -1,0 +1,136 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2303,
+    "ndcg_10": 0.2303,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 40.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5987598299980164,
+      "explanation": "Attribute matches:\n  matched: flex (1.00)\nSignals: vector similarity 0.43, attribute match 0.50, sentiment strength 1.00",
+      "matched_attributes": {
+        "flex": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5906038820743561,
+      "explanation": "Attribute matches:\n  matched: flex (0.99)\nSignals: vector similarity 0.41, attribute match 0.50, sentiment strength 0.99",
+      "matched_attributes": {
+        "flex": 0.9875
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5896398425102234,
+      "explanation": "Attribute matches:\n  matched: flex (0.96)\nSignals: vector similarity 0.43, attribute match 0.50, sentiment strength 0.96",
+      "matched_attributes": {
+        "flex": 0.9625
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.5818898379802704,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\nSignals: vector similarity 0.43, attribute match 0.50, sentiment strength 0.93",
+      "matched_attributes": {
+        "flex": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.580732810497284,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\nSignals: vector similarity 0.43, attribute match 0.50, sentiment strength 0.93",
+      "matched_attributes": {
+        "flex": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5650824397802353,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\nSignals: vector similarity 0.38, attribute match 0.50, sentiment strength 0.93",
+      "matched_attributes": {
+        "flex": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.5631086379289627,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\nSignals: vector similarity 0.38, attribute match 0.50, sentiment strength 0.93",
+      "matched_attributes": {
+        "flex": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.5588212132453918,
+      "explanation": "Attribute matches:\n  matched: flex (0.88)\nSignals: vector similarity 0.40, attribute match 0.50, sentiment strength 0.88",
+      "matched_attributes": {
+        "flex": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5401159286499023,
+      "explanation": "Attribute matches:\n  matched: flex (0.88)\nSignals: vector similarity 0.35, attribute match 0.50, sentiment strength 0.88",
+      "matched_attributes": {
+        "flex": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.4326092779636383,
+      "explanation": "Attribute matches:\n  matched: flex (0.38)\nSignals: vector similarity 0.40, attribute match 0.50, sentiment strength 0.38",
+      "matched_attributes": {
+        "flex": 0.375
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

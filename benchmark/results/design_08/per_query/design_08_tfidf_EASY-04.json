@@ -1,0 +1,143 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.9271,
+    "ndcg_10": 0.9271,
+    "mrr": 1.0,
+    "attribute_precision": 0.55,
+    "attribute_recall": 0.3,
+    "attribute_f1": 0.3882,
+    "explanation_score": 4.1,
+    "latency_ms": 1292.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.2015,
+      "explanation": "Matched on terrain:park (high match, +3.12), playfulness (high match, +0.93).",
+      "matched_attributes": {
+        "terrain:park": 3.1203,
+        "playfulness": 0.9252
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.1961,
+      "explanation": "Matched on terrain:park (high match, +3.12), playfulness (high match, +0.81).",
+      "matched_attributes": {
+        "terrain:park": 3.1203,
+        "playfulness": 0.8095
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.194,
+      "explanation": "Matched on terrain:park (high match, +3.12), playfulness (high match, +0.81).",
+      "matched_attributes": {
+        "terrain:park": 3.1203,
+        "playfulness": 0.8095
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.1661,
+      "explanation": "Matched on binding_system:plate (high match, +2.61), playfulness (high match, +0.35).",
+      "matched_attributes": {
+        "playfulness": 0.3469,
+        "binding_system:plate": 2.6094
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.1571,
+      "explanation": "Matched on binding_system:plate (high match, +2.61), playfulness (moderate match, +0.23).",
+      "matched_attributes": {
+        "playfulness": 0.2313,
+        "binding_system:plate": 2.6094
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.1504,
+      "explanation": "Matched on binding_system:plate (high match, +2.61), playfulness (high match, +0.35).",
+      "matched_attributes": {
+        "playfulness": 0.3469,
+        "binding_system:plate": 2.6094
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.1303,
+      "explanation": "Matched on binding_system:plate (high match, +2.61), playfulness (slight match, +0.12).",
+      "matched_attributes": {
+        "playfulness": 0.1156,
+        "binding_system:plate": 2.6094
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.1221,
+      "explanation": "Matched on binding_system:plate (high match, +2.61).",
+      "matched_attributes": {
+        "binding_system:plate": 2.6094
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0449,
+      "explanation": "Matched on playfulness (high match, +0.69).",
+      "matched_attributes": {
+        "playfulness": 0.6939
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.044,
+      "explanation": "Matched on playfulness (high match, +0.69).",
+      "matched_attributes": {
+        "playfulness": 0.6939
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

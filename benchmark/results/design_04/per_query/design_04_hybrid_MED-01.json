@@ -1,0 +1,147 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5091,
+    "ndcg_10": 0.574,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.8,
+    "latency_ms": 94.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6117636591196061,
+      "explanation": "Attribute matches:\n  matched: dampness (0.99)\n  matched: edge grip (0.99)\nSignals: vector similarity 0.58, attribute match 0.40, sentiment strength 0.99",
+      "matched_attributes": {
+        "dampness": 0.99,
+        "edge_grip": 0.9924999999999999
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6098809911807378,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.95)\n  matched: flex (0.93)\n  matched: turn entry (0.25)\nSignals: vector similarity 0.55, attribute match 0.60, sentiment strength 0.71",
+      "matched_attributes": {
+        "flex": 0.925,
+        "turn_entry": 0.25,
+        "edge_grip": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6041443381706874,
+      "explanation": "Attribute matches:\n  matched: dampness (1.00)\n  matched: edge grip (1.00)\n  matched: flex (0.00)\nSignals: vector similarity 0.56, attribute match 0.60, sentiment strength 0.67",
+      "matched_attributes": {
+        "flex": 0.0,
+        "dampness": 1.0,
+        "edge_grip": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6013413792848588,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\n  matched: dampness (0.97)\nSignals: vector similarity 0.56, attribute match 0.40, sentiment strength 0.99",
+      "matched_attributes": {
+        "dampness": 0.975,
+        "edge_grip": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5561687803268434,
+      "explanation": "Attribute matches:\n  matched: flex (0.96)\n  matched: edge grip (0.88)\nSignals: vector similarity 0.48, attribute match 0.40, sentiment strength 0.92",
+      "matched_attributes": {
+        "flex": 0.9625,
+        "edge_grip": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.5547225779294969,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\n  matched: edge grip (0.80)\nSignals: vector similarity 0.51, attribute match 0.40, sentiment strength 0.86",
+      "matched_attributes": {
+        "flex": 0.925,
+        "edge_grip": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5507833218574524,
+      "explanation": "Attribute matches:\n  matched: flex (0.99)\n  matched: edge grip (0.88)\nSignals: vector similarity 0.45, attribute match 0.40, sentiment strength 0.93",
+      "matched_attributes": {
+        "flex": 0.9875,
+        "edge_grip": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5097736543416977,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.90)\n  matched: flex (0.38)\nSignals: vector similarity 0.54, attribute match 0.40, sentiment strength 0.64",
+      "matched_attributes": {
+        "flex": 0.375,
+        "edge_grip": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5057772624492645,
+      "explanation": "Attribute matches:\n  matched: flex (1.00)\nSignals: vector similarity 0.50, attribute match 0.20, sentiment strength 1.00",
+      "matched_attributes": {
+        "flex": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.4924192345142364,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\n  matched: dampness (0.38)\nSignals: vector similarity 0.49, attribute match 0.40, sentiment strength 0.65",
+      "matched_attributes": {
+        "flex": 0.925,
+        "dampness": 0.375
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2184,
+    "ndcg_10": 0.2444,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 24.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8546803593635559,
+      "explanation": "Ranked here because: attribute sentiment (+0.64), vector similarity (+0.50), BM25 relevance (+0.30), avg rating (+0.20)",
+      "matched_attributes": {
+        "attribute sentiment": 0.6402408480644226,
+        "vector similarity": 0.5048776268959045,
+        "BM25 relevance": 0.29982584714889526,
+        "avg rating": 0.19845040142536163,
+        "review count": 0.06374087184667587,
+        "attribute match rate": 0.035756371915340424,
+        "attribute coverage": 0.03204982355237007
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.8256461024284363,
+      "explanation": "Ranked here because: vector similarity (+0.61), BM25 relevance (+0.40), avg rating (+0.27), attribute sentiment (+0.27)",
+      "matched_attributes": {
+        "vector similarity": 0.607913076877594,
+        "BM25 relevance": 0.4027499854564667,
+        "avg rating": 0.27027028799057007,
+        "attribute sentiment": 0.2661638557910919,
+        "attribute coverage": 0.038290057331323624
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7905115485191345,
+      "explanation": "Ranked here because: attribute sentiment (+0.42), vector similarity (+0.36), BM25 relevance (+0.21), avg rating (+0.18)",
+      "matched_attributes": {
+        "attribute sentiment": 0.42419371008872986,
+        "vector similarity": 0.35769394040107727,
+        "BM25 relevance": 0.2075248509645462,
+        "avg rating": 0.17737041413784027,
+        "review count": 0.07047930359840393,
+        "attribute match rate": 0.06590461730957031,
+        "attribute coverage": 0.027994727715849876
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7809543013572693,
+      "explanation": "Ranked here because: vector similarity (+0.54), attribute sentiment (+0.22), BM25 relevance (+0.21), avg rating (+0.21)",
+      "matched_attributes": {
+        "vector similarity": 0.5397986769676208,
+        "attribute sentiment": 0.22184237837791443,
+        "BM25 relevance": 0.20762722194194794,
+        "avg rating": 0.20722034573554993,
+        "review count": 0.06850764155387878,
+        "attribute match rate": 0.018051238730549812,
+        "attribute coverage": 0.011338678188621998
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.761843740940094,
+      "explanation": "Ranked here because: BM25 relevance (+0.50), attribute sentiment (+0.45), avg rating (+0.15), vector similarity (+0.08)",
+      "matched_attributes": {
+        "BM25 relevance": 0.495542973279953,
+        "attribute sentiment": 0.44659286737442017,
+        "avg rating": 0.1537424623966217,
+        "vector similarity": 0.08481434732675552,
+        "attribute match rate": 0.016023093834519386
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7432173490524292,
+      "explanation": "Ranked here because: vector similarity (+0.51), attribute sentiment (+0.20), avg rating (+0.19), review count (+0.07)",
+      "matched_attributes": {
+        "vector similarity": 0.5112671852111816,
+        "attribute sentiment": 0.2041505128145218,
+        "avg rating": 0.1942341923713684,
+        "review count": 0.06630457192659378,
+        "BM25 relevance": 0.06413134932518005,
+        "attribute coverage": 0.0476670004427433
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7108902335166931,
+      "explanation": "Ranked here because: BM25 relevance (+0.30), avg rating (+0.27), vector similarity (+0.27), attribute sentiment (+0.04)",
+      "matched_attributes": {
+        "BM25 relevance": 0.29970797896385193,
+        "avg rating": 0.2724591791629791,
+        "vector similarity": 0.2715226709842682,
+        "attribute sentiment": 0.04292158782482147,
+        "attribute coverage": 0.01686013862490654
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6778891086578369,
+      "explanation": "Ranked here because: BM25 relevance (+0.36), avg rating (+0.21), attribute sentiment (+0.17), attribute coverage (+0.02)",
+      "matched_attributes": {
+        "BM25 relevance": 0.35958415269851685,
+        "avg rating": 0.2092922329902649,
+        "attribute sentiment": 0.1722804456949234,
+        "attribute coverage": 0.02115754596889019
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6643831133842468,
+      "explanation": "Ranked here because: vector similarity (+0.51), avg rating (+0.18), review count (-0.14), attribute sentiment (+0.13)",
+      "matched_attributes": {
+        "vector similarity": 0.5149157643318176,
+        "avg rating": 0.1823396533727646,
+        "attribute sentiment": 0.13153553009033203,
+        "attribute coverage": 0.0494791716337204
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6505356431007385,
+      "explanation": "Ranked here because: vector similarity (+0.47), attribute sentiment (+0.28), avg rating (-0.11), BM25 relevance (+0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.46933066844940186,
+        "attribute sentiment": 0.2813630700111389,
+        "BM25 relevance": 0.046199508011341095
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

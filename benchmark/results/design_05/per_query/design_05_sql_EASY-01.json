@@ -1,0 +1,146 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5638,
+    "ndcg_10": 0.5638,
+    "mrr": 1.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 2175.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.9739620259366959,
+      "explanation": "  Score: 0.974\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.96\n  Sentiment:      0.92\n  Weighted total: 0.50*1.00 + 0.35*0.96 + 0.15*0.92 = 0.974",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.8823861164664838,
+      "explanation": "  Score: 0.882\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.71\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.71 + 0.15*0.90 = 0.882",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.8801472178034022,
+      "explanation": "  Score: 0.880\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.70\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.70 + 0.15*0.90 = 0.880",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8538973738097113,
+      "explanation": "  Score: 0.854\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.67\n  Sentiment:      0.80\n  Weighted total: 0.50*1.00 + 0.35*0.67 + 0.15*0.80 = 0.854",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.8136502619649313,
+      "explanation": "  Score: 0.814\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.50\n  Sentiment:      0.92\n  Weighted total: 0.50*1.00 + 0.35*0.50 + 0.15*0.92 = 0.814",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7930869108590242,
+      "explanation": "  Score: 0.793\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    1.00  (exact match)\n  FTS relevance:  0.47\n  Sentiment:      0.85\n  Weighted total: 0.50*1.00 + 0.35*0.47 + 0.15*0.85 = 0.793",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.735,
+      "explanation": "  Score: 0.735\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    0.00  (no match)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*1.00 + 0.15*0.90 = 0.735",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6366953380396008,
+      "explanation": "  Score: 0.637\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    0.00  (no match)\n  FTS relevance:  0.69\n  Sentiment:      0.96\n  Weighted total: 0.50*0.50 + 0.35*0.69 + 0.15*0.96 = 0.637",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5809209976069196,
+      "explanation": "  Score: 0.581\n  Attribute breakdown:\n    stiffness  0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain    0.00  (no match)\n  FTS relevance:  0.66\n  Sentiment:      0.85\n  Weighted total: 0.50*0.44 + 0.35*0.66 + 0.15*0.85 = 0.581",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "terrain": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5727884390891474,
+      "explanation": "  Score: 0.573\n  Attribute breakdown:\n    stiffness  1.00  (exact match)\n    terrain    0.00  (no match)\n  FTS relevance:  0.58\n  Sentiment:      0.80\n  Weighted total: 0.50*0.50 + 0.35*0.58 + 0.15*0.80 = 0.573",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

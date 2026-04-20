@@ -1,0 +1,116 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1203,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 12.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0,
+      "explanation": "No significant attribute overlap.",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

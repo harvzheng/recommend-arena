@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2066,
+    "ndcg_10": 0.2066,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 11.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.14375,
+      "explanation": "  Score: 0.144\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.96\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.96 = 0.144",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.1425,
+      "explanation": "  Score: 0.142\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.95\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.95 = 0.142",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.1375,
+      "explanation": "  Score: 0.138\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.92 = 0.138",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1375,
+      "explanation": "  Score: 0.138\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.92 = 0.138",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.135,
+      "explanation": "  Score: 0.135\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.90 = 0.135",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.135,
+      "explanation": "  Score: 0.135\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.90 = 0.135",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.135,
+      "explanation": "  Score: 0.135\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.90 = 0.135",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.135,
+      "explanation": "  Score: 0.135\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.90 = 0.135",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.135,
+      "explanation": "  Score: 0.135\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.90 = 0.135",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.135,
+      "explanation": "  Score: 0.135\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.00 + 0.15*0.90 = 0.135",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

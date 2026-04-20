@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1622,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 13.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.4875,
+      "explanation": "  Score: 0.487\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.92 = 0.487",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.31542580195330416,
+      "explanation": "  Score: 0.315\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.54\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.54 + 0.15*0.85 = 0.315",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.28664881190389957,
+      "explanation": "  Score: 0.287\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.43\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.43 + 0.15*0.90 = 0.287",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.27657341788591383,
+      "explanation": "  Score: 0.277\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.43\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.43 + 0.15*0.85 = 0.277",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.27167401744152253,
+      "explanation": "  Score: 0.272\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.39\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.39 + 0.15*0.90 = 0.272",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.27123405334817674,
+      "explanation": "  Score: 0.271\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.40\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.40 + 0.15*0.88 = 0.271",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.2669944270792526,
+      "explanation": "  Score: 0.267\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.37\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.37 + 0.15*0.92 = 0.267",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.26642649494367465,
+      "explanation": "  Score: 0.266\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.38\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.38 + 0.15*0.90 = 0.266",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.24993318003002082,
+      "explanation": "  Score: 0.250\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.30\n  Sentiment:      0.96\n  Weighted total: 0.50*0.00 + 0.35*0.30 + 0.15*0.96 = 0.250",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.24634603130290186,
+      "explanation": "  Score: 0.246\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.36\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.36 + 0.15*0.80 = 0.246",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

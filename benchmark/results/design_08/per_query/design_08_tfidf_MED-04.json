@@ -1,0 +1,236 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5259,
+    "ndcg_10": 0.5991,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3065.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5956,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.59), forgiveness (high match, +0.46), damp (high match, +0.44), edge_grip (high match, +0.43), playfulness (high match, +0.39), turn_radius (high match, +0.35), powder_float (moderate match, +0.28), stiffness (moderate match, +0.25), weight (moderate match, +0.15).",
+      "matched_attributes": {
+        "weight": 0.1542,
+        "forgiveness": 0.4626,
+        "playfulness": 0.3855,
+        "edge_grip": 0.4321,
+        "turn_radius": 0.3457,
+        "binding_system:flat": 1.3857,
+        "damp": 0.4444,
+        "stability_at_speed": 0.5926,
+        "powder_float": 0.2809,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2469
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5944,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.59), forgiveness (high match, +0.46), damp (high match, +0.44), edge_grip (high match, +0.43), turn_radius (high match, +0.40), playfulness (high match, +0.39), stiffness (moderate match, +0.30), powder_float (moderate match, +0.28), weight (moderate match, +0.18).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "forgiveness": 0.4626,
+        "playfulness": 0.3855,
+        "edge_grip": 0.4321,
+        "turn_radius": 0.3951,
+        "binding_system:flat": 1.3857,
+        "damp": 0.4444,
+        "stability_at_speed": 0.5926,
+        "powder_float": 0.2809,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5571,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.69), edge_grip (high match, +0.52), damp (high match, +0.52), forgiveness (high match, +0.35), playfulness (high match, +0.32), turn_radius (moderate match, +0.30), stiffness (moderate match, +0.30), powder_float (moderate match, +0.20), weight (moderate match, +0.18).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "forgiveness": 0.3469,
+        "playfulness": 0.3212,
+        "edge_grip": 0.5185,
+        "turn_radius": 0.2963,
+        "binding_system:flat": 1.3857,
+        "damp": 0.5185,
+        "stability_at_speed": 0.6914,
+        "powder_float": 0.2006,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5568,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.79), edge_grip (high match, +0.60), damp (high match, +0.59), stiffness (high match, +0.35), turn_radius (moderate match, +0.30), forgiveness (moderate match, +0.23), playfulness (moderate match, +0.19), weight (moderate match, +0.18), powder_float (moderate match, +0.16).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "forgiveness": 0.2313,
+        "playfulness": 0.1927,
+        "edge_grip": 0.6049,
+        "turn_radius": 0.2963,
+        "binding_system:flat": 1.3857,
+        "damp": 0.5926,
+        "stability_at_speed": 0.7901,
+        "powder_float": 0.1605,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.3457
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5561,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), forgiveness (high match, +0.58), edge_grip (high match, +0.52), stability_at_speed (high match, +0.49), playfulness (high match, +0.39), damp (high match, +0.37), turn_radius (moderate match, +0.25), stiffness (moderate match, +0.25), powder_float (moderate match, +0.16), weight (slight match, +0.10).",
+      "matched_attributes": {
+        "weight": 0.1028,
+        "forgiveness": 0.5782,
+        "playfulness": 0.3855,
+        "edge_grip": 0.5185,
+        "turn_radius": 0.2469,
+        "binding_system:flat": 1.3857,
+        "damp": 0.3704,
+        "stability_at_speed": 0.4938,
+        "powder_float": 0.1605,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2469
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5518,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.59), edge_grip (high match, +0.52), forgiveness (high match, +0.46), damp (high match, +0.44), playfulness (high match, +0.32), stiffness (moderate match, +0.25), turn_radius (moderate match, +0.20), powder_float (moderate match, +0.16), weight (slight match, +0.13).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "forgiveness": 0.4626,
+        "playfulness": 0.3212,
+        "edge_grip": 0.5185,
+        "turn_radius": 0.1975,
+        "binding_system:flat": 1.3857,
+        "damp": 0.4444,
+        "stability_at_speed": 0.5926,
+        "powder_float": 0.1605,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2469
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.5022,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.69), edge_grip (high match, +0.60), damp (high match, +0.52), forgiveness (high match, +0.35), stiffness (moderate match, +0.30), turn_radius (moderate match, +0.25), playfulness (moderate match, +0.19), weight (moderate match, +0.15), powder_float (slight match, +0.12).",
+      "matched_attributes": {
+        "weight": 0.1542,
+        "forgiveness": 0.3469,
+        "playfulness": 0.1927,
+        "edge_grip": 0.6049,
+        "turn_radius": 0.2469,
+        "binding_system:flat": 1.3857,
+        "damp": 0.5185,
+        "stability_at_speed": 0.6914,
+        "powder_float": 0.1204,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.4976,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), edge_grip (high match, +0.60), stability_at_speed (high match, +0.59), forgiveness (high match, +0.46), damp (high match, +0.44), stiffness (moderate match, +0.30), turn_radius (moderate match, +0.20), playfulness (moderate match, +0.19), weight (slight match, +0.13), powder_float (slight match, +0.12).",
+      "matched_attributes": {
+        "weight": 0.1285,
+        "forgiveness": 0.4626,
+        "playfulness": 0.1927,
+        "edge_grip": 0.6049,
+        "turn_radius": 0.1975,
+        "binding_system:flat": 1.3857,
+        "damp": 0.4444,
+        "stability_at_speed": 0.5926,
+        "powder_float": 0.1204,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.4585,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), stability_at_speed (high match, +0.59), forgiveness (high match, +0.46), playfulness (high match, +0.45), damp (high match, +0.44), edge_grip (high match, +0.43), turn_radius (high match, +0.35), stiffness (moderate match, +0.30), powder_float (moderate match, +0.28), weight (moderate match, +0.18).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "forgiveness": 0.4626,
+        "playfulness": 0.4497,
+        "edge_grip": 0.4321,
+        "turn_radius": 0.3457,
+        "binding_system:flat": 1.3857,
+        "damp": 0.4444,
+        "stability_at_speed": 0.5926,
+        "powder_float": 0.2809,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2963
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.4536,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), binding_system:flat (high match, +1.39), forgiveness (high match, +0.58), stability_at_speed (high match, +0.49), playfulness (high match, +0.45), edge_grip (high match, +0.43), damp (high match, +0.37), turn_radius (high match, +0.35), stiffness (moderate match, +0.25), powder_float (moderate match, +0.24), weight (moderate match, +0.18).",
+      "matched_attributes": {
+        "weight": 0.1799,
+        "forgiveness": 0.5782,
+        "playfulness": 0.4497,
+        "edge_grip": 0.4321,
+        "turn_radius": 0.3457,
+        "binding_system:flat": 1.3857,
+        "damp": 0.3704,
+        "stability_at_speed": 0.4938,
+        "powder_float": 0.2408,
+        "terrain:all-mountain": 1.6539,
+        "stiffness": 0.2469
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

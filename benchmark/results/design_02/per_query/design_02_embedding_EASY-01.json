@@ -1,0 +1,188 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.427,
+    "ndcg_10": 0.6028,
+    "mrr": 0.5,
+    "attribute_precision": 0.0851,
+    "attribute_recall": 0.2,
+    "attribute_f1": 0.1194,
+    "explanation_score": 3.7,
+    "latency_ms": 737.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 1.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"If you love pure carving, the Blade delivers. Outstanding edge grip, stiff but not brutal, and that lively maple core ma...\"",
+      "matched_attributes": {
+        "stiffness": 0.6142,
+        "speed": 0.6721,
+        "grip": 0.6142,
+        "playfulness": 0.6721,
+        "turn_quality": 0.7085,
+        "float": 0.7814
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7908,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Not playful at all, this is a serious carving tool. The 184cm is available for taller skiers....\"",
+      "matched_attributes": {
+        "playfulness": 0.6897,
+        "turn_quality": 0.7014,
+        "grip": 0.725,
+        "stability": 0.6786,
+        "speed": 0.6786
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7865,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Very good carving ski. Edge grip is strong, the titanal layers keep it damp, and the camber with tip rocker gives good v...\"",
+      "matched_attributes": {
+        "stability": 0.7796,
+        "dampness": 0.7303,
+        "grip": 0.7303,
+        "turn_quality": 0.7162,
+        "playfulness": 0.688
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6961,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"The Stance 90 sits between a carving ski and an all-mountain ski \u2014 a frontside all-mountain if you will. Not for deep po...\"",
+      "matched_attributes": {
+        "versatility": 0.641,
+        "float": 0.6848,
+        "turn_quality": 0.6534,
+        "stiffness": 0.6783,
+        "dampness": 0.6377,
+        "stability": 0.5972,
+        "speed": 0.5972,
+        "grip": 0.5972
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.3438,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"At 88mm the carving feel is close to a narrower frontside ski. Camber with tip rocker is the right profile. Not forgivin...\"",
+      "matched_attributes": {
+        "stiffness": 0.7112,
+        "forgiveness": 0.7112,
+        "turn_quality": 0.6226,
+        "stability": 0.5534,
+        "dampness": 0.5783,
+        "speed": 0.5534,
+        "grip": 0.6032,
+        "versatility": 0.6032
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.3359,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Great float in powder, good edge grip for a freeride ski, and enough pop for cliff drops. At 192cm it's a true big mount...\"",
+      "matched_attributes": {
+        "grip": 0.6177,
+        "float": 0.6177,
+        "stiffness": 0.6066,
+        "playfulness": 0.6066,
+        "weight": 0.6364,
+        "turn_quality": 0.6364
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.3237,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Perfect for someone who skis 20-30 days a year. Handles everything I encounter without being too demanding. The 98mm wai...\"",
+      "matched_attributes": {
+        "versatility": 0.6273,
+        "forgiveness": 0.6179,
+        "dampness": 0.632,
+        "float": 0.658,
+        "grip": 0.606
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.3229,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Very precise carving ski. Not quite as damp as the Supershape but more lively feeling. Edge grip is strong on groomers....\"",
+      "matched_attributes": {
+        "dampness": 0.6674,
+        "grip": 0.6674,
+        "playfulness": 0.7846,
+        "precision": 0.7846,
+        "turn_quality": 0.7277,
+        "stiffness": 0.6707,
+        "forgiveness": 0.6707,
+        "stability": 0.5501
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.3002,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very...\"",
+      "matched_attributes": {
+        "stiffness": 0.6436,
+        "grip": 0.6388,
+        "forgiveness": 0.6436,
+        "speed": 0.637,
+        "turn_quality": 0.6417,
+        "weight": 0.6322,
+        "dampness": 0.6322
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.2951,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Nothing handles crud like the Mantra. The weight and stiffness blast through the worst snow conditions. My confidence sk...\"",
+      "matched_attributes": {
+        "weight": 0.6784,
+        "grip": 0.6528,
+        "stability": 0.6643,
+        "speed": 0.6643
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

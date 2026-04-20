@@ -1,0 +1,90 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1817,
+    "ndcg_10": 0.1817,
+    "mrr": 0.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2857,
+    "explanation_score": 5.0,
+    "latency_ms": 4926.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 1.0,
+      "explanation": "Nordica Santa Ana 98 excels in: edge_grip, stability_at_speed. Solid on: playfulness. Review: \"The titanal construction gives it... edge grip for a lighter all-mountain ski.\" Review: \"Edge grip is good, playfulness is moderate.\" Review: \"Stability is good, playfulness is moderate.\"",
+      "matched_attributes": {
+        "edge_grip": 0.79,
+        "stability_at_speed": 0.74,
+        "playfulness": 0.56
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.9388,
+      "explanation": "Nordica Enforcer 100 excels in: edge_grip, stability_at_speed. Weaker on: playfulness. Review: \"Handles crud and chop like a champ.\" Review: \"Edge grip on hardpack is surprisingly good for 100mm.\" Review: \"The titanal makes it damp and stable at speed.\"",
+      "matched_attributes": {
+        "edge_grip": 0.7,
+        "stability_at_speed": 0.845,
+        "playfulness": 0.28
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.3469,
+      "explanation": "Solid on: edge_grip, stability_at_speed. Weaker on: playfulness. Review: \"Decent playfulness and edge grip.\" Review: \"Edge grip is good but not outstanding.\" Review: \"Not as stable as full titanal skis at speed but lighter and more maneuverable.\"",
+      "matched_attributes": {
+        "edge_grip": 0.66,
+        "stability_at_speed": 0.6,
+        "playfulness": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.0,
+      "explanation": "K2 Disruption 78C excels in: edge_grip. Solid on: stability_at_speed. Weaker on: playfulness. Review: \"has enough edge grip for confident turns.\" Review: \"good enough edge grip for basic carving.\" Review: \"Gets a bit nervous on ice and at speed.\"",
+      "matched_attributes": {
+        "edge_grip": 0.725,
+        "stability_at_speed": 0.4,
+        "playfulness": 0.22
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

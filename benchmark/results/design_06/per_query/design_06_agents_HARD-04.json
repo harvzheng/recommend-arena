@@ -1,0 +1,176 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.3141,
+    "mrr": 0.1667,
+    "attribute_precision": 0.2,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2222,
+    "explanation_score": 5.0,
+    "latency_ms": 2828.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7522,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), stability at speed (100%), damp (100%). Potential concern: playfulness (10% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7311,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), stability at speed (100%), damp (100%). Potential concern: playfulness (20% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7093,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), stability at speed (100%), damp (100%). Potential concern: playfulness (30% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.688,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), stability at speed (100%), damp (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.967
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.687,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), stability at speed (100%), damp (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6844,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), stability at speed (100%), damp (100%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6549,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), damp (100%), stability at speed (88%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 0.877,
+        "damp": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6504,
+      "explanation": "Strong match on stiffness (100%), stability at speed (100%), damp (100%), edge grip (86%). Potential concern: playfulness (40% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 0.855,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6406,
+      "explanation": "Strong match on stiffness (100%), stability at speed (100%), damp (100%), edge grip (90%). Potential concern: playfulness (50% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 0.9,
+        "stiffness": 1.0,
+        "stability_at_speed": 1.0,
+        "damp": 1.0,
+        "review_quality": 0.96
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6332,
+      "explanation": "Strong match on edge grip (100%), stiffness (100%), damp (100%), stability at speed (88%). Potential concern: playfulness (50% penalty). Highly rated by reviewers.",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "stiffness": 1.0,
+        "stability_at_speed": 0.875,
+        "damp": 1.0,
+        "review_quality": 0.92
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

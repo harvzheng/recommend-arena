@@ -1,0 +1,64 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.427,
+    "ndcg_10": 0.427,
+    "mrr": 0.5,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.5,
+    "explanation_score": 4.5,
+    "latency_ms": 2886.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 1.0,
+      "explanation": "Line Blade excels in: stiffness. Review: \"Stiff flex\" Review: \"stiff but not brutal\"",
+      "matched_attributes": {
+        "stiffness": 0.845
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.0,
+      "explanation": "Head Supershape e-Speed excels in: stiffness. Review: \"Stiff but manageable for strong intermediates.\" Review: \"Stiff enough for aggressive skiing but not quite race-level demanding.\"",
+      "matched_attributes": {
+        "stiffness": 0.845
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

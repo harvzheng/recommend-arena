@@ -1,0 +1,165 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0864,
+    "ndcg_10": 0.2029,
+    "mrr": 0.1,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.5,
+    "latency_ms": 145010.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i excels in providing exceptional edge grip and stability on hardpack and ice surfaces, which aligns well with the user's preference for a 'good' ski suitable for icy conditions. However, its performance may be limited in less technical skiing conditions or lighter snow coverage.",
+      "matched_attributes": {
+        "Edge Grip": 1.0,
+        "Stability on Ice": 1.0,
+        "Performance in Hardpack/Snow": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is well-suited for the ice coast due to its forgiving performance and easy turn initiation on groomed runs. However, it may not be ideal for very high-speed conditions or extreme icy surfaces where stability becomes crucial.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.9,
+        "Rocker Profile": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a versatile ski that excels in hardpack and speed conditions, which aligns well with the user's preference for an 'ice coast' ski. However, its primary focus on hardpack performance might not fully satisfy those who prefer a more playful or off-piste-oriented ski.",
+      "matched_attributes": {
+        "Edge Grip and Dampness": 0.9,
+        "Hardpack Performance": 0.8,
+        "Off-Piste Offshore Ability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski suitable for ice coast conditions due to its wide waist width of 100mm and rockered profile. However, it may not be the best choice for extremely deep powder or icy surfaces where other skis might perform better.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Rocker Profile": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a strong candidate for the user's request due to its versatility and suitability for various snow conditions including ice coast terrain. However, it may not be as stiff or stable at higher speeds compared to heavier freeride skis.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Turn Radius M": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a strong candidate for the user's request as it offers excellent performance for challenging terrain and aggressive skiing styles, which aligns closely with their preference for 'good' skis on the ice coast. However, it may not be as suitable for intermediate skiers who might prefer more forgiving or lighter options.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.9,
+        "Turn Radius M": 0.7,
+        "Weight G Per Ski": 0.6,
+        "Rocker Profile": 0.8,
+        "Construction": 0.7,
+        "Binding System": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile and playful freeride ski that excels in off-piste terrain and provides good floatation on steep slopes. However, it may not be the best choice for extremely high-speed conditions or very playful rides.",
+      "matched_attributes": {
+        "Lengths Cm": 0.6,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.8,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.3,
+        "Construction": 0.4,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7,
+      "explanation": "The Moment Wildcat 108 is a versatile freeride ski that excels in handling steep, deep conditions and offers good edge grip suitable for mixed terrain. However, its 108mm waist width may not provide enough floatation on pure powder or soft snow, which could be a drawback for users seeking a more playful skiing experience.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Rocker Profile": 0.9,
+        "Weight G Per Ski": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7,
+      "explanation": "The K2 Disruption 78C is designed for intermediate skiers who prefer a forgiving flex and decent grip for piste skiing on groomed runs. While its lightweight construction makes it suitable for turn radius of 14 meters, it does not meet the need for ice coast use due to its limitations on speed and performance on icy surfaces.",
+      "matched_attributes": {
+        "Flex": 0.9,
+        "Grip": 0.8,
+        "Turn Radius": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is designed for expert skiers who prioritize performance over playfulness in icy conditions. While it offers excellent dampness and stability suitable for various terrains, its heavy weight and stiff construction make it unsuitable for casual use or playful skiing.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.6,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.4,
+        "Construction": 0.3,
+        "Binding System": 0.2
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

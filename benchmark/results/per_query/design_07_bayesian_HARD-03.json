@@ -1,0 +1,136 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0685,
+    "ndcg_10": 0.1279,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 14.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 1.0,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5,
+      "explanation": "Recommended because P(beginner) = 0.25 (from 0/0 reviews), P(intermediate) = 0.25 (from 0/0 reviews), P(advanced) = 0.25 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "skill_level": 0.25
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

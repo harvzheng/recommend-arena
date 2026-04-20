@@ -1,0 +1,630 @@
+{
+  "domain": "ski",
+  "products": [
+    {
+      "id": "SKI-001",
+      "name": "Atomic Redster S9i",
+      "brand": "Atomic",
+      "category": "race_slalom",
+      "specs": {
+        "lengths_cm": [155, 160, 165],
+        "waist_width_mm": 66,
+        "turn_radius_m": 12.5,
+        "weight_g_per_ski": 1650,
+        "rocker_profile": "camber",
+        "construction": "race_sandwich",
+        "binding_system": "plate"
+      },
+      "attributes": {
+        "stiffness": 9,
+        "damp": 7,
+        "edge_grip": 10,
+        "stability_at_speed": 9,
+        "playfulness": 2,
+        "powder_float": 1,
+        "forgiveness": 2,
+        "terrain": ["on-piste", "race"]
+      }
+    },
+    {
+      "id": "SKI-002",
+      "name": "Atomic Redster G9",
+      "brand": "Atomic",
+      "category": "race_gs",
+      "specs": {
+        "lengths_cm": [171, 177, 183],
+        "waist_width_mm": 68,
+        "turn_radius_m": 19.0,
+        "weight_g_per_ski": 1800,
+        "rocker_profile": "camber",
+        "construction": "race_sandwich",
+        "binding_system": "plate"
+      },
+      "attributes": {
+        "stiffness": 10,
+        "damp": 8,
+        "edge_grip": 10,
+        "stability_at_speed": 10,
+        "playfulness": 1,
+        "powder_float": 1,
+        "forgiveness": 1,
+        "terrain": ["on-piste", "race"]
+      }
+    },
+    {
+      "id": "SKI-003",
+      "name": "Rossignol Experience 78 Ca",
+      "brand": "Rossignol",
+      "category": "beginner_frontside",
+      "specs": {
+        "lengths_cm": [152, 160, 168, 176],
+        "waist_width_mm": 78,
+        "turn_radius_m": 14.0,
+        "weight_g_per_ski": 1350,
+        "rocker_profile": "rocker_camber",
+        "construction": "composite_cap",
+        "binding_system": "integrated"
+      },
+      "attributes": {
+        "stiffness": 3,
+        "damp": 3,
+        "edge_grip": 5,
+        "stability_at_speed": 3,
+        "playfulness": 6,
+        "powder_float": 3,
+        "forgiveness": 9,
+        "terrain": ["on-piste", "groomed"]
+      }
+    },
+    {
+      "id": "SKI-004",
+      "name": "Head Supershape e-Speed",
+      "brand": "Head",
+      "category": "expert_carving",
+      "specs": {
+        "lengths_cm": [163, 170, 177, 184],
+        "waist_width_mm": 72,
+        "turn_radius_m": 14.2,
+        "weight_g_per_ski": 1700,
+        "rocker_profile": "camber",
+        "construction": "graphene_sandwich",
+        "binding_system": "plate"
+      },
+      "attributes": {
+        "stiffness": 8,
+        "damp": 9,
+        "edge_grip": 9,
+        "stability_at_speed": 9,
+        "playfulness": 3,
+        "powder_float": 2,
+        "forgiveness": 3,
+        "terrain": ["on-piste", "carving"]
+      }
+    },
+    {
+      "id": "SKI-005",
+      "name": "Volkl Deacon 76",
+      "brand": "Volkl",
+      "category": "advanced_frontside",
+      "specs": {
+        "lengths_cm": [163, 168, 173, 178],
+        "waist_width_mm": 76,
+        "turn_radius_m": 15.5,
+        "weight_g_per_ski": 1580,
+        "rocker_profile": "camber",
+        "construction": "titanal_sandwich",
+        "binding_system": "plate"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 8,
+        "edge_grip": 8,
+        "stability_at_speed": 8,
+        "playfulness": 4,
+        "powder_float": 2,
+        "forgiveness": 4,
+        "terrain": ["on-piste", "carving"]
+      }
+    },
+    {
+      "id": "SKI-006",
+      "name": "Nordica Enforcer 100",
+      "brand": "Nordica",
+      "category": "all_mountain",
+      "specs": {
+        "lengths_cm": [165, 172, 179, 186, 191],
+        "waist_width_mm": 100,
+        "turn_radius_m": 18.5,
+        "weight_g_per_ski": 1950,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 8,
+        "edge_grip": 7,
+        "stability_at_speed": 8,
+        "playfulness": 6,
+        "powder_float": 6,
+        "forgiveness": 4,
+        "terrain": ["all-mountain", "on-piste", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-007",
+      "name": "Blizzard Rustler 10",
+      "brand": "Blizzard",
+      "category": "all_mountain_freeride",
+      "specs": {
+        "lengths_cm": [164, 172, 180, 188],
+        "waist_width_mm": 102,
+        "turn_radius_m": 19.0,
+        "weight_g_per_ski": 1850,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 6,
+        "damp": 6,
+        "edge_grip": 6,
+        "stability_at_speed": 7,
+        "playfulness": 8,
+        "powder_float": 7,
+        "forgiveness": 5,
+        "terrain": ["all-mountain", "off-piste", "park"]
+      }
+    },
+    {
+      "id": "SKI-008",
+      "name": "Salomon QST 106",
+      "brand": "Salomon",
+      "category": "freeride",
+      "specs": {
+        "lengths_cm": [167, 174, 181, 188],
+        "waist_width_mm": 106,
+        "turn_radius_m": 20.0,
+        "weight_g_per_ski": 1900,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "carbon_flax_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 6,
+        "damp": 7,
+        "edge_grip": 6,
+        "stability_at_speed": 7,
+        "playfulness": 7,
+        "powder_float": 8,
+        "forgiveness": 5,
+        "terrain": ["freeride", "all-mountain", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-009",
+      "name": "K2 Mindbender 108Ti",
+      "brand": "K2",
+      "category": "freeride",
+      "specs": {
+        "lengths_cm": [172, 179, 186, 193],
+        "waist_width_mm": 108,
+        "turn_radius_m": 21.0,
+        "weight_g_per_ski": 2050,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 8,
+        "damp": 8,
+        "edge_grip": 7,
+        "stability_at_speed": 8,
+        "playfulness": 5,
+        "powder_float": 8,
+        "forgiveness": 4,
+        "terrain": ["freeride", "big-mountain", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-010",
+      "name": "Dynastar M-Free 108",
+      "brand": "Dynastar",
+      "category": "freeride",
+      "specs": {
+        "lengths_cm": [172, 178, 184, 192],
+        "waist_width_mm": 108,
+        "turn_radius_m": 20.5,
+        "weight_g_per_ski": 1980,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 7,
+        "edge_grip": 6,
+        "stability_at_speed": 7,
+        "playfulness": 7,
+        "powder_float": 8,
+        "forgiveness": 5,
+        "terrain": ["freeride", "all-mountain", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-011",
+      "name": "Black Crows Atris",
+      "brand": "Black Crows",
+      "category": "powder_freeride",
+      "specs": {
+        "lengths_cm": [172, 178, 184, 190],
+        "waist_width_mm": 108,
+        "turn_radius_m": 21.0,
+        "weight_g_per_ski": 2100,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "poplar_fiberglass",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 6,
+        "damp": 6,
+        "edge_grip": 5,
+        "stability_at_speed": 6,
+        "playfulness": 8,
+        "powder_float": 9,
+        "forgiveness": 6,
+        "terrain": ["powder", "freeride", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-012",
+      "name": "DPS Pagoda Tour 112 RP",
+      "brand": "DPS",
+      "category": "powder",
+      "specs": {
+        "lengths_cm": [168, 176, 184, 189],
+        "waist_width_mm": 112,
+        "turn_radius_m": 22.0,
+        "weight_g_per_ski": 1750,
+        "rocker_profile": "full_rocker",
+        "construction": "carbon_paulownia",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 5,
+        "damp": 5,
+        "edge_grip": 4,
+        "stability_at_speed": 5,
+        "playfulness": 8,
+        "powder_float": 10,
+        "forgiveness": 7,
+        "terrain": ["powder", "backcountry", "touring"]
+      }
+    },
+    {
+      "id": "SKI-013",
+      "name": "Moment Wildcat 108",
+      "brand": "Moment",
+      "category": "powder_freeride",
+      "specs": {
+        "lengths_cm": [174, 180, 186, 192],
+        "waist_width_mm": 108,
+        "turn_radius_m": 20.0,
+        "weight_g_per_ski": 2000,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "maple_triax",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 7,
+        "edge_grip": 6,
+        "stability_at_speed": 7,
+        "playfulness": 8,
+        "powder_float": 8,
+        "forgiveness": 5,
+        "terrain": ["freeride", "powder", "all-mountain"]
+      }
+    },
+    {
+      "id": "SKI-014",
+      "name": "Elan Ripstick 96",
+      "brand": "Elan",
+      "category": "all_mountain",
+      "specs": {
+        "lengths_cm": [164, 172, 180, 188],
+        "waist_width_mm": 96,
+        "turn_radius_m": 17.0,
+        "weight_g_per_ski": 1650,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "carbon_amphibio",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 6,
+        "damp": 6,
+        "edge_grip": 7,
+        "stability_at_speed": 6,
+        "playfulness": 7,
+        "powder_float": 5,
+        "forgiveness": 6,
+        "terrain": ["all-mountain", "on-piste", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-015",
+      "name": "Fischer RC One 82 GT",
+      "brand": "Fischer",
+      "category": "advanced_frontside",
+      "specs": {
+        "lengths_cm": [161, 166, 171, 176, 182],
+        "waist_width_mm": 82,
+        "turn_radius_m": 15.0,
+        "weight_g_per_ski": 1550,
+        "rocker_profile": "camber_rocker_tip",
+        "construction": "titanal_sandwich",
+        "binding_system": "plate"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 7,
+        "edge_grip": 8,
+        "stability_at_speed": 7,
+        "playfulness": 4,
+        "powder_float": 3,
+        "forgiveness": 5,
+        "terrain": ["on-piste", "carving", "all-mountain"]
+      }
+    },
+    {
+      "id": "SKI-016",
+      "name": "K2 Disruption 78C",
+      "brand": "K2",
+      "category": "intermediate_frontside",
+      "specs": {
+        "lengths_cm": [156, 163, 170, 177],
+        "waist_width_mm": 78,
+        "turn_radius_m": 14.0,
+        "weight_g_per_ski": 1400,
+        "rocker_profile": "rocker_camber",
+        "construction": "composite_cap",
+        "binding_system": "integrated"
+      },
+      "attributes": {
+        "stiffness": 4,
+        "damp": 4,
+        "edge_grip": 5,
+        "stability_at_speed": 4,
+        "playfulness": 6,
+        "powder_float": 3,
+        "forgiveness": 8,
+        "terrain": ["on-piste", "groomed"]
+      }
+    },
+    {
+      "id": "SKI-017",
+      "name": "Head Easy Joy SLR",
+      "brand": "Head",
+      "category": "beginner",
+      "specs": {
+        "lengths_cm": [143, 149, 153, 158, 163],
+        "waist_width_mm": 73,
+        "turn_radius_m": 12.0,
+        "weight_g_per_ski": 1200,
+        "rocker_profile": "rocker_camber",
+        "construction": "composite_cap",
+        "binding_system": "integrated"
+      },
+      "attributes": {
+        "stiffness": 2,
+        "damp": 2,
+        "edge_grip": 4,
+        "stability_at_speed": 2,
+        "playfulness": 7,
+        "powder_float": 2,
+        "forgiveness": 10,
+        "terrain": ["on-piste", "groomed"]
+      }
+    },
+    {
+      "id": "SKI-018",
+      "name": "Armada ARV 106",
+      "brand": "Armada",
+      "category": "freestyle_freeride",
+      "specs": {
+        "lengths_cm": [164, 172, 180, 188],
+        "waist_width_mm": 106,
+        "turn_radius_m": 20.0,
+        "weight_g_per_ski": 1900,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "poplar_ash_core",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 5,
+        "damp": 5,
+        "edge_grip": 5,
+        "stability_at_speed": 5,
+        "playfulness": 9,
+        "powder_float": 7,
+        "forgiveness": 6,
+        "terrain": ["park", "freeride", "all-mountain"]
+      }
+    },
+    {
+      "id": "SKI-019",
+      "name": "Volkl Mantra M6",
+      "brand": "Volkl",
+      "category": "all_mountain_expert",
+      "specs": {
+        "lengths_cm": [163, 170, 177, 184, 191],
+        "waist_width_mm": 96,
+        "turn_radius_m": 18.5,
+        "weight_g_per_ski": 2050,
+        "rocker_profile": "camber_rocker_tip",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 8,
+        "damp": 9,
+        "edge_grip": 8,
+        "stability_at_speed": 9,
+        "playfulness": 4,
+        "powder_float": 5,
+        "forgiveness": 3,
+        "terrain": ["all-mountain", "on-piste", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-020",
+      "name": "Nordica Santa Ana 98",
+      "brand": "Nordica",
+      "category": "all_mountain",
+      "specs": {
+        "lengths_cm": [151, 158, 165, 172],
+        "waist_width_mm": 98,
+        "turn_radius_m": 16.0,
+        "weight_g_per_ski": 1700,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 6,
+        "damp": 7,
+        "edge_grip": 7,
+        "stability_at_speed": 7,
+        "playfulness": 6,
+        "powder_float": 5,
+        "forgiveness": 5,
+        "terrain": ["all-mountain", "on-piste", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-021",
+      "name": "Salomon Stance 90",
+      "brand": "Salomon",
+      "category": "all_mountain_frontside",
+      "specs": {
+        "lengths_cm": [161, 168, 176, 182, 188],
+        "waist_width_mm": 90,
+        "turn_radius_m": 16.0,
+        "weight_g_per_ski": 1750,
+        "rocker_profile": "camber_rocker_tip",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 7,
+        "edge_grip": 8,
+        "stability_at_speed": 7,
+        "playfulness": 4,
+        "powder_float": 4,
+        "forgiveness": 5,
+        "terrain": ["all-mountain", "on-piste", "carving"]
+      }
+    },
+    {
+      "id": "SKI-022",
+      "name": "Rossignol Black Ops Sender Ti",
+      "brand": "Rossignol",
+      "category": "big_mountain",
+      "specs": {
+        "lengths_cm": [172, 178, 186, 192],
+        "waist_width_mm": 106,
+        "turn_radius_m": 21.0,
+        "weight_g_per_ski": 2150,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 8,
+        "damp": 9,
+        "edge_grip": 7,
+        "stability_at_speed": 9,
+        "playfulness": 4,
+        "powder_float": 7,
+        "forgiveness": 3,
+        "terrain": ["big-mountain", "freeride", "off-piste"]
+      }
+    },
+    {
+      "id": "SKI-023",
+      "name": "Line Blade",
+      "brand": "Line",
+      "category": "expert_carving",
+      "specs": {
+        "lengths_cm": [165, 172, 176, 181],
+        "waist_width_mm": 72,
+        "turn_radius_m": 14.0,
+        "weight_g_per_ski": 1750,
+        "rocker_profile": "camber",
+        "construction": "maple_metal",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 8,
+        "damp": 7,
+        "edge_grip": 9,
+        "stability_at_speed": 8,
+        "playfulness": 5,
+        "powder_float": 2,
+        "forgiveness": 3,
+        "terrain": ["on-piste", "carving"]
+      }
+    },
+    {
+      "id": "SKI-024",
+      "name": "Faction Dictator 3.0",
+      "brand": "Faction",
+      "category": "all_mountain_freeride",
+      "specs": {
+        "lengths_cm": [172, 178, 184, 190],
+        "waist_width_mm": 106,
+        "turn_radius_m": 20.0,
+        "weight_g_per_ski": 1950,
+        "rocker_profile": "rocker_camber_rocker",
+        "construction": "poplar_paulownia_core",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 6,
+        "damp": 6,
+        "edge_grip": 6,
+        "stability_at_speed": 6,
+        "playfulness": 8,
+        "powder_float": 7,
+        "forgiveness": 6,
+        "terrain": ["freeride", "all-mountain", "park"]
+      }
+    },
+    {
+      "id": "SKI-025",
+      "name": "Blizzard Brahma 88",
+      "brand": "Blizzard",
+      "category": "all_mountain_frontside",
+      "specs": {
+        "lengths_cm": [159, 166, 173, 180, 187],
+        "waist_width_mm": 88,
+        "turn_radius_m": 16.5,
+        "weight_g_per_ski": 1850,
+        "rocker_profile": "camber_rocker_tip",
+        "construction": "titanal_sandwich",
+        "binding_system": "flat"
+      },
+      "attributes": {
+        "stiffness": 7,
+        "damp": 8,
+        "edge_grip": 8,
+        "stability_at_speed": 8,
+        "playfulness": 4,
+        "powder_float": 4,
+        "forgiveness": 4,
+        "terrain": ["all-mountain", "on-piste", "carving"]
+      }
+    }
+  ]
+}

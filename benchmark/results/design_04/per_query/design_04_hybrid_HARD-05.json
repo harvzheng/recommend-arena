@@ -1,0 +1,137 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1952,
+    "ndcg_10": 0.4705,
+    "mrr": 0.125,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.3,
+    "latency_ms": 148.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.792345142364502,
+      "explanation": "Attribute matches:\n  matched: powder float (0.97)\n  matched: edge grip (0.88)\nSignals: vector similarity 0.46, attribute match 1.00, sentiment strength 0.93",
+      "matched_attributes": {
+        "powder_float": 0.975,
+        "edge_grip": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6333194077014923,
+      "explanation": "Attribute matches:\n  matched: powder float (1.00)\nSignals: vector similarity 0.52, attribute match 0.50, sentiment strength 1.00",
+      "matched_attributes": {
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.629626190662384,
+      "explanation": "Attribute matches:\n  matched: powder float (1.00)\nSignals: vector similarity 0.51, attribute match 0.50, sentiment strength 1.00",
+      "matched_attributes": {
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6132032108306884,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.99)\nSignals: vector similarity 0.47, attribute match 0.50, sentiment strength 0.99",
+      "matched_attributes": {
+        "edge_grip": 0.9924999999999999
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6011599600315094,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\nSignals: vector similarity 0.43, attribute match 0.50, sentiment strength 1.00",
+      "matched_attributes": {
+        "edge_grip": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6002501994371414,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.95)\nSignals: vector similarity 0.47, attribute match 0.50, sentiment strength 0.95",
+      "matched_attributes": {
+        "edge_grip": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.5922144532203675,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\nSignals: vector similarity 0.41, attribute match 0.50, sentiment strength 1.00",
+      "matched_attributes": {
+        "edge_grip": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5840054619312286,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.92)\nSignals: vector similarity 0.44, attribute match 0.50, sentiment strength 0.92",
+      "matched_attributes": {
+        "edge_grip": 0.916875
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5806177437305451,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.97)\nSignals: vector similarity 0.39, attribute match 0.50, sentiment strength 0.97",
+      "matched_attributes": {
+        "edge_grip": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.576397967338562,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.88)\nSignals: vector similarity 0.45, attribute match 0.50, sentiment strength 0.88",
+      "matched_attributes": {
+        "edge_grip": 0.875
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

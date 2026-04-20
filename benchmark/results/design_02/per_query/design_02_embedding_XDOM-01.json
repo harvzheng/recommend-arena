@@ -1,0 +1,149 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "XDOM-01",
+  "query_text": "cushioned long-distance running shoe for marathon training",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.8373,
+    "ndcg_10": 0.8633,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.8,
+    "latency_ms": 693.6
+  },
+  "results": [
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.0,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"The ZoomX foam is bouncy and protective. Not the lightest shoe but the comfort is unmatched for marathon training. Good ...\"",
+      "matched_attributes": {
+        "speed": 0.7275,
+        "comfort": 0.7275
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.0,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"Best marathon racing shoe available. Incredibly light and responsive. The trade-off is minimal cushioning protection and...\"",
+      "matched_attributes": {
+        "weight": 0.7776,
+        "speed": 0.6974
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.0,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"Good cushioning without being mushy. Lighter than the max-cushion shoes. Not as stable for very long runs....\"",
+      "matched_attributes": {
+        "stability": 0.7309,
+        "speed": 0.7069
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.0,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"Trained for my first marathon entirely in Ghosts and they were perfect. Enough cushion for long runs, responsive enough ...\"",
+      "matched_attributes": {
+        "speed": 0.7254,
+        "playfulness": 0.6688
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.0,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Heavy but so comfortable. Perfect for long slow distance runs and marathon buildup....\"",
+      "matched_attributes": {
+        "weight": 0.7155,
+        "speed": 0.6811,
+        "comfort": 0.7155,
+        "stability": 0.6493
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.0,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"Good for marathon distance at easy pace....\"",
+      "matched_attributes": {
+        "speed": 0.6733,
+        "comfort": 0.669
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Grip is adequate on roads. Great shoe for faster training days....\"",
+      "matched_attributes": {
+        "grip": 0.6948,
+        "weight": 0.6926,
+        "speed": 0.681,
+        "forgiveness": 0.6694,
+        "comfort": 0.6694
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.0,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"The fit is secure on uneven ground. Not the most cushioned so my feet get tired on long runs. But for technical trails u...\"",
+      "matched_attributes": {
+        "grip": 0.6917,
+        "stability": 0.6755
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.0,
+      "explanation": "Matched on 1 attribute(s) from 5 review passage(s). Top evidence: \"My trail race shoe. Good balance of cushion and responsiveness for trail conditions. The grip is reliable on most surfac...\"",
+      "matched_attributes": {
+        "grip": 0.6483
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.0,
+      "explanation": "Matched on 1 attribute(s) from 5 review passage(s). Top evidence: \"Great for mixed road and trail runs. The Pegasus Trail handles both surfaces adequately. Not as grippy as dedicated trai...\"",
+      "matched_attributes": {
+        "weight": 0.5722
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "Max cushion marathon trainer"
+    },
+    {
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "High cushion distance shoe"
+    },
+    {
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Moderate cushion, good for distance"
+    },
+    {
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "Cushioned but more for daily training"
+    },
+    {
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "Some cushion but not primary purpose"
+    }
+  ]
+}

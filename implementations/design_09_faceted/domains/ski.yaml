@@ -1,0 +1,75 @@
+domain: ski
+collection: skis
+facets:
+  stiffness:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Flex pattern from soft/playful to stiff/demanding"
+    synonyms: ["flex", "stiff", "soft", "rigid"]
+  edge_grip:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Hold on hard snow and ice"
+    synonyms: ["edge hold", "grip", "ice performance", "hardpack"]
+  stability:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Stability at high speed"
+    synonyms: ["stable", "stability at speed", "composure", "confidence"]
+  playfulness:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Fun factor, ability to smear/butter/spin"
+    synonyms: ["playful", "fun", "lively", "poppy"]
+  dampness:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Vibration absorption and smoothness"
+    synonyms: ["damp", "smooth", "chatter-free", "vibration"]
+  powder_float:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Ability to float in powder/deep snow"
+    synonyms: ["float", "powder", "deep snow"]
+  forgiveness:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "How forgiving the ski is of imperfect technique"
+    synonyms: ["forgiving", "easy", "beginner-friendly"]
+  weight_feel:
+    type: numeric
+    range: [0.0, 1.0]
+    description: "Perceived lightness (1.0 = very light feeling)"
+    synonyms: ["light", "lightweight", "heavy"]
+  terrain:
+    type: categorical
+    values: ["on-piste", "off-piste", "all-mountain", "park", "freeride", "big-mountain", "powder", "backcountry", "touring", "groomed", "carving", "race"]
+    synonyms: ["groomer", "powder", "backcountry", "resort"]
+  waist_width_mm:
+    type: spec_numeric
+    unit: mm
+    description: "Waist width in millimeters"
+  length_cm:
+    type: spec_numeric
+    unit: cm
+    description: "Available ski lengths"
+  turn_radius_m:
+    type: spec_numeric
+    unit: m
+    description: "Turn radius in meters"
+  weight_g:
+    type: spec_numeric
+    unit: g
+    description: "Weight per ski in grams"
+  has_rocker:
+    type: boolean
+    description: "Whether the ski has a rocker profile"
+    synonyms: ["rocker", "rockered"]
+  has_plate:
+    type: boolean
+    description: "Whether the ski has a plate binding system"
+    synonyms: ["plate", "plate binding"]
+
+ranking_defaults:
+  sort_by: "_text_match:desc,popularity:desc"
+  primary_facets: ["stiffness", "edge_grip", "terrain"]

@@ -1,0 +1,156 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8269,
+    "ndcg_10": 0.8856,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 2219.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.9664814814814815,
+      "explanation": "  Score: 0.966\n  Attribute breakdown:\n    terrain    1.00  (exact match)\n    damp       0.89  [NEAR-MISS: target=lte5 penalty=-0.11]\n    stiffness  1.00  (exact match)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.96 + 0.35*1.00 + 0.15*0.90 = 0.966",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.8888888888888888,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7278394305538127,
+      "explanation": "  Score: 0.728\n  Attribute breakdown:\n    terrain    1.00  (exact match)\n    damp       1.00  (exact match)\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.27\n  Sentiment:      0.90\n  Weighted total: 0.50*1.00 + 0.35*0.27 + 0.15*0.90 = 0.728",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 1.0,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7160680381162343,
+      "explanation": "  Score: 0.716\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.67  [NEAR-MISS: target=lte5 penalty=-0.33]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.88\n  Sentiment:      0.88\n  Weighted total: 0.50*0.56 + 0.35*0.88 + 0.15*0.88 = 0.716",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.6666666666666667,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7146944137689166,
+      "explanation": "  Score: 0.715\n  Attribute breakdown:\n    terrain    1.00  (exact match)\n    damp       0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.33\n  Sentiment:      0.90\n  Weighted total: 0.50*0.93 + 0.35*0.33 + 0.15*0.90 = 0.715",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.7777777777777778,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6235472793497852,
+      "explanation": "  Score: 0.624\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.55\n  Sentiment:      0.90\n  Weighted total: 0.50*0.59 + 0.35*0.55 + 0.15*0.90 = 0.624",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.7777777777777778,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6005673178611157,
+      "explanation": "  Score: 0.601\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.51\n  Sentiment:      0.85\n  Weighted total: 0.50*0.59 + 0.35*0.51 + 0.15*0.85 = 0.601",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.7777777777777778,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.57250808061409,
+      "explanation": "  Score: 0.573\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.89  [NEAR-MISS: target=lte5 penalty=-0.11]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.36\n  Sentiment:      0.88\n  Weighted total: 0.50*0.63 + 0.35*0.36 + 0.15*0.88 = 0.573",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.8888888888888888,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5644560240524769,
+      "explanation": "  Score: 0.564\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.89  [NEAR-MISS: target=lte5 penalty=-0.11]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.35\n  Sentiment:      0.85\n  Weighted total: 0.50*0.63 + 0.35*0.35 + 0.15*0.85 = 0.564",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.8888888888888888,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5636512002452512,
+      "explanation": "  Score: 0.564\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.40\n  Sentiment:      0.85\n  Weighted total: 0.50*0.59 + 0.35*0.40 + 0.15*0.85 = 0.564",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.7777777777777778,
+        "stiffness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5616201679290103,
+      "explanation": "  Score: 0.562\n  Attribute breakdown:\n    terrain    0.00  (no match)\n    damp       0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    stiffness  1.00  (exact match)\n  FTS relevance:  0.37\n  Sentiment:      0.90\n  Weighted total: 0.50*0.59 + 0.35*0.37 + 0.15*0.90 = 0.562",
+      "matched_attributes": {
+        "terrain": 0.0,
+        "damp": 0.7777777777777778,
+        "stiffness": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

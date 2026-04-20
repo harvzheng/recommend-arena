@@ -1,0 +1,146 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "XDOM-01",
+  "query_text": "cushioned long-distance running shoe for marathon training",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.7153,
+    "ndcg_10": 0.8968,
+    "mrr": 1.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 3.0,
+    "latency_ms": 2320.5
+  },
+  "results": [
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.7275,
+      "explanation": "  Score: 0.728\n  Attribute breakdown:\n    cushioning  1.00  (exact match)\n    surface     0.00  (no match)\n  FTS relevance:  1.00\n  Sentiment:      0.85\n  Weighted total: 0.50*0.50 + 0.35*1.00 + 0.15*0.85 = 0.728",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.605772552579311,
+      "explanation": "  Score: 0.606\n  Attribute breakdown:\n    cushioning  1.00  (exact match)\n    surface     0.00  (no match)\n  FTS relevance:  0.65\n  Sentiment:      0.85\n  Weighted total: 0.50*0.50 + 0.35*0.65 + 0.15*0.85 = 0.606",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.5634124468477066,
+      "explanation": "  Score: 0.563\n  Attribute breakdown:\n    cushioning  1.00  (exact match)\n    surface     0.00  (no match)\n  FTS relevance:  0.53\n  Sentiment:      0.85\n  Weighted total: 0.50*0.50 + 0.35*0.53 + 0.15*0.85 = 0.563",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.4749472706299427,
+      "explanation": "  Score: 0.475\n  Attribute breakdown:\n    cushioning  1.00  (exact match)\n    surface     0.00  (no match)\n  FTS relevance:  0.26\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*0.26 + 0.15*0.90 = 0.475",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.41356104962687357,
+      "explanation": "  Score: 0.414\n  Attribute breakdown:\n    cushioning  0.78  [NEAR-MISS: target=gte7 penalty=-0.22]\n    surface     0.00  (no match)\n  FTS relevance:  0.26\n  Sentiment:      0.85\n  Weighted total: 0.50*0.39 + 0.35*0.26 + 0.15*0.85 = 0.414",
+      "matched_attributes": {
+        "cushioning": 0.7777777777777778,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.385,
+      "explanation": "  Score: 0.385\n  Attribute breakdown:\n    cushioning  1.00  (exact match)\n    surface     0.00  (no match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*0.00 + 0.15*0.90 = 0.385",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.385,
+      "explanation": "  Score: 0.385\n  Attribute breakdown:\n    cushioning  1.00  (exact match)\n    surface     0.00  (no match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*0.00 + 0.15*0.90 = 0.385",
+      "matched_attributes": {
+        "cushioning": 1.0,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.3632052247540703,
+      "explanation": "  Score: 0.363\n  Attribute breakdown:\n    cushioning  0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    surface     0.00  (no match)\n  FTS relevance:  0.02\n  Sentiment:      0.90\n  Weighted total: 0.50*0.44 + 0.35*0.02 + 0.15*0.90 = 0.363",
+      "matched_attributes": {
+        "cushioning": 0.8888888888888888,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.3347222222222222,
+      "explanation": "  Score: 0.335\n  Attribute breakdown:\n    cushioning  0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    surface     0.00  (no match)\n  FTS relevance:  0.00\n  Sentiment:      0.75\n  Weighted total: 0.50*0.44 + 0.35*0.00 + 0.15*0.75 = 0.335",
+      "matched_attributes": {
+        "cushioning": 0.8888888888888888,
+        "surface": 0.0
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.33235887822659843,
+      "explanation": "  Score: 0.332\n  Attribute breakdown:\n    cushioning  0.78  [NEAR-MISS: target=gte7 penalty=-0.22]\n    surface     0.00  (no match)\n  FTS relevance:  0.01\n  Sentiment:      0.90\n  Weighted total: 0.50*0.39 + 0.35*0.01 + 0.15*0.90 = 0.332",
+      "matched_attributes": {
+        "cushioning": 0.7777777777777778,
+        "surface": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "Max cushion marathon trainer"
+    },
+    {
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "High cushion distance shoe"
+    },
+    {
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Moderate cushion, good for distance"
+    },
+    {
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "Cushioned but more for daily training"
+    },
+    {
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "Some cushion but not primary purpose"
+    }
+  ]
+}

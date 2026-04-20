@@ -1,0 +1,190 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5379,
+    "ndcg_10": 0.763,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.4,
+    "latency_ms": 681.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Great ski for people who mostly carve groomers but occasionally venture off-piste. The 90mm waist is the right width for...\"",
+      "matched_attributes": {
+        "stiffness": 0.7626,
+        "dampness": 0.74,
+        "turn_quality": 0.7468,
+        "versatility": 0.7389,
+        "float": 0.7603,
+        "stability": 0.7175,
+        "speed": 0.7175,
+        "grip": 0.7175
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The 98mm waist, titanal construction, and rocker-camber-rocker profile add up to a very versatile ski. Damp enough for c...\"",
+      "matched_attributes": {
+        "dampness": 0.7475,
+        "versatility": 0.729,
+        "float": 0.7344,
+        "grip": 0.7214,
+        "forgiveness": 0.7181
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"The best all-mountain ski I've ever ridden. 100mm waist gives you enough float for powder days but it still carves on gr...\"",
+      "matched_attributes": {
+        "stability": 0.7376,
+        "dampness": 0.7383,
+        "speed": 0.7383,
+        "versatility": 0.7344,
+        "float": 0.7383,
+        "turn_quality": 0.7383,
+        "stiffness": 0.7337,
+        "forgiveness": 0.7368
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.0,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"The rocker profile floats well in powder and the 102mm waist is wide enough for most conditions. Not super stable at mac...\"",
+      "matched_attributes": {
+        "stability": 0.6693,
+        "speed": 0.7062,
+        "float": 0.7062,
+        "grip": 0.6337,
+        "turn_quality": 0.635,
+        "playfulness": 0.6324,
+        "versatility": 0.6324
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The double titanal layers make it the most damp all-mountain ski available. Edge grip is outstanding for a 96mm waist sk...\"",
+      "matched_attributes": {
+        "dampness": 0.6818,
+        "grip": 0.6883,
+        "versatility": 0.6818,
+        "stability": 0.6707,
+        "stiffness": 0.6689,
+        "speed": 0.6689
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Solid advanced frontside ski. The 82mm waist is wide enough for some versatility but narrow enough for real carving. Tit...\"",
+      "matched_attributes": {
+        "dampness": 0.675,
+        "grip": 0.675,
+        "turn_quality": 0.6857,
+        "stability": 0.6687,
+        "stiffness": 0.6537
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The 106mm waist floats in powder and the rocker profile is park-tuned. Most playful ski I've ever been on \u2014 butters, spi...\"",
+      "matched_attributes": {
+        "playfulness": 0.7012,
+        "float": 0.6638,
+        "stiffness": 0.6452,
+        "speed": 0.632,
+        "forgiveness": 0.632,
+        "turn_quality": 0.632
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.0,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Cons: heavy, not playful, demanding technique. The 106mm waist provides good float but this ski is really about charging...\"",
+      "matched_attributes": {
+        "weight": 0.6966,
+        "playfulness": 0.6966,
+        "float": 0.6966,
+        "forgiveness": 0.6966,
+        "dampness": 0.639,
+        "comfort": 0.6617,
+        "stability": 0.6162
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"DPS makes premium skis and the Pagoda Tour is their masterpiece. Incredibly light carbon construction. The 112mm waist w...\"",
+      "matched_attributes": {
+        "weight": 0.6859,
+        "float": 0.6801,
+        "stiffness": 0.6685,
+        "grip": 0.6685,
+        "versatility": 0.6685
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.0,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"At 88mm the carving feel is close to a narrower frontside ski. Camber with tip rocker is the right profile. Not forgivin...\"",
+      "matched_attributes": {
+        "stiffness": 0.6873,
+        "forgiveness": 0.6873,
+        "turn_quality": 0.666,
+        "dampness": 0.6553,
+        "grip": 0.6553,
+        "versatility": 0.6553,
+        "float": 0.6698
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

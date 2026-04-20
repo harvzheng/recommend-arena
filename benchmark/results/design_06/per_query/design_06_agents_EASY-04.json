@@ -1,0 +1,156 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8226,
+    "ndcg_10": 0.918,
+    "mrr": 1.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.3333,
+    "explanation_score": 5.0,
+    "latency_ms": 1967.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.9923,
+      "explanation": "Strong match on playfulness (100%), stiffness (100%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 1.0,
+        "stiffness": 1.0,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.9426,
+      "explanation": "Strong match on stiffness (100%), playfulness (93%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.933,
+        "stiffness": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.9426,
+      "explanation": "Strong match on stiffness (100%), playfulness (93%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.933,
+        "stiffness": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.9426,
+      "explanation": "Strong match on stiffness (100%), playfulness (93%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.933,
+        "stiffness": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.941,
+      "explanation": "Strong match on stiffness (100%), playfulness (93%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.933,
+        "stiffness": 1.0,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.9395,
+      "explanation": "Strong match on stiffness (100%), playfulness (93%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.933,
+        "stiffness": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8369,
+      "explanation": "Strong match on stiffness (100%), playfulness (80%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.8,
+        "stiffness": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8164,
+      "explanation": "Strong match on stiffness (100%), playfulness (77%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.773,
+        "stiffness": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8031,
+      "explanation": "Strong match on stiffness (100%), playfulness (76%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.76,
+        "stiffness": 1.0,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7374,
+      "explanation": "Strong match on stiffness (100%). Moderate fit for playfulness. Highly rated by reviewers.",
+      "matched_attributes": {
+        "playfulness": 0.667,
+        "stiffness": 1.0,
+        "review_quality": 0.92
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

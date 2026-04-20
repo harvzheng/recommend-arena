@@ -1,0 +1,178 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1962,
+    "ndcg_10": 0.3308,
+    "mrr": 0.25,
+    "attribute_precision": 0.0783,
+    "attribute_recall": 0.1,
+    "attribute_f1": 0.0879,
+    "explanation_score": 3.8,
+    "latency_ms": 695.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 1.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"At 106mm it handles powder better than narrow park skis. The forgiving flex means you can land sketchy without getting t...\"",
+      "matched_attributes": {
+        "stiffness": 0.6773,
+        "speed": 0.6988,
+        "float": 0.6988,
+        "forgiveness": 0.6773,
+        "turn_quality": 0.6773,
+        "playfulness": 0.6691
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.8236,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Not as edgy as a pure 70mm carver but the 82mm width adds a touch of stability. Stiff but not race-stiff. A great choice...\"",
+      "matched_attributes": {
+        "stiffness": 0.5824,
+        "stability": 0.6229,
+        "turn_quality": 0.6234,
+        "dampness": 0.6639,
+        "speed": 0.6635,
+        "grip": 0.6639,
+        "precision": 0.6635
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.792,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very...\"",
+      "matched_attributes": {
+        "stiffness": 0.5933,
+        "grip": 0.5828,
+        "forgiveness": 0.5933,
+        "speed": 0.5723
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7261,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"If you want one ski, the Enforcer 100 is the safe choice. Good edge grip, good float, good stability. Not great in deep ...\"",
+      "matched_attributes": {
+        "stability": 0.6979,
+        "grip": 0.6628,
+        "float": 0.7172,
+        "stiffness": 0.6786,
+        "forgiveness": 0.6786
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.701,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Good all-around freeride ski. Floats well at 108mm, decent edge grip, stable in variable conditions. Not outstanding in ...\"",
+      "matched_attributes": {
+        "stability": 0.6229,
+        "grip": 0.6729,
+        "speed": 0.5729,
+        "playfulness": 0.5729,
+        "forgiveness": 0.7187,
+        "turn_quality": 0.7187
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6697,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"I've never felt more secure on hardpack. Combined with the 96mm for occasional off-piste adventures, the Mantra is the u...\"",
+      "matched_attributes": {
+        "weight": 0.6569,
+        "versatility": 0.6569,
+        "grip": 0.6249,
+        "dampness": 0.6001,
+        "float": 0.6001,
+        "turn_quality": 0.6001
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6339,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Holds on ice better than anything short of a race ski. Very stable at high speed \u2014 I was laying trenches at full tilt. N...\"",
+      "matched_attributes": {
+        "stability": 0.6161,
+        "speed": 0.6161,
+        "playfulness": 0.6198,
+        "turn_quality": 0.6296,
+        "grip": 0.6492
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6018,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"One of the best freeride skis we've tested. The titanal sandwich construction gives it elite-level dampness and stabilit...\"",
+      "matched_attributes": {
+        "stability": 0.6989,
+        "dampness": 0.6932,
+        "grip": 0.6989,
+        "speed": 0.737
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5886,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Moment makes incredible skis and the Wildcat 108 is their masterpiece. The maple/triax construction gives it a unique bl...\"",
+      "matched_attributes": {
+        "stiffness": 0.6399,
+        "playfulness": 0.6417,
+        "grip": 0.5886,
+        "float": 0.5886
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5712,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The Rustler 10 is the most fun ski I've ever ridden. Incredibly playful \u2014 you can butter, spin, and smear with ease. The...\"",
+      "matched_attributes": {
+        "playfulness": 0.6497,
+        "float": 0.6497,
+        "stiffness": 0.6676,
+        "grip": 0.6884,
+        "turn_quality": 0.6884
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

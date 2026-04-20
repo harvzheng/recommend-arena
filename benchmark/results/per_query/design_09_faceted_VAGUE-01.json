@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0828,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.9,
+    "latency_ms": 13.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6499998795665684,
+      "explanation": "DPS Pagoda Tour 112 RP. The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The carbon",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.6499998779642988,
+      "explanation": "Dynastar M-Free 108. Solid freeride option from Dynastar. The M-Free 108 is well-balanced between float and grip. Titanal construction gives good damp",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.649999870764678,
+      "explanation": "Salomon Stance 90. The Stance 90 is Salomon's best-kept secret. At 90mm waist with camber and tip rocker, it carves groomers beautifully while having ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6499998688878549,
+      "explanation": "Volkl Mantra M6. The Mantra M6 is legendary for a reason. This ski is an absolute tank \u2014 stiff, damp, and incredibly stable at any speed. The double t",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.649999866379632,
+      "explanation": "K2 Disruption 78C. Perfect ski for my level. The K2 Disruption 78C is forgiving enough for my mistakes but has enough edge grip for confident turns. T",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6499998575308751,
+      "explanation": "Fischer RC One 82 GT. Solid advanced frontside ski. The 82mm waist is wide enough for some versatility but narrow enough for real carving. Titanal con",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6499998438473771,
+      "explanation": "Blizzard Rustler 10. The Rustler 10 is the most fun ski I've ever ridden. Incredibly playful \u2014 you can butter, spin, and smear with ease. The rocker p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6499998292494245,
+      "explanation": "Volkl Deacon 76. Solid frontside ski with that Volkl precision. The titanal layers give it real dampness and stability. Edge grip on hardpack is excel",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6499998287125389,
+      "explanation": "Rossignol Black Ops Sender Ti. The Black Ops Sender Ti is a big-mountain beast. Rossignol loaded it with titanal and the result is maximum dampness an",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.649999828318862,
+      "explanation": "Rossignol Experience 78 Ca. My first pair of skis and they're perfect for learning! Very forgiving when I make mistakes. Light enough that my legs don",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

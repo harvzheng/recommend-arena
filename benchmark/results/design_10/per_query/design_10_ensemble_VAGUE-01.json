@@ -1,0 +1,167 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.2838,
+    "mrr": 0.1,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 29.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6463281512260437,
+      "explanation": "Ranked here because: BM25 relevance (+0.36), avg rating (+0.15), vector similarity (+0.12), attribute sentiment (-0.08)",
+      "matched_attributes": {
+        "BM25 relevance": 0.3567238748073578,
+        "avg rating": 0.14685434103012085,
+        "vector similarity": 0.12227612733840942,
+        "attribute match rate": 0.07328129559755325
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6305286288261414,
+      "explanation": "Ranked here because: attribute match rate (+0.27), BM25 relevance (+0.16), avg rating (+0.05), vector similarity (+0.05)",
+      "matched_attributes": {
+        "attribute match rate": 0.2702063322067261,
+        "BM25 relevance": 0.15967799723148346,
+        "avg rating": 0.05477633327245712,
+        "vector similarity": 0.054635461419820786,
+        "attribute coverage": 0.011239945888519287
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.629072904586792,
+      "explanation": "Ranked here because: vector similarity (+0.36), attribute match rate (+0.10), BM25 relevance (+0.08), attribute sentiment (-0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.35598206520080566,
+        "attribute match rate": 0.09804680943489075,
+        "BM25 relevance": 0.0782812163233757,
+        "attribute coverage": 0.03226221725344658,
+        "avg rating": 0.019849492236971855
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6091810464859009,
+      "explanation": "Ranked here because: vector similarity (+0.36), avg rating (+0.13), attribute sentiment (-0.09), BM25 relevance (+0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.3628649115562439,
+        "avg rating": 0.13023775815963745,
+        "BM25 relevance": 0.058552827686071396,
+        "attribute match rate": 0.013828208670020103
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5592464208602905,
+      "explanation": "Ranked here because: BM25 relevance (+0.16), attribute sentiment (-0.12), avg rating (+0.11), attribute match rate (+0.04)",
+      "matched_attributes": {
+        "BM25 relevance": 0.16322629153728485,
+        "avg rating": 0.11012902110815048,
+        "attribute match rate": 0.041896723210811615,
+        "attribute coverage": 0.01950441673398018,
+        "vector similarity": 0.014588636346161366
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5554363131523132,
+      "explanation": "Ranked here because: BM25 relevance (+0.20), attribute sentiment (-0.13), avg rating (+0.09), attribute match rate (+0.06)",
+      "matched_attributes": {
+        "BM25 relevance": 0.19971071183681488,
+        "avg rating": 0.08556219190359116,
+        "attribute match rate": 0.05995805934071541,
+        "attribute coverage": 0.021355483680963516
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.5531026124954224,
+      "explanation": "Ranked here because: BM25 relevance (+0.22), avg rating (+0.12), vector similarity (-0.11), attribute match rate (+0.04)",
+      "matched_attributes": {
+        "BM25 relevance": 0.21755769848823547,
+        "avg rating": 0.12022428214550018,
+        "attribute match rate": 0.039499834179878235
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.5476946830749512,
+      "explanation": "Ranked here because: avg rating (-0.30), BM25 relevance (+0.30), vector similarity (+0.17), attribute match rate (+0.13)",
+      "matched_attributes": {
+        "BM25 relevance": 0.29718369245529175,
+        "vector similarity": 0.17467845976352692,
+        "attribute match rate": 0.13440026342868805
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5376158356666565,
+      "explanation": "Ranked here because: avg rating (+0.15), attribute sentiment (-0.13), BM25 relevance (+0.06), attribute match rate (+0.04)",
+      "matched_attributes": {
+        "avg rating": 0.15452216565608978,
+        "BM25 relevance": 0.061017077416181564,
+        "attribute match rate": 0.03968830779194832,
+        "attribute coverage": 0.03262734413146973
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5375136137008667,
+      "explanation": "Ranked here because: attribute match rate (+0.14), BM25 relevance (-0.08), review count (+0.06), vector similarity (+0.06)",
+      "matched_attributes": {
+        "attribute match rate": 0.14342595636844635,
+        "review count": 0.06442137062549591,
+        "vector similarity": 0.05959070473909378,
+        "avg rating": 0.03999517858028412
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

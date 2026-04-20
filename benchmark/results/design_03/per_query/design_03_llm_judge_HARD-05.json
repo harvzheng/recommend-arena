@@ -1,0 +1,172 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5786,
+    "ndcg_10": 0.7097,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.9,
+    "latency_ms": 88280.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8,
+      "explanation": "The Nordica Santa Ana 98 handles a good range of conditions suitable for both powder and hardpack, making it versatile for the user's needs. However, its stability is described as 'good' rather than high, which might not be ideal for someone seeking an equal handling of powder and hardpack.",
+      "matched_attributes": {
+        "performance_conditions": 0.8,
+        "stability": 0.5,
+        "playfulness": 0.8,
+        "edge_grip": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that balances stiffness with comfort for varied conditions and offers good floatation, grip performance, and playfulness across different snow conditions. While it does not specialize in powder or hardpack specifically, its general suitability for both types of terrain aligns well with the user's query.",
+      "matched_attributes": {
+        "terrain suitability": 0.8,
+        "flex/stiffness match": 0.75,
+        "playfulness vs stability": 0.9,
+        "skill level alignment": 0.6,
+        "weight": 0.9,
+        "waxless performance": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a powder ski that performs well in soft snow conditions, which aligns with the user's preference for handling both powder and hardpack equally well. However, its stability issues at higher speeds and poor edge grip on hard snow do not match the user's requirement of being an all-rounder suitable for both types of terrain.",
+      "matched_attributes": {
+        "Terrain Suitability": 0.9,
+        "Flex/Stiffness Match": 0.8,
+        "Stability at Speed": 0.4,
+        "Edge Grip on Hard Snow": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is noted for its stability and dampness suitable for expert-level skiers. It handles both powder and hardpack, which aligns with the user's query. However, it lacks edge grip, playfulness, and weight considerations that might not be ideal for a beginner-to-intermediate user who prefers an all-mountain ski without focusing on either specialist terrain.",
+      "matched_attributes": {
+        "snow_conditions_handling": 1.0,
+        "stability": 1.0,
+        "edge_grip": 0.30000000000000004,
+        "playfulness": 0.15000000000000002,
+        "user_friendly_for_newer_users": 0.09999999999999998
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7,
+      "explanation": "The Head Easy Joy SLR is well-suited for users who prefer an easy-to-turn and user-friendly beginner ski on groomed runs but may not excel in hardpack or powder conditions due to its soft flex and lack of edge grip. The product's features align with the user's preference for a versatile ski, suitable mainly for beginners.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain_suitability": 0.7,
+        "weight": 1.0,
+        "user_friendly_for_beginners": 1.0,
+        "turning_ability_on_powder_and_hardpack": 0.5,
+        "reliability_in_rough_terrain": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7,
+      "explanation": "The Elan Ripstick 96 is versatile and can handle different snow conditions well due to its playfulness in varying terrain. However, it does not have exceptional stability at high speeds as mentioned by the profile's consensus summary and reviewer disagreements.",
+      "matched_attributes": {
+        "terrain suitability": 0.8,
+        "flex/stiffness match": 0.6,
+        "stability at high speeds": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7,
+      "explanation": "The Armada ARV 106 is a versatile ski that handles both powder and hardpack well based on its good powder floatability and average weight. However, it seems less suited for dedicated specialized terrain like carving or speed due to the emphasis on playfulness in other reviews.",
+      "matched_attributes": {
+        "terrain suitability": 0.8,
+        "flexibility/stiffness": 0.6,
+        "playfulness vs stability": 0.5,
+        "carving/speed performance": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 is well-suited for a user who prefers versatile skiing in powder and hardpack conditions without specialization in either. It has moderate flexibility suitable for handling various terrains, decent powder floatation appropriate for the user's terrain preference, and an even flex that could handle both powder and harder surfaces.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain suitability": 0.9,
+        "playfulness": 0.7,
+        "stability above moderate speeds": 0.4,
+        "edge grip for specialized use": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is suitable for handling both powder and hardpack, matching the user's preference for an all-mountain ski that isn't specialist in either terrain type. However, its soft flex may not provide sufficient edge grip and control on more challenging or uneven snow conditions.",
+      "matched_attributes": {
+        "terrain_coverage": 0.8,
+        "flexibility": 0.7,
+        "turning_ability": 0.6,
+        "chatteriness": 0.5,
+        "weight": 0.8,
+        "skill_level_alignment": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is versatile and handles various snow conditions well, including both powder and hardpack terrain. However, its focus on versatility might mean it may not excel in either category as a specialist. The product description emphasizes its playfulness and dampness, which aligns with the user's query for a ski that handles both types of snow equally well but is not specialized in either.",
+      "matched_attributes": {
+        "Versatility": 0.9,
+        "Playfulness": 0.8,
+        "Edge Grip for Hardpack Sections": 0.30000000000000004
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

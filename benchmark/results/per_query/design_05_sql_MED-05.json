@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1731,
+    "ndcg_10": 0.4004,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 14.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.4875,
+      "explanation": "  Score: 0.487\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.92 = 0.487",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.3952143028046794,
+      "explanation": "  Score: 0.395\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.72\n  Sentiment:      0.96\n  Weighted total: 0.50*0.00 + 0.35*0.72 + 0.15*0.96 = 0.395",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.38529860156226486,
+      "explanation": "  Score: 0.385\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.76\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.76 + 0.15*0.80 = 0.385",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.38497659948486906,
+      "explanation": "  Score: 0.385\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.71\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.71 + 0.15*0.90 = 0.385",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.3684036760889208,
+      "explanation": "  Score: 0.368\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.67\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.67 + 0.15*0.90 = 0.368",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.36225081753829574,
+      "explanation": "  Score: 0.362\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.64\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.64 + 0.15*0.92 = 0.362",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.3611658970209428,
+      "explanation": "  Score: 0.361\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.65\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.65 + 0.15*0.90 = 0.361",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.34699559012865255,
+      "explanation": "  Score: 0.347\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.63\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.63 + 0.15*0.85 = 0.347",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.3292465725409328,
+      "explanation": "  Score: 0.329\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.58\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.58 + 0.15*0.85 = 0.329",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.30526499402383817,
+      "explanation": "  Score: 0.305\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.51\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.51 + 0.15*0.85 = 0.305",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

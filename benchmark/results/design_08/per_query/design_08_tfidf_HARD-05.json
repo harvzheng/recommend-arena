@@ -1,0 +1,166 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5271,
+    "ndcg_10": 0.6582,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 1439.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.1475,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), powder_float (high match, +0.42), stability_at_speed (high match, +0.33). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.4213,
+        "stability_at_speed": 0.3333,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.1444,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), powder_float (high match, +0.42), stability_at_speed (high match, +0.33). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.4213,
+        "stability_at_speed": 0.3333,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.1299,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), stability_at_speed (high match, +0.39), powder_float (high match, +0.30). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.3009,
+        "stability_at_speed": 0.3889,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.1288,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), stability_at_speed (high match, +0.44), powder_float (moderate match, +0.24). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.2408,
+        "stability_at_speed": 0.4444,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.121,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), stability_at_speed (high match, +0.33), powder_float (moderate match, +0.24). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.2408,
+        "stability_at_speed": 0.3333,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.1146,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), stability_at_speed (moderate match, +0.28), powder_float (moderate match, +0.24). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.2408,
+        "stability_at_speed": 0.2778,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.1111,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), powder_float (high match, +0.42), stability_at_speed (high match, +0.33). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.4213,
+        "stability_at_speed": 0.3333,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.1079,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), powder_float (high match, +0.36), stability_at_speed (high match, +0.33). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.3611,
+        "stability_at_speed": 0.3333,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1078,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), stability_at_speed (high match, +0.39), powder_float (moderate match, +0.18). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.1806,
+        "stability_at_speed": 0.3889,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.1031,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65), stability_at_speed (high match, +0.33), powder_float (moderate match, +0.18). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "powder_float": 0.1806,
+        "stability_at_speed": 0.3333,
+        "rocker": -1.2231
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

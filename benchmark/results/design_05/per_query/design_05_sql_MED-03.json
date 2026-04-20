@@ -1,0 +1,176 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8389,
+    "ndcg_10": 0.9005,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3452.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.44375,
+      "explanation": "  Score: 0.444\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.96\n  Weighted total: 0.50*0.60 + 0.35*0.00 + 0.15*0.96 = 0.444",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.4425,
+      "explanation": "  Score: 0.443\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.95\n  Weighted total: 0.50*0.60 + 0.35*0.00 + 0.15*0.95 = 0.443",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.435,
+      "explanation": "  Score: 0.435\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.60 + 0.35*0.00 + 0.15*0.90 = 0.435",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.435,
+      "explanation": "  Score: 0.435\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.60 + 0.35*0.00 + 0.15*0.90 = 0.435",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.43125,
+      "explanation": "  Score: 0.431\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.88\n  Weighted total: 0.50*0.60 + 0.35*0.00 + 0.15*0.88 = 0.431",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.42447368421052634,
+      "explanation": "  Score: 0.424\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     0.89  [NEAR-MISS: target=gte95 penalty=-0.11]\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.58 + 0.35*0.00 + 0.15*0.90 = 0.424",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 0.8947368421052632
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.42388888888888887,
+      "explanation": "  Score: 0.424\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.58 + 0.35*0.00 + 0.15*0.90 = 0.424",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 0.8888888888888888,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.42388888888888887,
+      "explanation": "  Score: 0.424\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.58 + 0.35*0.00 + 0.15*0.90 = 0.424",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 0.8888888888888888,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.42276315789473684,
+      "explanation": "  Score: 0.423\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          1.00  (exact match)\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     0.85  [NEAR-MISS: target=gte95 penalty=-0.15]\n  FTS relevance:  0.00\n  Sentiment:      0.92\n  Weighted total: 0.50*0.57 + 0.35*0.00 + 0.15*0.92 = 0.423",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 1.0,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 0.8526315789473684
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.42013888888888884,
+      "explanation": "  Score: 0.420\n  Attribute breakdown:\n    construction       0.00  (no match)\n    stiffness          0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain            0.00  (no match)\n    lengths_available  1.00  (exact match)\n    waist_width_mm     1.00  (exact match)\n  FTS relevance:  0.00\n  Sentiment:      0.88\n  Weighted total: 0.50*0.58 + 0.35*0.00 + 0.15*0.88 = 0.420",
+      "matched_attributes": {
+        "construction": 0.0,
+        "stiffness": 0.8888888888888888,
+        "terrain": 0.0,
+        "lengths_available": 1.0,
+        "waist_width_mm": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

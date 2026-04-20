@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0695,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.8,
+    "latency_ms": 13.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6499992936451043,
+      "explanation": "Volkl Deacon 76. Solid frontside ski with that Volkl precision. The titanal layers give it real dampness and stability. Edge grip on hardpack is excel",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.649999259064399,
+      "explanation": "Line Blade. The Line Blade is a hidden gem. Maple and metal construction gives it a unique combo of liveliness and dampness. Edge grip is outstanding ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6499992068354477,
+      "explanation": "DPS Pagoda Tour 112 RP. The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The carbon",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6499991866138981,
+      "explanation": "Fischer RC One 82 GT. Solid advanced frontside ski. The 82mm waist is wide enough for some versatility but narrow enough for real carving. Titanal con",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6499991713426667,
+      "explanation": "Head Easy Joy SLR. Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turning almost a",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6499991450014118,
+      "explanation": "Head Supershape e-Speed. The Supershape line is the gold standard for expert carving. The e-Speed takes it up a notch with the electronic dampening. I",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6499991195104933,
+      "explanation": "Faction Dictator 3.0. The Dictator 3.0 is Faction's all-mountain freeride offering and it's excellent. Poplar/paulownia core keeps weight down while p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.649999117147454,
+      "explanation": "K2 Disruption 78C. Perfect ski for my level. The K2 Disruption 78C is forgiving enough for my mistakes but has enough edge grip for confident turns. T",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6499991050444416,
+      "explanation": "Elan Ripstick 96. The Ripstick 96 is the perfect width for all-mountain skiing. Wide enough for light powder, narrow enough for quick carving on groom",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.649999078732413,
+      "explanation": "Atomic Redster S9i. Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very stiff, no",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

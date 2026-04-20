@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1317,
+    "mrr": 0.1,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.2,
+    "latency_ms": 12.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6499993419488812,
+      "explanation": "DPS Pagoda Tour 112 RP. The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The carbon",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.649999282014259,
+      "explanation": "Atomic Redster S9i. Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very stiff, no",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6499992070336227,
+      "explanation": "K2 Mindbender 108Ti. The Mindbender 108Ti is a charging machine. The titanal makes it stiff and damp \u2014 this is not a playful noodle. At 108mm it float",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6499991963133769,
+      "explanation": "Volkl Mantra M6. The Mantra M6 is legendary for a reason. This ski is an absolute tank \u2014 stiff, damp, and incredibly stable at any speed. The double t",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6499991715957998,
+      "explanation": "Salomon QST 106. The QST 106 is Salomon's best freeride ski. Carbon and flax construction gives it a unique damp but lively feel. Floats beautifully i",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6499991684863086,
+      "explanation": "Head Supershape e-Speed. The Supershape line is the gold standard for expert carving. The e-Speed takes it up a notch with the electronic dampening. I",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6499991329218898,
+      "explanation": "Blizzard Rustler 10. The Rustler 10 is the most fun ski I've ever ridden. Incredibly playful \u2014 you can butter, spin, and smear with ease. The rocker p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6499991080426182,
+      "explanation": "Rossignol Black Ops Sender Ti. The Black Ops Sender Ti is a big-mountain beast. Rossignol loaded it with titanal and the result is maximum dampness an",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6499990772021446,
+      "explanation": "Faction Dictator 3.0. The Dictator 3.0 is Faction's all-mountain freeride offering and it's excellent. Poplar/paulownia core keeps weight down while p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6499990466986685,
+      "explanation": "Volkl Deacon 76. Solid frontside ski with that Volkl precision. The titanal layers give it real dampness and stability. Edge grip on hardpack is excel",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

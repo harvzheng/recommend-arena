@@ -1,0 +1,136 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5681,
+    "ndcg_10": 0.6564,
+    "mrr": 1.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.4,
+    "explanation_score": 3.0,
+    "latency_ms": 13.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 1.0,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7792,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7792,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.7792,
+      "explanation": "Recommended because P(stiff) = 0.50 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

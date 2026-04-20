@@ -1,0 +1,136 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7933,
+    "ndcg_10": 0.7933,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 13.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 1.0,
+      "explanation": "Recommended because P(park) = 0.44 (from 3/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.4444
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7396,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.4219,
+      "explanation": "Recommended because P(park) = 0.17 (from 0/0 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.3698,
+      "explanation": "Recommended because P(park) = 0.11 (from 0/3 reviews). Confidence: low (3 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1111
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

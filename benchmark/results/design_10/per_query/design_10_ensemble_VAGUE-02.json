@@ -1,0 +1,174 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0545,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 20.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7069094181060791,
+      "explanation": "Ranked here because: BM25 relevance (+0.34), attribute sentiment (+0.21), avg rating (+0.19), attribute coverage (+0.13)",
+      "matched_attributes": {
+        "BM25 relevance": 0.3403557538986206,
+        "attribute sentiment": 0.20594893395900726,
+        "avg rating": 0.19351880252361298,
+        "attribute coverage": 0.12799791991710663,
+        "attribute match rate": 0.03112437203526497,
+        "review count": 0.016191719099879265
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.679128110408783,
+      "explanation": "Ranked here because: attribute sentiment (+0.33), BM25 relevance (+0.18), avg rating (+0.14), review count (+0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.32550114393234253,
+        "BM25 relevance": 0.17978782951831818,
+        "avg rating": 0.1418549120426178,
+        "review count": 0.047773562371730804,
+        "vector similarity": 0.030389271676540375,
+        "attribute coverage": 0.027305234223604202
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6335870623588562,
+      "explanation": "Ranked here because: attribute sentiment (+0.35), vector similarity (-0.22), avg rating (+0.19), BM25 relevance (+0.14)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3496096432209015,
+        "avg rating": 0.18685097992420197,
+        "BM25 relevance": 0.13550414144992828,
+        "attribute coverage": 0.05667969584465027,
+        "review count": 0.037504833191633224
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6293141841888428,
+      "explanation": "Ranked here because: avg rating (+0.21), vector similarity (+0.15), BM25 relevance (+0.12), attribute sentiment (+0.04)",
+      "matched_attributes": {
+        "avg rating": 0.21395176649093628,
+        "vector similarity": 0.1520581692457199,
+        "BM25 relevance": 0.12381361424922943,
+        "attribute sentiment": 0.04210333898663521
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6211079359054565,
+      "explanation": "Ranked here because: attribute sentiment (+0.44), vector similarity (+0.10), BM25 relevance (-0.07), review count (+0.04)",
+      "matched_attributes": {
+        "attribute sentiment": 0.4440268576145172,
+        "vector similarity": 0.10223404318094254,
+        "review count": 0.038735873997211456
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.606687605381012,
+      "explanation": "Ranked here because: vector similarity (+0.33), avg rating (-0.06), attribute coverage (+0.06), attribute sentiment (+0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.3290513753890991,
+        "attribute coverage": 0.06016851216554642,
+        "attribute sentiment": 0.05023106932640076,
+        "BM25 relevance": 0.04131277650594711,
+        "attribute match rate": 0.015992289409041405
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.5888856649398804,
+      "explanation": "Ranked here because: avg rating (+0.15), BM25 relevance (+0.12), attribute sentiment (+0.04), vector similarity (+0.04)",
+      "matched_attributes": {
+        "avg rating": 0.14667022228240967,
+        "BM25 relevance": 0.12048190087080002,
+        "attribute sentiment": 0.044463612139225006,
+        "vector similarity": 0.04218807443976402,
+        "attribute match rate": 0.015512616373598576,
+        "review count": 0.014359933324158192
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5885028839111328,
+      "explanation": "Ranked here because: vector similarity (+0.27), attribute coverage (+0.07), BM25 relevance (-0.07), attribute sentiment (+0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.27260902523994446,
+        "attribute coverage": 0.07334472239017487,
+        "attribute sentiment": 0.062257956713438034,
+        "avg rating": 0.01935810223221779
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.5845178961753845,
+      "explanation": "Ranked here because: avg rating (+0.14), vector similarity (+0.08), attribute sentiment (+0.05), attribute match rate (+0.05)",
+      "matched_attributes": {
+        "avg rating": 0.14420747756958008,
+        "vector similarity": 0.0806865245103836,
+        "attribute sentiment": 0.04857010766863823,
+        "attribute match rate": 0.0474395826458931,
+        "BM25 relevance": 0.029952285811305046,
+        "review count": 0.012425659224390984
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5668390393257141,
+      "explanation": "Ranked here because: avg rating (+0.20), BM25 relevance (+0.16), attribute sentiment (-0.09), vector similarity (+0.08)",
+      "matched_attributes": {
+        "avg rating": 0.19649551808834076,
+        "BM25 relevance": 0.15964877605438232,
+        "vector similarity": 0.07765693217515945
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

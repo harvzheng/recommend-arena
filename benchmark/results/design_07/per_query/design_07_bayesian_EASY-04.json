@@ -1,0 +1,146 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.9085,
+    "ndcg_10": 0.9085,
+    "mrr": 1.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 2.0,
+    "latency_ms": 1994.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 1.0,
+      "explanation": "Recommended because P(high) = 0.83 (from 9/9 reviews), P(park) = 0.53 (from 7/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.8333,
+        "terrain": 0.5333
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.5692,
+      "explanation": "Recommended because P(high) = 0.83 (from 9/9 reviews), P(park) = 0.13 (from 1/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.8333,
+        "terrain": 0.1333
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.4951,
+      "explanation": "Recommended because P(high) = 0.78 (from 6/6 reviews), P(park) = 0.08 (from 0/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.7778,
+        "terrain": 0.0769
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.493,
+      "explanation": "Recommended because P(high) = 0.82 (from 8/8 reviews), P(park) = 0.07 (from 0/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.8182,
+        "terrain": 0.0714
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.4625,
+      "explanation": "Recommended because P(high) = 0.50 (from 4/7 reviews), P(park) = 0.08 (from 0/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.5,
+        "terrain": 0.0769
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.4519,
+      "explanation": "Recommended because P(high) = 0.44 (from 3/6 reviews), P(park) = 0.07 (from 0/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.4444,
+        "terrain": 0.0714
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.4519,
+      "explanation": "Recommended because P(high) = 0.44 (from 3/6 reviews), P(park) = 0.07 (from 0/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.4444,
+        "terrain": 0.0714
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.4437,
+      "explanation": "Recommended because P(high) = 0.40 (from 3/7 reviews), P(park) = 0.07 (from 0/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.4,
+        "terrain": 0.0667
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4437,
+      "explanation": "Recommended because P(high) = 0.40 (from 3/7 reviews), P(park) = 0.07 (from 0/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.4,
+        "terrain": 0.0667
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.4364,
+      "explanation": "Recommended because P(high) = 0.33 (from 3/9 reviews), P(park) = 0.07 (from 0/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "playfulness": 0.3333,
+        "terrain": 0.0667
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

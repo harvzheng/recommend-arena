@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8214,
+    "ndcg_10": 0.8472,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 12.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.48124999999999996,
+      "explanation": "  Score: 0.481\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.88 = 0.481",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.40404899689603035,
+      "explanation": "  Score: 0.404\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.78\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.78 + 0.15*0.88 = 0.404",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.38781977533065387,
+      "explanation": "  Score: 0.388\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.72\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.72 + 0.15*0.90 = 0.388",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.33550391152657644,
+      "explanation": "  Score: 0.336\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.59\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.59 + 0.15*0.85 = 0.336",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.30860083493766327,
+      "explanation": "  Score: 0.309\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.50\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.50 + 0.15*0.90 = 0.309",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.24144056497474786,
+      "explanation": "  Score: 0.241\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.30\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.30 + 0.15*0.90 = 0.241",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.23483466878994452,
+      "explanation": "  Score: 0.235\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.31\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.31 + 0.15*0.85 = 0.235",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.23479049200471844,
+      "explanation": "  Score: 0.235\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.29\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.29 + 0.15*0.90 = 0.235",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.22384546532928398,
+      "explanation": "  Score: 0.224\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.30\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.30 + 0.15*0.80 = 0.224",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.20909449710548955,
+      "explanation": "  Score: 0.209\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.21\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.21 + 0.15*0.90 = 0.209",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

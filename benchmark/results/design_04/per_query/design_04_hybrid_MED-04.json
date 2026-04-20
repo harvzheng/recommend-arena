@@ -1,0 +1,132 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1417,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 78.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8370189875364303,
+      "explanation": "Attribute matches:\n  matched: waist width (1.00)\nSignals: vector similarity 0.53, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "waist_width": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.8251567149162292,
+      "explanation": "Attribute matches:\n  matched: waist width (0.98)\nSignals: vector similarity 0.51, attribute match 1.00, sentiment strength 0.98",
+      "matched_attributes": {
+        "waist_width": 0.985
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.8182995969057083,
+      "explanation": "Attribute matches:\n  matched: waist width (0.94)\nSignals: vector similarity 0.53, attribute match 1.00, sentiment strength 0.94",
+      "matched_attributes": {
+        "waist_width": 0.935
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8163960784673691,
+      "explanation": "Attribute matches:\n  matched: waist width (0.97)\nSignals: vector similarity 0.49, attribute match 1.00, sentiment strength 0.97",
+      "matched_attributes": {
+        "waist_width": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.805032929778099,
+      "explanation": "Attribute matches:\n  matched: waist width (0.90)\nSignals: vector similarity 0.51, attribute match 1.00, sentiment strength 0.90",
+      "matched_attributes": {
+        "waist_width": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8009084194898606,
+      "explanation": "Attribute matches:\n  matched: waist width (0.81)\nSignals: vector similarity 0.57, attribute match 1.00, sentiment strength 0.81",
+      "matched_attributes": {
+        "waist_width": 0.8125
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7826452225446701,
+      "explanation": "Attribute matches:\n  matched: waist width (0.80)\nSignals: vector similarity 0.52, attribute match 1.00, sentiment strength 0.80",
+      "matched_attributes": {
+        "waist_width": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7723898500204086,
+      "explanation": "Attribute matches:\n  matched: waist width (0.75)\nSignals: vector similarity 0.53, attribute match 1.00, sentiment strength 0.75",
+      "matched_attributes": {
+        "waist_width": 0.75
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.32739742696285246,
+      "explanation": "Signals: vector similarity 0.58, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.32468581199645996,
+      "explanation": "Signals: vector similarity 0.57, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

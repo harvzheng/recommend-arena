@@ -1,0 +1,174 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.592,
+    "ndcg_10": 0.592,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 20.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6853955984115601,
+      "explanation": "Ranked here because: vector similarity (+0.31), BM25 relevance (+0.21), avg rating (+0.16), attribute sentiment (+0.09)",
+      "matched_attributes": {
+        "vector similarity": 0.31186190247535706,
+        "BM25 relevance": 0.20814797282218933,
+        "avg rating": 0.157600998878479,
+        "attribute sentiment": 0.08722282201051712,
+        "attribute match rate": 0.04165259376168251,
+        "review count": 0.014930936507880688
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6728233695030212,
+      "explanation": "Ranked here because: vector similarity (+0.32), avg rating (+0.26), BM25 relevance (+0.14), attribute sentiment (-0.03)",
+      "matched_attributes": {
+        "vector similarity": 0.31609031558036804,
+        "avg rating": 0.2580205798149109,
+        "BM25 relevance": 0.14013303816318512,
+        "attribute match rate": 0.023591909557580948,
+        "attribute coverage": 0.012364186346530914
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6604065895080566,
+      "explanation": "Ranked here because: vector similarity (+0.33), avg rating (+0.26), attribute sentiment (+0.05), BM25 relevance (+0.04)",
+      "matched_attributes": {
+        "vector similarity": 0.33330172300338745,
+        "avg rating": 0.2629137635231018,
+        "attribute sentiment": 0.04718650132417679,
+        "BM25 relevance": 0.044391993433237076,
+        "attribute match rate": 0.01787687838077545
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.615082323551178,
+      "explanation": "Ranked here because: vector similarity (+0.32), avg rating (+0.19), attribute sentiment (-0.17), BM25 relevance (+0.14)",
+      "matched_attributes": {
+        "vector similarity": 0.3198738694190979,
+        "avg rating": 0.18987520039081573,
+        "BM25 relevance": 0.13792720437049866,
+        "attribute match rate": 0.018684428185224533
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6022621393203735,
+      "explanation": "Ranked here because: BM25 relevance (+0.17), vector similarity (+0.12), avg rating (+0.11), attribute match rate (+0.03)",
+      "matched_attributes": {
+        "BM25 relevance": 0.16529692709445953,
+        "vector similarity": 0.11725926399230957,
+        "avg rating": 0.1146964430809021,
+        "attribute match rate": 0.026059480383992195,
+        "review count": 0.011037829332053661
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5871419906616211,
+      "explanation": "Ranked here because: vector similarity (+0.20), BM25 relevance (+0.13), attribute sentiment (-0.11), attribute coverage (+0.09)",
+      "matched_attributes": {
+        "vector similarity": 0.19863946735858917,
+        "BM25 relevance": 0.13341699540615082,
+        "attribute coverage": 0.08506197482347488,
+        "attribute match rate": 0.03289411962032318,
+        "avg rating": 0.012212498113512993
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5808629393577576,
+      "explanation": "Ranked here because: BM25 relevance (+0.42), attribute sentiment (-0.22), vector similarity (+0.10), attribute coverage (+0.03)",
+      "matched_attributes": {
+        "BM25 relevance": 0.42006587982177734,
+        "vector similarity": 0.10402339696884155,
+        "attribute coverage": 0.03306521102786064
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5573559403419495,
+      "explanation": "Ranked here because: BM25 relevance (+0.33), attribute sentiment (-0.25), attribute coverage (+0.06), avg rating (+0.04)",
+      "matched_attributes": {
+        "BM25 relevance": 0.3344157636165619,
+        "attribute coverage": 0.06436478346586227,
+        "avg rating": 0.03822590038180351,
+        "vector similarity": 0.01812966726720333,
+        "attribute match rate": 0.015552463941276073,
+        "review count": 0.010634071193635464
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5573559403419495,
+      "explanation": "Ranked here because: BM25 relevance (+0.33), attribute sentiment (-0.25), attribute coverage (+0.06), avg rating (+0.04)",
+      "matched_attributes": {
+        "BM25 relevance": 0.32998597621917725,
+        "attribute coverage": 0.06431393325328827,
+        "avg rating": 0.03836926445364952,
+        "vector similarity": 0.031090375036001205,
+        "attribute match rate": 0.01181020401418209,
+        "review count": 0.010634071193635464
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5542736053466797,
+      "explanation": "Ranked here because: vector similarity (+0.28), avg rating (+0.24), attribute sentiment (-0.22), BM25 relevance (-0.08)",
+      "matched_attributes": {
+        "vector similarity": 0.28436243534088135,
+        "avg rating": 0.24485433101654053,
+        "attribute match rate": 0.014772827737033367
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

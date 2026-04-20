@@ -1,0 +1,156 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3714,
+    "ndcg_10": 0.6575,
+    "mrr": 0.2,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2857,
+    "explanation_score": 5.0,
+    "latency_ms": 4314.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Volkl Mantra M6 strongly matches on: stiffness, playfulness, stability_at_speed. Review: \"incredibly stiff\" Review: \"incredibly stiff and powerful\" Review: \"Playfulness is low \u2014 it's a serious tool for serious skiers\"",
+      "matched_attributes": {
+        "stiffness": 0.9333333333333333,
+        "playfulness": 0.82125,
+        "stability_at_speed": 0.96375
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.8175,
+      "explanation": "Atomic Redster G9 strongly matches on: stiffness, playfulness, stability_at_speed. Review: \"incredibly stiff and powerful\" Review: \"stability at 80+ km/h is breathtaking\" Review: \"Heavy but translates to stability\"",
+      "matched_attributes": {
+        "stiffness": 0.995625,
+        "playfulness": 1.0,
+        "stability_at_speed": 0.9883333333333333
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.2749,
+      "explanation": "Atomic Redster S9i strongly matches on: stiffness, playfulness, stability_at_speed. Review: \"absolutely stiff, lock in like on rails\" Review: \"Stiffness is a 10/10, no chatter at any speed\" Review: \"not forgiving at all if you get in the backseat\"",
+      "matched_attributes": {
+        "stiffness": 0.9666666666666667,
+        "playfulness": 0.85,
+        "stability_at_speed": 0.9666666666666667
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.2577,
+      "explanation": "Fischer RC One 82 GT strongly matches on: stiffness, playfulness, stability_at_speed. Review: \"Stiff enough for aggressive skiing\" Review: \"incredible stiffness for all-day piste skiing\" Review: \"Not tiring like a race ski but still performs at a high level.\"",
+      "matched_attributes": {
+        "stiffness": 0.8825,
+        "playfulness": 0.8825,
+        "stability_at_speed": 0.886875
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.1938,
+      "explanation": "Nordica Enforcer 100 strongly matches on: stiffness, stability_at_speed. Moderate match on: playfulness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"good playfulness for an all-mountain ski\"",
+      "matched_attributes": {
+        "stiffness": 0.865,
+        "playfulness": 0.33166666666666667,
+        "stability_at_speed": 0.9088333333333334
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1931,
+      "explanation": "Blizzard Brahma 88 strongly matches on: stiffness, stability_at_speed. Moderate match on: playfulness. Review: \"Stable at speed, doesn't wander.\" Review: \"Stable at any speed\" Review: \"Stable, precise, confidence-inspiring\"",
+      "matched_attributes": {
+        "stiffness": 0.865,
+        "playfulness": 0.6666666666666666,
+        "stability_at_speed": 0.9289583333333333
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.1652,
+      "explanation": "Head Supershape e-Speed strongly matches on: stiffness, stability_at_speed. Moderate match on: playfulness. Review: \"incredible stiffness and power\" Review: \"Stiff enough for aggressive skiing but not quite race-level demanding\" Review: \"connected to the snow but protected from chatter\"",
+      "matched_attributes": {
+        "stiffness": 0.8633333333333333,
+        "playfulness": 0.6183333333333333,
+        "stability_at_speed": 0.9666666666666667
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.0835,
+      "explanation": "Volkl Deacon 76 strongly matches on: stiffness, stability_at_speed. Moderate match on: playfulness. Review: \"Stiff enough for aggressive skiing\" Review: \"Good stability, stiff flex.\" Review: \"not quite as damp as the Supershape but more lively feeling\"",
+      "matched_attributes": {
+        "stiffness": 0.8474999999999999,
+        "playfulness": 0.5675,
+        "stability_at_speed": 0.9158333333333333
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.0001,
+      "explanation": "Salomon Stance 90 strongly matches on: stiffness, playfulness, stability_at_speed. Review: \"incredibly stiff and powerful\" Review: \"Stiff and damp from the titanal construction\" Review: \"Not playful, very precise\"",
+      "matched_attributes": {
+        "stiffness": 0.8999999999999999,
+        "playfulness": 0.76,
+        "stability_at_speed": 0.89125
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.0,
+      "explanation": "Nordica Santa Ana 98 strongly matches on: stability_at_speed. Moderate match on: stiffness, playfulness. Review: \"Playfulness is moderate\" Review: \"Stability is good\" Review: \"handles Pacific Northwest conditions well\"",
+      "matched_attributes": {
+        "stiffness": 0.5555555555555556,
+        "playfulness": 0.36783333333333335,
+        "stability_at_speed": 0.8474999999999999
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

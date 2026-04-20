@@ -1,0 +1,146 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6213,
+    "ndcg_10": 0.7715,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 2096.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.735,
+      "explanation": "  Score: 0.735\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*1.00 + 0.15*0.90 = 0.735",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5218551593736944,
+      "explanation": "  Score: 0.522\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.41\n  Sentiment:      0.85\n  Weighted total: 0.50*0.50 + 0.35*0.41 + 0.15*0.85 = 0.522",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.49524052160485454,
+      "explanation": "  Score: 0.495\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.34\n  Sentiment:      0.85\n  Weighted total: 0.50*0.50 + 0.35*0.34 + 0.15*0.85 = 0.495",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.4744148465694377,
+      "explanation": "  Score: 0.474\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.25\n  Sentiment:      0.92\n  Weighted total: 0.50*0.50 + 0.35*0.25 + 0.15*0.92 = 0.474",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4409356597595022,
+      "explanation": "  Score: 0.441\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.17\n  Sentiment:      0.88\n  Weighted total: 0.50*0.50 + 0.35*0.17 + 0.15*0.88 = 0.441",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.43752686891967174,
+      "explanation": "  Score: 0.438\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.17\n  Sentiment:      0.85\n  Weighted total: 0.50*0.50 + 0.35*0.17 + 0.15*0.85 = 0.438",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.43207168974797217,
+      "explanation": "  Score: 0.432\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.13\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*0.13 + 0.15*0.90 = 0.432",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.431161059176833,
+      "explanation": "  Score: 0.431\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.14\n  Sentiment:      0.88\n  Weighted total: 0.50*0.50 + 0.35*0.14 + 0.15*0.88 = 0.431",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.42985577100141553,
+      "explanation": "  Score: 0.430\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.13\n  Sentiment:      0.90\n  Weighted total: 0.50*0.50 + 0.35*0.13 + 0.15*0.90 = 0.430",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.42794226832805404,
+      "explanation": "  Score: 0.428\n  Attribute breakdown:\n    terrain  1.00  (exact match)\n    damp     0.00  (no match)\n  FTS relevance:  0.13\n  Sentiment:      0.88\n  Weighted total: 0.50*0.50 + 0.35*0.13 + 0.15*0.88 = 0.428",
+      "matched_attributes": {
+        "terrain": 1.0,
+        "damp": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

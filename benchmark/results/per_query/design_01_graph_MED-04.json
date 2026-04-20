@@ -1,0 +1,92 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8175,
+    "ndcg_10": 0.8175,
+    "mrr": 0.5,
+    "attribute_precision": 0.125,
+    "attribute_recall": 0.1667,
+    "attribute_f1": 0.1429,
+    "explanation_score": 5.0,
+    "latency_ms": 5033.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 1.0,
+      "explanation": "Nordica Santa Ana 98 strongly matches on: damp, versatility. Moderate match on: stiffness, powder_float. Review: \"surprising dampness\" Review: \"Damp and composed for its weight class\" Review: \"enough float for our wetter powder\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "damp": 0.8766666666666666,
+        "powder_float": 0.35520833333333335,
+        "versatility": 0.9625
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6388,
+      "explanation": "Nordica Enforcer 100 strongly matches on: damp, versatility. Moderate match on: powder_float. Weak match on: stiffness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"titanal makes it damp\"",
+      "matched_attributes": {
+        "stiffness": 0.13500000000000006,
+        "damp": 0.9041666666666666,
+        "powder_float": 0.41875,
+        "versatility": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0962,
+      "explanation": "Moderate match on: stiffness, damp, powder_float. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\" Review: \"Edge grip is good but not outstanding. Not as damp as heavier titanal skis.\"",
+      "matched_attributes": {
+        "stiffness": 0.35208333333333336,
+        "damp": 0.35916666666666663,
+        "powder_float": 0.49827083333333333
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0,
+      "explanation": "Volkl Mantra M6 strongly matches on: damp. Moderate match on: powder_float. Weak match on: stiffness. Review: \"incredibly stiff\" Review: \"incredibly stiff and powerful\" Review: \"absolutely damp all-mountain ski available\"",
+      "matched_attributes": {
+        "stiffness": 0.06666666666666671,
+        "damp": 0.9622916666666667,
+        "powder_float": 0.34208333333333335
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

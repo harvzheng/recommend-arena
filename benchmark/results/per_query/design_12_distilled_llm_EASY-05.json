@@ -1,0 +1,140 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1962,
+    "ndcg_10": 0.1962,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 86948.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a strong candidate for the user's query of 'damp stable all-mountain ski' due to its exceptional performance on hardpack and ice surfaces, which aligns with the user's preference for stability and dampness. However, it may not be ideal for less technical conditions or light snow.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a good fit for an all-mountain ski due to its forgiving performance and easy turn initiation with a waist width of 78mm. However, it may not be ideal for users who require more stability or have high-speed performance needs.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a good fit for an all-mountain ski as it offers dampness and stability suitable for various conditions including hardpack and speed. However, it lacks the playfulness of some other skis designed for off-piste use.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that excels in damp stability and versatility across various terrains. However, it does not specifically cater to dampness and stability as mentioned by the user.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a strong candidate for the user's request due to its innovative construction and excellent dampness performance, which aligns with their preference for 'damp stable'. However, it may not be as stable at higher speeds or on heavy snow conditions.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Damping Performance": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a strong candidate for an all-mountain ski due to its stiffness and dampness, which aligns with the user's preference for damp stability. However, it may not be as suitable for intermediate skiers who require more playful or forgiving behavior.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile all-mountain ski that excels in stability and floatation, which aligns well with the user's preference of 'damp stable'. However, it may lack the specific stiffness needed for very high-speed conditions, which could be seen as a trade-off.",
+      "matched_attributes": {
+        "stability": 0.8,
+        "floatation": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7,
+      "explanation": "The Moment Wildcat 108 is a versatile all-mountain ski with a strong emphasis on stability and power, which aligns well with the user's preference for dampness and stability. However, its 108mm waist width might not provide enough floatation on pure powder terrain, which could be seen as a trade-off.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7,
+      "explanation": "The Fischer RC One 82 GT is a strong candidate for an all-mountain ski due to its strong edge grip and Titanal construction, which provide excellent dampness and stability in various snow conditions. However, it does not meet the specific requirement of being 'damp stable' as described by the user.",
+      "matched_attributes": {
+        "Edge Grip": 0.9,
+        "Construction": 0.8,
+        "Dampness": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7,
+      "explanation": "The K2 Disruption 78C is a good fit for an intermediate skier who prefers dampness and stability on groomed runs. However, its turn radius of 14 meters does not align well with the user's preference for speed on icy surfaces.",
+      "matched_attributes": {
+        "damp_stable_all_mountain_ski": 0.9
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

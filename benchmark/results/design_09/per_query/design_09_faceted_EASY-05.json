@@ -1,0 +1,166 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 4133.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.9049984488520746,
+      "explanation": "stiffness=0.70 (match: 100%); terrain=all-mountain, carving, on-piste (match: 100%); playfulness=0.40 (match: 100%); stability=0.70 (match: 70%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.7,
+        "terrain": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8407131998085651,
+      "explanation": "stiffness=0.70 (match: 100%); terrain=all-mountain, freeride, off-piste (match: 100%); stability=0.70 (match: 70%); playfulness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.7,
+        "terrain": 1.0,
+        "playfulness": 0.5714285714285715
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8299993949031537,
+      "explanation": "stiffness=0.70 (match: 100%); terrain=all-mountain, freeride, powder (match: 100%); stability=0.70 (match: 70%); playfulness=0.80 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.7,
+        "terrain": 1.0,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8192842792038532,
+      "explanation": "terrain=all-mountain, freeride, off-piste (match: 100%); stiffness=0.60 (match: 86%); stability=0.70 (match: 70%); playfulness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.8571428571428572,
+        "stability": 0.7,
+        "terrain": 1.0,
+        "playfulness": 0.5714285714285715
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.799998661646615,
+      "explanation": "stiffness=1.00 (match: 100%); stability=1.00 (match: 100%); playfulness=0.10 (match: 100%); terrain=on-piste, race (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 1.0,
+        "terrain": 0.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7849990653497316,
+      "explanation": "stiffness=0.90 (match: 100%); playfulness=0.20 (match: 100%); stability=0.90 (match: 90%); terrain=on-piste, race (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.9,
+        "terrain": 0.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7849985819128901,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.40 (match: 100%); stability=0.90 (match: 90%); terrain=big-mountain, freeride, off-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.9,
+        "terrain": 0.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.784998469880401,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.30 (match: 100%); stability=0.90 (match: 90%); terrain=carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.9,
+        "terrain": 0.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7699984198536296,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); stability=0.80 (match: 80%); terrain=carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.8,
+        "terrain": 0.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.7399988481490618,
+      "explanation": "stiffness=0.80 (match: 100%); stability=0.80 (match: 80%); playfulness=0.50 (match: 80%); terrain=carving, on-piste (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "stability": 0.8,
+        "terrain": 0.0,
+        "playfulness": 0.8
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

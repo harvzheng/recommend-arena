@@ -1,0 +1,151 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1855,
+    "ndcg_10": 0.2099,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.9,
+    "latency_ms": 100490.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a strong candidate for the user's query as it offers versatility across various snow conditions with its camber profile and race-specific construction. However, its limited performance in light snow conditions might be a drawback.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.6,
+        "Weight G Per Ski": 0.4,
+        "Rocker Profile": 0.3,
+        "Construction": 0.5,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is designed for aggressive on-piste skiing and has a wide waist width of 68mm which aligns well with the user's preference for a versatile ski quiver around 96-100mm waist. However, it lacks the versatility needed for general resort use or intermediate skiers who might prefer lighter and more playful rides.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca has a versatile design suitable for mixed conditions with an impressive waist width of 78mm, which aligns well with the user's preference for a ski that can handle various terrain types. However, its rocker profile may not be ideal for very high-speed conditions or extreme icy surfaces where stability might be crucial.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 has a versatile design that suits mixed conditions well, which aligns with the user's preference of an 'versatile' ski. However, its narrow waist width (76mm) does not fully meet the requirement of being 'around 96-100mm', making it slightly underperforming.",
+      "matched_attributes": {
+        "waist_width_mm": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that can handle various terrains including groomed and off-piste conditions. However, its weight of 1950g per ski makes it heavier than what the user desires, which could be a significant drawback given their preference for lighter products.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Lengths Cm": 0.7,
+        "Turn Radius M": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 has a versatile design with a wide waist width of 102mm which aligns well with the user's preference for a ski that can handle various conditions. However, it lacks edge grip and stability at high speeds, which might be seen as a drawback by users seeking more precise control in challenging terrain.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "flex_profile": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a versatile ski with a 106mm waist width suitable for mixed conditions like powder and hardpack. However, its stability at higher speeds or on heavy snow may not fully align with the user's preference of being 'versatile' across various terrains.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "turn_radius_m": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a versatile ski with a wide waist width of 108mm which aligns well with the user's preference for a 'one-ski quiver' configuration. However, its stiffness and dampness may not fully meet the needs of those who prefer lighter or more playful skiing experiences.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Lengths Cm": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that excels in stability and playfulness for off-piste terrain. However, its length range of 172-192cm does not align well with the user's preference for a ski that can handle various conditions including mixed snow conditions.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Lengths Cm": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile powder ski with excellent rocker profile suitable for various snow conditions including hardpack and tree-tracked tracks. However, its moderate edge grip on hardpack may not be ideal for all types of skiing or track use.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "turn_radius_m": 0.6
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

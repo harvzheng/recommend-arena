@@ -1,0 +1,127 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2543,
+    "ndcg_10": 0.4554,
+    "mrr": 0.5,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.5,
+    "explanation_score": 4.44,
+    "latency_ms": 2267.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 1.0,
+      "explanation": "Volkl Mantra M6 strongly matches on: stiffness. Review: \"incredibly stiff\" Review: \"incredibly stiff and powerful\"",
+      "matched_attributes": {
+        "stiffness": 0.9333333333333333
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.9016,
+      "explanation": "Atomic Redster G9 strongly matches on: stiffness. Review: \"incredibly stiff and powerful\"",
+      "matched_attributes": {
+        "stiffness": 0.995625
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.2695,
+      "explanation": "Salomon Stance 90 strongly matches on: stiffness. Review: \"incredibly stiff and powerful\" Review: \"Stiff and damp from the titanal construction\"",
+      "matched_attributes": {
+        "stiffness": 0.8999999999999999
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.2508,
+      "explanation": "Fischer RC One 82 GT strongly matches on: stiffness. Review: \"Stiff enough for aggressive skiing\" Review: \"incredible stiffness for all-day piste skiing\"",
+      "matched_attributes": {
+        "stiffness": 0.8825
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2321,
+      "explanation": "Nordica Enforcer 100 strongly matches on: stiffness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\"",
+      "matched_attributes": {
+        "stiffness": 0.865
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.2303,
+      "explanation": "Head Supershape e-Speed strongly matches on: stiffness. Review: \"incredible stiffness and power\" Review: \"Stiff enough for aggressive skiing but not quite race-level demanding\"",
+      "matched_attributes": {
+        "stiffness": 0.8633333333333333
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.0619,
+      "explanation": "Line Blade strongly matches on: stiffness. Review: \"Stiff flex, stable at speed\" Review: \"Not explicitly stated as stiffness but related to edge feel.\"",
+      "matched_attributes": {
+        "stiffness": 0.7058333333333333
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.037,
+      "explanation": "Blizzard Brahma 88 strongly matches on: stiffness. Review: \"Stable at speed, doesn't wander.\"",
+      "matched_attributes": {
+        "stiffness": 0.865
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0,
+      "explanation": "Moderate match on: stiffness. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\"",
+      "matched_attributes": {
+        "stiffness": 0.6479166666666667
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

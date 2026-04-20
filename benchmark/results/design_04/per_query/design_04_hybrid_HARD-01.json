@@ -1,0 +1,132 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2548,
+    "ndcg_10": 0.3237,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 39.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6275620788335801,
+      "explanation": "Attribute matches:\n  matched: waist width (1.00)\nSignals: vector similarity 0.51, attribute match 0.50, sentiment strength 1.00\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6235478246212005,
+      "explanation": "Attribute matches:\n  matched: waist width (0.98)\nSignals: vector similarity 0.51, attribute match 0.50, sentiment strength 0.98\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.985
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6175018483400345,
+      "explanation": "Attribute matches:\n  matched: waist width (0.94)\nSignals: vector similarity 0.53, attribute match 0.50, sentiment strength 0.94\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.935
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.6170776069164277,
+      "explanation": "Attribute matches:\n  matched: waist width (0.97)\nSignals: vector similarity 0.50, attribute match 0.50, sentiment strength 0.97\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6026888966560364,
+      "explanation": "Attribute matches:\n  matched: waist width (0.90)\nSignals: vector similarity 0.51, attribute match 0.50, sentiment strength 0.90\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5922689318656922,
+      "explanation": "Attribute matches:\n  matched: waist width (0.81)\nSignals: vector similarity 0.54, attribute match 0.50, sentiment strength 0.81\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.8125
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5781425744295121,
+      "explanation": "Attribute matches:\n  matched: waist width (0.80)\nSignals: vector similarity 0.51, attribute match 0.50, sentiment strength 0.80\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5731270998716355,
+      "explanation": "Attribute matches:\n  matched: waist width (0.75)\nSignals: vector similarity 0.53, attribute match 0.50, sentiment strength 0.75\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {
+        "waist_width": 0.75
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.3059745401144027,
+      "explanation": "Signals: vector similarity 0.52, attribute match 0.00, sentiment strength 0.50\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.2952688127756119,
+      "explanation": "Signals: vector similarity 0.49, attribute match 0.00, sentiment strength 0.50\nExcluded attributes confirmed absent: rocker",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

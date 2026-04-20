@@ -1,0 +1,186 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5786,
+    "ndcg_10": 0.6481,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.3,
+    "latency_ms": 714.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 1.0,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"My dream carving ski. The 72mm waist transitions edge to edge beautifully. Holds on ice better than anything short of a ...\"",
+      "matched_attributes": {
+        "grip": 0.773,
+        "turn_quality": 0.702,
+        "float": 0.6222,
+        "playfulness": 0.7108
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.9873,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"If you love pure carving, the Blade delivers. Outstanding edge grip, stiff but not brutal, and that lively maple core ma...\"",
+      "matched_attributes": {
+        "stiffness": 0.6419,
+        "speed": 0.6794,
+        "grip": 0.6419,
+        "playfulness": 0.6794,
+        "turn_quality": 0.7063,
+        "float": 0.7602
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.816,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Very good carving ski. Edge grip is strong, the titanal layers keep it damp, and the camber with tip rocker gives good v...\"",
+      "matched_attributes": {
+        "stability": 0.7299,
+        "dampness": 0.796,
+        "grip": 0.796,
+        "turn_quality": 0.7442,
+        "stiffness": 0.6407
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6659,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Damp and stable, doesn't chatter on hardpack. The 90mm waist adds just enough versatility beyond a pure carving ski. My ...\"",
+      "matched_attributes": {
+        "stability": 0.6868,
+        "dampness": 0.6868,
+        "turn_quality": 0.7014,
+        "versatility": 0.7073,
+        "float": 0.7306,
+        "speed": 0.684,
+        "grip": 0.684
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.4604,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"At 88mm the carving feel is close to a narrower frontside ski. Camber with tip rocker is the right profile. Not forgivin...\"",
+      "matched_attributes": {
+        "stiffness": 0.7532,
+        "forgiveness": 0.7532,
+        "turn_quality": 0.6947,
+        "stability": 0.6434,
+        "dampness": 0.6655,
+        "speed": 0.6434,
+        "grip": 0.6876,
+        "versatility": 0.6876
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.3738,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Not forgiving if you're not centered \u2014 the camber profile demands good balance. Not the ski for bumps or trees, purely a...\"",
+      "matched_attributes": {
+        "stiffness": 0.7669,
+        "forgiveness": 0.7669,
+        "turn_quality": 0.7867,
+        "dampness": 0.7434,
+        "grip": 0.7434,
+        "playfulness": 0.8065,
+        "precision": 0.8065,
+        "stability": 0.6803
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.3496,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"My backcountry go-to. Light enough for long approach tours, wide enough for the deepest days. The full rocker profile me...\"",
+      "matched_attributes": {
+        "weight": 0.6496,
+        "grip": 0.6145,
+        "float": 0.6365
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.3341,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Perfect for someone who skis 20-30 days a year. Handles everything I encounter without being too demanding. The 98mm wai...\"",
+      "matched_attributes": {
+        "versatility": 0.6914,
+        "forgiveness": 0.7274,
+        "dampness": 0.7446,
+        "float": 0.7446,
+        "weight": 0.6021
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.3074,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Not appropriate for racing or hard carving. Stability at speed is mediocre. But for developing all-mountain freestyle sk...\"",
+      "matched_attributes": {
+        "stability": 0.6241,
+        "speed": 0.6632,
+        "versatility": 0.6241,
+        "turn_quality": 0.6586,
+        "stiffness": 0.6758,
+        "playfulness": 0.6494,
+        "forgiveness": 0.6758,
+        "float": 0.7023
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.2764,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Bought these after lessons and they're great for practicing. Soft enough to be friendly, good enough edge grip for basic...\"",
+      "matched_attributes": {
+        "stiffness": 0.6635,
+        "grip": 0.66,
+        "forgiveness": 0.6635,
+        "turn_quality": 0.66,
+        "dampness": 0.6805,
+        "weight": 0.6565
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

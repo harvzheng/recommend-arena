@@ -1,0 +1,136 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 1.0,
+    "ndcg_10": 1.0,
+    "mrr": 1.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.5,
+    "explanation_score": 4.5,
+    "latency_ms": 1636.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 1.0,
+      "explanation": "Armada ARV 106 strongly matches on: playfulness. Review: \"most playful ski I've ever been on \u2014 butters, spins, everything feels easy.\" Review: \"Playful factor is off the charts\"",
+      "matched_attributes": {
+        "playfulness": 0.9666666666666667
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8668,
+      "explanation": "Blizzard Rustler 10 strongly matches on: playfulness. Review: \"Incredibly playful \u2014 you can butter, spin, and smear with ease\" Review: \"Pop off everything, spin easily, land softly\"",
+      "matched_attributes": {
+        "playfulness": 0.9333333333333333
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8249,
+      "explanation": "Faction Dictator 3.0 strongly matches on: playfulness. Review: \"great for butters, natural features, and creative skiing\" Review: \"the playfulness is addictive\"",
+      "matched_attributes": {
+        "playfulness": 0.9228333333333333
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7969,
+      "explanation": "Black Crows Atris strongly matches on: playfulness. Review: \"More playful than heavy titanal powder skis\" Review: \"playful enough to navigate tight trees\"",
+      "matched_attributes": {
+        "playfulness": 0.9158333333333333
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.741,
+      "explanation": "Moment Wildcat 108 strongly matches on: playfulness. Review: \"playful enough to throw tricks\" Review: \"more playful than the Mindbender\"",
+      "matched_attributes": {
+        "playfulness": 0.9018333333333333
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.4787,
+      "explanation": "DPS Pagoda Tour 112 RP strongly matches on: playfulness. Review: \"Downhill in powder is pure bliss\" Review: \"Handles beautifully in open bowls\"",
+      "matched_attributes": {
+        "playfulness": 0.9202083333333333
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.4328,
+      "explanation": "Rossignol Experience 78 Ca strongly matches on: playfulness. Review: \"Light enough that my legs don't get tired.\" Review: \"Light weight reduces fatigue in lessons\"",
+      "matched_attributes": {
+        "playfulness": 0.8246666666666667
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.3442,
+      "explanation": "Elan Ripstick 96 strongly matches on: playfulness. Review: \"Decent playfulness and edge grip\" Review: \"Light and fun to ski\"",
+      "matched_attributes": {
+        "playfulness": 0.878125
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.2723,
+      "explanation": "Head Easy Joy SLR strongly matches on: playfulness. Review: \"super soft flex\" Review: \"So easy to turn, so light, so forgiving\"",
+      "matched_attributes": {
+        "playfulness": 0.7845
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.0,
+      "explanation": "K2 Disruption 78C strongly matches on: playfulness. Review: \"Lightweight, not tiring\" Review: \"Soft enough to be friendly\"",
+      "matched_attributes": {
+        "playfulness": 0.7704166666666667
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

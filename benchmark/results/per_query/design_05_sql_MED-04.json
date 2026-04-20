@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5877,
+    "ndcg_10": 0.5877,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 11.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.485,
+      "explanation": "  Score: 0.485\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.90 = 0.485",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4809079465352414,
+      "explanation": "  Score: 0.481\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.88 = 0.481",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.4373223845106373,
+      "explanation": "  Score: 0.437\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.86\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.86 + 0.15*0.92 = 0.437",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.42982732626072484,
+      "explanation": "  Score: 0.430\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.84\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.84 + 0.15*0.90 = 0.430",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.4188339255344554,
+      "explanation": "  Score: 0.419\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.83\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.83 + 0.15*0.85 = 0.419",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.30310996353183717,
+      "explanation": "  Score: 0.303\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.48\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.48 + 0.15*0.90 = 0.303",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.2874902791239287,
+      "explanation": "  Score: 0.287\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.41\n  Sentiment:      0.95\n  Weighted total: 0.50*0.00 + 0.35*0.41 + 0.15*0.95 = 0.287",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.2749854766746881,
+      "explanation": "  Score: 0.275\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.44\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.44 + 0.15*0.80 = 0.275",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.25784832550699116,
+      "explanation": "  Score: 0.258\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.36\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.36 + 0.15*0.88 = 0.258",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.2527232723035486,
+      "explanation": "  Score: 0.253\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.36\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.36 + 0.15*0.85 = 0.253",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

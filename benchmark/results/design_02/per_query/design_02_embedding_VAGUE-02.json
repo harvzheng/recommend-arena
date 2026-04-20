@@ -1,0 +1,190 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "VAGUE-02",
+  "query_text": "good ski for the ice coast",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1559,
+    "ndcg_10": 0.2174,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.6,
+    "latency_ms": 678.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Not a ski for powder or ice but fine for regular resort conditions....\"",
+      "matched_attributes": {
+        "float": 0.6949,
+        "dampness": 0.6789,
+        "weight": 0.6724,
+        "grip": 0.6724,
+        "turn_quality": 0.6724
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Love this ski....\"",
+      "matched_attributes": {
+        "grip": 0.6794,
+        "float": 0.6545,
+        "weight": 0.6297,
+        "speed": 0.6297,
+        "playfulness": 0.6297
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Very good carving ski. Edge grip is strong, the titanal layers keep it damp, and the camber with tip rocker gives good v...\"",
+      "matched_attributes": {
+        "stability": 0.69,
+        "dampness": 0.672,
+        "grip": 0.672,
+        "turn_quality": 0.6807,
+        "stiffness": 0.6546
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.0,
+      "explanation": "Matched on 9 attribute(s) from 5 review passage(s). Top evidence: \"If you want one ski, the Enforcer 100 is the safe choice. Good edge grip, good float, good stability. Not great in deep ...\"",
+      "matched_attributes": {
+        "stability": 0.6527,
+        "grip": 0.6752,
+        "float": 0.6476,
+        "weight": 0.6627,
+        "dampness": 0.6414,
+        "playfulness": 0.6627,
+        "speed": 0.6201,
+        "versatility": 0.6201,
+        "turn_quality": 0.6201
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"My confidence ski for end-of-day chop. Edge grip on ice is remarkable for the width. Stability at high speed is 10/10....\"",
+      "matched_attributes": {
+        "stability": 0.6621,
+        "speed": 0.6621,
+        "grip": 0.6374,
+        "stiffness": 0.628,
+        "forgiveness": 0.628
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Love this on the ice coast. The camber profile and titanal construction give you the edge grip you need on hard snow. Da...\"",
+      "matched_attributes": {
+        "stability": 0.6599,
+        "dampness": 0.6509,
+        "grip": 0.6509,
+        "precision": 0.6455,
+        "playfulness": 0.633,
+        "turn_quality": 0.633
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Edge grip is good but not outstanding. Not as damp as heavier titanal skis. A good versatile choice....\"",
+      "matched_attributes": {
+        "dampness": 0.6618,
+        "grip": 0.6277,
+        "versatility": 0.6618,
+        "stability": 0.596,
+        "speed": 0.596,
+        "weight": 0.5937,
+        "playfulness": 0.5937
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.0,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"I can ski all over the mountain and have a blast. Not the ski for icy days or pure carving, but everywhere else it shine...\"",
+      "matched_attributes": {
+        "grip": 0.6267,
+        "turn_quality": 0.6568,
+        "stability": 0.6023,
+        "speed": 0.608,
+        "float": 0.608,
+        "playfulness": 0.5966,
+        "versatility": 0.5966
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.0,
+      "explanation": "Matched on 9 attribute(s) from 4 review passage(s). Top evidence: \"Not a ski for powder or off-piste. Pure carving excellence....\"",
+      "matched_attributes": {
+        "float": 0.6262,
+        "turn_quality": 0.6224,
+        "stiffness": 0.5975,
+        "stability": 0.5975,
+        "dampness": 0.5975,
+        "speed": 0.5937,
+        "grip": 0.5975,
+        "comfort": 0.5975,
+        "playfulness": 0.5899
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Good ski for advancing from groomed-only to exploring off-piste. The width gives confidence in deeper snow and the rocke...\"",
+      "matched_attributes": {
+        "forgiveness": 0.6526,
+        "turn_quality": 0.6526,
+        "weight": 0.6396,
+        "versatility": 0.6396,
+        "stability": 0.6306,
+        "grip": 0.6306
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"
+    }
+  ]
+}

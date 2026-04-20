@@ -1,0 +1,165 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2277,
+    "ndcg_10": 0.4181,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 24.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6859384179115295,
+      "explanation": "Ranked here because: attribute sentiment (+0.48), BM25 relevance (+0.31), vector similarity (-0.16), avg rating (+0.06)",
+      "matched_attributes": {
+        "attribute sentiment": 0.4837588667869568,
+        "BM25 relevance": 0.3090820610523224,
+        "avg rating": 0.060379840433597565,
+        "review count": 0.04842191934585571,
+        "attribute coverage": 0.041919875890016556
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6795811653137207,
+      "explanation": "Ranked here because: attribute sentiment (+0.42), BM25 relevance (+0.25), vector similarity (+0.12), attribute match rate (-0.09)",
+      "matched_attributes": {
+        "attribute sentiment": 0.4198715090751648,
+        "BM25 relevance": 0.2465379387140274,
+        "vector similarity": 0.12352827191352844,
+        "review count": 0.03778044879436493,
+        "attribute coverage": 0.017976906150579453
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6522566676139832,
+      "explanation": "Ranked here because: vector similarity (+0.25), avg rating (+0.24), BM25 relevance (+0.19), attribute sentiment (-0.08)",
+      "matched_attributes": {
+        "vector similarity": 0.25345203280448914,
+        "avg rating": 0.2354557365179062,
+        "BM25 relevance": 0.18833881616592407,
+        "attribute coverage": 0.061441853642463684
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6329972743988037,
+      "explanation": "Ranked here because: attribute sentiment (+0.49), avg rating (+0.18), vector similarity (-0.17), attribute match rate (-0.07)",
+      "matched_attributes": {
+        "attribute sentiment": 0.4867289364337921,
+        "avg rating": 0.17762987315654755,
+        "attribute coverage": 0.05378709360957146,
+        "review count": 0.03728608042001724,
+        "BM25 relevance": 0.025913674384355545
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6204626560211182,
+      "explanation": "Ranked here because: vector similarity (+0.35), avg rating (+0.19), BM25 relevance (+0.13), attribute match rate (-0.10)",
+      "matched_attributes": {
+        "vector similarity": 0.35432982444763184,
+        "avg rating": 0.18767976760864258,
+        "BM25 relevance": 0.1294081062078476
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6166196465492249,
+      "explanation": "Ranked here because: attribute sentiment (+0.37), vector similarity (+0.36), avg rating (-0.24), attribute match rate (-0.07)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3650798499584198,
+        "vector similarity": 0.36050859093666077,
+        "BM25 relevance": 0.04220300912857056,
+        "review count": 0.028024688363075256
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6021342277526855,
+      "explanation": "Ranked here because: BM25 relevance (+0.42), attribute sentiment (-0.23), vector similarity (+0.20), attribute coverage (+0.03)",
+      "matched_attributes": {
+        "BM25 relevance": 0.41501379013061523,
+        "vector similarity": 0.20161724090576172,
+        "attribute coverage": 0.032963827252388
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.5965473055839539,
+      "explanation": "Ranked here because: attribute sentiment (+0.41), BM25 relevance (-0.29), avg rating (+0.21), review count (+0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.4091438055038452,
+        "avg rating": 0.21400174498558044,
+        "review count": 0.047291096299886703,
+        "vector similarity": 0.01119976956397295
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5754982233047485,
+      "explanation": "Ranked here because: attribute sentiment (+0.34), vector similarity (+0.06), BM25 relevance (-0.05), avg rating (-0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.33592721819877625,
+        "vector similarity": 0.06345662474632263,
+        "attribute coverage": 0.010464566759765148
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5561595559120178,
+      "explanation": "Ranked here because: avg rating (-0.33), vector similarity (+0.29), attribute sentiment (+0.26), attribute match rate (-0.02)",
+      "matched_attributes": {
+        "vector similarity": 0.2932892143726349,
+        "attribute sentiment": 0.26372963190078735,
+        "review count": 0.010156352072954178
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "XDOM-01",
+  "query_text": "cushioned long-distance running shoe for marathon training",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.3216,
+    "ndcg_10": 0.5866,
+    "mrr": 0.5,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 2.0,
+    "latency_ms": 2288.4
+  },
+  "results": [
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 1.0,
+      "explanation": "Recommended because P(long_run) = 0.20 (from 0/0 reviews), P(high) = 0.50 (from 3/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.2,
+        "cushioning": 0.5
+      }
+    },
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.5333,
+      "explanation": "Recommended because P(long_run) = 0.43 (from 2/2 reviews), P(high) = 0.25 (from 2/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.4286,
+        "cushioning": 0.25
+      }
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.5072,
+      "explanation": "Recommended because P(long_run) = 0.14 (from 0/2 reviews), P(high) = 0.62 (from 4/4 reviews). Confidence: low (7 total observations).",
+      "matched_attributes": {
+        "use_case": 0.1429,
+        "cushioning": 0.625
+      }
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.4341,
+      "explanation": "Recommended because P(long_run) = 0.20 (from 0/0 reviews), P(high) = 0.12 (from 0/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.2,
+        "cushioning": 0.125
+      }
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.4213,
+      "explanation": "Recommended because P(long_run) = 0.14 (from 0/2 reviews), P(high) = 0.11 (from 0/5 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.1429,
+        "cushioning": 0.1111
+      }
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.2091,
+      "explanation": "Recommended because P(long_run) = 0.38 (from 2/3 reviews), P(high) = 0.70 (from 6/6 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.375,
+        "cushioning": 0.7
+      }
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.1126,
+      "explanation": "Recommended because P(long_run) = 0.29 (from 1/2 reviews), P(high) = 0.58 (from 6/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.2857,
+        "cushioning": 0.5833
+      }
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.0245,
+      "explanation": "Recommended because P(long_run) = 0.25 (from 1/3 reviews), P(high) = 0.33 (from 3/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.25,
+        "cushioning": 0.3333
+      }
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.0096,
+      "explanation": "Recommended because P(long_run) = 0.12 (from 0/3 reviews), P(high) = 0.58 (from 6/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.125,
+        "cushioning": 0.5833
+      }
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.0,
+      "explanation": "Recommended because P(long_run) = 0.33 (from 1/1 reviews), P(high) = 0.18 (from 1/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "use_case": 0.3333,
+        "cushioning": 0.1818
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-001",
+      "relevance": 3,
+      "reason": "Max cushion marathon trainer"
+    },
+    {
+      "product_id": "SHOE-003",
+      "relevance": 3,
+      "reason": "High cushion distance shoe"
+    },
+    {
+      "product_id": "SHOE-005",
+      "relevance": 2,
+      "reason": "Moderate cushion, good for distance"
+    },
+    {
+      "product_id": "SHOE-007",
+      "relevance": 1,
+      "reason": "Cushioned but more for daily training"
+    },
+    {
+      "product_id": "SHOE-009",
+      "relevance": 1,
+      "reason": "Some cushion but not primary purpose"
+    }
+  ]
+}

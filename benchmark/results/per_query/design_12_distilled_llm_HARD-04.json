@@ -1,0 +1,148 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2938,
+    "ndcg_10": 0.2938,
+    "mrr": 0.25,
+    "attribute_precision": 0.1667,
+    "attribute_recall": 0.1,
+    "attribute_f1": 0.125,
+    "explanation_score": 4.6,
+    "latency_ms": 114403.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a strong candidate for the user's request as it offers excellent edge grip and stability suitable for groomed runs, but its weight of 1650g per ski may be too heavy for some users who prefer lighter options.",
+      "matched_attributes": {
+        "Edge Grip": 1.0,
+        "Stability": 1.0,
+        "Weight": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is designed for aggressive on-piste skiing and offers excellent performance in these conditions with its full camber profile and stiff construction. However, it does not meet the user's preference for being 'light' as it is heavy at 1800g per ski.",
+      "matched_attributes": {
+        "Edge Grip and Stability": 0.8,
+        "Groomed Runs Performance": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a close match to the user's preference for a lightweight ski with good edge grip and stability for groomed runs due to its soft flex and rocker profile. However, it may not be the most stable option given its overall weight.",
+      "matched_attributes": {
+        "Edge Grip and Stability": 0.9,
+        "Weight": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a close match for the user's request as it offers good edge grip and stability suitable for groomed runs. However, it lacks the playful or off-piste characteristics mentioned by the user.",
+      "matched_attributes": {
+        "Edge Grip": 0.9,
+        "Stability": 0.8,
+        "Groomed Runs Performance": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that excels in groomed runs and off-piste conditions, which aligns with the user's preference for a lightweight ski capable of handling groomed runs. However, it lacks the specific attributes mentioned (lightweight and edge grip) that the user desires.",
+      "matched_attributes": {
+        "Edge Grip": 0.8,
+        "Stability": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a strong candidate for the user's request due to its lightweight construction and good edge grip, which aligns with their preference for lightness. However, it may not provide the same level of stability as heavier skis on groomed runs.",
+      "matched_attributes": {
+        "Edge Grip": 0.8,
+        "Stability on Groomed Runs": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a strong candidate for the user\u2019s request as it offers excellent edge grip and stability suitable for groomed runs, which aligns with their preference for lightweight skis. However, its weight (around 2050g per ski) may not be ideal for someone who wants a lighter option.",
+      "matched_attributes": {
+        "Edge Grip and Stability": 1.0,
+        "Weight": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile and well-rounded freeride ski that excels in providing good edge grip and stability for groomed runs. However, it may not be the lightest option available due to its substantial weight of 1980g per ski.",
+      "matched_attributes": {
+        "Edge Grip and Stability": 0.8,
+        "Weight": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile powder ski that excels in soft snow conditions and offers excellent playfulness and fun for beginners. However, it lacks the edge grip needed for stable groomed runs, which is crucial for providing reliable performance across various snow conditions.",
+      "matched_attributes": {
+        "Edge Grip": 0.3,
+        "Stability": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7,
+      "explanation": "The DPS Pagoda Tour 112 RP is a strong candidate for the user's request due to its lightweight construction and good edge grip on groomed runs. However, it falls short of being the lightest option available, which could be seen as a trade-off given the emphasis on edge grip.",
+      "matched_attributes": {
+        "Edge Grip": 0.8,
+        "Weight": 0.3
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

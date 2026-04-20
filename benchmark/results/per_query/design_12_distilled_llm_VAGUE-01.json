@@ -1,0 +1,155 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0885,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.9,
+    "latency_ms": 125187.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i excels in providing exceptional edge grip and stability on hardpack and ice surfaces, which aligns closely with the user's desire for a 'ski that feels alive underfoot.' However, its performance in less technical conditions like powder or softer snow may be limited by its lack of dampening and playfulness.",
+      "matched_attributes": {
+        "Edge Grip": 1.0,
+        "Stability Under Ice": 1.0,
+        "Performance In Powder": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is designed for aggressive on-piste skiing and has a stiff construction suitable for hardpack terrain. While it offers excellent performance in these conditions, it does not align as closely with the user's preference for a 'ski that feels alive underfoot' due to its technical nature.",
+      "matched_attributes": {
+        "Construction": 0.8,
+        "Rocker Profile": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is well-suited for users who enjoy feeling alive underfoot due to its forgiving nature and easy control on groomed terrain. However, it may not be ideal for those seeking extreme agility or stability at high speeds.",
+      "matched_attributes": {
+        "feeling_underfoot": 0.9,
+        "light_weight": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 offers good edge grip and dampness suitable for hardpack conditions, which aligns with the user's preference for a 'ski that feels alive underfoot.' However, its primary focus is on stability and stability rather than playfulness or versatility.",
+      "matched_attributes": {
+        "Edge Grip and Dampness": 0.9,
+        "Hardpack Performance": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is designed for versatility and stability across different terrains, which aligns with the user's preference of feeling 'alive underfoot.' However, it lacks the specific attributes mentioned like stiffness and dampness needed by the user.",
+      "matched_attributes": {
+        "Stiffness": 0.4,
+        "Dampness": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 excels in providing a playful and forgiving ride for intermediate-to-advanced skiers, which aligns closely with the user's preference of feeling 'alive underfoot.' However, it lacks stability at high speeds and may not be ideal for aggressive or expert users seeking more control.",
+      "matched_attributes": {
+        "playful_and_forgiving_ride_for_intermediate_to_advanced_skiers": 0.8,
+        "powder_floatation_in_all_overalls": 0.7,
+        "intermediate_to_advanced_risk_avoidance": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a strong candidate for the user's request due to its exceptional dampness and smooth performance in powder conditions, which aligns closely with their preference for feeling 'alive underfoot.' However, it may lack stability at higher speeds or on heavy snow.",
+      "matched_attributes": {
+        "Dampness": 1.0,
+        "Smooth Ride Quality": 1.0,
+        "Off-Piste Performance": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is designed for aggressive skiers in challenging terrain and offers excellent stiffness and dampness to provide a satisfying feel underfoot. However, its weight and demanding rocker-camber-rocker profile make it unsuitable for intermediate skiers who prefer more forgiving or lighter options.",
+      "matched_attributes": {
+        "Stiffness": 0.8,
+        "Dampness": 0.7,
+        "Performance Underfoot": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile and playful freeride ski that excels in off-piste terrain and provides good floatation and stability. However, it may not be as stiff or demanding compared to some more specialized options like the K2 Mindbender or the Black Crows Atris.",
+      "matched_attributes": {
+        "Lengths Cm": 0.6,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.8,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.6,
+        "Construction": 0.7,
+        "Binding System": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile and playful ski that excels in powder conditions, offering excellent rocker profile and playfulness. However, it lacks edge grip specifically designed for hardpack terrain, which could be seen as a weakness compared to other skis.",
+      "matched_attributes": {
+        "Rocker Profile": 0.8,
+        "Edge Grip": 0.3
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

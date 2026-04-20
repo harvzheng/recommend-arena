@@ -1,0 +1,176 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3555,
+    "ndcg_10": 0.3805,
+    "mrr": 0.0,
+    "attribute_precision": 0.4,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.4444,
+    "explanation_score": 5.0,
+    "latency_ms": 2208.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.2411,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), powder_float (high match, +0.75), damp (high match, +0.59), playfulness (high match, +0.54). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.5397,
+        "damp": 0.5926,
+        "powder_float": 0.749,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.2361,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), powder_float (high match, +0.75), damp (high match, +0.59), playfulness (high match, +0.54). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.5397,
+        "damp": 0.5926,
+        "powder_float": 0.749,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2041,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), damp (high match, +0.69), powder_float (high match, +0.54), playfulness (high match, +0.45). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.4497,
+        "damp": 0.6914,
+        "powder_float": 0.535,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.2006,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), powder_float (high match, +0.86), playfulness (high match, +0.63), damp (high match, +0.49). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.6296,
+        "damp": 0.4938,
+        "powder_float": 0.856,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.1905,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), damp (high match, +0.59), playfulness (high match, +0.45), powder_float (high match, +0.43). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.4497,
+        "damp": 0.5926,
+        "powder_float": 0.428,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.1901,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), playfulness (high match, +0.54), damp (high match, +0.49), powder_float (high match, +0.43). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.5397,
+        "damp": 0.4938,
+        "powder_float": 0.428,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.189,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), powder_float (high match, +0.75), playfulness (high match, +0.63), damp (high match, +0.59). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.6296,
+        "damp": 0.5926,
+        "powder_float": 0.749,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.1844,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), damp (high match, +0.79), powder_float (high match, +0.43), playfulness (moderate match, +0.27). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.2698,
+        "damp": 0.7901,
+        "powder_float": 0.428,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.1762,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), powder_float (high match, +0.64), playfulness (high match, +0.63), damp (high match, +0.49). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.6296,
+        "damp": 0.4938,
+        "powder_float": 0.642,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.1752,
+      "explanation": "Matched on terrain:off-piste (high match, +1.58), playfulness (high match, +0.72), powder_float (high match, +0.64), damp (high match, +0.40). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "playfulness": 0.7196,
+        "damp": 0.3951,
+        "powder_float": 0.642,
+        "terrain:off-piste": 1.5798,
+        "rocker": -1.2231
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

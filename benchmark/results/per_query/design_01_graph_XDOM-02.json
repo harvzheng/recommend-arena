@@ -1,0 +1,116 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "XDOM-02",
+  "query_text": "lightweight responsive trail running shoe with good grip",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.0773,
+    "ndcg_10": 0.4828,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 2607.1
+  },
+  "results": [
+    {
+      "product_id": "SHOE-001",
+      "product_name": "Nike Vomero 18",
+      "score": 0.5,
+      "explanation": "Nike Vomero 18 (max_cushion_daily).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-002",
+      "product_name": "Nike Vaporfly 3",
+      "score": 0.5,
+      "explanation": "Nike Vaporfly 3 (race_carbon).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-003",
+      "product_name": "ASICS Gel-Nimbus 26",
+      "score": 0.5,
+      "explanation": "ASICS Gel-Nimbus 26 (max_cushion_daily).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-004",
+      "product_name": "Saucony Kinvara 15",
+      "score": 0.5,
+      "explanation": "Saucony Kinvara 15 (lightweight_daily).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-005",
+      "product_name": "Brooks Ghost 16",
+      "score": 0.5,
+      "explanation": "Brooks Ghost 16 (daily_trainer).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 0.5,
+      "explanation": "Salomon Speedcross 6 (trail_aggressive).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-007",
+      "product_name": "New Balance Fresh Foam 1080v14",
+      "score": 0.5,
+      "explanation": "New Balance Fresh Foam 1080v14 (max_cushion_daily).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-008",
+      "product_name": "Hoka Speedgoat 6",
+      "score": 0.5,
+      "explanation": "Hoka Speedgoat 6 (trail_cushion).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-009",
+      "product_name": "ASICS Novablast 4",
+      "score": 0.5,
+      "explanation": "ASICS Novablast 4 (bouncy_daily).",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.5,
+      "explanation": "Nike Pegasus Trail 5 (trail_versatile).",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-006",
+      "relevance": 3,
+      "reason": "Trail-specific, lightweight, aggressive grip"
+    },
+    {
+      "product_id": "SHOE-008",
+      "relevance": 3,
+      "reason": "Trail runner, responsive, good traction"
+    },
+    {
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Trail capable, light, moderate grip"
+    },
+    {
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "Lightweight but road-focused"
+    },
+    {
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "Responsive but minimal trail capability"
+    }
+  ]
+}

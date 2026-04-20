@@ -1,0 +1,169 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2543,
+    "ndcg_10": 0.4949,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 25.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7421315312385559,
+      "explanation": "Ranked here because: BM25 relevance (+0.59), vector similarity (+0.16), avg rating (+0.13), attribute sentiment (+0.10)",
+      "matched_attributes": {
+        "BM25 relevance": 0.5868842601776123,
+        "vector similarity": 0.16001562774181366,
+        "avg rating": 0.1344299465417862,
+        "attribute sentiment": 0.100108802318573,
+        "attribute coverage": 0.05441568046808243,
+        "review count": 0.024600105360150337
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6959147453308105,
+      "explanation": "Ranked here because: BM25 relevance (+0.55), avg rating (+0.18), vector similarity (+0.15), attribute match rate (-0.08)",
+      "matched_attributes": {
+        "BM25 relevance": 0.5525736808776855,
+        "avg rating": 0.1826077103614807,
+        "vector similarity": 0.14945609867572784,
+        "attribute coverage": 0.030582021921873093,
+        "review count": 0.011394765228033066
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6701556444168091,
+      "explanation": "Ranked here because: BM25 relevance (+0.66), avg rating (-0.06), attribute coverage (+0.05), vector similarity (+0.03)",
+      "matched_attributes": {
+        "BM25 relevance": 0.6594914197921753,
+        "attribute coverage": 0.04883719980716705,
+        "vector similarity": 0.03297330439090729,
+        "attribute sentiment": 0.027719324454665184,
+        "attribute match rate": 0.011161848902702332
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6641179323196411,
+      "explanation": "Ranked here because: BM25 relevance (+0.54), avg rating (+0.16), attribute sentiment (-0.12), attribute coverage (+0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.5435161590576172,
+        "avg rating": 0.16156768798828125,
+        "attribute coverage": 0.054604966193437576,
+        "vector similarity": 0.04220664128661156
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6421715021133423,
+      "explanation": "Ranked here because: BM25 relevance (+0.40), avg rating (+0.15), vector similarity (+0.08), attribute match rate (-0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.40305015444755554,
+        "avg rating": 0.14849117398262024,
+        "vector similarity": 0.08013828843832016,
+        "attribute sentiment": 0.03885725885629654
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5755435228347778,
+      "explanation": "Ranked here because: attribute sentiment (+0.32), avg rating (-0.06), attribute coverage (+0.05), BM25 relevance (-0.03)",
+      "matched_attributes": {
+        "attribute sentiment": 0.31524863839149475,
+        "attribute coverage": 0.05044403672218323,
+        "vector similarity": 0.025045912712812424
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.5667470097541809,
+      "explanation": "Ranked here because: avg rating (+0.20), attribute sentiment (-0.16), BM25 relevance (+0.09), attribute coverage (+0.05)",
+      "matched_attributes": {
+        "avg rating": 0.1968950778245926,
+        "BM25 relevance": 0.09422193467617035,
+        "attribute coverage": 0.05368464067578316,
+        "vector similarity": 0.04189543426036835,
+        "attribute match rate": 0.027029993012547493,
+        "review count": 0.018227074295282364
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.5482772588729858,
+      "explanation": "Ranked here because: BM25 relevance (-0.20), avg rating (+0.18), vector similarity (+0.14), attribute coverage (+0.13)",
+      "matched_attributes": {
+        "avg rating": 0.18005941808223724,
+        "vector similarity": 0.13911864161491394,
+        "attribute coverage": 0.132872074842453
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.5379967093467712,
+      "explanation": "Ranked here because: BM25 relevance (+0.13), vector similarity (-0.07), attribute match rate (+0.06), attribute sentiment (+0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.1263187825679779,
+        "attribute match rate": 0.06114199012517929,
+        "attribute sentiment": 0.04668885096907616
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5266428589820862,
+      "explanation": "Ranked here because: attribute sentiment (-0.21), BM25 relevance (+0.15), avg rating (+0.10), vector similarity (+0.08)",
+      "matched_attributes": {
+        "BM25 relevance": 0.14928731322288513,
+        "avg rating": 0.09953688830137253,
+        "vector similarity": 0.08222285658121109,
+        "review count": 0.021282164379954338
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

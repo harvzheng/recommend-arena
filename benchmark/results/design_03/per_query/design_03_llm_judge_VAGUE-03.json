@@ -1,0 +1,188 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0976,
+    "ndcg_10": 0.0976,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.7,
+    "latency_ms": 98413.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8,
+      "explanation": "The Volkl Deacon 76 is a stable and precise ski suitable for groomers, which aligns well with the user's preference for fast skiing on safe terrain. However, it lacks features that could enhance comfort or flexibility for bump skiing, which might be seen as a gap in meeting all their needs.",
+      "matched_attributes": {
+        "Stability": 1.0,
+        "Precision": 1.0,
+        "Groomer Performance": 1.0,
+        "Bumps Handling": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i matches well as a high-performance race ski for fast skiers who prioritize edge hold and responsiveness over all other attributes. However, it may not be the best fit if safety is solely about confidence rather than speed, given its focus on racing performance.",
+      "matched_attributes": {
+        "race_ability": 1.0,
+        "stiffness": 0.8,
+        "edge_hold": 1.0,
+        "turn_speed": 0.6,
+        "precision": 0.8,
+        "response_underfoot": 0.7,
+        "light_weight": 0.0,
+        "floatation": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is a high-performance ski suitable for fast and skilled skiers. Its stability, dampness, and edge grip align well with the user's need for confidence-inspiring performance. However, its primary attributes such as playfulness and user-friendliness are less aligned with someone who wants safety in addition to speed.",
+      "matched_attributes": {
+        "stability": 0.9,
+        "damping": 0.85,
+        "edge_grip": 1.0,
+        "speed_performance": 0.9,
+        "playfulness": 0.6,
+        "user_friendly_for_newer_users": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is highly suitable for the user's query as it offers good stability in powder conditions and playfulness which can help alleviate some of the speed-related concerns. However, there are gaps regarding its edge grip on hard snow and stability at higher speeds.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.8,
+        "Terrain Suitability": 0.7,
+        "Width Appropriateness": 0.6,
+        "Skill Level Alignment": 0.9,
+        "Weight": 0.5,
+        "Dampness": 0.3,
+        "Edge Grip": 0.4,
+        "Playfulness vs Stability": 0.7,
+        "Stability at Speed": 0.5,
+        "Edge Grasp on Hard Snow": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7,
+      "explanation": "The Fischer RC One 82 GT is suitable for a fast skier due to its stiff construction and good edge grip. However, it may not fully match the user's desire for maximum confidence-inspiring performance in softer snow conditions.",
+      "matched_attributes": {
+        "terrain": 0.9,
+        "flex/stiffness": 0.8,
+        "snow_conditions": 0.30000000000000004,
+        "user_friendly": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 offers good stability and dampness suitable for fast skiing in various conditions, including wet powder. However, it has moderate playfulness and less edge grip compared to what a confident skier might need, which could be seen as a gap.",
+      "matched_attributes": {
+        "flex/stiffness": 0.9,
+        "terrain_suitability": 0.8,
+        "width_appropriateness": 1.0,
+        "skill_level_alignment": 0.75,
+        "dampness": 0.9,
+        "playfulness": 0.6,
+        "edge_grip": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a suitable choice for someone who skis fast but wants to feel safe due to its good balance of stability and playfulness in varied conditions. However, it lacks significant confidence-inspiring features such as high edge grip or specialized flex patterns that might be expected from a ski designed for faster, more confident skiing.",
+      "matched_attributes": {
+        "stability_in_variable_conditions": 1.0,
+        "playfulness": 0.85,
+        "waxless_performance": 0.75,
+        "edge_grip": 0.4,
+        "flex/stiffness_match": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7,
+      "explanation": "The Moment Wildcat 108 is a versatile freeride ski that offers good playfulness and stability, suitable for someone who skis fast but wants to feel safe. However, its edge grip might not be as high as what the user demands for very high-speed performance.",
+      "matched_attributes": {
+        "flex/stiffness": 0.7,
+        "terrain suitability": 0.8,
+        "width appropriateness": 0.6,
+        "skill level alignment": 0.9,
+        "edge grip for carving": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is suitable for fast skiers who want to feel safe due to its excellent floatability in powder and versatile construction. However, it may not be the best choice if weight concerns are a significant factor.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.8,
+        "Terrain Suitability": 0.9,
+        "Width Appropriateness": 0.5,
+        "Skill Level Alignment": 0.7,
+        "Weight": 0.7,
+        "Dampness": 0.9,
+        "Edge Grip": 0.8,
+        "Playfulness vs Stability": 0.6,
+        "Stability": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6,
+      "explanation": "The K2 Disruption 78C is suitable for someone who skis fast but prefers safety as it has a decent level of forgiveness and reliability on groomed terrain. However, its forgiving nature might not provide enough confidence-inspiring stability for very fast or challenging conditions.",
+      "matched_attributes": {
+        "reliability_on_groomed_terrain": 0.8,
+        "skill_level_alignment": 0.7,
+        "flex/stiffness_match": 0.4,
+        "playfulness_vs_stability": 0.5
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

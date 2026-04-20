@@ -1,0 +1,146 @@
+{
+  "recommender": "design_08_tfidf",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.4224,
+    "mrr": 0.1429,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.0,
+    "latency_ms": 1316.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.0569,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0557,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0552,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.0551,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.053,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.0528,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.0499,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.0493,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.0447,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.0439,
+      "explanation": "Matched on terrain:all-mountain (high match, +1.65). Penalized for rocker (-1.22).",
+      "matched_attributes": {
+        "terrain:all-mountain": 1.6539,
+        "rocker": -1.2231
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

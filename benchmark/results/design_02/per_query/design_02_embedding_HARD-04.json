@@ -1,0 +1,186 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4636,
+    "ndcg_10": 0.5331,
+    "mrr": 0.5,
+    "attribute_precision": 0.101,
+    "attribute_recall": 0.15,
+    "attribute_f1": 0.1207,
+    "explanation_score": 3.8,
+    "latency_ms": 707.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 1.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Incredible edge grip. The Blade lives up to its name \u2014 on hardpack it cuts like a knife. Stiff flex, stable at speed, da...\"",
+      "matched_attributes": {
+        "stiffness": 0.6359,
+        "stability": 0.6613,
+        "dampness": 0.6613,
+        "speed": 0.6359,
+        "grip": 0.6359,
+        "comfort": 0.6613,
+        "forgiveness": 0.5851,
+        "float": 0.7088
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.9359,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"I use these on groomer days. Excellent edge hold, good dampness from the titanal, and a solid stable platform at speed. ...\"",
+      "matched_attributes": {
+        "stiffness": 0.6548,
+        "stability": 0.6087,
+        "dampness": 0.6087,
+        "speed": 0.6033,
+        "grip": 0.6413,
+        "forgiveness": 0.6033
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.8548,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"My dream carving ski. The 72mm waist transitions edge to edge beautifully. Holds on ice better than anything short of a ...\"",
+      "matched_attributes": {
+        "grip": 0.6278,
+        "turn_quality": 0.633,
+        "stiffness": 0.5825,
+        "dampness": 0.5825,
+        "comfort": 0.5825,
+        "stability": 0.5929,
+        "speed": 0.5929,
+        "playfulness": 0.5929
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.8117,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Bought these for masters racing and they deliver. Crazy edge grip on icy race courses. The 155 is super snappy, almost t...\"",
+      "matched_attributes": {
+        "speed": 0.6475,
+        "grip": 0.6435,
+        "weight": 0.6837,
+        "dampness": 0.6837,
+        "stiffness": 0.6354,
+        "forgiveness": 0.6354
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7519,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Titanal construction gives good dampness and edge grip. Stiff enough for aggressive skiing. The tip rocker helps in soft...\"",
+      "matched_attributes": {
+        "stiffness": 0.6998,
+        "dampness": 0.7084,
+        "grip": 0.7084,
+        "stability": 0.7127,
+        "speed": 0.7076,
+        "precision": 0.7076,
+        "turn_quality": 0.7178
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6879,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Good on groomed runs. Gets a bit nervous on ice and at speed....\"",
+      "matched_attributes": {
+        "speed": 0.5914,
+        "stiffness": 0.6406,
+        "grip": 0.6406,
+        "forgiveness": 0.6406,
+        "turn_quality": 0.6406
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6448,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"They're also available in shorter sizes for petite skiers. Zero edge grip on ice but I avoid that anyway....\"",
+      "matched_attributes": {
+        "grip": 0.6807,
+        "stiffness": 0.6858,
+        "speed": 0.6002,
+        "versatility": 0.6002
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6025,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full ca...\"",
+      "matched_attributes": {
+        "stability": 0.6786,
+        "grip": 0.688,
+        "stiffness": 0.6627,
+        "playfulness": 0.6627,
+        "weight": 0.644
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5528,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"This ski laughs at ice. The edge grip from the titanal construction and camber profile is insane. I've never felt more s...\"",
+      "matched_attributes": {
+        "grip": 0.6703,
+        "stability": 0.6986,
+        "speed": 0.6986,
+        "weight": 0.6674
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.5367,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"The Brahma's edge grip on hardpack is second to none in the all-mountain category. The double titanal layers create a da...\"",
+      "matched_attributes": {
+        "dampness": 0.6897,
+        "grip": 0.6897,
+        "versatility": 0.6897,
+        "turn_quality": 0.6699,
+        "float": 0.722,
+        "stiffness": 0.6304,
+        "forgiveness": 0.6304
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

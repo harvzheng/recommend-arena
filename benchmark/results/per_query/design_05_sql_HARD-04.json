@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1232,
+    "ndcg_10": 0.2854,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 12.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.485,
+      "explanation": "  Score: 0.485\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.90 = 0.485",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.37651572847167836,
+      "explanation": "  Score: 0.377\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.71\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.71 + 0.15*0.85 = 0.377",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.35901771798314774,
+      "explanation": "  Score: 0.359\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.66\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.66 + 0.15*0.85 = 0.359",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.3479857372327476,
+      "explanation": "  Score: 0.348\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.60\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.60 + 0.15*0.92 = 0.348",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.3272585956615841,
+      "explanation": "  Score: 0.327\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.59\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.59 + 0.15*0.80 = 0.327",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.3087549224053379,
+      "explanation": "  Score: 0.309\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.54\n  Sentiment:      0.80\n  Weighted total: 0.50*0.00 + 0.35*0.54 + 0.15*0.80 = 0.309",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.30819741322297434,
+      "explanation": "  Score: 0.308\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.51\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.51 + 0.15*0.88 = 0.308",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.3035799586405477,
+      "explanation": "  Score: 0.304\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.47\n  Sentiment:      0.92\n  Weighted total: 0.50*0.00 + 0.35*0.47 + 0.15*0.92 = 0.304",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.29695329526247227,
+      "explanation": "  Score: 0.297\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.46\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.46 + 0.15*0.90 = 0.297",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.29363929268794914,
+      "explanation": "  Score: 0.294\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.45\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.45 + 0.15*0.90 = 0.294",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

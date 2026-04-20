@@ -1,0 +1,162 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3821,
+    "ndcg_10": 0.5265,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 22.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6633836627006531,
+      "explanation": "Ranked here because: attribute sentiment (+0.41), avg rating (+0.21), BM25 relevance (-0.09), vector similarity (+0.08)",
+      "matched_attributes": {
+        "attribute sentiment": 0.4076504409313202,
+        "avg rating": 0.20603664219379425,
+        "vector similarity": 0.07953374087810516,
+        "review count": 0.03750175982713699,
+        "attribute coverage": 0.032368507236242294,
+        "attribute match rate": 0.011723920702934265
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6225436329841614,
+      "explanation": "Ranked here because: avg rating (+0.21), BM25 relevance (+0.21), vector similarity (+0.14), attribute sentiment (-0.10)",
+      "matched_attributes": {
+        "avg rating": 0.2132316678762436,
+        "BM25 relevance": 0.20862829685211182,
+        "vector similarity": 0.1448625773191452,
+        "attribute coverage": 0.061934925615787506
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6204613447189331,
+      "explanation": "Ranked here because: BM25 relevance (+0.23), attribute match rate (+0.16), vector similarity (+0.15), attribute sentiment (-0.06)",
+      "matched_attributes": {
+        "BM25 relevance": 0.22636181116104126,
+        "attribute match rate": 0.16371965408325195,
+        "vector similarity": 0.14986580610275269,
+        "avg rating": 0.012731710448861122
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6152055263519287,
+      "explanation": "Ranked here because: BM25 relevance (+0.34), avg rating (+0.21), vector similarity (-0.13), attribute sentiment (+0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.342268705368042,
+        "avg rating": 0.20844364166259766,
+        "attribute sentiment": 0.05378887429833412
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6089962720870972,
+      "explanation": "Ranked here because: avg rating (+0.24), BM25 relevance (+0.19), vector similarity (+0.13), attribute sentiment (-0.12)",
+      "matched_attributes": {
+        "avg rating": 0.24335695803165436,
+        "BM25 relevance": 0.1927720308303833,
+        "vector similarity": 0.1291189193725586,
+        "attribute coverage": 0.01432003453373909
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6017032861709595,
+      "explanation": "Ranked here because: BM25 relevance (+0.42), vector similarity (+0.16), avg rating (-0.14), attribute match rate (+0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.41743260622024536,
+        "vector similarity": 0.15659181773662567,
+        "attribute match rate": 0.05288050323724747
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.5792654156684875,
+      "explanation": "Ranked here because: avg rating (+0.18), BM25 relevance (+0.15), attribute match rate (+0.04), attribute coverage (-0.04)",
+      "matched_attributes": {
+        "avg rating": 0.18195085227489471,
+        "BM25 relevance": 0.15061858296394348,
+        "attribute match rate": 0.04311180114746094,
+        "vector similarity": 0.015431464649736881
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5712096691131592,
+      "explanation": "Ranked here because: vector similarity (+0.31), BM25 relevance (-0.14), attribute coverage (+0.10), attribute match rate (+0.09)",
+      "matched_attributes": {
+        "vector similarity": 0.31069737672805786,
+        "attribute coverage": 0.1039218083024025,
+        "attribute match rate": 0.08511437475681305
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5571624040603638,
+      "explanation": "Ranked here because: BM25 relevance (+0.30), attribute sentiment (+0.29), avg rating (-0.27), vector similarity (-0.05)",
+      "matched_attributes": {
+        "BM25 relevance": 0.2985694408416748,
+        "attribute sentiment": 0.2911878228187561
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5221525430679321,
+      "explanation": "Ranked here because: attribute sentiment (+0.11), vector similarity (-0.10), BM25 relevance (+0.10), attribute match rate (+0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.10790577530860901,
+        "BM25 relevance": 0.09959788620471954,
+        "attribute match rate": 0.051874637603759766
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

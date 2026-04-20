@@ -1,0 +1,291 @@
+{
+  "version": "1.0",
+  "description": "Benchmark test queries with ground truth rankings for evaluating recommendation systems",
+  "queries": [
+    {
+      "id": "EASY-01",
+      "difficulty": "easy",
+      "domain": "ski",
+      "query_text": "stiff carving ski",
+      "key_attributes": ["stiffness", "edge_grip", "on-piste"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-002", "relevance": 3, "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"},
+        {"product_id": "SKI-001", "relevance": 3, "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"},
+        {"product_id": "SKI-004", "relevance": 3, "reason": "Expert carving category, stiffness 8, edge grip 9"},
+        {"product_id": "SKI-023", "relevance": 2, "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"},
+        {"product_id": "SKI-005", "relevance": 2, "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"}
+      ]
+    },
+    {
+      "id": "EASY-02",
+      "difficulty": "easy",
+      "domain": "ski",
+      "query_text": "soft beginner ski",
+      "key_attributes": ["forgiveness", "softness", "beginner"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-017", "relevance": 3, "reason": "True beginner ski, softest flex (2), max forgiveness (10)"},
+        {"product_id": "SKI-003", "relevance": 3, "reason": "Beginner frontside, stiffness 3, forgiveness 9"},
+        {"product_id": "SKI-016", "relevance": 2, "reason": "Intermediate frontside, stiffness 4, forgiveness 8"},
+        {"product_id": "SKI-014", "relevance": 1, "reason": "All-mountain but forgiving (6), moderate stiffness"},
+        {"product_id": "SKI-018", "relevance": 1, "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"}
+      ]
+    },
+    {
+      "id": "EASY-03",
+      "difficulty": "easy",
+      "domain": "ski",
+      "query_text": "powder ski with good float",
+      "key_attributes": ["powder_float", "wide_waist"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-012", "relevance": 3, "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"},
+        {"product_id": "SKI-011", "relevance": 3, "reason": "Powder freeride, float 9, 108mm, generous rocker"},
+        {"product_id": "SKI-013", "relevance": 2, "reason": "Powder freeride, float 8, 108mm, playful in deep snow"},
+        {"product_id": "SKI-008", "relevance": 2, "reason": "Freeride, float 8, 106mm, good powder reviews"},
+        {"product_id": "SKI-009", "relevance": 2, "reason": "Freeride, float 8, 108mm, charges through powder"}
+      ]
+    },
+    {
+      "id": "EASY-04",
+      "difficulty": "easy",
+      "domain": "ski",
+      "query_text": "playful freestyle ski for the park",
+      "key_attributes": ["playfulness", "park", "freestyle"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-018", "relevance": 3, "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"},
+        {"product_id": "SKI-007", "relevance": 2, "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"},
+        {"product_id": "SKI-024", "relevance": 2, "reason": "All-mountain freeride, playfulness 8, park terrain"},
+        {"product_id": "SKI-011", "relevance": 1, "reason": "Powder freeride, playfulness 8, but not park-focused"},
+        {"product_id": "SKI-013", "relevance": 1, "reason": "Powder freeride, playfulness 8, good for tricks"}
+      ]
+    },
+    {
+      "id": "EASY-05",
+      "difficulty": "easy",
+      "domain": "ski",
+      "query_text": "damp stable all-mountain ski",
+      "key_attributes": ["damp", "stability_at_speed", "all-mountain"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-019", "relevance": 3, "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"},
+        {"product_id": "SKI-006", "relevance": 3, "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"},
+        {"product_id": "SKI-025", "relevance": 2, "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"},
+        {"product_id": "SKI-020", "relevance": 2, "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"},
+        {"product_id": "SKI-021", "relevance": 2, "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"}
+      ]
+    },
+    {
+      "id": "MED-01",
+      "difficulty": "medium",
+      "domain": "ski",
+      "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+      "key_attributes": ["stiffness", "damp", "on-piste", "length_180plus"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-002", "relevance": 3, "reason": "Stiffness 10, damp 8, on-piste, available 183cm"},
+        {"product_id": "SKI-004", "relevance": 3, "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"},
+        {"product_id": "SKI-023", "relevance": 2, "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"},
+        {"product_id": "SKI-015", "relevance": 2, "reason": "Stiffness 7, damp 7, on-piste, available 182cm"},
+        {"product_id": "SKI-025", "relevance": 1, "reason": "Stiffness 7, damp 8, on-piste, available 187cm"}
+      ]
+    },
+    {
+      "id": "MED-02",
+      "difficulty": "medium",
+      "domain": "ski",
+      "query_text": "lightweight freeride ski with good playfulness and powder float",
+      "key_attributes": ["light_weight", "playfulness", "powder_float", "freeride"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-012", "relevance": 3, "reason": "Lightest wide ski (1750g), playfulness 8, float 10"},
+        {"product_id": "SKI-011", "relevance": 2, "reason": "Moderate weight, playfulness 8, float 9, freeride"},
+        {"product_id": "SKI-008", "relevance": 2, "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"},
+        {"product_id": "SKI-024", "relevance": 2, "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"},
+        {"product_id": "SKI-007", "relevance": 1, "reason": "Moderate weight (1850g), playfulness 8, float 7"}
+      ]
+    },
+    {
+      "id": "MED-03",
+      "difficulty": "medium",
+      "domain": "ski",
+      "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+      "key_attributes": ["titanal", "edge_grip", "hardpack", "waist_95plus"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-019", "relevance": 3, "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"},
+        {"product_id": "SKI-006", "relevance": 3, "reason": "Titanal sandwich, edge grip 7, 100mm waist"},
+        {"product_id": "SKI-009", "relevance": 2, "reason": "Titanal sandwich, edge grip 7, 108mm waist"},
+        {"product_id": "SKI-020", "relevance": 2, "reason": "Titanal sandwich, edge grip 7, 98mm waist"},
+        {"product_id": "SKI-022", "relevance": 2, "reason": "Titanal sandwich, edge grip 7, 106mm waist"}
+      ]
+    },
+    {
+      "id": "MED-04",
+      "difficulty": "medium",
+      "domain": "ski",
+      "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+      "key_attributes": ["versatility", "waist_96_100", "mixed_conditions"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-006", "relevance": 3, "reason": "100mm waist, quintessential one-ski quiver, all-mountain"},
+        {"product_id": "SKI-019", "relevance": 3, "reason": "96mm waist, expert all-mountain, handles everything"},
+        {"product_id": "SKI-020", "relevance": 2, "reason": "98mm waist, versatile all-mountain"},
+        {"product_id": "SKI-014", "relevance": 2, "reason": "96mm waist, all-mountain, forgiving and versatile"},
+        {"product_id": "SKI-007", "relevance": 1, "reason": "102mm waist, slightly wider than ideal but versatile"}
+      ]
+    },
+    {
+      "id": "MED-05",
+      "difficulty": "medium",
+      "domain": "ski",
+      "query_text": "expert carving ski with dampness above 7 and full camber profile",
+      "key_attributes": ["expert", "carving", "damp_7plus", "camber"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-004", "relevance": 3, "reason": "Expert carving, damp 9, full camber"},
+        {"product_id": "SKI-002", "relevance": 3, "reason": "Race GS, damp 8, full camber"},
+        {"product_id": "SKI-001", "relevance": 2, "reason": "Race slalom, damp 7, full camber"},
+        {"product_id": "SKI-005", "relevance": 2, "reason": "Advanced frontside, damp 8, full camber"},
+        {"product_id": "SKI-023", "relevance": 2, "reason": "Expert carver, damp 7, full camber"}
+      ]
+    },
+    {
+      "id": "HARD-01",
+      "difficulty": "hard",
+      "domain": "ski",
+      "query_text": "all-mountain ski with no rocker, under 90mm waist",
+      "key_attributes": ["all-mountain", "no_rocker", "waist_under_90"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-025", "relevance": 3, "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"},
+        {"product_id": "SKI-021", "relevance": 3, "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"},
+        {"product_id": "SKI-015", "relevance": 2, "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"},
+        {"product_id": "SKI-005", "relevance": 1, "reason": "76mm waist, pure camber, but more frontside than all-mountain"},
+        {"product_id": "SKI-019", "relevance": 1, "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"}
+      ]
+    },
+    {
+      "id": "HARD-02",
+      "difficulty": "hard",
+      "domain": "ski",
+      "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+      "key_attributes": ["freeride", "not_playful", "stiff", "stability", "waist_105plus"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-022", "relevance": 3, "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"},
+        {"product_id": "SKI-009", "relevance": 3, "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"},
+        {"product_id": "SKI-010", "relevance": 2, "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"},
+        {"product_id": "SKI-013", "relevance": 1, "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"},
+        {"product_id": "SKI-008", "relevance": 1, "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"}
+      ]
+    },
+    {
+      "id": "HARD-03",
+      "difficulty": "hard",
+      "domain": "ski",
+      "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+      "key_attributes": ["advanced_intermediate", "forgiving", "not_beginner", "waist_80_95", "length_170_175"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-025", "relevance": 3, "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"},
+        {"product_id": "SKI-015", "relevance": 3, "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"},
+        {"product_id": "SKI-021", "relevance": 2, "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"},
+        {"product_id": "SKI-014", "relevance": 2, "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"},
+        {"product_id": "SKI-005", "relevance": 1, "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"}
+      ]
+    },
+    {
+      "id": "HARD-04",
+      "difficulty": "hard",
+      "domain": "ski",
+      "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+      "key_attributes": ["lightweight", "edge_grip", "stability", "groomed"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-003", "relevance": 2, "reason": "1350g very light, but edge grip only 5 and stability 3"},
+        {"product_id": "SKI-016", "relevance": 2, "reason": "1400g light, edge grip 5, stability 4 — trade-off"},
+        {"product_id": "SKI-015", "relevance": 3, "reason": "1550g moderate, edge grip 8, stability 7 — best balance"},
+        {"product_id": "SKI-005", "relevance": 3, "reason": "1580g moderate, edge grip 8, stability 8 — excellent balance"},
+        {"product_id": "SKI-014", "relevance": 2, "reason": "1650g moderate, edge grip 7, stability 6 — decent balance"}
+      ]
+    },
+    {
+      "id": "HARD-05",
+      "difficulty": "hard",
+      "domain": "ski",
+      "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+      "key_attributes": ["balanced_float_and_grip", "versatile", "not_specialist"],
+      "ground_truth_top5": [
+        {"product_id": "SKI-006", "relevance": 3, "reason": "Float 6, edge grip 7 — most balanced between powder and hardpack"},
+        {"product_id": "SKI-020", "relevance": 3, "reason": "Float 5, edge grip 7 — well-balanced"},
+        {"product_id": "SKI-007", "relevance": 2, "reason": "Float 7, edge grip 6 — reasonably balanced"},
+        {"product_id": "SKI-014", "relevance": 2, "reason": "Float 5, edge grip 7 — balanced at a lower performance level"},
+        {"product_id": "SKI-010", "relevance": 2, "reason": "Float 8, edge grip 6 — slightly powder-biased but still versatile"}
+      ]
+    },
+    {
+      "id": "VAGUE-01",
+      "difficulty": "vague",
+      "domain": "ski",
+      "query_text": "a ski that feels alive underfoot",
+      "key_attributes": ["lively_feel", "responsive", "energetic"],
+      "notes": "Reviews for SKI-013 (Moment Wildcat) explicitly use the phrase 'feels alive underfoot'. Other lively skis include the Line Blade and playful options.",
+      "ground_truth_top5": [
+        {"product_id": "SKI-013", "relevance": 3, "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"},
+        {"product_id": "SKI-023", "relevance": 2, "reason": "Maple core described as lively and snappy, engaging carving feel"},
+        {"product_id": "SKI-007", "relevance": 2, "reason": "Reviews emphasize fun and lively feel"},
+        {"product_id": "SKI-018", "relevance": 2, "reason": "Poppy, energetic feel from ash/poplar core"},
+        {"product_id": "SKI-024", "relevance": 1, "reason": "Described as poppy and energetic"}
+      ]
+    },
+    {
+      "id": "VAGUE-02",
+      "difficulty": "vague",
+      "domain": "ski",
+      "query_text": "good ski for the ice coast",
+      "key_attributes": ["edge_grip", "damp", "hardpack", "east_coast"],
+      "notes": "Ice coast = US East Coast, known for hard-packed icy conditions. Needs strong edge grip and dampness.",
+      "ground_truth_top5": [
+        {"product_id": "SKI-004", "relevance": 3, "reason": "Reviewer explicitly mentions 'East Coast hardpack and ice', damp 9, edge grip 9"},
+        {"product_id": "SKI-025", "relevance": 3, "reason": "Reviewer calls it 'king' on East Coast, edge grip 8, damp 8"},
+        {"product_id": "SKI-019", "relevance": 3, "reason": "Reviewer mentions 'East Coast expert', edge grip 8, damp 9"},
+        {"product_id": "SKI-005", "relevance": 2, "reason": "Reviewer says 'love this on the ice coast', edge grip 8, camber"},
+        {"product_id": "SKI-021", "relevance": 2, "reason": "Reviewer mentions 'East Coast edge grip', damp 7, edge grip 8"}
+      ]
+    },
+    {
+      "id": "VAGUE-03",
+      "difficulty": "vague",
+      "domain": "ski",
+      "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+      "key_attributes": ["stability_at_speed", "damp", "forgiveness", "confidence"],
+      "notes": "Balancing high-speed stability with some forgiveness. Not a race ski (too unforgiving) but needs to handle speed.",
+      "ground_truth_top5": [
+        {"product_id": "SKI-006", "relevance": 3, "reason": "Stability 8, damp 8, forgiveness 4 — strong but not punishing, 'confidence' in reviews"},
+        {"product_id": "SKI-019", "relevance": 2, "reason": "Stability 9, damp 9 — maximum composure but forgiveness only 3, expert-only"},
+        {"product_id": "SKI-025", "relevance": 3, "reason": "Stability 8, damp 8 — 'confidence-inspiring' in reviews, reasonable forgiveness"},
+        {"product_id": "SKI-004", "relevance": 2, "reason": "Stability 9, damp 9, forgiveness 3 — clinical but demanding"},
+        {"product_id": "SKI-021", "relevance": 2, "reason": "Stability 7, damp 7, forgiveness 5 — safe feeling, moderate speed capability"}
+      ]
+    },
+    {
+      "id": "XDOM-01",
+      "difficulty": "cross_domain",
+      "domain": "running_shoe",
+      "query_text": "cushioned long-distance running shoe for marathon training",
+      "key_attributes": ["cushioning", "long_distance", "marathon"],
+      "notes": "Tests domain adaptation — system must switch from ski domain to running shoe domain",
+      "ground_truth_top5": [
+        {"product_id": "SHOE-001", "relevance": 3, "reason": "Max cushion marathon trainer"},
+        {"product_id": "SHOE-003", "relevance": 3, "reason": "High cushion distance shoe"},
+        {"product_id": "SHOE-005", "relevance": 2, "reason": "Moderate cushion, good for distance"},
+        {"product_id": "SHOE-007", "relevance": 1, "reason": "Cushioned but more for daily training"},
+        {"product_id": "SHOE-009", "relevance": 1, "reason": "Some cushion but not primary purpose"}
+      ]
+    },
+    {
+      "id": "XDOM-02",
+      "difficulty": "cross_domain",
+      "domain": "running_shoe",
+      "query_text": "lightweight responsive trail running shoe with good grip",
+      "key_attributes": ["lightweight", "responsive", "trail", "grip"],
+      "notes": "Tests domain adaptation with a trail running query",
+      "ground_truth_top5": [
+        {"product_id": "SHOE-006", "relevance": 3, "reason": "Trail-specific, lightweight, aggressive grip"},
+        {"product_id": "SHOE-008", "relevance": 3, "reason": "Trail runner, responsive, good traction"},
+        {"product_id": "SHOE-010", "relevance": 2, "reason": "Trail capable, light, moderate grip"},
+        {"product_id": "SHOE-004", "relevance": 1, "reason": "Lightweight but road-focused"},
+        {"product_id": "SHOE-002", "relevance": 1, "reason": "Responsive but minimal trail capability"}
+      ]
+    }
+  ]
+}

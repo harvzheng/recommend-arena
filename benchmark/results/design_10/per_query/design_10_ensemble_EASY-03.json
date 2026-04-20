@@ -1,0 +1,170 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.2022,
+    "mrr": 0.1111,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 22.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7158772349357605,
+      "explanation": "Ranked here because: vector similarity (+0.27), BM25 relevance (+0.26), attribute sentiment (+0.18), avg rating (+0.17)",
+      "matched_attributes": {
+        "vector similarity": 0.2686888873577118,
+        "BM25 relevance": 0.2565460205078125,
+        "attribute sentiment": 0.18366780877113342,
+        "avg rating": 0.17029595375061035,
+        "attribute match rate": 0.03446190804243088,
+        "review count": 0.010192138142883778
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7113149166107178,
+      "explanation": "Ranked here because: attribute sentiment (+0.36), BM25 relevance (+0.25), avg rating (+0.19), vector similarity (+0.10)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3556113839149475,
+        "BM25 relevance": 0.25481584668159485,
+        "avg rating": 0.19143447279930115,
+        "vector similarity": 0.10230494290590286,
+        "attribute coverage": 0.03873925283551216
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6640726327896118,
+      "explanation": "Ranked here because: vector similarity (+0.22), BM25 relevance (+0.20), avg rating (+0.18), attribute sentiment (+0.09)",
+      "matched_attributes": {
+        "vector similarity": 0.21764567494392395,
+        "BM25 relevance": 0.20117218792438507,
+        "avg rating": 0.18366315960884094,
+        "attribute sentiment": 0.09032117575407028,
+        "review count": 0.010286929085850716
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6559265851974487,
+      "explanation": "Ranked here because: attribute sentiment (+0.36), BM25 relevance (+0.29), vector similarity (+0.11), review count (-0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3581557273864746,
+        "BM25 relevance": 0.2938714325428009,
+        "vector similarity": 0.11279956251382828
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6393420696258545,
+      "explanation": "Ranked here because: BM25 relevance (+0.30), avg rating (+0.19), vector similarity (+0.07), attribute sentiment (+0.02)",
+      "matched_attributes": {
+        "BM25 relevance": 0.2986283004283905,
+        "avg rating": 0.18983739614486694,
+        "vector similarity": 0.06555674970149994,
+        "attribute sentiment": 0.022818665951490402
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6328516602516174,
+      "explanation": "Ranked here because: attribute sentiment (+0.48), avg rating (+0.19), vector similarity (-0.16), attribute coverage (+0.02)",
+      "matched_attributes": {
+        "attribute sentiment": 0.48041799664497375,
+        "avg rating": 0.18623554706573486,
+        "attribute coverage": 0.01901117153465748,
+        "BM25 relevance": 0.014256889931857586,
+        "attribute match rate": 0.01042854879051447
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6141816973686218,
+      "explanation": "Ranked here because: attribute sentiment (+0.26), vector similarity (+0.14), BM25 relevance (+0.08), avg rating (-0.03)",
+      "matched_attributes": {
+        "attribute sentiment": 0.2551725208759308,
+        "vector similarity": 0.14150312542915344,
+        "BM25 relevance": 0.083140529692173,
+        "attribute coverage": 0.021119272336363792,
+        "review count": 0.014962307177484035
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6134485006332397,
+      "explanation": "Ranked here because: attribute sentiment (+0.32), avg rating (+0.17), BM25 relevance (+0.05), attribute coverage (-0.02)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3206257224082947,
+        "avg rating": 0.16715377569198608,
+        "BM25 relevance": 0.046387962996959686
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6111000180244446,
+      "explanation": "Ranked here because: attribute sentiment (+0.40), vector similarity (+0.18), BM25 relevance (-0.10), avg rating (-0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3983824849128723,
+        "vector similarity": 0.1826428920030594,
+        "review count": 0.026722334325313568
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6099610924720764,
+      "explanation": "Ranked here because: attribute sentiment (+0.25), avg rating (+0.17), BM25 relevance (+0.12), attribute coverage (-0.08)",
+      "matched_attributes": {
+        "attribute sentiment": 0.2508074939250946,
+        "avg rating": 0.17082135379314423,
+        "BM25 relevance": 0.11912304908037186,
+        "review count": 0.03791030868887901,
+        "attribute match rate": 0.012096995487809181
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

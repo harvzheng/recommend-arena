@@ -1,0 +1,79 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7121,
+    "ndcg_10": 0.7121,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 6552.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 1.0,
+      "explanation": "Nordica Enforcer 100 excels in: stability_at_speed, playfulness. Solid on: forgiveness. Review: \"The titanal makes it damp and stable at speed.\" Review: \"Good stability at moderate to high speeds.\" Review: \"Not punishing.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.845,
+        "forgiveness": 0.68,
+        "playfulness": 0.72
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.1227,
+      "explanation": "Elan Ripstick 96 excels in: forgiveness, playfulness. Solid on: stability_at_speed. Review: \"Not as stable as full titanal skis at speed but lighter and more maneuverable.\" Review: \"Forgiving enough that I'm not scared but capable enough to push me.\" Review: \"I only ski one week per year and need one ski for everything.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.6,
+        "forgiveness": 0.78,
+        "playfulness": 0.75
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.0,
+      "explanation": "Nordica Santa Ana 98 excels in: stability_at_speed, forgiveness. Solid on: playfulness. Review: \"Stability is good, playfulness is moderate.\" Review: \"still damp, stable, and versatile.\" Review: \"Handles everything I encounter without being too demanding.\"",
+      "matched_attributes": {
+        "stability_at_speed": 0.74,
+        "forgiveness": 0.74,
+        "playfulness": 0.44
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

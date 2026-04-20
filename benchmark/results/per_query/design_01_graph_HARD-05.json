@@ -1,0 +1,153 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3629,
+    "ndcg_10": 0.5867,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 4307.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 1.0,
+      "explanation": "Blizzard Brahma 88 strongly matches on: powder_float, versatility. Weak match on: stiffness. Review: \"Stable at speed, doesn't wander.\" Review: \"Wide enough for off-piste\" Review: \"struggles only in deep powder\"",
+      "matched_attributes": {
+        "stiffness": 0.135,
+        "powder_float": 0.711875,
+        "versatility": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8557,
+      "explanation": "Nordica Santa Ana 98 strongly matches on: versatility. Moderate match on: stiffness. Weak match on: powder_float. Review: \"enough float for our wetter powder\" Review: \"floaty enough for powder\" Review: \"very versatile ski\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "powder_float": 0.2104166666666667,
+        "versatility": 0.9625
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5535,
+      "explanation": "Fischer RC One 82 GT strongly matches on: versatility. Moderate match on: powder_float. Weak match on: stiffness. Review: \"Stiff enough for aggressive skiing\" Review: \"incredible stiffness for all-day piste skiing\" Review: \"The tip rocker helps in soft snow but it's really a piste ski.\"",
+      "matched_attributes": {
+        "stiffness": 0.11750000000000005,
+        "powder_float": 0.4643333333333333,
+        "versatility": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.525,
+      "explanation": "Armada ARV 106 strongly matches on: versatility. Moderate match on: stiffness. Weak match on: powder_float. Review: \"floats in powder\" Review: \"handles powder better than narrow park skis\" Review: \"encourages creativity, on hardpack groomers it's not inspiring but is tolerable\"",
+      "matched_attributes": {
+        "stiffness": 0.5555555555555556,
+        "powder_float": 0.13762500000000005,
+        "versatility": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.4927,
+      "explanation": "Moderate match on: stiffness, powder_float. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\" Review: \"Wide enough for light powder\"",
+      "matched_attributes": {
+        "stiffness": 0.35208333333333336,
+        "powder_float": 0.49654166666666666
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4896,
+      "explanation": "Nordica Enforcer 100 strongly matches on: versatility. Moderate match on: powder_float. Weak match on: stiffness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"100mm waist gives you enough float for powder days\"",
+      "matched_attributes": {
+        "stiffness": 0.13500000000000006,
+        "powder_float": 0.3375,
+        "versatility": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.4049,
+      "explanation": "Salomon QST 106 strongly matches on: versatility. Weak match on: stiffness, powder_float. Review: \"not as stable as heavier chargers\" Review: \"Floats beautifully in powder at 106mm\" Review: \"Good float in powder\"",
+      "matched_attributes": {
+        "stiffness": 0.2733333333333333,
+        "powder_float": 0.21716666666666667,
+        "versatility": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.2942,
+      "explanation": "Dynastar M-Free 108 strongly matches on: versatility. Weak match on: stiffness, powder_float. Review: \"incredibly stiff\" Review: \"well-balanced between float and grip\" Review: \"Floats well at 108mm\"",
+      "matched_attributes": {
+        "stiffness": 0.15250000000000002,
+        "powder_float": 0.19966666666666671,
+        "versatility": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.1727,
+      "explanation": "Moderate match on: powder_float. Weak match on: stiffness. Review: \"incredibly stiff and powerful\" Review: \"Stiff and damp from the titanal construction\" Review: \"Float in powder is limited but acceptable for light days.\"",
+      "matched_attributes": {
+        "stiffness": 0.10000000000000003,
+        "powder_float": 0.47125
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.0,
+      "explanation": "Moderate match on: stiffness. Weak match on: powder_float. Review: \"floats well in powder\" Review: \"Good float in powder\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "powder_float": 0.2505
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

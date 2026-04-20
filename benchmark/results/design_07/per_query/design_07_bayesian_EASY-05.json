@@ -1,0 +1,146 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2793,
+    "ndcg_10": 0.5066,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 1966.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 1.0,
+      "explanation": "Recommended because P(all-mountain) = 0.64 (from 8/8 reviews), P(moderate) = 0.75 (from 5/5 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.6429,
+        "dampness": 0.75
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8931,
+      "explanation": "Recommended because P(all-mountain) = 0.53 (from 7/9 reviews), P(moderate) = 0.71 (from 4/4 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "terrain": 0.5333,
+        "dampness": 0.7143
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8721,
+      "explanation": "Recommended because P(all-mountain) = 0.54 (from 6/7 reviews), P(moderate) = 0.67 (from 3/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.5385,
+        "dampness": 0.6667
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.8237,
+      "explanation": "Recommended because P(all-mountain) = 0.50 (from 6/8 reviews), P(moderate) = 0.62 (from 4/5 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.5,
+        "dampness": 0.625
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7019,
+      "explanation": "Recommended because P(all-mountain) = 0.29 (from 3/8 reviews), P(moderate) = 0.71 (from 4/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.2857,
+        "dampness": 0.7143
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6613,
+      "explanation": "Recommended because P(all-mountain) = 0.67 (from 9/9 reviews), P(moderate) = 0.22 (from 1/6 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "terrain": 0.6667,
+        "dampness": 0.2222
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6165,
+      "explanation": "Recommended because P(all-mountain) = 0.60 (from 8/9 reviews), P(moderate) = 0.18 (from 1/8 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "terrain": 0.6,
+        "dampness": 0.1818
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6111,
+      "explanation": "Recommended because P(all-mountain) = 0.21 (from 2/8 reviews), P(moderate) = 0.55 (from 5/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.2143,
+        "dampness": 0.5455
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6013,
+      "explanation": "Recommended because P(all-mountain) = 0.21 (from 2/8 reviews), P(moderate) = 0.50 (from 4/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.2143,
+        "dampness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5916,
+      "explanation": "Recommended because P(all-mountain) = 0.14 (from 1/8 reviews), P(moderate) = 0.71 (from 4/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "terrain": 0.1429,
+        "dampness": 0.7143
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

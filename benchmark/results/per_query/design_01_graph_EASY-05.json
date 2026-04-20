@@ -1,0 +1,146 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.469,
+    "ndcg_10": 0.469,
+    "mrr": 0.2,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 3013.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 1.0,
+      "explanation": "Blizzard Brahma 88 strongly matches on: damp. Weak match on: stiffness. Review: \"Stable at speed, doesn't wander.\" Review: \"Incredibly damp \u2014 smoothest ride under 90mm\" Review: \"titanal construction gives it dampness that rivals heavier skis\"",
+      "matched_attributes": {
+        "stiffness": 0.135,
+        "damp": 0.9333333333333333
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.9536,
+      "explanation": "Salomon QST 106 strongly matches on: damp. Weak match on: stiffness. Review: \"not as stable as heavier chargers\" Review: \"damp but lively feel\" Review: \"flax adds natural dampness\"",
+      "matched_attributes": {
+        "stiffness": 0.2733333333333333,
+        "damp": 0.869375
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6115,
+      "explanation": "Salomon Stance 90 strongly matches on: damp. Weak match on: stiffness. Review: \"incredibly stiff and powerful\" Review: \"Stiff and damp from the titanal construction\" Review: \"Titanal construction makes it damp\"",
+      "matched_attributes": {
+        "stiffness": 0.10000000000000003,
+        "damp": 0.895625
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5811,
+      "explanation": "Fischer RC One 82 GT strongly matches on: damp. Weak match on: stiffness. Review: \"Stiff enough for aggressive skiing\" Review: \"incredible stiffness for all-day piste skiing\" Review: \"Titanal construction gives good dampness and edge grip\"",
+      "matched_attributes": {
+        "stiffness": 0.11750000000000005,
+        "damp": 0.8711249999999999
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4534,
+      "explanation": "Nordica Enforcer 100 strongly matches on: damp. Weak match on: stiffness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"titanal makes it damp\"",
+      "matched_attributes": {
+        "stiffness": 0.13500000000000006,
+        "damp": 0.9041666666666666
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.3936,
+      "explanation": "Blizzard Rustler 10 strongly matches on: damp. Moderate match on: stiffness. Review: \"land softly\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "damp": 0.8666666666666667
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.3051,
+      "explanation": "Moderate match on: stiffness, damp.",
+      "matched_attributes": {
+        "stiffness": 0.5555555555555556,
+        "damp": 0.4444444444444444
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.2566,
+      "explanation": "Dynastar M-Free 108 strongly matches on: damp. Weak match on: stiffness. Review: \"incredibly stiff\" Review: \"Dampness is good\"",
+      "matched_attributes": {
+        "stiffness": 0.15250000000000002,
+        "damp": 0.8825
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.0999,
+      "explanation": "Moderate match on: stiffness, damp. Review: \"dampness is moderate \u2014 you'll feel chop more than with titanal skis\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "damp": 0.3416666666666667
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0,
+      "explanation": "Moderate match on: stiffness, damp. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\" Review: \"Edge grip is good but not outstanding. Not as damp as heavier titanal skis.\"",
+      "matched_attributes": {
+        "stiffness": 0.35208333333333336,
+        "damp": 0.35916666666666663
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

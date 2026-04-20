@@ -1,0 +1,185 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1317,
+    "mrr": 0.1,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.7,
+    "latency_ms": 678.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 1.0,
+      "explanation": "Matched on 9 attribute(s) from 5 review passage(s). Top evidence: \"Incredible edge grip. The Blade lives up to its name \u2014 on hardpack it cuts like a knife. Stiff flex, stable at speed, da...\"",
+      "matched_attributes": {
+        "stiffness": 0.6376,
+        "stability": 0.653,
+        "dampness": 0.653,
+        "speed": 0.6376,
+        "grip": 0.6376,
+        "comfort": 0.653,
+        "playfulness": 0.5726,
+        "turn_quality": 0.5726,
+        "forgiveness": 0.6872
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7938,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"The 66mm waist means you're edge to edge in milliseconds. Pure on-piste performance....\"",
+      "matched_attributes": {
+        "grip": 0.6067,
+        "speed": 0.5688,
+        "stiffness": 0.6806,
+        "forgiveness": 0.6806
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7666,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"My dream carving ski. The 72mm waist transitions edge to edge beautifully. Holds on ice better than anything short of a ...\"",
+      "matched_attributes": {
+        "grip": 0.6753,
+        "turn_quality": 0.7082,
+        "stiffness": 0.6521,
+        "dampness": 0.6521,
+        "comfort": 0.6424,
+        "forgiveness": 0.6618
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6563,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Titanal construction gives good dampness and edge grip. Stiff enough for aggressive skiing. The tip rocker helps in soft...\"",
+      "matched_attributes": {
+        "stiffness": 0.7262,
+        "dampness": 0.7294,
+        "grip": 0.7294,
+        "stability": 0.7311,
+        "turn_quality": 0.7485,
+        "speed": 0.7137,
+        "precision": 0.7137
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.5577,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Love this on the ice coast. The camber profile and titanal construction give you the edge grip you need on hard snow. Da...\"",
+      "matched_attributes": {
+        "stability": 0.6845,
+        "dampness": 0.6845,
+        "grip": 0.6812,
+        "stiffness": 0.6795,
+        "speed": 0.7572
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.544,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"The Brahma's edge grip on hardpack is second to none in the all-mountain category. The double titanal layers create a da...\"",
+      "matched_attributes": {
+        "dampness": 0.7096,
+        "grip": 0.7096,
+        "versatility": 0.7096,
+        "turn_quality": 0.6962,
+        "float": 0.6534,
+        "stiffness": 0.6693,
+        "forgiveness": 0.6693
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5429,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"On the East Coast, edge grip is everything and the Stance 90 delivers. The camber profile with just tip rocker means exc...\"",
+      "matched_attributes": {
+        "stability": 0.6585,
+        "dampness": 0.6585,
+        "grip": 0.6818,
+        "speed": 0.6912,
+        "versatility": 0.6912,
+        "turn_quality": 0.6515,
+        "weight": 0.6119
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.4526,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full ca...\"",
+      "matched_attributes": {
+        "stability": 0.7015,
+        "grip": 0.6729,
+        "stiffness": 0.6442,
+        "playfulness": 0.6442
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.4444,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Bought these after lessons and they're great for practicing. Soft enough to be friendly, good enough edge grip for basic...\"",
+      "matched_attributes": {
+        "stiffness": 0.6422,
+        "grip": 0.674,
+        "forgiveness": 0.6422,
+        "turn_quality": 0.674,
+        "weight": 0.7375,
+        "float": 0.7375
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.4428,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"This ski laughs at ice. The edge grip from the titanal construction and camber profile is insane. I've never felt more s...\"",
+      "matched_attributes": {
+        "grip": 0.7298,
+        "stability": 0.6873,
+        "speed": 0.6873,
+        "weight": 0.6292
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

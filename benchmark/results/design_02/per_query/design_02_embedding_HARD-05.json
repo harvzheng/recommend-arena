@@ -1,0 +1,185 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1518,
+    "mrr": 0.1429,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.2,
+    "latency_ms": 697.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 1.0,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"If you tour primarily for powder, this is the one....\"",
+      "matched_attributes": {
+        "float": 0.6329,
+        "stiffness": 0.6427,
+        "grip": 0.6427,
+        "weight": 0.6444
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.8274,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Excellent powder ski but I wish it had a bit more stability at speed. In deep snow it's magical \u2014 effortless float, grea...\"",
+      "matched_attributes": {
+        "stability": 0.6827,
+        "speed": 0.6827,
+        "playfulness": 0.6827,
+        "float": 0.6715,
+        "dampness": 0.6036,
+        "stiffness": 0.7282,
+        "forgiveness": 0.7282
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7399,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Edge grip is fine for linking turns on harder snow between powder stashes....\"",
+      "matched_attributes": {
+        "grip": 0.6646,
+        "float": 0.6815,
+        "turn_quality": 0.6646,
+        "dampness": 0.6377,
+        "playfulness": 0.6377,
+        "comfort": 0.6377,
+        "versatility": 0.7422
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7365,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The 108mm waist handles powder well. Edge grip is decent \u2014 not a carving ski but holds on traverses. Weight is moderate,...\"",
+      "matched_attributes": {
+        "weight": 0.6779,
+        "grip": 0.6779,
+        "float": 0.654,
+        "turn_quality": 0.6779,
+        "playfulness": 0.642,
+        "speed": 0.6203
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7354,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"Float in powder is a bonus \u2014 many park skis sink....\"",
+      "matched_attributes": {
+        "float": 0.6467,
+        "stiffness": 0.6741,
+        "grip": 0.5929,
+        "playfulness": 0.5929
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7342,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The 106mm waist handles powder well. Edge grip is adequate. Dampness is moderate \u2014 you'll feel chop more than with titan...\"",
+      "matched_attributes": {
+        "dampness": 0.6581,
+        "grip": 0.6581,
+        "float": 0.6355,
+        "stability": 0.6242,
+        "speed": 0.6615,
+        "playfulness": 0.6615
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6824,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"Decent float in powder. Not a specialist in anything but competent everywhere....\"",
+      "matched_attributes": {
+        "float": 0.6301,
+        "stability": 0.6852,
+        "grip": 0.6852
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6653,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Float in powder is limited but acceptable for light days....\"",
+      "matched_attributes": {
+        "weight": 0.6081,
+        "versatility": 0.6452,
+        "float": 0.6452,
+        "stiffness": 0.663,
+        "dampness": 0.663,
+        "grip": 0.663,
+        "turn_quality": 0.7194
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6443,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Not a ski for powder or ice but fine for regular resort conditions....\"",
+      "matched_attributes": {
+        "float": 0.7877,
+        "stiffness": 0.6098,
+        "weight": 0.6319,
+        "dampness": 0.6098,
+        "grip": 0.6319,
+        "forgiveness": 0.6098,
+        "turn_quality": 0.6539
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6334,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"The 96mm waist handles powder adequately. Stiff, heavy, powerful....\"",
+      "matched_attributes": {
+        "stiffness": 0.5811,
+        "weight": 0.5811,
+        "float": 0.6714,
+        "dampness": 0.6988,
+        "grip": 0.6988,
+        "turn_quality": 0.7616,
+        "stability": 0.6361,
+        "versatility": 0.6361
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

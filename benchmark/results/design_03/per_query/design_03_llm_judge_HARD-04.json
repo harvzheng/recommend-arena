@@ -1,0 +1,173 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7103,
+    "ndcg_10": 0.7754,
+    "mrr": 0.5,
+    "attribute_precision": 0.19,
+    "attribute_recall": 0.2,
+    "attribute_f1": 0.1949,
+    "explanation_score": 4.9,
+    "latency_ms": 93356.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.8,
+      "explanation": "The K2 Disruption 78C matches well with the user's query as it is a lightweight ski with good edge grip and stability for groomed runs. However, it may be less forgiving compared to some other skis, which could be seen as a gap in terms of skill level alignment.",
+      "matched_attributes": {
+        "lightweight": 1.0,
+        "edge_grip": 1.0,
+        "reliability_on_groomed_terrain": 1.0,
+        "forgiving": 0.30000000000000004
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8,
+      "explanation": "The Volkl Deacon 76 is designed for groomed runs and has good edge grip and stability, which aligns well with the user's query. However, it does not offer the lightest weight in its category, as the product profile indicates a specific focus on precision, stability, and edge grip rather than being the lightest ski.",
+      "matched_attributes": {
+        "Stability": 1.0,
+        "Edge Grip": 1.0,
+        "Groomer Performance": 1.0,
+        "Lightness": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.8,
+      "explanation": "The Fischer RC One 82 GT matches well with the user's query as it provides good edge grip and stability suitable for groomed runs, has a stiffness that aligns with moderate to forgiving user-friendly conditions, and offers all-terrain capability. However, its lack of specific information on weight (though typically considered) and dampness means it is not perfect in those areas.",
+      "matched_attributes": {
+        "flex/stiffness": 0.9,
+        "terrain suitability": 1.0,
+        "width appropriateness": 0.8,
+        "skill level alignment": 0.75,
+        "playfulness vs stability": 0.6,
+        "weight": 0.8,
+        "dampness": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8,
+      "explanation": "The Nordica Santa Ana 98 matches the user's preferences well in terms of weight (light), edge grip, and stability for groomed runs, but may not offer as much playfulness without compromising stability significantly.",
+      "matched_attributes": {
+        "width": 0.7,
+        "stability": 0.9,
+        "edge_grip": 1.0,
+        "flex/stiffness": 0.6,
+        "playfulness": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i excels in edge hold and stability for groomed runs, which aligns well with the user's query. However, it is not designed as a light-weight ski, making its weight a significant gap compared to what the user is looking for.",
+      "matched_attributes": {
+        "edge_hold": 0.9,
+        "stability": 0.85,
+        "light_weight": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.7,
+      "explanation": "The Head Easy Joy SLR has a soft flexibility which matches the user's preference for 'lightweight and good edge grip'. It is noted as reliable on groomed runs, aligning with the user query about stability for such terrain. However, its lack of edge grip on ice (none) does not meet the criteria, which could be seen as a significant gap.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain_suitability": 0.7,
+        "weight": 1.0,
+        "user_friendly_for_beginners": 0.9,
+        "edge_grasp": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca has a light weight and good terrain coverage suitable for groomed runs. However, it is described as having soft flex which may not provide the same edge grip and stability as heavier or stiffer skis would for more demanding conditions. The product also lacks specific mention of edge grip strength.",
+      "matched_attributes": {
+        "weight": 0.8,
+        "terrain_coverage": 0.9,
+        "flexibility/stiffness": 0.1,
+        "edge_grip": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.7,
+      "explanation": "The Line Blade has good edge grip and stability suitable for groomed runs, but it does not meet the requirement of being lightest in weight. The flex/stiffness is adequate for carving but may not be as stiff as what some users might prefer for extremely lightweight performance.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain_suitability": 0.9,
+        "width_appropriateness": 0.6,
+        "weight": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti has a stiff flex and damp construction suitable for good edge grip and stability on groomed runs, which aligns well with the user's preference. However, its poor floatability in powder and not being ideal for intermediates are significant gaps as it does not fully meet all aspects of the user query.",
+      "matched_attributes": {
+        "flex/stiffness": 0.9,
+        "terrain_comfort": 0.3,
+        "floatability in powder": 0.19999999999999996,
+        "suitability for intermediates": 0.25,
+        "edge grip/stability on hardpack traverses": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is identified as a versatile freeride ski with good floatation and grip performance suitable for groomed runs, aligning well with the user's preferences for a lightest possible option. However, it does not explicitly emphasize edge grip or stability in variable conditions which are key points of interest in this query.",
+      "matched_attributes": {
+        "freeride_ability": 0.9,
+        "floatation": 0.85,
+        "grip_performance": 0.7,
+        "stability_in_variable_conditions": 0.30000000000000004,
+        "playfulness_vs_stability": 0.6,
+        "edge_grip": 0.15000000000000002
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

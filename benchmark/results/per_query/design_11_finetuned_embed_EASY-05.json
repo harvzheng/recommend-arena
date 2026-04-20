@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "EASY-05",
+  "query_text": "damp stable all-mountain ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.6301,
+    "ndcg_10": 0.7924,
+    "mrr": 0.3333,
+    "attribute_precision": 0.2857,
+    "attribute_recall": 0.6667,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 13.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 1.0,
+      "explanation": "Strong match on edge_grip (15%), damp (15%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.154,
+        "damp": 0.153,
+        "stability_at_speed": 0.153,
+        "stiffness": 0.152,
+        "powder_float": 0.136,
+        "playfulness": 0.132,
+        "forgiveness": 0.12
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.9361,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "stiffness": 0.154,
+        "powder_float": 0.135,
+        "playfulness": 0.129,
+        "forgiveness": 0.117
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.9172,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "stiffness": 0.154,
+        "powder_float": 0.135,
+        "playfulness": 0.129,
+        "forgiveness": 0.117
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.8285,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stiffness (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.159,
+        "damp": 0.157,
+        "stiffness": 0.157,
+        "stability_at_speed": 0.156,
+        "powder_float": 0.132,
+        "playfulness": 0.125,
+        "forgiveness": 0.113
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7436,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stiffness (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.157,
+        "damp": 0.156,
+        "stiffness": 0.155,
+        "stability_at_speed": 0.155,
+        "powder_float": 0.133,
+        "playfulness": 0.127,
+        "forgiveness": 0.117
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7261,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stiffness (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.158,
+        "damp": 0.157,
+        "stiffness": 0.156,
+        "stability_at_speed": 0.156,
+        "powder_float": 0.133,
+        "playfulness": 0.126,
+        "forgiveness": 0.114
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.725,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stiffness (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.159,
+        "damp": 0.157,
+        "stiffness": 0.156,
+        "stability_at_speed": 0.156,
+        "powder_float": 0.132,
+        "playfulness": 0.126,
+        "forgiveness": 0.115
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7108,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stiffness (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.159,
+        "damp": 0.157,
+        "stiffness": 0.157,
+        "stability_at_speed": 0.156,
+        "powder_float": 0.132,
+        "playfulness": 0.125,
+        "forgiveness": 0.113
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.688,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stiffness (16%). Also relevant: stability_at_speed, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stiffness": 0.155,
+        "stability_at_speed": 0.155,
+        "powder_float": 0.136,
+        "playfulness": 0.128,
+        "forgiveness": 0.115
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6599,
+      "explanation": "Strong match on edge_grip (16%), damp (16%), stability_at_speed (15%). Also relevant: stiffness, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "edge_grip": 0.156,
+        "damp": 0.155,
+        "stability_at_speed": 0.154,
+        "stiffness": 0.154,
+        "powder_float": 0.134,
+        "playfulness": 0.129,
+        "forgiveness": 0.118
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Mantra M6, dampness 9, stability 9, all-mountain expert"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Enforcer 100, dampness 8, stability 8, all-mountain"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 2,
+      "reason": "Brahma 88, dampness 8, stability 8, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Santa Ana 98, dampness 7, stability 7, all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stance 90, dampness 7, stability 7, all-mountain frontside"
+    }
+  ]
+}

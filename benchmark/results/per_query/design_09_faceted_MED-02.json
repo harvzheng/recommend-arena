@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.1676,
+    "mrr": 0.1,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.5,
+    "latency_ms": 14.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6499995315119502,
+      "explanation": "Line Blade. The Line Blade is a hidden gem. Maple and metal construction gives it a unique combo of liveliness and dampness. Edge grip is outstanding ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6499994029517926,
+      "explanation": "Atomic Redster S9i. Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very stiff, no",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6499993307335027,
+      "explanation": "Head Easy Joy SLR. Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turning almost a",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6499993269730197,
+      "explanation": "Head Supershape e-Speed. The Supershape line is the gold standard for expert carving. The e-Speed takes it up a notch with the electronic dampening. I",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6499993007468898,
+      "explanation": "Volkl Deacon 76. Solid frontside ski with that Volkl precision. The titanal layers give it real dampness and stability. Edge grip on hardpack is excel",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6499992991700565,
+      "explanation": "Blizzard Brahma 88. The Brahma 88 is Blizzard's best-kept secret. At 88mm with titanal construction, it carves groomers with authority while having en",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6499992649057937,
+      "explanation": "Atomic Redster G9. Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full camber profil",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6499991644006671,
+      "explanation": "Fischer RC One 82 GT. Solid advanced frontside ski. The 82mm waist is wide enough for some versatility but narrow enough for real carving. Titanal con",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.649999015720308,
+      "explanation": "Salomon Stance 90. The Stance 90 is Salomon's best-kept secret. At 90mm waist with camber and tip rocker, it carves groomers beautifully while having ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6499990125933071,
+      "explanation": "DPS Pagoda Tour 112 RP. The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The carbon",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

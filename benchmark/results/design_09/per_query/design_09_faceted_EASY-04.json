@@ -1,0 +1,156 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1035,
+    "ndcg_10": 0.165,
+    "mrr": 0.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.3333,
+    "explanation_score": 5.0,
+    "latency_ms": 3731.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.9147056514704943,
+      "explanation": "stiffness=0.20 (match: 100%); has_rocker=1 (match: 100%); playfulness=0.70 (match: 82%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "playfulness": 0.8235294117647058
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.8982349954463791,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.80 (match: 94%); stiffness=0.50 (match: 80%)",
+      "matched_attributes": {
+        "stiffness": 0.8,
+        "has_rocker": 1.0,
+        "playfulness": 0.9411764705882354
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.891176230104771,
+      "explanation": "stiffness=0.40 (match: 100%); has_rocker=1 (match: 100%); playfulness=0.60 (match: 71%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "playfulness": 0.7058823529411765
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.8911762096781614,
+      "explanation": "stiffness=0.30 (match: 100%); has_rocker=1 (match: 100%); playfulness=0.60 (match: 71%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "playfulness": 0.7058823529411765
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8715683327049358,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.80 (match: 94%); stiffness=0.60 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 0.6666666666666667,
+        "has_rocker": 1.0,
+        "playfulness": 0.9411764705882354
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.871568323022994,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.80 (match: 94%); stiffness=0.60 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 0.6666666666666667,
+        "has_rocker": 1.0,
+        "playfulness": 0.9411764705882354
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8525207055620562,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.80 (match: 94%); stiffness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.5714285714285715,
+        "has_rocker": 1.0,
+        "playfulness": 0.9411764705882354
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8480389199074854,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.70 (match: 82%); stiffness=0.60 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 0.6666666666666667,
+        "has_rocker": 1.0,
+        "playfulness": 0.8235294117647058
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8480389146300756,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.70 (match: 82%); stiffness=0.60 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 0.6666666666666667,
+        "has_rocker": 1.0,
+        "playfulness": 0.8235294117647058
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8289912935520614,
+      "explanation": "has_rocker=1 (match: 100%); playfulness=0.70 (match: 82%); stiffness=0.70 (match: 57%)",
+      "matched_attributes": {
+        "stiffness": 0.5714285714285715,
+        "has_rocker": 1.0,
+        "playfulness": 0.8235294117647058
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

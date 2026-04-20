@@ -1,0 +1,163 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4264,
+    "ndcg_10": 0.4264,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0333,
+    "attribute_recall": 0.05,
+    "attribute_f1": 0.04,
+    "explanation_score": 4.9,
+    "latency_ms": 89172.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.9,
+      "explanation": "The Blizzard Rustler 10 is a powder ski with excellent powder floatation that matches the user's query well. It has medium-soft flex which allows for good handling in powdery conditions and playful, buttering characteristics suitable for users who enjoy playing on the mountain.",
+      "matched_attributes": {
+        "powder_float": 1.0,
+        "playfulness": 0.9,
+        "stability": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.9,
+      "explanation": "The Salomon QST 106 has excellent powder floatability (described as beautifully floats in powder), which directly matches the user's query of 'powder ski with good float'. The other attributes align well, but it is this specific attribute that most closely fits the user's preference.",
+      "matched_attributes": {
+        "Floatability in Powder": 1.0,
+        "Rocker-camber-rocker Profile": 0.8,
+        "Versatility": 0.6,
+        "Edge Grip": 0.4,
+        "Playfulness vs Stability": 0.5,
+        "Flex/Stiffness Match": 0.8,
+        "Weight": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.8,
+      "explanation": "The Black Crows Atris is well-suited for a user looking for a powder ski with good floatability due to its attributes in the terrain suitability and skill level alignment categories. However, it has limitations such as stability issues at higher speeds and poor edge grip on hard snow which are not aligned with the user's preference.",
+      "matched_attributes": {
+        "Floatability": 0.9,
+        "Playfulness": 0.8,
+        "Stability_at_speed": 0.30000000000000004,
+        "Edge_grasp_on_hard_snow": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8,
+      "explanation": "The Dynastar M-Free 108 has good floatation and is suitable for powder skiing. It also offers good grip performance and playfulness, which aligns well with the user's query about a 'powder ski with good float'. The product's versatility in various conditions further supports its suitability.",
+      "matched_attributes": {
+        "floatation": 0.8,
+        "playfulness": 1.0,
+        "stability_in_variable_conditions": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8,
+      "explanation": "The Moment Wildcat 108 has excellent floatability in powder thanks to its rocker profile and 108mm width, which aligns well with the user's query for a 'powder ski'. However, while it offers good edge grip and playful but stable performance, it lacks dedicated carving abilities at very high speeds.",
+      "matched_attributes": {
+        "floatability": 1.0,
+        "playfulness vs stability": 0.9,
+        "edge grip for carving (dedicated powder board)": 0.19999999999999996,
+        "very high speed edge grip": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8,
+      "explanation": "The Faction Dictator 3.0 has good floatation in powder which aligns well with the user's query of a 'powder ski with good float'. However, the edge grip quality and stability at speed are areas where it may not fully meet the user\u2019s expectations, indicating moderate match strength for these attributes.",
+      "matched_attributes": {
+        "floatation_in_powder": 1.0,
+        "suitability_for": 0.8,
+        "edge_performance": 0.30000000000000004,
+        "terrain_suitability_off_piste_switch": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7,
+      "explanation": "The Rossignol Black Ops Sender Ti has good floatation suitable for powder skiing on 106mm waist, which aligns with the user's query of 'powder ski with good float'. However, its stiffness and heavy weight might not be ideal for all terrain types and may not match the user\u2019s preference for a playful yet stable ski.",
+      "matched_attributes": {
+        "floatation": 0.8,
+        "terrain_type": 0.5,
+        "flexibility/stiffness": 0.30000000000000004,
+        "playfulness/skill level alignment": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7,
+      "explanation": "The Fischer RC One 82 GT is suitable for powder skiing as it mentions good conditions for soft and semi-firm snow. However, the ski's terrain suitability includes hard-pack and groomed trails, which may not perfectly align with 'powder only' preferences.",
+      "matched_attributes": {
+        "terrain": 0.9,
+        "snow_conditions": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 is suitable for powder skiing due to its good floatability and dampness properties. However, the product's profile suggests it performs well on variable groomers rather than exclusively in pure powder conditions.",
+      "matched_attributes": {
+        "floatability": 0.7,
+        "stability for lighter skiers": 0.6,
+        "terrain suitability (pure powder)": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6,
+      "explanation": "The K2 Disruption 78C is a forgiving and lightweight ski suitable for powder skiing on groomed terrain, which aligns well with the user's query of 'powder ski with good float'. However, it may not have enough aggressive features or stiffness to handle very powdery conditions effectively.",
+      "matched_attributes": {
+        "forgiving": 1.0,
+        "lightweight": 1.0,
+        "playfulness vs stability": 0.5
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

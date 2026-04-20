@@ -1,0 +1,167 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "HARD-04",
+  "query_text": "the lightest ski that still has good edge grip and stability for groomed runs",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3914,
+    "ndcg_10": 0.4529,
+    "mrr": 0.25,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 21.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.687682032585144,
+      "explanation": "Ranked here because: attribute sentiment (+0.31), vector similarity (+0.26), avg rating (+0.23), review count (+0.07)",
+      "matched_attributes": {
+        "attribute sentiment": 0.3112269341945648,
+        "vector similarity": 0.2564888596534729,
+        "avg rating": 0.2301817387342453,
+        "review count": 0.06536056101322174
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6518924236297607,
+      "explanation": "Ranked here because: vector similarity (+0.33), avg rating (+0.19), review count (+0.08), attribute sentiment (+0.04)",
+      "matched_attributes": {
+        "vector similarity": 0.32749614119529724,
+        "avg rating": 0.19109109044075012,
+        "review count": 0.0764092206954956,
+        "attribute sentiment": 0.03572535142302513,
+        "BM25 relevance": 0.02662310190498829
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.6265283226966858,
+      "explanation": "Ranked here because: attribute sentiment (+0.24), avg rating (+0.20), review count (+0.07), attribute coverage (+0.05)",
+      "matched_attributes": {
+        "attribute sentiment": 0.23629745841026306,
+        "avg rating": 0.20204190909862518,
+        "review count": 0.0669998824596405,
+        "attribute coverage": 0.052046388387680054,
+        "attribute match rate": 0.022840159013867378
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6208215355873108,
+      "explanation": "Ranked here because: vector similarity (+0.20), avg rating (+0.16), attribute sentiment (+0.07), review count (+0.07)",
+      "matched_attributes": {
+        "vector similarity": 0.19910569489002228,
+        "avg rating": 0.16279810667037964,
+        "attribute sentiment": 0.07035614550113678,
+        "review count": 0.06662160903215408,
+        "BM25 relevance": 0.028911851346492767
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6171272397041321,
+      "explanation": "Ranked here because: vector similarity (+0.30), review count (+0.08), BM25 relevance (+0.07), attribute sentiment (+0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.298406720161438,
+        "review count": 0.07820095121860504,
+        "BM25 relevance": 0.0736297070980072,
+        "attribute sentiment": 0.05073240026831627,
+        "avg rating": 0.01695827767252922
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5869943499565125,
+      "explanation": "Ranked here because: vector similarity (+0.22), review count (+0.07), avg rating (+0.02), attribute match rate (+0.02)",
+      "matched_attributes": {
+        "vector similarity": 0.22201460599899292,
+        "review count": 0.06574022769927979,
+        "avg rating": 0.022833414375782013,
+        "attribute match rate": 0.022221410647034645,
+        "BM25 relevance": 0.017074236646294594
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5204715132713318,
+      "explanation": "Ranked here because: vector similarity (+0.21), BM25 relevance (-0.14), review count (+0.07), avg rating (-0.03)",
+      "matched_attributes": {
+        "vector similarity": 0.2092752307653427,
+        "review count": 0.06610119342803955,
+        "attribute sentiment": 0.012462995015084743
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5118246674537659,
+      "explanation": "Ranked here because: BM25 relevance (-0.16), avg rating (+0.14), review count (+0.07), attribute match rate (-0.03)",
+      "matched_attributes": {
+        "avg rating": 0.14140906929969788,
+        "review count": 0.06994934380054474,
+        "attribute coverage": 0.012195754796266556
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.5106531381607056,
+      "explanation": "Ranked here because: vector similarity (+0.11), attribute sentiment (-0.10), review count (+0.04), avg rating (+0.02)",
+      "matched_attributes": {
+        "vector similarity": 0.10651465505361557,
+        "review count": 0.035575829446315765,
+        "avg rating": 0.017038479447364807
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.4871196746826172,
+      "explanation": "Ranked here because: BM25 relevance (-0.18), avg rating (+0.17), attribute sentiment (-0.12), review count (+0.06)",
+      "matched_attributes": {
+        "avg rating": 0.16862709820270538,
+        "review count": 0.06177143752574921,
+        "attribute coverage": 0.05532923713326454
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-003",
+      "relevance": 2,
+      "reason": "1350g very light, but edge grip only 5 and stability 3"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "1400g light, edge grip 5, stability 4 \u2014 trade-off"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "1550g moderate, edge grip 8, stability 7 \u2014 best balance"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 3,
+      "reason": "1580g moderate, edge grip 8, stability 8 \u2014 excellent balance"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "1650g moderate, edge grip 7, stability 6 \u2014 decent balance"
+    }
+  ]
+}

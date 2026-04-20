@@ -1,0 +1,146 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.4414,
+    "mrr": 0.1667,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 1361.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 1.0,
+      "explanation": "Recommended because P(soft) = 0.11 (from 0/4 reviews), P(beginner) = 0.25 (from 0/0 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1111,
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.9759,
+      "explanation": "Recommended because P(soft) = 0.09 (from 0/6 reviews), P(beginner) = 0.20 (from 0/1 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "skill_level": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.968,
+      "explanation": "Recommended because P(soft) = 0.09 (from 0/6 reviews), P(beginner) = 0.17 (from 0/2 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "skill_level": 0.1667
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.9623,
+      "explanation": "Recommended because P(soft) = 0.09 (from 0/6 reviews), P(beginner) = 0.14 (from 0/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "skill_level": 0.1429
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.9532,
+      "explanation": "Recommended because P(soft) = 0.08 (from 0/8 reviews), P(beginner) = 0.12 (from 0/4 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0769,
+        "skill_level": 0.125
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7496,
+      "explanation": "Recommended because P(soft) = 0.67 (from 7/7 reviews), P(beginner) = 0.56 (from 4/5 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.6667,
+        "skill_level": 0.5556
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.3967,
+      "explanation": "Recommended because P(soft) = 0.33 (from 3/7 reviews), P(beginner) = 0.57 (from 3/3 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3333,
+        "skill_level": 0.5714
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.1396,
+      "explanation": "Recommended because P(soft) = 0.56 (from 4/4 reviews), P(beginner) = 0.12 (from 0/4 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5556,
+        "skill_level": 0.125
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.108,
+      "explanation": "Recommended because P(soft) = 0.22 (from 1/4 reviews), P(beginner) = 0.25 (from 0/0 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.2222,
+        "skill_level": 0.25
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.0557,
+      "explanation": "Recommended because P(soft) = 0.20 (from 1/5 reviews), P(beginner) = 0.17 (from 0/2 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.2,
+        "skill_level": 0.1667
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

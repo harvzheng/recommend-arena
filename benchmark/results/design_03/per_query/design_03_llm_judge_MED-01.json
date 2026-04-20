@@ -1,0 +1,175 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4453,
+    "ndcg_10": 0.5897,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0833,
+    "attribute_recall": 0.075,
+    "attribute_f1": 0.0789,
+    "explanation_score": 5.0,
+    "latency_ms": 99065.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7,
+      "explanation": "The Fischer RC One 82 GT is stiff and suitable for on-piste conditions, which matches the user's query. However, its terrain suitability includes all-terrain including groomers and hard snow, so it may be less damp than what the user prefers for softer or more varied conditions.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain": 0.7,
+        "dampness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7,
+      "explanation": "The Rossignol Black Ops Sender Ti matches the user's query on stiffness and terrain suitability, but does not align well in terms of dampness and playfulness/stability. The product is stiff and suitable for big mountain terrain, which fits the 'on-piste' context implied by the user's query.",
+      "matched_attributes": {
+        "stiff": 1.0,
+        "terrain_type": 0.8,
+        "dampness": 0.6,
+        "playfulness_vs_stability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7,
+      "explanation": "The Head Supershape e-Speed is a top-tier on-piste ski that can be stiff enough for aggressive skiing and has phenomenal edge grip and stability. However, it may not be entirely damp as the product description mentions 'dampness from the graphene sandwich', which might not provide the user's preferred level of dampness suitable for a longer ski size.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain suitability": 1.0,
+        "skill level alignment": 1.0,
+        "dampness": 0.19999999999999996,
+        "weight": 0.30000000000000004,
+        "playfulness vs stability": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6,
+      "explanation": "The K2 Mindbender 108Ti matches the user's query well in terms of stiffness and width, which are essential for on-piste skiing. However, it does not provide dampness or appropriate playfulness/stability for on-piste use, as indicated by its stiff flexibility and poor floatation.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "width": 0.9,
+        "dampness": 0.8,
+        "terrain_comfort": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6,
+      "explanation": "The Volkl Deacon 76 is described as stable and precise for groomers in the consensus summary, which aligns well with the user's preference for a stiff ski on piste. However, its dampness level is not specified and seems to be debated among reviewers. The product does not explicitly mention edge grip or playfulness vs stability.",
+      "matched_attributes": {
+        "Stiff": 0.8,
+        "On-Piste Terrain": 1.0,
+        "Length (180cm+)": 0.9,
+        "Dampness": 0.5,
+        "Edge Grip": 0.30000000000000004,
+        "Skill Level Alignment (e.g., bumps or carving)": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6,
+      "explanation": "The Atomic Redster S9i is stiff and suitable for on-piste use but lacks dampness, which could be an issue for users who prefer a more forgiving feel. It matches the stiffness and terrain suitability criteria well as per user query.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain_suitability": 0.85,
+        "dampness": 0.09999999999999998
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6,
+      "explanation": "The Black Crows Atris is described as having good floatability and playfulness in soft snow conditions, which aligns with the user's preference for damp skiing. However, it has stability issues at higher speeds and poor edge grip on hard snow, which do not match the user's query for a stiff, damp ski.",
+      "matched_attributes": {
+        "Flex/Stiffness": 0.5,
+        "Terrain Suitability": 0.3,
+        "Width Appropriateness": 0.2,
+        "Skill Level Alignment": 0.7,
+        "Weight": 0.1,
+        "Dampness": 0.9,
+        "Edge Grip": 0.8,
+        "Playfulness vs Stability": 0.2,
+        "Stability at Speed": 0.0,
+        "Edge Grip on Hard Snow": 0.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6,
+      "explanation": "The Volkl Mantra M6 is described as highly stable and damp for expert-level skiers, which aligns well with the user's query for a stiff ski that is damp on pistes. However, it does not explicitly mention playfulness or edge grip, and its suitability for all-mountain use might be too broad for very long lengths (180cm+). The product\u2019s focus on stability at the expense of other attributes such as comfort makes it less ideal for newer skiers.",
+      "matched_attributes": {
+        "stability": 1.0,
+        "damping": 1.0,
+        "terrain_suitability_on_piste": 1.0,
+        "playfulness": 0.5,
+        "edge_grip": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6,
+      "explanation": "The Atomic Redster G9 is described as highly stable and stiff, which aligns well with the user's preference for a stiff ski. However, it is not suitable for all terrain (on-piste) and has high edge grip, indicating dampness that may not be ideal for the user\u2019s query.",
+      "matched_attributes": {
+        "flexibility": 0.8,
+        "terrain_applicability": 0.1,
+        "stiffness": 0.5,
+        "dampness": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6,
+      "explanation": "The Elan Ripstick 96 is a versatile all-mountain ski that offers good grip and playfulness but not as stable at speed. The stiffness might be suitable for someone who prefers dampness rather than stability, aligning with the user's query of a stiff yet damp on-piste ski. However, it does not meet the requirement of being 180cm or longer.",
+      "matched_attributes": {
+        "Stiffness": 0.5,
+        "Dampness": 0.7,
+        "Width": 0.0,
+        "Terrain Suitability (On-Piste)": 0.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

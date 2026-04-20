@@ -1,0 +1,116 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5591,
+    "ndcg_10": 0.5591,
+    "mrr": 1.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.6667,
+    "explanation_score": 5.0,
+    "latency_ms": 4769.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 1.0,
+      "explanation": "Head Supershape e-Speed excels in: stiffness, damp. Review: \"Stiff but manageable for strong intermediates.\" Review: \"Stiff enough for aggressive skiing but not quite race-level demanding.\" Review: \"Incredibly damp \u2014 the smoothest ride on hardpack I've found.\"",
+      "matched_attributes": {
+        "stiffness": 0.845,
+        "damp": 0.95
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.8093,
+      "explanation": "K2 Mindbender 108Ti excels in: stiffness, damp. Review: \"The titanal makes it stiff and damp\" Review: \"Stiff, damp, and incredibly stable at speed.\" Review: \"elite-level dampness and stability.\"",
+      "matched_attributes": {
+        "stiffness": 0.85,
+        "damp": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7237,
+      "explanation": "Nordica Enforcer 100 excels in: stiffness, damp. Review: \"Stiff enough for experts but not punishing.\" Review: \"The stiffness and dampness are impressive for an all-mountain ski.\" Review: \"The titanal makes it damp and stable at speed.\"",
+      "matched_attributes": {
+        "stiffness": 0.79,
+        "damp": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.4815,
+      "explanation": "Salomon QST 106 excels in: damp. Solid on: stiffness. Review: \"Not as stable as heavier chargers in high-speed chop.\" Review: \"The carbon construction keeps weight down\" Review: \"Carbon and flax construction gives it a unique damp but lively feel.\"",
+      "matched_attributes": {
+        "stiffness": 0.68,
+        "damp": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.4685,
+      "explanation": "Line Blade excels in: stiffness, damp. Review: \"Stiff flex\" Review: \"stiff but not brutal\" Review: \"unique combo of liveliness and dampness.\"",
+      "matched_attributes": {
+        "stiffness": 0.845,
+        "damp": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.1547,
+      "explanation": "Dynastar M-Free 108 excels in: damp. Solid on: stiffness. Review: \"Not as stiff as the Mindbender but more playful.\" Review: \"Not as demanding as the K2 Mindbender but still rewards good technique.\" Review: \"Titanal construction gives good dampness.\"",
+      "matched_attributes": {
+        "stiffness": 0.655,
+        "damp": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0,
+      "explanation": "Solid on: stiffness, damp. Review: \"Not as damp as heavier titanal skis.\" Review: \"Not a hard charger but that's not me anyway.\" Review: \"Good at everything.\"",
+      "matched_attributes": {
+        "stiffness": 0.67,
+        "damp": 0.57
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

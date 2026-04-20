@@ -1,0 +1,57 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.403,
+    "ndcg_10": 0.403,
+    "mrr": 1.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.3333,
+    "explanation_score": 4.0,
+    "latency_ms": 1735.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.9908,
+      "explanation": "Strong match on stiffness (100%). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.88
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

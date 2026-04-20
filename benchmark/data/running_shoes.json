@@ -1,0 +1,137 @@
+{
+  "domain": "running_shoe",
+  "products": [
+    {
+      "id": "SHOE-001",
+      "name": "Nike Vomero 18",
+      "brand": "Nike",
+      "category": "max_cushion_daily",
+      "specs": {"weight_g": 283, "heel_drop_mm": 10, "stack_height_mm": 40, "surface": "road"},
+      "attributes": {"cushioning": 9, "responsiveness": 5, "stability": 6, "grip": 4, "breathability": 7, "durability": 7, "weight_feel": 5}
+    },
+    {
+      "id": "SHOE-002",
+      "name": "Nike Vaporfly 3",
+      "brand": "Nike",
+      "category": "race_carbon",
+      "specs": {"weight_g": 186, "heel_drop_mm": 8, "stack_height_mm": 40, "surface": "road"},
+      "attributes": {"cushioning": 6, "responsiveness": 10, "stability": 4, "grip": 5, "breathability": 8, "durability": 3, "weight_feel": 10}
+    },
+    {
+      "id": "SHOE-003",
+      "name": "ASICS Gel-Nimbus 26",
+      "brand": "ASICS",
+      "category": "max_cushion_daily",
+      "specs": {"weight_g": 295, "heel_drop_mm": 10, "stack_height_mm": 41, "surface": "road"},
+      "attributes": {"cushioning": 10, "responsiveness": 4, "stability": 7, "grip": 5, "breathability": 6, "durability": 8, "weight_feel": 4}
+    },
+    {
+      "id": "SHOE-004",
+      "name": "Saucony Kinvara 15",
+      "brand": "Saucony",
+      "category": "lightweight_daily",
+      "specs": {"weight_g": 215, "heel_drop_mm": 4, "stack_height_mm": 30, "surface": "road"},
+      "attributes": {"cushioning": 5, "responsiveness": 8, "stability": 5, "grip": 5, "breathability": 9, "durability": 5, "weight_feel": 9}
+    },
+    {
+      "id": "SHOE-005",
+      "name": "Brooks Ghost 16",
+      "brand": "Brooks",
+      "category": "daily_trainer",
+      "specs": {"weight_g": 270, "heel_drop_mm": 12, "stack_height_mm": 37, "surface": "road"},
+      "attributes": {"cushioning": 7, "responsiveness": 6, "stability": 7, "grip": 5, "breathability": 7, "durability": 8, "weight_feel": 6}
+    },
+    {
+      "id": "SHOE-006",
+      "name": "Salomon Speedcross 6",
+      "brand": "Salomon",
+      "category": "trail_aggressive",
+      "specs": {"weight_g": 310, "heel_drop_mm": 10, "stack_height_mm": 32, "surface": "trail"},
+      "attributes": {"cushioning": 5, "responsiveness": 6, "stability": 8, "grip": 10, "breathability": 5, "durability": 7, "weight_feel": 5}
+    },
+    {
+      "id": "SHOE-007",
+      "name": "New Balance Fresh Foam 1080v14",
+      "brand": "New Balance",
+      "category": "max_cushion_daily",
+      "specs": {"weight_g": 288, "heel_drop_mm": 6, "stack_height_mm": 39, "surface": "road"},
+      "attributes": {"cushioning": 9, "responsiveness": 5, "stability": 6, "grip": 5, "breathability": 7, "durability": 7, "weight_feel": 5}
+    },
+    {
+      "id": "SHOE-008",
+      "name": "Hoka Speedgoat 6",
+      "brand": "Hoka",
+      "category": "trail_cushion",
+      "specs": {"weight_g": 292, "heel_drop_mm": 4, "stack_height_mm": 36, "surface": "trail"},
+      "attributes": {"cushioning": 7, "responsiveness": 6, "stability": 7, "grip": 9, "breathability": 6, "durability": 7, "weight_feel": 5}
+    },
+    {
+      "id": "SHOE-009",
+      "name": "ASICS Novablast 4",
+      "brand": "ASICS",
+      "category": "bouncy_daily",
+      "specs": {"weight_g": 256, "heel_drop_mm": 8, "stack_height_mm": 37, "surface": "road"},
+      "attributes": {"cushioning": 7, "responsiveness": 8, "stability": 5, "grip": 5, "breathability": 7, "durability": 6, "weight_feel": 7}
+    },
+    {
+      "id": "SHOE-010",
+      "name": "Nike Pegasus Trail 5",
+      "brand": "Nike",
+      "category": "trail_versatile",
+      "specs": {"weight_g": 275, "heel_drop_mm": 8, "stack_height_mm": 32, "surface": "trail"},
+      "attributes": {"cushioning": 6, "responsiveness": 6, "stability": 6, "grip": 7, "breathability": 7, "durability": 6, "weight_feel": 6}
+    }
+  ],
+  "reviews": [
+    {"product_id": "SHOE-001", "reviewer": "marathon_mary", "rating": 5, "text": "Incredible cushioning for long runs. My legs feel fresh after 20-milers. The ZoomX foam is bouncy and protective. Not the lightest shoe but the comfort is unmatched for marathon training. Good for easy and long run days."},
+    {"product_id": "SHOE-001", "reviewer": "daily_runner", "rating": 4, "text": "Very cushioned and comfortable. Great for daily training and long distance. Not very responsive for speed work. The 10mm drop works well for heel strikers. Durable enough for 400+ miles."},
+    {"product_id": "SHOE-001", "reviewer": "heel_striker_hal", "rating": 5, "text": "Perfect for my heel-strike gait. The cushioning absorbs everything. Use these for marathon training exclusively. Heavy compared to racers but the protection is worth it."},
+    {"product_id": "SHOE-001", "reviewer": "ultra_runner", "rating": 4, "text": "Use these for ultra training on roads. The max cushion keeps my feet happy over 30+ mile weeks. Not fast but that's not the point. Good breathability and a plush ride."},
+    {"product_id": "SHOE-001", "reviewer": "shoe_nerd", "rating": 4, "text": "Top-tier cushioning shoe. The foam stack is massive but well-executed. Stable for a max cushion shoe. Not responsive enough for tempo runs. Great durability. My go-to for easy miles."},
+    {"product_id": "SHOE-002", "reviewer": "boston_qualifier", "rating": 5, "text": "The fastest shoe I've ever worn. The carbon plate and ZoomX foam create incredible energy return. Took 3 minutes off my marathon time. Not durable — maybe 150 miles max. But for race day, nothing compares."},
+    {"product_id": "SHOE-002", "reviewer": "speed_demon", "rating": 5, "text": "Absolutely flies. The responsiveness is otherworldly. At 186g it feels like nothing on your feet. The carbon plate propels you forward. Not stable for easy runs, not durable for training. A pure race day weapon."},
+    {"product_id": "SHOE-002", "reviewer": "pr_chaser", "rating": 5, "text": "Race day magic. Light, fast, responsive. The foam/plate combo gives incredible propulsion. Grip is adequate on dry roads. Falls apart after 200 miles. Worth every penny for PRs."},
+    {"product_id": "SHOE-002", "reviewer": "competitive_carl", "rating": 4, "text": "Best marathon racing shoe available. Incredibly light and responsive. The trade-off is minimal cushioning protection and poor durability. Use exclusively for racing and fast workouts."},
+    {"product_id": "SHOE-002", "reviewer": "stride_analyst", "rating": 4, "text": "The responsiveness is unmatched but stability is questionable. Not for overpronators. The lightweight construction feels fragile. Save these for race day and fast intervals only."},
+    {"product_id": "SHOE-003", "reviewer": "comfort_first", "rating": 5, "text": "The most cushioned shoe I've ever worn. Pure cloud-like feel. My knees thank me after every run. The FF Blast+ foam is incredibly soft. Heavy but so comfortable. Perfect for long slow distance runs and marathon buildup."},
+    {"product_id": "SHOE-003", "reviewer": "injury_recovery", "rating": 5, "text": "Coming back from a stress fracture and these are saving me. Maximum cushion and shock absorption. Not fast at all but that's fine during recovery. The gel inserts add extra protection. Very stable for a cushion shoe."},
+    {"product_id": "SHOE-003", "reviewer": "high_mileage_helen", "rating": 4, "text": "Great for grinding out high-mileage weeks. The cushion protects through 80+ mile weeks. Durable — I get 500 miles easily. Not responsive for speed work but that's not the purpose. Heavy but who cares on easy days."},
+    {"product_id": "SHOE-003", "reviewer": "big_runner_bob", "rating": 5, "text": "As a 220lb runner, I need maximum cushion and the Nimbus delivers. The gel units absorb impact beautifully. Very stable underfoot. Not bouncy or fast but protective and durable. My go-to for all distance runs."},
+    {"product_id": "SHOE-003", "reviewer": "slow_n_steady", "rating": 4, "text": "Perfect for my 10-11 min/mile pace. Tons of cushion, very comfortable, stable ride. Not trying to be fast — just trying to finish the marathon. These get me there comfortably."},
+    {"product_id": "SHOE-004", "reviewer": "natural_runner", "rating": 5, "text": "Love the minimal 4mm drop and lightweight feel. The Kinvara is a classic for a reason. Responsive without being harsh. Great for tempo runs and daily training. Not super cushioned for very long runs but the ride quality is excellent."},
+    {"product_id": "SHOE-004", "reviewer": "fast_feet_fran", "rating": 5, "text": "The perfect lightweight daily trainer. At 215g it's quick and nimble. The low drop encourages midfoot striking. Responsive for a non-plated shoe. Breathability is outstanding. Not durable — 300 miles max. But the ride is addictive."},
+    {"product_id": "SHOE-004", "reviewer": "tempo_tuesday", "rating": 4, "text": "My tempo and interval shoe. Light, responsive, fast-feeling. The 4mm drop feels natural. Not enough cushion for marathon-distance runs. Grip is adequate on roads. Great shoe for faster training days."},
+    {"product_id": "SHOE-004", "reviewer": "minimalist_mike", "rating": 4, "text": "As close to a racing flat as you can get in a trainer. Low profile, lightweight, responsive. Very breathable upper. Not for high-mileage weeks — the cushioning wears out fast. Great for speed workouts and shorter races."},
+    {"product_id": "SHOE-004", "reviewer": "rotation_runner", "rating": 4, "text": "A key shoe in my rotation for faster days. Pairs well with a cushioned shoe for easy days. The Kinvara is responsive and light but lacks the protection for long slow runs. Excellent breathability — best in my collection."},
+    {"product_id": "SHOE-005", "reviewer": "reliable_runner", "rating": 5, "text": "The Ghost is the most reliable daily trainer available. Good cushion, good stability, good durability. Not exceptional in any area but consistent in everything. Perfect for the runner who wants one shoe for everything. 12mm drop suits my gait perfectly."},
+    {"product_id": "SHOE-005", "reviewer": "first_marathon", "rating": 5, "text": "Trained for my first marathon entirely in Ghosts and they were perfect. Enough cushion for long runs, responsive enough for tempo days. Very durable — lasted through 500 miles of training. Not exciting but dependable."},
+    {"product_id": "SHOE-005", "reviewer": "everyday_emma", "rating": 4, "text": "My everyday shoe. Comfortable from day one, no break-in needed. Cushioning is adequate without being mushy. Stable ride for a neutral shoe. Good for everything from 5K to half marathon distances. The most boring but most reliable shoe I own."},
+    {"product_id": "SHOE-005", "reviewer": "coach_charlie", "rating": 4, "text": "I recommend the Ghost to every new runner. It does nothing wrong and everything adequately. Good cushion for easy runs, acceptable for tempo. Durable and stable. The 12mm drop works for most gaits. A safe, solid choice."},
+    {"product_id": "SHOE-005", "reviewer": "no_frills_nancy", "rating": 4, "text": "Don't need anything fancy, just a good training shoe. The Ghost delivers. Reliable cushion, good support, excellent durability. Goes 500 miles without complaint. Not the lightest or fastest but always consistent."},
+    {"product_id": "SHOE-006", "reviewer": "trail_beast", "rating": 5, "text": "The grip is absolutely insane. Muddy trails, wet roots, loose gravel — the Speedcross grips everything. The aggressive lugs dig in like claws. Not great on hard surfaces but in soft/technical terrain it's unbeatable. The Contagrip outsole is the gold standard."},
+    {"product_id": "SHOE-006", "reviewer": "mud_runner", "rating": 5, "text": "Built for mud and slop. The deep lugs and aggressive tread pattern handle the worst trail conditions. Stable on uneven terrain. Not cushioned like road shoes but adequate for trail distances. The fit is snug and secure. Heavy but grippy."},
+    {"product_id": "SHOE-006", "reviewer": "obstacle_racer", "rating": 5, "text": "My go-to for OCR races. The grip is phenomenal on every surface — mud, grass, gravel. The protective chassis handles rocks and roots. Not fast on roads but dominates technical trails. Worth every penny for trail grip."},
+    {"product_id": "SHOE-006", "reviewer": "weekend_hiker", "rating": 4, "text": "Use these for trail running and fast hiking. Incredible grip and stability on technical terrain. Heavier than road shoes but the protection and traction make it worthwhile. Cushioning is adequate for up to 10-15 mile runs. Breathability could be better."},
+    {"product_id": "SHOE-006", "reviewer": "trail_newbie", "rating": 4, "text": "Moved from road to trail and the Speedcross gave me immediate confidence. The grip is remarkable — I never slip. The fit is secure on uneven ground. Not the most cushioned so my feet get tired on long runs. But for technical trails under 10 miles, perfect."},
+    {"product_id": "SHOE-007", "reviewer": "cushion_king", "rating": 5, "text": "Plush and comfortable. The Fresh Foam is incredibly soft underfoot. Great for recovery runs and easy days. The 6mm drop is a nice middle ground. Not responsive for speed work but supremely comfortable. My feet are happy after every run."},
+    {"product_id": "SHOE-007", "reviewer": "long_run_lisa", "rating": 5, "text": "My long run shoe. The cushioning is generous without being unstable. The 1080 has been my go-to for years and v14 is the best yet. Plush ride, good breathability, durable construction. Not a speed shoe but perfect for comfortable miles."},
+    {"product_id": "SHOE-007", "reviewer": "easy_day", "rating": 4, "text": "The most comfortable shoe in my rotation. Use exclusively for easy and recovery days. The fresh foam is soft and protective. Heavier than I'd like but the comfort compensates. Good for marathon distance at easy pace."},
+    {"product_id": "SHOE-007", "reviewer": "nb_loyalist", "rating": 4, "text": "Another great 1080. Cushioned, comfortable, reliable. The v14 updates the foam for even more softness. Not the shoe for racing or speed work. But for daily training and long runs, it's excellent. Stable enough for my neutral gait."},
+    {"product_id": "SHOE-007", "reviewer": "senior_runner", "rating": 5, "text": "At 62, I need all the cushion I can get. The 1080v14 delivers. My joints feel protected and my feet stay comfortable through 10-mile runs. The 6mm drop is gentle. Not fast but I'm not chasing PRs anymore. Just good comfortable miles."},
+    {"product_id": "SHOE-008", "reviewer": "mountain_mike", "rating": 5, "text": "The Speedgoat is the ultimate trail shoe. Great cushion for a trail runner, outstanding grip on technical terrain. The Vibram Megagrip outsole handles wet rock and loose dirt perfectly. Responsive enough for tempo on trails. My go-to for mountain running."},
+    {"product_id": "SHOE-008", "reviewer": "ultra_trail", "rating": 5, "text": "Ran a 50-miler in these and they performed flawlessly. Good cushioning for ultra distances, excellent grip on variable terrain. The 4mm drop lets me run naturally on trails. Stable on sidehills and technical sections. A true mountain running shoe."},
+    {"product_id": "SHOE-008", "reviewer": "rocky_runner", "rating": 4, "text": "Handles rocky terrain beautifully. The grip is excellent and the cushion protects from sharp rocks. Stable on uneven surfaces. Not as aggressive as the Speedcross in mud but more versatile across trail conditions. Good for all-around trail running."},
+    {"product_id": "SHOE-008", "reviewer": "trail_racer", "rating": 4, "text": "My trail race shoe. Good balance of cushion and responsiveness for trail conditions. The grip is reliable on most surfaces. Lightweight enough for racing, cushioned enough for longer events. The low drop works well for technical descents."},
+    {"product_id": "SHOE-008", "reviewer": "alpine_runner", "rating": 5, "text": "Perfect for alpine trail running. The Vibram sole grips wet rock and snow patches. Cushioning handles the pounding of long descents. Responsive on the climbs. A true mountain shoe that handles everything the trail throws at you."},
+    {"product_id": "SHOE-009", "reviewer": "bouncy_ben", "rating": 5, "text": "The bounciest shoe I've owned. The FF Blast+ foam has incredible energy return. Makes every run feel fun and springy. Light enough for tempo runs, cushioned enough for daily training. A great do-it-all shoe with personality."},
+    {"product_id": "SHOE-009", "reviewer": "fun_runner", "rating": 5, "text": "Running in the Novablast is just fun. The bouncy ride puts a smile on my face. Responsive enough for faster days, cushioned enough for easy days. At 256g it's reasonably light. Not the most stable but the energy return is addictive."},
+    {"product_id": "SHOE-009", "reviewer": "mid_distance", "rating": 4, "text": "Great for 5K to half marathon training. The responsiveness makes you want to run fast. Good cushioning without being mushy. Lighter than the max-cushion shoes. Not as stable for very long runs. The bounce is the standout feature."},
+    {"product_id": "SHOE-009", "reviewer": "versatile_runner", "rating": 4, "text": "Surprisingly versatile. Use it for easy runs, tempo, and even shorter races. The responsiveness is excellent for a non-plated shoe. Cushioning is adequate for up to 15 miles. Durability is moderate — 350 miles or so. Good value for a do-most-things shoe."},
+    {"product_id": "SHOE-009", "reviewer": "comeback_casey", "rating": 4, "text": "Getting back into running and the Novablast makes it enjoyable. The bouncy ride is motivating. Good cushion for rebuilding mileage. Light enough that I don't feel dragged down. Not a specialist but a fun generalist."},
+    {"product_id": "SHOE-010", "reviewer": "hybrid_runner", "rating": 4, "text": "Great for mixed road and trail runs. The Pegasus Trail handles both surfaces adequately. Not as grippy as dedicated trail shoes but way better than road shoes off-road. Cushioning is standard Pegasus — reliable and adequate. A good crossover shoe."},
+    {"product_id": "SHOE-010", "reviewer": "park_runner", "rating": 4, "text": "Perfect for park and greenway running where you mix pavement and gravel paths. Enough grip for light trails, comfortable on roads. Not for technical terrain but for easy trail/road transitions it's ideal. Nike quality, moderate weight."},
+    {"product_id": "SHOE-010", "reviewer": "trail_curious", "rating": 5, "text": "My first trail shoe and it's great for starting out. Not intimidating like aggressive trail shoes. Handles light trails and gravel with confidence. Can also run on roads without the weird feeling of deep lugs on pavement. A versatile entry point to trail running."},
+    {"product_id": "SHOE-010", "reviewer": "commute_runner", "rating": 4, "text": "Use these for my mixed-surface run commute. Roads, paths, gravel, grass — the Pegasus Trail handles it all. Not specialized for any surface but competent on all. Moderate weight, decent cushion, good enough grip. The versatility is the selling point."},
+    {"product_id": "SHOE-010", "reviewer": "jack_of_all", "rating": 3, "text": "Does everything but excels at nothing. Grip is OK for easy trails, cushion is OK for roads, weight is OK overall. If you only run easy trails and roads, it works. If you need serious trail grip or road speed, look elsewhere. A compromise shoe."}
+  ]
+}

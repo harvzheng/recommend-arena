@@ -1,0 +1,76 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "EASY-01",
+  "query_text": "stiff carving ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8588,
+    "ndcg_10": 0.8588,
+    "mrr": 1.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.4,
+    "explanation_score": 5.0,
+    "latency_ms": 2953.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.9499937970156673,
+      "explanation": "stiffness=0.90 (match: 100%); playfulness=0.20 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.949992636625992,
+      "explanation": "stiffness=1.00 (match: 100%); playfulness=0.10 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.65,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.30 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffest ski in dataset (10), elite edge grip, pure on-piste"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 3,
+      "reason": "Race slalom, stiffness 9, edge grip 10, pure carving"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving category, stiffness 8, edge grip 9"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, stiffness 8, edge grip 9, 72mm waist"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, stiffness 7, edge grip 8, camber"
+    }
+  ]
+}

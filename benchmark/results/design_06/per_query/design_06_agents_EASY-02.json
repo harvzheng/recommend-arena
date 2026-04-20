@@ -1,0 +1,176 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.9405,
+    "ndcg_10": 0.9907,
+    "mrr": 1.0,
+    "attribute_precision": 0.2,
+    "attribute_recall": 0.3333,
+    "attribute_f1": 0.25,
+    "explanation_score": 5.0,
+    "latency_ms": 2729.4
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6153,
+      "explanation": "Strong match on stiffness (100%), forgiveness (100%), playfulness (100%). Potential concern: stiffness (30% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 1.0,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.867
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5854,
+      "explanation": "Strong match on forgiveness (100%), playfulness (100%). Moderate fit for stiffness. Potential concern: stiffness (20% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 0.51,
+        "forgiveness": 1.0,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.5398,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), forgiveness (88%). Potential concern: stiffness (40% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.875,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.516,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), forgiveness (88%). Potential concern: stiffness (50% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.885,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.4205,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), forgiveness (71%). Potential concern: stiffness (60% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.712,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.4177,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%). Moderate fit for forgiveness. Potential concern: stiffness (50% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.625,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.4111,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%). Moderate fit for forgiveness. Potential concern: stiffness (60% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.688,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.3894,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%). Moderate fit for forgiveness. Potential concern: stiffness (60% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.625,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.3604,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%). Moderate fit for forgiveness. Potential concern: stiffness (60% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.55,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.3425,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%). Moderate fit for forgiveness. Potential concern: stiffness (60% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "forgiveness": 0.5,
+        "playfulness": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.92
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

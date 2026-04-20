@@ -1,0 +1,144 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "HARD-02",
+  "query_text": "freeride ski that is NOT playful, stiff with high stability, over 105mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0658,
+    "mrr": 0.0,
+    "attribute_precision": 0.1833,
+    "attribute_recall": 0.08,
+    "attribute_f1": 0.1114,
+    "explanation_score": 4.9,
+    "latency_ms": 66.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.715919041633606,
+      "explanation": "Attribute matches:\n  matched: flex (0.93)\n  matched: waist width (0.90)\n  matched: stability (0.72)\nSignals: vector similarity 0.58, attribute match 0.75, sentiment strength 0.85\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.9,
+        "flex": 0.925,
+        "stability": 0.725
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6488001388311386,
+      "explanation": "Attribute matches:\n  matched: waist width (0.98)\n  matched: flex (0.93)\nSignals: vector similarity 0.60, attribute match 0.50, sentiment strength 0.95\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.985,
+        "flex": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6455230277776718,
+      "explanation": "Attribute matches:\n  matched: stability (0.97)\n  matched: waist width (0.94)\nSignals: vector similarity 0.59, attribute match 0.50, sentiment strength 0.95\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.935,
+        "stability": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6169756501913071,
+      "explanation": "Attribute matches:\n  matched: waist width (0.81)\n  matched: stability (0.69)\nSignals: vector similarity 0.66, attribute match 0.50, sentiment strength 0.75\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.8125,
+        "stability": 0.6875
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6069403946399688,
+      "explanation": "Attribute matches:\n  matched: flex (0.88)\n  matched: waist width (0.80)\nSignals: vector similarity 0.56, attribute match 0.50, sentiment strength 0.84\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.8,
+        "flex": 0.875
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5548949182033539,
+      "explanation": "Attribute matches:\n  matched: flex (1.00)\nSignals: vector similarity 0.59, attribute match 0.25, sentiment strength 1.00\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "flex": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5459483951330185,
+      "explanation": "Attribute matches:\n  matched: waist width (0.75)\n  matched: flex (0.38)\nSignals: vector similarity 0.59, attribute match 0.50, sentiment strength 0.56\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.75,
+        "flex": 0.375
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.5430642336606979,
+      "explanation": "Attribute matches:\n  matched: flex (0.96)\nSignals: vector similarity 0.58, attribute match 0.25, sentiment strength 0.96\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "flex": 0.9625
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.5301673382520675,
+      "explanation": "Attribute matches:\n  matched: waist width (0.97)\nSignals: vector similarity 0.53, attribute match 0.25, sentiment strength 0.97\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "waist_width": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5283274292945862,
+      "explanation": "Attribute matches:\n  matched: stability (0.94)\n  matched: flex (0.00)\nSignals: vector similarity 0.60, attribute match 0.50, sentiment strength 0.47\nExcluded attributes confirmed absent: playfulness",
+      "matched_attributes": {
+        "flex": 0.0,
+        "stability": 0.9375
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-022",
+      "relevance": 3,
+      "reason": "Big mountain, stiffness 8, stability 9, playfulness 4, 106mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 3,
+      "reason": "Freeride, stiffness 8, stability 8, playfulness 5, 108mm waist"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Freeride, stiffness 7, stability 7, playfulness 7 (borderline)"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Freeride, stiffness 7, stability 7, but playfulness 8 (too playful)"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 1,
+      "reason": "Freeride, 106mm, but stiffness only 6 and playfulness 7"
+    }
+  ]
+}

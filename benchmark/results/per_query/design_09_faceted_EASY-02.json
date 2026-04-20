@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.2,
+    "latency_ms": 12.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6499998191796981,
+      "explanation": "Faction Dictator 3.0. The Dictator 3.0 is Faction's all-mountain freeride offering and it's excellent. Poplar/paulownia core keeps weight down while p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.649999815242809,
+      "explanation": "Dynastar M-Free 108. Solid freeride option from Dynastar. The M-Free 108 is well-balanced between float and grip. Titanal construction gives good damp",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6499998150879638,
+      "explanation": "Nordica Santa Ana 98. The Santa Ana 98 is my quiver-of-one. At 98mm it handles a good range of conditions. The titanal construction gives it surprisin",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6499998043428699,
+      "explanation": "Salomon Stance 90. The Stance 90 is Salomon's best-kept secret. At 90mm waist with camber and tip rocker, it carves groomers beautifully while having ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6499998007891634,
+      "explanation": "Blizzard Brahma 88. The Brahma 88 is Blizzard's best-kept secret. At 88mm with titanal construction, it carves groomers with authority while having en",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6499997945564668,
+      "explanation": "Rossignol Black Ops Sender Ti. The Black Ops Sender Ti is a big-mountain beast. Rossignol loaded it with titanal and the result is maximum dampness an",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6499997940963171,
+      "explanation": "Moment Wildcat 108. Moment makes incredible skis and the Wildcat 108 is their masterpiece. The maple/triax construction gives it a unique blend of pow",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6499997931698062,
+      "explanation": "Salomon QST 106. The QST 106 is Salomon's best freeride ski. Carbon and flax construction gives it a unique damp but lively feel. Floats beautifully i",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6499997887919908,
+      "explanation": "K2 Mindbender 108Ti. The Mindbender 108Ti is a charging machine. The titanal makes it stiff and damp \u2014 this is not a playful noodle. At 108mm it float",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6499997859229294,
+      "explanation": "Atomic Redster G9. Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full camber profil",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

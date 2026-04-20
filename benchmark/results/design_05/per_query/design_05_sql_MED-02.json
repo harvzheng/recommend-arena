@@ -1,0 +1,176 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3314,
+    "ndcg_10": 0.489,
+    "mrr": 0.2,
+    "attribute_precision": 0.4,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.4444,
+    "explanation_score": 5.0,
+    "latency_ms": 3272.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.9480555555555555,
+      "explanation": "  Score: 0.948\n  Attribute breakdown:\n    stiffness     1.00  (exact match)\n    terrain       1.00  (exact match)\n    damp          0.67  [NEAR-MISS: target=lte5 penalty=-0.33]\n    playfulness   0.89  [NEAR-MISS: target=lte4 penalty=-0.11]\n    powder_float  1.00  (exact match)\n  FTS relevance:  1.00\n  Sentiment:      0.95\n  Weighted total: 0.50*0.91 + 0.35*1.00 + 0.15*0.95 = 0.948",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0,
+        "damp": 0.6666666666666667,
+        "playfulness": 0.8888888888888888,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8624974117033473,
+      "explanation": "  Score: 0.862\n  Attribute breakdown:\n    stiffness     1.00  (exact match)\n    terrain       1.00  (exact match)\n    damp          0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    playfulness   0.56  [NEAR-MISS: target=lte4 penalty=-0.44]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.84\n  Sentiment:      0.90\n  Weighted total: 0.50*0.87 + 0.35*0.84 + 0.15*0.90 = 0.862",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0,
+        "damp": 0.7777777777777778,
+        "playfulness": 0.5555555555555556,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8117466687948678,
+      "explanation": "  Score: 0.812\n  Attribute breakdown:\n    stiffness     1.00  (exact match)\n    terrain       1.00  (exact match)\n    damp          0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    playfulness   0.67  [NEAR-MISS: target=lte4 penalty=-0.33]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.71\n  Sentiment:      0.80\n  Weighted total: 0.50*0.89 + 0.35*0.71 + 0.15*0.80 = 0.812",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0,
+        "damp": 0.7777777777777778,
+        "playfulness": 0.6666666666666667,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8039456841908081,
+      "explanation": "  Score: 0.804\n  Attribute breakdown:\n    stiffness     0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain       1.00  (exact match)\n    damp          0.78  [NEAR-MISS: target=lte5 penalty=-0.22]\n    playfulness   0.67  [NEAR-MISS: target=lte4 penalty=-0.33]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.69\n  Sentiment:      0.85\n  Weighted total: 0.50*0.87 + 0.35*0.69 + 0.15*0.85 = 0.804",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "terrain": 1.0,
+        "damp": 0.7777777777777778,
+        "playfulness": 0.6666666666666667,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7795711672586475,
+      "explanation": "  Score: 0.780\n  Attribute breakdown:\n    stiffness     0.78  [NEAR-MISS: target=gte7 penalty=-0.22]\n    terrain       0.00  (no match)\n    damp          1.00  (exact match)\n    playfulness   0.56  [NEAR-MISS: target=lte4 penalty=-0.44]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.89\n  Sentiment:      0.90\n  Weighted total: 0.50*0.67 + 0.35*0.89 + 0.15*0.90 = 0.780",
+      "matched_attributes": {
+        "stiffness": 0.7777777777777778,
+        "terrain": 0.0,
+        "damp": 1.0,
+        "playfulness": 0.5555555555555556,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7747116072603808,
+      "explanation": "  Score: 0.775\n  Attribute breakdown:\n    stiffness     1.00  (exact match)\n    terrain       1.00  (exact match)\n    damp          0.56  [NEAR-MISS: target=lte5 penalty=-0.44]\n    playfulness   1.00  (exact match)\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.53\n  Sentiment:      0.90\n  Weighted total: 0.50*0.91 + 0.35*0.53 + 0.15*0.90 = 0.775",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "terrain": 1.0,
+        "damp": 0.5555555555555556,
+        "playfulness": 1.0,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.740904952795975,
+      "explanation": "  Score: 0.741\n  Attribute breakdown:\n    stiffness     0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain       1.00  (exact match)\n    damp          0.89  [NEAR-MISS: target=lte5 penalty=-0.11]\n    playfulness   0.56  [NEAR-MISS: target=lte4 penalty=-0.44]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.51\n  Sentiment:      0.85\n  Weighted total: 0.50*0.87 + 0.35*0.51 + 0.15*0.85 = 0.741",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "terrain": 1.0,
+        "damp": 0.8888888888888888,
+        "playfulness": 0.5555555555555556,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6942052278653646,
+      "explanation": "  Score: 0.694\n  Attribute breakdown:\n    stiffness     0.44  [NEAR-MISS: target=gte7 penalty=-0.56]\n    terrain       0.00  (no match)\n    damp          1.00  (exact match)\n    playfulness   0.67  [NEAR-MISS: target=lte4 penalty=-0.33]\n    powder_float  0.44  [NEAR-MISS: target=gte7 penalty=-0.56]\n  FTS relevance:  0.87\n  Sentiment:      0.90\n  Weighted total: 0.50*0.51 + 0.35*0.87 + 0.15*0.90 = 0.694",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "terrain": 0.0,
+        "damp": 1.0,
+        "playfulness": 0.6666666666666667,
+        "powder_float": 0.4444444444444444
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6789390581402415,
+      "explanation": "  Score: 0.679\n  Attribute breakdown:\n    stiffness     0.89  [NEAR-MISS: target=gte7 penalty=-0.11]\n    terrain       1.00  (exact match)\n    damp          0.89  [NEAR-MISS: target=lte5 penalty=-0.11]\n    playfulness   0.56  [NEAR-MISS: target=lte4 penalty=-0.44]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.32\n  Sentiment:      0.90\n  Weighted total: 0.50*0.87 + 0.35*0.32 + 0.15*0.90 = 0.679",
+      "matched_attributes": {
+        "stiffness": 0.8888888888888888,
+        "terrain": 1.0,
+        "damp": 0.8888888888888888,
+        "playfulness": 0.5555555555555556,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6752011769935251,
+      "explanation": "  Score: 0.675\n  Attribute breakdown:\n    stiffness     0.78  [NEAR-MISS: target=gte7 penalty=-0.22]\n    terrain       1.00  (exact match)\n    damp          1.00  (exact match)\n    playfulness   0.44  [NEAR-MISS: target=lte4 penalty=-0.56]\n    powder_float  1.00  (exact match)\n  FTS relevance:  0.35\n  Sentiment:      0.88\n  Weighted total: 0.50*0.84 + 0.35*0.35 + 0.15*0.88 = 0.675",
+      "matched_attributes": {
+        "stiffness": 0.7777777777777778,
+        "terrain": 1.0,
+        "damp": 1.0,
+        "playfulness": 0.4444444444444444,
+        "powder_float": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

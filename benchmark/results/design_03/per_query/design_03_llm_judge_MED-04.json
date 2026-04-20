@@ -1,0 +1,186 @@
+{
+  "recommender": "design_03_llm_judge",
+  "query_id": "MED-04",
+  "query_text": "versatile one-ski quiver around 96-100mm waist for mixed conditions",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3352,
+    "ndcg_10": 0.4983,
+    "mrr": 0.1,
+    "attribute_precision": 0.02,
+    "attribute_recall": 0.0333,
+    "attribute_f1": 0.025,
+    "explanation_score": 4.9,
+    "latency_ms": 144882.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8,
+      "explanation": "The Nordica Santa Ana 98 matches well with the user's query as it has a 98mm waist suitable for mixed conditions and handles various terrain types like variable groomers and wetter powder. The ski offers good stability, edge grip, and playfulness which aligns with the user\u2019s preferences.",
+      "matched_attributes": {
+        "width": 0.8,
+        "performance_conditions": 0.9,
+        "stability": 0.7,
+        "playfulness": 0.6,
+        "edge_grip": 0.8,
+        "flex/stiffness": 0.9,
+        "floatability": 0.8,
+        "weight": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8,
+      "explanation": "The Elan Ripstick 96 matches well with the user's query as it has a width of 96mm which is appropriate for mixed conditions, and its versatility and playful nature align with the 'versatile one-ski quiver' preference. However, it lacks stability at high speeds, which could be seen as a gap given the user's interest in all mountain skiing.",
+      "matched_attributes": {
+        "Width": 1.0,
+        "Playfulness vs Stability": 0.8,
+        "Skill Level Alignment": 1.0,
+        "Stability at High Speeds": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that matches well with the user's query for a versatile one-ski quiver around 96-100mm waist. It offers good floatation, grip performance, and stability in variable conditions, aligning closely with the user's criteria.",
+      "matched_attributes": {
+        "flex/stiffness match": 0.8,
+        "terrain suitability": 0.9,
+        "width appropriateness": 1.0,
+        "skill level alignment": 0.75,
+        "weight": 0.9,
+        "dampness": 0.8,
+        "edge grip": 0.95,
+        "playfulness vs stability": 0.7,
+        "overall stability": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.8,
+      "explanation": "The Salomon QST 106 is a versatile freeride ski suitable for mixed conditions with good floatability and versatility. Its rocker-camber-rocker profile and damp feel make it ideal for off-piste terrain, aligning well with the user's query about needing a product that can handle various snow conditions. However, its slightly higher waist width of 106mm might not perfectly match the user's preference for around 96-100mm.",
+      "matched_attributes": {
+        "Versatility": 0.8,
+        "Width": 0.2,
+        "Playfulness vs Stability": 0.7,
+        "Flex/Stiffness Match": 0.9,
+        "Weight": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8,
+      "explanation": "The Moment Wildcat 108 is a versatile freeride ski suitable for mixed conditions, as indicated by its excellent floatability at 108mm and playful enough characteristics for switch airs and butters. The product matches the user's preference of a quiver (versatile) ski around 96-100mm waist well. However, it does not quite match the stiffness needed to fully charge through hard snow as requested in the query.",
+      "matched_attributes": {
+        "terrain suitability": 0.8,
+        "flex/stiffness": 0.5,
+        "width appropriateness": 1.0,
+        "stiffness for charging": 0.7,
+        "edge grip and carving performance": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8,
+      "explanation": "The Blizzard Rustler 10 has a medium-soft flex that aligns well with the user's preference for a versatile ski suitable for mixed conditions. Its float in powder is excellent and it offers decent stability, which matches the user\u2019s requirement of not being super stable at high speeds. However, its edge grip is adequate but not strong, which might be a gap given the user's emphasis on versatility.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain suitability": 0.7,
+        "width appropriateness": 0.6,
+        "skill level alignment": 0.5,
+        "weight": 0.4,
+        "dampness": 0.3,
+        "edge grip": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.7,
+      "explanation": "The Fischer RC One 82 GT is suitable for mixed conditions as it can handle hard-pack and piste (piste-like) terrain, which matches the user's preferences for good snow conditions such as soft, semi-firm, and some powder. However, its stiffness might not be ideal for all-mountain use, especially if the user prefers a more playful or forgiving feel, leading to a moderate match strength in playfulness vs stability.",
+      "matched_attributes": {
+        "terrain": 0.8,
+        "waist_width": 1.0,
+        "playfulness_level": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.7,
+      "explanation": "The Armada ARV 106 is a versatile ski suitable for mixed conditions, which aligns well with the user's request for a 'versatile one-ski quiver.' Its good powder float and playful feel match the waist width of around 96-100mm. However, its construction quality is described as average, which could be seen as a minor gap compared to the positive overall sentiment.",
+      "matched_attributes": {
+        "flex/stiffness": 0.8,
+        "terrain suitability": 0.9,
+        "width appropriateness": 1.0,
+        "skill level alignment": 0.7,
+        "weight": 0.6,
+        "dampness": 0.4,
+        "edge grip": 0.5,
+        "construction_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a versatile ski suitable for mixed conditions due to its stability and edge grip, which are well-aligned with the user's needs for versatility around 96-100mm waist. However, it lacks rocker in the tip, making it less playful on softer snow.",
+      "matched_attributes": {
+        "Precision": 1.0,
+        "Stability": 1.0,
+        "Edge Grip": 1.0,
+        "Weight Distribution Sensitivity": 0.5,
+        "Rocker Type (Tip)": 0.19999999999999996
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is a versatile ski suitable for mixed conditions and has a waist width in the range of 96-100mm as requested. However, it prioritizes performance over comfort and stability at the expense of playfulness, which might not be ideal for newer users. Its dampness matches well with the user's query, but edge grip could be a potential gap if mixed conditions are expected to include challenging snow types.",
+      "matched_attributes": {
+        "stability": 0.9,
+        "damping": 1.0,
+        "width appropriateness": 0.85,
+        "terrain suitability": 0.75,
+        "flexibility/stiffness match": 0.9,
+        "playfulness vs stability": 0.8
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "100mm waist, quintessential one-ski quiver, all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "96mm waist, expert all-mountain, handles everything"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "98mm waist, versatile all-mountain"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist, all-mountain, forgiving and versatile"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "102mm waist, slightly wider than ideal but versatile"
+    }
+  ]
+}

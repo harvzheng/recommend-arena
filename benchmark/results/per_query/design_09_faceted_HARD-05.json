@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0588,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.9,
+    "latency_ms": 13.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.64999949866544,
+      "explanation": "K2 Disruption 78C. Perfect ski for my level. The K2 Disruption 78C is forgiving enough for my mistakes but has enough edge grip for confident turns. T",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6499994061239323,
+      "explanation": "Rossignol Experience 78 Ca. My first pair of skis and they're perfect for learning! Very forgiving when I make mistakes. Light enough that my legs don",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6499994020101472,
+      "explanation": "Head Easy Joy SLR. Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turning almost a",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6499993484314648,
+      "explanation": "Atomic Redster G9. Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full camber profil",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6499993274671272,
+      "explanation": "Atomic Redster S9i. Absolute weapon on the race course. The edge grip on hardpack is unreal \u2014 these skis lock in like they're on rails. Very stiff, no",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.6499993232590521,
+      "explanation": "Volkl Deacon 76. Solid frontside ski with that Volkl precision. The titanal layers give it real dampness and stability. Edge grip on hardpack is excel",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6499992647107633,
+      "explanation": "Volkl Mantra M6. The Mantra M6 is legendary for a reason. This ski is an absolute tank \u2014 stiff, damp, and incredibly stable at any speed. The double t",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6499992424652701,
+      "explanation": "Fischer RC One 82 GT. Solid advanced frontside ski. The 82mm waist is wide enough for some versatility but narrow enough for real carving. Titanal con",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6499992218988022,
+      "explanation": "Elan Ripstick 96. The Ripstick 96 is the perfect width for all-mountain skiing. Wide enough for light powder, narrow enough for quick carving on groom",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6499991667911171,
+      "explanation": "Black Crows Atris. The Atris is a powder dream. At 108mm with generous rocker, it floats effortlessly. The poplar and fiberglass construction is light",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

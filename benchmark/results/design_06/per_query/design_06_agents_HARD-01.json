@@ -1,0 +1,111 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0314,
+    "ndcg_10": 0.0314,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3225.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.9852,
+      "explanation": "Strong match on stiffness (100%), weight g per ski (100%), damp (93%). Potential concern: playfulness (10% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.927,
+        "weight_g_per_ski": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.9837,
+      "explanation": "Strong match on stiffness (100%), weight g per ski (100%), damp (90%). Potential concern: playfulness (20% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.9,
+        "weight_g_per_ski": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.9837,
+      "explanation": "Strong match on stiffness (100%), damp (100%), weight g per ski (100%). Potential concern: playfulness (30% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "weight_g_per_ski": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.933
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.9821,
+      "explanation": "Strong match on stiffness (100%), weight g per ski (100%), damp (98%). Potential concern: playfulness (40% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.98,
+        "weight_g_per_ski": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.9792,
+      "explanation": "Strong match on stiffness (100%), weight g per ski (100%), damp (84%). Potential concern: playfulness (50% penalty). Specs match your requirements. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.84,
+        "weight_g_per_ski": 1.0,
+        "spec_match": 1.0,
+        "review_quality": 0.92
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

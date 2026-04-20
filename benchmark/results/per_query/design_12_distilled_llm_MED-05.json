@@ -1,0 +1,146 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1232,
+    "ndcg_10": 0.275,
+    "mrr": 0.1429,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.6,
+    "latency_ms": 101226.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a good fit for the user's query as it offers dampness above 7 and a full camber profile, which aligns closely with their preferences. However, it may not be ideal for very high-speed conditions or extreme turns.",
+      "matched_attributes": {
+        "dampness_above_7": 0.9,
+        "full_camber_profile": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 has an impressive dampness level of above 7 and a full camber profile that aligns well with the user's preference for an expert carving ski. However, it lacks some key attributes such as stiffness or playfulness which might be important to the user.",
+      "matched_attributes": {
+        "dampness_above_7": 0.9,
+        "full_camber_profile": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 has a dampness level of 6.5 and a full camber profile which aligns closely with the user's preference for an expert carving ski with dampness above 7. However, it lacks the specific dampness requirement mentioned in the query.",
+      "matched_attributes": {
+        "dampness_above_7": 0.7,
+        "full_camber_profile": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.7,
+      "explanation": "The Volkl Mantra M6 is designed for expert skiers with high dampness and full camber profiles, which aligns closely with the user's request. However, it may not be as playful or forgiving compared to what some users might prefer.",
+      "matched_attributes": {
+        "dampness_above_7": 0.8,
+        "full_camber_profile": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.7,
+      "explanation": "The Nordica Santa Ana 98 is a versatile all-mountain ski with good dampness and full camber profile, which aligns with the user's request for an expert carving ski with dampness above 7 and full camber profile. However, it lacks specific dampness levels above 7 and may not be ideal for very high-performance conditions.",
+      "matched_attributes": {
+        "dampness_above_7": 0.3,
+        "full_camber_profile": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7,
+      "explanation": "The Faction Dictator 3.0 is a versatile all-mountain freeride ski that excels in playful and addictive skiing experiences, which aligns closely with the user's preference for an expert carving ski with dampness above 7 and full camber profile. However, it lacks the stiffness needed for stiffer snow conditions, which might be important if the user plans to use the ski in challenging or icy conditions.",
+      "matched_attributes": {
+        "dampness_above_7": 0.8,
+        "full_camber_profile": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.5,
+      "explanation": "The Head Supershape e-Speed is designed for expert carving in powder and has a camber profile, which does not align with the user's request for an 'expert carving ski' with dampness above 7 and full camber profile.",
+      "matched_attributes": {
+        "carving_performance": 0.3,
+        "dampness_above_7": 0.2,
+        "full_camber_profile": 0.1
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.5,
+      "explanation": "The K2 Mindbender 108Ti is designed for aggressive skiers in challenging terrain and has a stiffness and dampness level above 7, which aligns with the user's request for an expert carving ski. However, its weight and turn radius might be too restrictive for some users who prefer lighter or more forgiving options.",
+      "matched_attributes": {
+        "dampness_above_7": 0.8,
+        "full_camber_profile": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.5,
+      "explanation": "The K2 Disruption 78C has a waist width of 78mm which falls within the user's preference for 'full camber profile', but its rocker-camber profile does not align with their desire for dampness above 7.",
+      "matched_attributes": {
+        "waist_width_mm": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5,
+      "explanation": "The Head Easy Joy SLR is designed for beginners and has soft flex and a rocker-camber profile suitable for easy turn initiation on groomed terrain. However, it lacks the dampness required by the user's query and does not have full camber for icy conditions.",
+      "matched_attributes": {
+        "dampness_above_7": 0.3,
+        "full_camber_profile": 0.2
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

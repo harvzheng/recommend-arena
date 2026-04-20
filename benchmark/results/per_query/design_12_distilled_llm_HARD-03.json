@@ -1,0 +1,145 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0295,
+    "ndcg_10": 0.0295,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.5,
+    "latency_ms": 126998.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 is designed for aggressive on-piste skiing and has a stiff construction suitable for hardpack terrain. While it offers good performance in these conditions, its narrow waist width (68mm) does not align with the user's preference for an 'advanced intermediate' ski that is forgiving but not beginner-friendly.",
+      "matched_attributes": {
+        "waist_width_mm": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a good fit for an advanced intermediate skier who prefers a forgiving yet capable ski suitable for medium-to-high speed conditions. Its 78mm waist width aligns well with the user's preference for an '80-95mm' waist, though there might be room for improvement in stability at higher speeds.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.8,
+        "Lengths Cm": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7,
+      "explanation": "The Head Supershape e-Speed is a strong candidate for the advanced intermediate skier who wants a forgiving but not beginner-friendly ski. It has an impressive turn radius of 14.2 meters and a camber profile suitable for carving on hardpack terrain. However, its weight at 1700g per ski makes it less suitable for light powder conditions.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "turn_radius_m": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a good fit for an advanced intermediate skier who prefers a forgiving yet capable ski with an 80-95mm waist width. However, its camber-only profile might not align as well with the user's preference for a more playful or off-piste-oriented ski.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that excels in various terrains including groomed and off-piste conditions. However, its 100mm waist width does not align with the user's preference of an '80-95mm' waist size range.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a good fit for the user's preferences as it has an 80-95mm waist width and an advanced intermediate design, which aligns with their request for a forgiving but not beginner-friendly ski. However, it may not be as stable at higher speeds or on heavy snow.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a versatile and powerful ski designed for aggressive skiers in challenging conditions. It has a generous turn radius of 21 meters and a stiff construction suitable for carving through various terrains including crud and hardpack. However, its weight of 2050g per ski makes it unsuitable for beginners or intermediates who may prefer lighter options.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile and playful freeride ski that excels in providing good floatation and stability on varied terrain. However, its moderate weight and lack of specific attributes like waist width can be seen as a weakness compared to what the user desires.",
+      "matched_attributes": {
+        "Waist Width Mm": 0.6,
+        "Lengths Cm": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile and forgiving ski suitable for advanced intermediate skiers who enjoy powdery conditions. Its 108mm waist width aligns well with the user's preference for an '80-95mm' waist, though it lacks edge grip on hardpack terrain.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.7,
+      "explanation": "The Moment Wildcat 108 is a versatile freeride ski that excels in handling steep, deep conditions and offers good edge grip suitable for varied terrains. However, its 108mm waist width might not provide enough floatation on pure powder or deep snow, which could be a drawback for users seeking more specialized skiing experiences.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "length_cm_range": 0.7
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

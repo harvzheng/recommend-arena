@@ -1,0 +1,146 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1762,
+    "ndcg_10": 0.3045,
+    "mrr": 0.2,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.6,
+    "latency_ms": 118816.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i excels in handling both powder and hardpack conditions due to its versatile construction and strong edge grip capabilities. However, it may not be ideal for users who prefer more specialized performance in one area over another.",
+      "matched_attributes": {
+        "Powder Handling": 1.0,
+        "Hardpack Handling": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.7,
+      "explanation": "The Atomic Redster G9 excels in handling both powder and hardpack conditions due to its versatility and performance characteristics, which aligns closely with the user's preference of a ski that can handle both types of terrain effectively.",
+      "matched_attributes": {
+        "Powder Handling": 1.0,
+        "Hardpack Handling": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is designed for beginners and intermediate skiers who prefer a forgiving and easy-to-control experience on groomed terrain. It excels in handling various snow conditions but may not be ideal for users seeking extreme versatility or expert-level performance.",
+      "matched_attributes": {
+        "Powder Handling": 0.9,
+        "Hardpack Handling": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 excels in handling both powder and hardpack conditions due to its exceptional edge grip and dampness, which are crucial for versatile skiing. However, it lacks the playfulness typically associated with softer snow conditions, making it less suitable for those seeking an all-mountain ski.",
+      "matched_attributes": {
+        "Edge Grip and Dampness": 1.0,
+        "Versatility Across Conditions": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is designed to handle both powder and hardpack conditions effectively due to its versatility across different terrains. However, it may not be the best choice for extremely soft snow or very deep powder conditions where other skis might perform better.",
+      "matched_attributes": {
+        "Powder Handling": 1.0,
+        "Hardpack Performance": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 excels in handling both powder and hardpack conditions due to its versatile construction and playful feel, which aligns well with the user's preference of not being specialized in either type of terrain. However, it lacks stability at high speeds and may sacrifice edge grip compared to more advanced skis.",
+      "matched_attributes": {
+        "Powder Handling": 1.0,
+        "Hardpack Handling": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is well-suited for users who prefer a ski that handles both powder and hardpack equally well due to its versatility and smooth performance across various snow conditions. However, it may not be as stiff or stable at higher speeds compared to heavier freeride skis.",
+      "matched_attributes": {
+        "waist_width_mm": 0.8,
+        "turn_radius_m": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is designed for aggressive skiers in challenging terrain and has a stiff and damp performance suitable for those who want to handle everything with ease. However, it may not be the best choice for intermediate skiers looking for more forgiving or lighter options.",
+      "matched_attributes": {
+        "Powder Handling": 0.8,
+        "Hardpack Handling": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that excels in handling both powder and hardpack conditions, which aligns with the user's preference of not being specialized in either. However, it may not be the best choice for very high-speed conditions due to its moderate weight.",
+      "matched_attributes": {
+        "powder_handling": 0.8,
+        "hardpack_handling": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is designed for powder skiing and has good rocker profile which makes it suitable for handling both soft snow and hardpack conditions. However, it lacks edge grip specifically for hardpack terrain, which could be seen as a weakness given the user's preference for 'not a specialist in either'.",
+      "matched_attributes": {
+        "Rocker Profile": 0.8,
+        "Powder Handling Ability": 0.6
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

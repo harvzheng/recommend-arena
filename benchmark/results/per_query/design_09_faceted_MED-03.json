@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0755,
+    "ndcg_10": 0.0755,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.9,
+    "latency_ms": 13.8
+  },
+  "results": [
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.47573842659308624,
+      "explanation": "Head Easy Joy SLR. Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turning almost a",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.47140380564666656,
+      "explanation": "Atomic Redster G9. Massive GS ski that demands respect. At 183cm these are a handful but the stability at 80+ km/h is breathtaking. Full camber profil",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.46809989419688053,
+      "explanation": "Rossignol Experience 78 Ca. My first pair of skis and they're perfect for learning! Very forgiving when I make mistakes. Light enough that my legs don",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.4411790484132198,
+      "explanation": "Blizzard Rustler 10. The Rustler 10 is the most fun ski I've ever ridden. Incredibly playful \u2014 you can butter, spin, and smear with ease. The rocker p",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.4333084983250626,
+      "explanation": "K2 Mindbender 108Ti. The Mindbender 108Ti is a charging machine. The titanal makes it stiff and damp \u2014 this is not a playful noodle. At 108mm it float",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.424892942200893,
+      "explanation": "Dynastar M-Free 108. Solid freeride option from Dynastar. The M-Free 108 is well-balanced between float and grip. Titanal construction gives good damp",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.42335058830129535,
+      "explanation": "Line Blade. The Line Blade is a hidden gem. Maple and metal construction gives it a unique combo of liveliness and dampness. Edge grip is outstanding ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.4205776309380062,
+      "explanation": "Moment Wildcat 108. Moment makes incredible skis and the Wildcat 108 is their masterpiece. The maple/triax construction gives it a unique blend of pow",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.4187551691956692,
+      "explanation": "Armada ARV 106. The ARV 106 is the ultimate park-to-powder ski. Twin-tip design for switch riding, soft enough for jibbing but stiff enough for landin",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.4159824666373384,
+      "explanation": "DPS Pagoda Tour 112 RP. The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The carbon",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

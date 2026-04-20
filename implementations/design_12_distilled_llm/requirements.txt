@@ -1,0 +1,7 @@
+peft
+transformers
+trl
+datasets
+torch
+httpx
+pytest

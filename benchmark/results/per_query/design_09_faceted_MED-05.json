@@ -1,0 +1,116 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 12.5
+  },
+  "results": [
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.6499994950939599,
+      "explanation": "Dynastar M-Free 108. Solid freeride option from Dynastar. The M-Free 108 is well-balanced between float and grip. Titanal construction gives good damp",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6499994205601851,
+      "explanation": "Nordica Santa Ana 98. The Santa Ana 98 is my quiver-of-one. At 98mm it handles a good range of conditions. The titanal construction gives it surprisin",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6499994195229687,
+      "explanation": "Rossignol Black Ops Sender Ti. The Black Ops Sender Ti is a big-mountain beast. Rossignol loaded it with titanal and the result is maximum dampness an",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.6499994016656636,
+      "explanation": "Head Easy Joy SLR. Literally my first day skiing and these were so easy to use. Super soft flex, very light, and the rocker tip makes turning almost a",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6499993772797017,
+      "explanation": "K2 Mindbender 108Ti. The Mindbender 108Ti is a charging machine. The titanal makes it stiff and damp \u2014 this is not a playful noodle. At 108mm it float",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.649999266709407,
+      "explanation": "Nordica Enforcer 100. The best all-mountain ski I've ever ridden. 100mm waist gives you enough float for powder days but it still carves on groomers. ",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6499992423048407,
+      "explanation": "Salomon QST 106. The QST 106 is Salomon's best freeride ski. Carbon and flax construction gives it a unique damp but lively feel. Floats beautifully i",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6431232989550688,
+      "explanation": "Moment Wildcat 108. Moment makes incredible skis and the Wildcat 108 is their masterpiece. The maple/triax construction gives it a unique blend of pow",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.6430339997238075,
+      "explanation": "K2 Disruption 78C. Perfect ski for my level. The K2 Disruption 78C is forgiving enough for my mistakes but has enough edge grip for confident turns. T",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6410612474974842,
+      "explanation": "Armada ARV 106. The ARV 106 is the ultimate park-to-powder ski. Twin-tip design for switch riding, soft enough for jibbing but stiff enough for landin",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

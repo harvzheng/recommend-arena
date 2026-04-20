@@ -1,0 +1,136 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5097,
+    "ndcg_10": 0.6347,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.8,
+    "latency_ms": 2597.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 1.0,
+      "explanation": "Rossignol Experience 78 Ca excels in: stiffness.",
+      "matched_attributes": {
+        "stiffness": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.8409,
+      "explanation": "Solid on: stiffness. Review: \"Soft flex, very forgiving.\" Review: \"Very forgiving.\"",
+      "matched_attributes": {
+        "stiffness": 0.68
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.1795,
+      "explanation": "Solid on: stiffness. Review: \"light and snappy\" Review: \"Weight is moderate, not a touring ski but manageable for resort use.\"",
+      "matched_attributes": {
+        "stiffness": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.1751,
+      "explanation": "Solid on: stiffness. Review: \"Not as stable or damp as heavier options\" Review: \"not a charger\"",
+      "matched_attributes": {
+        "stiffness": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.1475,
+      "explanation": "Solid on: stiffness. Review: \"The flex is medium-soft and very even\" Review: \"Forgiving enough to learn on but capable enough to grow into\"",
+      "matched_attributes": {
+        "stiffness": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.1225,
+      "explanation": "Weaker on: stiffness. Review: \"Forgiving flex\" Review: \"Doesn't demand too much energy or technique.\"",
+      "matched_attributes": {
+        "stiffness": 0.375
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.122,
+      "explanation": "Weaker on: stiffness. Review: \"soft enough for jibbing but stiff enough for landings.\" Review: \"The forgiving flex means you can land sketchy without getting thrown.\"",
+      "matched_attributes": {
+        "stiffness": 0.38
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.0069,
+      "explanation": "Weaker on: stiffness. Review: \"Not as damp as heavier titanal skis.\" Review: \"Not a hard charger but that's not me anyway.\"",
+      "matched_attributes": {
+        "stiffness": 0.33
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.0038,
+      "explanation": "Weaker on: stiffness. Review: \"Not as stiff as the Mindbender but more playful.\" Review: \"Not as demanding as the K2 Mindbender but still rewards good technique.\"",
+      "matched_attributes": {
+        "stiffness": 0.345
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.0,
+      "explanation": "Weaker on: stiffness. Review: \"Stiff enough to charge, playful enough to throw tricks.\" Review: \"while still having backbone.\"",
+      "matched_attributes": {
+        "stiffness": 0.345
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

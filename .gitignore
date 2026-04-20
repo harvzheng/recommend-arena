@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Trained model artifacts (too large for git, regenerable)
+models/
+implementations/design_11_finetuned_embed/trained_model/
+checkpoints/
+
+# Local SQLite databases produced by implementations
+*.db
+*.sqlite
+*.sqlite3
+
+# Benchmark log spam (results/ is committed; logs are not)
+benchmark/results/full_output.log

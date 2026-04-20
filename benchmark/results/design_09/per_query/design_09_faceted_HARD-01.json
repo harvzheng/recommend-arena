@@ -1,0 +1,90 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "HARD-01",
+  "query_text": "all-mountain ski with no rocker, under 90mm waist",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.0,
+    "latency_ms": 3380.2
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.8999993883996833,
+      "explanation": "stiffness=1.00 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=68.00 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.6799999999999999,
+      "explanation": "stiffness=0.80 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=72.00 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6748779800871786,
+      "explanation": "stiffness=0.90 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=66.00 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6109592605527756,
+      "explanation": "stiffness=0.80 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=72.00 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, camber with tip rocker (partial but mainly camber), all-mountain"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 3,
+      "reason": "90mm waist (borderline), camber with tip rocker, all-mountain frontside"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "82mm waist, camber with tip rocker, all-mountain capability in terrain list"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist, pure camber, but more frontside than all-mountain"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 1,
+      "reason": "96mm waist (over 90) but camber with tip rocker, strong all-mountain"
+    }
+  ]
+}

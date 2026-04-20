@@ -1,0 +1,168 @@
+{
+  "recommender": "design_10_ensemble",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0755,
+    "ndcg_10": 0.2777,
+    "mrr": 0.1111,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 20.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7017689347267151,
+      "explanation": "Ranked here because: attribute sentiment (+0.24), avg rating (+0.22), BM25 relevance (+0.20), attribute coverage (+0.13)",
+      "matched_attributes": {
+        "attribute sentiment": 0.24265623092651367,
+        "avg rating": 0.21846811473369598,
+        "BM25 relevance": 0.19695554673671722,
+        "attribute coverage": 0.12692901492118835,
+        "review count": 0.06671188026666641,
+        "attribute match rate": 0.035041630268096924
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6661125421524048,
+      "explanation": "Ranked here because: attribute sentiment (+0.28), avg rating (+0.18), vector similarity (+0.17), review count (+0.11)",
+      "matched_attributes": {
+        "attribute sentiment": 0.2827470302581787,
+        "avg rating": 0.17934392392635345,
+        "vector similarity": 0.16869942843914032,
+        "review count": 0.10629162192344666,
+        "attribute coverage": 0.041278693825006485
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6196818351745605,
+      "explanation": "Ranked here because: avg rating (+0.21), attribute sentiment (+0.19), vector similarity (+0.16), BM25 relevance (-0.11)",
+      "matched_attributes": {
+        "avg rating": 0.21062001585960388,
+        "attribute sentiment": 0.18618662655353546,
+        "vector similarity": 0.15561623871326447,
+        "review count": 0.08028588443994522
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6192341446876526,
+      "explanation": "Ranked here because: avg rating (+0.19), vector similarity (+0.17), BM25 relevance (+0.16), attribute sentiment (-0.10)",
+      "matched_attributes": {
+        "avg rating": 0.190980926156044,
+        "vector similarity": 0.16501280665397644,
+        "BM25 relevance": 0.15577483177185059,
+        "review count": 0.06694874167442322,
+        "attribute coverage": 0.02725895494222641
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.5832148790359497,
+      "explanation": "Ranked here because: attribute sentiment (+0.21), vector similarity (+0.09), review count (+0.08), attribute match rate (-0.03)",
+      "matched_attributes": {
+        "attribute sentiment": 0.20893418788909912,
+        "vector similarity": 0.09022295475006104,
+        "review count": 0.07635574042797089,
+        "avg rating": 0.03299010545015335
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.5367579460144043,
+      "explanation": "Ranked here because: vector similarity (+0.10), attribute sentiment (-0.09), review count (+0.07), BM25 relevance (+0.06)",
+      "matched_attributes": {
+        "vector similarity": 0.09557262808084488,
+        "review count": 0.07215125113725662,
+        "BM25 relevance": 0.05893966555595398,
+        "avg rating": 0.05054444819688797
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.5316908359527588,
+      "explanation": "Ranked here because: attribute sentiment (-0.13), vector similarity (+0.13), review count (+0.07), BM25 relevance (+0.05)",
+      "matched_attributes": {
+        "vector similarity": 0.13186092674732208,
+        "review count": 0.07341229915618896,
+        "BM25 relevance": 0.054205846041440964,
+        "avg rating": 0.024381835013628006,
+        "attribute coverage": 0.0123981274664402
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5047245025634766,
+      "explanation": "Ranked here because: attribute sentiment (-0.20), avg rating (+0.17), review count (+0.05), vector similarity (+0.05)",
+      "matched_attributes": {
+        "avg rating": 0.17271076142787933,
+        "review count": 0.054881077259778976,
+        "vector similarity": 0.04690878093242645,
+        "attribute coverage": 0.015195919200778008
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.4975328743457794,
+      "explanation": "Ranked here because: BM25 relevance (-0.20), vector similarity (+0.18), avg rating (+0.14), review count (-0.14)",
+      "matched_attributes": {
+        "vector similarity": 0.17948484420776367,
+        "avg rating": 0.14105859398841858,
+        "attribute coverage": 0.060999058187007904
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.49421408772468567,
+      "explanation": "Ranked here because: BM25 relevance (-0.08), vector similarity (+0.06), review count (+0.05), attribute match rate (-0.03)",
+      "matched_attributes": {
+        "vector similarity": 0.06472177803516388,
+        "review count": 0.050521597266197205
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "recommender": "design_01_graph",
+  "query_id": "EASY-02",
+  "query_text": "soft beginner ski",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5192,
+    "ndcg_10": 0.5192,
+    "mrr": 0.3333,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3738.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 1.0,
+      "explanation": "K2 Disruption 78C strongly matches on: playfulness. Moderate match on: stiffness. Review: \"Lightweight, not tiring\" Review: \"Soft enough to be friendly\"",
+      "matched_attributes": {
+        "stiffness": 0.6666666666666666,
+        "playfulness": 0.7704166666666667
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.8394,
+      "explanation": "Elan Ripstick 96 strongly matches on: playfulness. Moderate match on: stiffness. Review: \"At 96mm they're right in the sweet spot\" Review: \"carbon Amphibio construction is unique \u2014 different flex on each edge for easier turn initiation\" Review: \"Decent playfulness and edge grip\"",
+      "matched_attributes": {
+        "stiffness": 0.35208333333333336,
+        "playfulness": 0.878125
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.8355,
+      "explanation": "Rossignol Experience 78 Ca strongly matches on: playfulness. Moderate match on: stiffness. Review: \"Soft flex makes it easy to control at slow speeds.\" Review: \"forgiving flex pattern\" Review: \"Light enough that my legs don't get tired.\"",
+      "matched_attributes": {
+        "stiffness": 0.30333333333333334,
+        "playfulness": 0.8246666666666667
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.475,
+      "explanation": "Line Blade strongly matches on: playfulness. Weak match on: stiffness. Review: \"Stiff flex, stable at speed\" Review: \"Not explicitly stated as stiffness but related to edge feel.\" Review: \"Slightly more playful than other expert carvers which I love.\"",
+      "matched_attributes": {
+        "stiffness": 0.2941666666666667,
+        "playfulness": 0.8070833333333334
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.4257,
+      "explanation": "Moderate match on: stiffness, playfulness. Review: \"Playfulness is moderate\"",
+      "matched_attributes": {
+        "stiffness": 0.4444444444444444,
+        "playfulness": 0.6321666666666667
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.2978,
+      "explanation": "Moderate match on: playfulness. Weak match on: stiffness. Review: \"Stiff enough for experts but not punishing\" Review: \"impressive stiffness for all-mountain ski\" Review: \"good playfulness for an all-mountain ski\"",
+      "matched_attributes": {
+        "stiffness": 0.13500000000000006,
+        "playfulness": 0.6683333333333333
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1352,
+      "explanation": "Moderate match on: playfulness. Weak match on: stiffness. Review: \"Stable at speed, doesn't wander.\"",
+      "matched_attributes": {
+        "stiffness": 0.135,
+        "playfulness": 0.33333333333333337
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.0895,
+      "explanation": "Moderate match on: playfulness. Weak match on: stiffness. Review: \"Stiff enough for aggressive skiing\" Review: \"Good stability, stiff flex.\" Review: \"not quite as damp as the Supershape but more lively feeling\"",
+      "matched_attributes": {
+        "stiffness": 0.15250000000000002,
+        "playfulness": 0.4325
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.0402,
+      "explanation": "Moderate match on: playfulness. Weak match on: stiffness. Review: \"incredible stiffness and power\" Review: \"Stiff enough for aggressive skiing but not quite race-level demanding\" Review: \"connected to the snow but protected from chatter\"",
+      "matched_attributes": {
+        "stiffness": 0.13666666666666671,
+        "playfulness": 0.3816666666666667
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.0,
+      "explanation": "Weak match on: stiffness, playfulness. Review: \"incredibly stiff and powerful\" Review: \"Stiff and damp from the titanal construction\" Review: \"Not playful, very precise\"",
+      "matched_attributes": {
+        "stiffness": 0.10000000000000003,
+        "playfulness": 0.24
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-017",
+      "relevance": 3,
+      "reason": "True beginner ski, softest flex (2), max forgiveness (10)"
+    },
+    {
+      "product_id": "SKI-003",
+      "relevance": 3,
+      "reason": "Beginner frontside, stiffness 3, forgiveness 9"
+    },
+    {
+      "product_id": "SKI-016",
+      "relevance": 2,
+      "reason": "Intermediate frontside, stiffness 4, forgiveness 8"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 1,
+      "reason": "All-mountain but forgiving (6), moderate stiffness"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 1,
+      "reason": "Soft flex (5) and forgiving (6), though freestyle-oriented"
+    }
+  ]
+}

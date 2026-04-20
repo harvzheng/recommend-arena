@@ -1,0 +1,156 @@
+{
+  "recommender": "design_07_bayesian",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8707,
+    "ndcg_10": 0.9637,
+    "mrr": 1.0,
+    "attribute_precision": 0.3333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.2857,
+    "explanation_score": 3.0,
+    "latency_ms": 2644.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 1.0,
+      "explanation": "Recommended because P(very_stiff) = 0.64 (from 6/6 reviews), P(high) = 0.62 (from 4/5 reviews), P(on-piste) = 0.46 (from 5/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.6364,
+        "dampness": 0.625,
+        "terrain": 0.4615
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.774,
+      "explanation": "Recommended because P(very_stiff) = 0.38 (from 4/8 reviews), P(high) = 0.60 (from 5/7 reviews), P(on-piste) = 0.60 (from 8/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3846,
+        "dampness": 0.6,
+        "terrain": 0.6
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.4995,
+      "explanation": "Recommended because P(very_stiff) = 0.64 (from 6/6 reviews), P(high) = 0.25 (from 1/5 reviews), P(on-piste) = 0.54 (from 6/7 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.6364,
+        "dampness": 0.25,
+        "terrain": 0.5385
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.3568,
+      "explanation": "Recommended because P(very_stiff) = 0.36 (from 3/6 reviews), P(high) = 0.29 (from 1/4 reviews), P(on-piste) = 0.57 (from 7/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3636,
+        "dampness": 0.2857,
+        "terrain": 0.5714
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.2366,
+      "explanation": "Recommended because P(very_stiff) = 0.33 (from 3/7 reviews), P(high) = 0.80 (from 7/7 reviews), P(on-piste) = 0.14 (from 1/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.3333,
+        "dampness": 0.8,
+        "terrain": 0.1429
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.2266,
+      "explanation": "Recommended because P(very_stiff) = 0.18 (from 1/6 reviews), P(high) = 0.40 (from 3/7 reviews), P(on-piste) = 0.50 (from 6/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1818,
+        "dampness": 0.4,
+        "terrain": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.2207,
+      "explanation": "Recommended because P(very_stiff) = 0.09 (from 0/6 reviews), P(high) = 0.78 (from 6/6 reviews), P(on-piste) = 0.50 (from 6/8 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.0909,
+        "dampness": 0.7778,
+        "terrain": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.1798,
+      "explanation": "Recommended because P(very_stiff) = 0.42 (from 4/7 reviews), P(high) = 0.75 (from 5/5 reviews), P(on-piste) = 0.09 (from 0/5 reviews). Confidence: low (8 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.4167,
+        "dampness": 0.75,
+        "terrain": 0.0909
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.1594,
+      "explanation": "Recommended because P(very_stiff) = 0.50 (from 6/9 reviews), P(high) = 0.75 (from 5/5 reviews), P(on-piste) = 0.07 (from 0/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "dampness": 0.75,
+        "terrain": 0.0667
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.1049,
+      "explanation": "Recommended because P(very_stiff) = 0.17 (from 1/7 reviews), P(high) = 0.73 (from 7/8 reviews), P(on-piste) = 0.13 (from 1/9 reviews). Confidence: low (9 total observations).",
+      "matched_attributes": {
+        "stiffness": 0.1667,
+        "dampness": 0.7273,
+        "terrain": 0.1333
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

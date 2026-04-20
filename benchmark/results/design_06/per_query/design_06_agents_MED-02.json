@@ -1,0 +1,176 @@
+{
+  "recommender": "design_06_agents",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3772,
+    "ndcg_10": 0.5896,
+    "mrr": 0.125,
+    "attribute_precision": 0.4,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.4444,
+    "explanation_score": 5.0,
+    "latency_ms": 2368.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.9476,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), powder float (100%), damp (84%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.84,
+        "playfulness": 1.0,
+        "powder_float": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.9338,
+      "explanation": "Strong match on stiffness (100%), powder float (100%), damp (90%), playfulness (90%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.9,
+        "playfulness": 0.9,
+        "powder_float": 1.0,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.8886,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), powder float (100%). Moderate fit for damp. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.65,
+        "playfulness": 1.0,
+        "powder_float": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.8773,
+      "explanation": "Strong match on stiffness (100%), powder float (93%), playfulness (86%), damp (84%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.84,
+        "playfulness": 0.855,
+        "powder_float": 0.927,
+        "review_quality": 0.84
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8709,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), powder float (88%), damp (71%). Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.712,
+        "playfulness": 1.0,
+        "powder_float": 0.885,
+        "review_quality": 0.88
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8515,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), powder float (87%). Moderate fit for damp. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.663,
+        "playfulness": 1.0,
+        "powder_float": 0.87,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.8497,
+      "explanation": "Strong match on stiffness (100%), damp (100%), powder float (100%). Moderate fit for playfulness. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "playfulness": 0.52,
+        "powder_float": 1.0,
+        "review_quality": 0.96
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.8421,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), powder float (100%). Moderate fit for damp. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.5,
+        "playfulness": 1.0,
+        "powder_float": 1.0,
+        "review_quality": 0.92
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8212,
+      "explanation": "Strong match on stiffness (100%), playfulness (100%), powder float (86%). Moderate fit for damp. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 0.58,
+        "playfulness": 1.0,
+        "powder_float": 0.855,
+        "review_quality": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7948,
+      "explanation": "Strong match on stiffness (100%), damp (100%), playfulness (72%). Moderate fit for powder float. Highly rated by reviewers.",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "damp": 1.0,
+        "playfulness": 0.725,
+        "powder_float": 0.625,
+        "review_quality": 0.9
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

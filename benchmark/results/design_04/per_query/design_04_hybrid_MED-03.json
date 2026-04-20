@@ -1,0 +1,144 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "MED-03",
+  "query_text": "titanal construction ski with edge grip for hardpack and at least 95mm waist",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0841,
+    "ndcg_10": 0.2157,
+    "mrr": 0.1,
+    "attribute_precision": 0.6333,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.3585,
+    "explanation_score": 4.0,
+    "latency_ms": 20.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.861699588894844,
+      "explanation": "Attribute matches:\n  matched: waist width (0.98)\n  matched: construction (0.97)\n  matched: edge grip (0.95)\nSignals: vector similarity 0.63, attribute match 1.00, sentiment strength 0.97",
+      "matched_attributes": {
+        "construction": 0.975,
+        "edge_grip": 0.95,
+        "waist_width": 0.985
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.718882821003596,
+      "explanation": "Attribute matches:\n  matched: construction (0.97)\n  matched: edge grip (0.93)\nSignals: vector similarity 0.61, attribute match 0.67, sentiment strength 0.95",
+      "matched_attributes": {
+        "construction": 0.975,
+        "edge_grip": 0.925
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.7158232174317042,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\n  matched: waist width (0.94)\nSignals: vector similarity 0.59, attribute match 0.67, sentiment strength 0.97",
+      "matched_attributes": {
+        "edge_grip": 1.0,
+        "waist_width": 0.935
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6984101269642512,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.92)\n  matched: waist width (0.81)\nSignals: vector similarity 0.62, attribute match 0.67, sentiment strength 0.86",
+      "matched_attributes": {
+        "edge_grip": 0.916875,
+        "waist_width": 0.8125
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6852420578400293,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.90)\n  matched: waist width (0.75)\nSignals: vector similarity 0.61, attribute match 0.67, sentiment strength 0.82",
+      "matched_attributes": {
+        "edge_grip": 0.9,
+        "waist_width": 0.75
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6785289982954661,
+      "explanation": "Attribute matches:\n  matched: waist width (0.90)\n  matched: edge grip (0.80)\nSignals: vector similarity 0.57, attribute match 0.67, sentiment strength 0.85",
+      "matched_attributes": {
+        "edge_grip": 0.8,
+        "waist_width": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6284417490164439,
+      "explanation": "Attribute matches:\n  matched: waist width (1.00)\n  matched: edge grip (0.38)\nSignals: vector similarity 0.54, attribute match 0.67, sentiment strength 0.69",
+      "matched_attributes": {
+        "edge_grip": 0.375,
+        "waist_width": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.5843680759270986,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.97)\nSignals: vector similarity 0.59, attribute match 0.33, sentiment strength 0.97",
+      "matched_attributes": {
+        "edge_grip": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.5793524028857548,
+      "explanation": "Attribute matches:\n  matched: edge grip (0.99)\nSignals: vector similarity 0.57, attribute match 0.33, sentiment strength 0.99",
+      "matched_attributes": {
+        "edge_grip": 0.9924999999999999
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5677647491296132,
+      "explanation": "Attribute matches:\n  matched: edge grip (1.00)\nSignals: vector similarity 0.53, attribute match 0.33, sentiment strength 1.00",
+      "matched_attributes": {
+        "edge_grip": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-019",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 8, 96mm waist, hardpack specialist"
+    },
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Titanal sandwich, edge grip 7, 100mm waist"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 108mm waist"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 98mm waist"
+    },
+    {
+      "product_id": "SKI-022",
+      "relevance": 2,
+      "reason": "Titanal sandwich, edge grip 7, 106mm waist"
+    }
+  ]
+}

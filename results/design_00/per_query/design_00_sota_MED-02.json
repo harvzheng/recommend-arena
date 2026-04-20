@@ -1,0 +1,96 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4053,
+    "ndcg_10": 0.4053,
+    "mrr": 0.0,
+    "attribute_precision": 1.0,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.6667,
+    "explanation_score": 5.0,
+    "latency_ms": 3148.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 1.0,
+      "explanation": "Black Crows Atris excels in: playfulness, powder_float. Review: \"More playful than heavy titanal powder skis.\" Review: \"Playfulness is incredible, you can butter and smear everywhere.\" Review: \"The Atris is a powder dream. At 108mm with generous rocker, it floats effortlessly.\"",
+      "matched_attributes": {
+        "playfulness": 0.95,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.5988,
+      "explanation": "Salomon QST 106 excels in: playfulness, powder_float. Review: \"Playful enough for drops and airs.\" Review: \"Damp, playful, floaty.\" Review: \"Floats beautifully in powder at 106mm.\"",
+      "matched_attributes": {
+        "playfulness": 0.79,
+        "powder_float": 0.9
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.587,
+      "explanation": "Dynastar M-Free 108 excels in: playfulness, powder_float. Review: \"more playful.\" Review: \"The playfulness is nice \u2014 lets you throw in some style.\" Review: \"The M-Free 108 is well-balanced between float and grip.\"",
+      "matched_attributes": {
+        "playfulness": 0.8,
+        "powder_float": 0.85
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.5408,
+      "explanation": "Moment Wildcat 108 excels in: playfulness, powder_float. Review: \"The maple/triax construction gives it a unique blend of power and playfulness.\" Review: \"More chargy than the Atris but more playful than the Mindbender.\" Review: \"Float is excellent at 108mm with rocker.\"",
+      "matched_attributes": {
+        "playfulness": 0.85,
+        "powder_float": 0.755
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.0,
+      "explanation": "K2 Mindbender 108Ti excels in: powder_float. Solid on: playfulness. Review: \"Decent playfulness for a charger.\" Review: \"this is not a playful noodle.\" Review: \"At 108mm it floats well in powder\"",
+      "matched_attributes": {
+        "playfulness": 0.5,
+        "powder_float": 0.8
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}

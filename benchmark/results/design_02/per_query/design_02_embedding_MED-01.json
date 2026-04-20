@@ -1,0 +1,191 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "MED-01",
+  "query_text": "stiff, damp, on-piste ski available in 180cm or longer",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0732,
+    "mrr": 0.0,
+    "attribute_precision": 0.1036,
+    "attribute_recall": 0.15,
+    "attribute_f1": 0.1225,
+    "explanation_score": 4.1,
+    "latency_ms": 671.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 1.0,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Great ski for people who mostly carve groomers but occasionally venture off-piste. The 90mm waist is the right width for...\"",
+      "matched_attributes": {
+        "stiffness": 0.7735,
+        "dampness": 0.7152,
+        "turn_quality": 0.7152,
+        "stability": 0.6861,
+        "speed": 0.7571,
+        "grip": 0.7571,
+        "versatility": 0.7571,
+        "weight": 0.615
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.9745,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The shorter sizes are great for lightweight and shorter skiers. Performance doesn't suffer \u2014 still damp, stable, and ver...\"",
+      "matched_attributes": {
+        "weight": 0.7329,
+        "stability": 0.7205,
+        "dampness": 0.7205,
+        "grip": 0.7053,
+        "versatility": 0.7187,
+        "float": 0.6901
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.9709,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Good ski for weekend family trips. Doesn't demand too much energy or technique. Easy turns, reasonable edge grip, light ...\"",
+      "matched_attributes": {
+        "weight": 0.6815,
+        "grip": 0.6815,
+        "turn_quality": 0.6815,
+        "dampness": 0.6628,
+        "float": 0.7164
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7444,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Great option for resort freeride. The carbon construction keeps weight down while flax adds natural dampness. Good float...\"",
+      "matched_attributes": {
+        "weight": 0.5912,
+        "dampness": 0.5987,
+        "grip": 0.5803,
+        "float": 0.5987,
+        "playfulness": 0.6024,
+        "comfort": 0.6024,
+        "turn_quality": 0.5693
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.6812,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Stiff, damp, and incredibly stable at speed. The 193cm is a beast but at 6'3\" I need the length. Floats in powder, grips...\"",
+      "matched_attributes": {
+        "stiffness": 0.6656,
+        "stability": 0.6656,
+        "dampness": 0.6639,
+        "speed": 0.6639,
+        "float": 0.6639,
+        "weight": 0.6527,
+        "grip": 0.6381,
+        "forgiveness": 0.6381
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6223,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Solid advanced frontside ski. The 82mm waist is wide enough for some versatility but narrow enough for real carving. Tit...\"",
+      "matched_attributes": {
+        "dampness": 0.7098,
+        "grip": 0.7098,
+        "turn_quality": 0.7272,
+        "weight": 0.7332,
+        "float": 0.7332,
+        "precision": 0.7332,
+        "stiffness": 0.6924
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.5702,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"Edge grip is good but not outstanding. Not as damp as heavier titanal skis. A good versatile choice....\"",
+      "matched_attributes": {
+        "dampness": 0.6962,
+        "grip": 0.6962,
+        "versatility": 0.6731,
+        "weight": 0.65,
+        "speed": 0.6638,
+        "float": 0.65,
+        "turn_quality": 0.65,
+        "stability": 0.6777
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.5279,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"The double titanal layers make it the most damp all-mountain ski available. Edge grip is outstanding for a 96mm waist sk...\"",
+      "matched_attributes": {
+        "dampness": 0.6952,
+        "grip": 0.6876,
+        "versatility": 0.6952,
+        "stiffness": 0.6962,
+        "stability": 0.6885,
+        "speed": 0.6885
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.5116,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"The Pagoda Tour 112 RP is the ultimate powder touring ski. At 112mm waist with full rocker, the float is unmatched. The ...\"",
+      "matched_attributes": {
+        "weight": 0.6517,
+        "float": 0.6517,
+        "stiffness": 0.6312
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5107,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"They're also available in shorter sizes for petite skiers. Zero edge grip on ice but I avoid that anyway....\"",
+      "matched_attributes": {
+        "grip": 0.6733,
+        "dampness": 0.6988,
+        "comfort": 0.6988,
+        "stiffness": 0.7159,
+        "weight": 0.7159,
+        "forgiveness": 0.7159,
+        "turn_quality": 0.7159
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Stiffness 10, damp 8, on-piste, available 183cm"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Stiffness 8, damp 9, on-piste/carving, available 184cm"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Stiffness 8, damp 7, on-piste/carving, available 181cm"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 2,
+      "reason": "Stiffness 7, damp 7, on-piste, available 182cm"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 1,
+      "reason": "Stiffness 7, damp 8, on-piste, available 187cm"
+    }
+  ]
+}

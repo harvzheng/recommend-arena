@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "VAGUE-01",
+  "query_text": "a ski that feels alive underfoot",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.7723,
+    "ndcg_10": 0.8609,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 29.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 1.0,
+      "explanation": "Strong match on powder_float (15%), stability_at_speed (15%), damp (15%). Also relevant: stiffness, playfulness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.148,
+        "stability_at_speed": 0.147,
+        "damp": 0.146,
+        "stiffness": 0.145,
+        "playfulness": 0.144,
+        "edge_grip": 0.142,
+        "forgiveness": 0.129
+      }
+    },
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.8473,
+      "explanation": "Strong match on stability_at_speed (15%), stiffness (15%), damp (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.151,
+        "stiffness": 0.15,
+        "damp": 0.15,
+        "edge_grip": 0.149,
+        "powder_float": 0.141,
+        "playfulness": 0.136,
+        "forgiveness": 0.123
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.7551,
+      "explanation": "Strong match on stability_at_speed (15%), stiffness (15%), damp (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.15,
+        "stiffness": 0.15,
+        "damp": 0.15,
+        "edge_grip": 0.148,
+        "powder_float": 0.143,
+        "playfulness": 0.137,
+        "forgiveness": 0.123
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.7448,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), stability_at_speed (14%). Also relevant: damp, stiffness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.151,
+        "playfulness": 0.148,
+        "stability_at_speed": 0.145,
+        "damp": 0.143,
+        "stiffness": 0.141,
+        "edge_grip": 0.139,
+        "forgiveness": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7358,
+      "explanation": "Strong match on stiffness (15%), damp (15%), stability_at_speed (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.15,
+        "damp": 0.15,
+        "stability_at_speed": 0.15,
+        "edge_grip": 0.149,
+        "powder_float": 0.141,
+        "playfulness": 0.135,
+        "forgiveness": 0.126
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.6878,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), stability_at_speed (14%). Also relevant: damp, stiffness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.15,
+        "playfulness": 0.148,
+        "stability_at_speed": 0.145,
+        "damp": 0.143,
+        "stiffness": 0.141,
+        "edge_grip": 0.139,
+        "forgiveness": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6825,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.15,
+        "damp": 0.149,
+        "stiffness": 0.149,
+        "edge_grip": 0.148,
+        "powder_float": 0.142,
+        "playfulness": 0.137,
+        "forgiveness": 0.125
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.656,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.15,
+        "damp": 0.149,
+        "stiffness": 0.149,
+        "edge_grip": 0.148,
+        "powder_float": 0.142,
+        "playfulness": 0.137,
+        "forgiveness": 0.126
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6471,
+      "explanation": "Strong match on stiffness (15%), damp (15%), stability_at_speed (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.151,
+        "damp": 0.151,
+        "stability_at_speed": 0.151,
+        "edge_grip": 0.15,
+        "powder_float": 0.14,
+        "playfulness": 0.134,
+        "forgiveness": 0.122
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6373,
+      "explanation": "Strong match on stiffness (15%), damp (15%), stability_at_speed (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stiffness": 0.152,
+        "damp": 0.152,
+        "stability_at_speed": 0.152,
+        "edge_grip": 0.151,
+        "powder_float": 0.139,
+        "playfulness": 0.133,
+        "forgiveness": 0.121
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-013",
+      "relevance": 3,
+      "reason": "Reviewer literally says 'feels alive underfoot', maple core described as springy and engaging"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Maple core described as lively and snappy, engaging carving feel"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Reviews emphasize fun and lively feel"
+    },
+    {
+      "product_id": "SKI-018",
+      "relevance": 2,
+      "reason": "Poppy, energetic feel from ash/poplar core"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 1,
+      "reason": "Described as poppy and energetic"
+    }
+  ]
+}

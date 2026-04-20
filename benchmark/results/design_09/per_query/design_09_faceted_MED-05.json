@@ -1,0 +1,68 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-05",
+  "query_text": "expert carving ski with dampness above 7 and full camber profile",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.4826,
+    "ndcg_10": 0.4826,
+    "mrr": 0.5,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3899.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.729982191132218,
+      "explanation": "stiffness=0.90 (match: 100%); dampness=0.70 (match: 100%); playfulness=0.20 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "dampness": 1.0,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.65,
+      "explanation": "stiffness=1.00 (match: 100%); dampness=0.80 (match: 100%); playfulness=0.10 (match: 100%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "dampness": 1.0,
+        "playfulness": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-004",
+      "relevance": 3,
+      "reason": "Expert carving, damp 9, full camber"
+    },
+    {
+      "product_id": "SKI-002",
+      "relevance": 3,
+      "reason": "Race GS, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-001",
+      "relevance": 2,
+      "reason": "Race slalom, damp 7, full camber"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 2,
+      "reason": "Advanced frontside, damp 8, full camber"
+    },
+    {
+      "product_id": "SKI-023",
+      "relevance": 2,
+      "reason": "Expert carver, damp 7, full camber"
+    }
+  ]
+}

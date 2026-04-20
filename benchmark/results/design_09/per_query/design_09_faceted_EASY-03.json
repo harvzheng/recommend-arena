@@ -1,0 +1,186 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0755,
+    "ndcg_10": 0.0755,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3901.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-023",
+      "product_name": "Line Blade",
+      "score": 0.7583125037825565,
+      "explanation": "stiffness=0.80 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=72.00 (match: 100%); dampness=0.70 (match: 87%); playfulness=0.50 (match: 80%); edge_grip=0.90 (match: 28%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.2777777777777778,
+        "dampness": 0.8749999999999999,
+        "playfulness": 0.8,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.7272220642688737,
+      "explanation": "stiffness=0.80 (match: 100%); dampness=0.90 (match: 100%); playfulness=0.30 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=72.00 (match: 100%); edge_grip=0.90 (match: 28%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.2777777777777778,
+        "dampness": 1.0,
+        "playfulness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.725087236047097,
+      "explanation": "stiffness=0.70 (match: 100%); dampness=0.80 (match: 100%); playfulness=0.40 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=76.00 (match: 100%); edge_grip=0.80 (match: 31%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.3125,
+        "dampness": 1.0,
+        "playfulness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7243484009017522,
+      "explanation": "stiffness=0.90 (match: 100%); playfulness=0.20 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=66.00 (match: 100%); dampness=0.70 (match: 87%); edge_grip=1.00 (match: 25%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.25,
+        "dampness": 0.8749999999999999,
+        "playfulness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7006416897939683,
+      "explanation": "stiffness=0.80 (match: 100%); dampness=0.80 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=108.00 (match: 88%); playfulness=0.50 (match: 80%); edge_grip=0.70 (match: 36%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.35714285714285715,
+        "dampness": 1.0,
+        "playfulness": 0.8,
+        "has_rocker": 1.0,
+        "waist_width_mm": 0.8796296296296297
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6932636580866678,
+      "explanation": "stiffness=1.00 (match: 100%); dampness=0.80 (match: 100%); playfulness=0.10 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=68.00 (match: 100%); edge_grip=1.00 (match: 25%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.25,
+        "dampness": 1.0,
+        "playfulness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6861922418231796,
+      "explanation": "stiffness=0.80 (match: 100%); dampness=0.90 (match: 100%); playfulness=0.40 (match: 100%); has_rocker=0 (match: 100%); waist_width_mm=106.00 (match: 90%); edge_grip=0.70 (match: 36%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.35714285714285715,
+        "dampness": 1.0,
+        "playfulness": 1.0,
+        "has_rocker": 1.0,
+        "waist_width_mm": 0.8962264150943396
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.6285961668732819,
+      "explanation": "stiffness=0.80 (match: 100%); dampness=0.90 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=96.00 (match: 99%); edge_grip=0.80 (match: 31%); has_rocker=1 (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.3125,
+        "dampness": 1.0,
+        "playfulness": 1.0,
+        "has_rocker": 0.0,
+        "waist_width_mm": 0.9895833333333334
+      }
+    },
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.6216652574415106,
+      "explanation": "stiffness=0.70 (match: 100%); dampness=0.80 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=88.00 (match: 100%); edge_grip=0.80 (match: 31%); has_rocker=1 (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.3125,
+        "dampness": 1.0,
+        "playfulness": 1.0,
+        "has_rocker": 0.0,
+        "waist_width_mm": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5679983461486707,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); waist_width_mm=82.00 (match: 100%); dampness=0.70 (match: 87%); edge_grip=0.80 (match: 31%); has_rocker=1 (match: 0%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.3125,
+        "dampness": 0.8749999999999999,
+        "playfulness": 1.0,
+        "has_rocker": 0.0,
+        "waist_width_mm": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

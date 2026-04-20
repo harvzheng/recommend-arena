@@ -1,0 +1,173 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "HARD-03",
+  "query_text": "ski for advanced intermediate that's forgiving but not a beginner ski, 80-95mm waist, available in 170-175cm",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0795,
+    "ndcg_10": 0.2239,
+    "mrr": 0.1111,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 3.8,
+    "latency_ms": 715.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 1.0,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"These skis gave me confidence on my first trip. So easy to turn, so light, so forgiving. The short lengths (I'm on 149cm...\"",
+      "matched_attributes": {
+        "stiffness": 0.7021,
+        "weight": 0.7021,
+        "forgiveness": 0.7021,
+        "turn_quality": 0.7021,
+        "dampness": 0.6564,
+        "comfort": 0.6564
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.8375,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"The shorter sizes are great for lightweight and shorter skiers. Performance doesn't suffer \u2014 still damp, stable, and ver...\"",
+      "matched_attributes": {
+        "weight": 0.7115,
+        "stability": 0.6778,
+        "dampness": 0.6778,
+        "grip": 0.6365,
+        "versatility": 0.7115
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.8099,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"My first pair of skis and they're perfect for learning! Very forgiving when I make mistakes. Light enough that my legs d...\"",
+      "matched_attributes": {
+        "stiffness": 0.6638,
+        "weight": 0.6243,
+        "forgiveness": 0.6638,
+        "grip": 0.5955
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.7627,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Perfect ski for my level. The K2 Disruption 78C is forgiving enough for my mistakes but has enough edge grip for confide...\"",
+      "matched_attributes": {
+        "stiffness": 0.6856,
+        "grip": 0.6856,
+        "forgiveness": 0.6856,
+        "turn_quality": 0.698,
+        "weight": 0.7229,
+        "speed": 0.7229
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.7618,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"At 96mm they're right in the sweet spot. Light and fun to ski. Edge grip is good but not outstanding....\"",
+      "matched_attributes": {
+        "weight": 0.6631,
+        "grip": 0.6653,
+        "playfulness": 0.6588,
+        "stiffness": 0.6653,
+        "forgiveness": 0.6653,
+        "float": 0.6719
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.6768,
+      "explanation": "Matched on 4 attribute(s) from 5 review passage(s). Top evidence: \"The 184cm handles beautifully in open bowls. Soft flex, very forgiving....\"",
+      "matched_attributes": {
+        "stiffness": 0.585,
+        "forgiveness": 0.585,
+        "playfulness": 0.5893,
+        "float": 0.5893
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6712,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"More chargy than the Atris but more playful than the Mindbender. A great middle ground for freeride skiing. Float is gre...\"",
+      "matched_attributes": {
+        "stability": 0.6132,
+        "dampness": 0.6132,
+        "playfulness": 0.615,
+        "float": 0.6369,
+        "stiffness": 0.5712
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.6621,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"Love this ski....\"",
+      "matched_attributes": {
+        "stiffness": 0.6544,
+        "float": 0.6544,
+        "forgiveness": 0.6544
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6427,
+      "explanation": "Matched on 2 attribute(s) from 5 review passage(s). Top evidence: \"The tip rocker helps when it gets chopped up. At 82mm it's slightly wider than pure carvers which I appreciate for versa...\"",
+      "matched_attributes": {
+        "playfulness": 0.6176,
+        "turn_quality": 0.6304
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.6243,
+      "explanation": "Matched on 6 attribute(s) from 5 review passage(s). Top evidence: \"Very playful \u2014 great for butters, natural features, and creative skiing. At 106mm it floats well in powder. Edge grip is...\"",
+      "matched_attributes": {
+        "grip": 0.6096,
+        "playfulness": 0.6232,
+        "float": 0.6398,
+        "stiffness": 0.5899,
+        "stability": 0.67,
+        "speed": 0.67
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "88mm waist, forgiveness 4, 173cm available, advanced capability"
+    },
+    {
+      "product_id": "SKI-015",
+      "relevance": 3,
+      "reason": "82mm waist, forgiveness 5, 171/176cm available, advanced frontside"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "90mm waist, forgiveness 5, 176cm available (slightly over range)"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "96mm waist (slightly over), forgiveness 6, 172cm available"
+    },
+    {
+      "product_id": "SKI-005",
+      "relevance": 1,
+      "reason": "76mm waist (slightly under), forgiveness 4, 173cm available"
+    }
+  ]
+}

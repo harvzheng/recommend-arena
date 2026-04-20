@@ -1,0 +1,122 @@
+{
+  "recommender": "design_04_hybrid",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.3914,
+    "ndcg_10": 0.4564,
+    "mrr": 0.25,
+    "attribute_precision": 0.3,
+    "attribute_recall": 0.15,
+    "attribute_f1": 0.2,
+    "explanation_score": 2.9,
+    "latency_ms": 36.3
+  },
+  "results": [
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.8762346297502518,
+      "explanation": "Attribute matches:\n  matched: powder float (1.00)\nSignals: vector similarity 0.65, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8755720227956771,
+      "explanation": "Attribute matches:\n  matched: powder float (1.00)\nSignals: vector similarity 0.64, attribute match 1.00, sentiment strength 1.00",
+      "matched_attributes": {
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8504559993743896,
+      "explanation": "Attribute matches:\n  matched: powder float (0.97)\nSignals: vector similarity 0.59, attribute match 1.00, sentiment strength 0.97",
+      "matched_attributes": {
+        "powder_float": 0.975
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.36591051220893855,
+      "explanation": "Signals: vector similarity 0.69, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.36591051220893855,
+      "explanation": "Signals: vector similarity 0.69, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.3537556946277618,
+      "explanation": "Signals: vector similarity 0.65, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.34805923998355864,
+      "explanation": "Signals: vector similarity 0.64, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.3053517997264862,
+      "explanation": "Signals: vector similarity 0.52, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.3040997475385666,
+      "explanation": "Signals: vector similarity 0.51, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.29798251390457153,
+      "explanation": "Signals: vector similarity 0.49, attribute match 0.00, sentiment strength 0.50",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

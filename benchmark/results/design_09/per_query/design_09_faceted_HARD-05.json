@@ -1,0 +1,156 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "HARD-05",
+  "query_text": "ski that handles both powder and hardpack equally well, not a specialist in either",
+  "difficulty": "hard",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.0588,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 5.0,
+    "latency_ms": 3227.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.6595623466393108,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.40 (match: 75%); edge_grip=0.70 (match: 36%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.35714285714285715,
+        "playfulness": 0.7499999999999999
+      }
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.6544136638567484,
+      "explanation": "stiffness=0.90 (match: 100%); playfulness=0.20 (match: 100%); edge_grip=1.00 (match: 25%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.25,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-002",
+      "product_name": "Atomic Redster G9",
+      "score": 0.6536356970123588,
+      "explanation": "stiffness=1.00 (match: 100%); playfulness=0.10 (match: 100%); edge_grip=1.00 (match: 25%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.25,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-004",
+      "product_name": "Head Supershape e-Speed",
+      "score": 0.6243957042788386,
+      "explanation": "stiffness=0.80 (match: 100%); playfulness=0.30 (match: 100%); edge_grip=0.90 (match: 28%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.2777777777777778,
+        "playfulness": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.6017607376664171,
+      "explanation": "stiffness=0.30 (match: 75%); edge_grip=0.50 (match: 50%); playfulness=0.60 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 0.7499999999999999,
+        "edge_grip": 0.5,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.5922290503179879,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 75%); edge_grip=0.80 (match: 31%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.3125,
+        "playfulness": 0.7499999999999999
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.5761103727242137,
+      "explanation": "stiffness=0.40 (match: 100%); edge_grip=0.50 (match: 50%); playfulness=0.60 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.5,
+        "playfulness": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-017",
+      "product_name": "Head Easy Joy SLR",
+      "score": 0.5602608563574899,
+      "explanation": "edge_grip=0.40 (match: 62%); stiffness=0.20 (match: 50%); playfulness=0.70 (match: 43%)",
+      "matched_attributes": {
+        "stiffness": 0.5,
+        "edge_grip": 0.625,
+        "playfulness": 0.4285714285714286
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.555215403944849,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.70 (match: 43%); edge_grip=0.60 (match: 42%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.4166666666666667,
+        "playfulness": 0.4285714285714286
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.5385859364071476,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 75%); edge_grip=0.80 (match: 31%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "edge_grip": 0.3125,
+        "playfulness": 0.7499999999999999
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Float 6, edge grip 7 \u2014 most balanced between powder and hardpack"
+    },
+    {
+      "product_id": "SKI-020",
+      "relevance": 3,
+      "reason": "Float 5, edge grip 7 \u2014 well-balanced"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "Float 7, edge grip 6 \u2014 reasonably balanced"
+    },
+    {
+      "product_id": "SKI-014",
+      "relevance": 2,
+      "reason": "Float 5, edge grip 7 \u2014 balanced at a lower performance level"
+    },
+    {
+      "product_id": "SKI-010",
+      "relevance": 2,
+      "reason": "Float 8, edge grip 6 \u2014 slightly powder-biased but still versatile"
+    }
+  ]
+}

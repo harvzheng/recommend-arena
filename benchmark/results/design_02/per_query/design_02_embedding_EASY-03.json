@@ -1,0 +1,183 @@
+{
+  "recommender": "design_02_embedding",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.8183,
+    "ndcg_10": 0.8799,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.2,
+    "latency_ms": 680.0
+  },
+  "results": [
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 1.0,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"But in powder, nothing makes me smile more....\"",
+      "matched_attributes": {
+        "float": 0.6152,
+        "weight": 0.6449,
+        "speed": 0.6449
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.9119,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"If you tour primarily for powder, this is the one....\"",
+      "matched_attributes": {
+        "float": 0.586,
+        "stiffness": 0.6287,
+        "playfulness": 0.6287,
+        "forgiveness": 0.6287,
+        "weight": 0.5465
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8311,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Good powder float, acceptable edge grip. The Blizzard construction quality is excellent....\"",
+      "matched_attributes": {
+        "grip": 0.61,
+        "float": 0.61,
+        "stability": 0.6105,
+        "playfulness": 0.6105,
+        "stiffness": 0.5468
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8272,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Good float in powder, decent stability for moderate speeds. Not a charger \u2014 it prefers medium speed with lots of style. ...\"",
+      "matched_attributes": {
+        "stability": 0.6332,
+        "speed": 0.5912,
+        "playfulness": 0.642,
+        "float": 0.6531,
+        "grip": 0.6929
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.6927,
+      "explanation": "Matched on 8 attribute(s) from 5 review passage(s). Top evidence: \"My powder day ski at the resort. 106mm waist with the rockered tips means I'm floating from the first run. The flax cons...\"",
+      "matched_attributes": {
+        "dampness": 0.7324,
+        "playfulness": 0.6867,
+        "float": 0.6642,
+        "comfort": 0.7324,
+        "stability": 0.641,
+        "speed": 0.641,
+        "grip": 0.6301,
+        "turn_quality": 0.6193
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.6927,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Great for laps in the park, fun for exploring off-piste with tricks. Edge grip is sacrificed for playfulness and that's ...\"",
+      "matched_attributes": {
+        "grip": 0.6847,
+        "playfulness": 0.6847,
+        "float": 0.6835,
+        "stiffness": 0.6829,
+        "speed": 0.67,
+        "forgiveness": 0.67,
+        "turn_quality": 0.67
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.6641,
+      "explanation": "Matched on 3 attribute(s) from 5 review passage(s). Top evidence: \"Decent float in powder. Not a specialist in anything but competent everywhere....\"",
+      "matched_attributes": {
+        "float": 0.6531,
+        "stability": 0.7136,
+        "grip": 0.7136
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6449,
+      "explanation": "Matched on 5 attribute(s) from 5 review passage(s). Top evidence: \"Really fun freeride ski. Not as floaty as a dedicated powder board but much better on mixed conditions. The Moment quali...\"",
+      "matched_attributes": {
+        "speed": 0.7177,
+        "playfulness": 0.705,
+        "float": 0.6731,
+        "grip": 0.6094,
+        "turn_quality": 0.6094
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6065,
+      "explanation": "Matched on 9 attribute(s) from 5 review passage(s). Top evidence: \"Good edge grip, decent float in light powder. Playful and fun. The 96mm waist is a versatile width....\"",
+      "matched_attributes": {
+        "weight": 0.6199,
+        "grip": 0.6199,
+        "playfulness": 0.5663,
+        "versatility": 0.5663,
+        "float": 0.6199,
+        "stability": 0.6294,
+        "speed": 0.6294,
+        "stiffness": 0.6736,
+        "forgiveness": 0.6736
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.5415,
+      "explanation": "Matched on 7 attribute(s) from 5 review passage(s). Top evidence: \"Not a ski for powder or ice but fine for regular resort conditions....\"",
+      "matched_attributes": {
+        "float": 0.7324,
+        "stiffness": 0.5944,
+        "weight": 0.6427,
+        "dampness": 0.5944,
+        "grip": 0.6427,
+        "forgiveness": 0.5944,
+        "turn_quality": 0.6909
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

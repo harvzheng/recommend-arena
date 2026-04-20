@@ -1,0 +1,166 @@
+{
+  "recommender": "design_12_distilled_llm",
+  "query_id": "EASY-04",
+  "query_text": "playful freestyle ski for the park",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.1035,
+    "ndcg_10": 0.1304,
+    "mrr": 0.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 4.5,
+    "latency_ms": 111357.7
+  },
+  "results": [
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.7,
+      "explanation": "The Atomic Redster S9i is a strong candidate for a playful freestyle ski in the park due to its exceptional edge grip and race-specific construction, but there are some trade-offs such as its inability to handle light snow conditions.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.7,
+        "Turn Radius M": 0.6,
+        "Weight G Per Ski": 0.4,
+        "Rocker Profile": 0.3,
+        "Construction": 0.5,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-003",
+      "product_name": "Rossignol Experience 78 Ca",
+      "score": 0.7,
+      "explanation": "The Rossignol Experience 78 Ca is a good fit for the user's request as it offers playful freestyle skiing qualities suitable for parks, but there are areas where it may not fully meet their needs due to its soft flex making it easier to turn than what they prefer.",
+      "matched_attributes": {
+        "Playful Freestyle Ski": 0.9,
+        "Park Use": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.7,
+      "explanation": "The Volkl Deacon 76 is a good fit for the user's request as it offers playful characteristics such as excellent edge grip and dampness suitable for hardpack conditions, which aligns with their desire for a 'playful' freestyle ski. However, it lacks off-piste performance and feels less forgiving compared to some other skis.",
+      "matched_attributes": {
+        "Edge Grip": 0.9,
+        "Dampness": 0.85,
+        "Hardpack Performance": 0.7
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7,
+      "explanation": "The Nordica Enforcer 100 is a versatile all-mountain ski that excels in various terrains including groomed and off-piste conditions. However, it does not specifically cater to playful freestyle skiing in the park setting where users might prefer more playful behavior.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.9,
+        "Turn Radius M": 0.7,
+        "Weight G Per Ski": 0.6,
+        "Rocker Profile": 0.4,
+        "Construction": 0.3,
+        "Binding System": 0.2
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.7,
+      "explanation": "The Blizzard Rustler 10 is a playful freestyle ski designed for park use, which aligns well with the user's request for a playful skiing experience in the park. However, it lacks stability at higher speeds and may not be ideal for aggressive or high-speed conditions.",
+      "matched_attributes": {
+        "playful_freestyle_ski_for_the_park": 0.8,
+        "user_request": 0.3
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7,
+      "explanation": "The Salomon QST 106 is a playful freestyle ski designed for the park environment, which aligns well with the user's request for a playful skiing experience. However, its primary focus is on providing a smooth and composed ride quality rather than being specifically engineered for extreme snow conditions like those found in the park.",
+      "matched_attributes": {
+        "playful_freestyle_ski_for_the_park": 0.8
+      }
+    },
+    {
+      "product_id": "SKI-009",
+      "product_name": "K2 Mindbender 108Ti",
+      "score": 0.7,
+      "explanation": "The K2 Mindbender 108Ti is a versatile big-mountain ski with excellent stiffness and dampness for challenging terrain, which aligns well with the user's preference for playful freestyle skiing in the park. However, its heavy weight on the chairlift might be too restrictive for more advanced skiers who prefer lighter or more agile options.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.9,
+        "Turn Radius M": 0.7,
+        "Weight G Per Ski": 0.6,
+        "Rocker Profile": 0.8,
+        "Construction": 0.7,
+        "Binding System": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 0.7,
+      "explanation": "The Dynastar M-Free 108 is a versatile freeride ski that excels in providing stability and playfulness for off-piste terrain. However, it may not be as aggressive or playful compared to some other skis designed specifically for freestyle in parks.",
+      "matched_attributes": {
+        "playful_freestyle_ski_for_the_park": 0.6,
+        "lengths_cm": 0.3,
+        "waist_width_mm": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.7,
+      "explanation": "The Black Crows Atris is a versatile and playful ski suitable for various snow conditions including powder and hardpack terrain. It excels in providing a forgiving ride and excellent floatation in soft snow, which aligns well with the user's preference for 'playful freestyle' skiing in the park. However, its primary focus on powder skiing might not fully meet their need for versatility across different snow types.",
+      "matched_attributes": {
+        "Lengths Cm": 0.8,
+        "Waist Width Mm": 0.6,
+        "Turn Radius M": 0.3,
+        "Weight G Per Ski": 0.5,
+        "Rocker Profile": 0.7,
+        "Construction": 0.6,
+        "Binding System": 0.4
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.7,
+      "explanation": "The DPS Pagoda Tour 112 RP is a versatile and suitable option for playful freestyle skiing in parks due to its excellent performance in soft snow conditions and light weight. However, it may not be ideal for hard snow or firm conditions where edge grip might be crucial.",
+      "matched_attributes": {
+        "Playful Freestyle Ski for Park": 0.8
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-018",
+      "relevance": 3,
+      "reason": "Freestyle freeride, playfulness 9, park terrain, twin tip"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain, very fun"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "All-mountain freeride, playfulness 8, park terrain"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, but not park-focused"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 1,
+      "reason": "Powder freeride, playfulness 8, good for tricks"
+    }
+  ]
+}

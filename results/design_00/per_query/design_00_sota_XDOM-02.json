@@ -1,0 +1,66 @@
+{
+  "recommender": "design_00_sota",
+  "query_id": "XDOM-02",
+  "query_text": "lightweight responsive trail running shoe with good grip",
+  "difficulty": "cross_domain",
+  "domain": "running_shoe",
+  "metrics": {
+    "ndcg_5": 0.6475,
+    "ndcg_10": 0.6475,
+    "mrr": 1.0,
+    "attribute_precision": 0.5,
+    "attribute_recall": 0.25,
+    "attribute_f1": 0.3333,
+    "explanation_score": 4.0,
+    "latency_ms": 3327.1
+  },
+  "results": [
+    {
+      "product_id": "SHOE-006",
+      "product_name": "Salomon Speedcross 6",
+      "score": 1.0,
+      "explanation": "Salomon Speedcross 6 excels in: grip. Solid on: responsiveness. Review: \"Not fast on roads but dominates technical trails.\" Review: \"Not great on hard surfaces but in soft/technical terrain it's unbeatable.\" Review: \"The grip is absolutely insane. Muddy trails, wet roots, loose gravel \u2014 the Speedcross grips everything.\"",
+      "matched_attributes": {
+        "responsiveness": 0.6,
+        "grip": 1.0
+      }
+    },
+    {
+      "product_id": "SHOE-010",
+      "product_name": "Nike Pegasus Trail 5",
+      "score": 0.0,
+      "explanation": "Solid on: responsiveness, grip. Review: \"A good crossover shoe.\" Review: \"If you need serious trail grip or road speed, look elsewhere.\" Review: \"Not as grippy as dedicated trail shoes but way better than road shoes off-road.\"",
+      "matched_attributes": {
+        "responsiveness": 0.63,
+        "grip": 0.565
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SHOE-006",
+      "relevance": 3,
+      "reason": "Trail-specific, lightweight, aggressive grip"
+    },
+    {
+      "product_id": "SHOE-008",
+      "relevance": 3,
+      "reason": "Trail runner, responsive, good traction"
+    },
+    {
+      "product_id": "SHOE-010",
+      "relevance": 2,
+      "reason": "Trail capable, light, moderate grip"
+    },
+    {
+      "product_id": "SHOE-004",
+      "relevance": 1,
+      "reason": "Lightweight but road-focused"
+    },
+    {
+      "product_id": "SHOE-002",
+      "relevance": 1,
+      "reason": "Responsive but minimal trail capability"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "recommender": "design_11_finetuned_embed",
+  "query_id": "VAGUE-03",
+  "query_text": "a confidence-inspiring ski for someone who skis fast but wants to feel safe",
+  "difficulty": "vague",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.2277,
+    "ndcg_10": 0.2842,
+    "mrr": 0.3333,
+    "attribute_precision": 0.4286,
+    "attribute_recall": 0.75,
+    "attribute_f1": 0.5455,
+    "explanation_score": 5.0,
+    "latency_ms": 11.9
+  },
+  "results": [
+    {
+      "product_id": "SKI-010",
+      "product_name": "Dynastar M-Free 108",
+      "score": 1.0,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), stability_at_speed (14%). Also relevant: damp, stiffness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.146,
+        "playfulness": 0.146,
+        "stability_at_speed": 0.144,
+        "damp": 0.143,
+        "stiffness": 0.141,
+        "edge_grip": 0.14,
+        "forgiveness": 0.14
+      }
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.8357,
+      "explanation": "Strong match on playfulness (15%), powder_float (15%), stability_at_speed (14%). Also relevant: forgiveness, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.15,
+        "powder_float": 0.15,
+        "stability_at_speed": 0.142,
+        "forgiveness": 0.141,
+        "damp": 0.141,
+        "stiffness": 0.139,
+        "edge_grip": 0.137
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.7592,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.147,
+        "damp": 0.147,
+        "stiffness": 0.146,
+        "edge_grip": 0.146,
+        "powder_float": 0.141,
+        "playfulness": 0.139,
+        "forgiveness": 0.133
+      }
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.7014,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), stability_at_speed (14%). Also relevant: damp, stiffness, forgiveness, edge_grip.",
+      "matched_attributes": {
+        "powder_float": 0.148,
+        "playfulness": 0.148,
+        "stability_at_speed": 0.143,
+        "damp": 0.142,
+        "stiffness": 0.14,
+        "forgiveness": 0.14,
+        "edge_grip": 0.139
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.6836,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.148,
+        "damp": 0.147,
+        "stiffness": 0.147,
+        "edge_grip": 0.146,
+        "powder_float": 0.14,
+        "playfulness": 0.138,
+        "forgiveness": 0.134
+      }
+    },
+    {
+      "product_id": "SKI-016",
+      "product_name": "K2 Disruption 78C",
+      "score": 0.678,
+      "explanation": "Strong match on forgiveness (15%), playfulness (15%), powder_float (14%). Also relevant: stability_at_speed, damp, stiffness, edge_grip.",
+      "matched_attributes": {
+        "forgiveness": 0.148,
+        "playfulness": 0.146,
+        "powder_float": 0.144,
+        "stability_at_speed": 0.142,
+        "damp": 0.141,
+        "stiffness": 0.139,
+        "edge_grip": 0.139
+      }
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.6688,
+      "explanation": "Strong match on powder_float (15%), playfulness (15%), stability_at_speed (14%). Also relevant: damp, stiffness, edge_grip, forgiveness.",
+      "matched_attributes": {
+        "powder_float": 0.147,
+        "playfulness": 0.146,
+        "stability_at_speed": 0.144,
+        "damp": 0.144,
+        "stiffness": 0.142,
+        "edge_grip": 0.14,
+        "forgiveness": 0.137
+      }
+    },
+    {
+      "product_id": "SKI-020",
+      "product_name": "Nordica Santa Ana 98",
+      "score": 0.6632,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (14%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.146,
+        "damp": 0.146,
+        "stiffness": 0.144,
+        "edge_grip": 0.144,
+        "powder_float": 0.142,
+        "playfulness": 0.141,
+        "forgiveness": 0.136
+      }
+    },
+    {
+      "product_id": "SKI-014",
+      "product_name": "Elan Ripstick 96",
+      "score": 0.6366,
+      "explanation": "Strong match on playfulness (14%), stability_at_speed (14%), powder_float (14%). Also relevant: damp, stiffness, forgiveness, edge_grip.",
+      "matched_attributes": {
+        "playfulness": 0.145,
+        "stability_at_speed": 0.144,
+        "powder_float": 0.144,
+        "damp": 0.143,
+        "stiffness": 0.141,
+        "forgiveness": 0.141,
+        "edge_grip": 0.141
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.6189,
+      "explanation": "Strong match on stability_at_speed (15%), damp (15%), stiffness (15%). Also relevant: edge_grip, powder_float, playfulness, forgiveness.",
+      "matched_attributes": {
+        "stability_at_speed": 0.148,
+        "damp": 0.147,
+        "stiffness": 0.146,
+        "edge_grip": 0.146,
+        "powder_float": 0.141,
+        "playfulness": 0.139,
+        "forgiveness": 0.133
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-006",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8, forgiveness 4 \u2014 strong but not punishing, 'confidence' in reviews"
+    },
+    {
+      "product_id": "SKI-019",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9 \u2014 maximum composure but forgiveness only 3, expert-only"
+    },
+    {
+      "product_id": "SKI-025",
+      "relevance": 3,
+      "reason": "Stability 8, damp 8 \u2014 'confidence-inspiring' in reviews, reasonable forgiveness"
+    },
+    {
+      "product_id": "SKI-004",
+      "relevance": 2,
+      "reason": "Stability 9, damp 9, forgiveness 3 \u2014 clinical but demanding"
+    },
+    {
+      "product_id": "SKI-021",
+      "relevance": 2,
+      "reason": "Stability 7, damp 7, forgiveness 5 \u2014 safe feeling, moderate speed capability"
+    }
+  ]
+}

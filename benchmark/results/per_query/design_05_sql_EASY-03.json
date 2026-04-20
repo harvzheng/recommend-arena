@@ -1,0 +1,116 @@
+{
+  "recommender": "design_05_sql",
+  "query_id": "EASY-03",
+  "query_text": "powder ski with good float",
+  "difficulty": "easy",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.5531,
+    "ndcg_10": 0.7555,
+    "mrr": 1.0,
+    "attribute_precision": 0.0,
+    "attribute_recall": 0.0,
+    "attribute_f1": 0.0,
+    "explanation_score": 2.0,
+    "latency_ms": 12.6
+  },
+  "results": [
+    {
+      "product_id": "SKI-011",
+      "product_name": "Black Crows Atris",
+      "score": 0.485,
+      "explanation": "  Score: 0.485\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  1.00\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*1.00 + 0.15*0.90 = 0.485",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.43790903615395493,
+      "explanation": "  Score: 0.438\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.88\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.88 + 0.15*0.88 = 0.438",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-008",
+      "product_name": "Salomon QST 106",
+      "score": 0.34250371626294795,
+      "explanation": "  Score: 0.343\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.61\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.61 + 0.15*0.85 = 0.343",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-001",
+      "product_name": "Atomic Redster S9i",
+      "score": 0.32585105090683375,
+      "explanation": "  Score: 0.326\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.55\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.55 + 0.15*0.90 = 0.326",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-024",
+      "product_name": "Faction Dictator 3.0",
+      "score": 0.31917506365125414,
+      "explanation": "  Score: 0.319\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.55\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.55 + 0.15*0.85 = 0.319",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.3083647457303717,
+      "explanation": "  Score: 0.308\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.51\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.51 + 0.15*0.88 = 0.308",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.3027338083413028,
+      "explanation": "  Score: 0.303\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.50\n  Sentiment:      0.85\n  Weighted total: 0.50*0.00 + 0.35*0.50 + 0.15*0.85 = 0.303",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.29778080190531814,
+      "explanation": "  Score: 0.298\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.47\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.47 + 0.15*0.90 = 0.298",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-013",
+      "product_name": "Moment Wildcat 108",
+      "score": 0.2730383931469562,
+      "explanation": "  Score: 0.273\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.39\n  Sentiment:      0.90\n  Weighted total: 0.50*0.00 + 0.35*0.39 + 0.15*0.90 = 0.273",
+      "matched_attributes": {}
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.26920269569531824,
+      "explanation": "  Score: 0.269\n  Attribute breakdown:\n    (no attribute filters)\n  FTS relevance:  0.39\n  Sentiment:      0.88\n  Weighted total: 0.50*0.00 + 0.35*0.39 + 0.15*0.88 = 0.269",
+      "matched_attributes": {}
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Widest ski (112mm), powder float 10, full rocker, dedicated powder"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 3,
+      "reason": "Powder freeride, float 9, 108mm, generous rocker"
+    },
+    {
+      "product_id": "SKI-013",
+      "relevance": 2,
+      "reason": "Powder freeride, float 8, 108mm, playful in deep snow"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 106mm, good powder reviews"
+    },
+    {
+      "product_id": "SKI-009",
+      "relevance": 2,
+      "reason": "Freeride, float 8, 108mm, charges through powder"
+    }
+  ]
+}

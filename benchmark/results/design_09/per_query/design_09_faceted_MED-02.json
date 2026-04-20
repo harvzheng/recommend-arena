@@ -1,0 +1,156 @@
+{
+  "recommender": "design_09_faceted",
+  "query_id": "MED-02",
+  "query_text": "lightweight freeride ski with good playfulness and powder float",
+  "difficulty": "medium",
+  "domain": "ski",
+  "metrics": {
+    "ndcg_5": 0.0,
+    "ndcg_10": 0.2342,
+    "mrr": 0.1667,
+    "attribute_precision": 0.6667,
+    "attribute_recall": 0.5,
+    "attribute_f1": 0.5714,
+    "explanation_score": 5.0,
+    "latency_ms": 3800.1
+  },
+  "results": [
+    {
+      "product_id": "SKI-025",
+      "product_name": "Blizzard Brahma 88",
+      "score": 0.8833326325033899,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); powder_float=0.40 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "powder_float": 0.6666666666666667
+      }
+    },
+    {
+      "product_id": "SKI-021",
+      "product_name": "Salomon Stance 90",
+      "score": 0.8833323490536413,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); powder_float=0.40 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "powder_float": 0.6666666666666667
+      }
+    },
+    {
+      "product_id": "SKI-006",
+      "product_name": "Nordica Enforcer 100",
+      "score": 0.8577921668137141,
+      "explanation": "stiffness=0.70 (match: 100%); powder_float=0.60 (match: 100%); playfulness=0.60 (match: 67%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.6666666666666667,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-019",
+      "product_name": "Volkl Mantra M6",
+      "score": 0.8569719719165673,
+      "explanation": "playfulness=0.40 (match: 100%); stiffness=0.80 (match: 87%); powder_float=0.50 (match: 83%)",
+      "matched_attributes": {
+        "stiffness": 0.8749999999999999,
+        "playfulness": 1.0,
+        "powder_float": 0.8333333333333334
+      }
+    },
+    {
+      "product_id": "SKI-015",
+      "product_name": "Fischer RC One 82 GT",
+      "score": 0.849999164400667,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); powder_float=0.30 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "powder_float": 0.5
+      }
+    },
+    {
+      "product_id": "SKI-012",
+      "product_name": "DPS Pagoda Tour 112 RP",
+      "score": 0.849999012593307,
+      "explanation": "stiffness=0.50 (match: 100%); powder_float=1.00 (match: 100%); playfulness=0.80 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.5,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-007",
+      "product_name": "Blizzard Rustler 10",
+      "score": 0.8245357345324422,
+      "explanation": "stiffness=0.60 (match: 100%); powder_float=0.70 (match: 100%); playfulness=0.80 (match: 50%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.5,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-022",
+      "product_name": "Rossignol Black Ops Sender Ti",
+      "score": 0.8199805449020835,
+      "explanation": "playfulness=0.40 (match: 100%); powder_float=0.70 (match: 100%); stiffness=0.80 (match: 87%)",
+      "matched_attributes": {
+        "stiffness": 0.8749999999999999,
+        "playfulness": 1.0,
+        "powder_float": 1.0
+      }
+    },
+    {
+      "product_id": "SKI-005",
+      "product_name": "Volkl Deacon 76",
+      "score": 0.8166659674135566,
+      "explanation": "stiffness=0.70 (match: 100%); playfulness=0.40 (match: 100%); powder_float=0.20 (match: 33%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 1.0,
+        "powder_float": 0.33333333333333337
+      }
+    },
+    {
+      "product_id": "SKI-018",
+      "product_name": "Armada ARV 106",
+      "score": 0.8136145900263372,
+      "explanation": "stiffness=0.50 (match: 100%); powder_float=0.70 (match: 100%); playfulness=0.90 (match: 44%)",
+      "matched_attributes": {
+        "stiffness": 1.0,
+        "playfulness": 0.4444444444444445,
+        "powder_float": 1.0
+      }
+    }
+  ],
+  "ground_truth": [
+    {
+      "product_id": "SKI-012",
+      "relevance": 3,
+      "reason": "Lightest wide ski (1750g), playfulness 8, float 10"
+    },
+    {
+      "product_id": "SKI-011",
+      "relevance": 2,
+      "reason": "Moderate weight, playfulness 8, float 9, freeride"
+    },
+    {
+      "product_id": "SKI-008",
+      "relevance": 2,
+      "reason": "Carbon/flax keeps weight down (1900g), playfulness 7, float 8"
+    },
+    {
+      "product_id": "SKI-024",
+      "relevance": 2,
+      "reason": "Poplar/paulownia is light (1950g), playfulness 8, float 7"
+    },
+    {
+      "product_id": "SKI-007",
+      "relevance": 1,
+      "reason": "Moderate weight (1850g), playfulness 8, float 7"
+    }
+  ]
+}
