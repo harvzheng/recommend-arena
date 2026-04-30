@@ -41,6 +41,7 @@ class Recommender(Protocol):
 | 10 | Ensemble / LTR | XGBoost ranker over BM25 + FAISS + structured features |
 | 11 | Fine-tuned Embeddings | Contrastive fine-tune of a small embedding model on synthetic query/product pairs |
 | 12 | Distilled LLM | Small student model distilled from an LLM teacher |
+| 13 | Researched-Distilled Hybrid | Bi-encoder + small explainer head, both supervised by an Opus teacher with web-research tools |
 
 ## The dataset
 
