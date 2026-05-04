@@ -1,0 +1,27 @@
+[package]
+name = "arena_core"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Hot-path Rust core for the recommend-arena framework: RRF, hard prefilter, FTS5 retrieval"
+
+[lib]
+name = "arena_core"
+# cdylib for the Python extension (loaded by PyO3); rlib so Rust integration tests work.
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+# The `extension-module` feature is enabled by maturin via pyproject.toml.
+# Listing it here directly breaks `cargo test` (skips linking libpython for
+# the test binary). Maturin sees [tool.maturin].features and turns it on
+# only for production builds.
+pyo3 = { version = "0.21", features = ["abi3-py39"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+opt-level = 3
