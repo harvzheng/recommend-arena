@@ -43,6 +43,11 @@ from pathlib import Path
 _PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
+# Sibling scripts (extract_schema, generate_synthetic_queries, etc.) are
+# imported by the step dispatchers below.
+_SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(_SCRIPTS_DIR))
 
 from shared.domain_bundle import (  # noqa: E402
     Bundle,
@@ -93,27 +98,48 @@ def cmd_new(args: argparse.Namespace) -> int:
     if "eval-import" in steps and args.eval:
         _step_import_eval(bundle, Path(args.eval).resolve())
 
-    # Steps that need GPU / training infra. We keep the wiring here so
-    # users see exactly where the future steps plug in, but they're
-    # off by default in 14.0.
+    # Slices 14.1 / 14.2 — dispatch to the dedicated step scripts.
+    # Each is a clean subprocess so the heavy ML deps load only when
+    # actually used.
+    if "extract-schema" in steps:
+        _step_extract_schema(bundle, args.schema_strategy)
     if "generate-synthetic" in steps:
-        logger.warning(
-            "generate-synthetic step not implemented in slice 14.0; "
-            "see scripts/generate_synthetic_queries.py (follow-up)"
+        _step_generate_synthetic(
+            bundle,
+            queries_per_product=args.queries_per_product,
+            hard_neg_k=args.hard_negatives_per_query,
+            dry_run=args.synthetic_dry_run,
         )
     if "finetune-embedding" in steps:
-        logger.warning(
-            "finetune-embedding step not implemented in slice 14.0; "
-            "see scripts/finetune_embedding.py (slice 14.1)"
-        )
+        _step_finetune_embedding(bundle, dry_run=args.training_dry_run)
     if "finetune-reranker" in steps:
-        logger.warning(
-            "finetune-reranker step not implemented in slice 14.0; "
-            "see scripts/finetune_reranker.py (slice 14.2)"
-        )
+        _step_finetune_reranker(bundle, dry_run=args.training_dry_run)
 
+    # The slice 14.1 / 14.2 dispatchers run as subprocess-style mains
+    # that load their own Bundle handle and save it. Reload from disk
+    # before the final save so we don't overwrite their changes with
+    # the parent's stale in-memory copy.
+    if any(s in steps for s in ("extract-schema", "generate-synthetic",
+                                 "finetune-embedding", "finetune-reranker")):
+        bundle = Bundle.load(bundle.paths.root)
     bundle.save_manifest()
     logger.info("manifest written to %s", bundle.paths.manifest_path)
+    return 0
+
+
+def cmd_pack(args: argparse.Namespace) -> int:
+    """`arena pack <bundle> --out foo.tar.gz` — wire-format export."""
+    bundle = Bundle.load(args.path)
+    out = Path(args.out or f"{bundle.manifest.domain}.tar.gz").resolve()
+    archive = bundle.pack(out)
+    logger.info("packed bundle to %s (%d bytes)", archive, archive.stat().st_size)
+    return 0
+
+
+def cmd_unpack(args: argparse.Namespace) -> int:
+    """`arena unpack foo.tar.gz --into artifacts/` — wire-format import."""
+    bundle = Bundle.unpack(args.archive, args.into)
+    logger.info("unpacked bundle to %s", bundle.paths.root)
     return 0
 
 
@@ -211,6 +237,62 @@ def _step_import_eval(bundle: Bundle, src: Path) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Slice 14.1 / 14.2 step dispatchers
+# ---------------------------------------------------------------------------
+def _step_extract_schema(bundle: Bundle, strategy: str) -> None:
+    """Step 5: emit a Pydantic filter schema."""
+    from extract_schema import main as extract_main
+    rc = extract_main([
+        "--bundle", str(bundle.paths.root),
+        "--strategy", strategy,
+    ])
+    if rc != 0:
+        logger.warning("extract_schema returned rc=%d", rc)
+
+
+def _step_generate_synthetic(
+    bundle: Bundle,
+    queries_per_product: int,
+    hard_neg_k: int,
+    dry_run: bool,
+) -> None:
+    """Step 1: synthetic query generation + hard-negative mining."""
+    from generate_synthetic_queries import main as gen_main
+    argv = [
+        "--bundle", str(bundle.paths.root),
+        "--queries-per-product", str(queries_per_product),
+        "--hard-negatives-per-query", str(hard_neg_k),
+    ]
+    if dry_run:
+        argv.append("--dry-run")
+    rc = gen_main(argv)
+    if rc != 0:
+        logger.warning("generate_synthetic_queries returned rc=%d", rc)
+
+
+def _step_finetune_embedding(bundle: Bundle, dry_run: bool) -> None:
+    """Step 2: embedding fine-tune."""
+    from finetune_embedding import main as ft_main
+    argv = ["--bundle", str(bundle.paths.root)]
+    if dry_run:
+        argv.append("--dry-run")
+    rc = ft_main(argv)
+    if rc != 0:
+        logger.warning("finetune_embedding returned rc=%d", rc)
+
+
+def _step_finetune_reranker(bundle: Bundle, dry_run: bool) -> None:
+    """Step 4: reranker LoRA fine-tune."""
+    from finetune_reranker import main as ft_main
+    argv = ["--bundle", str(bundle.paths.root)]
+    if dry_run:
+        argv.append("--dry-run")
+    rc = ft_main(argv)
+    if rc != 0:
+        logger.warning("finetune_reranker returned rc=%d", rc)
+
+
+# ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 def _read_jsonl_or_json(path: Path, key: str | None = None) -> list[dict]:
@@ -286,12 +368,48 @@ def main(argv: list[str] | None = None) -> int:
         help="reranker strategy (slice 14.0 supports off_the_shelf only)",
     )
     new.add_argument("--reranker-model", default=DEFAULT_RERANKER_MODEL)
+    # Slice 14.1 / 14.2 knobs.
+    new.add_argument(
+        "--schema-strategy", default="infer", choices=["infer", "llm"],
+        help="how extract-schema generates schema.py",
+    )
+    new.add_argument(
+        "--queries-per-product", type=int, default=10,
+        help="how many synthetic queries to generate per product",
+    )
+    new.add_argument(
+        "--hard-negatives-per-query", type=int, default=5,
+        help="k for the Rust hard-negative miner",
+    )
+    new.add_argument(
+        "--synthetic-dry-run", action="store_true",
+        help="generate templated queries without an LLM (CI / no-API-key mode)",
+    )
+    new.add_argument(
+        "--training-dry-run", action="store_true",
+        help="finetune steps emit stub adapters and update manifests, no GPU work",
+    )
     new.set_defaults(func=cmd_new)
 
     # `arena inspect`
     inspect = sub.add_parser("inspect", help="show a bundle's manifest")
     inspect.add_argument("path", help="path to a bundle directory")
     inspect.set_defaults(func=cmd_inspect)
+
+    # `arena pack`
+    pack = sub.add_parser("pack", help="pack a bundle into a .tar.gz")
+    pack.add_argument("path", help="path to a bundle directory")
+    pack.add_argument(
+        "--out", default=None,
+        help="output archive path (default: <domain>.tar.gz)",
+    )
+    pack.set_defaults(func=cmd_pack)
+
+    # `arena unpack`
+    unpack = sub.add_parser("unpack", help="extract a packed bundle .tar.gz")
+    unpack.add_argument("archive", help="path to a .tar.gz")
+    unpack.add_argument("--into", default="artifacts", help="parent directory")
+    unpack.set_defaults(func=cmd_unpack)
 
     args = parser.parse_args(argv)
     logging.basicConfig(

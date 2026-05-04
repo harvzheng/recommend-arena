@@ -11,6 +11,7 @@
 use pyo3::prelude::*;
 
 pub mod fts5;
+pub mod hardneg;
 pub mod prefilter;
 pub mod rrf;
 
@@ -22,6 +23,7 @@ fn arena_core(_py: Python<'_>, m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(rrf::rrf_fuse, m)?)?;
     m.add_function(wrap_pyfunction!(prefilter::build_prefilter_sql, m)?)?;
     m.add_function(wrap_pyfunction!(fts5::fts5_search, m)?)?;
+    m.add_function(wrap_pyfunction!(hardneg::hard_negative_mine, m)?)?;
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
     Ok(())
 }

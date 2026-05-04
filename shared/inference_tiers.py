@@ -97,60 +97,162 @@ class ExplanationProvider(Protocol):
 
 @dataclass
 class TierRouter:
-    """Picks providers per the configured tier.
-
-    Slice 14.0 wires Tier 1 only — both providers are deterministic /
-    local-cheap. Tier 2 and 3 land in the follow-up.
-    """
+    """Picks providers per the configured tier."""
 
     config: TierConfig
 
     def filter_parser(self) -> FilterParserProvider:
         if self.config.tier == "local":
-            from implementations.design_14_local_hybrid.filter_parser import (
-                parse_query as _parse_query,
+            return _DeterministicFilterParser()
+        # Tier 2 / 3 use the existing shared.llm_provider abstraction.
+        # That's the same surface the existing LLM-using designs sit on,
+        # so the routing logic is concentrated rather than duplicated
+        # against three different SDKs.
+        try:
+            return _LLMFilterParser()
+        except Exception as e:
+            logger.warning(
+                "LLM filter parser unavailable (%s); falling back to local.", e
             )
-
-            class _LocalFilterParser:
-                def parse(self, query_text: str, domain: str) -> list[dict]:
-                    return _parse_query(query_text, domain)
-
-            return _LocalFilterParser()
-        # Tier 2 / 3 will route to a remote LLM with constrained JSON.
-        # Until that lands, fall back to local so the runtime is usable.
-        logger.warning(
-            "tier=%s requested but only 'local' is wired in slice 14.0; "
-            "using local filter parser.",
-            self.config.tier,
-        )
-        return self.filter_parser_local_fallback()
+            return _DeterministicFilterParser()
 
     def filter_parser_local_fallback(self) -> FilterParserProvider:
-        from implementations.design_14_local_hybrid.filter_parser import (
-            parse_query as _parse_query,
-        )
-
-        class _Local:
-            def parse(self, query_text: str, domain: str) -> list[dict]:
-                return _parse_query(query_text, domain)
-
-        return _Local()
+        return _DeterministicFilterParser()
 
     def explanation(self) -> ExplanationProvider:
-        # Always deterministic in 14.0. Tier 2 / 3 land later.
-        class _DeterministicExplainer:
-            def explain(
-                self,
-                query_text: str,
-                product: dict,
-                matched_attributes: dict[str, float],
-            ) -> str:
-                if not matched_attributes:
-                    return f"Top match for {query_text!r}."
-                cols = ", ".join(sorted(matched_attributes.keys())[:3])
-                return f"Matched on {cols}; combined retrieval + rerank."
+        if self.config.tier == "local":
+            return _DeterministicExplainer()
+        try:
+            return _LLMExplainer()
+        except Exception as e:
+            logger.warning(
+                "LLM explainer unavailable (%s); falling back to local.", e
+            )
+            return _DeterministicExplainer()
 
-        return _DeterministicExplainer()
+
+# ---------------------------------------------------------------------------
+# Tier 1 — deterministic, no model load.
+# ---------------------------------------------------------------------------
+class _DeterministicFilterParser:
+    """Wraps the existing regex/keyword filter parser as a Provider."""
+
+    def parse(self, query_text: str, domain: str) -> list[dict]:
+        # Lazy import to avoid a circular dep at module-load time.
+        from implementations.design_14_local_hybrid.filter_parser import (
+            parse_query,
+        )
+        return parse_query(query_text, domain)
+
+
+class _DeterministicExplainer:
+    def explain(
+        self,
+        query_text: str,
+        product: dict,
+        matched_attributes: dict[str, float],
+    ) -> str:
+        if not matched_attributes:
+            return f"Top match for {query_text!r}."
+        cols = ", ".join(sorted(matched_attributes.keys())[:3])
+        return f"Matched on {cols}; combined retrieval + rerank."
+
+
+# ---------------------------------------------------------------------------
+# Tier 2 — LLM-based, via shared.llm_provider. Tier 3 reuses these and
+# only differs in the escalation router (see should_escalate).
+# ---------------------------------------------------------------------------
+class _LLMFilterParser:
+    """LLM-backed filter parser. Calls the configured LLMProvider with a
+    JSON-mode prompt that asks for the same {attribute, op, value} shape
+    the deterministic parser emits.
+
+    The LLM request is best-effort; we fall back to the deterministic
+    parser if the response doesn't match the expected shape.
+    """
+
+    SYSTEM = (
+        "You extract structured filter constraints from a product search "
+        "query. Output a JSON array of objects shaped like "
+        "{\"attribute\": \"<field>\", \"op\": \"<eq|gte|lte|contains|not_contains|in>\", "
+        "\"value\": <number-or-string-or-list>}. "
+        "Only emit attributes you can ground in the catalog. Return [] "
+        "if the query has no extractable constraints. JSON only, no prose."
+    )
+
+    def __init__(self) -> None:
+        from shared.llm_provider import get_provider
+        self._provider = get_provider()
+
+    def parse(self, query_text: str, domain: str) -> list[dict]:
+        import json
+        prompt = (
+            f"{self.SYSTEM}\n\n"
+            f"Domain: {domain}\nQuery: {query_text}\n\n"
+            f"JSON array:"
+        )
+        try:
+            text = self._provider.generate(prompt, json_mode=True)
+        except Exception as e:
+            logger.warning("LLM filter parser call failed (%s); local fallback", e)
+            return _DeterministicFilterParser().parse(query_text, domain)
+
+        try:
+            data = json.loads(text)
+        except json.JSONDecodeError:
+            return _DeterministicFilterParser().parse(query_text, domain)
+        if not isinstance(data, list):
+            return _DeterministicFilterParser().parse(query_text, domain)
+
+        out: list[dict] = []
+        for item in data:
+            if not isinstance(item, dict):
+                continue
+            if not all(k in item for k in ("attribute", "op", "value")):
+                continue
+            out.append({
+                "attribute": str(item["attribute"]),
+                "op": str(item["op"]),
+                "value": item["value"],
+            })
+        return out
+
+
+class _LLMExplainer:
+    """LLM-backed explainer. Generates a single-sentence rationale."""
+
+    SYSTEM = (
+        "You write one short sentence explaining why a product matches "
+        "a user's query. Reference concrete attributes that appear in "
+        "the product data — never invent attributes the product doesn't "
+        "have. Plain text only."
+    )
+
+    def __init__(self) -> None:
+        from shared.llm_provider import get_provider
+        self._provider = get_provider()
+
+    def explain(
+        self,
+        query_text: str,
+        product: dict,
+        matched_attributes: dict[str, float],
+    ) -> str:
+        import json
+        prompt = (
+            f"{self.SYSTEM}\n\n"
+            f"Query: {query_text}\n"
+            f"Product:\n{json.dumps(product, indent=2)[:4000]}\n"
+            f"Matched attributes: {sorted(matched_attributes.keys())}\n\n"
+            f"Sentence:"
+        )
+        try:
+            return self._provider.generate(prompt, json_mode=False).strip()
+        except Exception as e:
+            logger.warning("LLM explainer call failed (%s); local fallback", e)
+            return _DeterministicExplainer().explain(
+                query_text, product, matched_attributes
+            )
 
 
 def should_escalate(reranker_scores: list[float], cfg: TierConfig) -> bool:

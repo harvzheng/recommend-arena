@@ -32,11 +32,21 @@ DEFAULT_EMBED_MODEL = os.environ.get(
 )
 
 
-def _load_st_model(model_name: str):
-    """Load (and cache) a SentenceTransformer model. Returns None if the
-    library isn't available — caller should degrade to lexical-only."""
-    if model_name in _st_model_cache:
-        return _st_model_cache[model_name]
+def _load_st_model(model_name: str, adapter_path: str | None = None):
+    """Load (and cache) a SentenceTransformer model.
+
+    When `adapter_path` is given, we treat `model_name` as the BASE model
+    and overlay the adapter's weights from `adapter_path`. This is how a
+    bundle's fine-tuned embedding gets picked up without changing the
+    runtime's loading code.
+
+    Returns None if sentence-transformers isn't available — caller
+    should degrade to lexical-only.
+    """
+    cache_key = f"{model_name}::{adapter_path or '-'}"
+    if cache_key in _st_model_cache:
+        return _st_model_cache[cache_key]
+
     try:
         from sentence_transformers import SentenceTransformer  # type: ignore
     except ImportError:
@@ -44,11 +54,26 @@ def _load_st_model(model_name: str):
             "design_14: sentence-transformers not installed; "
             "vector track disabled. Pipeline will run lexical-only."
         )
-        _st_model_cache[model_name] = None
+        _st_model_cache[cache_key] = None
         return None
-    logger.info("design_14: loading embedding model %s …", model_name)
-    model = SentenceTransformer(model_name)
-    _st_model_cache[model_name] = model
+
+    if adapter_path:
+        # The bundle saved the full fine-tuned model directory via
+        # SentenceTransformer.save(); we just point ST at that dir.
+        # If only a LoRA adapter was saved, the user should have run
+        # finetune_embedding.py without --full-finetune in a way that
+        # produces a self-contained ST checkpoint. We document this in
+        # the script.
+        logger.info(
+            "design_14: loading fine-tuned embedding from adapter %s "
+            "(base=%s)", adapter_path, model_name,
+        )
+        model = SentenceTransformer(adapter_path)
+    else:
+        logger.info("design_14: loading embedding model %s …", model_name)
+        model = SentenceTransformer(model_name)
+
+    _st_model_cache[cache_key] = model
     return model
 
 
@@ -246,13 +271,14 @@ def encode_products(
     products: list[dict],
     reviews: list[dict],
     model_name: str = DEFAULT_EMBED_MODEL,
+    adapter_path: str | None = None,
 ) -> dict[str, list[float]]:
     """Encode each product into a vector using sentence-transformers.
 
     Returns {external_id: vector}. Empty dict if the encoder is
     unavailable; caller should degrade to lexical-only retrieval.
     """
-    model = _load_st_model(model_name)
+    model = _load_st_model(model_name, adapter_path=adapter_path)
     if model is None:
         return {}
 
@@ -293,9 +319,13 @@ def encode_products(
     return {ids[i]: list(map(float, vectors[i])) for i in range(len(ids))}
 
 
-def encode_query(query_text: str, model_name: str = DEFAULT_EMBED_MODEL) -> list[float] | None:
+def encode_query(
+    query_text: str,
+    model_name: str = DEFAULT_EMBED_MODEL,
+    adapter_path: str | None = None,
+) -> list[float] | None:
     """Encode a single query. Returns None when the encoder isn't loaded."""
-    model = _load_st_model(model_name)
+    model = _load_st_model(model_name, adapter_path=adapter_path)
     if model is None:
         return None
     vec = model.encode([query_text], normalize_embeddings=True, show_progress_bar=False)

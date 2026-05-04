@@ -57,7 +57,9 @@ class LocalHybridRecommender:
         self,
         db_dir: str | None = None,
         embedding_model: str | None = None,
+        embedding_adapter_path: str | None = None,
         reranker_model: str | None = None,
+        reranker_adapter_path: str | None = None,
         enable_reranker: bool = True,
         enable_vector: bool = True,
     ):
@@ -73,7 +75,9 @@ class LocalHybridRecommender:
         self.db_dir.mkdir(parents=True, exist_ok=True)
 
         self.embedding_model = embedding_model or retrieval.DEFAULT_EMBED_MODEL
+        self.embedding_adapter_path = embedding_adapter_path
         self.reranker_model = reranker_model
+        self.reranker_adapter_path = reranker_adapter_path
         self.enable_reranker = enable_reranker
         self.enable_vector = enable_vector
 
@@ -101,14 +105,19 @@ class LocalHybridRecommender:
         bundle = Bundle.load(bundle_path)
         domain = bundle.manifest.domain
 
-        embedding_model = (
-            bundle.manifest.embedding.base_model
-            if bundle.manifest.embedding
-            else retrieval.DEFAULT_EMBED_MODEL
+        emb = bundle.manifest.embedding
+        rer = bundle.manifest.reranker
+
+        embedding_model = emb.base_model if emb else retrieval.DEFAULT_EMBED_MODEL
+        embedding_adapter_path = (
+            str(bundle.paths.root / emb.adapter_path)
+            if emb and emb.adapter_path and emb.kind != "off_the_shelf"
+            else None
         )
-        reranker_model = (
-            bundle.manifest.reranker.base_model
-            if bundle.manifest.reranker
+        reranker_model = rer.base_model if rer else None
+        reranker_adapter_path = (
+            str(bundle.paths.root / rer.adapter_path)
+            if rer and rer.adapter_path and rer.kind != "off_the_shelf"
             else None
         )
 
@@ -118,7 +127,9 @@ class LocalHybridRecommender:
         rec = cls(
             db_dir=str(bundle.paths.root),
             embedding_model=embedding_model,
+            embedding_adapter_path=embedding_adapter_path,
             reranker_model=reranker_model,
+            reranker_adapter_path=reranker_adapter_path,
         )
         # Re-ingest into the bundle's directory. open_db is idempotent
         # and will reuse the FTS5 db that's already there.
@@ -149,7 +160,9 @@ class LocalHybridRecommender:
         product_vecs: dict[str, list[float]] = {}
         if self.enable_vector:
             product_vecs = retrieval.encode_products(
-                products, reviews, model_name=self.embedding_model
+                products, reviews,
+                model_name=self.embedding_model,
+                adapter_path=self.embedding_adapter_path,
             )
 
         # Prepare content snippets used by the cross-encoder rerank stage.
@@ -326,7 +339,11 @@ class LocalHybridRecommender:
     ) -> list[tuple[str, float]]:
         if not state.product_vecs:
             return []
-        qvec = retrieval.encode_query(query_text, model_name=self.embedding_model)
+        qvec = retrieval.encode_query(
+            query_text,
+            model_name=self.embedding_model,
+            adapter_path=self.embedding_adapter_path,
+        )
         if not qvec:
             return []
         return retrieval.cosine_top(

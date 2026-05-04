@@ -270,6 +270,72 @@ class Bundle:
         with self.paths.baseline_scores_json.open() as f:
             return json.load(f)
 
+    # ------------------------------------------------------------------
+    # Pack / unpack — `.tar.gz` wire format for "send my friend a recommender."
+    # ------------------------------------------------------------------
+    def pack(self, archive_path: str | Path) -> Path:
+        """Pack the bundle directory into a single .tar.gz.
+
+        The archive's top-level entry is the bundle directory itself, so
+        `tar tf foo.tar.gz | head -1` gives `<domain>/manifest.json`.
+        Members are added in deterministic order so the same bundle
+        produces the same bytes (which means content-addressable
+        distribution works).
+        """
+        import tarfile
+
+        archive_path = Path(archive_path)
+        archive_path.parent.mkdir(parents=True, exist_ok=True)
+
+        # Walk the bundle in sorted order. We exclude .DS_Store and
+        # __pycache__ so packs aren't polluted by editor garbage.
+        files: list[Path] = []
+        for p in sorted(self.paths.root.rglob("*")):
+            rel = p.relative_to(self.paths.root)
+            parts = set(rel.parts)
+            if "__pycache__" in parts or ".DS_Store" in parts:
+                continue
+            files.append(p)
+
+        with tarfile.open(archive_path, "w:gz") as tar:
+            top = self.paths.root.name  # the domain dir name
+            # Write the directory entry first.
+            tar.add(self.paths.root, arcname=top, recursive=False)
+            for p in files:
+                rel = p.relative_to(self.paths.root)
+                tar.add(p, arcname=f"{top}/{rel}", recursive=False)
+        return archive_path
+
+    @classmethod
+    def unpack(
+        cls,
+        archive_path: str | Path,
+        dest_parent: str | Path,
+    ) -> "Bundle":
+        """Extract a packed bundle and return a Bundle handle to it.
+
+        `dest_parent` is the directory the bundle's top-level dir will
+        be unpacked INTO. So for an archive containing `skis/...`,
+        passing `dest_parent=artifacts` produces `artifacts/skis/`.
+        """
+        import tarfile
+
+        dest_parent = Path(dest_parent)
+        dest_parent.mkdir(parents=True, exist_ok=True)
+        with tarfile.open(archive_path, "r:gz") as tar:
+            members = tar.getmembers()
+            if not members:
+                raise RuntimeError(f"empty archive: {archive_path!s}")
+            # The first member should be the top-level directory.
+            top_name = members[0].name.split("/", 1)[0]
+            # Defensive: refuse to extract an archive whose members
+            # escape dest_parent (e.g. via "..").
+            for m in members:
+                if m.name.startswith("/") or ".." in Path(m.name).parts:
+                    raise RuntimeError(f"unsafe archive member: {m.name!r}")
+            tar.extractall(path=dest_parent)
+        return cls.load(dest_parent / top_name)
+
 
 def _read_jsonl(path: Path) -> list[dict]:
     out: list[dict] = []
