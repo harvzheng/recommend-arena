@@ -74,6 +74,12 @@ _SKI_NUMERIC_RULES = [
     (r"(?:under|below|<=?|less than)\s*(\d{2,3})\s*mm(?:\s*(?:waist|underfoot))?",
      "lte", "waist_width_mm"),
     (r"(\d{2,3})\s*mm\+",                   "gte", "waist_width_mm"),
+    (r"\baround\s*(\d{2,3})\s*-?\s*(\d{2,3})?\s*mm\b",  "range", "waist_width_mm"),
+    # Two-number ranges, e.g. "80-95mm", "around 96-100mm waist"
+    (r"\b(\d{2,3})\s*-\s*(\d{2,3})\s*mm\b", "range", "waist_width_mm"),
+    # Bare "Nmm" alone — only emit when no range form already matched the
+    # query (handled in _parse_ski). Default op is `eq` for backwards
+    # compat but it's brittle when waists are sparse — see _parse_ski.
     (r"\b(\d{2,3})\s*mm\b",                 "eq",  "waist_width_mm"),
 ]
 
@@ -108,34 +114,76 @@ def parse_query(query_text: str, domain: str) -> list[dict]:
     return []
 
 
+_BALANCED_INTENT_RE = re.compile(
+    r"\b(?:both\s+\w+\s+and\s+\w+|versatile|not\s+(?:a\s+)?specialist|"
+    r"all[- ]rounder|do[- ]it[- ]all|one[- ]ski[- ]quiver|equally well|mixed conditions)\b"
+)
+
+
 def _parse_ski(text: str) -> list[dict]:
     filters: list[dict] = []
     seen_keys: set[tuple[str, str]] = set()  # (attr, op) — at most one per pair
 
+    # "Balanced" / "versatile" / "both X and Y" queries are explicitly
+    # asking for non-specialist skis. Suppress narrowing terrain filters
+    # — those would exclude all-mountain skis whose terrain list doesn't
+    # include the literal keyword the user mentioned (e.g. SKI-006's
+    # terrain is ["all-mountain", "on-piste", "off-piste"] with no
+    # "powder", but it's the perfect answer for "handles both powder and
+    # hardpack equally well").
+    balanced_intent = bool(_BALANCED_INTENT_RE.search(text))
+
     # Terrain — emit a contains filter against the categorical column.
-    matched_terrains: list[str] = []
-    for kw, canonical in _SKI_TERRAIN_KEYWORDS.items():
-        if kw in text and canonical not in matched_terrains:
-            matched_terrains.append(canonical)
-    for terrain in matched_terrains:
-        key = ("terrain", "contains")
-        if key not in seen_keys:
-            filters.append({"attribute": "terrain", "op": "contains", "value": terrain})
-            seen_keys.add(key)
+    if not balanced_intent:
+        matched_terrains: list[str] = []
+        for kw, canonical in _SKI_TERRAIN_KEYWORDS.items():
+            if kw in text and canonical not in matched_terrains:
+                matched_terrains.append(canonical)
+        for terrain in matched_terrains:
+            key = ("terrain", "contains")
+            if key not in seen_keys:
+                filters.append({"attribute": "terrain", "op": "contains", "value": terrain})
+                seen_keys.add(key)
 
     # Numeric — pick the FIRST match for each (attr, op) pair so duplicate
     # mentions don't produce contradictory filters.
+    range_attrs: set[str] = set()
     for pattern, op, attr in _SKI_NUMERIC_RULES:
         m = re.search(pattern, text)
-        if m:
-            key = (attr, op)
-            if key not in seen_keys:
-                try:
-                    val = int(m.group(1))
-                except (IndexError, ValueError):
-                    continue
-                filters.append({"attribute": attr, "op": op, "value": val})
-                seen_keys.add(key)
+        if not m:
+            continue
+        if op == "range":
+            try:
+                lo = int(m.group(1))
+                hi_raw = m.group(2) if m.lastindex and m.lastindex >= 2 else None
+                hi = int(hi_raw) if hi_raw else lo + 5  # "around N" → ±5
+            except (IndexError, ValueError):
+                continue
+            if hi < lo:
+                lo, hi = hi, lo
+            for sub_op, val in (("gte", lo), ("lte", hi)):
+                key = (attr, sub_op)
+                if key not in seen_keys:
+                    filters.append({"attribute": attr, "op": sub_op, "value": val})
+                    seen_keys.add(key)
+            range_attrs.add(attr)
+            continue
+        # Skip a strict-equality filter for an attribute where ANY other
+        # numeric filter already fired — eq=90 contradicts lte=90 and
+        # narrows the prefilter unnecessarily.
+        if op == "eq" and any(
+            seen_attr == attr and seen_op != "eq"
+            for seen_attr, seen_op in seen_keys
+        ):
+            continue
+        key = (attr, op)
+        if key not in seen_keys:
+            try:
+                val = int(m.group(1))
+            except (IndexError, ValueError):
+                continue
+            filters.append({"attribute": attr, "op": op, "value": val})
+            seen_keys.add(key)
 
     # Stiffness / damp / playfulness / etc. — keyword to scale-attribute rules.
     for pattern, op, attr, val in _SKI_STIFFNESS_RULES:
