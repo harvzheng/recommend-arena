@@ -51,6 +51,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--lora-rank", type=int, default=8)
     parser.add_argument("--max-seq-length", type=int, default=512)
     parser.add_argument(
+        "--lora-target-modules",
+        default=None,
+        help="comma-separated module names to LoRA-wrap. "
+             "Auto-detected if omitted.",
+    )
+    parser.add_argument(
         "--dry-run", action="store_true",
         help="emit a stub adapter file + update manifest, no actual training",
     )
@@ -123,14 +129,20 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         from peft import LoraConfig, get_peft_model  # type: ignore
+        target_modules = _resolve_target_modules(
+            args.lora_target_modules, model.model
+        )
         lora = LoraConfig(
             r=args.lora_rank,
             lora_alpha=args.lora_rank * 2,
-            target_modules=["query", "key", "value"],
+            target_modules=target_modules,
             bias="none",
         )
         model.model = get_peft_model(model.model, lora)
-        logger.info("LoRA enabled (rank=%d)", args.lora_rank)
+        logger.info(
+            "LoRA enabled (rank=%d, target_modules=%s)",
+            args.lora_rank, target_modules,
+        )
         kind = "lora"
     except ImportError:
         logger.warning("peft not installed; full fine-tune.")
@@ -169,6 +181,22 @@ def main(argv: list[str] | None = None) -> int:
     bundle.save_manifest()
     logger.info("manifest updated.")
     return 0
+
+
+def _resolve_target_modules(override: str | None, auto_model) -> list[str]:
+    """Pick LoRA target modules. Honors --lora-target-modules; otherwise
+    probes the loaded model for a known attention-projection naming.
+    """
+    if override:
+        return [m.strip() for m in override.split(",") if m.strip()]
+    names = {n for n, _ in auto_model.named_modules()}
+    if any(n.endswith(".q_proj") for n in names):
+        return ["q_proj", "v_proj", "k_proj", "o_proj"]
+    if any(n.endswith(".query") for n in names):
+        return ["query", "key", "value"]
+    raise SystemExit(
+        "could not auto-detect LoRA target modules; pass --lora-target-modules explicitly"
+    )
 
 
 def _read_jsonl(path: Path) -> list[dict]:

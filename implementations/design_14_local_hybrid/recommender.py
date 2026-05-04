@@ -270,6 +270,8 @@ class LocalHybridRecommender:
 
         try:
             import arena_core  # type: ignore
+            if not hasattr(arena_core, "build_prefilter_sql"):
+                raise ImportError("arena_core native extension not built")
             where_fragment, params = arena_core.build_prefilter_sql(filters)
         except ImportError:
             logger.warning(
@@ -312,6 +314,8 @@ class LocalHybridRecommender:
     ) -> list[tuple[str, float]]:
         try:
             import arena_core  # type: ignore
+            if not hasattr(arena_core, "fts5_search"):
+                raise ImportError("arena_core native extension not built")
         except ImportError:
             return []
 

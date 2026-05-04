@@ -18,8 +18,12 @@ logger = logging.getLogger(__name__)
 
 try:
     import arena_core  # type: ignore
+    _rust_rrf_fuse = getattr(arena_core, "rrf_fuse", None)
+    if _rust_rrf_fuse is None:
+        # `arena_core` resolved to the Rust source dir as a namespace package
+        # (no built extension installed). Fall back to Python.
+        raise ImportError("arena_core present but native extension not built")
     _RRF_BACKEND = "rust"
-    _rust_rrf_fuse = arena_core.rrf_fuse
 except ImportError:
     _RRF_BACKEND = "python"
     _rust_rrf_fuse = None

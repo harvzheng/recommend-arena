@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "queries": [
+    {
+      "id": "XDOM-01",
+      "difficulty": "cross_domain",
+      "domain": "running_shoe",
+      "query_text": "cushioned long-distance running shoe for marathon training",
+      "key_attributes": [
+        "cushioning",
+        "long_distance",
+        "marathon"
+      ],
+      "notes": "Tests domain adaptation \u2014 system must switch from ski domain to running shoe domain",
+      "ground_truth_top5": [
+        {
+          "product_id": "SHOE-001",
+          "relevance": 3,
+          "reason": "Max cushion marathon trainer"
+        },
+        {
+          "product_id": "SHOE-003",
+          "relevance": 3,
+          "reason": "High cushion distance shoe"
+        },
+        {
+          "product_id": "SHOE-005",
+          "relevance": 2,
+          "reason": "Moderate cushion, good for distance"
+        },
+        {
+          "product_id": "SHOE-007",
+          "relevance": 1,
+          "reason": "Cushioned but more for daily training"
+        },
+        {
+          "product_id": "SHOE-009",
+          "relevance": 1,
+          "reason": "Some cushion but not primary purpose"
+        }
+      ]
+    },
+    {
+      "id": "XDOM-02",
+      "difficulty": "cross_domain",
+      "domain": "running_shoe",
+      "query_text": "lightweight responsive trail running shoe with good grip",
+      "key_attributes": [
+        "lightweight",
+        "responsive",
+        "trail",
+        "grip"
+      ],
+      "notes": "Tests domain adaptation with a trail running query",
+      "ground_truth_top5": [
+        {
+          "product_id": "SHOE-006",
+          "relevance": 3,
+          "reason": "Trail-specific, lightweight, aggressive grip"
+        },
+        {
+          "product_id": "SHOE-008",
+          "relevance": 3,
+          "reason": "Trail runner, responsive, good traction"
+        },
+        {
+          "product_id": "SHOE-010",
+          "relevance": 2,
+          "reason": "Trail capable, light, moderate grip"
+        },
+        {
+          "product_id": "SHOE-004",
+          "relevance": 1,
+          "reason": "Lightweight but road-focused"
+        },
+        {
+          "product_id": "SHOE-002",
+          "relevance": 1,
+          "reason": "Responsive but minimal trail capability"
+        }
+      ]
+    }
+  ]
+}

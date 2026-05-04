@@ -102,8 +102,7 @@ def build_design_14(bundle: Bundle):
     from implementations.design_14_local_hybrid.recommender import (
         LocalHybridRecommender,
     )
-    rec = LocalHybridRecommender()
-    return rec
+    return LocalHybridRecommender.from_bundle(bundle.paths.root)
 
 
 def build_baseline_lexical_only(bundle: Bundle):
@@ -116,7 +115,9 @@ def build_baseline_lexical_only(bundle: Bundle):
     from implementations.design_14_local_hybrid.recommender import (
         LocalHybridRecommender,
     )
-    rec = LocalHybridRecommender(enable_reranker=False, enable_vector=False)
+    rec = LocalHybridRecommender.from_bundle(bundle.paths.root)
+    rec.enable_reranker = False
+    rec.enable_vector = False
     return rec
 
 

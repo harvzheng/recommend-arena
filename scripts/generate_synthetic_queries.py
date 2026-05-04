@@ -221,6 +221,11 @@ def main(argv: list[str] | None = None) -> int:
         help="skip the LLM call; emit templated queries (CI / no-API-key mode)",
     )
     parser.add_argument(
+        "--skip-encoder", action="store_true",
+        help="skip catalog/query encoding too — hard-negs become deterministic "
+             "first-N. Only use for a no-PyTorch smoke test.",
+    )
+    parser.add_argument(
         "--seed", type=int, default=42,
         help="seed for the dry-run sampler",
     )
@@ -244,11 +249,10 @@ def main(argv: list[str] | None = None) -> int:
         products = products[: args.max_products]
     logger.info("generating queries for %d products", len(products))
 
-    # Encode the catalog once. In dry-run mode this still works (zero vectors)
-    # but the hard negatives are deterministic by catalog index, which is fine
-    # for an end-to-end smoke test.
-    if args.dry_run:
-        logger.info("dry-run: skipping encoder; using zero vectors")
+    # Encode the catalog once. With --skip-encoder we substitute zero vectors
+    # (hard-negs become deterministic first-N — fine for a smoke test only).
+    if args.skip_encoder:
+        logger.info("--skip-encoder: using zero vectors; hard-negs are not real")
         product_vecs = {
             (p.get("id") or p.get("product_id") or ""): [0.0] * 1024
             for p in products
@@ -259,7 +263,7 @@ def main(argv: list[str] | None = None) -> int:
         if not product_vecs:
             logger.error(
                 "no encoder available; install sentence-transformers, "
-                "or pass --dry-run for templated queries"
+                "or pass --skip-encoder for a degenerate-hardneg smoke test"
             )
             return 2
 
@@ -285,7 +289,7 @@ def main(argv: list[str] | None = None) -> int:
                 continue
 
         # Encode the queries in a single batch when possible.
-        if args.dry_run:
+        if args.skip_encoder:
             qvecs = [[0.0] * 1024 for _ in queries]
         else:
             qvecs = encode_queries([q["query"] for q in queries])
