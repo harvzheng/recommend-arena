@@ -1,0 +1,22 @@
+{
+  "domain": "book",
+  "reviews": [
+    {"product_id": "BOOK-001", "reviewer": "senior_eng", "rating": 5, "text": "The book every junior engineer should read. Pragmatic, opinionated, full of small lessons about software craftsmanship. Quick read, high practicality."},
+    {"product_id": "BOOK-001", "reviewer": "tech_lead", "rating": 5, "text": "Updated edition still feels relevant. Short chapters make it easy to dip into. Light on deep theory, heavy on principles you can apply tomorrow."},
+    {"product_id": "BOOK-002", "reviewer": "backend_arch", "rating": 5, "text": "The bible of distributed systems. Dense, deep, takes weeks to work through but every chapter rewards the time. Best treatment of consistency models I've read."},
+    {"product_id": "BOOK-002", "reviewer": "platform_eng", "rating": 5, "text": "Massive book about how data systems actually work under the hood. Hard but worth it. The chapter on stream processing alone is gold."},
+    {"product_id": "BOOK-002", "reviewer": "data_engineer", "rating": 4, "text": "Comprehensive systems design reference. Some sections are a slog but the depth is unmatched. Not for beginners."},
+    {"product_id": "BOOK-003", "reviewer": "cs_student", "rating": 5, "text": "Beautiful storytelling about how computers actually work, starting from binary and building up to a CPU. Reads like a novel. Surprisingly accessible."},
+    {"product_id": "BOOK-003", "reviewer": "history_buff", "rating": 5, "text": "Petzold turns computer fundamentals into narrative. Wonderful introduction to the field for someone who wants to understand the machine, not just program it."},
+    {"product_id": "BOOK-004", "reviewer": "backend_eng", "rating": 5, "text": "Fowler's catalog of refactorings is the practical complement to clean code. Heavy on examples in JavaScript this edition. Very actionable."},
+    {"product_id": "BOOK-004", "reviewer": "code_reviewer", "rating": 4, "text": "Refactoring patterns are timeless. Use this book as a reference; the catalog format makes it easy to look up specific transformations."},
+    {"product_id": "BOOK-005", "reviewer": "language_geek", "rating": 5, "text": "Builds two interpreters from scratch — one tree-walking, one bytecode VM. Incredibly clear writing. Best book on language implementation for working engineers."},
+    {"product_id": "BOOK-005", "reviewer": "compiler_dev", "rating": 5, "text": "A masterclass in how to write a teaching book. Crafty incremental progression. By the end you've actually built a working language."},
+    {"product_id": "BOOK-006", "reviewer": "phd_candidate", "rating": 5, "text": "Knuth's magnum opus. Extremely deep, mathematically rigorous, and pretty challenging. Not practical for day-to-day work but essential for serious algorithm study."},
+    {"product_id": "BOOK-006", "reviewer": "theorist", "rating": 4, "text": "Foundational but dense. The MIX assembly distracts from the core ideas in places. Still, depth that no other algorithms book matches."},
+    {"product_id": "BOOK-007", "reviewer": "frontend_dev", "rating": 5, "text": "Goes deep into how JavaScript actually works — closures, this, prototypes. The kind of book that makes you re-evaluate code you've been writing for years."},
+    {"product_id": "BOOK-007", "reviewer": "node_engineer", "rating": 5, "text": "If you want to understand JavaScript at the language level, this is the book. Approachable but never superficial. Highly practical."},
+    {"product_id": "BOOK-008", "reviewer": "junior_dev", "rating": 4, "text": "Easy to read, full of clear principles for naming and small functions. A bit dogmatic in places but a great starting point for code quality."},
+    {"product_id": "BOOK-008", "reviewer": "skeptical_eng", "rating": 3, "text": "Overrated in some circles. The advice is fine for greenfield code but some of the recommendations (tiny functions, no comments ever) don't survive contact with real codebases."}
+  ]
+}

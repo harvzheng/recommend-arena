@@ -41,3 +41,16 @@ checkpoints/
 
 # Benchmark log spam (results/ is committed; logs are not)
 benchmark/results/full_output.log
+
+# Rust build artifacts
+arena_core/target/
+arena_core/Cargo.lock
+**/*.rs.bk
+
+# Python extension built from arena_core/
+arena_core*.so
+arena_core/*.egg-info/
+
+# Per-domain artifact bundles (regenerable via `arena new <domain>`)
+artifacts/*/
+!artifacts/.gitkeep

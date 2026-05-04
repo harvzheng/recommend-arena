@@ -1,0 +1,60 @@
+{
+  "version": "1.0",
+  "description": "Tiny eval set for the books domain transfer test (action #7).",
+  "queries": [
+    {
+      "id": "BOOK-EASY-01",
+      "difficulty": "easy",
+      "domain": "book",
+      "query_text": "deep book about distributed systems",
+      "key_attributes": ["topic:distributed-systems", "depth"],
+      "ground_truth_top5": [
+        {"product_id": "BOOK-002", "relevance": 3, "reason": "Designing Data-Intensive Applications — the canonical answer."},
+        {"product_id": "BOOK-005", "relevance": 1, "reason": "Crafting Interpreters touches systems-y topics but isn't distributed."},
+        {"product_id": "BOOK-006", "relevance": 1, "reason": "TAOCP is foundational depth but not distributed."}
+      ]
+    },
+    {
+      "id": "BOOK-EASY-02",
+      "difficulty": "easy",
+      "domain": "book",
+      "query_text": "JavaScript deep dive",
+      "key_attributes": ["topic:javascript", "depth"],
+      "ground_truth_top5": [
+        {"product_id": "BOOK-007", "relevance": 3, "reason": "You Don't Know JS Yet — exact match."}
+      ]
+    },
+    {
+      "id": "BOOK-MED-01",
+      "difficulty": "medium",
+      "domain": "book",
+      "query_text": "practical book about writing better code, accessible to junior developers",
+      "key_attributes": ["practicality", "low-difficulty", "code-quality"],
+      "ground_truth_top5": [
+        {"product_id": "BOOK-001", "relevance": 3, "reason": "Pragmatic Programmer — high practicality, low difficulty."},
+        {"product_id": "BOOK-008", "relevance": 3, "reason": "Clean Code — beginner-friendly code-quality principles."},
+        {"product_id": "BOOK-004", "relevance": 2, "reason": "Refactoring — practical but harder than the top two."}
+      ]
+    },
+    {
+      "id": "BOOK-HARD-01",
+      "difficulty": "hard",
+      "domain": "book",
+      "query_text": "rigorous algorithms reference, not afraid of math",
+      "key_attributes": ["topic:algorithms", "high-depth", "high-difficulty"],
+      "ground_truth_top5": [
+        {"product_id": "BOOK-006", "relevance": 3, "reason": "TAOCP — rigorous, mathematically dense, the canonical answer."}
+      ]
+    },
+    {
+      "id": "BOOK-VAGUE-01",
+      "difficulty": "vague",
+      "domain": "book",
+      "query_text": "a book that reads like a novel about how computers work",
+      "key_attributes": ["narrative_quality", "topic:fundamentals"],
+      "ground_truth_top5": [
+        {"product_id": "BOOK-003", "relevance": 3, "reason": "Code: The Hidden Language — narrative-driven CS fundamentals."}
+      ]
+    }
+  ]
+}
