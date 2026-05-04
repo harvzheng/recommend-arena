@@ -34,6 +34,7 @@ from shared.interface import RecommendationResult  # noqa: E402
 from . import retrieval  # noqa: E402
 from .filter_parser import parse_query, tokenize_for_fts5  # noqa: E402
 from .rerank import rerank  # noqa: E402
+from . import listwise_rerank as _listwise  # noqa: E402
 from .rrf import backend_name, rrf_fuse  # noqa: E402
 
 logger = logging.getLogger(__name__)
@@ -60,6 +61,7 @@ class LocalHybridRecommender:
         embedding_adapter_path: str | None = None,
         reranker_model: str | None = None,
         reranker_adapter_path: str | None = None,
+        reranker_kind: str = "cross_encoder",  # "cross_encoder" | "listwise"
         enable_reranker: bool = True,
         enable_vector: bool = True,
     ):
@@ -78,6 +80,7 @@ class LocalHybridRecommender:
         self.embedding_adapter_path = embedding_adapter_path
         self.reranker_model = reranker_model
         self.reranker_adapter_path = reranker_adapter_path
+        self.reranker_kind = reranker_kind
         self.enable_reranker = enable_reranker
         self.enable_vector = enable_vector
 
@@ -120,6 +123,12 @@ class LocalHybridRecommender:
             if rer and rer.adapter_path and rer.kind != "off_the_shelf"
             else None
         )
+        # Manifest carries an explicit kind ("listwise" or "cross_encoder")
+        # via metadata.reranker_runtime_kind. Default to cross_encoder when
+        # missing (backwards compat with bundles trained before listwise).
+        reranker_kind = (
+            bundle.manifest.metadata.get("reranker_runtime_kind") or "cross_encoder"
+        )
 
         # Use the bundle's directory as the db_dir so the runtime reuses
         # the FTS5 index that `arena new` already built. Do NOT clobber
@@ -130,6 +139,7 @@ class LocalHybridRecommender:
             embedding_adapter_path=embedding_adapter_path,
             reranker_model=reranker_model,
             reranker_adapter_path=reranker_adapter_path,
+            reranker_kind=reranker_kind,
         )
         # Re-ingest into the bundle's directory. open_db is idempotent
         # and will reuse the FTS5 db that's already there.
@@ -216,18 +226,31 @@ class LocalHybridRecommender:
         if not fused:
             return []
 
-        # ----- Stage 5: cross-encoder rerank (Python; optional) -----
+        # ----- Stage 5: rerank (Python; optional) -----
         if self.enable_reranker:
             rerank_input = [
                 (pid, state.rerank_docs.get(pid, state.product_names.get(pid, pid)))
                 for pid, _score in fused
             ]
-            reranked = rerank(
-                query_text,
-                rerank_input,
-                top_k=max(top_k, TOP_K_RERANKED),
-                model_name=self.reranker_model or "BAAI/bge-reranker-v2-m3",
-            )
+            if self.reranker_kind == "listwise":
+                # Recall analysis on the ski benchmark: recall@10 = 0.71 vs
+                # recall@25 = 0.93. Feed 20 candidates so we don't bottleneck
+                # on retrieval recall before rerank can do its job.
+                listwise_input_k = int(os.environ.get("RECOMMEND_LISTWISE_TOP_K", "20"))
+                reranked = _listwise.rerank(
+                    query_text,
+                    rerank_input[:listwise_input_k],
+                    top_k=max(top_k, TOP_K_RERANKED),
+                    model_name=self.reranker_model or _listwise.DEFAULT_LISTWISE_MODEL,
+                    adapter_path=self.reranker_adapter_path,
+                )
+            else:
+                reranked = rerank(
+                    query_text,
+                    rerank_input,
+                    top_k=max(top_k, TOP_K_RERANKED),
+                    model_name=self.reranker_model or "BAAI/bge-reranker-v2-m3",
+                )
         else:
             reranked = [(pid, score) for pid, score in fused[:max(top_k, TOP_K_RERANKED)]]
 

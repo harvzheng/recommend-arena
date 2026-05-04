@@ -106,6 +106,55 @@ def dry_run_queries(product: dict, n: int) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Review-grounded query extraction.
+#
+# For each review of a product, sample 1-2 short sentences and use them as
+# queries with that product as the positive. Reviews are written by humans
+# about specific attributes ("ice coast", "confidence-inspiring"), giving
+# the trainer real domain language without burning API tokens.
+# ---------------------------------------------------------------------------
+_SENT_SPLIT = __import__("re").compile(r"(?<=[.!?])\s+(?=[A-Z])")
+_QUERY_LEN_RANGE = (4, 18)  # words; clip to query-shaped sentences
+
+
+def review_queries(
+    reviews: list[dict],
+    product_id: str,
+    max_per_review: int,
+    rng: "random.Random",
+) -> list[dict]:
+    """Extract query-shaped sentences from this product's reviews."""
+    out: list[dict] = []
+    seen: set[str] = set()
+    for r in reviews:
+        if (r.get("product_id") or r.get("id")) != product_id:
+            continue
+        text = r.get("text") or r.get("review_text") or ""
+        if not text:
+            continue
+        sentences = [s.strip() for s in _SENT_SPLIT.split(text) if s.strip()]
+        rng.shuffle(sentences)
+        picked = 0
+        for s in sentences:
+            words = s.split()
+            if not (_QUERY_LEN_RANGE[0] <= len(words) <= _QUERY_LEN_RANGE[1]):
+                continue
+            # Drop a trailing period — queries don't end in punctuation.
+            cleaned = s.rstrip(".!?")
+            # Lowercase initial — match query distribution
+            if cleaned and cleaned[0].isupper():
+                cleaned = cleaned[0].lower() + cleaned[1:]
+            if cleaned in seen:
+                continue
+            seen.add(cleaned)
+            out.append({"query": cleaned, "difficulty": "vague"})
+            picked += 1
+            if picked >= max_per_review:
+                break
+    return out
+
+
+# ---------------------------------------------------------------------------
 # Hard-negative mining — Rust kernel from arena_core.
 # ---------------------------------------------------------------------------
 def mine_hard_negatives(
@@ -230,6 +279,19 @@ def main(argv: list[str] | None = None) -> int:
         help="seed for the dry-run sampler",
     )
     parser.add_argument(
+        "--source",
+        choices=["templates", "reviews", "llm"],
+        default=None,
+        help="where queries come from. 'templates': dry-run patterns. "
+             "'reviews': sample short sentences from reviews.jsonl as queries "
+             "(real human language, no API key). 'llm': call the teacher. "
+             "Default: 'templates' if --dry-run else 'llm'.",
+    )
+    parser.add_argument(
+        "--max-queries-per-review", type=int, default=2,
+        help="how many query-shaped sentences to extract per review",
+    )
+    parser.add_argument(
         "--max-products", type=int, default=None,
         help="cap how many products we generate queries for (debug)",
     )
@@ -245,9 +307,16 @@ def main(argv: list[str] | None = None) -> int:
 
     bundle = Bundle.load(args.bundle)
     products = bundle.read_products()
+    reviews = bundle.read_reviews()
     if args.max_products:
         products = products[: args.max_products]
-    logger.info("generating queries for %d products", len(products))
+
+    # Resolve --source default. Backwards compatible: --dry-run alone implies
+    # templates, otherwise default to llm.
+    source = args.source or ("templates" if args.dry_run else "llm")
+    logger.info(
+        "generating queries for %d products (source=%s)", len(products), source,
+    )
 
     # Encode the catalog once. With --skip-encoder we substitute zero vectors
     # (hard-negs become deterministic first-N — fine for a smoke test only).
@@ -279,9 +348,16 @@ def main(argv: list[str] | None = None) -> int:
         if not pid:
             continue
 
-        if args.dry_run:
+        if source == "templates":
             queries = dry_run_queries(product, args.queries_per_product)
-        else:
+        elif source == "reviews":
+            queries = review_queries(
+                reviews, pid, args.max_queries_per_review, random,
+            )
+            if not queries:
+                logger.debug("no review-derived queries for product %s", pid)
+                continue
+        else:  # llm
             prompt = build_teacher_prompt(product, args.queries_per_product)
             queries = call_teacher(prompt)
             if not queries:
