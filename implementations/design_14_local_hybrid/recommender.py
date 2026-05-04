@@ -84,6 +84,50 @@ class LocalHybridRecommender:
         logger.info("design_14: backend=%s db_dir=%s", backend_name(), self.db_dir)
 
     # ------------------------------------------------------------------
+    # Bundle integration
+    # ------------------------------------------------------------------
+    @classmethod
+    def from_bundle(cls, bundle_path: str | Path) -> "LocalHybridRecommender":
+        """Instantiate the recommender from an `artifacts/<domain>/` bundle.
+
+        The bundle's manifest pins the embedding and reranker model IDs;
+        the FTS5 index is loaded directly from the bundle's `fts5.db`.
+        Products and reviews are re-read from the bundle so the in-memory
+        `_DomainState` stays consistent with what the eval gate sees.
+        """
+        # Imported here to avoid circular imports at module-load time.
+        from shared.domain_bundle import Bundle  # noqa: WPS433
+
+        bundle = Bundle.load(bundle_path)
+        domain = bundle.manifest.domain
+
+        embedding_model = (
+            bundle.manifest.embedding.base_model
+            if bundle.manifest.embedding
+            else retrieval.DEFAULT_EMBED_MODEL
+        )
+        reranker_model = (
+            bundle.manifest.reranker.base_model
+            if bundle.manifest.reranker
+            else None
+        )
+
+        # Use the bundle's directory as the db_dir so the runtime reuses
+        # the FTS5 index that `arena new` already built. Do NOT clobber
+        # it — copy the data files in via Bundle.read_*.
+        rec = cls(
+            db_dir=str(bundle.paths.root),
+            embedding_model=embedding_model,
+            reranker_model=reranker_model,
+        )
+        # Re-ingest into the bundle's directory. open_db is idempotent
+        # and will reuse the FTS5 db that's already there.
+        products = bundle.read_products()
+        reviews = bundle.read_reviews()
+        rec.ingest(products, reviews, domain)
+        return rec
+
+    # ------------------------------------------------------------------
     # Recommender protocol
     # ------------------------------------------------------------------
     def ingest(self, products: list[dict], reviews: list[dict], domain: str) -> None:
