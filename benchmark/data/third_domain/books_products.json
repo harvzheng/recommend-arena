@@ -1,0 +1,157 @@
+{
+  "domain": "book",
+  "products": [
+    {
+      "id": "BOOK-001",
+      "name": "The Pragmatic Programmer",
+      "brand": "Addison-Wesley",
+      "category": "software_engineering",
+      "specs": {
+        "pages": 352,
+        "publication_year": 2019,
+        "edition": 2,
+        "price_usd": 38
+      },
+      "attributes": {
+        "difficulty": 5,
+        "practicality": 10,
+        "depth": 7,
+        "narrative_quality": 6,
+        "topic": ["software-engineering", "career", "craftsmanship"]
+      }
+    },
+    {
+      "id": "BOOK-002",
+      "name": "Designing Data-Intensive Applications",
+      "brand": "O'Reilly",
+      "category": "systems_design",
+      "specs": {
+        "pages": 616,
+        "publication_year": 2017,
+        "edition": 1,
+        "price_usd": 60
+      },
+      "attributes": {
+        "difficulty": 8,
+        "practicality": 9,
+        "depth": 10,
+        "narrative_quality": 8,
+        "topic": ["distributed-systems", "databases", "systems-design"]
+      }
+    },
+    {
+      "id": "BOOK-003",
+      "name": "Code: The Hidden Language",
+      "brand": "Microsoft Press",
+      "category": "computer_science",
+      "specs": {
+        "pages": 400,
+        "publication_year": 2000,
+        "edition": 1,
+        "price_usd": 30
+      },
+      "attributes": {
+        "difficulty": 4,
+        "practicality": 5,
+        "depth": 9,
+        "narrative_quality": 9,
+        "topic": ["computer-science", "fundamentals", "history"]
+      }
+    },
+    {
+      "id": "BOOK-004",
+      "name": "Refactoring",
+      "brand": "Addison-Wesley",
+      "category": "software_engineering",
+      "specs": {
+        "pages": 448,
+        "publication_year": 2018,
+        "edition": 2,
+        "price_usd": 50
+      },
+      "attributes": {
+        "difficulty": 6,
+        "practicality": 10,
+        "depth": 8,
+        "narrative_quality": 6,
+        "topic": ["refactoring", "code-quality", "object-oriented"]
+      }
+    },
+    {
+      "id": "BOOK-005",
+      "name": "Crafting Interpreters",
+      "brand": "Genever Benning",
+      "category": "compilers",
+      "specs": {
+        "pages": 640,
+        "publication_year": 2021,
+        "edition": 1,
+        "price_usd": 45
+      },
+      "attributes": {
+        "difficulty": 7,
+        "practicality": 9,
+        "depth": 9,
+        "narrative_quality": 8,
+        "topic": ["compilers", "interpreters", "language-implementation"]
+      }
+    },
+    {
+      "id": "BOOK-006",
+      "name": "The Art of Computer Programming Vol 1",
+      "brand": "Addison-Wesley",
+      "category": "algorithms",
+      "specs": {
+        "pages": 672,
+        "publication_year": 1997,
+        "edition": 3,
+        "price_usd": 75
+      },
+      "attributes": {
+        "difficulty": 10,
+        "practicality": 4,
+        "depth": 10,
+        "narrative_quality": 5,
+        "topic": ["algorithms", "mathematics", "fundamentals"]
+      }
+    },
+    {
+      "id": "BOOK-007",
+      "name": "You Don't Know JS Yet",
+      "brand": "Leanpub",
+      "category": "programming_language",
+      "specs": {
+        "pages": 250,
+        "publication_year": 2020,
+        "edition": 2,
+        "price_usd": 25
+      },
+      "attributes": {
+        "difficulty": 6,
+        "practicality": 9,
+        "depth": 9,
+        "narrative_quality": 7,
+        "topic": ["javascript", "programming-language", "deep-dive"]
+      }
+    },
+    {
+      "id": "BOOK-008",
+      "name": "Clean Code",
+      "brand": "Prentice Hall",
+      "category": "software_engineering",
+      "specs": {
+        "pages": 464,
+        "publication_year": 2008,
+        "edition": 1,
+        "price_usd": 40
+      },
+      "attributes": {
+        "difficulty": 4,
+        "practicality": 8,
+        "depth": 6,
+        "narrative_quality": 6,
+        "topic": ["code-quality", "software-engineering"]
+      }
+    }
+  ]
+}

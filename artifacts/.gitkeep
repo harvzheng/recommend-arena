@@ -1,0 +1,4 @@
+# Per-domain artifact bundles produced by `python scripts/arena_new.py new <domain>`
+# live as subdirectories here. They're gitignored (see .gitignore) because they
+# can be regenerated from raw data + the framework code; only this .gitkeep
+# stub is committed so the directory exists for fresh checkouts.

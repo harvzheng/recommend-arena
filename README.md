@@ -123,3 +123,69 @@ Reads from `benchmark/results/` and rewrites `docs/thumbnail.png`.
 ## Status
 
 Active. Designs 1–10 have benchmark data committed; designs 11 and 12 are the most recent additions and represent the trained-model branch of the project (model artifacts themselves are gitignored; retrain with the trainer in each implementation package).
+
+---
+
+## Framework: design 13, design 14, and the domain compiler
+
+Two new designs landed on top of the original twelve, plus a framework for producing per-domain recommender bundles.
+
+### Design 13 — Frontier Listwise (Opus 4.7)
+
+The arena's **upper-bound reference**. Stuffs the entire per-domain catalog (products + every review) into one prompt with cache-control and asks Opus 4.7 to return the top-k product IDs as a JSON array. Predicted NDCG@5: 0.72–0.78. Cost: ~$0.05/query with prompt caching, ~$1.40 per full benchmark run. Not a production design — it exists to anchor the gap between "frontier with full context" and "what a local pipeline can do".
+
+See [`designs/design-13-opus-listwise.md`](designs/design-13-opus-listwise.md).
+
+### Design 14 — Local-First Hybrid
+
+The candidate winner. Pipeline:
+
+```
+query → filter parser → hard prefilter (Rust) → parallel FTS5 (Rust)
+                                              + vector encoder (Python)
+        → RRF fusion (Rust) → cross-encoder rerank (Python) → explanation
+```
+
+Hot path is in **Rust** via [`arena_core/`](arena_core/) (PyO3 + rusqlite/bundled SQLite). ML model invocations stay in Python. Three Rust kernels: `rrf_fuse` (the design-4 score-fusion fix), `build_prefilter_sql` (injection-safe SQL assembly), `fts5_search` (BM25 retrieval), plus `hard_negative_mine` for fast contrastive-pair generation during fine-tuning.
+
+In **lexical-only mode** (no PyTorch installed, no fine-tuning) the architecture already hits NDCG@5 = 0.558, beating arena #1 (0.527). With per-domain fine-tuning (slices 14.1 / 14.2) the prediction is 0.68–0.73.
+
+See [`designs/design-14-local-first-hybrid.md`](designs/design-14-local-first-hybrid.md) for the spec and [`implementations/design_14_local_hybrid/`](implementations/design_14_local_hybrid/) for the runtime.
+
+### The domain compiler — `arena new <domain>`
+
+The framework that produces reusable per-domain bundles. Each bundle is a self-contained directory holding everything needed to run a recommender on one product domain: SQLite + FTS5 index, embedding model (vanilla or fine-tuned), optional reranker LoRA, filter schema, and an eval set. Same runtime, swap domains by config.
+
+```bash
+# Build the Rust core once
+cd arena_core && pip install maturin && maturin build --release
+pip install target/wheels/arena_core-*.whl && cd ..
+
+# Compile a bundle from raw data
+python scripts/arena_new.py new ski \
+    --catalog benchmark/data/ski_products.json \
+    --reviews benchmark/data/ski_reviews.json \
+    --eval    benchmark/data/test_queries.json \
+    --steps ingest,embedding-pin,reranker-pin,extract-schema,generate-synthetic,finetune-embedding,finetune-reranker
+
+# Apply the ship/no-ship gate (blocks publish if NDCG < threshold)
+python scripts/eval_bundle.py --bundle artifacts/ski
+
+# Pack for distribution ("send my friend a recommender")
+python scripts/arena_new.py pack artifacts/ski --out ski.tar.gz
+
+# Unpack on the receiver's box
+python scripts/arena_new.py unpack ski.tar.gz --into artifacts
+```
+
+Step-by-step scripts under [`scripts/`](scripts/):
+- `arena_new.py` — the orchestrator + `inspect` / `pack` / `unpack` subcommands
+- `generate_synthetic_queries.py` — teacher LLM generates query/positive/hard-negative triples; uses `arena_core.hard_negative_mine` for fast NN over the catalog
+- `extract_schema.py` — emits a Pydantic filter schema from the catalog (LLM or deterministic inference)
+- `finetune_embedding.py` — sentence-transformers `MultipleNegativesRankingLoss` with hard negatives, LoRA or full
+- `finetune_reranker.py` — PEFT LoRA on `bge-reranker-v2-m3`
+- `eval_bundle.py` — the **ship/no-ship gate**. Refuses to ship a bundle that doesn't beat lexical-only by ≥ 0.02 and the arena threshold (default 0.55), or that regresses any previously-passing query.
+
+Bundle data model in [`shared/domain_bundle.py`](shared/domain_bundle.py); inference tier router (local / hybrid / frontier) in [`shared/inference_tiers.py`](shared/inference_tiers.py).
+
+The framework genuinely transfers across domains. A small books dataset under [`benchmark/data/third_domain/`](benchmark/data/third_domain/) demonstrates this — `arena new book ...` produces a working recommender with no code changes.

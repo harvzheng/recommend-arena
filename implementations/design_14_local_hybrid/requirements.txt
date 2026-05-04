@@ -1,0 +1,13 @@
+# Rust hot-path core. Build from arena_core/ via maturin.
+# After cloning:  cd arena_core && pip install maturin && maturin develop --release
+# Or build a wheel:  cd arena_core && maturin build --release  &&  pip install target/wheels/arena_core-*.whl
+arena_core>=0.1.0
+
+# Vector encoder + cross-encoder reranker. The recommender lazy-imports both
+# and degrades to lexical-only / pass-through if missing.
+sentence-transformers>=3.0
+torch>=2.2
+
+# Optional: FlagEmbedding gives slightly faster reranking via fp16 on GPU,
+# but sentence-transformers' CrossEncoder works fine without it.
+# FlagEmbedding>=1.3
