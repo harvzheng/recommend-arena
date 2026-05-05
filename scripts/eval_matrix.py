@@ -58,6 +58,43 @@ CONFIGS: dict[str, dict] = {
         embedding_model="BAAI/bge-base-en-v1.5",
         reranker_model="BAAI/bge-reranker-base",
     ),
+    # Qwen3-Embedding-0.6B family — the spec model.
+    "qwen_emb_vec": dict(
+        enable_vector=True, enable_reranker=False,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+    ),
+    "qwen_emb_lora_vec": dict(
+        enable_vector=True, enable_reranker=False,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        embedding_adapter_path=None,  # filled in main()
+    ),
+    "qwen_emb_lora_bge_rerank": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        embedding_adapter_path=None,  # filled in main()
+        reranker_model="BAAI/bge-reranker-base",
+    ),
+    "qwen_emb_lora_bge_rerank_lora": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        embedding_adapter_path=None,  # filled in main()
+        reranker_model="BAAI/bge-reranker-base",
+        reranker_adapter_path=None,  # filled in main()
+    ),
+    # Strongest plausible local config: Qwen3 embedding WITHOUT LoRA
+    # (pretrained baseline is already MTEB-tier so small-data LoRA hurts)
+    # combined with the bge-reranker-base — fine-tuned or vanilla.
+    "qwen_emb_bge_rerank": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        reranker_model="BAAI/bge-reranker-base",
+    ),
+    "qwen_emb_bge_rerank_lora": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        reranker_model="BAAI/bge-reranker-base",
+        reranker_adapter_path=None,  # filled in main()
+    ),
     "qwen_listwise_vanilla_top10": dict(
         enable_vector=True, enable_reranker=True,
         embedding_model="BAAI/bge-small-en-v1.5",
@@ -101,11 +138,25 @@ def main(argv: list[str] | None = None) -> int:
     products = bundle.read_products()
     reviews = bundle.read_reviews()
 
-    # Resolve the bundle's listwise adapter path if present
-    if bundle.manifest.reranker and bundle.manifest.reranker.adapter_path:
-        adapter = str(bundle.paths.root / bundle.manifest.reranker.adapter_path)
-        if "qwen_listwise_lora_top20" in CONFIGS:
-            CONFIGS["qwen_listwise_lora_top20"]["reranker_adapter_path"] = adapter
+    # Resolve the bundle's adapter paths from the manifest. The manifest's
+    # reranker entry may point to either the listwise or the bge LoRA depending
+    # on which trainer ran last; eval_matrix lets you test multiple candidates
+    # so we resolve via the on-disk directory names rather than the manifest.
+    listwise_dir = bundle.paths.root / "listwise_adapter"
+    if listwise_dir.is_dir() and "qwen_listwise_lora_top20" in CONFIGS:
+        CONFIGS["qwen_listwise_lora_top20"]["reranker_adapter_path"] = str(listwise_dir)
+
+    bge_rerank_dir = bundle.paths.root / "reranker_lora"
+    embedding_dir = bundle.paths.root / "embedding"
+    if embedding_dir.is_dir():
+        for cfg_name in ("qwen_emb_lora_vec", "qwen_emb_lora_bge_rerank",
+                         "qwen_emb_lora_bge_rerank_lora"):
+            if cfg_name in CONFIGS:
+                CONFIGS[cfg_name]["embedding_adapter_path"] = str(embedding_dir)
+    if bge_rerank_dir.is_dir():
+        for cfg_name in ("qwen_emb_lora_bge_rerank_lora", "qwen_emb_bge_rerank_lora"):
+            if cfg_name in CONFIGS:
+                CONFIGS[cfg_name]["reranker_adapter_path"] = str(bge_rerank_dir)
 
     selected = (
         [c.strip() for c in args.configs.split(",")]
@@ -119,8 +170,16 @@ def main(argv: list[str] | None = None) -> int:
     for name in selected:
         cfg = dict(CONFIGS[name])
         env = cfg.pop("_env", {}) or {}
-        if cfg.get("reranker_adapter_path") is None and name == "qwen_listwise_lora_top20":
-            print(f"-- skipping {name}: no listwise adapter in bundle")
+        # Skip configs whose required adapter wasn't found
+        if (
+            (name == "qwen_listwise_lora_top20" and cfg.get("reranker_adapter_path") is None)
+            or (name in ("qwen_emb_lora_vec", "qwen_emb_lora_bge_rerank",
+                         "qwen_emb_lora_bge_rerank_lora")
+                and cfg.get("embedding_adapter_path") is None)
+            or (name in ("qwen_emb_lora_bge_rerank_lora", "qwen_emb_bge_rerank_lora")
+                and cfg.get("reranker_adapter_path") is None)
+        ):
+            print(f"-- skipping {name}: missing adapter in bundle")
             continue
 
         old_env = {k: os.environ.get(k) for k in env}

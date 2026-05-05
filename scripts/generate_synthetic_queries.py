@@ -226,6 +226,27 @@ def encode_queries(queries: list[str]) -> list[list[float]]:
     return [retrieval.encode_query(q) or [0.0] * 1024 for q in queries]
 
 
+def _load_teacher_module(path: Path) -> dict[str, list[dict]]:
+    """Import a Python module exposing a QUERIES dict and normalize."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("_teacher_queries", path)
+    if spec is None or spec.loader is None:
+        raise SystemExit(f"could not import teacher file: {path}")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    raw = getattr(mod, "QUERIES", None)
+    if not isinstance(raw, dict):
+        raise SystemExit(f"{path} must define QUERIES: dict[str, list[(str, str)]]")
+    out: dict[str, list[dict]] = {}
+    for pid, qs in raw.items():
+        out[pid] = [
+            {"query": q, "difficulty": d}
+            for q, d in qs
+            if isinstance(q, str) and q.strip()
+        ]
+    return out
+
+
 def call_teacher(prompt: str) -> list[dict]:
     """Call the teacher LLM via shared.llm_provider, parse JSON output."""
     from shared.llm_provider import get_provider
@@ -280,12 +301,20 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument(
         "--source",
-        choices=["templates", "reviews", "llm"],
+        choices=["templates", "reviews", "llm", "teacher"],
         default=None,
         help="where queries come from. 'templates': dry-run patterns. "
-             "'reviews': sample short sentences from reviews.jsonl as queries "
-             "(real human language, no API key). 'llm': call the teacher. "
+             "'reviews': sample short sentences from reviews.jsonl as queries. "
+             "'llm': call shared.llm_provider (real teacher API). "
+             "'teacher': load a static Python module with hand- or "
+             "Claude-authored teacher queries (no API call). "
              "Default: 'templates' if --dry-run else 'llm'.",
+    )
+    parser.add_argument(
+        "--teacher-file",
+        default=None,
+        help="path to a Python module exposing a QUERIES dict mapping "
+             "product_id to [(query, difficulty), ...]. Used with --source teacher.",
     )
     parser.add_argument(
         "--max-queries-per-review", type=int, default=2,
@@ -317,6 +346,17 @@ def main(argv: list[str] | None = None) -> int:
     logger.info(
         "generating queries for %d products (source=%s)", len(products), source,
     )
+
+    # Pre-load the teacher-queries module if needed.
+    teacher_queries: dict[str, list[dict]] = {}
+    if source == "teacher":
+        if not args.teacher_file:
+            logger.error("--source teacher requires --teacher-file <path-to-py-module>")
+            return 2
+        teacher_queries = _load_teacher_module(Path(args.teacher_file))
+        logger.info(
+            "teacher file: %s (%d products covered)", args.teacher_file, len(teacher_queries),
+        )
 
     # Encode the catalog once. With --skip-encoder we substitute zero vectors
     # (hard-negs become deterministic first-N — fine for a smoke test only).
@@ -356,6 +396,11 @@ def main(argv: list[str] | None = None) -> int:
             )
             if not queries:
                 logger.debug("no review-derived queries for product %s", pid)
+                continue
+        elif source == "teacher":
+            queries = teacher_queries.get(pid, [])
+            if not queries:
+                logger.debug("no teacher queries for product %s", pid)
                 continue
         else:  # llm
             prompt = build_teacher_prompt(product, args.queries_per_product)
