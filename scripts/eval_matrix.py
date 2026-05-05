@@ -95,6 +95,16 @@ CONFIGS: dict[str, dict] = {
         reranker_model="BAAI/bge-reranker-base",
         reranker_adapter_path=None,  # filled in main()
     ),
+    # Qwen3-Embedding-4B — top of MTEB in its size class.
+    "qwen4b_emb_vec": dict(
+        enable_vector=True, enable_reranker=False,
+        embedding_model="Qwen/Qwen3-Embedding-4B",
+    ),
+    "qwen4b_emb_bge_rerank": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-4B",
+        reranker_model="BAAI/bge-reranker-base",
+    ),
     "qwen_listwise_vanilla_top10": dict(
         enable_vector=True, enable_reranker=True,
         embedding_model="BAAI/bge-small-en-v1.5",
