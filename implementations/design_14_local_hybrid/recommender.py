@@ -149,6 +149,14 @@ class LocalHybridRecommender:
             bundle.manifest.metadata.get("reranker_runtime_kind") or "cross_encoder"
         )
 
+        # Honor an explicit disable from the manifest. We set this when the
+        # eval matrix shows the rerank stage is net-negative on top of a
+        # strong embedding (the canonical case: Qwen3-Embedding-0.6B + RRF
+        # is the ski-bundle ceiling at 0.614; any rerank stage drops it).
+        enable_reranker = (
+            bool(bundle.manifest.metadata.get("enable_reranker", True))
+        )
+
         # Use the bundle's directory as the db_dir so the runtime reuses
         # the FTS5 index that `arena new` already built. Do NOT clobber
         # it — copy the data files in via Bundle.read_*.
@@ -159,6 +167,7 @@ class LocalHybridRecommender:
             reranker_model=reranker_model,
             reranker_adapter_path=reranker_adapter_path,
             reranker_kind=reranker_kind,
+            enable_reranker=enable_reranker,
         )
         # Re-ingest into the bundle's directory. open_db is idempotent
         # and will reuse the FTS5 db that's already there.

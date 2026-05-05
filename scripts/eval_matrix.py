@@ -105,6 +105,25 @@ CONFIGS: dict[str, dict] = {
         embedding_model="Qwen/Qwen3-Embedding-4B",
         reranker_model="BAAI/bge-reranker-base",
     ),
+    # Untested combo: Qwen3 embedding (best vec retrieval) + Qwen3-1.7B
+    # listwise reranker (trained LoRA from earlier session). Tests
+    # whether the strong embedding + nuanced listwise reasoning combine.
+    "qwen_emb_qwen_listwise": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        reranker_model="Qwen/Qwen3-1.7B",
+        reranker_kind="listwise",
+        reranker_adapter_path=None,  # filled in main()
+        _env={"RECOMMEND_LISTWISE_TOP_K": "20"},
+    ),
+    "qwen4b_emb_qwen_listwise": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-4B",
+        reranker_model="Qwen/Qwen3-1.7B",
+        reranker_kind="listwise",
+        reranker_adapter_path=None,  # filled in main()
+        _env={"RECOMMEND_LISTWISE_TOP_K": "20"},
+    ),
     "qwen_listwise_vanilla_top10": dict(
         enable_vector=True, enable_reranker=True,
         embedding_model="BAAI/bge-small-en-v1.5",
@@ -153,8 +172,11 @@ def main(argv: list[str] | None = None) -> int:
     # on which trainer ran last; eval_matrix lets you test multiple candidates
     # so we resolve via the on-disk directory names rather than the manifest.
     listwise_dir = bundle.paths.root / "listwise_adapter"
-    if listwise_dir.is_dir() and "qwen_listwise_lora_top20" in CONFIGS:
-        CONFIGS["qwen_listwise_lora_top20"]["reranker_adapter_path"] = str(listwise_dir)
+    if listwise_dir.is_dir():
+        for cfg_name in ("qwen_listwise_lora_top20", "qwen_emb_qwen_listwise",
+                         "qwen4b_emb_qwen_listwise"):
+            if cfg_name in CONFIGS:
+                CONFIGS[cfg_name]["reranker_adapter_path"] = str(listwise_dir)
 
     bge_rerank_dir = bundle.paths.root / "reranker_lora"
     embedding_dir = bundle.paths.root / "embedding"
@@ -181,13 +203,21 @@ def main(argv: list[str] | None = None) -> int:
         cfg = dict(CONFIGS[name])
         env = cfg.pop("_env", {}) or {}
         # Skip configs whose required adapter wasn't found
+        listwise_required = (
+            "qwen_listwise_lora_top20", "qwen_emb_qwen_listwise",
+            "qwen4b_emb_qwen_listwise",
+        )
+        emb_lora_required = (
+            "qwen_emb_lora_vec", "qwen_emb_lora_bge_rerank",
+            "qwen_emb_lora_bge_rerank_lora",
+        )
+        rerank_lora_required = (
+            "qwen_emb_lora_bge_rerank_lora", "qwen_emb_bge_rerank_lora",
+        )
         if (
-            (name == "qwen_listwise_lora_top20" and cfg.get("reranker_adapter_path") is None)
-            or (name in ("qwen_emb_lora_vec", "qwen_emb_lora_bge_rerank",
-                         "qwen_emb_lora_bge_rerank_lora")
-                and cfg.get("embedding_adapter_path") is None)
-            or (name in ("qwen_emb_lora_bge_rerank_lora", "qwen_emb_bge_rerank_lora")
-                and cfg.get("reranker_adapter_path") is None)
+            (name in listwise_required and cfg.get("reranker_adapter_path") is None)
+            or (name in emb_lora_required and cfg.get("embedding_adapter_path") is None)
+            or (name in rerank_lora_required and cfg.get("reranker_adapter_path") is None)
         ):
             print(f"-- skipping {name}: missing adapter in bundle")
             continue
