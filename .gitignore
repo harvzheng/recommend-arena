@@ -31,8 +31,12 @@ env/
 
 # Trained model artifacts (too large for git, regenerable)
 models/
-implementations/design_11_finetuned_embed/trained_model/
+implementations/*/trained_model/
+implementations/*/trained_adapter/
 checkpoints/
+
+# Claude Code local state
+.claude/
 
 # Local SQLite databases produced by implementations
 *.db
