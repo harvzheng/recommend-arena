@@ -50,6 +50,25 @@ TOP_K_FUSED = 50
 TOP_K_RERANKED = 10
 RRF_K = 60
 
+# Per-query routing: skip the vector+rerank stage when lex top-1 has a
+# meaningful absolute BM25 score AND also appears in the vector retrieval
+# top-K. Two retrievers agreeing on the same top is a strong signal that
+# the answer is "lexically obvious"; downstream rerank tends to *hurt*
+# such queries by mixing in semantically-similar wrong candidates.
+LEX_DOMINANCE_MIN_SCORE = float(
+    os.environ.get("RECOMMEND_LEX_DOMINANCE_MIN_SCORE", "1.0")
+)
+LEX_DOMINANCE_VEC_K = int(
+    os.environ.get("RECOMMEND_LEX_DOMINANCE_VEC_K", "10")
+)
+# Lex top-1 pinning: when FTS5's top-1 has a strong absolute score we
+# promote it to position 1 of the final ranked output regardless of
+# what rerank decided. Targets the VAGUE-02 case (lex top-1 = gold
+# rel-3, vector retrieval misses it entirely, rerank demotes it).
+LEX_PIN_MIN_SCORE = float(
+    os.environ.get("RECOMMEND_LEX_PIN_MIN_SCORE", "2.0")
+)
+
 
 class LocalHybridRecommender:
     """Design 14 runtime."""
@@ -210,6 +229,29 @@ class LocalHybridRecommender:
         lexical_ranked = self._fts5_track(state, query_text, candidate_ids)
         vector_ranked = self._vector_track(state, query_text, candidate_ids)
 
+        # ----- Stage 3b: per-query routing -----
+        # Skip the vector+rerank stages when lex top-1 has a strong
+        # absolute score AND vector retrieval also surfaces it in its
+        # top-K. Two retrievers agreeing is a high-precision signal that
+        # the answer is "lexically obvious"; the cross-encoder rerank
+        # stage destroys such queries by mixing in semantically-similar
+        # wrong candidates (VAGUE-01, EASY-04, MED-05 on the skis bench).
+        #
+        # Listwise rerank is excluded — it sees the full top-20 and
+        # tends to preserve good lex hits already, so bypassing only
+        # loses its other reordering wins.
+        routing_eligible = (
+            self.enable_reranker
+            and self.reranker_kind != "listwise"
+            and self._lex_dominates(lexical_ranked, vector_ranked)
+        )
+        if routing_eligible:
+            top_pids = [pid for pid, _ in lexical_ranked[:max(top_k, TOP_K_RERANKED)]]
+            return self._build_results(
+                top_pids, query_text, filters, lexical_ranked, vector_ranked,
+                state, top_k, lex_routed=True,
+            )
+
         # ----- Stage 4: RRF fusion (RUST) -----
         ranked_lists = []
         if lexical_ranked:
@@ -254,6 +296,31 @@ class LocalHybridRecommender:
         else:
             reranked = [(pid, score) for pid, score in fused[:max(top_k, TOP_K_RERANKED)]]
 
+        # ----- Stage 5b: lex top-1 pinning (cross-encoder only) -----
+        # When the lexical retriever has a strong absolute score for its
+        # top-1 hit AND the rerank pipeline kept that product in its
+        # top-3 (rerank somewhat agrees but demoted it), promote lex
+        # top-1 to position 1. This handles the VAGUE-02 case where
+        # vector retrieval missed the lex-perfect answer entirely so
+        # consensus routing can't fire. The "rerank top-3" guard avoids
+        # promoting products the reranker actively rejected.
+        #
+        # Skipped for listwise: listwise saw the full top-20 (including
+        # lex top-1) and made its decision; overriding here loses the
+        # listwise reordering wins.
+        pin_eligible = (
+            self.reranker_kind != "listwise"
+            and lexical_ranked
+            and lexical_ranked[0][1] >= LEX_PIN_MIN_SCORE
+        )
+        if pin_eligible:
+            pin_pid = lexical_ranked[0][0]
+            rerank_top3 = {p for p, _ in reranked[:3]}
+            if reranked and reranked[0][0] != pin_pid and pin_pid in rerank_top3:
+                rest = [(p, s) for p, s in reranked if p != pin_pid]
+                top_score = reranked[0][1]
+                reranked = [(pin_pid, top_score + 1e-3), *rest]
+
         # ----- Stage 6: explanation + result construction -----
         results: list[RecommendationResult] = []
         # Score normalization: linear-shift the reranker output to [0.05, 1.0]
@@ -272,6 +339,67 @@ class LocalHybridRecommender:
                     explanation=_build_explanation(filters, lexical_ranked, vector_ranked, pid),
                     matched_attributes=_matched_attrs(filters),
                 ))
+        return results
+
+    # ------------------------------------------------------------------
+    # Per-query routing
+    # ------------------------------------------------------------------
+    @staticmethod
+    def _lex_dominates(
+        lexical_ranked: list[tuple[str, float]],
+        vector_ranked: list[tuple[str, float]],
+    ) -> bool:
+        """Two-retriever consensus check.
+
+        Returns True when (a) lex top-1 has a meaningful absolute BM25
+        score and (b) vector retrieval also surfaces the same product
+        in its top-K. Two-retriever agreement is a high-precision signal
+        that lex's top-1 is the correct answer.
+
+        When vector retrieval is disabled (e.g. the lexical-only baseline
+        configuration), we return False here so the caller continues to
+        produce results in the standard way (no double counting).
+        """
+        if not lexical_ranked:
+            return False
+        s1 = lexical_ranked[0][1]
+        if s1 < LEX_DOMINANCE_MIN_SCORE:
+            return False
+        if not vector_ranked:
+            return False
+        lex_top1 = lexical_ranked[0][0]
+        vec_top_k_ids = {pid for pid, _ in vector_ranked[:LEX_DOMINANCE_VEC_K]}
+        return lex_top1 in vec_top_k_ids
+
+    def _build_results(
+        self,
+        ordered_pids: list[str],
+        query_text: str,
+        filters: list[dict],
+        lexical_ranked: list[tuple[str, float]],
+        vector_ranked: list[tuple[str, float]],
+        state: "_DomainState",
+        top_k: int,
+        lex_routed: bool = False,
+    ) -> list[RecommendationResult]:
+        """Build RecommendationResult list. Used by both the full pipeline
+        and the lexical-routing short-circuit."""
+        results: list[RecommendationResult] = []
+        n = len(ordered_pids[:top_k])
+        for i, pid in enumerate(ordered_pids[:top_k]):
+            # Geometric falloff so position-1 isn't always exactly 1.0,
+            # mirroring the rerank-path normalization.
+            norm = max(0.05, 1.0 - (0.95 * i / max(1, n - 1)) if n > 1 else 1.0)
+            explain = _build_explanation(filters, lexical_ranked, vector_ranked, pid)
+            if lex_routed:
+                explain = (explain or "") + " [lex-routed: top-1 dominance]"
+            results.append(RecommendationResult(
+                product_id=pid,
+                product_name=state.product_names.get(pid, pid),
+                score=round(norm, 4),
+                explanation=explain,
+                matched_attributes=_matched_attrs(filters),
+            ))
         return results
 
     # ------------------------------------------------------------------
