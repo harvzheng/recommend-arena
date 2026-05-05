@@ -229,10 +229,23 @@ class LocalHybridRecommender:
             return []
 
         # ----- Stage 1: filter parser -----
-        filters = parse_query(query_text, domain)
+        all_filters = parse_query(query_text, domain)
+        # Split out negated filters — the OR-based Rust prefilter can't
+        # narrow on a NOT condition (its EXISTS-subqueries are joined
+        # with OR), so negation runs as a post-retrieval AND-exclusion
+        # against the retrieved candidate set.
+        filters = [f for f in all_filters if not f.get("_negate")]
+        negative_filters = [
+            {k: v for k, v in f.items() if k != "_negate"}
+            for f in all_filters if f.get("_negate")
+        ]
 
         # ----- Stage 2: hard prefilter (RUST) -----
         candidate_ids = self._prefilter_candidates(state, filters)
+        if negative_filters:
+            excluded_ids = self._excluded_ids(state, negative_filters)
+            if excluded_ids:
+                candidate_ids = [c for c in candidate_ids if c not in excluded_ids]
 
         # ----- Stage 3: parallel retrieval -----
         lexical_ranked = self._fts5_track(state, query_text, candidate_ids)
@@ -414,6 +427,40 @@ class LocalHybridRecommender:
     # ------------------------------------------------------------------
     # Stage helpers
     # ------------------------------------------------------------------
+    def _excluded_ids(
+        self, state: "_DomainState", negative_filters: list[dict]
+    ) -> set[str]:
+        """Resolve the set of product external_ids that match ANY of the
+        given negative filters. Used to apply post-retrieval AND-exclusion
+        for "NOT X" / "without Y" query phrases that the OR-based Rust
+        prefilter can't narrow on.
+
+        Returns an empty set on any error so the pipeline degrades to
+        "no exclusion" instead of dropping the whole query.
+        """
+        if not negative_filters:
+            return set()
+        try:
+            import arena_core  # type: ignore
+            if not hasattr(arena_core, "build_prefilter_sql"):
+                return set()
+            where_fragment, params = arena_core.build_prefilter_sql(negative_filters)
+        except (ImportError, ValueError) as e:
+            logger.debug("design_14: negative-filter assembly failed: %s", e)
+            return set()
+        if not where_fragment:
+            return set()
+        sql = f"SELECT p.external_id FROM products p WHERE {where_fragment}"
+        conn = sqlite3.connect(state.db_path)
+        try:
+            rows = conn.execute(sql, params).fetchall()
+        except sqlite3.Error as e:
+            logger.debug("design_14: negative-filter SQL failed: %s", e)
+            return set()
+        finally:
+            conn.close()
+        return {r[0] for r in rows}
+
     def _prefilter_candidates(
         self, state: "_DomainState", filters: list[dict]
     ) -> list[str]:

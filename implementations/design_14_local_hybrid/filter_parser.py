@@ -33,6 +33,8 @@ _SKI_TERRAIN_KEYWORDS = {
     "freeride": "freeride",
     "freestyle": "freestyle",
     "park": "park",
+    "twin tip": "park",        # twin tip is a park/freestyle feature
+    "twin-tip": "park",
     "all-mountain": "all-mountain",
     "all mountain": "all-mountain",
     "frontside": "carving",
@@ -44,6 +46,7 @@ _SKI_TERRAIN_KEYWORDS = {
     "off-piste": "off-piste",
     "off piste": "off-piste",
     "groomed": "groomed",
+    "groomer": "groomed",
     "touring": "touring",
     "backcountry": "backcountry",
 }
@@ -73,6 +76,10 @@ _SKI_NUMERIC_RULES = [
      "gte", "waist_width_mm"),
     (r"(?:under|below|<=?|less than)\s*(\d{2,3})\s*mm(?:\s*(?:waist|underfoot))?",
      "lte", "waist_width_mm"),
+    (r"(\d{2,3})\s*mm(?:\s*waist)?\s+or\s+(?:wider|more|greater|larger|above)",
+     "gte", "waist_width_mm"),
+    (r"(\d{2,3})\s*mm(?:\s*waist)?\s+or\s+(?:narrower|less|smaller|under|below)",
+     "lte", "waist_width_mm"),
     (r"(\d{2,3})\s*mm\+",                   "gte", "waist_width_mm"),
     (r"\baround\s*(\d{2,3})\s*-?\s*(\d{2,3})?\s*mm\b",  "range", "waist_width_mm"),
     # Two-number ranges, e.g. "80-95mm", "around 96-100mm waist"
@@ -82,6 +89,68 @@ _SKI_NUMERIC_RULES = [
     # compat but it's brittle when waists are sparse — see _parse_ski.
     (r"\b(\d{2,3})\s*mm\b",                 "eq",  "waist_width_mm"),
 ]
+
+# Construction terms — matched against the product_attributes
+# `construction` text column (values like "titanal_sandwich",
+# "carbon_paulownia", "graphene_sandwich", "composite_cap"). LIKE
+# matching means partial substrings work, so "titanal" hits
+# "titanal_sandwich".
+_SKI_CONSTRUCTION_KEYWORDS = {
+    "titanal":         "titanal",
+    "metal":           "titanal",   # "metal in it" common synonym for titanal
+    "carbon":          "carbon",
+    "graphene":        "graphene",
+    "composite cap":   "composite_cap",
+    "composite":       "composite",
+    "cap":             "cap",
+    "race sandwich":   "race_sandwich",
+    "maple":           "maple",
+    "poplar":          "poplar",
+    "paulownia":       "paulownia",
+}
+
+# Rocker-profile terms. Values map to the canonical
+# rocker_profile column (camber | rocker_camber | full_rocker | etc.).
+_SKI_ROCKER_KEYWORDS = {
+    "full rocker":     "full_rocker",
+    "full camber":     "camber",
+    "pure camber":     "camber",
+    "no rocker":       "camber",      # "no rocker" → require camber
+}
+
+# Brand match — the products table has a `brand` column already.
+# Stored lowercase via parser canonicalization, matched against the
+# product_attributes brand text column at retrieval time. We just emit
+# a filter; the SQL contains-op joins via LIKE.
+_SKI_BRAND_KEYWORDS = {
+    "atomic":      "Atomic",
+    "rossignol":   "Rossignol",
+    "head":        "Head",
+    "volkl":       "Volkl",
+    "nordica":     "Nordica",
+    "blizzard":    "Blizzard",
+    "salomon":     "Salomon",
+    "k2":          "K2",
+    "dynastar":    "Dynastar",
+    "black crows": "Black Crows",
+    "dps":         "DPS",
+    "moment":      "Moment",
+    "elan":        "Elan",
+    "fischer":     "Fischer",
+    "armada":      "Armada",
+    "line":        "Line",
+    "faction":     "Faction",
+}
+
+# Phrases that imply the user wants to *exclude* an attribute. Used to
+# detect "ski that does NOT use titanal", "without metal", "no twin tip".
+# We look for these phrases preceding a construction / rocker / terrain
+# / brand keyword within ~3 tokens.
+_NEGATION_PREFIX_RE = re.compile(
+    r"\b(?:not|no|without|excludes?|except|never|isn'?t|doesn'?t(?:\s+(?:use|have))?)\b"
+)
+_NEGATED_RANGE = 35  # how many chars after a negation cue to scan
+
 
 _SHOE_SURFACE_KEYWORDS = {
     "trail": "trail",
@@ -102,16 +171,40 @@ _SHOE_RULES = [
 
 
 def parse_query(query_text: str, domain: str) -> list[dict]:
-    """Extract structured filter constraints from a free-text query."""
+    """Extract structured filter constraints from a free-text query.
+
+    Returns a flat list of filter dicts. Negated filters carry a
+    ``"_negate": True`` marker — callers (currently the design-14
+    recommender) read this and apply those filters as a post-retrieval
+    AND-exclusion rather than feeding them into the OR-based Rust
+    prefilter (which can't narrow).
+    """
+    pos, neg = parse_query_with_negation(query_text, domain)
+    return pos + [dict(f, _negate=True) for f in neg]
+
+
+def parse_query_with_negation(
+    query_text: str, domain: str
+) -> tuple[list[dict], list[dict]]:
+    """Split into (positive, negative) filter lists explicitly."""
     text = (query_text or "").lower()
     if not text.strip():
-        return []
+        return [], []
 
     if domain == "ski":
         return _parse_ski(text)
     if domain == "running_shoe":
-        return _parse_shoe(text)
-    return []
+        # No negation rules for shoes yet — keep the legacy positive-only path.
+        return _parse_shoe(text), []
+    return [], []
+
+
+def _is_negated(text: str, span_start: int) -> bool:
+    """Is the keyword at *span_start* preceded by a negation cue within
+    ``_NEGATED_RANGE`` characters?"""
+    window_start = max(0, span_start - _NEGATED_RANGE)
+    window = text[window_start:span_start]
+    return bool(_NEGATION_PREFIX_RE.search(window))
 
 
 _BALANCED_INTENT_RE = re.compile(
@@ -120,9 +213,17 @@ _BALANCED_INTENT_RE = re.compile(
 )
 
 
-def _parse_ski(text: str) -> list[dict]:
+def _parse_ski(text: str) -> tuple[list[dict], list[dict]]:
     filters: list[dict] = []
-    seen_keys: set[tuple[str, str]] = set()  # (attr, op) — at most one per pair
+    negative_filters: list[dict] = []
+    seen_keys: set[tuple[str, str, str]] = set()  # (attr, op, value) — dedupe
+
+    def _add(target: list[dict], attr: str, op: str, value):
+        key = (attr, op, str(value))
+        if key in seen_keys:
+            return
+        seen_keys.add(key)
+        target.append({"attribute": attr, "op": op, "value": value})
 
     # "Balanced" / "versatile" / "both X and Y" queries are explicitly
     # asking for non-specialist skis. Suppress narrowing terrain filters
@@ -135,15 +236,51 @@ def _parse_ski(text: str) -> list[dict]:
 
     # Terrain — emit a contains filter against the categorical column.
     if not balanced_intent:
-        matched_terrains: list[str] = []
+        matched_terrains: list[tuple[str, int]] = []
         for kw, canonical in _SKI_TERRAIN_KEYWORDS.items():
-            if kw in text and canonical not in matched_terrains:
-                matched_terrains.append(canonical)
-        for terrain in matched_terrains:
-            key = ("terrain", "contains")
-            if key not in seen_keys:
-                filters.append({"attribute": "terrain", "op": "contains", "value": terrain})
-                seen_keys.add(key)
+            idx = text.find(kw)
+            if idx >= 0 and canonical not in {t for t, _ in matched_terrains}:
+                matched_terrains.append((canonical, idx))
+        for terrain, idx in matched_terrains:
+            target = negative_filters if _is_negated(text, idx) else filters
+            _add(target, "terrain", "contains", terrain)
+
+    # Construction — match against the construction text column.
+    for kw, canonical in _SKI_CONSTRUCTION_KEYWORDS.items():
+        idx = text.find(kw)
+        if idx < 0:
+            continue
+        target = negative_filters if _is_negated(text, idx) else filters
+        _add(target, "construction", "contains", canonical)
+
+    # Rocker profile — categorical column with a few canonical values.
+    for kw, canonical in _SKI_ROCKER_KEYWORDS.items():
+        idx = text.find(kw)
+        if idx < 0:
+            continue
+        # "no rocker" is itself a negation cue but we WANT the resulting
+        # camber filter as a positive constraint, so don't recurse the
+        # negation check on rocker keywords whose canonical encodes the
+        # "no" semantics already.
+        is_inherently_neg = kw.startswith("no ")
+        target = (
+            filters if is_inherently_neg
+            else (negative_filters if _is_negated(text, idx) else filters)
+        )
+        _add(target, "rocker_profile", "contains", canonical)
+
+    # Brand match — products.brand column (text). The Rust prefilter joins
+    # via product_attributes, but brand isn't an attribute — the
+    # recommender exposes it through the brand attribute_def we add at
+    # ingest time when present. If brand isn't in product_attributes the
+    # SQL EXISTS check returns no rows so the prefilter falls back to the
+    # full catalog (graceful degrade).
+    for kw, canonical in _SKI_BRAND_KEYWORDS.items():
+        idx = text.find(kw)
+        if idx < 0:
+            continue
+        target = negative_filters if _is_negated(text, idx) else filters
+        _add(target, "brand", "contains", canonical)
 
     # Numeric — pick the FIRST match for each (attr, op) pair so duplicate
     # mentions don't produce contradictory filters.
@@ -162,10 +299,7 @@ def _parse_ski(text: str) -> list[dict]:
             if hi < lo:
                 lo, hi = hi, lo
             for sub_op, val in (("gte", lo), ("lte", hi)):
-                key = (attr, sub_op)
-                if key not in seen_keys:
-                    filters.append({"attribute": attr, "op": sub_op, "value": val})
-                    seen_keys.add(key)
+                _add(filters, attr, sub_op, val)
             range_attrs.add(attr)
             continue
         # Skip a strict-equality filter for an attribute where ANY other
@@ -173,27 +307,21 @@ def _parse_ski(text: str) -> list[dict]:
         # narrows the prefilter unnecessarily.
         if op == "eq" and any(
             seen_attr == attr and seen_op != "eq"
-            for seen_attr, seen_op in seen_keys
+            for seen_attr, seen_op, _ in seen_keys
         ):
             continue
-        key = (attr, op)
-        if key not in seen_keys:
-            try:
-                val = int(m.group(1))
-            except (IndexError, ValueError):
-                continue
-            filters.append({"attribute": attr, "op": op, "value": val})
-            seen_keys.add(key)
+        try:
+            val = int(m.group(1))
+        except (IndexError, ValueError):
+            continue
+        _add(filters, attr, op, val)
 
     # Stiffness / damp / playfulness / etc. — keyword to scale-attribute rules.
     for pattern, op, attr, val in _SKI_STIFFNESS_RULES:
         if re.search(pattern, text):
-            key = (attr, op)
-            if key not in seen_keys:
-                filters.append({"attribute": attr, "op": op, "value": val})
-                seen_keys.add(key)
+            _add(filters, attr, op, val)
 
-    return filters
+    return filters, negative_filters
 
 
 def _parse_shoe(text: str) -> list[dict]:
