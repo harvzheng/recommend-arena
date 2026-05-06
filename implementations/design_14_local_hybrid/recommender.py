@@ -609,6 +609,18 @@ def _build_rerank_docs(products: list[dict], reviews: list[dict]) -> dict[str, s
             p.get("brand") or "",
             p.get("category") or "",
         ]
+        # Numeric specs (waist_width_mm, lengths_cm, weight_g_per_ski, …)
+        # — listwise models with capacity to reason about constraints
+        # benefit from seeing exact values, not just attribute scales.
+        specs = p.get("specs") or {}
+        spec_bits: list[str] = []
+        for k, v in sorted(specs.items()):
+            if isinstance(v, (int, float, str)):
+                spec_bits.append(f"{k}={v}")
+            elif isinstance(v, list) and all(isinstance(x, (int, float, str)) for x in v):
+                spec_bits.append(f"{k}={','.join(str(x) for x in v)}")
+        if spec_bits:
+            parts.append(", ".join(spec_bits))
         attrs = p.get("attributes") or {}
         attr_text = ", ".join(
             f"{k}={v}" for k, v in sorted(attrs.items())

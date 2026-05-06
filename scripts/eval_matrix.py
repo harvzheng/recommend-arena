@@ -116,6 +116,16 @@ CONFIGS: dict[str, dict] = {
         reranker_adapter_path=None,  # filled in main()
         _env={"RECOMMEND_LISTWISE_TOP_K": "20"},
     ),
+    # Vanilla 4B-Instruct as a listwise reranker — bigger student, no
+    # LoRA. Tests whether 4B reasoning capacity beats the 1.7B+LoRA
+    # combination on lifestyle / negation / trade-off queries.
+    "qwen_emb_qwen4b_listwise_vanilla": dict(
+        enable_vector=True, enable_reranker=True,
+        embedding_model="Qwen/Qwen3-Embedding-0.6B",
+        reranker_model="Qwen/Qwen3-4B-Instruct-2507",
+        reranker_kind="listwise",
+        _env={"RECOMMEND_LISTWISE_TOP_K": "20"},
+    ),
     "qwen4b_emb_qwen_listwise": dict(
         enable_vector=True, enable_reranker=True,
         embedding_model="Qwen/Qwen3-Embedding-4B",

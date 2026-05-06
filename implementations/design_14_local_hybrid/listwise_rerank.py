@@ -30,7 +30,7 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 DEFAULT_LISTWISE_MODEL = os.environ.get(
-    "RECOMMEND_LISTWISE_MODEL", "Qwen/Qwen3-1.7B"
+    "RECOMMEND_LISTWISE_MODEL", "Qwen/Qwen3-4B-Instruct-2507"
 )
 
 _listwise_cache: dict[str, Any] = {}
@@ -73,14 +73,18 @@ def _load_model(model_name: str, adapter_path: str | None = None):
 
 
 SYSTEM_PROMPT = (
-    "You are a search-ranking model. Given a user query and a numbered list "
-    "of candidate products, output a ranking of the candidates from most to "
-    "least relevant, in the format `[N] > [N] > [N] > ...` using ALL the "
-    "candidate numbers exactly once. Output the ranking line ONLY — no prose."
+    "You are an expert product-ranking model. Given a user query and a "
+    "numbered list of candidate products with their attributes, return a "
+    "permutation that ranks the candidates from most to least relevant. "
+    "Reason carefully about: numeric constraints (e.g. 'over 100mm waist'), "
+    "negation ('not titanal', 'not playful'), and trade-offs (e.g. 'forgiving "
+    "but not a beginner ski'). The OUTPUT must be a single line in the format "
+    "`[N] > [N] > [N] > ...` listing every candidate number exactly once. "
+    "Do not add any other text."
 )
 
 
-MAX_DOC_CHARS = int(os.environ.get("RECOMMEND_LISTWISE_MAX_DOC_CHARS", "200"))
+MAX_DOC_CHARS = int(os.environ.get("RECOMMEND_LISTWISE_MAX_DOC_CHARS", "800"))
 
 
 def format_candidate(idx: int, pid: str, doc: str) -> str:
@@ -157,8 +161,21 @@ def rerank(
     n = len(candidates)
     prompt = build_prompt(query, candidates)
 
+    # Use the chat template if the tokenizer has one — instruct-tuned models
+    # like Qwen3-4B-Instruct ship with a chat template and behave noticeably
+    # better when input is rendered as a chat turn vs. a raw prompt.
+    if getattr(tok, "chat_template", None):
+        messages = [{"role": "user", "content": prompt}]
+        prompt_text = tok.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True,
+        )
+    else:
+        prompt_text = prompt
+
     import torch  # type: ignore
-    inputs = tok(prompt, return_tensors="pt", truncation=True, max_length=4096).to(device)
+    inputs = tok(
+        prompt_text, return_tensors="pt", truncation=True, max_length=8192,
+    ).to(device)
     with torch.no_grad():
         out = model.generate(
             **inputs,
@@ -169,6 +186,10 @@ def rerank(
             pad_token_id=tok.eos_token_id,
         )
     completion = tok.decode(out[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
+    # Reasoning-tuned models may wrap their CoT in <think>...</think> before
+    # emitting the answer. Drop that wrapper so the rank parser sees the
+    # final permutation cleanly.
+    completion = re.sub(r"<think>.*?</think>", "", completion, flags=re.DOTALL)
     logger.debug("listwise raw output: %s", completion[:200])
     order = parse_ranking(completion, n)
 
