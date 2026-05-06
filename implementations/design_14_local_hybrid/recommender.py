@@ -259,9 +259,12 @@ class LocalHybridRecommender:
         # stage destroys such queries by mixing in semantically-similar
         # wrong candidates (VAGUE-01, EASY-04, MED-05 on the skis bench).
         #
-        # Listwise rerank is excluded — it sees the full top-20 and
-        # tends to preserve good lex hits already, so bypassing only
-        # loses its other reordering wins.
+        # Listwise rerank is excluded — bypassing on a lex-dominance
+        # gate trades a few wins (VAGUE-02 0.49→1.00) for bigger losses
+        # on queries where the listwise reranker was actively helping
+        # (VAGUE-13 0.63→0.31, VAGUE-19 0.83→0.18). Net delta on the
+        # 100-query bench: -0.058 with the bypass enabled. The 4B model
+        # is good enough to keep on the hot path.
         routing_eligible = (
             self.enable_reranker
             and self.reranker_kind != "listwise"
