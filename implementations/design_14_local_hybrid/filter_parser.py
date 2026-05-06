@@ -151,6 +151,55 @@ _NEGATION_PREFIX_RE = re.compile(
 )
 _NEGATED_RANGE = 35  # how many chars after a negation cue to scan
 
+# Lifestyle / colloquial phrases that don't mention attributes directly
+# but imply a strong attribute bias. The listwise reranker tends to fail
+# on these because the surface form doesn't connect to the schema; a
+# deterministic phrase->terrain map gives the prefilter and FTS5
+# tokenizer enough signal to pull the right candidates into the top-20.
+#
+# Shape: phrase -> list of (terrain | rocker | construction) hints to
+# emit as positive filters.
+_SKI_LIFESTYLE_PHRASES: list[tuple[str, list[tuple[str, str]]]] = [
+    # daily driver / one-quiver / do-it-all
+    ("daily driver",       [("terrain", "all-mountain")]),
+    ("do it all",          [("terrain", "all-mountain")]),
+    ("do-it-all",          [("terrain", "all-mountain")]),
+    ("quiver of one",      [("terrain", "all-mountain")]),
+    ("one ski quiver",     [("terrain", "all-mountain")]),
+    ("one-ski quiver",     [("terrain", "all-mountain")]),
+    ("resort skier",       [("terrain", "all-mountain")]),
+    ("resort skiing",      [("terrain", "all-mountain")]),
+    # weather / conditions slang
+    ("japow",              [("terrain", "powder")]),
+    ("japan pow",          [("terrain", "powder")]),
+    ("blower pow",         [("terrain", "powder")]),
+    ("steep and deep",     [("terrain", "powder"), ("terrain", "big-mountain")]),
+    ("ice coast",          [("terrain", "on-piste")]),
+    ("east coast",         [("terrain", "on-piste")]),
+    ("pnw",                [("terrain", "freeride")]),
+    ("pacific northwest",  [("terrain", "freeride")]),
+    ("crud",               [("terrain", "all-mountain")]),
+    ("chunder",            [("terrain", "all-mountain")]),
+    # use-style
+    ("trees",              [("terrain", "all-mountain")]),
+    ("tight trees",        [("terrain", "all-mountain")]),
+    ("groomers at lunch",  [("terrain", "all-mountain")]),
+    ("powder lap",         [("terrain", "off-piste")]),
+    ("hits some powder",   [("terrain", "all-mountain")]),
+    ("charging hard",      [("terrain", "freeride")]),
+    ("charge hard",        [("terrain", "freeride")]),
+    # tip/edge feel
+    ("locks in",           [("terrain", "carving")]),
+    ("locked in",          [("terrain", "carving")]),
+    ("arcs cleanly",       [("terrain", "carving")]),
+    ("clean arcs",         [("terrain", "carving")]),
+    ("pop out",            [("terrain", "carving")]),
+    ("pops out",           [("terrain", "carving")]),
+    # progression / level
+    ("grow into",          [("terrain", "all-mountain")]),
+    ("progression",        [("terrain", "all-mountain")]),
+]
+
 
 _SHOE_SURFACE_KEYWORDS = {
     "trail": "trail",
@@ -233,6 +282,16 @@ def _parse_ski(text: str) -> tuple[list[dict], list[dict]]:
     # "powder", but it's the perfect answer for "handles both powder and
     # hardpack equally well").
     balanced_intent = bool(_BALANCED_INTENT_RE.search(text))
+
+    # Lifestyle phrases — emit attribute hints inferred from colloquial
+    # use-cases ("daily driver" → all-mountain, "japow" → powder).
+    # Run before terrain matching so the listwise reranker sees the
+    # right candidate set; phrases are positive-only (no negation).
+    for phrase, hints in _SKI_LIFESTYLE_PHRASES:
+        if phrase not in text:
+            continue
+        for attr, value in hints:
+            _add(filters, attr, "contains", value)
 
     # Terrain — emit a contains filter against the categorical column.
     if not balanced_intent:
