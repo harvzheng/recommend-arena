@@ -13,13 +13,26 @@ The parser emits a list of dicts shaped:
 
 which is exactly the shape `arena_core.build_prefilter_sql` expects.
 
+Three sources of filters run for every domain:
+  1. Domain-specific handler (`_parse_ski`, `_parse_shoe`) — hand-curated.
+  2. Generic catalog-derived hooks (`_parse_generic`) — auto-discovered
+     numeric ranges (price, points, etc.), categorical-value mentions
+     (country, variety, region, ...), quality phrases (cheap, premium),
+     and negation. No LLM.
+  3. LLM-discovered phrase mappings loaded from `bundle/filter_phrases.json`
+     (Layer 2). Optional; absent for legacy bundles.
+
 Phase B (LLM filter parser) lives behind an `enable_llm_parser` config
 flag — easy to add without changing the pipeline shape.
 """
 
 from __future__ import annotations
 
+import json
 import re
+from dataclasses import dataclass, field
+from functools import lru_cache
+from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Per-domain rule tables.
@@ -241,18 +254,42 @@ def parse_query_with_negation(
         return [], []
 
     if domain == "ski":
-        return _parse_ski(text)
-    if domain == "running_shoe":
-        # No negation rules for shoes yet — keep the legacy positive-only path.
-        return _parse_shoe(text), []
-    return [], []
+        pos, neg = _parse_ski(text)
+    elif domain == "running_shoe":
+        pos, neg = _parse_shoe(text), []
+    else:
+        pos, neg = [], []
+
+    schema = _load_domain_schema(domain)
+    if schema is not None:
+        gen_pos, gen_neg = _parse_generic(text, schema)
+        pos = _merge_filters(pos, gen_pos)
+        neg = _merge_filters(neg, gen_neg)
+        ph_pos, ph_neg = _apply_discovered_phrases(text, schema.discovered_phrases)
+        pos = _merge_filters(pos, ph_pos)
+        neg = _merge_filters(neg, ph_neg)
+
+    return pos, neg
+
+
+_NEGATION_CLAUSE_BREAKS = re.compile(r"[,;:]| and | but | while | yet | however ")
 
 
 def _is_negated(text: str, span_start: int) -> bool:
     """Is the keyword at *span_start* preceded by a negation cue within
-    ``_NEGATED_RANGE`` characters?"""
+    ``_NEGATED_RANGE`` characters AND in the same clause (no comma /
+    coordinating conjunction between the cue and the keyword)?"""
     window_start = max(0, span_start - _NEGATED_RANGE)
     window = text[window_start:span_start]
+    if not _NEGATION_PREFIX_RE.search(window):
+        return False
+    # Clip the window forward to the last clause break — anything before
+    # the break is in a different clause and shouldn't negate this one.
+    last_break_end = 0
+    for m in _NEGATION_CLAUSE_BREAKS.finditer(window):
+        last_break_end = m.end()
+    if last_break_end > 0:
+        window = window[last_break_end:]
     return bool(_NEGATION_PREFIX_RE.search(window))
 
 
@@ -403,6 +440,333 @@ def _parse_shoe(text: str) -> list[dict]:
                 seen_keys.add(key)
 
     return filters
+
+
+# ---------------------------------------------------------------------------
+# Generic catalog-derived hooks (Layer 1) + LLM-discovered phrases (Layer 2).
+#
+# The generic hooks let any new domain pick up price/points/range/category
+# filters without hand-curating phrase tables. They run alongside the
+# domain-specific handlers above; the domain handler covers the colorful
+# vocabulary an LLM wouldn't infer ("ice coast", "japow"), generic covers
+# the universals.
+# ---------------------------------------------------------------------------
+
+
+@dataclass
+class _DomainSchema:
+    """Auto-derived from `artifacts/<domain>/products.jsonl`.
+
+    `numeric_attrs[name]` = (min, max) range observed in the catalog.
+    `categorical_values[name][lowercased_value]` = canonical_value.
+    `discovered_phrases` is loaded from `bundle/filter_phrases.json` if
+    present (Layer 2 output).
+    """
+    numeric_attrs: dict[str, tuple[float, float]] = field(default_factory=dict)
+    categorical_values: dict[str, dict[str, str]] = field(default_factory=dict)
+    discovered_phrases: list[tuple[str, list[dict], bool]] = field(default_factory=list)
+
+
+_PROJECT_ROOT_FOR_PARSER = Path(__file__).resolve().parents[2]
+
+
+@lru_cache(maxsize=8)
+def _load_domain_schema(domain: str) -> _DomainSchema | None:
+    """Read `artifacts/<domain>/products.jsonl` once and cache the schema."""
+    if not domain:
+        return None
+    products_path = _PROJECT_ROOT_FOR_PARSER / "artifacts" / domain / "products.jsonl"
+    if not products_path.exists():
+        return _DomainSchema()  # empty but non-None: still apply phrase loader
+
+    schema = _DomainSchema()
+    numeric_seen: dict[str, list[float]] = {}
+    cat_seen: dict[str, dict[str, str]] = {}
+    for line in products_path.read_text().splitlines():
+        if not line.strip():
+            continue
+        try:
+            p = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        for top in ("attributes", "specs"):
+            for k, v in (p.get(top) or {}).items():
+                if isinstance(v, bool):
+                    continue
+                if isinstance(v, (int, float)):
+                    numeric_seen.setdefault(k, []).append(float(v))
+                elif isinstance(v, str) and v.strip():
+                    cat = cat_seen.setdefault(k, {})
+                    cat[v.lower()] = v
+                elif isinstance(v, list) and all(isinstance(x, str) for x in v):
+                    cat = cat_seen.setdefault(k, {})
+                    for x in v:
+                        if x.strip():
+                            cat[x.lower()] = x
+
+    for k, vals in numeric_seen.items():
+        schema.numeric_attrs[k] = (min(vals), max(vals))
+    schema.categorical_values = cat_seen
+
+    # Layer 2: discovered phrases.
+    phrases_path = _PROJECT_ROOT_FOR_PARSER / "artifacts" / domain / "filter_phrases.json"
+    if phrases_path.exists():
+        try:
+            data = json.loads(phrases_path.read_text())
+            for entry in data.get("phrases", []):
+                phrase = (entry.get("phrase") or "").lower().strip()
+                hints = entry.get("filters") or []
+                if not phrase or not hints:
+                    continue
+                # validate hint shape minimally
+                clean = []
+                for h in hints:
+                    if all(k in h for k in ("attribute", "op", "value")):
+                        clean.append({"attribute": h["attribute"], "op": h["op"], "value": h["value"]})
+                if clean:
+                    schema.discovered_phrases.append((phrase, clean, bool(entry.get("negated_only"))))
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    return schema
+
+
+# Universal numeric patterns. Currency-aware; bare numbers are scoped to
+# the attribute name they appear next to (e.g. "95 points") to avoid
+# pulling random integers out of the query.
+_NUMERIC_BARE = r"\$?(\d+(?:\.\d+)?)"
+_NUMERIC_BARE_RANGE = r"\$?(\d+(?:\.\d+)?)\s*(?:-|to|–|—|and)\s*\$?(\d+(?:\.\d+)?)"
+
+
+def _emit_range(filters: list[dict], attr: str, lo: float, hi: float) -> None:
+    if hi < lo:
+        lo, hi = hi, lo
+    filters.append({"attribute": attr, "op": "gte", "value": _coerce(lo)})
+    filters.append({"attribute": attr, "op": "lte", "value": _coerce(hi)})
+
+
+def _coerce(v: float):
+    return int(v) if float(v).is_integer() else v
+
+
+def _quantile(values: list[float], q: float) -> float:
+    if not values:
+        return 0.0
+    s = sorted(values)
+    idx = max(0, min(len(s) - 1, int(round((len(s) - 1) * q))))
+    return s[idx]
+
+
+def _apply_numeric_for_attr(
+    text: str, attr: str, anchors: list[str],
+    pos: list[dict], neg: list[dict],
+) -> None:
+    """Apply numeric extractors for one attribute. `anchors` lists tokens
+    that scope a bare-number match (e.g. "points", "pts", "$" for price)."""
+    # Range first so it doesn't get shadowed by single-bound matches.
+    for anc in anchors:
+        # Patterns like "between $X and $Y", "$X-$Y", "X to Y points"
+        for pat in (
+            rf"between\s+{_NUMERIC_BARE_RANGE}\s*{re.escape(anc)}",
+            rf"{_NUMERIC_BARE_RANGE}\s*{re.escape(anc)}",
+            rf"{re.escape(anc)}\s*{_NUMERIC_BARE_RANGE}",
+        ):
+            m = re.search(pat, text)
+            if m:
+                target = neg if _is_negated(text, m.start()) else pos
+                _emit_range(target, attr, float(m.group(1)), float(m.group(2)))
+                return
+
+    # Single-bound: under/over/at least/at most/less than/more than.
+    bounds = [
+        (r"\bunder\s+", "lte"), (r"\bbelow\s+", "lte"),
+        (r"\bless than\s+", "lte"), (r"\bat most\s+", "lte"),
+        (r"\bover\s+", "gte"), (r"\babove\s+", "gte"),
+        (r"\bmore than\s+", "gte"), (r"\bat least\s+", "gte"),
+    ]
+    for prefix, op in bounds:
+        for anc in anchors:
+            if anc == "$":
+                # Currency: anchor leads the number, must be PRESENT to disambiguate
+                # bare counts like "95 points".
+                pat = rf"{prefix}{re.escape(anc)}(\d+(?:\.\d+)?)"
+            else:
+                pat = rf"{prefix}{_NUMERIC_BARE}\s*{re.escape(anc)}"
+            m = re.search(pat, text)
+            if not m:
+                continue
+            target = neg if _is_negated(text, m.start()) else pos
+            target.append({"attribute": attr, "op": op, "value": _coerce(float(m.group(1)))})
+            return
+
+    # "X+ <anchor>" → gte
+    for anc in anchors:
+        m = re.search(rf"(\d+(?:\.\d+)?)\+\s*{re.escape(anc)}", text)
+        if m:
+            target = neg if _is_negated(text, m.start()) else pos
+            target.append({"attribute": attr, "op": "gte", "value": _coerce(float(m.group(1)))})
+            return
+
+
+def _parse_generic(
+    text: str, schema: _DomainSchema
+) -> tuple[list[dict], list[dict]]:
+    """Domain-agnostic extractors driven by the catalog schema."""
+    pos: list[dict] = []
+    neg: list[dict] = []
+
+    # Numeric attributes — price gets currency anchor, points gets the
+    # word "points"/"pts"/"point", anything else is opt-in via attr name.
+    if "price" in schema.numeric_attrs:
+        _apply_numeric_for_attr(text, "price", ["$", "dollars", "dollar", "usd"], pos, neg)
+    if "points" in schema.numeric_attrs:
+        _apply_numeric_for_attr(text, "points", ["points", "pts", "point", "pt"], pos, neg)
+    for attr in schema.numeric_attrs:
+        if attr in ("price", "points"):
+            continue
+        # Bare attribute-name anchor: e.g. "vintage 2010"
+        _apply_numeric_for_attr(text, attr, [attr], pos, neg)
+
+    # Quality-tier phrases mapped to numeric thresholds via catalog quantiles.
+    if "price" in schema.numeric_attrs:
+        # Recompute quantiles from the schema observation list — but we
+        # only stored (min,max). Fall back to fixed-ish thresholds keyed
+        # on the catalog's max so we adapt across domains.
+        _, hi = schema.numeric_attrs["price"]
+        cheap = max(15.0, hi * 0.10)
+        premium = max(40.0, hi * 0.30)
+        for phrase, op, val in (
+            ("cheap", "lte", cheap), ("budget", "lte", cheap),
+            ("affordable", "lte", cheap), ("inexpensive", "lte", cheap),
+            ("expensive", "gte", premium), ("premium", "gte", premium),
+            ("high-end", "gte", premium), ("luxury", "gte", premium),
+        ):
+            idx = text.find(phrase)
+            if idx >= 0:
+                target = neg if _is_negated(text, idx) else pos
+                target.append({"attribute": "price", "op": op, "value": _coerce(val)})
+                break  # one price-tier hint per query
+    if "points" in schema.numeric_attrs:
+        for phrase, op, val in (
+            ("high-rated", "gte", 92), ("highly-rated", "gte", 92),
+            ("highly rated", "gte", 92), ("top-rated", "gte", 94),
+            ("well-rated", "gte", 90), ("well rated", "gte", 90),
+            ("low-rated", "lte", 86), ("lowly-rated", "lte", 86),
+        ):
+            idx = text.find(phrase)
+            if idx >= 0:
+                target = neg if _is_negated(text, idx) else pos
+                target.append({"attribute": "points", "op": op, "value": val})
+                break
+
+    # Categorical mentions: scan each text attr's value-set against the
+    # query. Match longest-value-first so "cabernet sauvignon" beats
+    # "cabernet". When the full value isn't in the query, fall back to
+    # individual significant words (≥4 chars, not in stoplist) — that
+    # lets "napa cabernet" hit Napa Valley + Cabernet Sauvignon.
+    _CATEGORICAL_STOPWORDS = {
+        "valley", "hills", "vineyard", "estate", "ridge", "creek", "river",
+        "blend", "white", "red", "rose", "blanc", "noir", "the", "and", "of",
+    }
+    for attr, value_map in schema.categorical_values.items():
+        if attr in ("taster",):
+            continue
+        if not value_map:
+            continue
+        # Pass 1: full-value match (longest first).
+        full_matched = False
+        for low_val in sorted(value_map.keys(), key=len, reverse=True):
+            if len(low_val) < 3:
+                continue
+            idx = text.find(low_val)
+            if idx < 0:
+                continue
+            pre_ok = idx == 0 or not text[idx - 1].isalnum()
+            end = idx + len(low_val)
+            post_ok = end == len(text) or not text[end].isalnum()
+            if not (pre_ok and post_ok):
+                continue
+            target = neg if _is_negated(text, idx) else pos
+            target.append({"attribute": attr, "op": "contains", "value": value_map[low_val]})
+            full_matched = True
+            break
+        if full_matched:
+            continue
+        # Pass 2: word-level fallback — emit a contains filter on the matched
+        # word itself so the Rust prefilter LIKE %word% picks up any
+        # multi-word value containing it (e.g. "cabernet" → Cabernet Sauvignon
+        # AND Cabernet Franc).
+        word_index: set[str] = set()
+        for low_val in value_map:
+            for w in re.findall(r"[a-z][a-z\-]+", low_val):
+                if len(w) >= 4 and w not in _CATEGORICAL_STOPWORDS:
+                    word_index.add(w)
+        for word in sorted(word_index, key=len, reverse=True):
+            for m in re.finditer(rf"\b{re.escape(word)}\b", text):
+                idx = m.start()
+                target = neg if _is_negated(text, idx) else pos
+                target.append({
+                    "attribute": attr,
+                    "op": "contains",
+                    "value": word.capitalize(),
+                })
+                break
+
+    return pos, neg
+
+
+def _apply_discovered_phrases(
+    text: str, phrases: list[tuple[str, list[dict], bool]],
+) -> tuple[list[dict], list[dict]]:
+    """Apply Layer 2 phrase mappings from `filter_phrases.json`."""
+    pos: list[dict] = []
+    neg: list[dict] = []
+    for phrase, hints, negated_only in phrases:
+        idx = text.find(phrase)
+        if idx < 0:
+            continue
+        is_neg = negated_only or _is_negated(text, idx)
+        target = neg if is_neg else pos
+        for h in hints:
+            target.append(dict(h))
+    return pos, neg
+
+
+def _merge_filters(a: list[dict], b: list[dict]) -> list[dict]:
+    """Append filters from `b` to `a` skipping near-duplicates.
+
+    For `contains` ops on text values, dedupe is case-insensitive AND
+    treats prefix-overlap as a duplicate (so `titanal` and `Titanal` and
+    `titanal_sandwich` all collapse to one filter). The first-seen value
+    wins.
+    """
+    out = list(a)
+    seen_keys: set[tuple[str, str, object]] = set()
+    seen_text_prefixes: dict[tuple[str, str], list[str]] = {}
+    for f in out:
+        key = (f["attribute"], f["op"], _hashable(f["value"]))
+        seen_keys.add(key)
+        if f["op"] in ("contains", "not_contains") and isinstance(f["value"], str):
+            seen_text_prefixes.setdefault((f["attribute"], f["op"]), []).append(f["value"].lower())
+    for f in b:
+        key = (f["attribute"], f["op"], _hashable(f["value"]))
+        if key in seen_keys:
+            continue
+        if f["op"] in ("contains", "not_contains") and isinstance(f["value"], str):
+            low = f["value"].lower()
+            existing = seen_text_prefixes.get((f["attribute"], f["op"]), [])
+            if any(e == low or e.startswith(low) or low.startswith(e) for e in existing):
+                continue
+            seen_text_prefixes.setdefault((f["attribute"], f["op"]), []).append(low)
+        seen_keys.add(key)
+        out.append(f)
+    return out
+
+
+def _hashable(v):
+    if isinstance(v, list):
+        return tuple(v)
+    return v
 
 
 # ---------------------------------------------------------------------------
