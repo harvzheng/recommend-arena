@@ -253,6 +253,18 @@ def parse_query_with_negation(
     if not text.strip():
         return [], []
 
+    # Attributes whose extraction is fully owned by the domain-specific
+    # handler. Generic extractors stay out of these even when the handler
+    # didn't emit a filter (e.g. ski's balanced-intent suppression of
+    # terrain — generic re-adding it would defeat the suppression).
+    _DOMAIN_OWNED_ATTRS: dict[str, set[str]] = {
+        "ski": {"terrain", "rocker_profile", "construction", "brand", "stiffness",
+                 "damp", "playfulness", "forgiveness", "edge_grip",
+                 "stability_at_speed", "powder_float", "waist_width_mm"},
+        "running_shoe": {"surface", "cushioning", "responsiveness", "stability",
+                          "breathability", "durability", "weight_feel", "grip"},
+    }
+
     if domain == "ski":
         pos, neg = _parse_ski(text)
     elif domain == "running_shoe":
@@ -262,10 +274,16 @@ def parse_query_with_negation(
 
     schema = _load_domain_schema(domain)
     if schema is not None:
-        gen_pos, gen_neg = _parse_generic(text, schema)
+        owned_attrs = (
+            _DOMAIN_OWNED_ATTRS.get(domain, set())
+            | {f["attribute"] for f in pos}
+            | {f["attribute"] for f in neg}
+        )
+        gen_pos, gen_neg = _parse_generic(text, schema, skip_attrs=owned_attrs)
         pos = _merge_filters(pos, gen_pos)
         neg = _merge_filters(neg, gen_neg)
-        ph_pos, ph_neg = _apply_discovered_phrases(text, schema.discovered_phrases)
+        owned_attrs_after_generic = owned_attrs | {f["attribute"] for f in gen_pos} | {f["attribute"] for f in gen_neg}
+        ph_pos, ph_neg = _apply_discovered_phrases(text, schema.discovered_phrases, skip_attrs=owned_attrs_after_generic)
         pos = _merge_filters(pos, ph_pos)
         neg = _merge_filters(neg, ph_neg)
 
@@ -609,26 +627,32 @@ def _apply_numeric_for_attr(
 
 
 def _parse_generic(
-    text: str, schema: _DomainSchema
+    text: str, schema: _DomainSchema, skip_attrs: set[str] | None = None,
 ) -> tuple[list[dict], list[dict]]:
-    """Domain-agnostic extractors driven by the catalog schema."""
+    """Domain-agnostic extractors driven by the catalog schema.
+
+    `skip_attrs`: attributes the domain handler already produced filters
+    for. Generic extractors leave these alone to preserve handler logic
+    (balanced intent, inverted phrases like "no rocker" → camber).
+    """
     pos: list[dict] = []
     neg: list[dict] = []
+    skip_attrs = skip_attrs or set()
 
     # Numeric attributes — price gets currency anchor, points gets the
     # word "points"/"pts"/"point", anything else is opt-in via attr name.
-    if "price" in schema.numeric_attrs:
+    if "price" in schema.numeric_attrs and "price" not in skip_attrs:
         _apply_numeric_for_attr(text, "price", ["$", "dollars", "dollar", "usd"], pos, neg)
-    if "points" in schema.numeric_attrs:
+    if "points" in schema.numeric_attrs and "points" not in skip_attrs:
         _apply_numeric_for_attr(text, "points", ["points", "pts", "point", "pt"], pos, neg)
     for attr in schema.numeric_attrs:
-        if attr in ("price", "points"):
+        if attr in ("price", "points") or attr in skip_attrs:
             continue
         # Bare attribute-name anchor: e.g. "vintage 2010"
         _apply_numeric_for_attr(text, attr, [attr], pos, neg)
 
     # Quality-tier phrases mapped to numeric thresholds via catalog quantiles.
-    if "price" in schema.numeric_attrs:
+    if "price" in schema.numeric_attrs and "price" not in skip_attrs:
         # Recompute quantiles from the schema observation list — but we
         # only stored (min,max). Fall back to fixed-ish thresholds keyed
         # on the catalog's max so we adapt across domains.
@@ -646,7 +670,7 @@ def _parse_generic(
                 target = neg if _is_negated(text, idx) else pos
                 target.append({"attribute": "price", "op": op, "value": _coerce(val)})
                 break  # one price-tier hint per query
-    if "points" in schema.numeric_attrs:
+    if "points" in schema.numeric_attrs and "points" not in skip_attrs:
         for phrase, op, val in (
             ("high-rated", "gte", 92), ("highly-rated", "gte", 92),
             ("highly rated", "gte", 92), ("top-rated", "gte", 94),
@@ -669,7 +693,7 @@ def _parse_generic(
         "blend", "white", "red", "rose", "blanc", "noir", "the", "and", "of",
     }
     for attr, value_map in schema.categorical_values.items():
-        if attr in ("taster",):
+        if attr in ("taster",) or attr in skip_attrs:
             continue
         if not value_map:
             continue
@@ -717,8 +741,13 @@ def _parse_generic(
 
 def _apply_discovered_phrases(
     text: str, phrases: list[tuple[str, list[dict], bool]],
+    skip_attrs: set[str] | None = None,
 ) -> tuple[list[dict], list[dict]]:
-    """Apply Layer 2 phrase mappings from `filter_phrases.json`."""
+    """Apply Layer 2 phrase mappings from `filter_phrases.json`.
+
+    Skips hints whose attribute is already covered by the domain handler.
+    """
+    skip_attrs = skip_attrs or set()
     pos: list[dict] = []
     neg: list[dict] = []
     for phrase, hints, negated_only in phrases:
@@ -728,6 +757,8 @@ def _apply_discovered_phrases(
         is_neg = negated_only or _is_negated(text, idx)
         target = neg if is_neg else pos
         for h in hints:
+            if h["attribute"] in skip_attrs:
+                continue
             target.append(dict(h))
     return pos, neg
 

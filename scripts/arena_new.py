@@ -120,6 +120,8 @@ def cmd_new(args: argparse.Namespace) -> int:
             base_model=args.listwise_base_model,
             dry_run=args.training_dry_run,
         )
+    if "discover-filters" in steps:
+        _step_discover_filters(bundle)
 
     # The slice 14.1 / 14.2 dispatchers run as subprocess-style mains
     # that load their own Bundle handle and save it. Reload from disk
@@ -127,7 +129,7 @@ def cmd_new(args: argparse.Namespace) -> int:
     # the parent's stale in-memory copy.
     if any(s in steps for s in ("extract-schema", "generate-synthetic",
                                  "finetune-embedding", "finetune-reranker",
-                                 "finetune-listwise")):
+                                 "finetune-listwise", "discover-filters")):
         bundle = Bundle.load(bundle.paths.root)
     bundle.save_manifest()
     logger.info("manifest written to %s", bundle.paths.manifest_path)
@@ -312,6 +314,14 @@ def _step_finetune_listwise(
     rc = ft_main(argv)
     if rc != 0:
         logger.warning("finetune_listwise returned rc=%d", rc)
+
+
+def _step_discover_filters(bundle: Bundle) -> None:
+    """Layer 2 of filter automation: LLM-discovered phrase mappings."""
+    from discover_filter_phrases import main as df_main
+    rc = df_main(["--bundle", str(bundle.paths.root)])
+    if rc != 0:
+        logger.warning("discover_filter_phrases returned rc=%d", rc)
 
 
 # ---------------------------------------------------------------------------
