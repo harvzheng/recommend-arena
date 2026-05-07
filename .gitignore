@@ -58,3 +58,4 @@ arena_core/*.egg-info/
 # Per-domain artifact bundles (regenerable via `arena new <domain>`)
 artifacts/*/
 !artifacts/.gitkeep
+data/wine/.eval_teacher_cache.sqlite

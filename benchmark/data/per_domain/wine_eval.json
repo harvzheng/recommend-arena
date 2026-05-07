@@ -1,0 +1,1130 @@
+{
+  "version": "1.0",
+  "queries": [
+    {
+      "id": "EASY-01",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "argentinian malbec",
+      "key_attributes": [
+        "variety:Malbec",
+        "country:Argentina"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-000",
+          "relevance": 3,
+          "reason": "Argentinian Malbec from Mendoza, 97 points, premium vintage 2006"
+        },
+        {
+          "product_id": "WINE-001",
+          "relevance": 3,
+          "reason": "Argentinian Malbec from Mendoza, 91 points, affordable at $19"
+        },
+        {
+          "product_id": "WINE-002",
+          "relevance": 3,
+          "reason": "Argentinian Malbec from R\u00edo Negro Valley, 88 points, budget-friendly"
+        },
+        {
+          "product_id": "WINE-040",
+          "relevance": 1,
+          "reason": "Malbec variety but from France (Cahors), not Argentina"
+        },
+        {
+          "product_id": "WINE-151",
+          "relevance": 1,
+          "reason": "Malbec variety but from US (Yolo County), not Argentina"
+        }
+      ]
+    },
+    {
+      "id": "EASY-02",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "oaky chardonnay",
+      "key_attributes": [
+        "variety:Chardonnay",
+        "oaky"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-011",
+          "relevance": 3,
+          "reason": "Chardonnay from Austria; 'Black Edition' implies barrel aging, matching oaky profile."
+        },
+        {
+          "product_id": "WINE-141",
+          "relevance": 3,
+          "reason": "Chardonnay from Santa Lucia Highlands; US Chardonnays are typically barrel-aged and oaky."
+        },
+        {
+          "product_id": "WINE-142",
+          "relevance": 3,
+          "reason": "Chardonnay from Sta. Rita Hills; California Chardonnays are known for oak aging and buttery notes."
+        },
+        {
+          "product_id": "WINE-143",
+          "relevance": 3,
+          "reason": "Chardonnay from Santa Maria Valley; Central Coast Chardonnays are typically oaky and full-bodied."
+        },
+        {
+          "product_id": "WINE-146",
+          "relevance": 3,
+          "reason": "Chardonnay from Russian River Valley; region famous for rich, barrel-fermented oaky Chardonnays."
+        }
+      ]
+    },
+    {
+      "id": "EASY-03",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "riesling under $20",
+      "key_attributes": [
+        "variety:Riesling",
+        "price<20"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-060",
+          "relevance": 3,
+          "reason": "Riesling from Mosel, Germany at $18 \u2014 perfect variety and price match."
+        },
+        {
+          "product_id": "WINE-061",
+          "relevance": 3,
+          "reason": "Riesling from Mosel, Germany at $12 \u2014 perfect variety and price match."
+        },
+        {
+          "product_id": "WINE-179",
+          "relevance": 3,
+          "reason": "Riesling from Willamette Valley, US at $19 \u2014 perfect variety and price match."
+        },
+        {
+          "product_id": "WINE-181",
+          "relevance": 3,
+          "reason": "Riesling from Columbia Valley, US at $20 \u2014 perfect variety and price match."
+        },
+        {
+          "product_id": "WINE-177",
+          "relevance": 2,
+          "reason": "Riesling from Willamette Valley, US at $22 \u2014 correct variety, slightly over budget."
+        }
+      ]
+    },
+    {
+      "id": "EASY-04",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "italian sangiovese",
+      "key_attributes": [
+        "variety:Sangiovese",
+        "country:Italy"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-082",
+          "relevance": 3,
+          "reason": "Sangiovese from Italy (Brunello di Montalcino), perfect match on variety and country."
+        },
+        {
+          "product_id": "WINE-083",
+          "relevance": 3,
+          "reason": "Sangiovese from Italy (Brunello di Montalcino), perfect match on variety and country."
+        },
+        {
+          "product_id": "WINE-084",
+          "relevance": 3,
+          "reason": "Sangiovese from Italy (Rosso di Montalcino), perfect match on variety and country."
+        },
+        {
+          "product_id": "WINE-085",
+          "relevance": 3,
+          "reason": "Sangiovese from Italy (Chianti Classico), perfect match on variety and country."
+        },
+        {
+          "product_id": "WINE-086",
+          "relevance": 3,
+          "reason": "Sangiovese from Italy (Brunello di Montalcino), perfect match on variety and country."
+        }
+      ]
+    },
+    {
+      "id": "EASY-05",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "pinot noir from oregon or burgundy",
+      "key_attributes": [
+        "variety:Pinot Noir"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-043",
+          "relevance": 3,
+          "reason": "Pinot Noir from Corton, Burgundy (France) \u2014 perfect match for variety and Burgundy region."
+        },
+        {
+          "product_id": "WINE-044",
+          "relevance": 3,
+          "reason": "Pinot Noir from Vosne-Roman\u00e9e, Burgundy (France) \u2014 perfect match for variety and Burgundy region."
+        },
+        {
+          "product_id": "WINE-161",
+          "relevance": 3,
+          "reason": "Pinot Noir from Chehalem Mountains, Oregon (US) \u2014 perfect match for variety and Oregon region."
+        },
+        {
+          "product_id": "WINE-167",
+          "relevance": 3,
+          "reason": "Pinot Noir from Chehalem Mountains, Oregon (US) \u2014 perfect match for variety and Oregon region."
+        },
+        {
+          "product_id": "WINE-169",
+          "relevance": 3,
+          "reason": "Pinot Noir from McMinnville, Oregon (US) \u2014 perfect match for variety and Oregon region."
+        }
+      ]
+    },
+    {
+      "id": "EASY-06",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "spanish rioja tempranillo",
+      "key_attributes": [
+        "variety:Tempranillo",
+        "country:Spain"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-113",
+          "relevance": 3,
+          "reason": "Tempranillo Blend from Rioja, Spain \u2014 matches both key attributes perfectly"
+        },
+        {
+          "product_id": "WINE-114",
+          "relevance": 3,
+          "reason": "Tempranillo Blend from Rioja, Spain \u2014 matches both key attributes perfectly"
+        },
+        {
+          "product_id": "WINE-112",
+          "relevance": 2,
+          "reason": "Tempranillo from Spain (Ribera del Duero) \u2014 correct variety and country, wrong region"
+        },
+        {
+          "product_id": "WINE-196",
+          "relevance": 1,
+          "reason": "Tempranillo variety but from US (Columbia Valley), not Spain"
+        },
+        {
+          "product_id": "WINE-115",
+          "relevance": 1,
+          "reason": "Tinto Fino (Tempranillo clone) from Spain (Ribera del Duero) \u2014 close variety match, wrong region"
+        }
+      ]
+    },
+    {
+      "id": "EASY-07",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "crisp sauvignon blanc",
+      "key_attributes": [
+        "variety:Sauvignon Blanc",
+        "crisp"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-053",
+          "relevance": 3,
+          "reason": "Sauvignon Blanc from Sancerre, known for crisp acidity; high score 95."
+        },
+        {
+          "product_id": "WINE-054",
+          "relevance": 3,
+          "reason": "Sauvignon Blanc from Pouilly-Fum\u00e9, classic crisp style; good value."
+        },
+        {
+          "product_id": "WINE-092",
+          "relevance": 3,
+          "reason": "Sauvignon Blanc from Marlborough, famous for crisp, vibrant profile."
+        },
+        {
+          "product_id": "WINE-186",
+          "relevance": 2,
+          "reason": "Sauvignon Blanc from Alexander Valley; matches variety, likely crisp."
+        },
+        {
+          "product_id": "WINE-187",
+          "relevance": 2,
+          "reason": "Sauvignon Blanc from Sierra Foothills; variety match, crisp style expected."
+        }
+      ]
+    },
+    {
+      "id": "EASY-08",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "australian shiraz",
+      "key_attributes": [
+        "variety:Syrah",
+        "country:Australia"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-010",
+          "relevance": 3,
+          "reason": "Australian Syrah, exact match on both country and variety (Syrah=Shiraz)"
+        },
+        {
+          "product_id": "WINE-006",
+          "relevance": 3,
+          "reason": "Australian Shiraz from McLaren Vale, perfect match on country and variety"
+        },
+        {
+          "product_id": "WINE-007",
+          "relevance": 3,
+          "reason": "Australian Shiraz from McLaren Vale, perfect match on country and variety"
+        },
+        {
+          "product_id": "WINE-008",
+          "relevance": 3,
+          "reason": "Australian Shiraz from Margaret River, perfect match on country and variety"
+        },
+        {
+          "product_id": "WINE-009",
+          "relevance": 2,
+          "reason": "Australian Shiraz-Viognier blend, strong match; contains Shiraz but blended with Viognier"
+        }
+      ]
+    },
+    {
+      "id": "EASY-09",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "high-rated wine over 95 points",
+      "key_attributes": [
+        "points>=95"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-000",
+          "relevance": 3,
+          "reason": "97 points, exceeds 95-point threshold for high-rated wine"
+        },
+        {
+          "product_id": "WINE-003",
+          "relevance": 3,
+          "reason": "100 points, perfect score exceeding 95-point requirement"
+        },
+        {
+          "product_id": "WINE-026",
+          "relevance": 3,
+          "reason": "100 points, perfect score exceeding 95-point requirement"
+        },
+        {
+          "product_id": "WINE-030",
+          "relevance": 3,
+          "reason": "100 points, perfect score exceeding 95-point requirement"
+        },
+        {
+          "product_id": "WINE-069",
+          "relevance": 3,
+          "reason": "100 points, perfect score exceeding 95-point requirement"
+        }
+      ]
+    },
+    {
+      "id": "EASY-10",
+      "difficulty": "easy",
+      "domain": "wine",
+      "query_text": "cheap red under $15",
+      "key_attributes": [
+        "price<15",
+        "red"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-047",
+          "relevance": 3,
+          "reason": "Red blend, $12, under $15, matches both criteria perfectly"
+        },
+        {
+          "product_id": "WINE-098",
+          "relevance": 3,
+          "reason": "Portuguese red, $7, well under $15, perfect match"
+        },
+        {
+          "product_id": "WINE-100",
+          "relevance": 3,
+          "reason": "Portuguese red, $11, under $15, perfect match"
+        },
+        {
+          "product_id": "WINE-099",
+          "relevance": 3,
+          "reason": "Portuguese red, $13, under $15, perfect match"
+        },
+        {
+          "product_id": "WINE-151",
+          "relevance": 3,
+          "reason": "Malbec (red), $12, under $15, perfect match"
+        }
+      ]
+    },
+    {
+      "id": "MED-01",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "full-bodied napa cabernet with cellar potential",
+      "key_attributes": [
+        "variety:Cabernet Sauvignon",
+        "region:Napa",
+        "age-worthy"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-126",
+          "relevance": 3,
+          "reason": "Napa Valley Cabernet Sauvignon, 99pts, $150, vintage 2009 \u2014 full-bodied with cellar potential"
+        },
+        {
+          "product_id": "WINE-127",
+          "relevance": 3,
+          "reason": "Napa (Spring Mountain) Cabernet Sauvignon, 95pts, $125, 2007 vintage \u2014 age-worthy, full-bodied"
+        },
+        {
+          "product_id": "WINE-128",
+          "relevance": 3,
+          "reason": "Napa (Rutherford) Cabernet Sauvignon, 95pts, $100, 2008 \u2014 structured, cellar-worthy, full-bodied"
+        },
+        {
+          "product_id": "WINE-129",
+          "relevance": 3,
+          "reason": "Napa Valley Cabernet Sauvignon, 95pts, $75, 2008 vintage \u2014 full-bodied with aging potential"
+        },
+        {
+          "product_id": "WINE-130",
+          "relevance": 3,
+          "reason": "Napa (Oakville) Cabernet Sauvignon, 94pts, $140, 2011 \u2014 powerful, structured for cellaring"
+        }
+      ]
+    },
+    {
+      "id": "MED-02",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "mineral-driven white from france under $40",
+      "key_attributes": [
+        "white",
+        "mineral",
+        "country:France",
+        "price<40"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-049",
+          "relevance": 3,
+          "reason": "French Riesling from Alsace, $30, mineral-driven Grand Cru"
+        },
+        {
+          "product_id": "WINE-037",
+          "relevance": 3,
+          "reason": "French Chardonnay from Saint-V\u00e9ran, $20, mineral-driven white Burgundy"
+        },
+        {
+          "product_id": "WINE-054",
+          "relevance": 3,
+          "reason": "French Sauvignon Blanc from Pouilly-Fum\u00e9, $22, mineral-driven Loire white"
+        },
+        {
+          "product_id": "WINE-038",
+          "relevance": 2,
+          "reason": "French Chardonnay from M\u00e2con, $15, mineral-driven Burgundy white"
+        },
+        {
+          "product_id": "WINE-048",
+          "relevance": 2,
+          "reason": "French Riesling from Alsace Grand Cru, $50, mineral-driven but slightly over budget"
+        }
+      ]
+    },
+    {
+      "id": "MED-03",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "fruity new world pinot noir around $30",
+      "key_attributes": [
+        "variety:Pinot Noir",
+        "fruity",
+        "price~30"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-004",
+          "relevance": 2,
+          "reason": "Pinot Noir from Australia (New World), $35 near budget. Cool-climate Tasmania PN tends to be fruit-forward."
+        },
+        {
+          "product_id": "WINE-162",
+          "relevance": 2,
+          "reason": "Pinot Noir from US (New World), $37 near budget. Finger Lakes PN is typically fruit-driven and approachable."
+        },
+        {
+          "product_id": "WINE-166",
+          "relevance": 2,
+          "reason": "Pinot Noir from US (New World), $25 within budget. Carneros PN is known for bright cherry fruit character."
+        },
+        {
+          "product_id": "WINE-170",
+          "relevance": 2,
+          "reason": "Pinot Noir from US (New World), $39 near budget. Oregon Willamette Valley PN is classically fruity and elegant."
+        },
+        {
+          "product_id": "WINE-164",
+          "relevance": 1,
+          "reason": "Pinot Noir from US (New World), $36 near budget. Santa Lucia Highlands PN is fruit-forward but slightly above target price."
+        }
+      ]
+    },
+    {
+      "id": "MED-04",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "bold italian red with firm tannins",
+      "key_attributes": [
+        "country:Italy",
+        "red",
+        "tannic"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-082",
+          "relevance": 3,
+          "reason": "Italian Brunello di Montalcino, Sangiovese, bold with firm tannins, 100pts"
+        },
+        {
+          "product_id": "WINE-071",
+          "relevance": 3,
+          "reason": "Italian Barolo, Nebbiolo, bold with firm tannins, 93pts"
+        },
+        {
+          "product_id": "WINE-070",
+          "relevance": 3,
+          "reason": "Italian Barbaresco, Nebbiolo, bold with firm tannins, 95pts"
+        },
+        {
+          "product_id": "WINE-083",
+          "relevance": 3,
+          "reason": "Italian Brunello di Montalcino, Sangiovese, bold with firm tannins, 93pts"
+        },
+        {
+          "product_id": "WINE-065",
+          "relevance": 2,
+          "reason": "Italian Aglianico, bold red with firm tannins, 89pts"
+        }
+      ]
+    },
+    {
+      "id": "MED-05",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "value chardonnay under $25 with some oak",
+      "key_attributes": [
+        "variety:Chardonnay",
+        "price<25",
+        "oaky"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-037",
+          "relevance": 2,
+          "reason": "Chardonnay under $25 from Saint-V\u00e9ran; Burgundy whites typically see some oak."
+        },
+        {
+          "product_id": "WINE-038",
+          "relevance": 2,
+          "reason": "Chardonnay at $15 from M\u00e2con; modest Burgundy Chardonnay often has light oak influence."
+        },
+        {
+          "product_id": "WINE-143",
+          "relevance": 2,
+          "reason": "Chardonnay at $22 from Santa Maria Valley; California Chardonnay typically oaked."
+        },
+        {
+          "product_id": "WINE-144",
+          "relevance": 2,
+          "reason": "Chardonnay at $23 from Columbia Valley; New World Chardonnay usually has oak."
+        },
+        {
+          "product_id": "WINE-148",
+          "relevance": 2,
+          "reason": "Chardonnay at $17 from Sonoma County; California Chardonnay generally sees oak aging."
+        }
+      ]
+    },
+    {
+      "id": "MED-06",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "elegant pinot noir from burgundy with earthy notes",
+      "key_attributes": [
+        "variety:Pinot Noir",
+        "country:France",
+        "earthy"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-043",
+          "relevance": 3,
+          "reason": "Pinot Noir from Corton, Burgundy (France). Corton is a classic Burgundy Grand Cru known for earthy, elegant Pinot Noir."
+        },
+        {
+          "product_id": "WINE-044",
+          "relevance": 3,
+          "reason": "Pinot Noir from Vosne-Roman\u00e9e, Burgundy (France). Vosne-Roman\u00e9e is legendary for elegant, earthy Pinot Noir."
+        },
+        {
+          "product_id": "WINE-004",
+          "relevance": 1,
+          "reason": "Pinot Noir, but from Tasmania (Australia), not Burgundy. Partial match on variety only."
+        },
+        {
+          "product_id": "WINE-158",
+          "relevance": 1,
+          "reason": "Pinot Noir from Sonoma Coast (US), not Burgundy. Elegant style but wrong region and country."
+        },
+        {
+          "product_id": "WINE-159",
+          "relevance": 1,
+          "reason": "Pinot Noir from Russian River Valley (US), not Burgundy. Strong wine but wrong country and region."
+        }
+      ]
+    },
+    {
+      "id": "MED-07",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "rich syrah with peppery finish",
+      "key_attributes": [
+        "variety:Syrah",
+        "peppery",
+        "rich"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-188",
+          "relevance": 3,
+          "reason": "Syrah variety, 100 points, Walla Walla Valley - rich and peppery profile expected"
+        },
+        {
+          "product_id": "WINE-189",
+          "relevance": 3,
+          "reason": "Syrah variety, 95 points, Sonoma Coast - rich with peppery characteristics"
+        },
+        {
+          "product_id": "WINE-190",
+          "relevance": 3,
+          "reason": "Syrah variety, 94 points, Ballard Canyon - rich and peppery Syrah"
+        },
+        {
+          "product_id": "WINE-010",
+          "relevance": 3,
+          "reason": "Syrah variety, 92 points, Yarra Valley - matches all key attributes"
+        },
+        {
+          "product_id": "WINE-191",
+          "relevance": 2,
+          "reason": "Syrah variety, 93 points, Bennett Valley - rich but peppery less certain"
+        }
+      ]
+    },
+    {
+      "id": "MED-08",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "off-dry riesling for spicy food",
+      "key_attributes": [
+        "variety:Riesling",
+        "off-dry"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-058",
+          "relevance": 3,
+          "reason": "German Mosel Kabinett Riesling is classically off-dry, ideal with spicy food."
+        },
+        {
+          "product_id": "WINE-059",
+          "relevance": 3,
+          "reason": "German Mosel Kabinett Riesling is traditionally off-dry, perfect for spicy dishes."
+        },
+        {
+          "product_id": "WINE-060",
+          "relevance": 2,
+          "reason": "Mosel Riesling, likely off-dry; German Rieslings pair excellently with spicy food."
+        },
+        {
+          "product_id": "WINE-061",
+          "relevance": 2,
+          "reason": "Dr. L Mosel Riesling is known for off-dry style, great match for spicy food."
+        },
+        {
+          "product_id": "WINE-048",
+          "relevance": 2,
+          "reason": "Alsace Grand Cru Riesling; can be off-dry and pairs well with spicy cuisine."
+        }
+      ]
+    },
+    {
+      "id": "MED-09",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "premium 95+ point red over $100",
+      "key_attributes": [
+        "points>=95",
+        "price>100",
+        "red"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-000",
+          "relevance": 3,
+          "reason": "97 points, $120, Malbec red from Argentina"
+        },
+        {
+          "product_id": "WINE-021",
+          "relevance": 3,
+          "reason": "95 points, $150, Bordeaux-style red blend from France"
+        },
+        {
+          "product_id": "WINE-043",
+          "relevance": 3,
+          "reason": "95 points, $118, Pinot Noir red from France"
+        },
+        {
+          "product_id": "WINE-069",
+          "relevance": 3,
+          "reason": "100 points, $460, Merlot red from Italy"
+        },
+        {
+          "product_id": "WINE-082",
+          "relevance": 3,
+          "reason": "100 points, $550, Sangiovese red from Italy"
+        }
+      ]
+    },
+    {
+      "id": "MED-10",
+      "difficulty": "medium",
+      "domain": "wine",
+      "query_text": "balanced bordeaux blend for steak",
+      "key_attributes": [
+        "bordeaux blend",
+        "country:France",
+        "food-pairing:steak"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-021",
+          "relevance": 3,
+          "reason": "Bordeaux-style Red Blend from Saint-Julien, France. Classic steak pairing with balanced structure."
+        },
+        {
+          "product_id": "WINE-023",
+          "relevance": 3,
+          "reason": "Bordeaux-style Red Blend from Haut-M\u00e9doc, France. Traditional Bordeaux blend ideal with steak."
+        },
+        {
+          "product_id": "WINE-022",
+          "relevance": 2,
+          "reason": "Bordeaux-style Red Blend from Bergerac, France. Good match but lesser-known appellation."
+        },
+        {
+          "product_id": "WINE-105",
+          "relevance": 1,
+          "reason": "Bordeaux-style Red Blend but from South Africa, not France. Still pairs well with steak."
+        },
+        {
+          "product_id": "WINE-117",
+          "relevance": 1,
+          "reason": "Bordeaux-style Red Blend but from US Napa Valley, not France. Excellent steak wine."
+        }
+      ]
+    },
+    {
+      "id": "HARD-01",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "crisp white that is NOT too sweet, under $30",
+      "key_attributes": [
+        "white",
+        "dry",
+        "NOT sweet",
+        "price<30"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-054",
+          "relevance": 3,
+          "reason": "Sauvignon Blanc from Pouilly-Fum\u00e9, crisp and dry, $22 under budget"
+        },
+        {
+          "product_id": "WINE-014",
+          "relevance": 3,
+          "reason": "Gr\u00fcner Veltliner, dry and crisp white, $14 well under $30"
+        },
+        {
+          "product_id": "WINE-015",
+          "relevance": 3,
+          "reason": "Gr\u00fcner Veltliner, dry crisp white, $12 under $30"
+        },
+        {
+          "product_id": "WINE-092",
+          "relevance": 3,
+          "reason": "Sauvignon Blanc from Marlborough, crisp and dry, $14 under $30"
+        },
+        {
+          "product_id": "WINE-089",
+          "relevance": 3,
+          "reason": "Sauvignon from Alto Adige, dry and crisp, $25 under $30"
+        }
+      ]
+    },
+    {
+      "id": "HARD-02",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "powerful red but not overly oaky, between $40 and $80",
+      "key_attributes": [
+        "red",
+        "NOT oaky",
+        "price 40-80"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-010",
+          "relevance": 3,
+          "reason": "Syrah is powerful and bold; $55 fits budget; Australian Syrah typically fruit-forward, not overly oaky"
+        },
+        {
+          "product_id": "WINE-019",
+          "relevance": 3,
+          "reason": "Carmen\u00e8re is powerful and full-bodied; $75 in range; Chilean Carmen\u00e8re known for spice over oak"
+        },
+        {
+          "product_id": "WINE-020",
+          "relevance": 3,
+          "reason": "Carmen\u00e8re is powerful and rich; $50 in range; Maule Valley Carmen\u00e8re typically fruit-driven, low oak"
+        },
+        {
+          "product_id": "WINE-045",
+          "relevance": 2,
+          "reason": "Rh\u00f4ne-style red blend is powerful; $63 in range; Languedoc blends tend toward earthy/spicy, not heavily oaked"
+        },
+        {
+          "product_id": "WINE-070",
+          "relevance": 2,
+          "reason": "Nebbiolo is powerful and structured; $59 in range; Barolo can show tannin and complexity without heavy oak influence"
+        }
+      ]
+    },
+    {
+      "id": "HARD-03",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "pinot noir for someone who normally drinks cabernet",
+      "key_attributes": [
+        "variety:Pinot Noir",
+        "bigger style"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-043",
+          "relevance": 3,
+          "reason": "Pinot Noir from Corton Grand Cru, Burgundy. Powerful, structured, bigger-style Pinot that appeals to Cabernet drinkers."
+        },
+        {
+          "product_id": "WINE-158",
+          "relevance": 3,
+          "reason": "Pinot Noir, Sonoma Coast, 99pts. Rich, concentrated, full-bodied style bridging Cabernet lovers to Pinot."
+        },
+        {
+          "product_id": "WINE-159",
+          "relevance": 2,
+          "reason": "Pinot Noir, Russian River Valley, 95pts. Bold, fruit-forward, bigger-styled Pinot Noir suitable for Cabernet fans."
+        },
+        {
+          "product_id": "WINE-044",
+          "relevance": 2,
+          "reason": "Pinot Noir from Vosne-Roman\u00e9e, Burgundy. Premier terroir, structured and intense, bigger expression of Pinot."
+        },
+        {
+          "product_id": "WINE-163",
+          "relevance": 1,
+          "reason": "Pinot Noir, Russian River Valley, 92pts. Good quality Pinot but medium-bodied, less big than top picks."
+        }
+      ]
+    },
+    {
+      "id": "HARD-04",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "natural-tasting wine, low intervention, under $50",
+      "key_attributes": [
+        "natural",
+        "low-intervention",
+        "price<50"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-081",
+          "relevance": 2,
+          "reason": "Podere ai Valloni is a known natural/low-intervention producer; 'Gratus Bio' indicates organic/biodynamic practices; Red Blend from Colline Novaresi at $31 fits budget."
+        },
+        {
+          "product_id": "WINE-101",
+          "relevance": 2,
+          "reason": "Filipa Pato is a renowned low-intervention Portuguese winemaker; Brut Nature (zero dosage) aligns with natural wine ethos; sparkling from Bairrada at $24."
+        },
+        {
+          "product_id": "WINE-102",
+          "relevance": 2,
+          "reason": "Wine & Soul (Luis Duarte) is a celebrated natural/low-intervention Douro producer; Guru White from Douro at $45, under budget."
+        },
+        {
+          "product_id": "WINE-047",
+          "relevance": 1,
+          "reason": "Vin de Pays de Vaucluse Rh\u00f4ne-style red from a small producer; low price ($12) and humble appellation suggest minimal intervention, though not explicitly certified."
+        },
+        {
+          "product_id": "WINE-025",
+          "relevance": 1,
+          "reason": "Domaine de la Noblaie (Chinon) is associated with natural wine movement; Cabernet Franc from Loire at $29 fits budget, though not explicitly labeled low-intervention."
+        }
+      ]
+    },
+    {
+      "id": "HARD-05",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "chardonnay without butter or heavy oak",
+      "key_attributes": [
+        "variety:Chardonnay",
+        "NOT oaky",
+        "NOT buttery"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-032",
+          "relevance": 3,
+          "reason": "Chardonnay from Chablis, unoaked and mineral-driven, no butter or heavy oak."
+        },
+        {
+          "product_id": "WINE-038",
+          "relevance": 3,
+          "reason": "Chardonnay from M\u00e2con, typically unoaked and crisp, no butter or heavy oak."
+        },
+        {
+          "product_id": "WINE-037",
+          "relevance": 2,
+          "reason": "Chardonnay from Saint-V\u00e9ran, usually unoaked style, light and fresh."
+        },
+        {
+          "product_id": "WINE-011",
+          "relevance": 2,
+          "reason": "Chardonnay from Austria, cooler climate, typically unoaked and crisp."
+        },
+        {
+          "product_id": "WINE-030",
+          "relevance": 1,
+          "reason": "Chardonnay from Champagne, unoaked base but high price; technically matches variety."
+        }
+      ]
+    },
+    {
+      "id": "HARD-06",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "high-rated bottle for under $20",
+      "key_attributes": [
+        "points>=90",
+        "price<20"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-001",
+          "relevance": 3,
+          "reason": "91 points, $19.0 \u2014 meets both criteria perfectly"
+        },
+        {
+          "product_id": "WINE-064",
+          "relevance": 3,
+          "reason": "92 points, $17.0 \u2014 meets both criteria perfectly"
+        },
+        {
+          "product_id": "WINE-060",
+          "relevance": 3,
+          "reason": "90 points, $18.0 \u2014 meets both criteria perfectly"
+        },
+        {
+          "product_id": "WINE-061",
+          "relevance": 3,
+          "reason": "90 points, $12.0 \u2014 meets both criteria perfectly"
+        },
+        {
+          "product_id": "WINE-179",
+          "relevance": 3,
+          "reason": "91 points, $19.0 \u2014 meets both criteria perfectly"
+        }
+      ]
+    },
+    {
+      "id": "HARD-07",
+      "difficulty": "hard",
+      "domain": "wine",
+      "query_text": "dessert wine that is not cloying",
+      "key_attributes": [
+        "dessert",
+        "NOT cloying"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-057",
+          "relevance": 3,
+          "reason": "Trockenbeerenauslese Riesling is a classic dessert wine; high acidity prevents cloying sweetness."
+        },
+        {
+          "product_id": "WINE-003",
+          "relevance": 3,
+          "reason": "Rutherglen Rare Muscat is a renowned dessert wine; fortified Muscat with complexity avoids being cloying."
+        },
+        {
+          "product_id": "WINE-075",
+          "relevance": 3,
+          "reason": "Vin Santo di Montepulciano is a traditional Italian dessert wine; balanced acidity keeps it from being cloying."
+        },
+        {
+          "product_id": "WINE-039",
+          "relevance": 2,
+          "reason": "Alsace Gewurztraminer Grand Cru is aromatic and off-dry; can serve as dessert wine with enough acidity to balance."
+        },
+        {
+          "product_id": "WINE-041",
+          "relevance": 2,
+          "reason": "Alsace Pinot Gris Grand Cru is rich and slightly sweet; suitable as dessert wine with balancing acidity."
+        }
+      ]
+    },
+    {
+      "id": "VAG-01",
+      "difficulty": "vague",
+      "domain": "wine",
+      "query_text": "wine for a winter steak dinner with friends",
+      "key_attributes": [
+        "red",
+        "rich",
+        "food-pairing"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-000",
+          "relevance": 3,
+          "reason": "Rich Argentine Malbec with 97pts, ideal for steak; bold, structured, perfect winter red."
+        },
+        {
+          "product_id": "WINE-006",
+          "relevance": 3,
+          "reason": "Full-bodied Australian Shiraz, 91pts, great steak pairing; rich, spicy, crowd-friendly price."
+        },
+        {
+          "product_id": "WINE-021",
+          "relevance": 3,
+          "reason": "Elegant Bordeaux-style red, 95pts, classic steakhouse wine; complex, age-worthy, winter-perfect."
+        },
+        {
+          "product_id": "WINE-064",
+          "relevance": 2,
+          "reason": "Bold Israeli Shiraz, 92pts, excellent with grilled meats; rich, modern, great value."
+        },
+        {
+          "product_id": "WINE-076",
+          "relevance": 2,
+          "reason": "Tuscan Chianti Classico Riserva, 93pts, pairs well with steak; earthy, structured, winter-ready."
+        }
+      ]
+    },
+    {
+      "id": "VAG-02",
+      "difficulty": "vague",
+      "domain": "wine",
+      "query_text": "something to impress a sommelier",
+      "key_attributes": [
+        "complex",
+        "high-rated"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-026",
+          "relevance": 3,
+          "reason": "Krug 2002 Brut Champagne, 100pts, legendary prestige cuvee, ultimate sommelier impressor"
+        },
+        {
+          "product_id": "WINE-030",
+          "relevance": 3,
+          "reason": "Salon 2006 Blanc de Blancs, 100pts, rare single-vineyard Champagne, iconic and complex"
+        },
+        {
+          "product_id": "WINE-069",
+          "relevance": 3,
+          "reason": "Ornellaia Masseto 2007 Merlot, 100pts, cult Super Tuscan, profound complexity"
+        },
+        {
+          "product_id": "WINE-082",
+          "relevance": 3,
+          "reason": "Biondi Santi 2010 Brunello Riserva, 100pts, historic estate, benchmark Sangiovese"
+        },
+        {
+          "product_id": "WINE-188",
+          "relevance": 3,
+          "reason": "Cayuse 2008 Bionic Frog Syrah, 100pts, cult Walla Walla, legendary and complex"
+        }
+      ]
+    },
+    {
+      "id": "VAG-03",
+      "difficulty": "vague",
+      "domain": "wine",
+      "query_text": "easy patio sipper for a hot summer afternoon",
+      "key_attributes": [
+        "light",
+        "refreshing",
+        "white or rose"
+      ],
+      "ground_truth_top5": [
+        {
+          "product_id": "WINE-050",
+          "relevance": 3,
+          "reason": "Provence ros\u00e9, light & refreshing, perfect summer patio sipper at $35"
+        },
+        {
+          "product_id": "WINE-051",
+          "relevance": 3,
+          "reason": "Provence ros\u00e9, crisp & refreshing, ideal hot weather patio wine at $29"
+        },
+        {
+          "product_id": "WINE-053",
+          "relevance": 3,
+          "reason": "Sancerre Sauvignon Blanc, light, crisp, refreshing\u2014classic summer sipper at $73"
+        },
+        {
+          "product_id": "WINE-054",
+          "relevance": 3,
+          "reason": "Pouilly-Fum\u00e9 Sauvignon Blanc, light & refreshing, great patio white at $22"
+        },
+        {
+          "product_id": "WINE-092",
+          "relevance": 3,
+          "reason": "Marlborough Sauvignon Blanc, light, zesty, refreshing summer sipper at $14"
+        }
+      ]
+    }
+  ]
+}
