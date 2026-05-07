@@ -39,6 +39,7 @@ if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
 from shared.domain_bundle import Bundle, RerankerArtifact  # noqa: E402
+from shared.seeding import seed_all  # noqa: E402
 from implementations.design_14_local_hybrid import listwise_rerank  # noqa: E402
 
 logger = logging.getLogger("finetune_listwise")
@@ -56,13 +57,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--max-seq-length", type=int, default=2048)
     parser.add_argument("--candidates-per-query", type=int, default=10)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--dry-run", action="store_true",
+        help="emit a stub adapter file + update manifest, no actual training",
+    )
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.DEBUG if args.verbose else logging.INFO,
         format="%(name)s: %(message)s",
     )
-    random.seed(args.seed)
+    seed_all(args.seed)
 
     bundle = Bundle.load(args.bundle)
     triples_path = bundle.paths.root / "synthetic_train.jsonl"
@@ -120,6 +125,9 @@ def main(argv: list[str] | None = None) -> int:
         })
 
     logger.info("built %d listwise training examples", len(examples))
+
+    if args.dry_run:
+        return _dry_run(bundle, args.base_model, examples, args)
 
     # ---- Lazy import of the heavy ML deps ---------------------------------
     try:
@@ -271,9 +279,39 @@ def main(argv: list[str] | None = None) -> int:
         "lora_rank": args.lora_rank,
         "n_examples": len(examples),
         "candidates_per_query": args.candidates_per_query,
+        "seed": args.seed,
     }
     bundle.save_manifest()
     logger.info("manifest updated.")
+    return 0
+
+
+def _dry_run(bundle: Bundle, base_model: str, examples: list[dict], args) -> int:
+    """No-GPU smoke test: stub adapter + manifest update so arena_new
+    can exercise the full pipeline without downloading a 1.7B model."""
+    out_dir = bundle.paths.root / "listwise_adapter"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    stub = out_dir / "adapter_model.safetensors.stub"
+    stub.write_text(json.dumps({
+        "_dry_run": True,
+        "base_model": base_model,
+        "n_examples": len(examples),
+    }) + "\n")
+    bundle.manifest.reranker = RerankerArtifact(
+        kind="lora", base_model=base_model, adapter_path=out_dir.name,
+    )
+    bundle.manifest.metadata["reranker_runtime_kind"] = "listwise"
+    bundle.manifest.metadata.setdefault("training", {})
+    bundle.manifest.metadata["training"]["listwise"] = {
+        "_dry_run": True,
+        "base_model": base_model,
+        "n_examples": len(examples),
+        "candidates_per_query": args.candidates_per_query,
+        "lora_rank": args.lora_rank,
+        "seed": args.seed,
+    }
+    bundle.save_manifest()
+    logger.info("dry-run: wrote stub %s and updated manifest", stub)
     return 0
 
 

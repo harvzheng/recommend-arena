@@ -40,6 +40,7 @@ if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
 from shared.domain_bundle import Bundle, EmbeddingArtifact  # noqa: E402
+from shared.seeding import seed_all  # noqa: E402
 
 logger = logging.getLogger("finetune_embedding")
 
@@ -89,12 +90,14 @@ def main(argv: list[str] | None = None) -> int:
         help="don't actually train; just validate the triples + emit a "
              "stub adapter file. Useful in CI to check the pipeline shape.",
     )
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.DEBUG if args.verbose else logging.INFO,
         format="%(name)s: %(message)s",
     )
+    seed_all(args.seed)
 
     bundle = Bundle.load(args.bundle)
     base_model = args.base_model or (
@@ -212,6 +215,7 @@ def main(argv: list[str] | None = None) -> int:
         "learning_rate": args.learning_rate,
         "n_triples": len(triples),
         "lora_rank": None if args.full_finetune else args.lora_rank,
+        "seed": args.seed,
     }
     bundle.save_manifest()
     logger.info("manifest updated.")
@@ -264,6 +268,7 @@ def _dry_run(args, bundle: Bundle, base_model: str, triples: list[dict], out_dir
     bundle.manifest.metadata["training"]["embedding"] = {
         "_dry_run": True,
         "n_triples": len(triples),
+        "seed": args.seed,
     }
     bundle.save_manifest()
     logger.info(

@@ -34,10 +34,12 @@ manifest update). Use it in CI or when you don't have a teacher key.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import logging
 import os
 import random
+import sqlite3
 import sys
 from pathlib import Path
 from typing import Any
@@ -247,14 +249,73 @@ def _load_teacher_module(path: Path) -> dict[str, list[dict]]:
     return out
 
 
-def call_teacher(prompt: str) -> list[dict]:
-    """Call the teacher LLM via shared.llm_provider, parse JSON output."""
+def _open_teacher_cache(path: Path) -> sqlite3.Connection:
+    """Sqlite-backed prompt cache. Keyed on (model, prompt-sha256).
+
+    First run pays the API cost. Re-runs with the same prompts read from
+    disk and are both free and deterministic — which is the whole point
+    of repeatability for the synthetic data step.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(str(path))
+    conn.execute(
+        "CREATE TABLE IF NOT EXISTS teacher_cache ("
+        "  model TEXT NOT NULL,"
+        "  prompt_sha256 TEXT NOT NULL,"
+        "  prompt TEXT NOT NULL,"
+        "  response TEXT NOT NULL,"
+        "  created_at TEXT NOT NULL,"
+        "  PRIMARY KEY (model, prompt_sha256)"
+        ")"
+    )
+    conn.commit()
+    return conn
+
+
+def _cache_key(prompt: str) -> str:
+    return hashlib.sha256(prompt.encode("utf-8")).hexdigest()
+
+
+def call_teacher(
+    prompt: str,
+    cache: sqlite3.Connection | None = None,
+    model: str = "claude-opus-4-7",
+) -> list[dict]:
+    """Call the teacher LLM via shared.llm_provider, parse JSON output.
+
+    When `cache` is provided, look up `(model, sha256(prompt))` first and
+    skip the API call on a hit. Misses are written back so the next run
+    is free.
+    """
+    full_prompt = f"{TEACHER_SYSTEM}\n\n{prompt}"
+    key = _cache_key(full_prompt)
+
+    if cache is not None:
+        row = cache.execute(
+            "SELECT response FROM teacher_cache WHERE model = ? AND prompt_sha256 = ?",
+            (model, key),
+        ).fetchone()
+        if row is not None:
+            text = row[0]
+            return _parse_teacher_response(text)
+
     from shared.llm_provider import get_provider
     provider = get_provider()
-    text = provider.generate(
-        f"{TEACHER_SYSTEM}\n\n{prompt}",
-        json_mode=True,
-    )
+    text = provider.generate(full_prompt, json_mode=True)
+
+    if cache is not None:
+        from datetime import datetime, timezone
+        cache.execute(
+            "INSERT OR REPLACE INTO teacher_cache "
+            "(model, prompt_sha256, prompt, response, created_at) VALUES (?, ?, ?, ?, ?)",
+            (model, key, full_prompt, text, datetime.now(timezone.utc).isoformat()),
+        )
+        cache.commit()
+
+    return _parse_teacher_response(text)
+
+
+def _parse_teacher_response(text: str) -> list[dict]:
     try:
         data = json.loads(text)
     except json.JSONDecodeError as e:
@@ -325,6 +386,10 @@ def main(argv: list[str] | None = None) -> int:
         help="cap how many products we generate queries for (debug)",
     )
     parser.add_argument(
+        "--no-cache", action="store_true",
+        help="disable the sqlite teacher prompt cache (every prompt hits the API).",
+    )
+    parser.add_argument(
         "-v", "--verbose", action="store_true",
     )
     args = parser.parse_args(argv)
@@ -357,6 +422,13 @@ def main(argv: list[str] | None = None) -> int:
         logger.info(
             "teacher file: %s (%d products covered)", args.teacher_file, len(teacher_queries),
         )
+
+    # Open the teacher prompt cache when we're going to call the LLM.
+    teacher_cache: sqlite3.Connection | None = None
+    if source == "llm" and not args.no_cache:
+        cache_path = bundle.paths.root / ".teacher_cache.sqlite"
+        teacher_cache = _open_teacher_cache(cache_path)
+        logger.info("teacher cache: %s", cache_path)
 
     # Encode the catalog once. With --skip-encoder we substitute zero vectors
     # (hard-negs become deterministic first-N — fine for a smoke test only).
@@ -404,7 +476,7 @@ def main(argv: list[str] | None = None) -> int:
                 continue
         else:  # llm
             prompt = build_teacher_prompt(product, args.queries_per_product)
-            queries = call_teacher(prompt)
+            queries = call_teacher(prompt, cache=teacher_cache, model=args.teacher)
             if not queries:
                 logger.warning("no queries for product %s", pid)
                 continue
@@ -443,9 +515,14 @@ def main(argv: list[str] | None = None) -> int:
         "queries_per_product": args.queries_per_product,
         "hard_negatives_per_query": args.hard_negatives_per_query,
         "teacher": args.teacher,
+        "source": source,
+        "seed": args.seed,
+        "cache": teacher_cache is not None,
         "dry_run": args.dry_run,
     }
     bundle.save_manifest()
+    if teacher_cache is not None:
+        teacher_cache.close()
     return 0
 
 

@@ -1,0 +1,20 @@
+# Pinned versions for the LoRA training pipeline.
+#
+# Same recipe -> same ballpark: pinning these removes one major source of
+# drift between training runs (kernel changes between minor versions move
+# embeddings just enough to land in different NDCG buckets).
+#
+# Last verified: 2026-05-07 on M3 Max (MPS) producing the ski bundle at
+# NDCG@5 = 0.673 on ski_eval_v2.
+#
+# Install on top of the runtime requirements:
+#     pip install -r implementations/design_14_local_hybrid/requirements.txt
+#     pip install -r implementations/design_14_local_hybrid/training-requirements.txt
+
+torch==2.8.0
+sentence-transformers==5.1.2
+transformers==4.57.6
+peft==0.17.1
+accelerate==1.10.1
+numpy==2.0.2
+safetensors==0.7.0

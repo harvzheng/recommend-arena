@@ -34,6 +34,7 @@ if str(_PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(_PROJECT_ROOT))
 
 from shared.domain_bundle import Bundle, RerankerArtifact  # noqa: E402
+from shared.seeding import seed_all  # noqa: E402
 
 logger = logging.getLogger("finetune_reranker")
 
@@ -60,12 +61,14 @@ def main(argv: list[str] | None = None) -> int:
         "--dry-run", action="store_true",
         help="emit a stub adapter file + update manifest, no actual training",
     )
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
     logging.basicConfig(
         level=logging.DEBUG if args.verbose else logging.INFO,
         format="%(name)s: %(message)s",
     )
+    seed_all(args.seed)
 
     bundle = Bundle.load(args.bundle)
     base_model = args.base_model or (
@@ -110,7 +113,7 @@ def main(argv: list[str] | None = None) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if args.dry_run:
-        return _dry_run(bundle, base_model, pairs, out_dir, args.lora_rank)
+        return _dry_run(bundle, base_model, pairs, out_dir, args.lora_rank, args.seed)
 
     # Real training path.
     try:
@@ -177,6 +180,7 @@ def main(argv: list[str] | None = None) -> int:
         "learning_rate": args.learning_rate,
         "n_pairs": len(pairs),
         "lora_rank": None if kind == "full_finetune" else args.lora_rank,
+        "seed": args.seed,
     }
     bundle.save_manifest()
     logger.info("manifest updated.")
@@ -210,7 +214,7 @@ def _read_jsonl(path: Path) -> list[dict]:
 
 
 def _dry_run(bundle: Bundle, base_model: str, pairs: list[tuple[str, str, int]],
-             out_dir: Path, lora_rank: int) -> int:
+             out_dir: Path, lora_rank: int, seed: int) -> int:
     stub = out_dir / "adapter_model.safetensors.stub"
     stub.write_text(json.dumps({
         "_dry_run": True,
@@ -227,6 +231,7 @@ def _dry_run(bundle: Bundle, base_model: str, pairs: list[tuple[str, str, int]],
         "_dry_run": True,
         "n_pairs": len(pairs),
         "lora_rank": lora_rank,
+        "seed": seed,
     }
     bundle.save_manifest()
     logger.info(

@@ -114,13 +114,20 @@ def cmd_new(args: argparse.Namespace) -> int:
         _step_finetune_embedding(bundle, dry_run=args.training_dry_run)
     if "finetune-reranker" in steps:
         _step_finetune_reranker(bundle, dry_run=args.training_dry_run)
+    if "finetune-listwise" in steps:
+        _step_finetune_listwise(
+            bundle,
+            base_model=args.listwise_base_model,
+            dry_run=args.training_dry_run,
+        )
 
     # The slice 14.1 / 14.2 dispatchers run as subprocess-style mains
     # that load their own Bundle handle and save it. Reload from disk
     # before the final save so we don't overwrite their changes with
     # the parent's stale in-memory copy.
     if any(s in steps for s in ("extract-schema", "generate-synthetic",
-                                 "finetune-embedding", "finetune-reranker")):
+                                 "finetune-embedding", "finetune-reranker",
+                                 "finetune-listwise")):
         bundle = Bundle.load(bundle.paths.root)
     bundle.save_manifest()
     logger.info("manifest written to %s", bundle.paths.manifest_path)
@@ -292,6 +299,21 @@ def _step_finetune_reranker(bundle: Bundle, dry_run: bool) -> None:
         logger.warning("finetune_reranker returned rc=%d", rc)
 
 
+def _step_finetune_listwise(
+    bundle: Bundle, base_model: str | None, dry_run: bool,
+) -> None:
+    """Step 4b: listwise reranker LoRA fine-tune."""
+    from finetune_listwise import main as ft_main
+    argv = ["--bundle", str(bundle.paths.root)]
+    if base_model:
+        argv.extend(["--base-model", base_model])
+    if dry_run:
+        argv.append("--dry-run")
+    rc = ft_main(argv)
+    if rc != 0:
+        logger.warning("finetune_listwise returned rc=%d", rc)
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -388,6 +410,10 @@ def main(argv: list[str] | None = None) -> int:
     new.add_argument(
         "--training-dry-run", action="store_true",
         help="finetune steps emit stub adapters and update manifests, no GPU work",
+    )
+    new.add_argument(
+        "--listwise-base-model", default=None,
+        help="base model for the listwise LoRA (default: Qwen/Qwen3-1.7B)",
     )
     new.set_defaults(func=cmd_new)
 
