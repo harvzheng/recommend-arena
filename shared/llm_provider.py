@@ -242,19 +242,45 @@ class LLMProvider:
             raise RuntimeError(
                 "OPENAI_API_KEY must be set when provider is 'openai'"
             )
-        url = "https://api.openai.com/v1/chat/completions"
+        # Allow pointing at OpenAI-compatible endpoints (e.g. OpenRouter)
+        # via RECOMMEND_OPENAI_BASE_URL.
+        base_url = os.environ.get(
+            "RECOMMEND_OPENAI_BASE_URL", "https://api.openai.com/v1"
+        ).rstrip("/")
+        url = f"{base_url}/chat/completions"
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "content-type": "application/json",
         }
+        # When using a non-OpenAI compatible endpoint, structured-output
+        # support varies; rely on the prompt to elicit JSON instead.
+        use_response_format = json_mode and not os.environ.get(
+            "RECOMMEND_OPENAI_NO_JSON_FORMAT"
+        )
+        messages = []
+        if json_mode and not use_response_format:
+            messages.append({
+                "role": "system",
+                "content": "Respond ONLY with valid JSON. No markdown fences, no commentary.",
+            })
+        messages.append({"role": "user", "content": prompt})
         payload: dict = {
             "model": self.llm_model,
-            "messages": [{"role": "user", "content": prompt}],
+            "messages": messages,
         }
-        if json_mode:
+        if use_response_format:
             payload["response_format"] = {"type": "json_object"}
         resp = self._post(url, payload, headers=headers)
-        return resp["choices"][0]["message"]["content"]
+        text = resp["choices"][0]["message"]["content"]
+        if json_mode and text:
+            # Strip code fences in case the model wrapped JSON despite instructions.
+            stripped = text.strip()
+            if stripped.startswith("```"):
+                stripped = stripped.strip("`")
+                if stripped.lower().startswith("json"):
+                    stripped = stripped[4:]
+                text = stripped.strip()
+        return text
 
     def _embed_openai(self, text: str) -> list[float]:
         if not self.api_key:
@@ -283,25 +309,40 @@ class LLMProvider:
         *,
         headers: dict[str, str] | None = None,
     ) -> dict:
-        """POST JSON and return parsed response, with retries."""
+        """POST JSON and return parsed response, with rate-limit-aware retries."""
+        import time as _time
+        max_attempts = max(_MAX_RETRIES + 1, 5)
         last_exc: Exception | None = None
-        for attempt in range(_MAX_RETRIES + 1):
+        for attempt in range(max_attempts):
             try:
                 with httpx.Client(timeout=_TIMEOUT) as client:
                     r = client.post(url, json=payload, headers=headers or {})
+                    if r.status_code == 429 and attempt < max_attempts - 1:
+                        retry_after = r.headers.get("retry-after")
+                        try:
+                            wait = float(retry_after) if retry_after else 0.0
+                        except ValueError:
+                            wait = 0.0
+                        if wait <= 0:
+                            wait = min(60.0, 2.0 * (2 ** attempt))
+                        logger.warning(
+                            "429 from %s; backing off %.1fs (attempt %d/%d)",
+                            url, wait, attempt + 1, max_attempts,
+                        )
+                        _time.sleep(wait)
+                        continue
                     r.raise_for_status()
                     return r.json()
             except (httpx.HTTPStatusError, httpx.TransportError) as exc:
                 last_exc = exc
                 logger.warning(
                     "Request to %s failed (attempt %d/%d): %s",
-                    url,
-                    attempt + 1,
-                    _MAX_RETRIES + 1,
-                    exc,
+                    url, attempt + 1, max_attempts, exc,
                 )
+                if attempt < max_attempts - 1:
+                    _time.sleep(min(30.0, 2.0 ** attempt))
         raise RuntimeError(
-            f"All {_MAX_RETRIES + 1} attempts to {url} failed"
+            f"All {max_attempts} attempts to {url} failed"
         ) from last_exc
 
 
